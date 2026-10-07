@@ -4,6 +4,7 @@
   "provenance": {
     "existing": "Parts and direct costs are read from balance.json recipes. No manufacturer fields are changed.",
     "new": "All resources, hours, salaries, demand, prices, investments and scenarios below are original game design candidates, awaiting user preference and playtesting.",
+    "procurementChannels": "Route partsChannel ids and discount factors are read from design/supplier-system.json channels; this file does not restate them. Reachable tier follows monthly same-SKU volume.",
     "limits": "A deterministic scenario calculator, not a playable six-month balance validation. Demand, delivery timing and quality feedback are assumptions."
   },
   "opening": {
@@ -15,14 +16,14 @@
   "employee": { "monthlySalary": 1400, "monthlyLaborHours": 112, "recruitmentCost": 600 },
   "stationMonthlyHours": 160,
   "products": {
-    "office": { "salePrice": 2250, "kind": "standard", "designHours": 0, "assemblyHours": 6, "testSetupHours": 0.5, "packingHours": 0.5, "testStationHours": 2, "developmentLaborHours": 12, "developmentBenchHours": 2, "developmentTestHours": 2, "developmentCost": 120 },
-    "gaming": { "salePrice": 4930, "kind": "standard", "designHours": 0, "assemblyHours": 10, "testSetupHours": 0.5, "packingHours": 0.5, "testStationHours": 3, "developmentLaborHours": 18, "developmentBenchHours": 3, "developmentTestHours": 3, "developmentCost": 180 },
+    "office": { "salePrice": 2115, "kind": "standard", "designHours": 0, "assemblyHours": 6, "testSetupHours": 0.5, "packingHours": 0.5, "testStationHours": 2, "developmentLaborHours": 12, "developmentBenchHours": 2, "developmentTestHours": 2, "developmentCost": 120 },
+    "gaming": { "salePrice": 4566, "kind": "standard", "designHours": 0, "assemblyHours": 10, "testSetupHours": 0.5, "packingHours": 0.5, "testStationHours": 3, "developmentLaborHours": 18, "developmentBenchHours": 3, "developmentTestHours": 3, "developmentCost": 180 },
     "quiet_office": { "salePrice": 5100, "kind": "commission", "designHours": 6, "assemblyHours": 10, "testSetupHours": 1, "packingHours": 1, "testStationHours": 4 },
     "premium": { "salePrice": 11050, "kind": "commission", "designHours": 10, "assemblyHours": 14, "testSetupHours": 1, "packingHours": 1, "testStationHours": 6 }
   },
   "companyDemandCaps": {
-    "office": [8, 10, 12, 16, 22, 26],
-    "gaming": [2, 3, 4, 6, 10, 12],
+    "office": [6, 8, 10, 13, 16, 18],
+    "gaming": [2, 2, 3, 4, 6, 8],
     "quiet_office": [2, 3, 4, 5, 6, 6],
     "premium": [1, 2, 2, 3, 3, 4]
   },
@@ -33,6 +34,7 @@
   },
   "routes": {
     "boutique": {
+      "partsChannel": "retail",
       "investments": [{ "month": 3, "id": "craft_tools" }],
       "hires": [],
       "monthlyProductionTargets": [
@@ -45,6 +47,7 @@
       ]
     },
     "scale": {
+      "partsChannel": "scheduled_batch",
       "investments": [{ "month": 3, "id": "bench" }, { "month": 5, "id": "semi_auto" }],
       "hires": [],
       "monthlyProductionTargets": [
@@ -57,6 +60,7 @@
       ]
     },
     "mixed": {
+      "partsChannel": "distributor",
       "investments": [{ "month": 3, "id": "craft_tools" }],
       "hires": [3],
       "monthlyProductionTargets": [

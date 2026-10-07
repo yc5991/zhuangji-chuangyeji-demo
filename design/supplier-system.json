@@ -37,10 +37,11 @@
       "availableFromWorkshop": true,
       "minimumUnitsPerLine": 5,
       "nominalDeliverySimHours": 8,
-      "nominalUnitPriceFactor": 0.97,
+      "nominalUnitPriceFactor": 0.95,
       "nominalBatchStockUnits": 40,
       "eligibility": "Five identical physical SKUs per line; not tied to company level",
-      "note": "A five-unit quote may suit a proven standard product. It is always optional for custom commissions."
+      "note": "A five-unit quote may suit a proven standard product. It is always optional for custom commissions.",
+      "calibration": "Gradient widened with the economics review so channel choice is a real decision; the mass route cannot compete on retail parts prices."
     },
     {
       "id": "scheduled_batch",
@@ -48,10 +49,11 @@
       "availableFromWorkshop": true,
       "minimumUnitsPerLine": 20,
       "nominalDeliverySimHours": 24,
-      "nominalUnitPriceFactor": 0.94,
+      "nominalUnitPriceFactor": 0.90,
       "nominalBatchStockUnits": 80,
       "eligibility": "Explicit confirmed delivery batch and 20 identical units per line; no promise of stock before launch",
-      "note": "Consolidated channel order, not a claim that every real brand accepts direct factory orders from small companies. Bulk ties up cash and stock without granting extra customer demand."
+      "note": "Consolidated channel order, not a claim that every real brand accepts direct factory orders from small companies. Bulk ties up cash and stock without granting extra customer demand.",
+      "calibration": "Deepest tier is the mass route's only viable basis; it demands the largest cash commitment and is unusable for one-off commissions."
     }
   ],
   "quotation": {

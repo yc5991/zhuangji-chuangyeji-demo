@@ -113,8 +113,8 @@
       "workDrive": "ssd_120",
       "directCostCoins": 120,
       "budgetCoins": [
-        2200,
-        2500
+        1950,
+        2350
       ],
       "expectedPartsCost": 1750
     },
@@ -143,8 +143,8 @@
       "workDrive": "ssd_250",
       "directCostCoins": 180,
       "budgetCoins": [
-        4800,
-        5500
+        4400,
+        5200
       ],
       "expectedPartsCost": 4040
     },

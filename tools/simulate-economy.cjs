@@ -5,6 +5,8 @@ const root = path.resolve(__dirname, '..');
 const read = name => JSON.parse(fs.readFileSync(path.join(root, 'design', name), 'utf8'));
 const config = read('economy-candidate.json');
 const recipes = new Map(read('balance.json').recipes.map(p => [p.id, p]));
+// Procurement channels live in supplier-system.json so the discount has one source of truth.
+const channels = new Map(read('supplier-system.json').channels.map(c => [c.id, c]));
 const round = n => Math.round(n * 100) / 100;
 
 // Scenario inputs are proposed business parameters, separate from component reference data.
@@ -12,6 +14,9 @@ function simulate(routeId, scenarioId, difficulty = 'normal') {
   const opening = config.opening[difficulty];
   const route = config.routes[routeId];
   const scenario = config.scenarios[scenarioId];
+  const channel = channels.get(route.partsChannel);
+  assert(channel, `Route ${routeId} must name a procurement channel.`);
+  const channelFactor = channel.nominalUnitPriceFactor;
   let cash = opening.cash, employees = opening.employees, benches = opening.benches;
   let monthlyUtilities = opening.utilities, standardMultiplier = 1, commissionMultiplier = 1, consumablesReduction = 0;
   let totalSales = 0, totalRevenue = 0, totalCogs = 0, totalFixed = 0, totalInvestment = 0, totalDevelopment = 0;
@@ -90,8 +95,8 @@ function simulate(routeId, scenarioId, difficulty = 'normal') {
         if (Object.keys(need).some(k => used[k] + need[k] > limits[k] + 1e-8)) {
           notices.push(`CAPACITY_LIMIT:${id}`); break;
         }
-        const cost = round(recipe.expectedPartsCost * scenario.partsPriceMultiplier + recipe.directCostCoins -
-          (product.kind === 'commission' ? consumablesReduction : 0));
+        const cost = round(recipe.expectedPartsCost * scenario.partsPriceMultiplier * channelFactor +
+          recipe.directCostCoins - (product.kind === 'commission' ? consumablesReduction : 0));
         if (cash < fixed + cost) { notices.push(`PROCUREMENT_CASH_LIMIT:${id}`); break; }
         for (const k of Object.keys(need)) used[k] += need[k];
         cash -= cost; procurement += cost; built[id] = (built[id] || 0) + 1;
@@ -122,7 +127,8 @@ function simulate(routeId, scenarioId, difficulty = 'normal') {
   const operatingProfit = round(totalRevenue - totalCogs - totalFixed - totalDevelopment);
   assert(Math.abs(cash + inventoryCost - opening.cash - (operatingProfit - totalInvestment)) < 0.02,
     'Operating profit, inventory and cash do not reconcile.');
-  return {route:routeId,scenario:scenarioId,difficulty,totalSales,totalRevenue,totalCostOfGoodsSold:round(totalCogs),
+  return {route:routeId,scenario:scenarioId,difficulty,partsChannel:channel.id,partsChannelFactor:channelFactor,
+    totalSales,totalRevenue,totalCostOfGoodsSold:round(totalCogs),
     totalFixedCost:totalFixed,totalDevelopmentCost:totalDevelopment,totalInvestment,
     operatingProfit,endCash:round(cash),inventoryCost,cashAndInventoryGain:round(cash+inventoryCost-opening.cash),months};
 }
