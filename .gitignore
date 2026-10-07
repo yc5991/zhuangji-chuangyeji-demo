@@ -1,0 +1,21 @@
+# Cocos Creator generated directories
+/library/
+/temp/
+/local/
+/profiles/
+/build/
+/native/
+/node_modules/
+
+# Machine paths, credentials and verification logs
+/.local/
+/.env
+/.env.*
+!/.env.example
+*.log
+
+# Editor and operating system files
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak

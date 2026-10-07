@@ -1,0 +1,1872 @@
+{
+  "schemaVersion": 1,
+  "designVersion": "0.3",
+  "status": "draft",
+  "approvedScope": {
+    "total": 32,
+    "categories": 8
+  },
+  "proposedReleaseSplit": {
+    "opening": 28,
+    "event": 4
+  },
+  "provenance": {
+    "reference": "manufacturer_sources_or_explicitly_marked_gap",
+    "game": "user_v0_2_proposal_plus_draft_load_noise_and_thermal_values",
+    "currency": "game_coins",
+    "dimensions": "named_axes_mm"
+  },
+  "parts": [
+    {
+      "id": "cpu_6100",
+      "category": "cpu",
+      "brandId": "intek",
+      "model": "膏3-6100",
+      "displayName": "英特克 INTEK · 膏3-6100",
+      "reference": {
+        "model": "Intel Core i3-6100",
+        "sources": [
+          "https://www.intel.com/content/www/us/en/products/sku/90729/intel-core-i36100-processor-3m-cache-3-70-ghz/specifications.html"
+        ],
+        "status": "verified_fields",
+        "specs": {
+          "cores": 2,
+          "threads": 4,
+          "baseGHz": 3.7,
+          "maxGHz": 3.7,
+          "tdpW": 51,
+          "socket": "LGA1151",
+          "integratedGraphics": "HD 530",
+          "releaseWindow": "2015-Q3"
+        },
+        "checkedDate": "2026-10-07"
+      },
+      "availability": {
+        "gameDate": "2016-01-01",
+        "dateBasis": "demo_opening_assumption",
+        "referenceVariantFirstSaleDate": null,
+        "variantSupplyInference": {
+          "gameDate": "2016-01-01",
+          "basis": "Series is known before the Demo or platform launch; selected physical revision is assumed available for game design.",
+          "status": "accepted_game_assumption",
+          "source": "User authorized common-sense inference, 2026-10-07"
+        }
+      },
+      "game": {
+        "basePriceCoins": 650,
+        "platform": "skylake_1151",
+        "singleThreadScore": 60,
+        "multiThreadScore": 35,
+        "integratedGraphicsScore": 8,
+        "integratedCreationScore": 8,
+        "designLoadW": 55,
+        "heatUnits": 50,
+        "includesCooler": false
+      },
+      "legacyDisplayNames": [
+        "英特克 INTEK · 膏3-6100"
+      ],
+      "seriesId": "intek_gao"
+    },
+    {
+      "id": "cpu_6500",
+      "category": "cpu",
+      "brandId": "intek",
+      "model": "膏5-6500",
+      "displayName": "英特克 INTEK · 膏5-6500",
+      "reference": {
+        "model": "Intel Core i5-6500",
+        "sources": [
+          "https://www.intel.com/content/www/us/en/products/sku/88184/intel-core-i56500-processor-6m-cache-up-to-3-60-ghz/specifications.html"
+        ],
+        "status": "verified_fields",
+        "specs": {
+          "cores": 4,
+          "threads": 4,
+          "baseGHz": 3.2,
+          "maxGHz": 3.6,
+          "tdpW": 65,
+          "socket": "LGA1151",
+          "integratedGraphics": "HD 530",
+          "releaseWindow": "2015-Q3"
+        },
+        "checkedDate": "2026-10-07"
+      },
+      "availability": {
+        "gameDate": "2016-01-01",
+        "dateBasis": "demo_opening_assumption",
+        "referenceVariantFirstSaleDate": null,
+        "variantSupplyInference": {
+          "gameDate": "2016-01-01",
+          "basis": "Series is known before the Demo or platform launch; selected physical revision is assumed available for game design.",
+          "status": "accepted_game_assumption",
+          "source": "User authorized common-sense inference, 2026-10-07"
+        }
+      },
+      "game": {
+        "basePriceCoins": 1100,
+        "platform": "skylake_1151",
+        "singleThreadScore": 65,
+        "multiThreadScore": 60,
+        "integratedGraphicsScore": 8,
+        "integratedCreationScore": 8,
+        "designLoadW": 80,
+        "heatUnits": 70,
+        "includesCooler": false
+      },
+      "legacyDisplayNames": [
+        "英特克 INTEK · 膏5-6500"
+      ],
+      "seriesId": "intek_gao"
+    },
+    {
+      "id": "cpu_6700",
+      "category": "cpu",
+      "brandId": "intek",
+      "model": "膏7-6700",
+      "displayName": "英特克 INTEK · 膏7-6700",
+      "reference": {
+        "model": "Intel Core i7-6700",
+        "sources": [
+          "https://www.intel.com/content/www/us/en/products/sku/88196/intel-core-i76700-processor-8m-cache-up-to-4-00-ghz/specifications.html"
+        ],
+        "status": "verified_fields",
+        "specs": {
+          "cores": 4,
+          "threads": 8,
+          "baseGHz": 3.4,
+          "maxGHz": 4,
+          "tdpW": 65,
+          "socket": "LGA1151",
+          "integratedGraphics": "HD 530",
+          "releaseWindow": "2015-Q3"
+        },
+        "checkedDate": "2026-10-07"
+      },
+      "availability": {
+        "gameDate": "2016-01-01",
+        "dateBasis": "demo_opening_assumption",
+        "referenceVariantFirstSaleDate": null,
+        "variantSupplyInference": {
+          "gameDate": "2016-01-01",
+          "basis": "Series is known before the Demo or platform launch; selected physical revision is assumed available for game design.",
+          "status": "accepted_game_assumption",
+          "source": "User authorized common-sense inference, 2026-10-07"
+        }
+      },
+      "game": {
+        "basePriceCoins": 1700,
+        "platform": "skylake_1151",
+        "singleThreadScore": 75,
+        "multiThreadScore": 85,
+        "integratedGraphicsScore": 8,
+        "integratedCreationScore": 8,
+        "designLoadW": 95,
+        "heatUnits": 90,
+        "includesCooler": false
+      },
+      "legacyDisplayNames": [
+        "英特克 INTEK · 膏7-6700"
+      ],
+      "seriesId": "intek_gao"
+    },
+    {
+      "id": "cpu_fx8350",
+      "category": "cpu",
+      "brandId": "amdex",
+      "model": "FX-8350",
+      "displayName": "艾迈德 AMDEX · FX-8350",
+      "reference": {
+        "model": "AMD FX-8350",
+        "sources": [
+          "https://www.asus.com/pl/supportonly/m5a97_r20/helpdesk_cpu/",
+          "https://ir.amd.com/news-events/press-releases/detail/75/amd-reports-2012-fourth-quarter-and-annual-results"
+        ],
+        "status": "verified_fields",
+        "specs": {
+          "socket": "AM3+",
+          "advertisedCores": 8,
+          "baseGHz": 4,
+          "tdpW": 125,
+          "minimumBoardBios": "1006",
+          "releaseWindow": "2012"
+        },
+        "checkedDate": "2026-10-07"
+      },
+      "availability": {
+        "gameDate": "2016-01-01",
+        "dateBasis": "demo_opening_assumption",
+        "referenceVariantFirstSaleDate": null,
+        "variantSupplyInference": {
+          "gameDate": "2016-01-01",
+          "basis": "Series is known before the Demo or platform launch; selected physical revision is assumed available for game design.",
+          "status": "accepted_game_assumption",
+          "source": "User authorized common-sense inference, 2026-10-07"
+        }
+      },
+      "game": {
+        "basePriceCoins": 620,
+        "platform": "fx_am3plus",
+        "singleThreadScore": 42,
+        "multiThreadScore": 60,
+        "integratedGraphicsScore": null,
+        "integratedCreationScore": null,
+        "designLoadW": 150,
+        "heatUnits": 140,
+        "includesCooler": false
+      },
+      "legacyDisplayNames": [
+        "艾迈德 AMDEX · FX-8350"
+      ],
+      "seriesId": "amdex_fx"
+    },
+    {
+      "id": "mb_h110",
+      "category": "motherboard",
+      "brandId": "asux",
+      "model": "H110M-KS",
+      "displayName": "华烁 ASUX · 磐基 H110M-KS",
+      "reference": {
+        "model": "ASUS H110M-K",
+        "sources": [
+          "https://www.asus.com/ua-ua/motherboards-components/motherboards/prime/h110m-k/techspec/"
+        ],
+        "status": "verified_fields",
+        "specs": {
+          "formFactor": "mATX",
+          "ramType": "DDR4",
+          "ramSlots": 2,
+          "maxRamGB": 32,
+          "sataPorts": 4,
+          "dimensionsMm": {
+            "height": 226,
+            "width": 183
+          },
+          "cpuPowerPins": 4
+        },
+        "checkedDate": "2026-10-07"
+      },
+      "availability": {
+        "gameDate": "2016-01-01",
+        "dateBasis": "demo_opening_assumption",
+        "referenceVariantFirstSaleDate": null,
+        "variantSupplyInference": {
+          "gameDate": "2016-01-01",
+          "basis": "Series is known before the Demo or platform launch; selected physical revision is assumed available for game design.",
+          "status": "accepted_game_assumption",
+          "source": "User authorized common-sense inference, 2026-10-07"
+        }
+      },
+      "game": {
+        "basePriceCoins": 330,
+        "platform": "skylake_1151",
+        "formFactor": "mATX",
+        "ramType": "DDR4",
+        "maxDataRateMtps": 2133,
+        "ramSlots": 2,
+        "maxRamGB": 32,
+        "sataPorts": 4,
+        "designLoadW": 20,
+        "supportedCpuIds": [
+          "cpu_6100",
+          "cpu_6500",
+          "cpu_6700"
+        ],
+        "displayOutput": true,
+        "cpuPowerPins": 4,
+        "cpuFanHeaders": 1,
+        "caseFanControlInputs": 1,
+        "includedSataDataCables": 2,
+        "biosReady": true
+      },
+      "legacyDisplayNames": [
+        "华烁 ASUX · H110M-K"
+      ],
+      "seriesId": "asux_base"
+    },
+    {
+      "id": "mb_b150",
+      "category": "motherboard",
+      "brandId": "asux",
+      "model": "B150-P",
+      "displayName": "华烁 ASUX · 拓域 B150-P",
+      "reference": {
+        "model": "ASUS B150-PLUS",
+        "sources": [
+          "https://dlcdnets.asus.com/pub/ASUS/mb/LGA1151/B150-PLUS/C10961_B150-PLUS_Guide_WEB.pdf"
+        ],
+        "status": "verified_fields",
+        "specs": {
+          "formFactor": "ATX",
+          "ramType": "DDR4",
+          "ramSlots": 4,
+          "maxRamGB": 64,
+          "sataPorts": 6,
+          "dimensionsMm": {
+            "height": 305,
+            "width": 218
+          },
+          "cpuPowerPins": 8
+        },
+        "checkedDate": "2026-10-07"
+      },
+      "availability": {
+        "gameDate": "2016-01-01",
+        "dateBasis": "demo_opening_assumption",
+        "referenceVariantFirstSaleDate": null,
+        "variantSupplyInference": {
+          "gameDate": "2016-01-01",
+          "basis": "Series is known before the Demo or platform launch; selected physical revision is assumed available for game design.",
+          "status": "accepted_game_assumption",
+          "source": "User authorized common-sense inference, 2026-10-07"
+        }
+      },
+      "game": {
+        "basePriceCoins": 520,
+        "platform": "skylake_1151",
+        "formFactor": "ATX",
+        "ramType": "DDR4",
+        "maxDataRateMtps": 2133,
+        "ramSlots": 4,
+        "maxRamGB": 64,
+        "sataPorts": 6,
+        "designLoadW": 25,
+        "supportedCpuIds": [
+          "cpu_6100",
+          "cpu_6500",
+          "cpu_6700"
+        ],
+        "displayOutput": true,
+        "cpuPowerPins": 8,
+        "cpuFanHeaders": 1,
+        "caseFanControlInputs": 1,
+        "includedSataDataCables": 2,
+        "biosReady": true
+      },
+      "legacyDisplayNames": [
+        "华烁 ASUX · B150-PLUS"
+      ],
+      "seriesId": "asux_expand"
+    },
+    {
+      "id": "mb_am3",
+      "category": "motherboard",
+      "brandId": "asux",
+      "model": "M5A97-R2",
+      "displayName": "华烁 ASUX · 磐基 M5A97-R2",
+      "reference": {
+        "model": "ASUS M5A97 R2.0",
+        "sources": [
+          "https://dlcdnets.asus.com/pub/ASUS/mb/SocketAM3%2B/M5A97_R2.0/E7438_M5A97_R20_Manual_web_hi-res.pdf"
+        ],
+        "status": "verified_fields",
+        "specs": {
+          "formFactor": "ATX",
+          "ramType": "DDR3",
+          "ramSlots": 4,
+          "maxRamGB": 32,
+          "sataPorts": 6,
+          "dimensionsMm": {
+            "height": 305,
+            "width": 229
+          },
+          "cpuPowerPins": 8
+        },
+        "checkedDate": "2026-10-07"
+      },
+      "availability": {
+        "gameDate": "2016-01-01",
+        "dateBasis": "demo_opening_assumption",
+        "referenceVariantFirstSaleDate": null,
+        "variantSupplyInference": {
+          "gameDate": "2016-01-01",
+          "basis": "Series is known before the Demo or platform launch; selected physical revision is assumed available for game design.",
+          "status": "accepted_game_assumption",
+          "source": "User authorized common-sense inference, 2026-10-07"
+        }
+      },
+      "game": {
+        "basePriceCoins": 550,
+        "platform": "fx_am3plus",
+        "formFactor": "ATX",
+        "ramType": "DDR3",
+        "maxDataRateMtps": 1600,
+        "ramSlots": 4,
+        "maxRamGB": 32,
+        "sataPorts": 6,
+        "designLoadW": 35,
+        "supportedCpuIds": [
+          "cpu_fx8350"
+        ],
+        "displayOutput": false,
+        "cpuPowerPins": 8,
+        "cpuFanHeaders": 1,
+        "caseFanControlInputs": 1,
+        "includedSataDataCables": 2,
+        "biosReady": true
+      },
+      "legacyDisplayNames": [
+        "华烁 ASUX · M5A97 R2.0"
+      ],
+      "seriesId": "asux_base"
+    },
+    {
+      "id": "gpu_750ti",
+      "category": "gpu",
+      "brandId": "misi",
+      "model": "GTX 750 Ti 2GB",
+      "displayName": "微狮 MISI · NVDIA GTX 750 Ti 2GB · 狮风 标准版",
+      "reference": {
+        "model": "MSI N750 Ti-2GD5/OCV1",
+        "sources": [
+          "https://www.msi.com/Graphics-Card/N750-Ti-2GD5OCV1/Specification"
+        ],
+        "status": "verified_specs_with_inferred_power",
+        "specs": {
+          "vramGB": 2,
+          "memoryType": "GDDR5",
+          "listedBoardPowerW": 60,
+          "powerConnectorsPins": null,
+          "dimensionsMm": {
+            "length": 165,
+            "height": 111,
+            "thickness": 33
+          }
+        },
+        "checkedDate": "2026-10-07",
+        "graphicsPlatformRelease": {
+          "date": "2014-02",
+          "precision": "month",
+          "source": "https://nvidianews.nvidia.com/news/nvidia-leads-performance-per-watt-revolution-with-maxwell-graphics-architecture"
+        },
+        "powerInference": {
+          "pins": [],
+          "status": "game_assumption",
+          "basis": "Low-power 750 Ti board selected as a slot-powered game variant; absence of the manufacturer field is not evidence of historical connector absence."
+        }
+      },
+      "availability": {
+        "gameDate": "2016-01-01",
+        "dateBasis": "demo_opening_assumption",
+        "referenceVariantFirstSaleDate": null,
+        "variantSupplyInference": {
+          "gameDate": "2016-01-01",
+          "basis": "Series is known before the Demo or platform launch; selected physical revision is assumed available for game design.",
+          "status": "accepted_game_assumption",
+          "source": "User authorized common-sense inference, 2026-10-07"
+        }
+      },
+      "game": {
+        "basePriceCoins": 600,
+        "chipBrandId": "nvdia",
+        "boardVariant": "标准版",
+        "vramGB": 2,
+        "graphicsScore": 25,
+        "creationScore": 20,
+        "designLoadW": 55,
+        "heatUnits": 55,
+        "noiseBurden": 12,
+        "requiredGpuPowerPins": [],
+        "powerRuleBasis": "authorized_common_sense_inference",
+        "dimensionsMm": {
+          "length": 165,
+          "height": 111,
+          "thickness": 33
+        },
+        "gpuSlots": 2
+      },
+      "legacyDisplayNames": [
+        "微狮 MISI · GTX 750 Ti 2GB"
+      ],
+      "seriesId": "misi_wind"
+    },
+    {
+      "id": "gpu_960",
+      "category": "gpu",
+      "brandId": "misi",
+      "model": "GTX 960 2GB",
+      "displayName": "微狮 MISI · NVDIA GTX 960 2GB · 狮风 标准版",
+      "reference": {
+        "model": "MSI GTX 960 2GD5",
+        "sources": [
+          "https://www.msi.com/Graphics-Card/GTX-960-2GD5/Specification"
+        ],
+        "status": "verified_fields",
+        "specs": {
+          "vramGB": 2,
+          "memoryType": "GDDR5",
+          "listedBoardPowerW": 120,
+          "powerConnectorsPins": [
+            6
+          ],
+          "dimensionsMm": {
+            "length": 242,
+            "height": 111,
+            "thickness": 35
+          }
+        },
+        "checkedDate": "2026-10-07",
+        "graphicsPlatformRelease": {
+          "date": "2015-01",
+          "precision": "month",
+          "source": "https://nvidianews.nvidia.com/news/nvidia-and-partners-form-industry-s-broadest-parallel-computing-development-ecosystem?page=477"
+        }
+      },
+      "availability": {
+        "gameDate": "2016-01-01",
+        "dateBasis": "demo_opening_assumption",
+        "referenceVariantFirstSaleDate": null,
+        "variantSupplyInference": {
+          "gameDate": "2016-01-01",
+          "basis": "Series is known before the Demo or platform launch; selected physical revision is assumed available for game design.",
+          "status": "accepted_game_assumption",
+          "source": "User authorized common-sense inference, 2026-10-07"
+        }
+      },
+      "game": {
+        "basePriceCoins": 1000,
+        "chipBrandId": "nvdia",
+        "boardVariant": "标准版",
+        "vramGB": 2,
+        "graphicsScore": 42,
+        "creationScore": 38,
+        "designLoadW": 110,
+        "heatUnits": 110,
+        "noiseBurden": 18,
+        "requiredGpuPowerPins": [
+          6
+        ],
+        "powerRuleBasis": "reference_spec",
+        "dimensionsMm": {
+          "length": 242,
+          "height": 111,
+          "thickness": 35
+        },
+        "gpuSlots": 2
+      },
+      "legacyDisplayNames": [
+        "微狮 MISI · GTX 960 2GB"
+      ],
+      "seriesId": "misi_wind"
+    },
+    {
+      "id": "gpu_970",
+      "category": "gpu",
+      "brandId": "misi",
+      "model": "GTX 970 4GB",
+      "displayName": "微狮 MISI · NVDIA GTX 970 4GB · 狮影 双风扇版",
+      "reference": {
+        "model": "MSI GTX 970 GAMING 4G",
+        "sources": [
+          "https://www.msi.com/Graphics-Card/GTX-970-GAMING-4G/Specification"
+        ],
+        "status": "verified_fields",
+        "specs": {
+          "vramGB": 4,
+          "memoryType": "GDDR5",
+          "listedBoardPowerW": 145,
+          "powerConnectorsPins": [
+            6,
+            8
+          ],
+          "dimensionsMm": {
+            "length": 277,
+            "height": 140,
+            "thickness": 35
+          }
+        },
+        "checkedDate": "2026-10-07",
+        "graphicsPlatformRelease": {
+          "date": "2014-09",
+          "precision": "month",
+          "source": "https://nvidianews.nvidia.com/news/nvidia-unveils-full-power-of-maxwell-gpu-architecture-with-breakthroughs-in-performance-graphics-efficiency-6622538"
+        }
+      },
+      "availability": {
+        "gameDate": "2016-01-01",
+        "dateBasis": "demo_opening_assumption",
+        "referenceVariantFirstSaleDate": null,
+        "variantSupplyInference": {
+          "gameDate": "2016-01-01",
+          "basis": "Series is known before the Demo or platform launch; selected physical revision is assumed available for game design.",
+          "status": "accepted_game_assumption",
+          "source": "User authorized common-sense inference, 2026-10-07"
+        }
+      },
+      "game": {
+        "basePriceCoins": 1800,
+        "chipBrandId": "nvdia",
+        "boardVariant": "双风扇版",
+        "vramGB": 4,
+        "graphicsScore": 62,
+        "creationScore": 58,
+        "designLoadW": 140,
+        "heatUnits": 140,
+        "noiseBurden": 22,
+        "requiredGpuPowerPins": [
+          6,
+          8
+        ],
+        "powerRuleBasis": "reference_spec",
+        "dimensionsMm": {
+          "length": 277,
+          "height": 140,
+          "thickness": 35
+        },
+        "gpuSlots": 2
+      },
+      "legacyDisplayNames": [
+        "微狮 MISI · GTX 970 4GB"
+      ],
+      "seriesId": "misi_shadow"
+    },
+    {
+      "id": "gpu_r9380",
+      "category": "gpu",
+      "brandId": "misi",
+      "model": "R9 380 4GB",
+      "displayName": "微狮 MISI · AMDEX R9 380 4GB · 狮影 双风扇版",
+      "reference": {
+        "model": "MSI R9 380 GAMING 4G",
+        "sources": [
+          "https://www.msi.com/Graphics-Card/R9-380-GAMING-4G/Specification"
+        ],
+        "status": "verified_fields",
+        "specs": {
+          "vramGB": 4,
+          "memoryType": "GDDR5",
+          "listedBoardPowerW": 190,
+          "powerConnectorsPins": [
+            6,
+            6
+          ],
+          "dimensionsMm": {
+            "length": 268,
+            "height": 138,
+            "thickness": 40
+          }
+        },
+        "checkedDate": "2026-10-07",
+        "graphicsPlatformRelease": {
+          "date": "2015-06",
+          "precision": "month",
+          "source": "https://ir.amd.com/news-events/press-releases/detail/619/amd-ushers-in-a-new-era-of-pc-gaming-with-radeontm-r9-and-r7-300-series-graphics-line-up-including-worlds-first-graphics-family-with-revolutionary-hbm-technology"
+        }
+      },
+      "availability": {
+        "gameDate": "2016-01-01",
+        "dateBasis": "demo_opening_assumption",
+        "referenceVariantFirstSaleDate": null,
+        "variantSupplyInference": {
+          "gameDate": "2016-01-01",
+          "basis": "Series is known before the Demo or platform launch; selected physical revision is assumed available for game design.",
+          "status": "accepted_game_assumption",
+          "source": "User authorized common-sense inference, 2026-10-07"
+        }
+      },
+      "game": {
+        "basePriceCoins": 1050,
+        "chipBrandId": "amdex",
+        "boardVariant": "双风扇版",
+        "vramGB": 4,
+        "graphicsScore": 43,
+        "creationScore": 44,
+        "designLoadW": 180,
+        "heatUnits": 180,
+        "noiseBurden": 26,
+        "requiredGpuPowerPins": [
+          6,
+          6
+        ],
+        "powerRuleBasis": "reference_spec",
+        "dimensionsMm": {
+          "length": 268,
+          "height": 138,
+          "thickness": 40
+        },
+        "gpuSlots": 2
+      },
+      "legacyDisplayNames": [
+        "微狮 MISI · R9 380 4GB"
+      ],
+      "seriesId": "misi_shadow"
+    },
+    {
+      "id": "gpu_1080",
+      "category": "gpu",
+      "brandId": "misi",
+      "model": "GTX 1080 8GB",
+      "displayName": "微狮 MISI · NVDIA GTX 1080 8GB · 源铸 首发参考版",
+      "reference": {
+        "model": "MSI GTX 1080 Founders Edition",
+        "sources": [
+          "https://www.msi.com/Graphics-Card/GeForce-GTX-1080-Founders-Edition/Specification"
+        ],
+        "status": "verified_fields",
+        "specs": {
+          "vramGB": 8,
+          "memoryType": "GDDR5X",
+          "listedBoardPowerW": 180,
+          "powerConnectorsPins": [
+            8
+          ],
+          "dimensionsMm": {
+            "length": 269,
+            "height": 111,
+            "thickness": 40
+          }
+        },
+        "checkedDate": "2026-10-07",
+        "graphicsPlatformRelease": {
+          "date": "2016-05-27",
+          "precision": "day",
+          "source": "https://nvidianews.nvidia.com/news/a-quantum-leap-in-gaming%3A-nvidia-introduces-geforce-gtx-1080"
+        }
+      },
+      "availability": {
+        "gameDate": "2016-05-27",
+        "dateBasis": "graphics_platform_release",
+        "referenceVariantFirstSaleDate": null,
+        "variantSupplyInference": {
+          "gameDate": "2016-05-27",
+          "basis": "Series is known before the Demo or platform launch; selected physical revision is assumed available for game design.",
+          "status": "accepted_game_assumption",
+          "source": "User authorized common-sense inference, 2026-10-07"
+        }
+      },
+      "game": {
+        "basePriceCoins": 3800,
+        "chipBrandId": "nvdia",
+        "boardVariant": "首发参考版",
+        "vramGB": 8,
+        "graphicsScore": 96,
+        "creationScore": 92,
+        "designLoadW": 175,
+        "heatUnits": 175,
+        "noiseBurden": 25,
+        "requiredGpuPowerPins": [
+          8
+        ],
+        "powerRuleBasis": "reference_spec",
+        "dimensionsMm": {
+          "length": 269,
+          "height": 111,
+          "thickness": 40
+        },
+        "gpuSlots": 2
+      },
+      "legacyDisplayNames": [
+        "微狮 MISI · GTX 1080 8GB"
+      ],
+      "seriesId": "misi_origin"
+    },
+    {
+      "id": "gpu_1070",
+      "category": "gpu",
+      "brandId": "misi",
+      "model": "GTX 1070 8GB",
+      "displayName": "微狮 MISI · NVDIA GTX 1070 8GB · 源铸 首发参考版",
+      "reference": {
+        "model": "MSI GTX 1070 Founders Edition",
+        "sources": [
+          "https://www.msi.com/Graphics-Card/GeForce-GTX-1070-Founders-Edition/Specification"
+        ],
+        "status": "verified_fields",
+        "specs": {
+          "vramGB": 8,
+          "memoryType": "GDDR5",
+          "listedBoardPowerW": 150,
+          "powerConnectorsPins": [
+            8
+          ],
+          "dimensionsMm": {
+            "length": 268,
+            "height": 111,
+            "thickness": 38
+          }
+        },
+        "checkedDate": "2026-10-07",
+        "graphicsPlatformRelease": {
+          "date": "2016-06-10",
+          "precision": "day",
+          "source": "https://nvidianews.nvidia.com/news/a-quantum-leap-in-gaming%3A-nvidia-introduces-geforce-gtx-1080"
+        }
+      },
+      "availability": {
+        "gameDate": "2016-06-10",
+        "dateBasis": "graphics_platform_release",
+        "referenceVariantFirstSaleDate": null,
+        "variantSupplyInference": {
+          "gameDate": "2016-06-10",
+          "basis": "Series is known before the Demo or platform launch; selected physical revision is assumed available for game design.",
+          "status": "accepted_game_assumption",
+          "source": "User authorized common-sense inference, 2026-10-07"
+        }
+      },
+      "game": {
+        "basePriceCoins": 2600,
+        "chipBrandId": "nvdia",
+        "boardVariant": "首发参考版",
+        "vramGB": 8,
+        "graphicsScore": 83,
+        "creationScore": 78,
+        "designLoadW": 145,
+        "heatUnits": 145,
+        "noiseBurden": 23,
+        "requiredGpuPowerPins": [
+          8
+        ],
+        "powerRuleBasis": "reference_spec",
+        "dimensionsMm": {
+          "length": 268,
+          "height": 111,
+          "thickness": 38
+        },
+        "gpuSlots": 2
+      },
+      "legacyDisplayNames": [
+        "微狮 MISI · GTX 1070 8GB"
+      ],
+      "seriesId": "misi_origin"
+    },
+    {
+      "id": "gpu_rx480_4",
+      "category": "gpu",
+      "brandId": "misi",
+      "model": "RX 480 4GB",
+      "displayName": "微狮 MISI · AMDEX RX 480 4GB · 狮风 标准版",
+      "reference": {
+        "model": "MSI RX 480 4G",
+        "sources": [
+          "https://www.msi.com/Graphics-Card/Radeon-RX-480-4G/Specification"
+        ],
+        "status": "verified_fields",
+        "specs": {
+          "vramGB": 4,
+          "memoryType": "GDDR5",
+          "listedBoardPowerW": 150,
+          "powerConnectorsPins": [
+            6
+          ],
+          "dimensionsMm": {
+            "length": 242,
+            "height": 112,
+            "thickness": 37
+          }
+        },
+        "checkedDate": "2026-10-07",
+        "graphicsPlatformRelease": {
+          "date": "2016-06-29",
+          "precision": "day",
+          "source": "https://ir.amd.com/news-events/press-releases/detail/695/amd-launches-the-radeon-rebellion-with-the-radeontm-rx-480-graphics-card-available-now"
+        }
+      },
+      "availability": {
+        "gameDate": "2016-06-29",
+        "dateBasis": "graphics_platform_release",
+        "referenceVariantFirstSaleDate": null,
+        "variantSupplyInference": {
+          "gameDate": "2016-06-29",
+          "basis": "Series is known before the Demo or platform launch; selected physical revision is assumed available for game design.",
+          "status": "accepted_game_assumption",
+          "source": "User authorized common-sense inference, 2026-10-07"
+        }
+      },
+      "game": {
+        "basePriceCoins": 1300,
+        "chipBrandId": "amdex",
+        "boardVariant": "标准版",
+        "vramGB": 4,
+        "graphicsScore": 62,
+        "creationScore": 60,
+        "designLoadW": 145,
+        "heatUnits": 145,
+        "noiseBurden": 21,
+        "requiredGpuPowerPins": [
+          6
+        ],
+        "powerRuleBasis": "reference_spec",
+        "dimensionsMm": {
+          "length": 242,
+          "height": 112,
+          "thickness": 37
+        },
+        "gpuSlots": 2
+      },
+      "legacyDisplayNames": [
+        "微狮 MISI · RX 480 4GB"
+      ],
+      "seriesId": "misi_wind"
+    },
+    {
+      "id": "gpu_rx480_8",
+      "category": "gpu",
+      "brandId": "misi",
+      "model": "RX 480 8GB",
+      "displayName": "微狮 MISI · AMDEX RX 480 8GB · 狮风 标准版",
+      "reference": {
+        "model": "MSI RX 480 8G",
+        "sources": [
+          "https://www.msi.com/Graphics-Card/AMD-Radeon-RX-480-8G/Specification"
+        ],
+        "status": "verified_fields",
+        "specs": {
+          "vramGB": 8,
+          "memoryType": "GDDR5",
+          "listedBoardPowerW": 150,
+          "powerConnectorsPins": [
+            6
+          ],
+          "dimensionsMm": {
+            "length": 240,
+            "height": 112,
+            "thickness": 37
+          }
+        },
+        "checkedDate": "2026-10-07",
+        "graphicsPlatformRelease": {
+          "date": "2016-06-29",
+          "precision": "day",
+          "source": "https://ir.amd.com/news-events/press-releases/detail/695/amd-launches-the-radeon-rebellion-with-the-radeontm-rx-480-graphics-card-available-now"
+        }
+      },
+      "availability": {
+        "gameDate": "2016-06-29",
+        "dateBasis": "graphics_platform_release",
+        "referenceVariantFirstSaleDate": null,
+        "variantSupplyInference": {
+          "gameDate": "2016-06-29",
+          "basis": "Series is known before the Demo or platform launch; selected physical revision is assumed available for game design.",
+          "status": "accepted_game_assumption",
+          "source": "User authorized common-sense inference, 2026-10-07"
+        }
+      },
+      "game": {
+        "basePriceCoins": 1600,
+        "chipBrandId": "amdex",
+        "boardVariant": "标准版",
+        "vramGB": 8,
+        "graphicsScore": 62,
+        "creationScore": 60,
+        "designLoadW": 145,
+        "heatUnits": 145,
+        "noiseBurden": 21,
+        "requiredGpuPowerPins": [
+          6
+        ],
+        "powerRuleBasis": "reference_spec",
+        "dimensionsMm": {
+          "length": 240,
+          "height": 112,
+          "thickness": 37
+        },
+        "gpuSlots": 2
+      },
+      "legacyDisplayNames": [
+        "微狮 MISI · RX 480 8GB"
+      ],
+      "seriesId": "misi_wind"
+    },
+    {
+      "id": "ram_ddr3_4",
+      "category": "ram",
+      "brandId": "kingstone",
+      "model": "DDR3-1600 4GB",
+      "displayName": "金士盾 KINGSTONE · 守望 DDR3-1600 4GB",
+      "reference": {
+        "model": "KVR16N11S8/4",
+        "sources": [
+          "https://www.kingston.com/datasheets/KVR16N11S8_4.pdf"
+        ],
+        "status": "verified_fields",
+        "specs": {
+          "ramType": "DDR3",
+          "capacityGB": 4,
+          "dataRateMtps": 1600,
+          "casLatency": 11,
+          "voltage": 1.5,
+          "pins": 240
+        },
+        "checkedDate": "2026-10-07"
+      },
+      "availability": {
+        "gameDate": "2016-01-01",
+        "dateBasis": "demo_opening_assumption",
+        "referenceVariantFirstSaleDate": null,
+        "variantSupplyInference": {
+          "gameDate": "2016-01-01",
+          "basis": "Series is known before the Demo or platform launch; selected physical revision is assumed available for game design.",
+          "status": "accepted_game_assumption",
+          "source": "User authorized common-sense inference, 2026-10-07"
+        }
+      },
+      "game": {
+        "basePriceCoins": 90,
+        "ramType": "DDR3",
+        "capacityGB": 4,
+        "dataRateMtps": 1600,
+        "designLoadW": 4,
+        "modelHeightMm": 30,
+        "geometryBasis": "game_selected_profile"
+      },
+      "legacyDisplayNames": [
+        "金士盾 KINGSTONE · 普条D3-1600 4GB"
+      ],
+      "seriesId": "kingstone_watch"
+    },
+    {
+      "id": "ram_ddr3_8",
+      "category": "ram",
+      "brandId": "kingstone",
+      "model": "DDR3-1600 8GB",
+      "displayName": "金士盾 KINGSTONE · 守望 DDR3-1600 8GB",
+      "reference": {
+        "model": "KVR16N11/8",
+        "sources": [
+          "https://www.kingston.com/datasheets/KVR16N11_8.pdf"
+        ],
+        "status": "verified_fields",
+        "specs": {
+          "ramType": "DDR3",
+          "capacityGB": 8,
+          "dataRateMtps": 1600,
+          "casLatency": 11,
+          "voltage": 1.5,
+          "pins": 240
+        },
+        "checkedDate": "2026-10-07"
+      },
+      "availability": {
+        "gameDate": "2016-01-01",
+        "dateBasis": "demo_opening_assumption",
+        "referenceVariantFirstSaleDate": null,
+        "variantSupplyInference": {
+          "gameDate": "2016-01-01",
+          "basis": "Series is known before the Demo or platform launch; selected physical revision is assumed available for game design.",
+          "status": "accepted_game_assumption",
+          "source": "User authorized common-sense inference, 2026-10-07"
+        }
+      },
+      "game": {
+        "basePriceCoins": 160,
+        "ramType": "DDR3",
+        "capacityGB": 8,
+        "dataRateMtps": 1600,
+        "designLoadW": 4,
+        "modelHeightMm": 30,
+        "geometryBasis": "game_selected_profile"
+      },
+      "legacyDisplayNames": [
+        "金士盾 KINGSTONE · 普条D3-1600 8GB"
+      ],
+      "seriesId": "kingstone_watch"
+    },
+    {
+      "id": "ram_ddr4_4",
+      "category": "ram",
+      "brandId": "kingstone",
+      "model": "DDR4-2133 4GB",
+      "displayName": "金士盾 KINGSTONE · 守望 DDR4-2133 4GB",
+      "reference": {
+        "model": "KVR21N15S8/4",
+        "sources": [
+          "https://www.kingston.com/datasheets/KVR21N15S8_4.pdf"
+        ],
+        "status": "verified_fields",
+        "specs": {
+          "ramType": "DDR4",
+          "capacityGB": 4,
+          "dataRateMtps": 2133,
+          "casLatency": 15,
+          "voltage": 1.2,
+          "pins": 288
+        },
+        "checkedDate": "2026-10-07"
+      },
+      "availability": {
+        "gameDate": "2016-01-01",
+        "dateBasis": "demo_opening_assumption",
+        "referenceVariantFirstSaleDate": null,
+        "variantSupplyInference": {
+          "gameDate": "2016-01-01",
+          "basis": "Series is known before the Demo or platform launch; selected physical revision is assumed available for game design.",
+          "status": "accepted_game_assumption",
+          "source": "User authorized common-sense inference, 2026-10-07"
+        }
+      },
+      "game": {
+        "basePriceCoins": 110,
+        "ramType": "DDR4",
+        "capacityGB": 4,
+        "dataRateMtps": 2133,
+        "designLoadW": 4,
+        "modelHeightMm": 31.25,
+        "geometryBasis": "game_selected_profile"
+      },
+      "legacyDisplayNames": [
+        "金士盾 KINGSTONE · 普条D4-2133 4GB"
+      ],
+      "seriesId": "kingstone_watch"
+    },
+    {
+      "id": "ram_ddr4_8",
+      "category": "ram",
+      "brandId": "kingstone",
+      "model": "DDR4-2133 8GB",
+      "displayName": "金士盾 KINGSTONE · 守望 DDR4-2133 8GB",
+      "reference": {
+        "model": "KVR21N15D8/8",
+        "sources": [
+          "https://www.kingston.com/datasheets/KVR21N15D8_8.pdf"
+        ],
+        "status": "verified_fields",
+        "specs": {
+          "ramType": "DDR4",
+          "capacityGB": 8,
+          "dataRateMtps": 2133,
+          "casLatency": 15,
+          "voltage": 1.2,
+          "pins": 288
+        },
+        "checkedDate": "2026-10-07"
+      },
+      "availability": {
+        "gameDate": "2016-01-01",
+        "dateBasis": "demo_opening_assumption",
+        "referenceVariantFirstSaleDate": null,
+        "variantSupplyInference": {
+          "gameDate": "2016-01-01",
+          "basis": "Series is known before the Demo or platform launch; selected physical revision is assumed available for game design.",
+          "status": "accepted_game_assumption",
+          "source": "User authorized common-sense inference, 2026-10-07"
+        }
+      },
+      "game": {
+        "basePriceCoins": 220,
+        "ramType": "DDR4",
+        "capacityGB": 8,
+        "dataRateMtps": 2133,
+        "designLoadW": 4,
+        "modelHeightMm": 31.25,
+        "geometryBasis": "game_selected_profile"
+      },
+      "legacyDisplayNames": [
+        "金士盾 KINGSTONE · 普条D4-2133 8GB"
+      ],
+      "seriesId": "kingstone_watch"
+    },
+    {
+      "id": "ssd_120",
+      "category": "storage",
+      "brandId": "samsong",
+      "model": "850 EVA 120GB",
+      "displayName": "三颗星 SAMSONG · 迅影 850 EVA 120GB",
+      "reference": {
+        "model": "Samsung 850 EVO 2.5-inch SATA 120GB",
+        "sources": [
+          "https://download.semiconductor.samsung.com/resources/data-sheet/Samsung_SSD_850_EVO_Data_Sheet_Rev_3_1.pdf"
+        ],
+        "status": "verified_fields",
+        "specs": {
+          "capacityGB": 120,
+          "interface": "SATA",
+          "formFactor": "2.5-inch",
+          "dimensionsMm": {
+            "length": 100,
+            "width": 69.85,
+            "height": 6.8
+          }
+        },
+        "checkedDate": "2026-10-07"
+      },
+      "availability": {
+        "gameDate": "2016-01-01",
+        "dateBasis": "demo_opening_assumption",
+        "referenceVariantFirstSaleDate": null,
+        "variantSupplyInference": {
+          "gameDate": "2016-01-01",
+          "basis": "Series is known before the Demo or platform launch; selected physical revision is assumed available for game design.",
+          "status": "accepted_game_assumption",
+          "source": "User authorized common-sense inference, 2026-10-07"
+        }
+      },
+      "game": {
+        "basePriceCoins": 180,
+        "capacityGB": 120,
+        "interface": "SATA",
+        "bayType": "2.5-inch",
+        "designLoadW": 4,
+        "responseScore": 85,
+        "noiseBurden": 0
+      },
+      "legacyDisplayNames": [
+        "三颗星 SAMSONG · 850 EVO 120GB"
+      ],
+      "seriesId": "samsong_swift"
+    },
+    {
+      "id": "ssd_250",
+      "category": "storage",
+      "brandId": "samsong",
+      "model": "850 EVA 250GB",
+      "displayName": "三颗星 SAMSONG · 迅影 850 EVA 250GB",
+      "reference": {
+        "model": "Samsung 850 EVO 2.5-inch SATA 250GB",
+        "sources": [
+          "https://download.semiconductor.samsung.com/resources/data-sheet/Samsung_SSD_850_EVO_Data_Sheet_Rev_3_1.pdf"
+        ],
+        "status": "verified_fields",
+        "specs": {
+          "capacityGB": 250,
+          "interface": "SATA",
+          "formFactor": "2.5-inch",
+          "dimensionsMm": {
+            "length": 100,
+            "width": 69.85,
+            "height": 6.8
+          }
+        },
+        "checkedDate": "2026-10-07"
+      },
+      "availability": {
+        "gameDate": "2016-01-01",
+        "dateBasis": "demo_opening_assumption",
+        "referenceVariantFirstSaleDate": null,
+        "variantSupplyInference": {
+          "gameDate": "2016-01-01",
+          "basis": "Series is known before the Demo or platform launch; selected physical revision is assumed available for game design.",
+          "status": "accepted_game_assumption",
+          "source": "User authorized common-sense inference, 2026-10-07"
+        }
+      },
+      "game": {
+        "basePriceCoins": 300,
+        "capacityGB": 250,
+        "interface": "SATA",
+        "bayType": "2.5-inch",
+        "designLoadW": 4,
+        "responseScore": 90,
+        "noiseBurden": 0
+      },
+      "legacyDisplayNames": [
+        "三颗星 SAMSONG · 850 EVO 250GB"
+      ],
+      "seriesId": "samsong_swift"
+    },
+    {
+      "id": "ssd_500",
+      "category": "storage",
+      "brandId": "samsong",
+      "model": "850 EVA 500GB",
+      "displayName": "三颗星 SAMSONG · 迅影 850 EVA 500GB",
+      "reference": {
+        "model": "Samsung 850 EVO 2.5-inch SATA 500GB",
+        "sources": [
+          "https://download.semiconductor.samsung.com/resources/data-sheet/Samsung_SSD_850_EVO_Data_Sheet_Rev_3_1.pdf"
+        ],
+        "status": "verified_fields",
+        "specs": {
+          "capacityGB": 500,
+          "interface": "SATA",
+          "formFactor": "2.5-inch",
+          "dimensionsMm": {
+            "length": 100,
+            "width": 69.85,
+            "height": 6.8
+          }
+        },
+        "checkedDate": "2026-10-07"
+      },
+      "availability": {
+        "gameDate": "2016-01-01",
+        "dateBasis": "demo_opening_assumption",
+        "referenceVariantFirstSaleDate": null,
+        "variantSupplyInference": {
+          "gameDate": "2016-01-01",
+          "basis": "Series is known before the Demo or platform launch; selected physical revision is assumed available for game design.",
+          "status": "accepted_game_assumption",
+          "source": "User authorized common-sense inference, 2026-10-07"
+        }
+      },
+      "game": {
+        "basePriceCoins": 520,
+        "capacityGB": 500,
+        "interface": "SATA",
+        "bayType": "2.5-inch",
+        "designLoadW": 4,
+        "responseScore": 92,
+        "noiseBurden": 0
+      },
+      "legacyDisplayNames": [
+        "三颗星 SAMSONG · 850 EVO 500GB"
+      ],
+      "seriesId": "samsong_swift"
+    },
+    {
+      "id": "hdd_1000",
+      "category": "storage",
+      "brandId": "westbyte",
+      "model": "1TB",
+      "displayName": "西部字节 WESTBYTE · 蓝湾 1TB",
+      "reference": {
+        "model": "Western Digital WD10EZEX",
+        "sources": [
+          "https://documents.westerndigital.com/content/dam/doc-library/en_us/assets/public/western-digital/product/internal-drives/wd-blue-hdd/data-sheet-western-digital-wd-blue-pc-hdd.pdf"
+        ],
+        "status": "verified_fields",
+        "specs": {
+          "capacityGB": 1000,
+          "interface": "SATA",
+          "formFactor": "3.5-inch",
+          "rpm": 7200,
+          "cacheMB": 64,
+          "dimensionsMm": {
+            "length": 147,
+            "width": 101.6,
+            "height": 26.1
+          }
+        },
+        "checkedDate": "2026-10-07"
+      },
+      "availability": {
+        "gameDate": "2016-01-01",
+        "dateBasis": "demo_opening_assumption",
+        "referenceVariantFirstSaleDate": null,
+        "variantSupplyInference": {
+          "gameDate": "2016-01-01",
+          "basis": "Series is known before the Demo or platform launch; selected physical revision is assumed available for game design.",
+          "status": "accepted_game_assumption",
+          "source": "User authorized common-sense inference, 2026-10-07"
+        }
+      },
+      "game": {
+        "basePriceCoins": 260,
+        "capacityGB": 1000,
+        "interface": "SATA",
+        "bayType": "3.5-inch",
+        "designLoadW": 8,
+        "responseScore": 35,
+        "noiseBurden": 8
+      },
+      "legacyDisplayNames": [
+        "西部字节 WESTBYTE · 蓝盘 1TB"
+      ],
+      "seriesId": "westbyte_blue"
+    },
+    {
+      "id": "psu_350",
+      "category": "psu",
+      "brandId": "corsail",
+      "model": "350",
+      "displayName": "海盗旗 CORSAIL · 航海 350",
+      "reference": {
+        "model": null,
+        "sources": [],
+        "status": "original_game_design",
+        "specs": null
+      },
+      "availability": {
+        "gameDate": "2016-01-01",
+        "dateBasis": "demo_opening_assumption",
+        "referenceVariantFirstSaleDate": null,
+        "variantSupplyInference": {
+          "gameDate": "2016-01-01",
+          "basis": "Series is known before the Demo or platform launch; selected physical revision is assumed available for game design.",
+          "status": "accepted_game_assumption",
+          "source": "User authorized common-sense inference, 2026-10-07"
+        }
+      },
+      "game": {
+        "basePriceCoins": 150,
+        "ratedOutputW": 350,
+        "dimensionsMm": {
+          "width": 150,
+          "height": 86,
+          "depth": 140
+        },
+        "gpuConnectors": [
+          {
+            "role": "GPU_POWER",
+            "supportedPins": [
+              6,
+              8
+            ]
+          }
+        ],
+        "mainboardPowerConnectors": 1,
+        "cpuPowerConnectors": [
+          {
+            "role": "CPU_POWER",
+            "supportedPins": [
+              4,
+              8
+            ]
+          }
+        ],
+        "sataPowerConnectors": 4,
+        "modular": false,
+        "noiseBurden": 6
+      },
+      "legacyDisplayNames": [
+        "海盗旗 CORSAIL · 航海350"
+      ],
+      "seriesId": "corsail_voyage"
+    },
+    {
+      "id": "psu_450",
+      "category": "psu",
+      "brandId": "corsail",
+      "model": "450",
+      "displayName": "海盗旗 CORSAIL · 航海 450",
+      "reference": {
+        "model": null,
+        "sources": [],
+        "status": "original_game_design",
+        "specs": null
+      },
+      "availability": {
+        "gameDate": "2016-01-01",
+        "dateBasis": "demo_opening_assumption",
+        "referenceVariantFirstSaleDate": null,
+        "variantSupplyInference": {
+          "gameDate": "2016-01-01",
+          "basis": "Series is known before the Demo or platform launch; selected physical revision is assumed available for game design.",
+          "status": "accepted_game_assumption",
+          "source": "User authorized common-sense inference, 2026-10-07"
+        }
+      },
+      "game": {
+        "basePriceCoins": 240,
+        "ratedOutputW": 450,
+        "dimensionsMm": {
+          "width": 150,
+          "height": 86,
+          "depth": 140
+        },
+        "gpuConnectors": [
+          {
+            "role": "GPU_POWER",
+            "supportedPins": [
+              6,
+              8
+            ]
+          },
+          {
+            "role": "GPU_POWER",
+            "supportedPins": [
+              6,
+              8
+            ]
+          }
+        ],
+        "mainboardPowerConnectors": 1,
+        "cpuPowerConnectors": [
+          {
+            "role": "CPU_POWER",
+            "supportedPins": [
+              4,
+              8
+            ]
+          }
+        ],
+        "sataPowerConnectors": 4,
+        "modular": false,
+        "noiseBurden": 8
+      },
+      "legacyDisplayNames": [
+        "海盗旗 CORSAIL · 航海450"
+      ],
+      "seriesId": "corsail_voyage"
+    },
+    {
+      "id": "psu_650m",
+      "category": "psu",
+      "brandId": "corsail",
+      "model": "650M",
+      "displayName": "海盗旗 CORSAIL · 航海 650M",
+      "reference": {
+        "model": null,
+        "sources": [],
+        "status": "original_game_design",
+        "specs": null
+      },
+      "availability": {
+        "gameDate": "2016-01-01",
+        "dateBasis": "demo_opening_assumption",
+        "referenceVariantFirstSaleDate": null,
+        "variantSupplyInference": {
+          "gameDate": "2016-01-01",
+          "basis": "Series is known before the Demo or platform launch; selected physical revision is assumed available for game design.",
+          "status": "accepted_game_assumption",
+          "source": "User authorized common-sense inference, 2026-10-07"
+        }
+      },
+      "game": {
+        "basePriceCoins": 380,
+        "ratedOutputW": 650,
+        "dimensionsMm": {
+          "width": 150,
+          "height": 86,
+          "depth": 160
+        },
+        "gpuConnectors": [
+          {
+            "role": "GPU_POWER",
+            "supportedPins": [
+              6,
+              8
+            ]
+          },
+          {
+            "role": "GPU_POWER",
+            "supportedPins": [
+              6,
+              8
+            ]
+          },
+          {
+            "role": "GPU_POWER",
+            "supportedPins": [
+              6,
+              8
+            ]
+          },
+          {
+            "role": "GPU_POWER",
+            "supportedPins": [
+              6,
+              8
+            ]
+          }
+        ],
+        "mainboardPowerConnectors": 1,
+        "cpuPowerConnectors": [
+          {
+            "role": "CPU_POWER",
+            "supportedPins": [
+              4,
+              8
+            ]
+          }
+        ],
+        "sataPowerConnectors": 6,
+        "modular": true,
+        "noiseBurden": 5
+      },
+      "legacyDisplayNames": [
+        "海盗旗 CORSAIL · 航海650M"
+      ],
+      "seriesId": "corsail_voyage"
+    },
+    {
+      "id": "cooler_low",
+      "category": "cooler",
+      "brandId": "coolmaster",
+      "model": "LP60",
+      "displayName": "酷冷宗师 COOLMASTER · 风息 LP60",
+      "reference": {
+        "model": null,
+        "sources": [],
+        "status": "original_game_design",
+        "specs": null
+      },
+      "availability": {
+        "gameDate": "2016-01-01",
+        "dateBasis": "demo_opening_assumption",
+        "referenceVariantFirstSaleDate": null,
+        "variantSupplyInference": {
+          "gameDate": "2016-01-01",
+          "basis": "Series is known before the Demo or platform launch; selected physical revision is assumed available for game design.",
+          "status": "accepted_game_assumption",
+          "source": "User authorized common-sense inference, 2026-10-07"
+        }
+      },
+      "game": {
+        "basePriceCoins": 60,
+        "dimensionsMm": {
+          "length": 100,
+          "width": 100,
+          "height": 60
+        },
+        "supportedPlatforms": [
+          "skylake_1151",
+          "fx_am3plus"
+        ],
+        "coolingUnits": 90,
+        "noiseBurden": 28,
+        "includesMountingKits": true
+      },
+      "legacyDisplayNames": [
+        "酷冷宗师 COOLMASTER · 低趴60"
+      ],
+      "seriesId": "coolmaster_breeze"
+    },
+    {
+      "id": "cooler_tower",
+      "category": "cooler",
+      "brandId": "coolmaster",
+      "model": "T155",
+      "displayName": "酷冷宗师 COOLMASTER · 镇风 T155",
+      "reference": {
+        "model": null,
+        "sources": [],
+        "status": "original_game_design",
+        "specs": null
+      },
+      "availability": {
+        "gameDate": "2016-01-01",
+        "dateBasis": "demo_opening_assumption",
+        "referenceVariantFirstSaleDate": null,
+        "variantSupplyInference": {
+          "gameDate": "2016-01-01",
+          "basis": "Series is known before the Demo or platform launch; selected physical revision is assumed available for game design.",
+          "status": "accepted_game_assumption",
+          "source": "User authorized common-sense inference, 2026-10-07"
+        }
+      },
+      "game": {
+        "basePriceCoins": 180,
+        "dimensionsMm": {
+          "length": 120,
+          "width": 80,
+          "height": 155
+        },
+        "supportedPlatforms": [
+          "skylake_1151",
+          "fx_am3plus"
+        ],
+        "coolingUnits": 160,
+        "noiseBurden": 18,
+        "includesMountingKits": true
+      },
+      "legacyDisplayNames": [
+        "酷冷宗师 COOLMASTER · 塔式155"
+      ],
+      "seriesId": "coolmaster_tower"
+    },
+    {
+      "id": "cooler_quiet",
+      "category": "cooler",
+      "brandId": "noctura",
+      "model": "Q158",
+      "displayName": "夜枭 NOCTURA · 暮羽 Q158",
+      "reference": {
+        "model": null,
+        "sources": [],
+        "status": "original_game_design",
+        "specs": null
+      },
+      "availability": {
+        "gameDate": "2016-01-01",
+        "dateBasis": "demo_opening_assumption",
+        "referenceVariantFirstSaleDate": null,
+        "variantSupplyInference": {
+          "gameDate": "2016-01-01",
+          "basis": "Series is known before the Demo or platform launch; selected physical revision is assumed available for game design.",
+          "status": "accepted_game_assumption",
+          "source": "User authorized common-sense inference, 2026-10-07"
+        }
+      },
+      "game": {
+        "basePriceCoins": 340,
+        "dimensionsMm": {
+          "length": 125,
+          "width": 75,
+          "height": 158
+        },
+        "supportedPlatforms": [
+          "skylake_1151",
+          "fx_am3plus"
+        ],
+        "coolingUnits": 170,
+        "noiseBurden": 8,
+        "includesMountingKits": true
+      },
+      "legacyDisplayNames": [
+        "夜枭 NOCTURA · 静音158"
+      ],
+      "seriesId": "noctura_dusk"
+    },
+    {
+      "id": "case_small",
+      "category": "case",
+      "brandId": "fractik",
+      "model": "M",
+      "displayName": "分形工坊 FRACTIK · 小匣 M",
+      "reference": {
+        "model": null,
+        "sources": [],
+        "status": "original_game_design",
+        "specs": null
+      },
+      "availability": {
+        "gameDate": "2016-01-01",
+        "dateBasis": "demo_opening_assumption",
+        "referenceVariantFirstSaleDate": null,
+        "variantSupplyInference": {
+          "gameDate": "2016-01-01",
+          "basis": "Series is known before the Demo or platform launch; selected physical revision is assumed available for game design.",
+          "status": "accepted_game_assumption",
+          "source": "User authorized common-sense inference, 2026-10-07"
+        }
+      },
+      "game": {
+        "basePriceCoins": 160,
+        "dimensionsMm": {
+          "width": 180,
+          "height": 320,
+          "depth": 330
+        },
+        "supportedForms": [
+          "mATX"
+        ],
+        "gpuMaxLengthMm": 250,
+        "gpuMaxLengthWithoutCageMm": 250,
+        "coolerMaxHeightMm": 150,
+        "psuMaxDepthMm": 140,
+        "storageBays": {
+          "2.5-inch": 2,
+          "3.5-inch": 1
+        },
+        "removableHddCage": false,
+        "defaultFans": 2,
+        "maxFans": 3,
+        "includedFanHub": {
+          "outputs": 3,
+          "inputPower": "SATA_POWER",
+          "designLoadW": 2,
+          "controlHeader": "CASE_FAN"
+        },
+        "caseCoolingUnits": 220,
+        "cageRemovalCoolingBonusUnits": 0,
+        "noiseMultiplier": 1.05
+      },
+      "legacyDisplayNames": [
+        "分形工坊 FRACTIK · 小匣M"
+      ],
+      "seriesId": "fractik_mini"
+    },
+    {
+      "id": "case_standard",
+      "category": "case",
+      "brandId": "fractik",
+      "model": "A",
+      "displayName": "分形工坊 FRACTIK · 构序 A",
+      "reference": {
+        "model": null,
+        "sources": [],
+        "status": "original_game_design",
+        "specs": null
+      },
+      "availability": {
+        "gameDate": "2016-01-01",
+        "dateBasis": "demo_opening_assumption",
+        "referenceVariantFirstSaleDate": null,
+        "variantSupplyInference": {
+          "gameDate": "2016-01-01",
+          "basis": "Series is known before the Demo or platform launch; selected physical revision is assumed available for game design.",
+          "status": "accepted_game_assumption",
+          "source": "User authorized common-sense inference, 2026-10-07"
+        }
+      },
+      "game": {
+        "basePriceCoins": 260,
+        "dimensionsMm": {
+          "width": 210,
+          "height": 430,
+          "depth": 430
+        },
+        "supportedForms": [
+          "ATX",
+          "mATX"
+        ],
+        "gpuMaxLengthMm": 320,
+        "gpuMaxLengthWithoutCageMm": 320,
+        "coolerMaxHeightMm": 165,
+        "psuMaxDepthMm": 180,
+        "storageBays": {
+          "2.5-inch": 2,
+          "3.5-inch": 2
+        },
+        "removableHddCage": false,
+        "defaultFans": 2,
+        "maxFans": 5,
+        "includedFanHub": {
+          "outputs": 5,
+          "inputPower": "SATA_POWER",
+          "designLoadW": 2,
+          "controlHeader": "CASE_FAN"
+        },
+        "caseCoolingUnits": 350,
+        "cageRemovalCoolingBonusUnits": 0,
+        "noiseMultiplier": 1
+      },
+      "legacyDisplayNames": [
+        "分形工坊 FRACTIK · 工坊A"
+      ],
+      "seriesId": "fractik_grid"
+    },
+    {
+      "id": "case_quiet",
+      "category": "case",
+      "brandId": "fractik",
+      "model": "S",
+      "displayName": "分形工坊 FRACTIK · 静室 S",
+      "reference": {
+        "model": null,
+        "sources": [],
+        "status": "original_game_design",
+        "specs": null
+      },
+      "availability": {
+        "gameDate": "2016-01-01",
+        "dateBasis": "demo_opening_assumption",
+        "referenceVariantFirstSaleDate": null,
+        "variantSupplyInference": {
+          "gameDate": "2016-01-01",
+          "basis": "Series is known before the Demo or platform launch; selected physical revision is assumed available for game design.",
+          "status": "accepted_game_assumption",
+          "source": "User authorized common-sense inference, 2026-10-07"
+        }
+      },
+      "game": {
+        "basePriceCoins": 480,
+        "dimensionsMm": {
+          "width": 230,
+          "height": 460,
+          "depth": 450
+        },
+        "supportedForms": [
+          "ATX",
+          "mATX"
+        ],
+        "gpuMaxLengthMm": 300,
+        "gpuMaxLengthWithoutCageMm": 330,
+        "coolerMaxHeightMm": 170,
+        "psuMaxDepthMm": 180,
+        "storageBays": {
+          "2.5-inch": 2,
+          "3.5-inch": 2
+        },
+        "removableHddCage": true,
+        "defaultFans": 2,
+        "maxFans": 5,
+        "includedFanHub": {
+          "outputs": 5,
+          "inputPower": "SATA_POWER",
+          "designLoadW": 2,
+          "controlHeader": "CASE_FAN"
+        },
+        "caseCoolingUnits": 280,
+        "cageRemovalCoolingBonusUnits": 30,
+        "noiseMultiplier": 0.65
+      },
+      "legacyDisplayNames": [
+        "分形工坊 FRACTIK · 静室S"
+      ],
+      "seriesId": "fractik_quiet"
+    }
+  ],
+  "namingPolicy": "formal_brand_series_model_specification",
+  "inferencePolicy": "Authorized game assumptions supply missing connector and revision-availability rules; historical evidence fields remain factual or null."
+}

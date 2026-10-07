@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "status": "unconfirmed_candidate",
+  "provenance": {
+    "existing": "Parts and direct costs are read from balance.json recipes. No manufacturer fields are changed.",
+    "new": "All resources, hours, salaries, demand, prices, investments and scenarios below are original game design candidates, awaiting user preference and playtesting.",
+    "limits": "A deterministic scenario calculator, not a playable six-month balance validation. Demand, delivery timing and quality feedback are assumptions."
+  },
+  "opening": {
+    "easy": { "cash": 24000, "ownerHours": 96, "employees": 1, "benches": 2, "testStations": 1, "rent": 800, "utilities": 150 },
+    "normal": { "cash": 16000, "ownerHours": 96, "employees": 1, "benches": 1, "testStations": 1, "rent": 600, "utilities": 150 },
+    "hard": { "cash": 10000, "ownerHours": 96, "employees": 0, "benches": 1, "testStations": 1, "rent": 450, "utilities": 150 }
+  },
+  "openingInventory": "none",
+  "employee": { "monthlySalary": 1400, "monthlyLaborHours": 112, "recruitmentCost": 600 },
+  "stationMonthlyHours": 160,
+  "products": {
+    "office": { "salePrice": 2300, "kind": "standard", "designHours": 0, "assemblyHours": 6, "testSetupHours": 0.5, "packingHours": 0.5, "testStationHours": 2, "developmentLaborHours": 12, "developmentBenchHours": 2, "developmentTestHours": 2, "developmentCost": 120 },
+    "gaming": { "salePrice": 5100, "kind": "standard", "designHours": 0, "assemblyHours": 10, "testSetupHours": 0.5, "packingHours": 0.5, "testStationHours": 3, "developmentLaborHours": 18, "developmentBenchHours": 3, "developmentTestHours": 3, "developmentCost": 180 },
+    "quiet_office": { "salePrice": 3900, "kind": "commission", "designHours": 6, "assemblyHours": 10, "testSetupHours": 1, "packingHours": 1, "testStationHours": 4 },
+    "premium": { "salePrice": 9500, "kind": "commission", "designHours": 10, "assemblyHours": 14, "testSetupHours": 1, "packingHours": 1, "testStationHours": 6 }
+  },
+  "companyDemandCaps": {
+    "office": [8, 10, 12, 16, 22, 26],
+    "gaming": [2, 3, 4, 6, 10, 12],
+    "quiet_office": [2, 3, 4, 5, 6, 6],
+    "premium": [1, 2, 2, 3, 3, 4]
+  },
+  "investments": {
+    "craft_tools": { "cost": 2800, "commissionAssemblyMultiplier": 0.8, "commissionConsumablesReduction": 120 },
+    "bench": { "cost": 3000, "addedBenches": 1 },
+    "semi_auto": { "cost": 3000, "standardAssemblyMultiplier": 0.65, "additionalMonthlyUtilities": 100, "requiresBenches": 2 }
+  },
+  "routes": {
+    "boutique": {
+      "investments": [{ "month": 3, "id": "craft_tools" }],
+      "hires": [],
+      "monthlyProductionTargets": [
+        { "quiet_office": 1, "premium": 1 },
+        { "quiet_office": 2, "premium": 1 },
+        { "quiet_office": 3, "premium": 2 },
+        { "quiet_office": 4, "premium": 2 },
+        { "quiet_office": 4, "premium": 3 },
+        { "quiet_office": 5, "premium": 3 }
+      ]
+    },
+    "scale": {
+      "investments": [{ "month": 3, "id": "bench" }, { "month": 5, "id": "semi_auto" }],
+      "hires": [],
+      "monthlyProductionTargets": [
+        { "office": 6, "gaming": 1 },
+        { "office": 8, "gaming": 2 },
+        { "office": 10, "gaming": 3 },
+        { "office": 14, "gaming": 5 },
+        { "office": 18, "gaming": 8 },
+        { "office": 22, "gaming": 10 }
+      ]
+    },
+    "mixed": {
+      "investments": [{ "month": 3, "id": "craft_tools" }],
+      "hires": [5],
+      "monthlyProductionTargets": [
+        { "office": 4, "gaming": 1, "quiet_office": 1 },
+        { "office": 5, "gaming": 2, "quiet_office": 1, "premium": 1 },
+        { "office": 6, "gaming": 2, "quiet_office": 2, "premium": 1 },
+        { "office": 7, "gaming": 3, "quiet_office": 2, "premium": 1 },
+        { "office": 8, "gaming": 4, "quiet_office": 3, "premium": 2 },
+        { "office": 10, "gaming": 5, "quiet_office": 3, "premium": 2 }
+      ]
+    }
+  },
+  "scenarios": {
+    "baseline": { "demandMultiplier": 1, "partsPriceMultiplier": 1 },
+    "demand_down_35": { "demandMultiplier": 0.65, "partsPriceMultiplier": 1 },
+    "parts_up_10": { "demandMultiplier": 1, "partsPriceMultiplier": 1.1 }
+  }
+}

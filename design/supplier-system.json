@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "status": "draft",
+  "phase": {"from": "2016-01", "through": "2020-12"},
+  "provenance": {
+    "historicalHardware": "catalog-2016-2020/*.json manufacturer evidence and explicitly labeled gaps",
+    "procurementParameters": "original game design proposal, not historical wholesale terms",
+    "supplierTraits": "game positioning, not real manufacturer quality or reliability claims",
+    "demoCatalog": "components.json remains exactly 32 entries",
+    "economics": "price curves and business balance remain subject to the separate economics review"
+  },
+  "identity": {
+    "productKey": ["brandId", "seriesId", "model", "physicalRevision", "capacityVariant"],
+    "gpuIdentity": ["boardManufacturerBrandId", "boardSeriesId", "graphicsPlatformBrandId", "coreModel", "vramVariant", "physicalRevision"],
+    "distributorSeparateFromBrand": true,
+    "groupPurchasable": false,
+    "upstreamParticlesPurchasable": false,
+    "subbrandPurchasesUseParentAccount": true,
+    "renamePreservesInventoryIdentity": true,
+    "realSeriesReferenceVisibleInPlayerUI": false
+  },
+  "channels": [
+    {
+      "id": "retail",
+      "zh": "现货零购",
+      "availableFromWorkshop": true,
+      "minimumUnitsPerLine": 1,
+      "nominalDeliverySimHours": 2,
+      "nominalUnitPriceFactor": 1,
+      "nominalBatchStockUnits": 12,
+      "eligibility": "legal product in current calendar; stock and compatibility checked",
+      "note": "All eligible brands can be bought in single units. The stock value is a simulation proposal per SKU, not a global limit or historical retailer inventory."
+    },
+    {
+      "id": "distributor",
+      "zh": "经销批采",
+      "availableFromWorkshop": true,
+      "minimumUnitsPerLine": 5,
+      "nominalDeliverySimHours": 8,
+      "nominalUnitPriceFactor": 0.97,
+      "nominalBatchStockUnits": 40,
+      "eligibility": "Five identical physical SKUs per line; not tied to company level",
+      "note": "A five-unit quote may suit a proven standard product. It is always optional for custom commissions."
+    },
+    {
+      "id": "scheduled_batch",
+      "zh": "预约批次",
+      "availableFromWorkshop": true,
+      "minimumUnitsPerLine": 20,
+      "nominalDeliverySimHours": 24,
+      "nominalUnitPriceFactor": 0.94,
+      "nominalBatchStockUnits": 80,
+      "eligibility": "Explicit confirmed delivery batch and 20 identical units per line; no promise of stock before launch",
+      "note": "Consolidated channel order, not a claim that every real brand accepts direct factory orders from small companies. Bulk ties up cash and stock without granting extra customer demand."
+    }
+  ],
+  "quotation": {
+    "costFormula": "ceil(baseGamePrice * marketFactor * channelFactor) per unit; shipping allocated by paid line subtotal",
+    "rounding": "integer game coins per quoted unit",
+    "validUntil": "first of stock event, calendar settlement or simulated deadline",
+    "priceLocksOn": "atomic_order_confirmation",
+    "unconfirmedCartReservesStock": false,
+    "confirmedOrdersPreservePrice": true,
+    "unknownSpecsBlockAffectedCompatibilityUntilGameProfileApproved": true,
+    "payment": "full game-coin payment at confirmation",
+    "creditAndLoans": "outside this supplier draft",
+    "display": ["quantity", "unit price", "total paid", "stock", "delivery window", "compatible alternatives", "reasons for variant differences"]
+  },
+  "lifecycle": [
+    {"id": "unannounced", "visible": false, "purchaseAllowed": false, "trigger": "before public information event"},
+    {"id": "announced", "visible": true, "purchaseAllowed": false, "trigger": "platform or physical product announcement; stock remains zero"},
+    {"id": "launch_limited", "visible": true, "purchaseAllowed": true, "trigger": "approved supply month and physical variant window", "stockFactor": 0.25, "bulkDiscountEnabled": false},
+    {"id": "regular", "visible": true, "purchaseAllowed": true, "trigger": "candidate supply stabilization event", "stockFactor": 1, "bulkDiscountEnabled": true},
+    {"id": "clearance", "visible": true, "purchaseAllowed": true, "trigger": "explicit game clearance event; existing compatibility stays valid", "stockFactor": 0.5, "bulkDiscountEnabled": true},
+    {"id": "retired", "visible": true, "purchaseAllowed": false, "trigger": "approved game catalog retirement event", "inventoryUsable": true}
+  ],
+  "lifecyclePolicy": {
+    "automaticRetirementAfterFixedYears": false,
+    "candidateLaunchLimitedMonths": 1,
+    "candidateClearancePriceFactor": 0.85,
+    "launchPremium": "supplied by economics; no automatic premium in this file",
+    "replacementGenerationDoesNotInvalidateOldDesign": true,
+    "openingLegacyStock": "Approved pre-2016 products start regular; a contemporary webpage alone is insufficient historical proof",
+    "unknownLaunch": "inferred supply month stays labeled and may move; official dates are not overwritten"
+  },
+  "fulfillment": {
+    "orderStates": ["quoted", "confirmed", "in_transit", "received", "inspected", "allocated", "closed", "cancelled", "returned"],
+    "quoteToConfirmation": "validate timeline, physical variant, stock, quantity, cash and transaction id atomically",
+    "confirmationLedger": ["orderId", "transactionId", "calendarMonth", "elapsedSimHours", "stockReservation", "cashDebit", "priceSnapshot", "physicalSku", "expectedDeliveryWindow"],
+    "arrivalLedger": ["receiptId", "orderId", "lotId", "receivedQuantity", "inspectedQuantity", "acceptedQuantity", "actualUnitCost", "shippingAllocation", "sourceChannel"],
+    "availableInventory": "acceptedQuantity - reservedForJobs - consumed - returned",
+    "productionMayUseInTransitParts": false,
+    "newPartsMayBeDesignedBeforeOwned": true,
+    "prototypeRequiresOwnedAcceptedParts": true,
+    "autoSubstitute": false,
+    "resumeAndOffline": "Same elapsed simulation and transaction ledger as online; no second stock refresh, receipt or debit",
+    "monthBoundary": "Player settlement alone changes month; outstanding delivery is carried forward with paid price and reservation",
+    "realTimeWaitRequired": false
+  },
+  "inspection": {
+    "defaultIncomingTestSimHoursPerOrder": 0.25,
+    "defaultSamplingUnits": 1,
+    "sampleMeaning": "One inspected unit is a draft tutorial simplification; sampling does not establish real batch defect rates",
+    "recordFields": ["physicalRevision", "connectorSet", "firmwareOrBios", "mountKit", "memoryProfile", "capacity", "inspectionResult"],
+    "failureRateSource": "game balance by part revision, operating conditions and player QC, never blanket real-brand reputation",
+    "inferredPhysicalFields": "must be present in an approved game profile before assembly; retain inferred status in the reference library"
+  },
+  "returns": {
+    "unopenedReturnWindowSimHours": 24,
+    "unopenedRestockingFraction": 0.05,
+    "openedWrongPurchase": "retained inventory; no automatic full refund",
+    "arrivalDefect": "replacement or original-cost refund for rejected units; linked to original lot and paid order",
+    "refundUpperBound": "unconsumed return quantity * original allocated unit cost; never current market price",
+    "replacementConsumesClaim": true,
+    "returnReversesAllocatedShipping": false,
+    "duplicateClaimRejected": true,
+    "warrantyCalendarMonths": 12,
+    "warrantyMeaning": "game proposal; not a reproduction of real brand warranty periods",
+    "resaleMarketplace": "outside current scope"
+  },
+  "substitution": {
+    "mandatory": ["CPU support by exact board and BIOS", "memory generation and slots", "required interface/protocol", "capacity floor", "case and cooler dimensions", "typed power plugs and headroom", "customer required appearance and noise"],
+    "ranking": ["same product purpose", "delivery window", "owned available stock", "total landed cost", "change in test results"],
+    "warning": "Same brand, socket name or nominal wattage does not establish compatibility",
+    "savedDesignBehavior": "copy as revision, display cost/score/layout/thermal changes, retest; preserve original",
+    "customerApproval": "explain revised deliverable against existing requirements in the order flow",
+    "standardProductBatch": "one approved revision per batch; reserve matching inventory"
+  },
+  "events": {
+    "stockRefreshKey": ["companySaveSeed", "month", "supplyEventId", "physicalSku", "channelId"],
+    "stockRefreshesOnLogin": false,
+    "globalHistoricalShock": "reference cue only; exact prices, shortage quantities and duration are original game events",
+    "forecast": "say what is known, when the next check occurs, and what alternatives remain",
+    "supplyIndependentOfDemand": true,
+    "latestFlagshipMandatoryForSuccess": false,
+    "offlineCrossCalendar": false
+  },
+  "saveFields": ["supplierAccountIds", "unlockedSupplyEvents", "priceSnapshots", "orders", "receipts", "inventoryLots", "jobReservations", "claimIds", "fulfillmentCursor", "stockSeeds", "currentMonth", "elapsedSimHours", "savedDesignRevisions"],
+  "reviewDecisions": [
+    "Approve new candidate supplier and product series names",
+    "Choose visible per-year assortment from the larger reference catalog",
+    "Calibrate channel MOQ, delivery hours, stock, discount and return parameters with economics",
+    "Approve explicit game profiles for unknown reference connector and geometry fields",
+    "Choose fictional market events and retirement dates without claiming historic price reconstruction"
+  ]
+}

@@ -1,0 +1,2093 @@
+{
+  "schemaVersion": 2,
+  "status": "draft",
+  "source": "User reference infographics and authorized full-game placeholder expansion, 2026-10-07",
+  "brands": [
+    {
+      "id": "intek",
+      "zh": "英特克",
+      "en": "INTEK",
+      "realReference": "Intel",
+      "aliases": [
+        "牙膏厂",
+        "蓝队"
+      ],
+      "roles": [
+        "cpu",
+        "graphics_platform",
+        "storage"
+      ],
+      "status": "candidate",
+      "voice": "资历老、语气笃定，升级宣传留一点挤牙膏的自嘲",
+      "nameReviewStatus": "unreviewed",
+      "entityKind": "retail_supplier",
+      "demoRoles": [
+        "cpu"
+      ],
+      "catalogParticipation": "demo_selected",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "futureRoleGuards": {
+        "graphics_platform": {
+          "earliestGameYear": 2022,
+          "basis": "game_reference_guard",
+          "source": "https://www.intc.com/news-events/press-releases/detail/1534/intels-discrete-mobile-graphics-family-arrives"
+        }
+      }
+    },
+    {
+      "id": "amdex",
+      "zh": "艾迈德",
+      "en": "AMDEX",
+      "realReference": "AMD",
+      "aliases": [
+        "红队"
+      ],
+      "roles": [
+        "cpu",
+        "graphics_platform"
+      ],
+      "status": "candidate",
+      "voice": "直率、好胜，强调选择和方案价值",
+      "nameReviewStatus": "unreviewed",
+      "entityKind": "retail_supplier",
+      "demoRoles": [
+        "cpu",
+        "graphics_platform"
+      ],
+      "catalogParticipation": "demo_selected",
+      "roleBasis": "user_reference_and_game_catalog_planning"
+    },
+    {
+      "id": "nvdia",
+      "zh": "英维达",
+      "en": "NVDIA",
+      "realReference": "NVIDIA",
+      "aliases": [
+        "老黄",
+        "绿队"
+      ],
+      "roles": [
+        "graphics_platform"
+      ],
+      "status": "candidate",
+      "voice": "声势足、技术自信，消息像一场发布会",
+      "nameReviewStatus": "unreviewed",
+      "entityKind": "retail_supplier",
+      "demoRoles": [
+        "graphics_platform"
+      ],
+      "catalogParticipation": "demo_selected",
+      "roleBasis": "user_reference_and_game_catalog_planning"
+    },
+    {
+      "id": "asux",
+      "zh": "华烁",
+      "en": "ASUX",
+      "realReference": "ASUS",
+      "aliases": [
+        "败家厂"
+      ],
+      "roles": [
+        "motherboard",
+        "gpu_board",
+        "psu",
+        "cooler",
+        "case"
+      ],
+      "status": "candidate",
+      "voice": "讲究配置和做工，偶尔表现出装备爱好者的认真",
+      "nameReviewStatus": "unreviewed",
+      "entityKind": "retail_supplier",
+      "demoRoles": [
+        "motherboard"
+      ],
+      "catalogParticipation": "demo_selected",
+      "roleBasis": "user_reference_and_game_catalog_planning"
+    },
+    {
+      "id": "misi",
+      "zh": "微狮",
+      "en": "MISI",
+      "realReference": "MSI",
+      "aliases": [
+        "小狮子"
+      ],
+      "roles": [
+        "motherboard",
+        "gpu_board",
+        "psu",
+        "cooler",
+        "case"
+      ],
+      "status": "candidate",
+      "voice": "年轻、干脆，喜欢谈散热和实战体验",
+      "nameReviewStatus": "unreviewed",
+      "entityKind": "retail_supplier",
+      "demoRoles": [
+        "gpu_board"
+      ],
+      "catalogParticipation": "demo_selected",
+      "roleBasis": "user_reference_and_game_catalog_planning"
+    },
+    {
+      "id": "kingstone",
+      "zh": "金士盾",
+      "en": "KINGSTONE",
+      "realReference": "Kingston",
+      "aliases": [
+        "金盾"
+      ],
+      "roles": [
+        "ram",
+        "storage"
+      ],
+      "status": "candidate",
+      "voice": "可靠、简明，把规格和稳定性说清楚",
+      "nameReviewStatus": "unreviewed",
+      "entityKind": "retail_supplier",
+      "demoRoles": [
+        "ram"
+      ],
+      "catalogParticipation": "demo_selected",
+      "roleBasis": "user_reference_and_game_catalog_planning"
+    },
+    {
+      "id": "samsong",
+      "zh": "三颗星",
+      "en": "SAMSONG",
+      "realReference": "Samsung",
+      "aliases": [
+        "三星星",
+        "三颗星"
+      ],
+      "roles": [
+        "ram",
+        "storage",
+        "dram_supplier",
+        "nand_supplier"
+      ],
+      "status": "candidate",
+      "voice": "精致、理性，强调响应和工艺细节",
+      "nameReviewStatus": "unreviewed",
+      "entityKind": "retail_supplier",
+      "demoRoles": [
+        "storage"
+      ],
+      "catalogParticipation": "demo_selected",
+      "roleBasis": "user_reference_and_game_catalog_planning"
+    },
+    {
+      "id": "westbyte",
+      "zh": "西部字节",
+      "en": "WESTBYTE",
+      "realReference": "Western Digital",
+      "aliases": [
+        "西字",
+        "蓝盘那家"
+      ],
+      "roles": [
+        "storage",
+        "nand_supplier"
+      ],
+      "status": "candidate",
+      "voice": "实用、耐心，强调容量和长期使用",
+      "nameReviewStatus": "unreviewed",
+      "entityKind": "retail_supplier",
+      "demoRoles": [
+        "storage"
+      ],
+      "catalogParticipation": "demo_selected",
+      "roleBasis": "user_reference_and_game_catalog_planning"
+    },
+    {
+      "id": "corsail",
+      "zh": "海盗旗",
+      "en": "CORSAIL",
+      "realReference": "Corsair",
+      "aliases": [
+        "海盗旗"
+      ],
+      "roles": [
+        "ram",
+        "storage",
+        "psu",
+        "cooler",
+        "case"
+      ],
+      "status": "preferred_candidate",
+      "voice": "热闹、有冒险感，公告像在招募船员",
+      "nameReviewStatus": "unreviewed",
+      "entityKind": "retail_supplier",
+      "demoRoles": [
+        "psu"
+      ],
+      "catalogParticipation": "demo_selected",
+      "roleBasis": "user_reference_and_game_catalog_planning"
+    },
+    {
+      "id": "coolmaster",
+      "zh": "酷冷宗师",
+      "en": "COOLMASTER",
+      "realReference": "Cooler Master",
+      "aliases": [
+        "宗师"
+      ],
+      "roles": [
+        "psu",
+        "cooler",
+        "case"
+      ],
+      "status": "preferred_candidate",
+      "voice": "自信的技术派，幽默带一点传授绝学的口气",
+      "nameReviewStatus": "unreviewed",
+      "entityKind": "retail_supplier",
+      "demoRoles": [
+        "cooler"
+      ],
+      "catalogParticipation": "demo_selected",
+      "roleBasis": "user_reference_and_game_catalog_planning"
+    },
+    {
+      "id": "noctura",
+      "zh": "夜枭",
+      "en": "NOCTURA",
+      "realReference": "Noctua",
+      "aliases": [
+        "夜枭"
+      ],
+      "roles": [
+        "cooler"
+      ],
+      "status": "preferred_candidate",
+      "voice": "安静、简短、克制，避免喊口号",
+      "nameReviewStatus": "unreviewed",
+      "entityKind": "retail_supplier",
+      "demoRoles": [
+        "cooler"
+      ],
+      "catalogParticipation": "demo_selected",
+      "roleBasis": "user_reference_and_game_catalog_planning"
+    },
+    {
+      "id": "fractik",
+      "zh": "分形工坊",
+      "en": "FRACTIK",
+      "realReference": "Fractal Design",
+      "aliases": [
+        "分形工坊"
+      ],
+      "roles": [
+        "case",
+        "psu",
+        "cooler"
+      ],
+      "status": "preferred_candidate",
+      "voice": "重视布局和细节，说明每个设计选择的用途",
+      "nameReviewStatus": "unreviewed",
+      "entityKind": "retail_supplier",
+      "demoRoles": [
+        "case"
+      ],
+      "catalogParticipation": "demo_selected",
+      "roleBasis": "user_reference_and_game_catalog_planning"
+    },
+    {
+      "id": "gigabite",
+      "zh": "技佳",
+      "en": "GIGABITE",
+      "realReference": "GIGABYTE",
+      "aliases": [],
+      "roles": [
+        "motherboard",
+        "gpu_board",
+        "ram",
+        "storage",
+        "psu",
+        "cooler",
+        "case"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "硬件综合",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "colorfull",
+      "zh": "七色虹",
+      "en": "COLORFULL",
+      "realReference": "Colorful",
+      "aliases": [],
+      "roles": [
+        "motherboard",
+        "gpu_board",
+        "ram",
+        "storage"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "硬件综合",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "maxshine",
+      "zh": "铭煊",
+      "en": "MAXSHINE",
+      "realReference": "MAXSUN",
+      "aliases": [],
+      "roles": [
+        "motherboard",
+        "gpu_board",
+        "storage"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "硬件综合",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "ondra",
+      "zh": "昂途",
+      "en": "ONDRA",
+      "realReference": "ONDA",
+      "aliases": [],
+      "roles": [
+        "motherboard"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "硬件综合",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "yestone",
+      "zh": "盈途",
+      "en": "YESTONE",
+      "realReference": "Yeston",
+      "aliases": [],
+      "roles": [
+        "motherboard",
+        "gpu_board"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "硬件综合",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "biostel",
+      "zh": "映拓",
+      "en": "BIOSTEL",
+      "realReference": "BIOSTAR",
+      "aliases": [],
+      "roles": [
+        "motherboard"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "硬件综合",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "asrok",
+      "zh": "华岩",
+      "en": "ASROK",
+      "realReference": "ASRock",
+      "aliases": [],
+      "roles": [
+        "motherboard",
+        "gpu_board"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "硬件综合",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "soya",
+      "zh": "梅杰",
+      "en": "SOYA",
+      "realReference": "SOYO",
+      "aliases": [],
+      "roles": [
+        "motherboard"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "硬件综合",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "powercolour",
+      "zh": "撼色",
+      "en": "POWERCOLOUR",
+      "realReference": "PowerColor",
+      "aliases": [],
+      "roles": [
+        "gpu_board"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "显卡与集团",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "gainwind",
+      "zh": "耕盛",
+      "en": "GAINWIND",
+      "realReference": "Gainward",
+      "aliases": [],
+      "roles": [
+        "gpu_board"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "显卡与集团",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "leadtex",
+      "zh": "丽拓",
+      "en": "LEADTEX",
+      "realReference": "Leadtek",
+      "aliases": [],
+      "roles": [
+        "gpu_board"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "显卡与集团",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "sapphira",
+      "zh": "蓝晶石",
+      "en": "SAPPHIRA",
+      "realReference": "Sapphire",
+      "aliases": [],
+      "roles": [
+        "gpu_board"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "显卡与集团",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "xfy",
+      "zh": "讯境",
+      "en": "XFY",
+      "realReference": "XFX",
+      "aliases": [],
+      "roles": [
+        "gpu_board"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "显卡与集团",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "pcpartners",
+      "zh": "柏联",
+      "en": "PCPARTNERS",
+      "realReference": "PC Partner",
+      "aliases": [],
+      "roles": [],
+      "demoRoles": [],
+      "entityKind": "holding_group",
+      "catalogGroup": "显卡与集团",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "zotak",
+      "zh": "索拓",
+      "en": "ZOTAK",
+      "realReference": "ZOTAC",
+      "aliases": [],
+      "roles": [
+        "gpu_board"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "显卡与集团",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "inno3x",
+      "zh": "映群",
+      "en": "INNO3X",
+      "realReference": "Inno3D",
+      "aliases": [],
+      "roles": [
+        "gpu_board"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "显卡与集团",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "manly",
+      "zh": "万璃",
+      "en": "MANLY",
+      "realReference": "Manli",
+      "aliases": [],
+      "roles": [
+        "gpu_board"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "显卡与集团",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "palix",
+      "zh": "同拓",
+      "en": "PALIX",
+      "realReference": "Palit",
+      "aliases": [],
+      "roles": [
+        "gpu_board"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "显卡与集团",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "galaxy",
+      "zh": "影骋",
+      "en": "GALAXY",
+      "realReference": "GALAX",
+      "aliases": [],
+      "roles": [
+        "gpu_board"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "显卡与集团",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "axgame",
+      "zh": "电竞游侠",
+      "en": "AXGAME",
+      "realReference": "AX Gaming／电竞叛客",
+      "aliases": [],
+      "roles": [
+        "gpu_board"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "显卡与集团",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "skhynex",
+      "zh": "海力仕",
+      "en": "SK HYNEX",
+      "realReference": "SK hynix",
+      "aliases": [],
+      "roles": [
+        "ram",
+        "storage",
+        "dram_supplier",
+        "nand_supplier"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "内存与颗粒",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "microne",
+      "zh": "镁曜",
+      "en": "MICRONE",
+      "realReference": "Micron",
+      "aliases": [],
+      "roles": [
+        "dram_supplier",
+        "nand_supplier"
+      ],
+      "demoRoles": [],
+      "entityKind": "component_vendor",
+      "catalogGroup": "内存与颗粒",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "cxmem",
+      "zh": "长芯",
+      "en": "CXMEM",
+      "realReference": "CXMT／长鑫",
+      "aliases": [],
+      "roles": [
+        "dram_supplier"
+      ],
+      "demoRoles": [],
+      "entityKind": "component_vendor",
+      "catalogGroup": "内存与颗粒",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "nanyaa",
+      "zh": "南雅",
+      "en": "NANYAA",
+      "realReference": "Nanya",
+      "aliases": [],
+      "roles": [
+        "dram_supplier"
+      ],
+      "demoRoles": [],
+      "entityKind": "component_vendor",
+      "catalogGroup": "内存与颗粒",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "glowave",
+      "zh": "光纬",
+      "en": "GLOWAVE",
+      "realReference": "Gloway",
+      "aliases": [],
+      "roles": [
+        "ram",
+        "storage"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "内存与颗粒",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "kingbanc",
+      "zh": "金泰盾",
+      "en": "KINGBANC",
+      "realReference": "KINGBANK",
+      "aliases": [],
+      "roles": [
+        "ram",
+        "storage"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "内存与颗粒",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "asgarda",
+      "zh": "阿斯加德",
+      "en": "ASGARDA",
+      "realReference": "Asgard",
+      "aliases": [],
+      "roles": [
+        "ram",
+        "storage"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "内存与颗粒",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "klevva",
+      "zh": "科芙",
+      "en": "KLEVVA",
+      "realReference": "KLEVV／科赋／酷兽",
+      "aliases": [],
+      "roles": [
+        "ram",
+        "storage"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "内存与颗粒",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "biwen",
+      "zh": "百维",
+      "en": "BIWEN",
+      "realReference": "BIWIN",
+      "aliases": [],
+      "roles": [
+        "ram",
+        "storage"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "内存与颗粒",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "acera",
+      "zh": "宏岐",
+      "en": "ACERA",
+      "realReference": "Acer",
+      "aliases": [],
+      "roles": [
+        "ram",
+        "storage"
+      ],
+      "demoRoles": [],
+      "entityKind": "licensed_product_brand",
+      "catalogGroup": "内存与颗粒",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "predar",
+      "zh": "猎夺者",
+      "en": "PREDAR",
+      "realReference": "Predator／宏碁掠夺者",
+      "aliases": [],
+      "roles": [
+        "ram",
+        "storage"
+      ],
+      "demoRoles": [],
+      "entityKind": "subbrand",
+      "catalogGroup": "内存与颗粒",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      },
+      "parentId": "acera",
+      "relationshipBasis": "game_catalog_organization"
+    },
+    {
+      "id": "gskillz",
+      "zh": "芝棋",
+      "en": "G.SKILLZ",
+      "realReference": "G.SKILL",
+      "aliases": [],
+      "roles": [
+        "ram"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "内存与颗粒",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "adatex",
+      "zh": "威钢",
+      "en": "ADATEX",
+      "realReference": "ADATA",
+      "aliases": [],
+      "roles": [
+        "ram",
+        "storage"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "内存与颗粒",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "teamgrove",
+      "zh": "十全",
+      "en": "TEAMGROVE",
+      "realReference": "TeamGroup",
+      "aliases": [],
+      "roles": [
+        "ram",
+        "storage"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "内存与颗粒",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "apacerx",
+      "zh": "宇展",
+      "en": "APACERX",
+      "realReference": "Apacer",
+      "aliases": [],
+      "roles": [
+        "ram",
+        "storage"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "内存与颗粒",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "cruxial",
+      "zh": "英锐达",
+      "en": "CRUXIAL",
+      "realReference": "Crucial",
+      "aliases": [],
+      "roles": [
+        "ram",
+        "storage"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "内存与颗粒",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      },
+      "relatedReferenceId": "microne"
+    },
+    {
+      "id": "hxperx",
+      "zh": "骇客",
+      "en": "HXPERX",
+      "realReference": "HyperX",
+      "aliases": [],
+      "roles": [
+        "ram"
+      ],
+      "demoRoles": [],
+      "entityKind": "subbrand",
+      "catalogGroup": "内存与颗粒",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      },
+      "relationshipNote": "Memory-brand association changes over the full timeline; assign ownership by period rather than one permanent parent."
+    },
+    {
+      "id": "seasound",
+      "zh": "海律",
+      "en": "SEASOUND",
+      "realReference": "Seasonic",
+      "aliases": [],
+      "roles": [
+        "psu"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "电源",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "superbloom",
+      "zh": "振光",
+      "en": "SUPERBLOOM",
+      "realReference": "Super Flower",
+      "aliases": [],
+      "roles": [
+        "psu"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "电源",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "greatwalls",
+      "zh": "长垣",
+      "en": "GREATWALLS",
+      "realReference": "Great Wall",
+      "aliases": [],
+      "roles": [
+        "psu",
+        "cooler",
+        "case"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "电源",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "huntkay",
+      "zh": "航佳",
+      "en": "HUNTKAY",
+      "realReference": "Huntkey",
+      "aliases": [],
+      "roles": [
+        "psu",
+        "cooler",
+        "case"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "电源",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "samra",
+      "zh": "先骥",
+      "en": "SAMRA",
+      "realReference": "SAMA",
+      "aliases": [],
+      "roles": [
+        "psu",
+        "cooler",
+        "case"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "电源",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "segotex",
+      "zh": "鑫谷地",
+      "en": "SEGOTEX",
+      "realReference": "Segotep",
+      "aliases": [],
+      "roles": [
+        "psu",
+        "case"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "电源",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "goldenriver",
+      "zh": "金河湾",
+      "en": "GOLDENRIVER",
+      "realReference": "Golden Field",
+      "aliases": [],
+      "roles": [
+        "psu",
+        "case"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "电源",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "deltax",
+      "zh": "台拓",
+      "en": "DELTAX",
+      "realReference": "Delta",
+      "aliases": [],
+      "roles": [
+        "psu"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "电源",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "fspro",
+      "zh": "全瀚",
+      "en": "FSPRO",
+      "realReference": "FSP",
+      "aliases": [],
+      "roles": [
+        "psu"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "电源",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "silverrock",
+      "zh": "银曜",
+      "en": "SILVERROCK",
+      "realReference": "SilverStone",
+      "aliases": [],
+      "roles": [
+        "psu",
+        "case"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "电源",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "thermaltak",
+      "zh": "热拓",
+      "en": "THERMALTAK",
+      "realReference": "Thermaltake／TT",
+      "aliases": [],
+      "roles": [
+        "psu",
+        "cooler",
+        "case"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "电源",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "anteck",
+      "zh": "安钛格",
+      "en": "ANTECK",
+      "realReference": "Antec",
+      "aliases": [],
+      "roles": [
+        "psu",
+        "case"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "电源",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "evgo",
+      "zh": "亿威",
+      "en": "EVGO",
+      "realReference": "EVGA",
+      "aliases": [],
+      "roles": [
+        "psu",
+        "gpu_board"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "电源",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "phantix",
+      "zh": "逐风者",
+      "en": "PHANTIX",
+      "realReference": "Phanteks",
+      "aliases": [],
+      "roles": [
+        "psu",
+        "cooler",
+        "case"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "电源",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "nxzt",
+      "zh": "恩爵",
+      "en": "NXZT",
+      "realReference": "NZXT",
+      "aliases": [],
+      "roles": [
+        "psu",
+        "cooler",
+        "case"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "电源",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "deepkool",
+      "zh": "九州风灵",
+      "en": "DEEPKOOL",
+      "realReference": "DeepCool",
+      "aliases": [],
+      "roles": [
+        "cooler",
+        "case"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "散热",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "valkyra",
+      "zh": "瓦尔琪",
+      "en": "VALKYRA",
+      "realReference": "Valkyrie",
+      "aliases": [],
+      "roles": [
+        "cooler"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "散热",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "jonsbox",
+      "zh": "乔思堡",
+      "en": "JONSBOX",
+      "realReference": "Jonsbo",
+      "aliases": [],
+      "roles": [
+        "cooler",
+        "case"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "散热",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "aigon",
+      "zh": "爱格",
+      "en": "AIGON",
+      "realReference": "aigo",
+      "aliases": [],
+      "roles": [
+        "storage",
+        "cooler",
+        "case"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "散热",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "thermalrite",
+      "zh": "利鸣",
+      "en": "THERMALRITE",
+      "realReference": "Thermalright",
+      "aliases": [],
+      "roles": [
+        "cooler"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "散热",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "pcchiller",
+      "zh": "超频叁",
+      "en": "PCCHILLER",
+      "realReference": "PCCOOLER",
+      "aliases": [],
+      "roles": [
+        "cooler"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "散热",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "proartis",
+      "zh": "雅澜",
+      "en": "PROARTIS",
+      "realReference": "雅浚",
+      "aliases": [],
+      "roles": [
+        "cooler"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "散热",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "sandisky",
+      "zh": "闪笛",
+      "en": "SANDISKY",
+      "realReference": "SanDisk",
+      "aliases": [],
+      "roles": [
+        "storage"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "储存",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "kioxera",
+      "zh": "铠夏",
+      "en": "KIOXERA",
+      "realReference": "KIOXIA",
+      "aliases": [],
+      "roles": [
+        "storage",
+        "nand_supplier"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "储存",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "name_date_guard",
+        "earliestNameDate": "2019-10-01",
+        "source": "https://apac.kioxia.com/en-apac/about/news/2019/20190718-2.html",
+        "productDates": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "ymtex",
+      "zh": "江流存储",
+      "en": "YMTEX",
+      "realReference": "YMTC／长江存储",
+      "aliases": [],
+      "roles": [
+        "nand_supplier"
+      ],
+      "demoRoles": [],
+      "entityKind": "component_vendor",
+      "catalogGroup": "储存",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "solidim",
+      "zh": "思铠",
+      "en": "SOLIDIM",
+      "realReference": "Solidigm",
+      "aliases": [],
+      "roles": [
+        "storage"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "储存",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "name_date_guard",
+        "earliestNameDate": "2021-12-30",
+        "source": "https://news.solidigm.com/en-WW/212941-introducing-solidigm-a-market-leader-in-nand-flash-technology/",
+        "productDates": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "zhitide",
+      "zh": "致泰",
+      "en": "ZHITIDE",
+      "realReference": "ZhiTai／致态",
+      "aliases": [],
+      "roles": [
+        "storage"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "储存",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "lexara",
+      "zh": "雷克闪",
+      "en": "LEXARA",
+      "realReference": "Lexar",
+      "aliases": [],
+      "roles": [
+        "storage"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "储存",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "hplus",
+      "zh": "惠谱",
+      "en": "HPLUS",
+      "realReference": "HP",
+      "aliases": [],
+      "roles": [
+        "ram",
+        "storage"
+      ],
+      "demoRoles": [],
+      "entityKind": "licensed_product_brand",
+      "catalogGroup": "储存",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "lenova",
+      "zh": "联象",
+      "en": "LENOVA",
+      "realReference": "Lenovo",
+      "aliases": [],
+      "roles": [
+        "storage"
+      ],
+      "demoRoles": [],
+      "entityKind": "licensed_product_brand",
+      "catalogGroup": "储存",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "plextorr",
+      "zh": "浦科拓",
+      "en": "PLEXTORR",
+      "realReference": "Plextor",
+      "aliases": [],
+      "roles": [
+        "storage"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "储存",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "liteone",
+      "zh": "建星",
+      "en": "LITEONE",
+      "realReference": "Lite-On",
+      "aliases": [],
+      "roles": [
+        "storage"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "储存",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "toshiva",
+      "zh": "东枝",
+      "en": "TOSHIVA",
+      "realReference": "Toshiba",
+      "aliases": [],
+      "roles": [
+        "storage"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "储存",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "rogue",
+      "zh": "败家国度",
+      "en": "ROGUE",
+      "realReference": "ROG",
+      "aliases": [],
+      "roles": [
+        "motherboard",
+        "gpu_board",
+        "psu",
+        "cooler",
+        "case"
+      ],
+      "demoRoles": [],
+      "entityKind": "subbrand",
+      "catalogGroup": "机箱与子品牌",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      },
+      "parentId": "asux",
+      "relationshipBasis": "game_catalog_organization"
+    },
+    {
+      "id": "lianly",
+      "zh": "联铝",
+      "en": "LIANLY",
+      "realReference": "Lian Li",
+      "aliases": [],
+      "roles": [
+        "case"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "机箱与子品牌",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "inwind",
+      "zh": "迎光",
+      "en": "INWIND",
+      "realReference": "InWin",
+      "aliases": [],
+      "roles": [
+        "case"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "机箱与子品牌",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "buffalox",
+      "zh": "大角牛",
+      "en": "BUFFALOX",
+      "realReference": "大水牛",
+      "aliases": [],
+      "roles": [
+        "case"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "机箱与子品牌",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "cougard",
+      "zh": "骨狮",
+      "en": "COUGARD",
+      "realReference": "COUGAR",
+      "aliases": [],
+      "roles": [
+        "case"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "机箱与子品牌",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "seagait",
+      "zh": "希跃",
+      "en": "SEAGAIT",
+      "realReference": "Seagate",
+      "aliases": [],
+      "roles": [
+        "storage"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "机械储存",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "trixy",
+      "zh": "创刻星系",
+      "en": "TRIXY",
+      "realReference": "TRYX／创氪星系",
+      "aliases": [],
+      "roles": [
+        "cooler",
+        "case"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "散热",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "game_reference_guard",
+        "earliestGameYear": 2024,
+        "source": "https://www.tryxzone.com/about",
+        "productDates": "unassigned",
+        "defaultDemoEligible": false
+      }
+    },
+    {
+      "id": "tcomax",
+      "zh": "钛坦",
+      "en": "TCOMAX",
+      "realReference": "TCOMAS／钛钽",
+      "aliases": [],
+      "roles": [
+        "cooler",
+        "case"
+      ],
+      "demoRoles": [],
+      "entityKind": "retail_supplier",
+      "catalogGroup": "散热",
+      "catalogParticipation": "full_game_placeholder",
+      "roleBasis": "user_reference_and_game_catalog_planning",
+      "status": "placeholder_candidate",
+      "nameReviewStatus": "unreviewed",
+      "voice": null,
+      "timeline": {
+        "status": "unassigned",
+        "defaultDemoEligible": false
+      }
+    }
+  ],
+  "rolePolicy": "Planned game coverage is assigned per brand and per era; registry membership never unlocks a product.",
+  "counts": {
+    "entries": 90,
+    "demoSelected": 12,
+    "kinds": {
+      "retail_supplier": 79,
+      "holding_group": 1,
+      "component_vendor": 4,
+      "licensed_product_brand": 3,
+      "subbrand": 3
+    }
+  }
+}

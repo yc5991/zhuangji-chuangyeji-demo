@@ -1,0 +1,257 @@
+{
+  "schemaVersion": 1,
+  "status": "draft",
+  "source": "Game naming design, 2026-10-07",
+  "series": [
+    {
+      "id": "intek_gao",
+      "brandId": "intek",
+      "zh": "膏系列",
+      "en": "GAO",
+      "category": "cpu",
+      "modelContainsSeries": true,
+      "status": "candidate",
+      "participation": "demo_selected"
+    },
+    {
+      "id": "amdex_fx",
+      "brandId": "amdex",
+      "zh": "FX",
+      "en": "FX",
+      "category": "cpu",
+      "modelContainsSeries": true,
+      "status": "candidate",
+      "participation": "demo_selected"
+    },
+    {
+      "id": "asux_base",
+      "brandId": "asux",
+      "zh": "磐基",
+      "en": "BASESTONE",
+      "category": "motherboard",
+      "modelContainsSeries": false,
+      "status": "candidate",
+      "participation": "demo_selected"
+    },
+    {
+      "id": "asux_expand",
+      "brandId": "asux",
+      "zh": "拓域",
+      "en": "EXPANSE",
+      "category": "motherboard",
+      "modelContainsSeries": false,
+      "status": "candidate",
+      "participation": "demo_selected"
+    },
+    {
+      "id": "asux_gpu_blaze",
+      "brandId": "asux",
+      "zh": "竞焰",
+      "en": "BLAZE",
+      "category": "gpu_board",
+      "modelContainsSeries": false,
+      "status": "candidate",
+      "participation": "full_game_placeholder"
+    },
+    {
+      "id": "misi_board",
+      "brandId": "misi",
+      "zh": "磐狮",
+      "en": "LIONBASE",
+      "category": "motherboard",
+      "modelContainsSeries": false,
+      "status": "candidate",
+      "participation": "full_game_placeholder"
+    },
+    {
+      "id": "misi_wind",
+      "brandId": "misi",
+      "zh": "狮风",
+      "en": "LIONWIND",
+      "category": "gpu_board",
+      "modelContainsSeries": false,
+      "status": "candidate",
+      "participation": "demo_selected"
+    },
+    {
+      "id": "misi_shadow",
+      "brandId": "misi",
+      "zh": "狮影",
+      "en": "LIONSHADOW",
+      "category": "gpu_board",
+      "modelContainsSeries": false,
+      "status": "candidate",
+      "participation": "demo_selected"
+    },
+    {
+      "id": "misi_origin",
+      "brandId": "misi",
+      "zh": "源铸",
+      "en": "SOURCECAST",
+      "category": "gpu_board",
+      "modelContainsSeries": false,
+      "status": "candidate",
+      "participation": "demo_selected"
+    },
+    {
+      "id": "kingstone_watch",
+      "brandId": "kingstone",
+      "zh": "守望",
+      "en": "WATCH",
+      "category": "ram",
+      "modelContainsSeries": false,
+      "status": "candidate",
+      "participation": "demo_selected"
+    },
+    {
+      "id": "samsong_swift",
+      "brandId": "samsong",
+      "zh": "迅影",
+      "en": "SWIFT",
+      "category": "storage",
+      "modelContainsSeries": false,
+      "status": "candidate",
+      "participation": "demo_selected"
+    },
+    {
+      "id": "westbyte_blue",
+      "brandId": "westbyte",
+      "zh": "蓝湾",
+      "en": "BLUEBAY",
+      "category": "storage",
+      "modelContainsSeries": false,
+      "status": "candidate",
+      "participation": "demo_selected"
+    },
+    {
+      "id": "corsail_voyage",
+      "brandId": "corsail",
+      "zh": "航海",
+      "en": "VOYAGE",
+      "category": "psu",
+      "modelContainsSeries": false,
+      "status": "candidate",
+      "participation": "demo_selected"
+    },
+    {
+      "id": "coolmaster_breeze",
+      "brandId": "coolmaster",
+      "zh": "风息",
+      "en": "BREEZE",
+      "category": "cooler",
+      "modelContainsSeries": false,
+      "status": "candidate",
+      "participation": "demo_selected"
+    },
+    {
+      "id": "coolmaster_tower",
+      "brandId": "coolmaster",
+      "zh": "镇风",
+      "en": "TOWERGUARD",
+      "category": "cooler",
+      "modelContainsSeries": false,
+      "status": "candidate",
+      "participation": "demo_selected"
+    },
+    {
+      "id": "noctura_dusk",
+      "brandId": "noctura",
+      "zh": "暮羽",
+      "en": "DUSKFEATHER",
+      "category": "cooler",
+      "modelContainsSeries": false,
+      "status": "candidate",
+      "participation": "demo_selected"
+    },
+    {
+      "id": "fractik_mini",
+      "brandId": "fractik",
+      "zh": "小匣",
+      "en": "MINIBOX",
+      "category": "case",
+      "modelContainsSeries": false,
+      "status": "candidate",
+      "participation": "demo_selected"
+    },
+    {
+      "id": "fractik_grid",
+      "brandId": "fractik",
+      "zh": "构序",
+      "en": "GRID",
+      "category": "case",
+      "modelContainsSeries": false,
+      "status": "candidate",
+      "participation": "demo_selected"
+    },
+    {
+      "id": "fractik_quiet",
+      "brandId": "fractik",
+      "zh": "静室",
+      "en": "QUIETROOM",
+      "category": "case",
+      "modelContainsSeries": false,
+      "status": "candidate",
+      "participation": "demo_selected"
+    },
+    {
+      "id": "gigabite_board",
+      "brandId": "gigabite",
+      "zh": "磐翼",
+      "en": "WINGBASE",
+      "category": "motherboard",
+      "modelContainsSeries": false,
+      "status": "candidate",
+      "participation": "full_game_placeholder"
+    },
+    {
+      "id": "gigabite_gpu",
+      "brandId": "gigabite",
+      "zh": "风翼",
+      "en": "WINGWIND",
+      "category": "gpu_board",
+      "modelContainsSeries": false,
+      "status": "candidate",
+      "participation": "full_game_placeholder"
+    },
+    {
+      "id": "colorfull_gpu",
+      "brandId": "colorfull",
+      "zh": "彩战",
+      "en": "COLORFIGHT",
+      "category": "gpu_board",
+      "modelContainsSeries": false,
+      "status": "candidate",
+      "participation": "full_game_placeholder"
+    },
+    {
+      "id": "colorfull_board",
+      "brandId": "colorfull",
+      "zh": "战旗",
+      "en": "BATTLEFLAG",
+      "category": "motherboard",
+      "modelContainsSeries": false,
+      "status": "candidate",
+      "participation": "full_game_placeholder"
+    },
+    {
+      "id": "maxshine_board",
+      "brandId": "maxshine",
+      "zh": "挑战者",
+      "en": "CHALLENGER",
+      "category": "motherboard",
+      "modelContainsSeries": false,
+      "status": "candidate",
+      "participation": "full_game_placeholder"
+    },
+    {
+      "id": "maxshine_gpu",
+      "brandId": "maxshine",
+      "zh": "终界",
+      "en": "ENDZONE",
+      "category": "gpu_board",
+      "modelContainsSeries": false,
+      "status": "candidate",
+      "participation": "full_game_placeholder"
+    }
+  ]
+}

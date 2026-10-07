@@ -1,0 +1,16 @@
+{
+  "name": "orangegame",
+  "private": true,
+  "creator": {
+    "version": "3.8.8"
+  },
+  "scripts": {
+    "check:design": "node tools/check-design.cjs",
+    "check:suppliers": "node tools/check-suppliers.cjs",
+    "check:env": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/check-environment.ps1",
+    "editor": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/open-creator.ps1",
+    "build:web": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/build-cocos.ps1 -Platform web-desktop",
+    "build:wechat": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/build-cocos.ps1 -Platform wechatgame"
+  },
+  "uuid": "867a89c5-3e77-4c7e-82c3-f21efda89693"
+}

@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "status": "interaction_draft",
+  "geometryStatus": "requires_art_review",
+  "confirmedInteractionPreference": {
+    "basis": "User answers in the design confirmation chat on 2026-10-07",
+    "assembly": "tap_or_drag",
+    "wiring": "one_connection_at_a_time",
+    "routing": "fixed_nodes",
+    "assistance": "available_at_any_time"
+  },
+  "maxDiscreteGpus": 1,
+  "coordinateSpace": "case_local_mm",
+  "coordinateAxes": {
+    "x": "left_to_right",
+    "y": "bottom_to_top",
+    "z": "back_to_front"
+  },
+  "anchorDefinitions": [
+    {
+      "id": "A01",
+      "label": "电源仓出口",
+      "plane": "front"
+    },
+    {
+      "id": "A02",
+      "label": "托盘下方过线孔",
+      "plane": "back"
+    },
+    {
+      "id": "A03",
+      "label": "右下固定区",
+      "plane": "back"
+    },
+    {
+      "id": "A04",
+      "label": "右侧中部过线孔",
+      "plane": "front"
+    },
+    {
+      "id": "A05",
+      "label": "背板顶部通道",
+      "plane": "back"
+    },
+    {
+      "id": "A06",
+      "label": "左上入口",
+      "plane": "front"
+    },
+    {
+      "id": "A07",
+      "label": "显卡侧方入口",
+      "plane": "front"
+    },
+    {
+      "id": "A08",
+      "label": "背部储存区",
+      "plane": "back"
+    }
+  ],
+  "connectionRoles": [
+    "MAINBOARD_POWER",
+    "CPU_POWER",
+    "GPU_POWER",
+    "SATA_DATA",
+    "SATA_POWER",
+    "CPU_FAN",
+    "CASE_FAN",
+    "FRONT_PANEL"
+  ],
+  "electricalConnectorRolesAreDistinct": true,
+  "caseAnchorsShareNamesNotCoordinates": true,
+  "automaticAssembly": "legal_slots_only",
+  "automaticRouting": "valid_baseline_routes",
+  "blockedRouting": [
+    "fan_sweep",
+    "solid_component",
+    "side_panel_closure",
+    "missing_required_connection",
+    "wrong_connector_role"
+  ],
+  "advisoryRouting": [
+    "unnecessary_front_visibility",
+    "excess_slack",
+    "crowded_service_access"
+  ],
+  "cableValidation": [
+    "role_match",
+    "connector_allocation",
+    "path_graph_adjacency",
+    "bundle_capacity",
+    "length_budget",
+    "physical_clearance"
+  ],
+  "eventDates": [
+    {
+      "id": "announce_1080",
+      "date": "2016-05-06",
+      "action": "forecast_only",
+      "dateBasis": "game_forecast_date"
+    },
+    {
+      "id": "release_1080",
+      "date": "2016-05-27",
+      "parts": [
+        "gpu_1080"
+      ],
+      "dateBasis": "graphics_platform_release"
+    },
+    {
+      "id": "release_1070",
+      "date": "2016-06-10",
+      "parts": [
+        "gpu_1070"
+      ],
+      "dateBasis": "graphics_platform_release"
+    },
+    {
+      "id": "release_rx480",
+      "date": "2016-06-29",
+      "parts": [
+        "gpu_rx480_4",
+        "gpu_rx480_8"
+      ],
+      "dateBasis": "graphics_platform_release"
+    }
+  ],
+  "scheduleRules": {
+    "timeUnit": "simulated_work_hours",
+    "payPerRealTimeWait": false,
+    "stopAtUnconfirmedEvent": true,
+    "offlineAdvancesCalendar": false,
+    "lateReleaseCannotUseFullMonthCapacity": true
+  },
+  "postDemo": {
+    "status": "proposed",
+    "mode": "design_only",
+    "advancesMonth": false,
+    "changesFinalBusinessResults": false
+  },
+  "designSaveFields": [
+    "designVersion",
+    "partIds",
+    "slotAssignments",
+    "caseModules",
+    "fanPositions",
+    "fanDirections",
+    "colors",
+    "lighting",
+    "cableRoutes",
+    "testSettings"
+  ],
+  "economySaveFields": [
+    "purchaseLots",
+    "reservedStock",
+    "postedTransactionIds",
+    "jobProgress",
+    "eventCursor",
+    "randomSeed",
+    "finalDemoResults"
+  ],
+  "pendingGeometry": [
+    "per_case_anchor_coordinates",
+    "channel_neighbors_and_capacity",
+    "cable_lengths",
+    "port_transforms",
+    "collision_volumes",
+    "cooler_ram_clearance",
+    "gpu_connector_bend_space"
+  ]
+}

@@ -1,0 +1,5931 @@
+{
+  "schemaVersion": 1,
+  "status": "draft",
+  "phase": {
+    "from": "2016-01",
+    "through": "2020-12"
+  },
+  "sources": [
+    {
+      "id": "intel_ark_kaby",
+      "title": "Products formerly Kaby Lake",
+      "url": "https://www.intel.com/content/www/us/en/ark/products/codename/82879/products-formerly-kaby-lake.html",
+      "publisher": "Intel",
+      "evidenceScope": "Official product catalog; CPU core counts, TDP and launch quarter for listed Kaby Lake products",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "intel_ark_coffee",
+      "title": "Products formerly Coffee Lake",
+      "url": "https://www.intel.com/content/www/us/en/ark/products/codename/97787/products-formerly-coffee-lake.html",
+      "publisher": "Intel",
+      "evidenceScope": "Official product catalog; Coffee Lake and Coffee Lake Refresh specifications and launch quarter",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "intel_launch_dates",
+      "title": "Intel Core desktop processor collections and launch dates",
+      "url": "https://www.intel.com/content/www/us/en/support/articles/000099655/processors.html",
+      "publisher": "Intel",
+      "evidenceScope": "Official processor generation and quarter/year launch summary, including Comet Lake",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "intel_1151",
+      "title": "Compatibility of Desktop 9th and 8th Generation Intel Core Processors",
+      "url": "https://www.intel.com/content/www/us/en/support/articles/000025694/processors/intel-core-processors.html",
+      "publisher": "Intel",
+      "evidenceScope": "Official compatibility rule for 6th/7th versus 8th/9th generation LGA1151 and DDR generations",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "intel_6800k",
+      "title": "Intel Core i7-6800K specifications",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/94189/intel-core-i76800k-processor-15m-cache-up-to-3-60-ghz/specifications.html",
+      "publisher": "Intel",
+      "evidenceScope": "Official Broadwell-E product specifications: cores, threads, TDP, socket and launch quarter",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "intel_kaby_desktop",
+      "title": "7th Generation Intel Core Desktop Processor Specifications",
+      "url": "https://www.intel.com/content/www/us/en/products/platforms/details/kaby-lake-s.html",
+      "publisher": "Intel",
+      "evidenceScope": "Official Kaby Lake-S desktop line overview and DDR3L/DDR4 boundary",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "amd_ryzen1000",
+      "title": "Ryzen 7 desktop processors available worldwide",
+      "url": "https://ir.amd.com/news-events/press-releases/detail/753/amd-ryzentm-7-desktop-processors-featuring-record-breaking-overclocking-performance-available-worldwide-today",
+      "publisher": "AMD",
+      "evidenceScope": "Official first-generation Ryzen desktop availability and Ryzen 7 model specifications",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "amd_ryzen5_1000",
+      "title": "AMD Ryzen 5 CPUs to Power Performance Desktop PCs Starting April 11 Worldwide",
+      "url": "https://ir.amd.com/news-events/press-releases/detail/756/amd-ryzen-5-cpus-to-power-performance-desktop-pcs-starting-april-11-worldwide",
+      "publisher": "AMD",
+      "evidenceScope": "Official Ryzen 5 1000 launch month and model family evidence",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "amd_ryzen3_1000",
+      "title": "AMD Completes Ryzen Mainstream Desktop Lineup with Ryzen 3",
+      "url": "https://ir.amd.com/news-events/press-releases/detail/780/amd-completes-ryzen-mainstream-desktop-lineup-with-the-release-of-ryzen-3-processors",
+      "publisher": "AMD",
+      "evidenceScope": "Official Ryzen 3 1200/1300X availability and specifications",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "amd_bristol",
+      "title": "7th Gen A12-9800 APU specifications",
+      "url": "https://www.amd.com/en/support/downloads/drivers.html/processors/a-series/a12-series-apu-for-desktops/7th-gen-a12-9800-apu.html",
+      "publisher": "AMD",
+      "evidenceScope": "Official A12-9800 socket, cores, graphics, TDP, OEM and channel dates",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "amd_bristol_launch",
+      "title": "7th Generation AMD A-Series desktop systems debut globally",
+      "url": "https://ir.amd.com/news-events/press-releases/detail/712/new-mainstream-esports-ready-gaming-pcs-powered-by-7th-generation-amd-a-series-desktop-processors-debut-globally",
+      "publisher": "AMD",
+      "evidenceScope": "Official Bristol Ridge OEM shipping date and AM4 platform launch context",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "amd_ryzen2000",
+      "title": "2nd Generation AMD Ryzen Desktop Processors available April 19",
+      "url": "https://ir.amd.com/news-events/press-releases/detail/827/2nd-generation-amd-ryzen-desktop-processors-deliver-best-in-class-compute-performance-and-even-faster-gaming-framerates-than-previous-generation",
+      "publisher": "AMD",
+      "evidenceScope": "Official Ryzen 2000 launch availability and models/specifications",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "amd_tr1000",
+      "title": "AMD Ryzen Threadripper high-end desktop processor release",
+      "url": "https://www.amd.com/en/newsroom/press-releases/2017-8-10-amd-launches-the-highest-performance-desktop-proce.html",
+      "publisher": "AMD",
+      "evidenceScope": "Official first-generation Threadripper release and X399 platform evidence",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "amd_tr2000",
+      "title": "2nd Gen AMD Ryzen Threadripper launch",
+      "url": "https://ir.amd.com/news-events/press-releases/detail/846/amd-launches-worlds-most-powerful-desktop-processor-bigger-better-2nd-generation-amd-ryzen-threadripper-processors-break-boundaries-of-high-end-desktop-market",
+      "publisher": "AMD",
+      "evidenceScope": "Official Threadripper 2000 availability and X399 BIOS-compatible platform statement",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "amd_ryzen3000",
+      "title": "3rd Gen AMD Ryzen desktop processor launch and availability",
+      "url": "https://www.amd.com/en/newsroom/press-releases/2019-5-26-amd-announces-next-generation-leadership-products.html",
+      "publisher": "AMD",
+      "evidenceScope": "Official Ryzen 3000 family specifications and July 2019 availability announcement",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "amd_tr3000",
+      "title": "3rd Gen Ryzen Threadripper launch",
+      "url": "https://ir.amd.com/news-events/press-releases/detail/913/amd-introduces-worlds-fastest-high-end-desktop-processors-with-3rd-gen-ryzen-threadripper-family-delivering-unmatched-performance-with-no-compromises",
+      "publisher": "AMD",
+      "evidenceScope": "Official 3960X/3970X specifications, availability and new sTRX4 socket",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "amd_ryzen5000",
+      "title": "AMD Ryzen 5000 Series desktop processor launch",
+      "url": "https://ir.amd.com/news-events/press-releases/detail/972/amd-launches-amd-ryzen-5000-series-desktop-processors-the-fastest-gaming-cpus-in-the-world",
+      "publisher": "AMD",
+      "evidenceScope": "Official Ryzen 5000 specifications, November 2020 availability and launch support statement",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "amd_am4_matrix",
+      "title": "AMD Socket AM4 chipset specifications and CPU compatibility",
+      "url": "https://www.amd.com/en/products/processors/chipsets/am4.html",
+      "publisher": "AMD",
+      "evidenceScope": "Current official chipset compatibility table; chipset generation support and BIOS caveat, not historical board BIOS release evidence",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "amd_bios",
+      "title": "BIOS Updates for AMD Ryzen Desktop Systems",
+      "url": "https://www.amd.com/en/resources/support-articles/faqs/cpu-99.html",
+      "publisher": "AMD",
+      "evidenceScope": "Official explanation that motherboard BIOS update may be required; per-board matrix must be checked with board vendor",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "asux_h110_z270",
+      "title": "ASUS H110M-K and PRIME Z270-A product comparison",
+      "url": "https://www.asus.com/ca-en/product-compare?LevelId=Motherboards-Components-Motherboards&ProductID=8126%2C9027",
+      "publisher": "ASUS",
+      "evidenceScope": "Official board specs: LGA1151 6th/7th generation support, chipset, DDR4, DIMMs",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "msi_z390",
+      "title": "MPG Z390 GAMING PRO CARBON specifications",
+      "url": "https://www.msi.com/Motherboard/MPG-Z390-GAMING-PRO-CARBON/Specification",
+      "publisher": "MSI",
+      "evidenceScope": "Official board socket, Z390, CPU generations, DDR4 DIMM count and ATX form factor",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "msi_b350",
+      "title": "B350M BAZOOKA specifications",
+      "url": "https://www.msi.com/Motherboard/B350M-BAZOOKA/Specification",
+      "publisher": "MSI",
+      "evidenceScope": "Official board AM4/B350/DDR4/DIMM and CPU family support list",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "gigabyte_z370",
+      "title": "Z370 AORUS Gaming 5 specifications and support",
+      "url": "https://www.gigabyte.com/Motherboard/Z370-AORUS-Gaming-5-rev-10/Support",
+      "publisher": "GIGABYTE",
+      "evidenceScope": "Official Z370 board and 8th generation CPU support, DDR4 four DIMMs",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "gigabyte_z490",
+      "title": "Z490 AORUS ELITE AC user manual",
+      "url": "https://download.gigabyte.com/FileList/Manual/mb_manual_z490-aorus-elite-ac_1001_e.pdf",
+      "publisher": "GIGABYTE",
+      "evidenceScope": "Official board manual: LGA1200 10th gen processors, DDR4 four DIMMs",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "asrock_compare",
+      "title": "ASRock Z270 and Z370 motherboard comparison",
+      "url": "https://www.asrock.com/mb/compare.us.asp?Models=Z370+Taichi,Z270+Taichi,Z270+Extreme4,Z370+Extreme4",
+      "publisher": "ASRock",
+      "evidenceScope": "Official board chipset, generation-specific processor support, DDR4 and form factors",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "asrock_am4_cpu",
+      "title": "ASRock AM4 CPU support list",
+      "url": "https://www.asrock.com/support/cpu.asp?s=AM4&u=646",
+      "publisher": "ASRock",
+      "evidenceScope": "Official CPU support lookup showing chipset/model/BIOS-specific compatibility",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "colorful_b350",
+      "title": "Colorful Battle-Ax C.AB350M-HD V14A",
+      "url": "https://www.colorful.cn/home/product?id=693&mid=84",
+      "publisher": "Colorful",
+      "evidenceScope": "Official B350 board socket, memory and onboard platform summary",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "biostar_b550",
+      "title": "BIOSTAR B550GTA specifications",
+      "url": "https://www.biostar.com.tw/app/en/mb/introduction.php?S_ID=984",
+      "publisher": "BIOSTAR",
+      "evidenceScope": "Official B550GTA socket, chipset, CPU families, DDR4 DIMM count and capacity",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "biostar_5000",
+      "title": "BIOSTAR Ryzen 5000 BIOS support notice",
+      "url": "https://www.biostar.com.tw/app/tw/news/news.php?S_ID=435",
+      "publisher": "BIOSTAR",
+      "evidenceScope": "Official late-2020 Ryzen 5000 support notice listing selected X570/B550/A520 models",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "biostar_bios_lists",
+      "title": "BIOSTAR CPU support lists",
+      "url": "https://www.biostar.com.tw/app/en/support/cpu_mb.php?S_ID=24&T_ID=1439",
+      "publisher": "BIOSTAR",
+      "evidenceScope": "Official model/revision support lookup; board support depends on model and revision",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "maxsun_b450",
+      "title": "MS-Challenger B450M ICE specifications",
+      "url": "https://www.maxsun.com/products/challenger-b450m-ice",
+      "publisher": "MAXSUN",
+      "evidenceScope": "Official AM4/B450 board page; lists Ryzen 1000–5000 support conditional on BIOS, DDR4 and two DIMM slots",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "onda_products",
+      "title": "ONDA motherboard catalog",
+      "url": "https://www.onda.cn/MotherBoard.aspx",
+      "publisher": "ONDA",
+      "evidenceScope": "Official catalog family page; lists H110 and B550 product families and specific model names, but current catalog does not establish historical sale dates",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "soyo_archive",
+      "title": "SOYO motherboard categories and downloads",
+      "url": "https://www.soyocn.net/product16/zb/INTEL/bzcpu/",
+      "publisher": "SOYO",
+      "evidenceScope": "Official archive shows Intel/AMD chipset product families; no full old CPU support matrix exposed",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "soyo_2016_manual",
+      "title": "SOYO Intel and AMD motherboard manuals index",
+      "url": "https://www.soyocn.net/down/syshouce/",
+      "publisher": "SOYO",
+      "evidenceScope": "Official downloads index dates general Intel and AMD motherboard manuals to 2016-04; does not identify model-specific support",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "intel_skylake_brief",
+      "title": "6th Generation Intel Core desktop processor brief",
+      "url": "https://www.intel.com/content/dam/www/public/us/en/documents/product-briefs/6th-gen-core-family-desktop-brief.pdf",
+      "publisher": "Intel",
+      "evidenceScope": "Official Skylake desktop product brief with representative core/thread/TDP data",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "amd_fx8350",
+      "title": "AMD FX processor family cheat sheet",
+      "url": "https://subscriptions.amd.com/newsletters/channelnews/images/archive/%7B8c2ad3d7-3617-4eca-8465-b6c75b4cd054%7D_AMD_%28New%29_FX_Processors_Cheat_Sheet.pdf",
+      "publisher": "AMD",
+      "evidenceScope": "Official partner sheet identifies FX-8350 125W and AM3+ family; detailed historical spec page was not located",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "intel_comet_i5",
+      "title": "Intel Core i5-10400 specifications",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/199271/intel-core-i510400-processor-12m-cache-up-to-4-30-ghz/specifications.html",
+      "publisher": "Intel",
+      "evidenceScope": "Official Comet Lake SKU specification: six cores, twelve threads, 65W, DDR4 and Q2 2020 launch",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "intel_comet_i9",
+      "title": "Intel Core i9-10900K specifications",
+      "url": "https://www.intel.com/content/www/us/en/products/sku/199332/intel-core-i910900k-processor-20m-cache-up-to-5-30-ghz/specifications.html",
+      "publisher": "Intel",
+      "evidenceScope": "Official Comet Lake SKU specifications for flagship desktop model",
+      "checkedDate": "2026-10-07"
+    }
+  ],
+  "products": [
+    {
+      "id": "cm_cpu_intel_core_i3-6100",
+      "category": "cpu",
+      "brandId": "intek",
+      "realModel": "Intel Core i3-6100",
+      "realSeries": "Intel Skylake",
+      "gameName": {
+        "seriesId": "intek_gao",
+        "seriesZh": "膏系列",
+        "seriesEn": "GAO",
+        "model": "膏3-6100"
+      },
+      "release": {
+        "date": "2015-Q3",
+        "precision": "quarter",
+        "kind": "existing_before_phase",
+        "status": "verified",
+        "sourceIds": [
+          "intel_skylake_brief"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-01",
+        "through": null,
+        "basis": "existing_stock_assumption",
+        "note": "按官方季度或年份供货窗口折算为游戏月份；折算不是现实首售日期"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "cores": 2,
+        "threads": 4,
+        "tdpW": 51,
+        "integratedGraphics": "Intel HD Graphics 530",
+        "memoryType": "DDR4 / DDR3L",
+        "memoryChannels": 2,
+        "platformGeneration": "6th"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "intel_skylake_brief"
+      ],
+      "tier": "entry",
+      "useCases": [
+        "日常办公",
+        "入门装机"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_intel_core_i5-6500",
+      "category": "cpu",
+      "brandId": "intek",
+      "realModel": "Intel Core i5-6500",
+      "realSeries": "Intel Skylake",
+      "gameName": {
+        "seriesId": "intek_gao",
+        "seriesZh": "膏系列",
+        "seriesEn": "GAO",
+        "model": "膏5-6500"
+      },
+      "release": {
+        "date": "2015-Q3",
+        "precision": "quarter",
+        "kind": "existing_before_phase",
+        "status": "verified",
+        "sourceIds": [
+          "intel_skylake_brief"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-01",
+        "through": null,
+        "basis": "existing_stock_assumption",
+        "note": "按官方季度或年份供货窗口折算为游戏月份；折算不是现实首售日期"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "cores": 4,
+        "threads": 4,
+        "tdpW": 65,
+        "integratedGraphics": "Intel HD Graphics 530",
+        "memoryType": "DDR4 / DDR3L",
+        "memoryChannels": 2,
+        "platformGeneration": "6th"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "intel_skylake_brief"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "主流办公",
+        "轻度游戏"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_intel_core_i7-6700k",
+      "category": "cpu",
+      "brandId": "intek",
+      "realModel": "Intel Core i7-6700K",
+      "realSeries": "Intel Skylake",
+      "gameName": {
+        "seriesId": "intek_gao",
+        "seriesZh": "膏系列",
+        "seriesEn": "GAO",
+        "model": "膏7-6700K"
+      },
+      "release": {
+        "date": "2015-Q3",
+        "precision": "quarter",
+        "kind": "existing_before_phase",
+        "status": "verified",
+        "sourceIds": [
+          "intel_skylake_brief"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-01",
+        "through": null,
+        "basis": "existing_stock_assumption",
+        "note": "按官方季度或年份供货窗口折算为游戏月份；折算不是现实首售日期"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "cores": 4,
+        "threads": 8,
+        "tdpW": 91,
+        "integratedGraphics": "Intel HD Graphics 530",
+        "memoryType": "DDR4 / DDR3L",
+        "memoryChannels": 2,
+        "platformGeneration": "6th"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "intel_skylake_brief"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "高端游戏",
+        "超频"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_intel_core_i7-6800k",
+      "category": "cpu",
+      "brandId": "intek",
+      "realModel": "Intel Core i7-6800K",
+      "realSeries": "Intel Broadwell-E",
+      "gameName": {
+        "seriesId": "intek_gao",
+        "seriesZh": "膏系列",
+        "seriesEn": "GAO",
+        "model": "膏7-6800K"
+      },
+      "release": {
+        "date": "2016-Q2",
+        "precision": "quarter",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "intel_6800k"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-06",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方季度或年份供货窗口折算为游戏月份；折算不是现实首售日期"
+      },
+      "specs": {
+        "socket": "LGA2011-v3",
+        "cores": 6,
+        "threads": 12,
+        "tdpW": 140,
+        "integratedGraphics": "None",
+        "memoryType": "DDR4",
+        "memoryChannels": 4,
+        "platformGeneration": "Broadwell-E"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "intel_6800k"
+      ],
+      "tier": "specialist",
+      "useCases": [
+        "HEDT多线程",
+        "创作"
+      ],
+      "workshopNotes": [
+        "高功耗平台需匹配散热与主板供电"
+      ],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_intel_core_i7-7700k",
+      "category": "cpu",
+      "brandId": "intek",
+      "realModel": "Intel Core i7-7700K",
+      "realSeries": "Intel Kaby Lake",
+      "gameName": {
+        "seriesId": "intek_gao",
+        "seriesZh": "膏系列",
+        "seriesEn": "GAO",
+        "model": "膏7-7700K"
+      },
+      "release": {
+        "date": "2017-Q1",
+        "precision": "quarter",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "intel_ark_kaby"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-01",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方季度或年份供货窗口折算为游戏月份；折算不是现实首售日期"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "cores": 4,
+        "threads": 8,
+        "tdpW": 91,
+        "integratedGraphics": "Intel HD Graphics 630",
+        "memoryType": "DDR4 / DDR3L",
+        "memoryChannels": 2,
+        "platformGeneration": "7th"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "intel_ark_kaby"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "高端游戏",
+        "超频"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_intel_core_i5-7500",
+      "category": "cpu",
+      "brandId": "intek",
+      "realModel": "Intel Core i5-7500",
+      "realSeries": "Intel Kaby Lake",
+      "gameName": {
+        "seriesId": "intek_gao",
+        "seriesZh": "膏系列",
+        "seriesEn": "GAO",
+        "model": "膏5-7500"
+      },
+      "release": {
+        "date": "2017-Q1",
+        "precision": "quarter",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "intel_ark_kaby",
+          "intel_kaby_desktop"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-01",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方季度或年份供货窗口折算为游戏月份；折算不是现实首售日期"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "cores": 4,
+        "threads": 4,
+        "tdpW": 65,
+        "integratedGraphics": "Intel HD Graphics 630",
+        "memoryType": "DDR4 / DDR3L",
+        "memoryChannels": 2,
+        "platformGeneration": "7th"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "intel_ark_kaby",
+        "intel_kaby_desktop"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "主流游戏",
+        "办公"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_intel_core_i3-7100",
+      "category": "cpu",
+      "brandId": "intek",
+      "realModel": "Intel Core i3-7100",
+      "realSeries": "Intel Kaby Lake",
+      "gameName": {
+        "seriesId": "intek_gao",
+        "seriesZh": "膏系列",
+        "seriesEn": "GAO",
+        "model": "膏3-7100"
+      },
+      "release": {
+        "date": "2017-Q1",
+        "precision": "quarter",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "intel_ark_kaby"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-01",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方季度或年份供货窗口折算为游戏月份；折算不是现实首售日期"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "cores": 2,
+        "threads": 4,
+        "tdpW": 51,
+        "integratedGraphics": "Intel HD Graphics 630",
+        "memoryType": "DDR4 / DDR3L",
+        "memoryChannels": 2,
+        "platformGeneration": "7th"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "intel_ark_kaby"
+      ],
+      "tier": "entry",
+      "useCases": [
+        "入门办公",
+        "轻度游戏"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_intel_core_i7-7820x",
+      "category": "cpu",
+      "brandId": "intek",
+      "realModel": "Intel Core i7-7820X",
+      "realSeries": "Intel Skylake-X",
+      "gameName": {
+        "seriesId": "intek_gao",
+        "seriesZh": "膏系列",
+        "seriesEn": "GAO",
+        "model": "膏7-7820X"
+      },
+      "release": {
+        "date": "2017-Q2",
+        "precision": "quarter",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "intel_ark_kaby"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-04",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方季度或年份供货窗口折算为游戏月份；折算不是现实首售日期"
+      },
+      "specs": {
+        "socket": "LGA2066",
+        "cores": 8,
+        "threads": 16,
+        "tdpW": 140,
+        "integratedGraphics": "None",
+        "memoryType": "DDR4",
+        "memoryChannels": 4,
+        "platformGeneration": "Skylake-X"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "intel_ark_kaby"
+      ],
+      "tier": "specialist",
+      "useCases": [
+        "HEDT创作",
+        "多任务"
+      ],
+      "workshopNotes": [
+        "高功耗平台需匹配散热与主板供电"
+      ],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_intel_core_i7-8700k",
+      "category": "cpu",
+      "brandId": "intek",
+      "realModel": "Intel Core i7-8700K",
+      "realSeries": "Intel Coffee Lake",
+      "gameName": {
+        "seriesId": "intek_gao",
+        "seriesZh": "膏系列",
+        "seriesEn": "GAO",
+        "model": "膏7-8700K"
+      },
+      "release": {
+        "date": "2017-Q4",
+        "precision": "quarter",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "intel_ark_coffee"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-10",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方季度或年份供货窗口折算为游戏月份；折算不是现实首售日期"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "cores": 6,
+        "threads": 12,
+        "tdpW": 95,
+        "integratedGraphics": "Intel UHD Graphics 630",
+        "memoryType": "DDR4",
+        "memoryChannels": 2,
+        "platformGeneration": "8th"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "intel_ark_coffee"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "高端游戏",
+        "创作"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_intel_core_i5-8400",
+      "category": "cpu",
+      "brandId": "intek",
+      "realModel": "Intel Core i5-8400",
+      "realSeries": "Intel Coffee Lake",
+      "gameName": {
+        "seriesId": "intek_gao",
+        "seriesZh": "膏系列",
+        "seriesEn": "GAO",
+        "model": "膏5-8400"
+      },
+      "release": {
+        "date": "2017-Q4",
+        "precision": "quarter",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "intel_ark_coffee"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-10",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方季度或年份供货窗口折算为游戏月份；折算不是现实首售日期"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "cores": 6,
+        "threads": 6,
+        "tdpW": 65,
+        "integratedGraphics": "Intel UHD Graphics 630",
+        "memoryType": "DDR4",
+        "memoryChannels": 2,
+        "platformGeneration": "8th"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "intel_ark_coffee"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "主流游戏",
+        "办公"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_intel_core_i3-8100",
+      "category": "cpu",
+      "brandId": "intek",
+      "realModel": "Intel Core i3-8100",
+      "realSeries": "Intel Coffee Lake",
+      "gameName": {
+        "seriesId": "intek_gao",
+        "seriesZh": "膏系列",
+        "seriesEn": "GAO",
+        "model": "膏3-8100"
+      },
+      "release": {
+        "date": "2017-Q4",
+        "precision": "quarter",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "intel_ark_coffee"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-10",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方季度或年份供货窗口折算为游戏月份；折算不是现实首售日期"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "cores": 4,
+        "threads": 4,
+        "tdpW": 65,
+        "integratedGraphics": "Intel UHD Graphics 630",
+        "memoryType": "DDR4",
+        "memoryChannels": 2,
+        "platformGeneration": "8th"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "intel_ark_coffee"
+      ],
+      "tier": "entry",
+      "useCases": [
+        "入门游戏",
+        "办公"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_intel_core_i9-9900k",
+      "category": "cpu",
+      "brandId": "intek",
+      "realModel": "Intel Core i9-9900K",
+      "realSeries": "Intel Coffee Lake Refresh",
+      "gameName": {
+        "seriesId": "intek_gao",
+        "seriesZh": "膏系列",
+        "seriesEn": "GAO",
+        "model": "膏9-9900K"
+      },
+      "release": {
+        "date": "2018-Q4",
+        "precision": "quarter",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "intel_ark_coffee"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2018-10",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方季度或年份供货窗口折算为游戏月份；折算不是现实首售日期"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "cores": 8,
+        "threads": 16,
+        "tdpW": 95,
+        "integratedGraphics": "Intel UHD Graphics 630",
+        "memoryType": "DDR4",
+        "memoryChannels": 2,
+        "platformGeneration": "9th"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "intel_ark_coffee"
+      ],
+      "tier": "flagship",
+      "useCases": [
+        "旗舰游戏",
+        "创作"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_intel_core_i7-9700k",
+      "category": "cpu",
+      "brandId": "intek",
+      "realModel": "Intel Core i7-9700K",
+      "realSeries": "Intel Coffee Lake Refresh",
+      "gameName": {
+        "seriesId": "intek_gao",
+        "seriesZh": "膏系列",
+        "seriesEn": "GAO",
+        "model": "膏7-9700K"
+      },
+      "release": {
+        "date": "2018-Q4",
+        "precision": "quarter",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "intel_ark_coffee"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2018-10",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方季度或年份供货窗口折算为游戏月份；折算不是现实首售日期"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "cores": 8,
+        "threads": 8,
+        "tdpW": 95,
+        "integratedGraphics": "Intel UHD Graphics 630",
+        "memoryType": "DDR4",
+        "memoryChannels": 2,
+        "platformGeneration": "9th"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "intel_ark_coffee"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "高端游戏"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_intel_core_i5-9400f",
+      "category": "cpu",
+      "brandId": "intek",
+      "realModel": "Intel Core i5-9400F",
+      "realSeries": "Intel Coffee Lake Refresh",
+      "gameName": {
+        "seriesId": "intek_gao",
+        "seriesZh": "膏系列",
+        "seriesEn": "GAO",
+        "model": "膏5-9400F"
+      },
+      "release": {
+        "date": "2019-Q1",
+        "precision": "quarter",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "intel_ark_coffee"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2019-01",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方季度或年份供货窗口折算为游戏月份；折算不是现实首售日期"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "cores": 6,
+        "threads": 6,
+        "tdpW": 65,
+        "integratedGraphics": null,
+        "memoryType": "DDR4",
+        "memoryChannels": 2,
+        "platformGeneration": "9th"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "intel_ark_coffee"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "性价比游戏"
+      ],
+      "workshopNotes": [
+        "核显字段为无，装机需配独立显卡"
+      ],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_intel_core_i9-9900ks",
+      "category": "cpu",
+      "brandId": "intek",
+      "realModel": "Intel Core i9-9900KS",
+      "realSeries": "Intel Coffee Lake Refresh",
+      "gameName": {
+        "seriesId": "intek_gao",
+        "seriesZh": "膏系列",
+        "seriesEn": "GAO",
+        "model": "膏9-9900KS"
+      },
+      "release": {
+        "date": "2019-Q4",
+        "precision": "quarter",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "intel_ark_coffee"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2019-10",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方季度或年份供货窗口折算为游戏月份；折算不是现实首售日期"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "cores": 8,
+        "threads": 16,
+        "tdpW": 127,
+        "integratedGraphics": "Intel UHD Graphics 630",
+        "memoryType": "DDR4",
+        "memoryChannels": 2,
+        "platformGeneration": "9th"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "intel_ark_coffee"
+      ],
+      "tier": "flagship",
+      "useCases": [
+        "限量旗舰游戏"
+      ],
+      "workshopNotes": [
+        "高功耗平台需匹配散热与主板供电"
+      ],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_intel_core_i9-10980xe",
+      "category": "cpu",
+      "brandId": "intek",
+      "realModel": "Intel Core i9-10980XE",
+      "realSeries": "Intel Cascade Lake-X",
+      "gameName": {
+        "seriesId": "intek_gao",
+        "seriesZh": "膏系列",
+        "seriesEn": "GAO",
+        "model": "膏9-10980XE"
+      },
+      "release": {
+        "date": "2019-11",
+        "precision": "month",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "intel_launch_dates"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2019-11",
+        "through": null,
+        "basis": "verified_launch_month",
+        "note": "Intel于2019-11公布并供应；不按季度下限推早"
+      },
+      "specs": {
+        "socket": "LGA2066",
+        "cores": 18,
+        "threads": 36,
+        "tdpW": 165,
+        "integratedGraphics": "None",
+        "memoryType": "DDR4",
+        "memoryChannels": 4,
+        "platformGeneration": "Cascade Lake-X"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration"
+      ],
+      "sourceIds": [
+        "intel_launch_dates"
+      ],
+      "tier": "specialist",
+      "useCases": [
+        "HEDT渲染",
+        "创作"
+      ],
+      "workshopNotes": [
+        "高功耗平台需匹配散热与主板供电"
+      ],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_intel_core_i5-10400",
+      "category": "cpu",
+      "brandId": "intek",
+      "realModel": "Intel Core i5-10400",
+      "realSeries": "Intel Comet Lake",
+      "gameName": {
+        "seriesId": "intek_gao",
+        "seriesZh": "膏系列",
+        "seriesEn": "GAO",
+        "model": "膏5-10400"
+      },
+      "release": {
+        "date": "2020-Q2",
+        "precision": "quarter",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "intel_launch_dates"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2020-05",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方季度或年份供货窗口折算为游戏月份；折算不是现实首售日期"
+      },
+      "specs": {
+        "socket": "LGA1200",
+        "cores": 6,
+        "threads": 12,
+        "tdpW": 65,
+        "integratedGraphics": "Intel UHD Graphics 630",
+        "memoryType": "DDR4",
+        "memoryChannels": 2,
+        "platformGeneration": "10th"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "intel_launch_dates"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "主流游戏",
+        "多任务"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_intel_core_i7-10700k",
+      "category": "cpu",
+      "brandId": "intek",
+      "realModel": "Intel Core i7-10700K",
+      "realSeries": "Intel Comet Lake",
+      "gameName": {
+        "seriesId": "intek_gao",
+        "seriesZh": "膏系列",
+        "seriesEn": "GAO",
+        "model": "膏7-10700K"
+      },
+      "release": {
+        "date": "2020-Q2",
+        "precision": "quarter",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "intel_launch_dates"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2020-05",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方季度或年份供货窗口折算为游戏月份；折算不是现实首售日期"
+      },
+      "specs": {
+        "socket": "LGA1200",
+        "cores": 8,
+        "threads": 16,
+        "tdpW": 125,
+        "integratedGraphics": "Intel UHD Graphics 630",
+        "memoryType": "DDR4",
+        "memoryChannels": 2,
+        "platformGeneration": "10th"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "intel_launch_dates"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "高端游戏",
+        "创作"
+      ],
+      "workshopNotes": [
+        "高功耗平台需匹配散热与主板供电"
+      ],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_intel_core_i9-10900k",
+      "category": "cpu",
+      "brandId": "intek",
+      "realModel": "Intel Core i9-10900K",
+      "realSeries": "Intel Comet Lake",
+      "gameName": {
+        "seriesId": "intek_gao",
+        "seriesZh": "膏系列",
+        "seriesEn": "GAO",
+        "model": "膏9-10900K"
+      },
+      "release": {
+        "date": "2020-Q2",
+        "precision": "quarter",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "intel_launch_dates"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2020-05",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方季度或年份供货窗口折算为游戏月份；折算不是现实首售日期"
+      },
+      "specs": {
+        "socket": "LGA1200",
+        "cores": 10,
+        "threads": 20,
+        "tdpW": 125,
+        "integratedGraphics": "Intel UHD Graphics 630",
+        "memoryType": "DDR4",
+        "memoryChannels": 2,
+        "platformGeneration": "10th"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "intel_launch_dates"
+      ],
+      "tier": "flagship",
+      "useCases": [
+        "旗舰游戏",
+        "创作"
+      ],
+      "workshopNotes": [
+        "高功耗平台需匹配散热与主板供电"
+      ],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_amd_fx-8350",
+      "category": "cpu",
+      "brandId": "amdex",
+      "realModel": "AMD FX-8350",
+      "realSeries": "AMD FX",
+      "gameName": {
+        "seriesId": "amdex_fx",
+        "seriesZh": "FX",
+        "seriesEn": "FX",
+        "model": "FX-8350"
+      },
+      "release": {
+        "date": "2012-Q4",
+        "precision": "quarter",
+        "kind": "existing_before_phase",
+        "status": "verified",
+        "sourceIds": [
+          "amd_fx8350"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-01",
+        "through": null,
+        "basis": "existing_stock_assumption",
+        "note": "按官方季度或年份供货窗口折算为游戏月份；折算不是现实首售日期"
+      },
+      "specs": {
+        "socket": "AM3+",
+        "cores": 8,
+        "threads": 8,
+        "tdpW": 125,
+        "integratedGraphics": "None",
+        "memoryType": "DDR3",
+        "memoryChannels": 2,
+        "platformGeneration": "Piledriver"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "amd_fx8350"
+      ],
+      "tier": "entry",
+      "useCases": [
+        "旧平台升级",
+        "多线程旧机"
+      ],
+      "workshopNotes": [
+        "高功耗平台需匹配散热与主板供电"
+      ],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_amd_a12-9800",
+      "category": "cpu",
+      "brandId": "amdex",
+      "realModel": "AMD A12-9800",
+      "realSeries": "AMD Bristol Ridge",
+      "gameName": {
+        "seriesId": "amdex_ridge",
+        "seriesZh": "岭芯",
+        "seriesEn": "RIDGECORE",
+        "model": "艾A12-9800"
+      },
+      "release": {
+        "date": "2017-07-27",
+        "precision": "day",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "amd_bristol",
+          "amd_bristol_launch"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-07",
+        "through": null,
+        "basis": "verified_launch_month",
+        "note": "AMD规格页列独立零售渠道日期为2017-07-27；2016-09新闻描述的是首批OEM整机出货，不据此提前零售CPU采购"
+      },
+      "specs": {
+        "socket": "AM4",
+        "cores": 4,
+        "threads": 4,
+        "tdpW": 65,
+        "integratedGraphics": "Radeon R7 Graphics",
+        "memoryType": "DDR4",
+        "memoryChannels": 2,
+        "platformGeneration": "Bristol Ridge"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "amd_bristol",
+        "amd_bristol_launch"
+      ],
+      "tier": "entry",
+      "useCases": [
+        "入门办公",
+        "核显轻度游戏"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_amd_ryzen_7_1800x",
+      "category": "cpu",
+      "brandId": "amdex",
+      "realModel": "AMD Ryzen 7 1800X",
+      "realSeries": "AMD Ryzen 1000",
+      "gameName": {
+        "seriesId": "amdex_ryzen",
+        "seriesZh": "锐劲",
+        "seriesEn": "RYZENX",
+        "model": "锐7 1800X"
+      },
+      "release": {
+        "date": "2017-03",
+        "precision": "month",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "amd_ryzen1000"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-03",
+        "through": null,
+        "basis": "verified_launch_month",
+        "note": "上市时间取官方可售公告"
+      },
+      "specs": {
+        "socket": "AM4",
+        "cores": 8,
+        "threads": 16,
+        "tdpW": 95,
+        "integratedGraphics": "None",
+        "memoryType": "DDR4",
+        "memoryChannels": 2,
+        "platformGeneration": "Zen"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration"
+      ],
+      "sourceIds": [
+        "amd_ryzen1000"
+      ],
+      "tier": "flagship",
+      "useCases": [
+        "多线程创作",
+        "高端游戏"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_amd_ryzen_7_1700",
+      "category": "cpu",
+      "brandId": "amdex",
+      "realModel": "AMD Ryzen 7 1700",
+      "realSeries": "AMD Ryzen 1000",
+      "gameName": {
+        "seriesId": "amdex_ryzen",
+        "seriesZh": "锐劲",
+        "seriesEn": "RYZENX",
+        "model": "锐7 1700"
+      },
+      "release": {
+        "date": "2017-03",
+        "precision": "month",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "amd_ryzen1000"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-03",
+        "through": null,
+        "basis": "verified_launch_month",
+        "note": "上市时间取官方可售公告"
+      },
+      "specs": {
+        "socket": "AM4",
+        "cores": 8,
+        "threads": 16,
+        "tdpW": 65,
+        "integratedGraphics": "None",
+        "memoryType": "DDR4",
+        "memoryChannels": 2,
+        "platformGeneration": "Zen"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration"
+      ],
+      "sourceIds": [
+        "amd_ryzen1000"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "创作",
+        "节能多线程"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_amd_ryzen_5_1600",
+      "category": "cpu",
+      "brandId": "amdex",
+      "realModel": "AMD Ryzen 5 1600",
+      "realSeries": "AMD Ryzen 1000",
+      "gameName": {
+        "seriesId": "amdex_ryzen",
+        "seriesZh": "锐劲",
+        "seriesEn": "RYZENX",
+        "model": "锐5 1600"
+      },
+      "release": {
+        "date": "2017-04",
+        "precision": "month",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "amd_ryzen5_1000"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-04",
+        "through": null,
+        "basis": "verified_launch_month",
+        "note": "上市时间取官方可售公告"
+      },
+      "specs": {
+        "socket": "AM4",
+        "cores": 6,
+        "threads": 12,
+        "tdpW": 65,
+        "integratedGraphics": "None",
+        "memoryType": "DDR4",
+        "memoryChannels": 2,
+        "platformGeneration": "Zen"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration"
+      ],
+      "sourceIds": [
+        "amd_ryzen5_1000"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "游戏",
+        "多任务"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_amd_ryzen_3_1200",
+      "category": "cpu",
+      "brandId": "amdex",
+      "realModel": "AMD Ryzen 3 1200",
+      "realSeries": "AMD Ryzen 1000",
+      "gameName": {
+        "seriesId": "amdex_ryzen",
+        "seriesZh": "锐劲",
+        "seriesEn": "RYZENX",
+        "model": "锐3 1200"
+      },
+      "release": {
+        "date": "2017-07",
+        "precision": "month",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "amd_ryzen3_1000"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-07",
+        "through": null,
+        "basis": "verified_launch_month",
+        "note": "上市时间取官方可售公告"
+      },
+      "specs": {
+        "socket": "AM4",
+        "cores": 4,
+        "threads": 4,
+        "tdpW": 65,
+        "integratedGraphics": "None",
+        "memoryType": "DDR4",
+        "memoryChannels": 2,
+        "platformGeneration": "Zen"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration"
+      ],
+      "sourceIds": [
+        "amd_ryzen3_1000"
+      ],
+      "tier": "entry",
+      "useCases": [
+        "入门游戏",
+        "办公"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_amd_ryzen_threadripper_1950x",
+      "category": "cpu",
+      "brandId": "amdex",
+      "realModel": "AMD Ryzen Threadripper 1950X",
+      "realSeries": "AMD Threadripper 1000",
+      "gameName": {
+        "seriesId": "amdex_threadrip",
+        "seriesZh": "撕核",
+        "seriesEn": "THREADRIP",
+        "model": "撕1950X"
+      },
+      "release": {
+        "date": "2017-08",
+        "precision": "month",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "amd_tr1000"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-08",
+        "through": null,
+        "basis": "verified_launch_month",
+        "note": "上市时间取官方可售公告"
+      },
+      "specs": {
+        "socket": "TR4",
+        "cores": 16,
+        "threads": 32,
+        "tdpW": 180,
+        "integratedGraphics": "None",
+        "memoryType": "DDR4",
+        "memoryChannels": 4,
+        "platformGeneration": "Zen HEDT"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration"
+      ],
+      "sourceIds": [
+        "amd_tr1000"
+      ],
+      "tier": "specialist",
+      "useCases": [
+        "HEDT渲染",
+        "工作站"
+      ],
+      "workshopNotes": [
+        "高功耗平台需匹配散热与主板供电"
+      ],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_amd_ryzen_threadripper_1920x",
+      "category": "cpu",
+      "brandId": "amdex",
+      "realModel": "AMD Ryzen Threadripper 1920X",
+      "realSeries": "AMD Threadripper 1000",
+      "gameName": {
+        "seriesId": "amdex_threadrip",
+        "seriesZh": "撕核",
+        "seriesEn": "THREADRIP",
+        "model": "撕1920X"
+      },
+      "release": {
+        "date": "2017-08",
+        "precision": "month",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "amd_tr1000"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-08",
+        "through": null,
+        "basis": "verified_launch_month",
+        "note": "上市时间取官方可售公告"
+      },
+      "specs": {
+        "socket": "TR4",
+        "cores": 12,
+        "threads": 24,
+        "tdpW": 180,
+        "integratedGraphics": "None",
+        "memoryType": "DDR4",
+        "memoryChannels": 4,
+        "platformGeneration": "Zen HEDT"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration"
+      ],
+      "sourceIds": [
+        "amd_tr1000"
+      ],
+      "tier": "specialist",
+      "useCases": [
+        "HEDT创作",
+        "多任务"
+      ],
+      "workshopNotes": [
+        "高功耗平台需匹配散热与主板供电"
+      ],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_amd_ryzen_7_2700x",
+      "category": "cpu",
+      "brandId": "amdex",
+      "realModel": "AMD Ryzen 7 2700X",
+      "realSeries": "AMD Ryzen 2000",
+      "gameName": {
+        "seriesId": "amdex_ryzen",
+        "seriesZh": "锐劲",
+        "seriesEn": "RYZENX",
+        "model": "锐7 2700X"
+      },
+      "release": {
+        "date": "2018-04",
+        "precision": "month",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "amd_ryzen2000"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2018-04",
+        "through": null,
+        "basis": "verified_launch_month",
+        "note": "上市时间取官方可售公告"
+      },
+      "specs": {
+        "socket": "AM4",
+        "cores": 8,
+        "threads": 16,
+        "tdpW": 105,
+        "integratedGraphics": "None",
+        "memoryType": "DDR4",
+        "memoryChannels": 2,
+        "platformGeneration": "Zen+"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration"
+      ],
+      "sourceIds": [
+        "amd_ryzen2000"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "游戏",
+        "创作"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_amd_ryzen_5_2600",
+      "category": "cpu",
+      "brandId": "amdex",
+      "realModel": "AMD Ryzen 5 2600",
+      "realSeries": "AMD Ryzen 2000",
+      "gameName": {
+        "seriesId": "amdex_ryzen",
+        "seriesZh": "锐劲",
+        "seriesEn": "RYZENX",
+        "model": "锐5 2600"
+      },
+      "release": {
+        "date": "2018-04",
+        "precision": "month",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "amd_ryzen2000"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2018-04",
+        "through": null,
+        "basis": "verified_launch_month",
+        "note": "上市时间取官方可售公告"
+      },
+      "specs": {
+        "socket": "AM4",
+        "cores": 6,
+        "threads": 12,
+        "tdpW": 65,
+        "integratedGraphics": "None",
+        "memoryType": "DDR4",
+        "memoryChannels": 2,
+        "platformGeneration": "Zen+"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration"
+      ],
+      "sourceIds": [
+        "amd_ryzen2000"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "主流游戏",
+        "多任务"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_amd_ryzen_5_2400g",
+      "category": "cpu",
+      "brandId": "amdex",
+      "realModel": "AMD Ryzen 5 2400G",
+      "realSeries": "AMD Ryzen 2000 APU",
+      "gameName": {
+        "seriesId": "amdex_ryzen",
+        "seriesZh": "锐劲",
+        "seriesEn": "RYZENX",
+        "model": "锐5 2400G"
+      },
+      "release": {
+        "date": "2018-02",
+        "precision": "month",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "amd_ryzen2000"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2018-02",
+        "through": null,
+        "basis": "verified_launch_month",
+        "note": "上市时间取官方可售公告"
+      },
+      "specs": {
+        "socket": "AM4",
+        "cores": 4,
+        "threads": 8,
+        "tdpW": 65,
+        "integratedGraphics": "Radeon Vega 11 Graphics",
+        "memoryType": "DDR4",
+        "memoryChannels": 2,
+        "platformGeneration": "Zen APU"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration"
+      ],
+      "sourceIds": [
+        "amd_ryzen2000"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "核显游戏",
+        "入门整机"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_amd_ryzen_3_2200g",
+      "category": "cpu",
+      "brandId": "amdex",
+      "realModel": "AMD Ryzen 3 2200G",
+      "realSeries": "AMD Ryzen 2000 APU",
+      "gameName": {
+        "seriesId": "amdex_ryzen",
+        "seriesZh": "锐劲",
+        "seriesEn": "RYZENX",
+        "model": "锐3 2200G"
+      },
+      "release": {
+        "date": "2018-02",
+        "precision": "month",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "amd_ryzen2000"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2018-02",
+        "through": null,
+        "basis": "verified_launch_month",
+        "note": "上市时间取官方可售公告"
+      },
+      "specs": {
+        "socket": "AM4",
+        "cores": 4,
+        "threads": 4,
+        "tdpW": 65,
+        "integratedGraphics": "Radeon Vega 8 Graphics",
+        "memoryType": "DDR4",
+        "memoryChannels": 2,
+        "platformGeneration": "Zen APU"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration"
+      ],
+      "sourceIds": [
+        "amd_ryzen2000"
+      ],
+      "tier": "entry",
+      "useCases": [
+        "核显入门游戏",
+        "办公"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_amd_ryzen_threadripper_2950x",
+      "category": "cpu",
+      "brandId": "amdex",
+      "realModel": "AMD Ryzen Threadripper 2950X",
+      "realSeries": "AMD Threadripper 2000",
+      "gameName": {
+        "seriesId": "amdex_threadrip",
+        "seriesZh": "撕核",
+        "seriesEn": "THREADRIP",
+        "model": "撕2950X"
+      },
+      "release": {
+        "date": "2018-08",
+        "precision": "month",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "amd_tr2000"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2018-08",
+        "through": null,
+        "basis": "verified_launch_month",
+        "note": "上市时间取官方可售公告"
+      },
+      "specs": {
+        "socket": "TR4",
+        "cores": 16,
+        "threads": 32,
+        "tdpW": 180,
+        "integratedGraphics": "None",
+        "memoryType": "DDR4",
+        "memoryChannels": 4,
+        "platformGeneration": "Zen+"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration"
+      ],
+      "sourceIds": [
+        "amd_tr2000"
+      ],
+      "tier": "specialist",
+      "useCases": [
+        "HEDT渲染",
+        "创作"
+      ],
+      "workshopNotes": [
+        "高功耗平台需匹配散热与主板供电"
+      ],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_amd_ryzen_threadripper_2990wx",
+      "category": "cpu",
+      "brandId": "amdex",
+      "realModel": "AMD Ryzen Threadripper 2990WX",
+      "realSeries": "AMD Threadripper 2000",
+      "gameName": {
+        "seriesId": "amdex_threadrip",
+        "seriesZh": "撕核",
+        "seriesEn": "THREADRIP",
+        "model": "撕2990WX"
+      },
+      "release": {
+        "date": "2018-08",
+        "precision": "month",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "amd_tr2000"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2018-08",
+        "through": null,
+        "basis": "verified_launch_month",
+        "note": "上市时间取官方可售公告"
+      },
+      "specs": {
+        "socket": "TR4",
+        "cores": 32,
+        "threads": 64,
+        "tdpW": 250,
+        "integratedGraphics": "None",
+        "memoryType": "DDR4",
+        "memoryChannels": 4,
+        "platformGeneration": "Zen+"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration"
+      ],
+      "sourceIds": [
+        "amd_tr2000"
+      ],
+      "tier": "specialist",
+      "useCases": [
+        "极限多线程渲染",
+        "工作站"
+      ],
+      "workshopNotes": [
+        "高功耗平台需匹配散热与主板供电"
+      ],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_amd_ryzen_9_3900x",
+      "category": "cpu",
+      "brandId": "amdex",
+      "realModel": "AMD Ryzen 9 3900X",
+      "realSeries": "AMD Ryzen 3000",
+      "gameName": {
+        "seriesId": "amdex_ryzen",
+        "seriesZh": "锐劲",
+        "seriesEn": "RYZENX",
+        "model": "锐9 3900X"
+      },
+      "release": {
+        "date": "2019-07",
+        "precision": "month",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "amd_ryzen3000"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2019-07",
+        "through": null,
+        "basis": "verified_launch_month",
+        "note": "上市时间取官方可售公告"
+      },
+      "specs": {
+        "socket": "AM4",
+        "cores": 12,
+        "threads": 24,
+        "tdpW": 105,
+        "integratedGraphics": "None",
+        "memoryType": "DDR4",
+        "memoryChannels": 2,
+        "platformGeneration": "Zen 2"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration"
+      ],
+      "sourceIds": [
+        "amd_ryzen3000"
+      ],
+      "tier": "flagship",
+      "useCases": [
+        "游戏",
+        "创作",
+        "多任务"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_amd_ryzen_7_3700x",
+      "category": "cpu",
+      "brandId": "amdex",
+      "realModel": "AMD Ryzen 7 3700X",
+      "realSeries": "AMD Ryzen 3000",
+      "gameName": {
+        "seriesId": "amdex_ryzen",
+        "seriesZh": "锐劲",
+        "seriesEn": "RYZENX",
+        "model": "锐7 3700X"
+      },
+      "release": {
+        "date": "2019-07",
+        "precision": "month",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "amd_ryzen3000"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2019-07",
+        "through": null,
+        "basis": "verified_launch_month",
+        "note": "上市时间取官方可售公告"
+      },
+      "specs": {
+        "socket": "AM4",
+        "cores": 8,
+        "threads": 16,
+        "tdpW": 65,
+        "integratedGraphics": "None",
+        "memoryType": "DDR4",
+        "memoryChannels": 2,
+        "platformGeneration": "Zen 2"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration"
+      ],
+      "sourceIds": [
+        "amd_ryzen3000"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "游戏",
+        "创作"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_amd_ryzen_5_3600",
+      "category": "cpu",
+      "brandId": "amdex",
+      "realModel": "AMD Ryzen 5 3600",
+      "realSeries": "AMD Ryzen 3000",
+      "gameName": {
+        "seriesId": "amdex_ryzen",
+        "seriesZh": "锐劲",
+        "seriesEn": "RYZENX",
+        "model": "锐5 3600"
+      },
+      "release": {
+        "date": "2019-07",
+        "precision": "month",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "amd_ryzen3000"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2019-07",
+        "through": null,
+        "basis": "verified_launch_month",
+        "note": "上市时间取官方可售公告"
+      },
+      "specs": {
+        "socket": "AM4",
+        "cores": 6,
+        "threads": 12,
+        "tdpW": 65,
+        "integratedGraphics": "None",
+        "memoryType": "DDR4",
+        "memoryChannels": 2,
+        "platformGeneration": "Zen 2"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration"
+      ],
+      "sourceIds": [
+        "amd_ryzen3000"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "主流游戏",
+        "多任务"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_amd_ryzen_9_3950x",
+      "category": "cpu",
+      "brandId": "amdex",
+      "realModel": "AMD Ryzen 9 3950X",
+      "realSeries": "AMD Ryzen 3000",
+      "gameName": {
+        "seriesId": "amdex_ryzen",
+        "seriesZh": "锐劲",
+        "seriesEn": "RYZENX",
+        "model": "锐9 3950X"
+      },
+      "release": {
+        "date": "2019-09",
+        "precision": "month",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "amd_ryzen3000"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2019-09",
+        "through": null,
+        "basis": "verified_launch_month",
+        "note": "上市时间取官方可售公告"
+      },
+      "specs": {
+        "socket": "AM4",
+        "cores": 16,
+        "threads": 32,
+        "tdpW": 105,
+        "integratedGraphics": "None",
+        "memoryType": "DDR4",
+        "memoryChannels": 2,
+        "platformGeneration": "Zen 2"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration"
+      ],
+      "sourceIds": [
+        "amd_ryzen3000"
+      ],
+      "tier": "flagship",
+      "useCases": [
+        "高端创作",
+        "渲染"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_amd_ryzen_5_3400g",
+      "category": "cpu",
+      "brandId": "amdex",
+      "realModel": "AMD Ryzen 5 3400G",
+      "realSeries": "AMD Ryzen 3000 APU",
+      "gameName": {
+        "seriesId": "amdex_ryzen",
+        "seriesZh": "锐劲",
+        "seriesEn": "RYZENX",
+        "model": "锐5 3400G"
+      },
+      "release": {
+        "date": "2019-07",
+        "precision": "month",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "amd_ryzen3000"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2019-07",
+        "through": null,
+        "basis": "verified_launch_month",
+        "note": "上市时间取官方可售公告"
+      },
+      "specs": {
+        "socket": "AM4",
+        "cores": 4,
+        "threads": 8,
+        "tdpW": 65,
+        "integratedGraphics": "Radeon RX Vega 11 Graphics",
+        "memoryType": "DDR4",
+        "memoryChannels": 2,
+        "platformGeneration": "Zen+"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration"
+      ],
+      "sourceIds": [
+        "amd_ryzen3000"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "核显游戏",
+        "家用创作"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_amd_ryzen_threadripper_3960x",
+      "category": "cpu",
+      "brandId": "amdex",
+      "realModel": "AMD Ryzen Threadripper 3960X",
+      "realSeries": "AMD Threadripper 3000",
+      "gameName": {
+        "seriesId": "amdex_threadrip",
+        "seriesZh": "撕核",
+        "seriesEn": "THREADRIP",
+        "model": "撕3960X"
+      },
+      "release": {
+        "date": "2019-11",
+        "precision": "month",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "amd_tr3000"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2019-11",
+        "through": null,
+        "basis": "verified_launch_month",
+        "note": "上市时间取官方可售公告"
+      },
+      "specs": {
+        "socket": "sTRX4",
+        "cores": 24,
+        "threads": 48,
+        "tdpW": 280,
+        "integratedGraphics": "None",
+        "memoryType": "DDR4",
+        "memoryChannels": 4,
+        "platformGeneration": "Zen 2 HEDT"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration"
+      ],
+      "sourceIds": [
+        "amd_tr3000"
+      ],
+      "tier": "specialist",
+      "useCases": [
+        "HEDT渲染",
+        "工作站"
+      ],
+      "workshopNotes": [
+        "高功耗平台需匹配散热与主板供电"
+      ],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_amd_ryzen_threadripper_3970x",
+      "category": "cpu",
+      "brandId": "amdex",
+      "realModel": "AMD Ryzen Threadripper 3970X",
+      "realSeries": "AMD Threadripper 3000",
+      "gameName": {
+        "seriesId": "amdex_threadrip",
+        "seriesZh": "撕核",
+        "seriesEn": "THREADRIP",
+        "model": "撕3970X"
+      },
+      "release": {
+        "date": "2019-11",
+        "precision": "month",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "amd_tr3000"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2019-11",
+        "through": null,
+        "basis": "verified_launch_month",
+        "note": "上市时间取官方可售公告"
+      },
+      "specs": {
+        "socket": "sTRX4",
+        "cores": 32,
+        "threads": 64,
+        "tdpW": 280,
+        "integratedGraphics": "None",
+        "memoryType": "DDR4",
+        "memoryChannels": 4,
+        "platformGeneration": "Zen 2 HEDT"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration"
+      ],
+      "sourceIds": [
+        "amd_tr3000"
+      ],
+      "tier": "specialist",
+      "useCases": [
+        "HEDT渲染",
+        "工作站"
+      ],
+      "workshopNotes": [
+        "高功耗平台需匹配散热与主板供电"
+      ],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_amd_ryzen_5_5600x",
+      "category": "cpu",
+      "brandId": "amdex",
+      "realModel": "AMD Ryzen 5 5600X",
+      "realSeries": "AMD Ryzen 5000",
+      "gameName": {
+        "seriesId": "amdex_ryzen",
+        "seriesZh": "锐劲",
+        "seriesEn": "RYZENX",
+        "model": "锐5 5600X"
+      },
+      "release": {
+        "date": "2020-11",
+        "precision": "month",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "amd_ryzen5000"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2020-11",
+        "through": null,
+        "basis": "verified_launch_month",
+        "note": "上市时间取官方可售公告"
+      },
+      "specs": {
+        "socket": "AM4",
+        "cores": 6,
+        "threads": 12,
+        "tdpW": 65,
+        "integratedGraphics": "None",
+        "memoryType": "DDR4",
+        "memoryChannels": 2,
+        "platformGeneration": "Zen 3"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration"
+      ],
+      "sourceIds": [
+        "amd_ryzen5000"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "游戏",
+        "创作"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_amd_ryzen_7_5800x",
+      "category": "cpu",
+      "brandId": "amdex",
+      "realModel": "AMD Ryzen 7 5800X",
+      "realSeries": "AMD Ryzen 5000",
+      "gameName": {
+        "seriesId": "amdex_ryzen",
+        "seriesZh": "锐劲",
+        "seriesEn": "RYZENX",
+        "model": "锐7 5800X"
+      },
+      "release": {
+        "date": "2020-11",
+        "precision": "month",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "amd_ryzen5000"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2020-11",
+        "through": null,
+        "basis": "verified_launch_month",
+        "note": "上市时间取官方可售公告"
+      },
+      "specs": {
+        "socket": "AM4",
+        "cores": 8,
+        "threads": 16,
+        "tdpW": 105,
+        "integratedGraphics": "None",
+        "memoryType": "DDR4",
+        "memoryChannels": 2,
+        "platformGeneration": "Zen 3"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration"
+      ],
+      "sourceIds": [
+        "amd_ryzen5000"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "高端游戏",
+        "创作"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_amd_ryzen_9_5900x",
+      "category": "cpu",
+      "brandId": "amdex",
+      "realModel": "AMD Ryzen 9 5900X",
+      "realSeries": "AMD Ryzen 5000",
+      "gameName": {
+        "seriesId": "amdex_ryzen",
+        "seriesZh": "锐劲",
+        "seriesEn": "RYZENX",
+        "model": "锐9 5900X"
+      },
+      "release": {
+        "date": "2020-11",
+        "precision": "month",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "amd_ryzen5000"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2020-11",
+        "through": null,
+        "basis": "verified_launch_month",
+        "note": "上市时间取官方可售公告"
+      },
+      "specs": {
+        "socket": "AM4",
+        "cores": 12,
+        "threads": 24,
+        "tdpW": 105,
+        "integratedGraphics": "None",
+        "memoryType": "DDR4",
+        "memoryChannels": 2,
+        "platformGeneration": "Zen 3"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration"
+      ],
+      "sourceIds": [
+        "amd_ryzen5000"
+      ],
+      "tier": "flagship",
+      "useCases": [
+        "旗舰游戏",
+        "创作"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_cpu_amd_ryzen_9_5950x",
+      "category": "cpu",
+      "brandId": "amdex",
+      "realModel": "AMD Ryzen 9 5950X",
+      "realSeries": "AMD Ryzen 5000",
+      "gameName": {
+        "seriesId": "amdex_ryzen",
+        "seriesZh": "锐劲",
+        "seriesEn": "RYZENX",
+        "model": "锐9 5950X"
+      },
+      "release": {
+        "date": "2020-11",
+        "precision": "month",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "amd_ryzen5000"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2020-11",
+        "through": null,
+        "basis": "verified_launch_month",
+        "note": "上市时间取官方可售公告"
+      },
+      "specs": {
+        "socket": "AM4",
+        "cores": 16,
+        "threads": 32,
+        "tdpW": 105,
+        "integratedGraphics": "None",
+        "memoryType": "DDR4",
+        "memoryChannels": 2,
+        "platformGeneration": "Zen 3"
+      },
+      "verifiedFields": [
+        "cores",
+        "threads",
+        "tdpW",
+        "release.date"
+      ],
+      "inferredFields": [
+        "socket",
+        "integratedGraphics",
+        "memoryType",
+        "memoryChannels",
+        "platformGeneration"
+      ],
+      "sourceIds": [
+        "amd_ryzen5000"
+      ],
+      "tier": "flagship",
+      "useCases": [
+        "高端渲染",
+        "创作"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_h110m-k",
+      "category": "motherboard",
+      "brandId": "asux",
+      "realModel": "H110M-K",
+      "realSeries": "Intel H110",
+      "gameName": {
+        "seriesId": "asux_base",
+        "seriesZh": "磐基",
+        "seriesEn": "BASESTONE",
+        "model": "H110M-K"
+      },
+      "release": {
+        "date": "2016",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "asux_h110_z270",
+          "intel_1151"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "chipset": "Intel H110",
+        "formFactor": "mATX",
+        "memoryType": "DDR4",
+        "dimmSlots": "2",
+        "cpuSupportCondition": "6th/7th gen; 7th gen requires compatible BIOS"
+      },
+      "verifiedFields": [
+        "socket",
+        "chipset",
+        "memoryType"
+      ],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "formFactor",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "asux_h110_z270",
+        "intel_1151"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "平台升级",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_z170-a",
+      "category": "motherboard",
+      "brandId": "asux",
+      "realModel": "Z170-A",
+      "realSeries": "Intel Z170",
+      "gameName": {
+        "seriesId": "asux_expand",
+        "seriesZh": "拓域",
+        "seriesEn": "EXPANSE",
+        "model": "Z170-A"
+      },
+      "release": {
+        "date": "2015",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "asux_h110_z270",
+          "intel_1151"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-01",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "chipset": "Intel Z170",
+        "formFactor": "ATX",
+        "memoryType": "DDR4",
+        "dimmSlots": "4",
+        "cpuSupportCondition": "6th gen; select 7th gen with BIOS update"
+      },
+      "verifiedFields": [
+        "socket",
+        "chipset",
+        "memoryType"
+      ],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "formFactor",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "asux_h110_z270",
+        "intel_1151"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "平台升级",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_prime_z270-a",
+      "category": "motherboard",
+      "brandId": "asux",
+      "realModel": "PRIME Z270-A",
+      "realSeries": "Intel Z270",
+      "gameName": {
+        "seriesId": "asux_expand",
+        "seriesZh": "拓域",
+        "seriesEn": "EXPANSE",
+        "model": "Z270-A"
+      },
+      "release": {
+        "date": "2017",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "asux_h110_z270",
+          "intel_1151"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "chipset": "Intel Z270",
+        "formFactor": "ATX",
+        "memoryType": "DDR4",
+        "dimmSlots": "4",
+        "cpuSupportCondition": "6th/7th gen"
+      },
+      "verifiedFields": [
+        "socket",
+        "chipset",
+        "memoryType",
+        "dimmSlots",
+        "formFactor"
+      ],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "asux_h110_z270",
+        "intel_1151"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "平台升级",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_rog_strix_z270f_gaming",
+      "category": "motherboard",
+      "brandId": "rogue",
+      "realModel": "ROG STRIX Z270F GAMING",
+      "realSeries": "Intel Z270",
+      "gameName": {
+        "seriesId": "rogue_board_nighthunt",
+        "seriesZh": "夜猎",
+        "seriesEn": "NIGHTHUNT",
+        "model": "Z270F 竞游"
+      },
+      "release": {
+        "date": "2017",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "asux_h110_z270",
+          "intel_1151"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "chipset": "Intel Z270",
+        "formFactor": "ATX",
+        "memoryType": "DDR4",
+        "dimmSlots": "4",
+        "cpuSupportCondition": "6th/7th gen"
+      },
+      "verifiedFields": [
+        "socket",
+        "chipset",
+        "memoryType"
+      ],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "formFactor",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "asux_h110_z270",
+        "intel_1151"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "平台升级",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_rog_maximus_x_hero",
+      "category": "motherboard",
+      "brandId": "rogue",
+      "realModel": "ROG MAXIMUS X HERO",
+      "realSeries": "Intel Z370",
+      "gameName": {
+        "seriesId": "rogue_board_nighthunt",
+        "seriesZh": "夜猎",
+        "seriesEn": "NIGHTHUNT",
+        "model": "曜尊 X HERO"
+      },
+      "release": {
+        "date": "2017",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "intel_1151",
+          "gigabyte_z370"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "chipset": "Intel Z370",
+        "formFactor": "ATX",
+        "memoryType": "DDR4",
+        "dimmSlots": "4",
+        "cpuSupportCondition": "8th gen"
+      },
+      "verifiedFields": [
+        "socket",
+        "chipset",
+        "memoryType"
+      ],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "formFactor",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "intel_1151",
+        "gigabyte_z370"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "高端扩展",
+        "整机装配"
+      ],
+      "workshopNotes": [
+        "ROG 是华烁 ASUS 的子品牌，对应项目注册关系 ROGUE → ASUX"
+      ],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_rog_strix_z390-e_gaming",
+      "category": "motherboard",
+      "brandId": "rogue",
+      "realModel": "ROG STRIX Z390-E GAMING",
+      "realSeries": "Intel Z390",
+      "gameName": {
+        "seriesId": "rogue_board_nighthunt",
+        "seriesZh": "夜猎",
+        "seriesEn": "NIGHTHUNT",
+        "model": "Z390-E 竞游"
+      },
+      "release": {
+        "date": "2018",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "msi_z390",
+          "intel_1151"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2018-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "chipset": "Intel Z390",
+        "formFactor": "ATX",
+        "memoryType": "DDR4",
+        "dimmSlots": "4",
+        "cpuSupportCondition": "8th/9th gen; 9th gen may require BIOS update"
+      },
+      "verifiedFields": [
+        "socket",
+        "chipset",
+        "memoryType"
+      ],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "formFactor",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "msi_z390",
+        "intel_1151"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "高端扩展",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_tuf_z390-plus_gaming",
+      "category": "motherboard",
+      "brandId": "asux",
+      "realModel": "TUF Z390-PLUS GAMING",
+      "realSeries": "Intel Z390",
+      "gameName": {
+        "seriesId": "asux_expand",
+        "seriesZh": "拓域",
+        "seriesEn": "EXPANSE",
+        "model": "砺甲 Z390-PLUS 竞游"
+      },
+      "release": {
+        "date": "2018",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "intel_1151"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2018-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "chipset": "Intel Z390",
+        "formFactor": "ATX",
+        "memoryType": "DDR4",
+        "dimmSlots": "4",
+        "cpuSupportCondition": "8th/9th gen; check board CPU support list"
+      },
+      "verifiedFields": [
+        "socket",
+        "chipset",
+        "memoryType"
+      ],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "formFactor",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "intel_1151"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "平台升级",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_tuf_gaming_z490-plus",
+      "category": "motherboard",
+      "brandId": "asux",
+      "realModel": "TUF GAMING Z490-PLUS",
+      "realSeries": "Intel Z490",
+      "gameName": {
+        "seriesId": "asux_expand",
+        "seriesZh": "拓域",
+        "seriesEn": "EXPANSE",
+        "model": "砺甲 竞游 Z490-PLUS"
+      },
+      "release": {
+        "date": "2020",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "intel_launch_dates",
+          "gigabyte_z490"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2020-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "LGA1200",
+        "chipset": "Intel Z490",
+        "formFactor": "ATX",
+        "memoryType": "DDR4",
+        "dimmSlots": "4",
+        "cpuSupportCondition": "10th gen"
+      },
+      "verifiedFields": [
+        "socket",
+        "chipset",
+        "memoryType"
+      ],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "formFactor",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "intel_launch_dates",
+        "gigabyte_z490"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "平台升级",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_rog_strix_z490-e_gaming",
+      "category": "motherboard",
+      "brandId": "rogue",
+      "realModel": "ROG STRIX Z490-E GAMING",
+      "realSeries": "Intel Z490",
+      "gameName": {
+        "seriesId": "rogue_board_nighthunt",
+        "seriesZh": "夜猎",
+        "seriesEn": "NIGHTHUNT",
+        "model": "Z490-E 竞游"
+      },
+      "release": {
+        "date": "2020",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "intel_launch_dates",
+          "gigabyte_z490"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2020-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "LGA1200",
+        "chipset": "Intel Z490",
+        "formFactor": "ATX",
+        "memoryType": "DDR4",
+        "dimmSlots": "4",
+        "cpuSupportCondition": "10th gen"
+      },
+      "verifiedFields": [
+        "socket",
+        "chipset",
+        "memoryType"
+      ],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "formFactor",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "intel_launch_dates",
+        "gigabyte_z490"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "高端扩展",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_h110m_pro-vd",
+      "category": "motherboard",
+      "brandId": "misi",
+      "realModel": "H110M PRO-VD",
+      "realSeries": "Intel H110",
+      "gameName": {
+        "seriesId": "misi_board",
+        "seriesZh": "磐狮",
+        "seriesEn": "LIONBASE",
+        "model": "H110M PRO-VD"
+      },
+      "release": {
+        "date": "2016",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "intel_1151"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "chipset": "Intel H110",
+        "formFactor": "mATX",
+        "memoryType": "DDR4",
+        "dimmSlots": "2",
+        "cpuSupportCondition": "6th/7th gen; confirm BIOS for 7th gen"
+      },
+      "verifiedFields": [
+        "socket",
+        "chipset",
+        "memoryType"
+      ],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "formFactor",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "intel_1151"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "平台升级",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_z170a_gaming_m5",
+      "category": "motherboard",
+      "brandId": "misi",
+      "realModel": "Z170A GAMING M5",
+      "realSeries": "Intel Z170",
+      "gameName": {
+        "seriesId": "misi_board",
+        "seriesZh": "磐狮",
+        "seriesEn": "LIONBASE",
+        "model": "Z170A 竞游 M5"
+      },
+      "release": {
+        "date": "2016",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "intel_1151"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "chipset": "Intel Z170",
+        "formFactor": "ATX",
+        "memoryType": "DDR4",
+        "dimmSlots": "4",
+        "cpuSupportCondition": "6th/7th gen; confirm BIOS for 7th gen"
+      },
+      "verifiedFields": [
+        "socket",
+        "chipset",
+        "memoryType"
+      ],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "formFactor",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "intel_1151"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "平台升级",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_z270_gaming_pro_carbon",
+      "category": "motherboard",
+      "brandId": "misi",
+      "realModel": "Z270 GAMING PRO CARBON",
+      "realSeries": "Intel Z270",
+      "gameName": {
+        "seriesId": "misi_board",
+        "seriesZh": "磐狮",
+        "seriesEn": "LIONBASE",
+        "model": "Z270 竞游 碳纹"
+      },
+      "release": {
+        "date": "2017",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "intel_1151"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "chipset": "Intel Z270",
+        "formFactor": "ATX",
+        "memoryType": "DDR4",
+        "dimmSlots": "4",
+        "cpuSupportCondition": "6th/7th gen"
+      },
+      "verifiedFields": [
+        "socket",
+        "chipset",
+        "memoryType"
+      ],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "formFactor",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "intel_1151"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "高端扩展",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_z370_gaming_pro_carbon",
+      "category": "motherboard",
+      "brandId": "misi",
+      "realModel": "Z370 GAMING PRO CARBON",
+      "realSeries": "Intel Z370",
+      "gameName": {
+        "seriesId": "misi_board",
+        "seriesZh": "磐狮",
+        "seriesEn": "LIONBASE",
+        "model": "Z370 竞游 碳纹"
+      },
+      "release": {
+        "date": "2017",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "gigabyte_z370",
+          "intel_1151"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "chipset": "Intel Z370",
+        "formFactor": "ATX",
+        "memoryType": "DDR4",
+        "dimmSlots": "4",
+        "cpuSupportCondition": "8th gen"
+      },
+      "verifiedFields": [
+        "socket",
+        "chipset",
+        "memoryType"
+      ],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "formFactor",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "gigabyte_z370",
+        "intel_1151"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "高端扩展",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_mpg_z390_gaming_pro_carbon",
+      "category": "motherboard",
+      "brandId": "misi",
+      "realModel": "MPG Z390 GAMING PRO CARBON",
+      "realSeries": "Intel Z390",
+      "gameName": {
+        "seriesId": "misi_board",
+        "seriesZh": "磐狮",
+        "seriesEn": "LIONBASE",
+        "model": "MPG Z390 竞游 碳纹"
+      },
+      "release": {
+        "date": "2018",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "msi_z390",
+          "intel_1151"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2018-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "chipset": "Intel Z390",
+        "formFactor": "ATX",
+        "memoryType": "DDR4",
+        "dimmSlots": "4",
+        "cpuSupportCondition": "8th/9th gen; 9th gen BIOS-specific"
+      },
+      "verifiedFields": [
+        "socket",
+        "chipset",
+        "memoryType"
+      ],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "formFactor",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "msi_z390",
+        "intel_1151"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "高端扩展",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_z490-a_pro",
+      "category": "motherboard",
+      "brandId": "misi",
+      "realModel": "Z490-A PRO",
+      "realSeries": "Intel Z490",
+      "gameName": {
+        "seriesId": "misi_board",
+        "seriesZh": "磐狮",
+        "seriesEn": "LIONBASE",
+        "model": "Z490-A PRO"
+      },
+      "release": {
+        "date": "2020",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "gigabyte_z490"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2020-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "LGA1200",
+        "chipset": "Intel Z490",
+        "formFactor": "ATX",
+        "memoryType": "DDR4",
+        "dimmSlots": "4",
+        "cpuSupportCondition": "10th gen"
+      },
+      "verifiedFields": [
+        "socket",
+        "chipset",
+        "memoryType"
+      ],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "formFactor",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "gigabyte_z490"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "平台升级",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_ga-h110m-s2h",
+      "category": "motherboard",
+      "brandId": "gigabite",
+      "realModel": "GA-H110M-S2H",
+      "realSeries": "Intel H110",
+      "gameName": {
+        "seriesId": "gigabite_board",
+        "seriesZh": "磐翼",
+        "seriesEn": "WINGBASE",
+        "model": "GA-H110M-S2H"
+      },
+      "release": {
+        "date": "2016",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "intel_1151"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "chipset": "Intel H110",
+        "formFactor": "mATX",
+        "memoryType": "DDR4",
+        "dimmSlots": "2",
+        "cpuSupportCondition": "6th/7th gen; board BIOS-specific"
+      },
+      "verifiedFields": [],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "socket",
+        "chipset",
+        "formFactor",
+        "memoryType",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "intel_1151"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "平台升级",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_ga-z170x-ud3",
+      "category": "motherboard",
+      "brandId": "gigabite",
+      "realModel": "GA-Z170X-UD3",
+      "realSeries": "Intel Z170",
+      "gameName": {
+        "seriesId": "gigabite_board",
+        "seriesZh": "磐翼",
+        "seriesEn": "WINGBASE",
+        "model": "GA-Z170X-UD3"
+      },
+      "release": {
+        "date": "2016",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "intel_1151"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "chipset": "Intel Z170",
+        "formFactor": "ATX",
+        "memoryType": "DDR4",
+        "dimmSlots": "4",
+        "cpuSupportCondition": "6th/7th gen; board BIOS-specific"
+      },
+      "verifiedFields": [],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "socket",
+        "chipset",
+        "formFactor",
+        "memoryType",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "intel_1151"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "平台升级",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_z270_aorus_gaming_5",
+      "category": "motherboard",
+      "brandId": "gigabite",
+      "realModel": "Z270 AORUS Gaming 5",
+      "realSeries": "Intel Z270",
+      "gameName": {
+        "seriesId": "gigabite_board",
+        "seriesZh": "磐翼",
+        "seriesEn": "WINGBASE",
+        "model": "Z270 翼龙 竞游 5"
+      },
+      "release": {
+        "date": "2017",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "intel_1151"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "chipset": "Intel Z270",
+        "formFactor": "ATX",
+        "memoryType": "DDR4",
+        "dimmSlots": "4",
+        "cpuSupportCondition": "6th/7th gen"
+      },
+      "verifiedFields": [],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "socket",
+        "chipset",
+        "formFactor",
+        "memoryType",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "intel_1151"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "高端扩展",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_z370_aorus_gaming_5",
+      "category": "motherboard",
+      "brandId": "gigabite",
+      "realModel": "Z370 AORUS Gaming 5",
+      "realSeries": "Intel Z370",
+      "gameName": {
+        "seriesId": "gigabite_board",
+        "seriesZh": "磐翼",
+        "seriesEn": "WINGBASE",
+        "model": "Z370 翼龙 竞游 5"
+      },
+      "release": {
+        "date": "2017",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "gigabyte_z370",
+          "intel_1151"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "chipset": "Intel Z370",
+        "formFactor": "ATX",
+        "memoryType": "DDR4",
+        "dimmSlots": "4",
+        "cpuSupportCondition": "8th gen"
+      },
+      "verifiedFields": [
+        "socket",
+        "chipset",
+        "memoryType"
+      ],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "formFactor",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "gigabyte_z370",
+        "intel_1151"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "高端扩展",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_z390_aorus_master",
+      "category": "motherboard",
+      "brandId": "gigabite",
+      "realModel": "Z390 AORUS MASTER",
+      "realSeries": "Intel Z390",
+      "gameName": {
+        "seriesId": "gigabite_board",
+        "seriesZh": "磐翼",
+        "seriesEn": "WINGBASE",
+        "model": "Z390 翼龙 宗师"
+      },
+      "release": {
+        "date": "2018",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "intel_1151"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2018-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "chipset": "Intel Z390",
+        "formFactor": "ATX",
+        "memoryType": "DDR4",
+        "dimmSlots": "4",
+        "cpuSupportCondition": "8th/9th gen; CPU support BIOS-specific"
+      },
+      "verifiedFields": [],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "socket",
+        "chipset",
+        "formFactor",
+        "memoryType",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "intel_1151"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "高端扩展",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_z490_aorus_elite_ac",
+      "category": "motherboard",
+      "brandId": "gigabite",
+      "realModel": "Z490 AORUS ELITE AC",
+      "realSeries": "Intel Z490",
+      "gameName": {
+        "seriesId": "gigabite_board",
+        "seriesZh": "磐翼",
+        "seriesEn": "WINGBASE",
+        "model": "Z490 翼龙 精英 AC"
+      },
+      "release": {
+        "date": "2020",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "gigabyte_z490"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2020-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "LGA1200",
+        "chipset": "Intel Z490",
+        "formFactor": "ATX",
+        "memoryType": "DDR4",
+        "dimmSlots": "4",
+        "cpuSupportCondition": "10th gen"
+      },
+      "verifiedFields": [
+        "socket",
+        "chipset",
+        "memoryType"
+      ],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "formFactor",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "gigabyte_z490"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "高端扩展",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_战斧_c.ab350m-hd_魔音版_v14a",
+      "category": "motherboard",
+      "brandId": "colorfull",
+      "realModel": "战斧 C.AB350M-HD 魔音版 V14A",
+      "realSeries": "AMD B350",
+      "gameName": {
+        "seriesId": "colorfull_board",
+        "seriesZh": "战旗",
+        "seriesEn": "BATTLEFLAG",
+        "model": "C.AB350M-HD 鸣音版 V14A"
+      },
+      "release": {
+        "date": "2017",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "colorful_b350",
+          "amd_am4_matrix"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "AM4",
+        "chipset": "AMD B350",
+        "formFactor": "mATX",
+        "memoryType": "DDR4",
+        "dimmSlots": "2",
+        "cpuSupportCondition": "Ryzen 1000/2000/3000/5000 support must be checked by exact revision/BIOS"
+      },
+      "verifiedFields": [
+        "socket",
+        "chipset",
+        "memoryType"
+      ],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "formFactor",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "colorful_b350",
+        "amd_am4_matrix"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "平台升级",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_cvn_x570_gaming_pro_v14",
+      "category": "motherboard",
+      "brandId": "colorfull",
+      "realModel": "CVN X570 GAMING PRO V14",
+      "realSeries": "AMD X570",
+      "gameName": {
+        "seriesId": "colorfull_board",
+        "seriesZh": "战旗",
+        "seriesEn": "BATTLEFLAG",
+        "model": "X570 竞游 PRO V14"
+      },
+      "release": {
+        "date": "2019",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "amd_am4_matrix"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2019-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "AM4",
+        "chipset": "AMD X570",
+        "formFactor": "ATX",
+        "memoryType": "DDR4",
+        "dimmSlots": null,
+        "cpuSupportCondition": "Zen 2 supported; exact Zen/Zen+/Zen 3 board BIOS list not verified"
+      },
+      "verifiedFields": [],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "socket",
+        "chipset",
+        "formFactor",
+        "memoryType",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "amd_am4_matrix"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "平台升级",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_战斧_b365m-d_魔音版_v20",
+      "category": "motherboard",
+      "brandId": "colorfull",
+      "realModel": "战斧 B365M-D 魔音版 V20",
+      "realSeries": "Intel B365",
+      "gameName": {
+        "seriesId": "colorfull_board",
+        "seriesZh": "战旗",
+        "seriesEn": "BATTLEFLAG",
+        "model": "B365M-D 鸣音版 V20"
+      },
+      "release": {
+        "date": "2019",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "intel_1151"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2019-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "chipset": "Intel B365",
+        "formFactor": "mATX",
+        "memoryType": "DDR4",
+        "dimmSlots": null,
+        "cpuSupportCondition": "8th/9th gen Coffee Lake-S; exact CPU list not verified"
+      },
+      "verifiedFields": [],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "socket",
+        "chipset",
+        "formFactor",
+        "memoryType",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "intel_1151"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "平台升级",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_cvn_b460m_gaming_pro_v20",
+      "category": "motherboard",
+      "brandId": "colorfull",
+      "realModel": "CVN B460M GAMING PRO V20",
+      "realSeries": "Intel B460",
+      "gameName": {
+        "seriesId": "colorfull_board",
+        "seriesZh": "战旗",
+        "seriesEn": "BATTLEFLAG",
+        "model": "B460M 竞游 PRO V20"
+      },
+      "release": {
+        "date": "2020",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "intel_launch_dates"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2020-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "LGA1200",
+        "chipset": "Intel B460",
+        "formFactor": "mATX",
+        "memoryType": "DDR4",
+        "dimmSlots": null,
+        "cpuSupportCondition": "10th gen"
+      },
+      "verifiedFields": [],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "socket",
+        "chipset",
+        "formFactor",
+        "memoryType",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "intel_launch_dates"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "平台升级",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_ms-challenger_b450m_ice",
+      "category": "motherboard",
+      "brandId": "maxshine",
+      "realModel": "MS-Challenger B450M ICE",
+      "realSeries": "AMD B450",
+      "gameName": {
+        "seriesId": "maxshine_board",
+        "seriesZh": "挑战者",
+        "seriesEn": "CHALLENGER",
+        "model": "B450M ICE"
+      },
+      "release": {
+        "date": "2019",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "maxsun_b450"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2019-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "AM4",
+        "chipset": "AMD B450",
+        "formFactor": "mATX",
+        "memoryType": "DDR4",
+        "dimmSlots": "2",
+        "cpuSupportCondition": "Ryzen 1000–5000; Ryzen 1000/2000 require a specific BIOS version"
+      },
+      "verifiedFields": [
+        "socket",
+        "chipset",
+        "memoryType",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "formFactor"
+      ],
+      "sourceIds": [
+        "maxsun_b450"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "平台升级",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_h110c+",
+      "category": "motherboard",
+      "brandId": "ondra",
+      "realModel": "H110C+",
+      "realSeries": "Intel H110",
+      "gameName": {
+        "seriesId": "ondra_tidebase",
+        "seriesZh": "潮基",
+        "seriesEn": "TIDEBASE",
+        "model": "H110C+"
+      },
+      "release": {
+        "date": "2016",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "onda_products",
+          "intel_1151"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "chipset": "Intel H110",
+        "formFactor": "mATX",
+        "memoryType": "DDR4",
+        "dimmSlots": null,
+        "cpuSupportCondition": "Kaby Lake family stated by official catalog; exact DDR layout and BIOS list not verified"
+      },
+      "verifiedFields": [],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "socket",
+        "chipset",
+        "formFactor",
+        "memoryType",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "onda_products",
+        "intel_1151"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "平台升级",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_b550sd4",
+      "category": "motherboard",
+      "brandId": "ondra",
+      "realModel": "B550SD4",
+      "realSeries": "AMD B550",
+      "gameName": {
+        "seriesId": "ondra_tidebase",
+        "seriesZh": "潮基",
+        "seriesEn": "TIDEBASE",
+        "model": "B550SD4"
+      },
+      "release": {
+        "date": "2020",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "onda_products",
+          "amd_am4_matrix"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2020-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "AM4",
+        "chipset": "AMD B550",
+        "formFactor": "ATX",
+        "memoryType": "DDR4",
+        "dimmSlots": "4",
+        "cpuSupportCondition": "Catalog describes AM4 4th-generation CPU support; exact per-CPU list and BIOS version not verified"
+      },
+      "verifiedFields": [],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "socket",
+        "chipset",
+        "formFactor",
+        "memoryType",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "onda_products",
+        "amd_am4_matrix"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "平台升级",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_b350gt3",
+      "category": "motherboard",
+      "brandId": "biostel",
+      "realModel": "B350GT3",
+      "realSeries": "AMD B350",
+      "gameName": {
+        "seriesId": "biostel_raceway",
+        "seriesZh": "赛道",
+        "seriesEn": "RACEWAY",
+        "model": "B350GT3"
+      },
+      "release": {
+        "date": "2017",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "biostar_bios_lists",
+          "amd_am4_matrix"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "AM4",
+        "chipset": "AMD B350",
+        "formFactor": "mATX",
+        "memoryType": "DDR4",
+        "dimmSlots": "4",
+        "cpuSupportCondition": "Summit Ridge; later families depend on board revision/BIOS"
+      },
+      "verifiedFields": [],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "socket",
+        "chipset",
+        "formFactor",
+        "memoryType",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "biostar_bios_lists",
+        "amd_am4_matrix"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "平台升级",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_x370gtn",
+      "category": "motherboard",
+      "brandId": "biostel",
+      "realModel": "X370GTN",
+      "realSeries": "AMD X370",
+      "gameName": {
+        "seriesId": "biostel_baseline",
+        "seriesZh": "基准",
+        "seriesEn": "BASELINE",
+        "model": "X370GTN"
+      },
+      "release": {
+        "date": "2017",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "biostar_bios_lists",
+          "amd_am4_matrix"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "AM4",
+        "chipset": "AMD X370",
+        "formFactor": "mITX",
+        "memoryType": "DDR4",
+        "dimmSlots": "2",
+        "cpuSupportCondition": "Summit Ridge; later families depend on board revision/BIOS"
+      },
+      "verifiedFields": [],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "socket",
+        "chipset",
+        "formFactor",
+        "memoryType",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "biostar_bios_lists",
+        "amd_am4_matrix"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "平台升级",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_x570gta",
+      "category": "motherboard",
+      "brandId": "biostel",
+      "realModel": "X570GTA",
+      "realSeries": "AMD X570",
+      "gameName": {
+        "seriesId": "biostel_raceway",
+        "seriesZh": "赛道",
+        "seriesEn": "RACEWAY",
+        "model": "X570GTA"
+      },
+      "release": {
+        "date": "2019",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "biostar_bios_lists",
+          "biostar_5000",
+          "amd_am4_matrix"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2019-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "AM4",
+        "chipset": "AMD X570",
+        "formFactor": "ATX",
+        "memoryType": "DDR4",
+        "dimmSlots": "4",
+        "cpuSupportCondition": "Ryzen 3000; selected Ryzen 5000 support via 2020 BIOS notice"
+      },
+      "verifiedFields": [
+        "socket",
+        "chipset",
+        "memoryType"
+      ],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "formFactor",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "biostar_bios_lists",
+        "biostar_5000",
+        "amd_am4_matrix"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "高端扩展",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_b550gta",
+      "category": "motherboard",
+      "brandId": "biostel",
+      "realModel": "B550GTA",
+      "realSeries": "AMD B550",
+      "gameName": {
+        "seriesId": "biostel_raceway",
+        "seriesZh": "赛道",
+        "seriesEn": "RACEWAY",
+        "model": "B550GTA"
+      },
+      "release": {
+        "date": "2020",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "biostar_b550",
+          "biostar_5000",
+          "amd_am4_matrix"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2020-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "AM4",
+        "chipset": "AMD B550",
+        "formFactor": "ATX",
+        "memoryType": "DDR4",
+        "dimmSlots": "4",
+        "cpuSupportCondition": "Ryzen 3000 CPU chiplet models and selected Ryzen 5000 with BIOS; excludes Ryzen 2200G/2400G/3200G/3400G APU families"
+      },
+      "verifiedFields": [
+        "socket",
+        "chipset",
+        "memoryType"
+      ],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "formFactor",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "biostar_b550",
+        "biostar_5000",
+        "amd_am4_matrix"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "高端扩展",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_h110m-hdv",
+      "category": "motherboard",
+      "brandId": "asrok",
+      "realModel": "H110M-HDV",
+      "realSeries": "Intel H110",
+      "gameName": {
+        "seriesId": "asrok_rockbase",
+        "seriesZh": "磐岩",
+        "seriesEn": "ROCKBASE",
+        "model": "H110M-HDV"
+      },
+      "release": {
+        "date": "2016",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "intel_1151"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "chipset": "Intel H110",
+        "formFactor": "mATX",
+        "memoryType": "DDR4",
+        "dimmSlots": "2",
+        "cpuSupportCondition": "6th/7th gen; exact BIOS support list applies"
+      },
+      "verifiedFields": [],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "socket",
+        "chipset",
+        "formFactor",
+        "memoryType",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "intel_1151"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "平台升级",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_z270_extreme4",
+      "category": "motherboard",
+      "brandId": "asrok",
+      "realModel": "Z270 Extreme4",
+      "realSeries": "Intel Z270",
+      "gameName": {
+        "seriesId": "asrok_rockbase",
+        "seriesZh": "磐岩",
+        "seriesEn": "ROCKBASE",
+        "model": "Z270 极域4"
+      },
+      "release": {
+        "date": "2017",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "asrock_compare",
+          "intel_1151"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "chipset": "Intel Z270",
+        "formFactor": "ATX",
+        "memoryType": "DDR4",
+        "dimmSlots": "4",
+        "cpuSupportCondition": "6th/7th gen"
+      },
+      "verifiedFields": [
+        "socket",
+        "chipset",
+        "memoryType"
+      ],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "formFactor",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "asrock_compare",
+        "intel_1151"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "高端扩展",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_z370_taichi",
+      "category": "motherboard",
+      "brandId": "asrok",
+      "realModel": "Z370 Taichi",
+      "realSeries": "Intel Z370",
+      "gameName": {
+        "seriesId": "asrok_taichix",
+        "seriesZh": "太衍",
+        "seriesEn": "TAICHIX",
+        "model": "Z370 太衍"
+      },
+      "release": {
+        "date": "2017",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "asrock_compare",
+          "intel_1151"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "chipset": "Intel Z370",
+        "formFactor": "ATX",
+        "memoryType": "DDR4",
+        "dimmSlots": "4",
+        "cpuSupportCondition": "8th gen"
+      },
+      "verifiedFields": [
+        "socket",
+        "chipset",
+        "memoryType"
+      ],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "formFactor",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "asrock_compare",
+        "intel_1151"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "高端扩展",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_x570_taichi",
+      "category": "motherboard",
+      "brandId": "asrok",
+      "realModel": "X570 Taichi",
+      "realSeries": "AMD X570",
+      "gameName": {
+        "seriesId": "asrok_taichix",
+        "seriesZh": "太衍",
+        "seriesEn": "TAICHIX",
+        "model": "X570 太衍"
+      },
+      "release": {
+        "date": "2019",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "asrock_am4_cpu",
+          "amd_am4_matrix"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2019-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "AM4",
+        "chipset": "AMD X570",
+        "formFactor": "ATX",
+        "memoryType": "DDR4",
+        "dimmSlots": "4",
+        "cpuSupportCondition": "Ryzen 3000/5000 per exact vendor CPU list and BIOS"
+      },
+      "verifiedFields": [
+        "socket",
+        "chipset",
+        "memoryType"
+      ],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "formFactor",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "asrock_am4_cpu",
+        "amd_am4_matrix"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "高端扩展",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_b550m_pro4",
+      "category": "motherboard",
+      "brandId": "asrok",
+      "realModel": "B550M Pro4",
+      "realSeries": "AMD B550",
+      "gameName": {
+        "seriesId": "asrok_rockbase",
+        "seriesZh": "磐岩",
+        "seriesEn": "ROCKBASE",
+        "model": "B550M Pro4"
+      },
+      "release": {
+        "date": "2020",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "asrock_am4_cpu",
+          "amd_am4_matrix"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2020-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "AM4",
+        "chipset": "AMD B550",
+        "formFactor": "mATX",
+        "memoryType": "DDR4",
+        "dimmSlots": "4",
+        "cpuSupportCondition": "Ryzen 3000 CPU chiplet models and 5000; excludes Ryzen 2200G/2400G/3200G/3400G APU families; check exact BIOS list"
+      },
+      "verifiedFields": [
+        "socket",
+        "chipset",
+        "memoryType"
+      ],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "formFactor",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "asrock_am4_cpu",
+        "amd_am4_matrix"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "平台升级",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_sy-b350m",
+      "category": "motherboard",
+      "brandId": "soya",
+      "realModel": "SY-B350M",
+      "realSeries": "AMD B350",
+      "gameName": {
+        "seriesId": "soya_maycore",
+        "seriesZh": "梅芯",
+        "seriesEn": "MAYCORE",
+        "model": "SY-B350M"
+      },
+      "release": {
+        "date": "2017",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "soyo_archive",
+          "soyo_2016_manual"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "AM4",
+        "chipset": "AMD B350",
+        "formFactor": "mATX",
+        "memoryType": "DDR4",
+        "dimmSlots": null,
+        "cpuSupportCondition": "Official archive confirms B350 family; exact model CPU list and BIOS support unavailable"
+      },
+      "verifiedFields": [],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "socket",
+        "chipset",
+        "formFactor",
+        "memoryType",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "soyo_archive",
+        "soyo_2016_manual"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "平台升级",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "cm_mb_sy-h310m",
+      "category": "motherboard",
+      "brandId": "soya",
+      "realModel": "SY-H310M",
+      "realSeries": "Intel H310",
+      "gameName": {
+        "seriesId": "soya_maycore",
+        "seriesZh": "梅芯",
+        "seriesEn": "MAYCORE",
+        "model": "SY-H310M"
+      },
+      "release": {
+        "date": "2018",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "soyo_archive",
+          "soyo_2016_manual",
+          "intel_1151"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2018-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "以芯片组/产品世代供应年份推演；具体板型零售首售月未证实"
+      },
+      "specs": {
+        "socket": "LGA1151",
+        "chipset": "Intel H310",
+        "formFactor": "mATX",
+        "memoryType": "DDR4",
+        "dimmSlots": null,
+        "cpuSupportCondition": "Official archive confirms H310 family; exact model CPU list and BIOS support unavailable"
+      },
+      "verifiedFields": [],
+      "inferredFields": [
+        "release.date",
+        "gameAvailability.from",
+        "socket",
+        "chipset",
+        "formFactor",
+        "memoryType",
+        "dimmSlots",
+        "cpuSupportCondition"
+      ],
+      "sourceIds": [
+        "soyo_archive",
+        "soyo_2016_manual",
+        "intel_1151"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "平台升级",
+        "整机装配"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    }
+  ],
+  "brandCoverage": [
+    {
+      "brandId": "intek",
+      "roles": [
+        "CPU"
+      ],
+      "status": "researched",
+      "productIds": [
+        "cm_cpu_intel_core_i3-6100",
+        "cm_cpu_intel_core_i5-6500",
+        "cm_cpu_intel_core_i7-6700k",
+        "cm_cpu_intel_core_i7-6800k",
+        "cm_cpu_intel_core_i7-7700k",
+        "cm_cpu_intel_core_i5-7500",
+        "cm_cpu_intel_core_i3-7100",
+        "cm_cpu_intel_core_i7-7820x",
+        "cm_cpu_intel_core_i7-8700k",
+        "cm_cpu_intel_core_i5-8400",
+        "cm_cpu_intel_core_i3-8100",
+        "cm_cpu_intel_core_i9-9900k",
+        "cm_cpu_intel_core_i7-9700k",
+        "cm_cpu_intel_core_i5-9400f",
+        "cm_cpu_intel_core_i9-9900ks",
+        "cm_cpu_intel_core_i9-10980xe",
+        "cm_cpu_intel_core_i5-10400",
+        "cm_cpu_intel_core_i7-10700k",
+        "cm_cpu_intel_core_i9-10900k"
+      ],
+      "note": "Intel官方规格数据库、兼容说明与分代产品资料覆盖主要桌面平台；未逐条打开每个SKU页面",
+      "sourceIds": []
+    },
+    {
+      "brandId": "amdex",
+      "roles": [
+        "CPU"
+      ],
+      "status": "researched",
+      "productIds": [
+        "cm_cpu_amd_fx-8350",
+        "cm_cpu_amd_a12-9800",
+        "cm_cpu_amd_ryzen_7_1800x",
+        "cm_cpu_amd_ryzen_7_1700",
+        "cm_cpu_amd_ryzen_5_1600",
+        "cm_cpu_amd_ryzen_3_1200",
+        "cm_cpu_amd_ryzen_threadripper_1950x",
+        "cm_cpu_amd_ryzen_threadripper_1920x",
+        "cm_cpu_amd_ryzen_7_2700x",
+        "cm_cpu_amd_ryzen_5_2600",
+        "cm_cpu_amd_ryzen_5_2400g",
+        "cm_cpu_amd_ryzen_3_2200g",
+        "cm_cpu_amd_ryzen_threadripper_2950x",
+        "cm_cpu_amd_ryzen_threadripper_2990wx",
+        "cm_cpu_amd_ryzen_9_3900x",
+        "cm_cpu_amd_ryzen_7_3700x",
+        "cm_cpu_amd_ryzen_5_3600",
+        "cm_cpu_amd_ryzen_9_3950x",
+        "cm_cpu_amd_ryzen_5_3400g",
+        "cm_cpu_amd_ryzen_threadripper_3960x",
+        "cm_cpu_amd_ryzen_threadripper_3970x",
+        "cm_cpu_amd_ryzen_5_5600x",
+        "cm_cpu_amd_ryzen_7_5800x",
+        "cm_cpu_amd_ryzen_9_5900x",
+        "cm_cpu_amd_ryzen_9_5950x"
+      ],
+      "note": "AMD官方发布资料覆盖AM4 Ryzen与Threadripper世代；FX旧产品完整支持页仍有缺口",
+      "sourceIds": []
+    },
+    {
+      "brandId": "asux",
+      "roles": [
+        "主板"
+      ],
+      "status": "researched",
+      "productIds": [
+        "cm_mb_h110m-k",
+        "cm_mb_z170-a",
+        "cm_mb_prime_z270-a",
+        "cm_mb_tuf_z390-plus_gaming",
+        "cm_mb_tuf_gaming_z490-plus"
+      ],
+      "note": "官方 H110M-K / PRIME Z270-A 产品对照证实早期平台规格；较新板型按对应芯片组支持规则收录",
+      "sourceIds": [
+        "asux_h110_z270",
+        "gigabyte_z370",
+        "gigabyte_z490",
+        "intel_1151",
+        "intel_launch_dates"
+      ]
+    },
+    {
+      "brandId": "rogue",
+      "roles": [
+        "华烁子品牌主板"
+      ],
+      "status": "researched",
+      "productIds": [
+        "cm_mb_rog_strix_z270f_gaming",
+        "cm_mb_rog_maximus_x_hero",
+        "cm_mb_rog_strix_z390-e_gaming",
+        "cm_mb_rog_strix_z490-e_gaming"
+      ],
+      "note": "ROG 实际系列归属华硕，按注册表 parentId 保留 ROGUE 子品牌关系",
+      "sourceIds": [
+        "asux_h110_z270",
+        "gigabyte_z490",
+        "intel_1151",
+        "intel_launch_dates",
+        "msi_z390"
+      ]
+    },
+    {
+      "brandId": "misi",
+      "roles": [
+        "主板"
+      ],
+      "status": "researched",
+      "productIds": [
+        "cm_mb_h110m_pro-vd",
+        "cm_mb_z170a_gaming_m5",
+        "cm_mb_z270_gaming_pro_carbon",
+        "cm_mb_z370_gaming_pro_carbon",
+        "cm_mb_mpg_z390_gaming_pro_carbon",
+        "cm_mb_z490-a_pro"
+      ],
+      "note": "官方 Z390 与 B350 产品资料验证代表平台规格；早期板型覆盖仍为代表样本",
+      "sourceIds": [
+        "gigabyte_z370",
+        "gigabyte_z490",
+        "intel_1151",
+        "msi_z390"
+      ]
+    },
+    {
+      "brandId": "gigabite",
+      "roles": [
+        "主板"
+      ],
+      "status": "researched",
+      "productIds": [
+        "cm_mb_ga-h110m-s2h",
+        "cm_mb_ga-z170x-ud3",
+        "cm_mb_z270_aorus_gaming_5",
+        "cm_mb_z370_aorus_gaming_5",
+        "cm_mb_z390_aorus_master",
+        "cm_mb_z490_aorus_elite_ac"
+      ],
+      "note": "官方 Z370/Z490 资料验证世代规格；早期具体板型部分依 chipset 年份推演",
+      "sourceIds": [
+        "gigabyte_z370",
+        "gigabyte_z490",
+        "intel_1151"
+      ]
+    },
+    {
+      "brandId": "colorfull",
+      "roles": [
+        "主板"
+      ],
+      "status": "partial",
+      "productIds": [
+        "cm_mb_战斧_c.ab350m-hd_魔音版_v14a",
+        "cm_mb_cvn_x570_gaming_pro_v14",
+        "cm_mb_战斧_b365m-d_魔音版_v20",
+        "cm_mb_cvn_b460m_gaming_pro_v20"
+      ],
+      "note": "官方 B350 页面可核实；其他代表型号具体规格与历史首售证据不足",
+      "sourceIds": [
+        "amd_am4_matrix",
+        "colorful_b350",
+        "intel_1151",
+        "intel_launch_dates"
+      ]
+    },
+    {
+      "brandId": "maxshine",
+      "roles": [
+        "主板"
+      ],
+      "status": "partial",
+      "productIds": [
+        "cm_mb_ms-challenger_b450m_ice"
+      ],
+      "note": "官方现行产品页可核实B450M ICE的规格与BIOS条件；网页不证明首售年份，历史全系列仍缺档案",
+      "sourceIds": [
+        "maxsun_b450"
+      ]
+    },
+    {
+      "brandId": "ondra",
+      "roles": [
+        "主板"
+      ],
+      "status": "partial",
+      "productIds": [
+        "cm_mb_h110c+",
+        "cm_mb_b550sd4"
+      ],
+      "note": "官方目录列出H110C+与B550SD4等型号，但页面不提供完整历史首售和逐板CPU支持表",
+      "sourceIds": [
+        "amd_am4_matrix",
+        "intel_1151",
+        "onda_products"
+      ]
+    },
+    {
+      "brandId": "yestone",
+      "roles": [
+        "主板"
+      ],
+      "status": "partial",
+      "productIds": [],
+      "note": "未找到可核实的2016–2020主板具体型号页面，保留家族占位并将板型字段留空",
+      "sourceIds": [
+        "amd_am4_matrix"
+      ]
+    },
+    {
+      "brandId": "biostel",
+      "roles": [
+        "主板"
+      ],
+      "status": "researched",
+      "productIds": [
+        "cm_mb_b350gt3",
+        "cm_mb_x370gtn",
+        "cm_mb_x570gta",
+        "cm_mb_b550gta"
+      ],
+      "note": "BIOSTAR 官方支持列表、B550GTA规格与2020 Ryzen 5000 BIOS公告可交叉核查",
+      "sourceIds": [
+        "amd_am4_matrix",
+        "biostar_5000",
+        "biostar_b550",
+        "biostar_bios_lists"
+      ]
+    },
+    {
+      "brandId": "asrok",
+      "roles": [
+        "主板"
+      ],
+      "status": "researched",
+      "productIds": [
+        "cm_mb_h110m-hdv",
+        "cm_mb_z270_extreme4",
+        "cm_mb_z370_taichi",
+        "cm_mb_x570_taichi",
+        "cm_mb_b550m_pro4"
+      ],
+      "note": "官方 Intel 世代对照和 AM4 CPU支持表覆盖主要平台条件",
+      "sourceIds": [
+        "amd_am4_matrix",
+        "asrock_am4_cpu",
+        "asrock_compare",
+        "intel_1151"
+      ]
+    },
+    {
+      "brandId": "soya",
+      "roles": [
+        "主板"
+      ],
+      "status": "partial",
+      "productIds": [
+        "cm_mb_sy-b350m",
+        "cm_mb_sy-h310m"
+      ],
+      "note": "官方档案列出H110至H310、B350等芯片组系列并保留2016年通用手册；逐板BIOS支持资料不足",
+      "sourceIds": [
+        "intel_1151",
+        "soyo_2016_manual",
+        "soyo_archive"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "cm_event_2016_broadwell_e",
+      "month": "2016-05",
+      "type": "cpu_launch",
+      "title": "Broadwell-E 进入 HEDT 供货期",
+      "productIds": [
+        "cm_cpu_intel_core_i7-6800k"
+      ],
+      "sourceIds": [
+        "intel_6800k"
+      ],
+      "status": "verified",
+      "procurementEffect": "增加 LGA2011-v3 与四通道 DDR4 的高价创作平台"
+    },
+    {
+      "id": "cm_event_2016_bristol_oem",
+      "month": "2016-09",
+      "type": "oem_system_availability",
+      "title": "Bristol Ridge AM4 OEM整机开始出货",
+      "productIds": [
+        "cm_cpu_amd_a12-9800"
+      ],
+      "sourceIds": [
+        "amd_bristol_launch"
+      ],
+      "status": "verified",
+      "procurementEffect": "证明OEM整机出货，不解锁独立CPU零售采购"
+    },
+    {
+      "id": "cm_event_2017_bristol_channel",
+      "month": "2017-07",
+      "type": "cpu_launch",
+      "title": "A12-9800进入独立零售渠道供货",
+      "productIds": [
+        "cm_cpu_amd_a12-9800"
+      ],
+      "sourceIds": [
+        "amd_bristol"
+      ],
+      "status": "verified",
+      "procurementEffect": "独立CPU零售入库时间采用AMD规格页列出的渠道日期"
+    },
+    {
+      "id": "cm_event_2017_kaby",
+      "month": "2017-01",
+      "type": "platform_launch",
+      "title": "Kaby Lake-S 与 200 系列主板进入市场",
+      "productIds": [
+        "cm_cpu_intel_core_i7-7700k",
+        "cm_cpu_intel_core_i5-7500"
+      ],
+      "sourceIds": [
+        "intel_ark_kaby",
+        "intel_kaby_desktop"
+      ],
+      "status": "verified",
+      "procurementEffect": "6/7代共享早期LGA1151主板池，型号需核验BIOS"
+    },
+    {
+      "id": "cm_event_2017_ryzen",
+      "month": "2017-03",
+      "type": "platform_launch",
+      "title": "Ryzen 1000 AM4 桌面平台开售",
+      "productIds": [
+        "cm_cpu_amd_ryzen_7_1800x",
+        "cm_cpu_amd_ryzen_7_1700"
+      ],
+      "sourceIds": [
+        "amd_ryzen1000"
+      ],
+      "status": "verified",
+      "procurementEffect": "AM4与DDR4进入主流装机范围"
+    },
+    {
+      "id": "cm_event_2017_threadripper",
+      "month": "2017-08",
+      "type": "platform_launch",
+      "title": "Threadripper 与 X399 HEDT 平台上市",
+      "productIds": [
+        "cm_cpu_amd_ryzen_threadripper_1950x",
+        "cm_cpu_amd_ryzen_threadripper_1920x"
+      ],
+      "sourceIds": [
+        "amd_tr1000"
+      ],
+      "status": "verified",
+      "procurementEffect": "TR4/X399 为独立插槽平台，不能与AM4板互换"
+    },
+    {
+      "id": "cm_event_2017_coffee",
+      "month": "2017-10",
+      "type": "platform_launch",
+      "title": "Coffee Lake-S 与 300 系列主板上市",
+      "productIds": [
+        "cm_cpu_intel_core_i7-8700k",
+        "cm_cpu_intel_core_i5-8400"
+      ],
+      "sourceIds": [
+        "intel_ark_coffee",
+        "intel_1151"
+      ],
+      "status": "verified",
+      "procurementEffect": "同为LGA1151的6/7代主板无法安装8代CPU"
+    },
+    {
+      "id": "cm_event_2018_ryzen2",
+      "month": "2018-04",
+      "type": "cpu_launch",
+      "title": "Ryzen 2000 桌面CPU上市",
+      "productIds": [
+        "cm_cpu_amd_ryzen_7_2700x",
+        "cm_cpu_amd_ryzen_5_2600"
+      ],
+      "sourceIds": [
+        "amd_ryzen2000"
+      ],
+      "status": "verified",
+      "procurementEffect": "AM4旧板可能需BIOS更新，按主板支持名单判断"
+    },
+    {
+      "id": "cm_event_2018_refresh",
+      "month": "2018-10",
+      "type": "cpu_launch",
+      "title": "Coffee Lake Refresh 与 Z390 世代供应",
+      "productIds": [
+        "cm_cpu_intel_core_i9-9900k",
+        "cm_cpu_intel_core_i7-9700k"
+      ],
+      "sourceIds": [
+        "intel_ark_coffee",
+        "intel_1151"
+      ],
+      "status": "verified",
+      "procurementEffect": "300系芯片组可支持8/9代，但部分9代需更新BIOS"
+    },
+    {
+      "id": "cm_event_2018_tr2",
+      "month": "2018-08",
+      "type": "cpu_launch",
+      "title": "Threadripper 2000 系列进入市场",
+      "productIds": [
+        "cm_cpu_amd_ryzen_threadripper_2950x",
+        "cm_cpu_amd_ryzen_threadripper_2990wx"
+      ],
+      "sourceIds": [
+        "amd_tr2000"
+      ],
+      "status": "verified",
+      "procurementEffect": "AMD称兼容既有X399板，但需板厂BIOS更新"
+    },
+    {
+      "id": "cm_event_2019_ryzen3",
+      "month": "2019-07",
+      "type": "platform_launch",
+      "title": "Ryzen 3000 与 X570 平台开售",
+      "productIds": [
+        "cm_cpu_amd_ryzen_9_3900x",
+        "cm_cpu_amd_ryzen_7_3700x"
+      ],
+      "sourceIds": [
+        "amd_ryzen3000"
+      ],
+      "status": "verified",
+      "procurementEffect": "X570带来PCIe 4.0平台选项；旧AM4板兼容需逐板查BIOS"
+    },
+    {
+      "id": "cm_event_2019_tr3",
+      "month": "2019-11",
+      "type": "platform_launch",
+      "title": "Threadripper 3000 与 TRX40 平台上市",
+      "productIds": [
+        "cm_cpu_amd_ryzen_threadripper_3960x",
+        "cm_cpu_amd_ryzen_threadripper_3970x"
+      ],
+      "sourceIds": [
+        "amd_tr3000"
+      ],
+      "status": "verified",
+      "procurementEffect": "改用sTRX4/TRX40，旧TR4/X399主板不兼容"
+    },
+    {
+      "id": "cm_event_2019_cascade",
+      "month": "2019-11",
+      "type": "cpu_launch",
+      "title": "Cascade Lake-X HEDT供货期",
+      "productIds": [
+        "cm_cpu_intel_core_i9-10980xe"
+      ],
+      "sourceIds": [
+        "intel_launch_dates"
+      ],
+      "status": "inferred",
+      "procurementEffect": "LGA2066与X299延续HEDT路线，具体开售批次待核实"
+    },
+    {
+      "id": "cm_event_2020_comet",
+      "month": "2020-05",
+      "type": "platform_launch",
+      "title": "Comet Lake-S 与 LGA1200 主板上市",
+      "productIds": [
+        "cm_cpu_intel_core_i9-10900k",
+        "cm_cpu_intel_core_i5-10400"
+      ],
+      "sourceIds": [
+        "intel_launch_dates",
+        "gigabyte_z490"
+      ],
+      "status": "verified",
+      "procurementEffect": "平台由LGA1151切换至LGA1200，旧主板不可沿用"
+    },
+    {
+      "id": "cm_event_2020_ryzen5000_announce",
+      "month": "2020-10",
+      "type": "cpu_announcement",
+      "title": "Ryzen 5000发布，公告预告11月可售",
+      "productIds": [
+        "cm_cpu_amd_ryzen_9_5950x",
+        "cm_cpu_amd_ryzen_9_5900x"
+      ],
+      "sourceIds": [
+        "amd_ryzen5000"
+      ],
+      "status": "verified",
+      "procurementEffect": "500系列板获官方发布时支持说明；具体型号仍需BIOS核对"
+    },
+    {
+      "id": "cm_event_2020_ryzen5000_sale",
+      "month": "2020-11",
+      "type": "cpu_launch",
+      "title": "Ryzen 5000首批零售供货",
+      "productIds": [
+        "cm_cpu_amd_ryzen_5_5600x",
+        "cm_cpu_amd_ryzen_7_5800x",
+        "cm_cpu_amd_ryzen_9_5900x",
+        "cm_cpu_amd_ryzen_9_5950x"
+      ],
+      "sourceIds": [
+        "amd_ryzen5000",
+        "biostar_5000"
+      ],
+      "status": "verified",
+      "procurementEffect": "Ryzen 5000于2020年末开始逐板BIOS支持；不能假设全部AM4板同日获得更新"
+    }
+  ],
+  "exclusions": [
+    {
+      "brandId": "intek",
+      "category": "cpu",
+      "notBefore": null,
+      "reason": "游戏品牌改名映射只用于供应商标识；CPU平台不代表英特尔现代独显线提前解锁",
+      "sourceIds": [
+        "intel_launch_dates"
+      ]
+    },
+    {
+      "brandId": "amdex",
+      "category": "cpu",
+      "notBefore": null,
+      "reason": "2021年以后桌面CPU不纳入本阶段目录",
+      "sourceIds": [
+        "amd_ryzen5000"
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "subject": "Intel HEDT i7-6900K及部分Broadwell-E商品字段",
+      "missingEvidence": "本次深核的Intel规格页以i7-6800K为代表，其他型号需补各自ARK页面；核显为平台家族判断",
+      "gameResolution": "游戏数据按官方家族规格归档，具体SKU页补齐前保留标记并避免扩展更多精细字段"
+    },
+    {
+      "subject": "Intel Comet Lake逐型号规格",
+      "missingEvidence": "官方桌面世代发布日期表只列代表型号，具体型号参数证据未逐一打开",
+      "gameResolution": "按Intel代际正式规格候选填核心/线程/TDP/核显，后续用各型号ARK页逐条复核"
+    },
+    {
+      "subject": "AMD FX-8350现实销售日期",
+      "missingEvidence": "本次官方页面未成功打开FX-8350完整产品页",
+      "gameResolution": "已有产品按进入2016初期库存处理；插槽与功耗规格需二次核验"
+    },
+    {
+      "subject": "AM4逐板CPU支持与最低BIOS版本",
+      "missingEvidence": "芯片组矩阵只表示平台范围；厂商逐型号CPU支持表和BIOS最低版本未对40块代表板全部核对",
+      "gameResolution": "采购卡提示按具体主板型号、硬件修订号和BIOS版本匹配CPU；缺少名单时不保证开机"
+    },
+    {
+      "subject": "2020年末Ryzen 5000早期主板支持批次",
+      "missingEvidence": "AMD公布500系兼容和需查看主板厂商信息；各厂商发布BIOS的日期/型号批次未完整逐条记录",
+      "gameResolution": "在各品牌支持公告中分批解锁；BIOSTAR通知可作确证案例，其余条目仍需板厂证据"
+    },
+    {
+      "subject": "七彩虹/铭瑄/昂达/盈通/映泰/华擎/梅捷旧款特定SKU首售日期",
+      "missingEvidence": "旧厂商产品页存档覆盖不均，部分型号只有现存规格页或系列线索",
+      "gameResolution": "条目标记partial或inferred；芯片组年份映射为游戏供货窗口，不作为现实首售事实"
+    },
+    {
+      "subject": "DDR3与DDR4物理槽形状和板型规格",
+      "missingEvidence": "现有来源证明不同世代内存标准，但未覆盖每一块H110/H170商品采用DDR3L或DDR4的SKU差异",
+      "gameResolution": "主板内存类型按具体SKU填写；内存槽与模块代际互不混插，提供DDR3与DDR4分开的物品"
+    }
+  ]
+}

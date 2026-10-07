@@ -1,0 +1,6751 @@
+{
+  "schemaVersion": 1,
+  "status": "draft",
+  "phase": {
+    "from": "2016-01",
+    "through": "2020-12"
+  },
+  "sources": [
+    {
+      "id": "sea",
+      "title": "Product Line Revamp",
+      "url": "https://seasonic.com/news/product-line-revamp/",
+      "publisher": "Seasonic",
+      "evidenceScope": "PRIME mid-2016 and FOCUS transition chronology; no regional SKU launch dates",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "seacom",
+      "title": "Seasonic Computex 2017 news",
+      "url": "https://seasonic.com/news/news-at-computex-2017/",
+      "publisher": "Seasonic",
+      "evidenceScope": "FOCUS and FOCUS Plus series announcement at Computex 2017",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "s12",
+      "title": "S12II",
+      "url": "https://seasonic.com/product/s12ii/",
+      "publisher": "Seasonic",
+      "evidenceScope": "Power, ATX form, fixed wiring, dimensions and connector count",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "rmx",
+      "title": "RMx 2018 manual",
+      "url": "https://assets.corsair.com/image/upload/corsairmedia/sys_master/productcontent/WW_RMx_2018_Manual_Web_AC.pdf",
+      "publisher": "Corsair",
+      "evidenceScope": "Rated output, modularity, size and plug totals",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "cx",
+      "title": "CX650M product page",
+      "url": "https://www.corsair.com/us/en/p/psu/cp-9020103-na/cx650m-650-watt-80-plus-bronze-certified-power-supply-cp-9020103-na",
+      "publisher": "Corsair",
+      "evidenceScope": "CX650M model identity and product specifications; date not stated",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "tt",
+      "title": "Toughpower Grand RGB 650W",
+      "url": "https://br.thermaltake.com/C_00002987.htm?id=C_00002987",
+      "publisher": "Thermaltake",
+      "evidenceScope": "Power, modularity, dimensions and listed 2016-11-17 date",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "sfx",
+      "title": "ST45SF-G",
+      "url": "https://www.silverstonetek.com/en/product/info/computer-chassis/ST45SF-G/",
+      "publisher": "SilverStone",
+      "evidenceScope": "SFX form, 450W, dimensions, modularity and plug counts",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "fsp",
+      "title": "HYDRO G 650 product page",
+      "url": "https://www.fsplifestyle.com/en/product/HYDROG650.html",
+      "publisher": "FSP",
+      "evidenceScope": "Rated power, form, dimensions, modularity and connector data",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "antec",
+      "title": "NeoECO Classic V2 product page",
+      "url": "https://www.antec.com/product/power/ne550c-v2",
+      "publisher": "Antec",
+      "evidenceScope": "Model identity and product specifications; exact regional launch date not stated",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "deep",
+      "title": "DeepCool 2016 catalogue",
+      "url": "https://www.deepcool.com/download/E-Catalog/2016_Product_Catalogue.pdf",
+      "publisher": "DeepCool",
+      "evidenceScope": "2016 product lineup and cooler model dimensions",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "d15",
+      "title": "NH-D15 specifications",
+      "url": "https://www.noctua.at/en/products/nh-d15/specifications",
+      "publisher": "Noctua",
+      "evidenceScope": "Dimensions, sockets, fan and RAM clearance",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "u12",
+      "title": "NH-U12S",
+      "url": "https://noctua.at/en/nh-u12s/cpucomp",
+      "publisher": "Noctua",
+      "evidenceScope": "Height, width and memory clearance",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "chroma",
+      "title": "Noctua chromax.black announcement",
+      "url": "https://www.noctua.at/en/news/noctua-introduces-chromax-black-cpu-coolers",
+      "publisher": "Noctua",
+      "evidenceScope": "2019-10-08 announcement and availability",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "macho",
+      "title": "Macho Rev.B",
+      "url": "https://www.thermalright.com/product/macho-rev-b/",
+      "publisher": "Thermalright",
+      "evidenceScope": "Dimensions, heatpipes, fan and current sockets",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "cax",
+      "title": "Corsair CES 2018 launches",
+      "url": "https://www.corsair.com/newsroom/press-release/build-it-better-corsair-launches-new-psu-coolers-and-case-at-ces-2018",
+      "publisher": "Corsair",
+      "evidenceScope": "2018-01 AX1600i, H150i/H115i PRO and SPEC-OMEGA launch",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "h100",
+      "title": "Hydro H100i/H80i announcement",
+      "url": "https://www.corsair.com/newsroom/press-release/corsair_announces_new_flagship_hydro_series_liquid_cpu_coolers",
+      "publisher": "Corsair",
+      "evidenceScope": "H100i radiator size and series evidence",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "h500",
+      "title": "H500 and H500i announcement",
+      "url": "https://nzxt.com/blogs/news/nzxt-continues-to-redefine-the-modern-pc-case-with-the-h500-and-h500i",
+      "publisher": "NZXT",
+      "evidenceScope": "2018-05-22 H500/H500i launch announcement",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "hpro",
+      "title": "Hydro H100i PRO",
+      "url": "https://www.corsair.com/newsroom/press-release/corsair-launches-new-hydro-series-h100i-pro-liquid-cpu-cooler",
+      "publisher": "Corsair",
+      "evidenceScope": "2018-07-19 240mm AIO launch",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "hplat",
+      "title": "Hydro Platinum coolers",
+      "url": "https://www.corsair.com/newsroom/press-release/corsair-launches-new-hydro-series-h100i-and-h115i-rgb-platinum-liquid-cpu-coolers",
+      "publisher": "Corsair",
+      "evidenceScope": "2018-11-01 240mm/280mm models",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "spec",
+      "title": "Carbide SPEC-04 launch",
+      "url": "https://www.corsair.com/newsroom/press-release/bold-and-ready-to-build-corsair-launches-new-carbide-series-spec-04-mid-tower-gaming-case",
+      "publisher": "Corsair",
+      "evidenceScope": "2017-05-02 model, dimensions and clearances",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "275r",
+      "title": "Carbide 275R specs",
+      "url": "https://www.corsair.com/us/en/p/pc-cases/cc-9011132-ww/carbide-series-275r-tempered-glass-mid-tower-gaming-case-black-cc-9011132-ww",
+      "publisher": "Corsair",
+      "evidenceScope": "Board, GPU, CPU cooler, PSU, drive and radiator fit; no release date",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "dc400",
+      "title": "GAMMAXX 400",
+      "url": "https://global.deepcool.com/company/pressroom/newsrelease/2020/4195.shtml",
+      "publisher": "DeepCool",
+      "evidenceScope": "Dimensions, heat pipes and socket support; announcement date semantics unclear",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "nzxt",
+      "title": "NZXT H500/H500i",
+      "url": "https://nzxt.com/blogs/news/nzxt-continues-to-redefine-the-modern-pc-case-with-the-h500-and-h500i",
+      "publisher": "NZXT",
+      "evidenceScope": "2018-05-22 launch announcement",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "h510",
+      "title": "NZXT H510 Series specs",
+      "url": "https://support.nzxt.com/hc/en-us/articles/37464879064347-H510-Series-Specs",
+      "publisher": "NZXT",
+      "evidenceScope": "EOL dimensions and clearances only",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "kraken",
+      "title": "NZXT Kraken compatibility guide",
+      "url": "https://assets.cdn.nzxt.com/uploads/download/attachment/677/Kraken_Series_Compatibility_Guide_01.21.2019.pdf",
+      "publisher": "NZXT",
+      "evidenceScope": "2019 AIO family and case radiator fit restrictions",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "msi",
+      "title": "MSI launch 2020",
+      "url": "https://www.msi.com/Landing/MSIaunch2020/nb",
+      "publisher": "MSI",
+      "evidenceScope": "2020-05-15 CORELIQUID and case announcement",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "msipromo",
+      "title": "MSI Black Friday 2020",
+      "url": "https://www.msi.com/Promotion/Black-Friday-2020",
+      "publisher": "MSI",
+      "evidenceScope": "Promotion lists MPG GF PSU and case/cooler models",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "msicase",
+      "title": "MSI SEKIRA 500X specs",
+      "url": "https://www.msi.com/PC-Case/MPG-SEKIRA-500X/Specification",
+      "publisher": "MSI",
+      "evidenceScope": "Official component clearances and mounting data",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "rog",
+      "title": "ROG Ryujin/Ryuo",
+      "url": "https://rog.asus.com/articles/cooling/rog-ryujin-ryuo-aio-liquid-coolers-aura-sync-lighting-livedash-displays/",
+      "publisher": "ASUS ROG",
+      "evidenceScope": "2018-06 AIO announcement and Q3 supply window",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "rogcomp",
+      "title": "ROG Computex 2018 products",
+      "url": "https://rog.asus.com/articles/press-releases/rog-computex-2018-new-products-phone-laptop-peripherals-components/",
+      "publisher": "ASUS ROG",
+      "evidenceScope": "ROG Thor 1200W Platinum announcement at Computex 2018",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "rogcase",
+      "title": "ROG Strix Helios",
+      "url": "https://rog.asus.com/pt/articles/chassis/making-a-case-for-an-all-rog-build-introducing-the-rog-strix-helios/",
+      "publisher": "ASUS ROG",
+      "evidenceScope": "2019 case clearance specs",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "fr5",
+      "title": "Define R5 Product Sheet",
+      "url": "https://www.fractal-design.com/app/uploads/2019/06/Define-R5-Product-Sheet-1.04-MB.pdf",
+      "publisher": "Fractal Design",
+      "evidenceScope": "Case cooling and storage layout",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "fr6",
+      "title": "Define R6 Product Sheet",
+      "url": "https://www.fractal-design.com/app/uploads/2019/06/Define-R6_Product-sheet_EN-0.34-MB-1.pdf",
+      "publisher": "Fractal Design",
+      "evidenceScope": "Dimensions and clearances",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "mesh",
+      "title": "Meshify C support",
+      "url": "https://support.fractal-design.com/support/solutions/articles/4000174841-meshify-c",
+      "publisher": "Fractal Design",
+      "evidenceScope": "Top 240 radiator clearance caveat",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "def7",
+      "title": "Define 7 launch",
+      "url": "https://www.fractal-design.com/news/introducing-define-7-and-define-7-xl/",
+      "publisher": "Fractal Design",
+      "evidenceScope": "2020-02-20 launch",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "def7c",
+      "title": "Define 7 Compact launch",
+      "url": "https://www.fractal-design.com/news/introducing-define-7-compact/",
+      "publisher": "Fractal Design",
+      "evidenceScope": "2020-06-03 launch",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "mesh2",
+      "title": "Meshify 2 launch",
+      "url": "https://www.fractal-design.com/news/introducing-meshify-2-and-meshify-2-xl/",
+      "publisher": "Fractal Design",
+      "evidenceScope": "2020-11-11 launch",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "cmh",
+      "title": "Hyper 212 Black Edition",
+      "url": "https://www.coolermaster.com/en-global/products/hyper-212-black-edition.html",
+      "publisher": "Cooler Master",
+      "evidenceScope": "Cooler dimensions, heat pipes and current socket list",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "cmcase",
+      "title": "MasterBox MB511 ARGB",
+      "url": "https://www.coolermaster.com/en-us/products/MCB-B511D-KGNN-RGA.html",
+      "publisher": "Cooler Master",
+      "evidenceScope": "Case clearances and radiator supports",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "inwin",
+      "title": "InWin 303",
+      "url": "https://in-win.com/en/gaming-chassis/303",
+      "publisher": "InWin",
+      "evidenceScope": "Board, GPU, cooler, PSU, drive and radiator specs",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "ph",
+      "title": "Enthoo Pro Manual",
+      "url": "https://phanteks.com/manuals/Enthoo_Pro_Manual_v1.0.pdf",
+      "publisher": "Phanteks",
+      "evidenceScope": "Official case clearance"
+    },
+    {
+      "id": "gw600",
+      "title": "长城双卡王发烧版600SE",
+      "url": "https://www.greatwall.com.cn/5004.html",
+      "publisher": "中国长城科技集团",
+      "evidenceScope": "额定500W型号说明；页面未说明上市月",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "evga16",
+      "title": "EVGA Haunted Hardware Gaming Event",
+      "url": "https://www.evga.com/articles/01064/",
+      "publisher": "EVGA",
+      "evidenceScope": "2016年活动清单列出EVGA 650 GQ电源",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "evga17",
+      "title": "EVGA Power Supplies Q1 2017 Roadmap",
+      "url": "https://www.evga.com/marketing/EVGA_RoadMap_2017_Q1.pdf",
+      "publisher": "EVGA",
+      "evidenceScope": "2017年第一季度列出650 GQ和650 G3型号及模组信息",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "sfiii",
+      "title": "LEADEX III GOLD",
+      "url": "https://www.super-flower.com.tw/products-detail/LIII-G/",
+      "publisher": "Super Flower",
+      "evidenceScope": "Leadex III Gold型号和系列规格；页面未给首售日期",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "sfdate",
+      "title": "Super Flower Leadex III review link",
+      "url": "https://www.super-flower.com.tw/es/blogs/english/113848",
+      "publisher": "Super Flower",
+      "evidenceScope": "厂商页列出2019-07-29 Leadex III 850W评测链接，证明该系列在该月已存在",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "gigap",
+      "title": "GIGABYTE Launches the Power Supply for NVIDIA Ampere",
+      "url": "https://www.gigabyte.com/hk/press/news/1826",
+      "publisher": "GIGABYTE",
+      "evidenceScope": "2020-09-01公告P750GM、P850GM额定功率及全模组信息",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "lian_o11",
+      "title": "PC-O11 Dynamic",
+      "url": "https://lian-li.com/product/pc-o11-dynamic/?cn-reloaded=1",
+      "publisher": "LIAN LI",
+      "evidenceScope": "尺寸、主板、显卡、散热器、电源及冷排安装位",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "lian_l2",
+      "title": "LANCOOL II",
+      "url": "https://lian-li.com/product/lancool-ii/",
+      "publisher": "LIAN LI",
+      "evidenceScope": "结构和冷排位置限制；规格由官方多语言产品页补齐",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "lian_l2m",
+      "title": "LANCOOL II MESH RGB",
+      "url": "https://lian-li.com/product/lancool-ii-mesh-rgb/",
+      "publisher": "LIAN LI",
+      "evidenceScope": "网孔版风扇布局和型号身份；页面未列首售月",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "jons_u4",
+      "title": "JONSBO U4",
+      "url": "https://www.jonsbo.com/en/products/u4black.html",
+      "publisher": "JONSBO",
+      "evidenceScope": "官方称U4于2016年底推出并列出规格",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "jons_u4p",
+      "title": "JONSBO U4 PLUS",
+      "url": "https://www.jonsbo.com/en/products/U4PLUSblack.html",
+      "publisher": "JONSBO",
+      "evidenceScope": "官方规格与2020-09-16说明书链接；首售日期未明",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "cougar_mx",
+      "title": "COUGAR MX330",
+      "url": "https://cougargaming.com/bg/products/cases2/mx330/",
+      "publisher": "COUGAR",
+      "evidenceScope": "MX330与MX330-X规格和风扇冷排支持；首售日期未列",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "cougar_manual",
+      "title": "MX330-S Assembly Drawing",
+      "url": "https://cougargaming.com/fileadmin/downloads/USERS_MANUAL/MX330-S_usermanual.pdf",
+      "publisher": "COUGAR",
+      "evidenceScope": "MX330-S结构和序列号年月格式；示例不等于SKU首售日",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "pcgi4",
+      "title": "PCCOOLER GI-X4 Series",
+      "url": "https://old.pccooler.com/Products/product2/id/154/ids/0",
+      "publisher": "PCCOOLER",
+      "evidenceScope": "GI-X4B热管、风扇及扣具说明；页面未标发布日期",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "pcgi6",
+      "title": "PCCOOLER GI-X6 Series",
+      "url": "https://old.pccooler.com/Products/product_1/id/147/ids/0",
+      "publisher": "PCCOOLER",
+      "evidenceScope": "GI-X6系列身份和官方手册入口；页面未标发布日期",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "aigocase",
+      "title": "aigo DIY Chassis Catalog",
+      "url": "https://www.aigodiy.com/Chassis/list.aspx?lcid=51",
+      "publisher": "aigo",
+      "evidenceScope": "当前机箱目录不证明2016–2020型号",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "aigocool",
+      "title": "aigo DIY Radiator Catalog",
+      "url": "https://www.aigodiy.com/radiator/list.aspx",
+      "publisher": "aigo",
+      "evidenceScope": "当前散热目录不证明2016–2020型号",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "275launch",
+      "title": "CORSAIR Launches Carbide Series 275R",
+      "url": "https://www.corsair.com/newsroom/press-release/corsair-launches-carbide-series-275r-pc-case",
+      "publisher": "Corsair",
+      "evidenceScope": "2018-03-06 launch and immediate availability",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "kraken16",
+      "title": "Command Your Cool with the All-New NZXT Kraken",
+      "url": "https://nzxt.com/blogs/news/command-your-cool-with-the-all-new-nzxt-kraken",
+      "publisher": "NZXT",
+      "evidenceScope": "2016-10-18 announcement and availability of X52/X62 generation",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "kraken18x",
+      "title": "NZXT expands its award-winning Kraken X series",
+      "url": "https://nzxt.com/blogs/news/nzxt-expands-its-award-winning-kraken-x-series",
+      "publisher": "NZXT",
+      "evidenceScope": "2018-03-06 X72 announcement and March availability",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "kraken18m",
+      "title": "NZXT introduces the new Kraken M Series",
+      "url": "https://nzxt.com/blogs/news/nzxt-introduces-the-new-kraken-m-series",
+      "publisher": "NZXT",
+      "evidenceScope": "2018-03-06 M22 announcement and March availability",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "frtimeline",
+      "title": "Fractal Design history",
+      "url": "https://www.fractal-design.com/about/",
+      "publisher": "Fractal Design",
+      "evidenceScope": "Official product timeline places Meshify in 2017; Define R6 chronology reviewed by parent agent",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "msi2019",
+      "title": "MSI Full Steam Ahead 2019",
+      "url": "https://www.msi.com/Promotion/full-steam-ahead-2019",
+      "publisher": "MSI",
+      "evidenceScope": "2019 promotion lists MPG SEKIRA 500X in eligible chassis models",
+      "checkedDate": "2026-10-07"
+    },
+    {
+      "id": "h100v2",
+      "title": "Corsair H100i v2 Quick Start Guide",
+      "url": "https://assets.corsair.com/image/upload/corsairmedia/sys_master/productcontent/H100iv2_QSG.pdf",
+      "publisher": "Corsair",
+      "evidenceScope": "H100i v2 model identity and mounting guide; not a first-sale announcement",
+      "checkedDate": "2026-10-07"
+    }
+  ],
+  "products": [
+    {
+      "id": "sc_psu_001",
+      "category": "psu",
+      "brandId": "corsail",
+      "realModel": "CX650M",
+      "realSeries": "CX-M",
+      "gameName": {
+        "seriesId": "corsail_voyage",
+        "seriesZh": "航海",
+        "seriesEn": "VOYAGE",
+        "model": "CX650M"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "cx"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-06",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按已知具体型号或系列年代推演游戏供货月；厂商地区首售月未确认"
+      },
+      "specs": {
+        "continuousPowerW": null,
+        "formFactor": "ATX",
+        "modularity": null,
+        "connectorCounts": {
+          "atx24Pin": null,
+          "eps4Plus4Pin": null,
+          "pcie6Plus2Pin": null,
+          "sata": null,
+          "molex": null
+        },
+        "cableCounts": null,
+        "dimensionsMm": null
+      },
+      "verifiedFields": [
+        "specs.formFactor",
+        "specs.connectorCounts"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "cx"
+      ],
+      "tier": "entry",
+      "useCases": [
+        "桌面PC供电"
+      ],
+      "workshopNotes": [
+        "插头总数和线缆束数分开，缺接线表时保留null"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_psu_002",
+      "category": "psu",
+      "brandId": "corsail",
+      "realModel": "RM650x 2018 revision",
+      "realSeries": "RMx",
+      "gameName": {
+        "seriesId": "corsail_voyage",
+        "seriesZh": "航海",
+        "seriesEn": "VOYAGE",
+        "model": "RM650x"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "rmx"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2018-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按已知具体型号或系列年代推演游戏供货月；厂商地区首售月未确认"
+      },
+      "specs": {
+        "continuousPowerW": 650,
+        "formFactor": "ATX",
+        "modularity": "fully",
+        "connectorCounts": {
+          "atx24Pin": 1,
+          "eps4Plus4Pin": 2,
+          "pcie6Plus2Pin": 6,
+          "sata": 10,
+          "molex": 8
+        },
+        "cableCounts": {
+          "atx24Pin": 1,
+          "eps4Plus4Pin": 2,
+          "pcie6Plus2Pin": 3,
+          "sata": 3,
+          "molex": 2
+        },
+        "dimensionsMm": [
+          150,
+          86,
+          160
+        ]
+      },
+      "verifiedFields": [
+        "specs.continuousPowerW",
+        "specs.formFactor",
+        "specs.modularity",
+        "specs.connectorCounts",
+        "specs.cableCounts",
+        "specs.dimensionsMm"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "rmx"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "桌面PC供电"
+      ],
+      "workshopNotes": [
+        "插头总数和线缆束数分开，缺接线表时保留null"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_psu_003",
+      "category": "psu",
+      "brandId": "corsail",
+      "realModel": "RM850x 2018 revision",
+      "realSeries": "RMx",
+      "gameName": {
+        "seriesId": "corsail_voyage",
+        "seriesZh": "航海",
+        "seriesEn": "VOYAGE",
+        "model": "RM850x 2018 revision"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "rmx"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2018-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按已知具体型号或系列年代推演游戏供货月；厂商地区首售月未确认"
+      },
+      "specs": {
+        "continuousPowerW": 850,
+        "formFactor": "ATX",
+        "modularity": "fully",
+        "connectorCounts": {
+          "atx24Pin": 1,
+          "eps4Plus4Pin": 2,
+          "pcie6Plus2Pin": 6,
+          "sata": 10,
+          "molex": 8
+        },
+        "cableCounts": {
+          "atx24Pin": 1,
+          "eps4Plus4Pin": 2,
+          "pcie6Plus2Pin": 3,
+          "sata": 3,
+          "molex": 2
+        },
+        "dimensionsMm": [
+          150,
+          86,
+          160
+        ]
+      },
+      "verifiedFields": [
+        "specs.continuousPowerW",
+        "specs.formFactor",
+        "specs.modularity",
+        "specs.connectorCounts",
+        "specs.cableCounts",
+        "specs.dimensionsMm"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "rmx"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "桌面PC供电"
+      ],
+      "workshopNotes": [
+        "插头总数和线缆束数分开，缺接线表时保留null"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_psu_004",
+      "category": "psu",
+      "brandId": "corsail",
+      "realModel": "AX1600i",
+      "realSeries": "AXi",
+      "gameName": {
+        "seriesId": "corsail_voyage",
+        "seriesZh": "航海",
+        "seriesEn": "VOYAGE",
+        "model": "AX1600i"
+      },
+      "release": {
+        "date": "2018-01",
+        "precision": "month",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "cax"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2018-01",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方公告月推演游戏供货，地区首售可能不同"
+      },
+      "specs": {
+        "continuousPowerW": null,
+        "formFactor": "ATX",
+        "modularity": null,
+        "connectorCounts": {
+          "atx24Pin": null,
+          "eps4Plus4Pin": null,
+          "pcie6Plus2Pin": null,
+          "sata": null,
+          "molex": null
+        },
+        "cableCounts": null,
+        "dimensionsMm": null
+      },
+      "verifiedFields": [
+        "specs.formFactor",
+        "specs.connectorCounts"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "cax"
+      ],
+      "tier": "flagship",
+      "useCases": [
+        "桌面PC供电"
+      ],
+      "workshopNotes": [
+        "插头总数和线缆束数分开，缺接线表时保留null"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_psu_005",
+      "category": "psu",
+      "brandId": "seasound",
+      "realModel": "S12II-520 Bronze",
+      "realSeries": "S12II",
+      "gameName": {
+        "seriesId": "seasound_core",
+        "seriesZh": "稳潮",
+        "seriesEn": "STEADY",
+        "model": "S12II-520 Bronze"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "existing_before_phase",
+        "status": "unresolved",
+        "sourceIds": [
+          "s12"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-01",
+        "through": null,
+        "basis": "existing_stock_assumption",
+        "note": "阶段初期库存属于游戏假设，不代表具体SKU首售"
+      },
+      "specs": {
+        "continuousPowerW": 520,
+        "formFactor": "ATX",
+        "modularity": "fixed",
+        "connectorCounts": {
+          "atx24Pin": 1,
+          "eps4Plus4Pin": 1,
+          "pcie6Plus2Pin": 2,
+          "sata": 6,
+          "molex": 4
+        },
+        "cableCounts": null,
+        "dimensionsMm": [
+          150,
+          140,
+          86
+        ]
+      },
+      "verifiedFields": [
+        "specs.continuousPowerW",
+        "specs.formFactor",
+        "specs.modularity",
+        "specs.connectorCounts",
+        "specs.dimensionsMm"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "s12"
+      ],
+      "tier": "entry",
+      "useCases": [
+        "桌面PC供电"
+      ],
+      "workshopNotes": [
+        "插头总数和线缆束数分开，缺接线表时保留null"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_psu_006",
+      "category": "psu",
+      "brandId": "seasound",
+      "realModel": "S12II-620 Bronze",
+      "realSeries": "S12II",
+      "gameName": {
+        "seriesId": "seasound_core",
+        "seriesZh": "稳潮",
+        "seriesEn": "STEADY",
+        "model": "S12II-620 Bronze"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "existing_before_phase",
+        "status": "unresolved",
+        "sourceIds": [
+          "s12"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-01",
+        "through": null,
+        "basis": "existing_stock_assumption",
+        "note": "阶段初期库存属于游戏假设，不代表具体SKU首售"
+      },
+      "specs": {
+        "continuousPowerW": 620,
+        "formFactor": "ATX",
+        "modularity": "fixed",
+        "connectorCounts": {
+          "atx24Pin": 1,
+          "eps4Plus4Pin": 1,
+          "pcie6Plus2Pin": 2,
+          "sata": 6,
+          "molex": 4
+        },
+        "cableCounts": null,
+        "dimensionsMm": [
+          150,
+          140,
+          86
+        ]
+      },
+      "verifiedFields": [
+        "specs.continuousPowerW",
+        "specs.formFactor",
+        "specs.modularity",
+        "specs.connectorCounts",
+        "specs.dimensionsMm"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "s12"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "桌面PC供电"
+      ],
+      "workshopNotes": [
+        "插头总数和线缆束数分开，缺接线表时保留null"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_psu_007",
+      "category": "psu",
+      "brandId": "seasound",
+      "realModel": "PRIME 650 family",
+      "realSeries": "PRIME",
+      "gameName": {
+        "seriesId": "seasound_core",
+        "seriesZh": "稳潮",
+        "seriesEn": "STEADY",
+        "model": "PRIME 650 family"
+      },
+      "release": {
+        "date": "2016-07",
+        "precision": "month",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "sea"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方公告月推演游戏供货，地区首售可能不同"
+      },
+      "specs": {
+        "continuousPowerW": null,
+        "formFactor": "ATX",
+        "modularity": null,
+        "connectorCounts": {
+          "atx24Pin": null,
+          "eps4Plus4Pin": null,
+          "pcie6Plus2Pin": null,
+          "sata": null,
+          "molex": null
+        },
+        "cableCounts": null,
+        "dimensionsMm": null
+      },
+      "verifiedFields": [
+        "specs.formFactor",
+        "specs.connectorCounts"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "sea"
+      ],
+      "tier": "flagship",
+      "useCases": [
+        "桌面PC供电"
+      ],
+      "workshopNotes": [
+        "插头总数和线缆束数分开，缺接线表时保留null"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_psu_008",
+      "category": "psu",
+      "brandId": "seasound",
+      "realModel": "FOCUS PLUS Gold family",
+      "realSeries": "FOCUS PLUS",
+      "gameName": {
+        "seriesId": "seasound_core",
+        "seriesZh": "稳潮",
+        "seriesEn": "STEADY",
+        "model": "FOCUS PLUS Gold family"
+      },
+      "release": {
+        "date": "2017-05",
+        "precision": "month",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "seacom"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-05",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方公告月推演游戏供货，地区首售可能不同"
+      },
+      "specs": {
+        "continuousPowerW": null,
+        "formFactor": "ATX",
+        "modularity": null,
+        "connectorCounts": {
+          "atx24Pin": null,
+          "eps4Plus4Pin": null,
+          "pcie6Plus2Pin": null,
+          "sata": null,
+          "molex": null
+        },
+        "cableCounts": null,
+        "dimensionsMm": null
+      },
+      "verifiedFields": [
+        "specs.formFactor",
+        "specs.connectorCounts"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "seacom"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "桌面PC供电"
+      ],
+      "workshopNotes": [
+        "插头总数和线缆束数分开，缺接线表时保留null"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_psu_009",
+      "category": "psu",
+      "brandId": "seasound",
+      "realModel": "FOCUS PLUS Platinum family",
+      "realSeries": "FOCUS PLUS",
+      "gameName": {
+        "seriesId": "seasound_core",
+        "seriesZh": "稳潮",
+        "seriesEn": "STEADY",
+        "model": "FOCUS PLUS Platinum family"
+      },
+      "release": {
+        "date": "2017-05",
+        "precision": "month",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "seacom"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-05",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方公告月推演游戏供货，地区首售可能不同"
+      },
+      "specs": {
+        "continuousPowerW": null,
+        "formFactor": "ATX",
+        "modularity": null,
+        "connectorCounts": {
+          "atx24Pin": null,
+          "eps4Plus4Pin": null,
+          "pcie6Plus2Pin": null,
+          "sata": null,
+          "molex": null
+        },
+        "cableCounts": null,
+        "dimensionsMm": null
+      },
+      "verifiedFields": [
+        "specs.formFactor",
+        "specs.connectorCounts"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "seacom"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "桌面PC供电"
+      ],
+      "workshopNotes": [
+        "插头总数和线缆束数分开，缺接线表时保留null"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_psu_010",
+      "category": "psu",
+      "brandId": "fspro",
+      "realModel": "HYDRO G 650W",
+      "realSeries": "HYDRO G",
+      "gameName": {
+        "seriesId": "fspro_hydro",
+        "seriesZh": "清泉",
+        "seriesEn": "HYDRO",
+        "model": "HYDRO G 650W"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "existing_before_phase",
+        "status": "unresolved",
+        "sourceIds": [
+          "fsp"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-01",
+        "through": null,
+        "basis": "existing_stock_assumption",
+        "note": "阶段初期库存属于游戏假设，不代表具体SKU首售"
+      },
+      "specs": {
+        "continuousPowerW": null,
+        "formFactor": "ATX",
+        "modularity": null,
+        "connectorCounts": {
+          "atx24Pin": null,
+          "eps4Plus4Pin": null,
+          "pcie6Plus2Pin": null,
+          "sata": null,
+          "molex": null
+        },
+        "cableCounts": null,
+        "dimensionsMm": null
+      },
+      "verifiedFields": [
+        "specs.formFactor",
+        "specs.connectorCounts"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "fsp"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "桌面PC供电"
+      ],
+      "workshopNotes": [
+        "插头总数和线缆束数分开，缺接线表时保留null"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_psu_011",
+      "category": "psu",
+      "brandId": "thermaltak",
+      "realModel": "Toughpower Grand RGB 650W",
+      "realSeries": "Toughpower Grand RGB",
+      "gameName": {
+        "seriesId": "thermaltak_toughpower",
+        "seriesZh": "烈流",
+        "seriesEn": "TOUGHPOWER",
+        "model": "Toughpower Grand RGB 650W"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "estimated_window",
+        "status": "unresolved",
+        "sourceIds": [
+          "tt"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-11",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方公告月推演游戏供货，地区首售可能不同"
+      },
+      "specs": {
+        "continuousPowerW": 650,
+        "formFactor": "ATX",
+        "modularity": "fully",
+        "connectorCounts": {
+          "pcie6Plus2Pin": 4
+        },
+        "cableCounts": null,
+        "dimensionsMm": [
+          150,
+          86,
+          160
+        ]
+      },
+      "verifiedFields": [
+        "specs.continuousPowerW",
+        "specs.formFactor",
+        "specs.modularity",
+        "specs.connectorCounts",
+        "specs.dimensionsMm"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "tt"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "桌面PC供电"
+      ],
+      "workshopNotes": [
+        "插头总数和线缆束数分开，缺接线表时保留null"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_psu_012",
+      "category": "psu",
+      "brandId": "silverrock",
+      "realModel": "ST45SF-G 450W",
+      "realSeries": "SFX",
+      "gameName": {
+        "seriesId": "silverrock_sfx",
+        "seriesZh": "石匣",
+        "seriesEn": "STONEBOX",
+        "model": "ST45SF-G 450W"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "existing_before_phase",
+        "status": "unresolved",
+        "sourceIds": [
+          "sfx"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-01",
+        "through": null,
+        "basis": "existing_stock_assumption",
+        "note": "阶段初期库存属于游戏假设，不代表具体SKU首售"
+      },
+      "specs": {
+        "continuousPowerW": 450,
+        "formFactor": "SFX",
+        "modularity": "fully",
+        "connectorCounts": {
+          "atx24Pin": 1,
+          "eps4Plus4Pin": 1,
+          "pcie6Plus2Pin": 2,
+          "sata": 3,
+          "molex": 2
+        },
+        "cableCounts": null,
+        "dimensionsMm": [
+          125,
+          63.5,
+          100
+        ]
+      },
+      "verifiedFields": [
+        "specs.continuousPowerW",
+        "specs.formFactor",
+        "specs.modularity",
+        "specs.connectorCounts",
+        "specs.dimensionsMm"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "sfx"
+      ],
+      "tier": "specialist",
+      "useCases": [
+        "桌面PC供电"
+      ],
+      "workshopNotes": [
+        "插头总数和线缆束数分开，缺接线表时保留null"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_psu_013",
+      "category": "psu",
+      "brandId": "anteck",
+      "realModel": "NeoECO Classic 550 V2",
+      "realSeries": "NeoECO Classic",
+      "gameName": {
+        "seriesId": "anteck_neoeco",
+        "seriesZh": "新芽",
+        "seriesEn": "NEOECO",
+        "model": "NeoECO Classic 550 V2"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "estimated_window",
+        "status": "unresolved",
+        "sourceIds": [
+          "antec"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-01",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按已知型号出现年份推演游戏供货月；厂商地区首售月未确认"
+      },
+      "specs": {
+        "continuousPowerW": null,
+        "formFactor": "ATX",
+        "modularity": null,
+        "connectorCounts": {
+          "atx24Pin": null,
+          "eps4Plus4Pin": null,
+          "pcie6Plus2Pin": null,
+          "sata": null,
+          "molex": null
+        },
+        "cableCounts": null,
+        "dimensionsMm": null
+      },
+      "verifiedFields": [
+        "specs.formFactor",
+        "specs.connectorCounts"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "antec"
+      ],
+      "tier": "entry",
+      "useCases": [
+        "桌面PC供电"
+      ],
+      "workshopNotes": [
+        "插头总数和线缆束数分开，缺接线表时保留null"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_psu_014",
+      "category": "psu",
+      "brandId": "misi",
+      "realModel": "MPG A650GF",
+      "realSeries": "MPG GF",
+      "gameName": {
+        "seriesId": "misi_mpg",
+        "seriesZh": "狮电",
+        "seriesEn": "LIONPOWER",
+        "model": "MPG A650GF"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "estimated_window",
+        "status": "unresolved",
+        "sourceIds": [
+          "msipromo"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2020-11",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方公告月推演游戏供货，地区首售可能不同"
+      },
+      "specs": {
+        "continuousPowerW": null,
+        "formFactor": "ATX",
+        "modularity": null,
+        "connectorCounts": {
+          "atx24Pin": null,
+          "eps4Plus4Pin": null,
+          "pcie6Plus2Pin": null,
+          "sata": null,
+          "molex": null
+        },
+        "cableCounts": null,
+        "dimensionsMm": null
+      },
+      "verifiedFields": [
+        "specs.formFactor",
+        "specs.connectorCounts"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "msipromo"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "桌面PC供电"
+      ],
+      "workshopNotes": [
+        "插头总数和线缆束数分开，缺接线表时保留null"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_psu_015",
+      "category": "psu",
+      "brandId": "rogue",
+      "realModel": "ROG Thor 1200W Platinum",
+      "realSeries": "ROG Thor",
+      "gameName": {
+        "seriesId": "rogue_thor",
+        "seriesZh": "王庭",
+        "seriesEn": "THOR",
+        "model": "ROG Thor 1200W Platinum"
+      },
+      "release": {
+        "date": "2018-05",
+        "precision": "month",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "rogcomp"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2018-05",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方公告月推演游戏供货，地区首售可能不同"
+      },
+      "specs": {
+        "continuousPowerW": null,
+        "formFactor": "ATX",
+        "modularity": null,
+        "connectorCounts": {
+          "atx24Pin": null,
+          "eps4Plus4Pin": null,
+          "pcie6Plus2Pin": null,
+          "sata": null,
+          "molex": null
+        },
+        "cableCounts": null,
+        "dimensionsMm": null
+      },
+      "verifiedFields": [
+        "specs.formFactor",
+        "specs.connectorCounts"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "rogcomp"
+      ],
+      "tier": "flagship",
+      "useCases": [
+        "桌面PC供电"
+      ],
+      "workshopNotes": [
+        "插头总数和线缆束数分开，缺接线表时保留null"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_psu_016",
+      "category": "psu",
+      "brandId": "corsail",
+      "realModel": "RM550x family 2018 revision",
+      "realSeries": "RMx",
+      "gameName": {
+        "seriesId": "corsail_voyage",
+        "seriesZh": "航海",
+        "seriesEn": "VOYAGE",
+        "model": "RM550x family"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "rmx"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2018-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按已知具体型号或系列年代推演游戏供货月；厂商地区首售月未确认"
+      },
+      "specs": {
+        "continuousPowerW": 550,
+        "formFactor": "ATX",
+        "modularity": "fully",
+        "connectorCounts": {
+          "atx24Pin": 1,
+          "eps4Plus4Pin": 2,
+          "pcie6Plus2Pin": 6,
+          "sata": 10,
+          "molex": 8
+        },
+        "cableCounts": {
+          "atx24Pin": 1,
+          "eps4Plus4Pin": 2,
+          "pcie6Plus2Pin": 3,
+          "sata": 3,
+          "molex": 2
+        },
+        "dimensionsMm": [
+          150,
+          86,
+          160
+        ]
+      },
+      "verifiedFields": [
+        "specs.continuousPowerW",
+        "specs.formFactor",
+        "specs.modularity",
+        "specs.connectorCounts",
+        "specs.cableCounts",
+        "specs.dimensionsMm"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "rmx"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "桌面PC供电"
+      ],
+      "workshopNotes": [
+        "插头总数和线缆束数分开，缺接线表时保留null"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_psu_017",
+      "category": "psu",
+      "brandId": "corsail",
+      "realModel": "RM750x family 2018 revision",
+      "realSeries": "RMx",
+      "gameName": {
+        "seriesId": "corsail_voyage",
+        "seriesZh": "航海",
+        "seriesEn": "VOYAGE",
+        "model": "RM750x family"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "rmx"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2018-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按已知具体型号或系列年代推演游戏供货月；厂商地区首售月未确认"
+      },
+      "specs": {
+        "continuousPowerW": 750,
+        "formFactor": "ATX",
+        "modularity": "fully",
+        "connectorCounts": {
+          "atx24Pin": 1,
+          "eps4Plus4Pin": 2,
+          "pcie6Plus2Pin": 6,
+          "sata": 10,
+          "molex": 8
+        },
+        "cableCounts": {
+          "atx24Pin": 1,
+          "eps4Plus4Pin": 2,
+          "pcie6Plus2Pin": 3,
+          "sata": 3,
+          "molex": 2
+        },
+        "dimensionsMm": [
+          150,
+          86,
+          160
+        ]
+      },
+      "verifiedFields": [
+        "specs.continuousPowerW",
+        "specs.formFactor",
+        "specs.modularity",
+        "specs.connectorCounts",
+        "specs.cableCounts",
+        "specs.dimensionsMm"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "rmx"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "桌面PC供电"
+      ],
+      "workshopNotes": [
+        "插头总数和线缆束数分开，缺接线表时保留null"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_019",
+      "category": "cooler",
+      "brandId": "deepkool",
+      "realModel": "GAMMAXX 400",
+      "realSeries": "GAMMAXX",
+      "gameName": {
+        "seriesId": "deepkool_gammaxx",
+        "seriesZh": "冰川",
+        "seriesEn": "GAMMAXX",
+        "model": "GAMMAXX 400"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "existing_before_phase",
+        "status": "unresolved",
+        "sourceIds": [
+          "dc400"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-01",
+        "through": null,
+        "basis": "existing_stock_assumption",
+        "note": "阶段初期库存属于游戏假设，不代表具体SKU首售"
+      },
+      "specs": {
+        "coolerType": "air",
+        "socketSupport": null,
+        "dimensionsMm": null,
+        "heightMm": null,
+        "ramClearanceMm": null,
+        "heatpipeCount": null,
+        "fanDimensionsMm": null,
+        "radiatorSizeMm": null
+      },
+      "verifiedFields": [
+        "specs.coolerType"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "dc400"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "散热器适配与机箱净空"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_020",
+      "category": "cooler",
+      "brandId": "deepkool",
+      "realModel": "GAMMAXX 300",
+      "realSeries": "GAMMAXX",
+      "gameName": {
+        "seriesId": "deepkool_gammaxx",
+        "seriesZh": "冰川",
+        "seriesEn": "GAMMAXX",
+        "model": "GAMMAXX 300"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "existing_before_phase",
+        "status": "unresolved",
+        "sourceIds": [
+          "deep"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-01",
+        "through": null,
+        "basis": "existing_stock_assumption",
+        "note": "阶段初期库存属于游戏假设，不代表具体SKU首售"
+      },
+      "specs": {
+        "coolerType": "air",
+        "socketSupport": null,
+        "dimensionsMm": null,
+        "heightMm": null,
+        "ramClearanceMm": null,
+        "heatpipeCount": null,
+        "fanDimensionsMm": null,
+        "radiatorSizeMm": null
+      },
+      "verifiedFields": [
+        "specs.coolerType"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "deep"
+      ],
+      "tier": "entry",
+      "useCases": [
+        "散热器适配与机箱净空"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_021",
+      "category": "cooler",
+      "brandId": "deepkool",
+      "realModel": "GAMMAXX 200",
+      "realSeries": "GAMMAXX",
+      "gameName": {
+        "seriesId": "deepkool_gammaxx",
+        "seriesZh": "冰川",
+        "seriesEn": "GAMMAXX",
+        "model": "GAMMAXX 200"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "existing_before_phase",
+        "status": "unresolved",
+        "sourceIds": [
+          "deep"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-01",
+        "through": null,
+        "basis": "existing_stock_assumption",
+        "note": "阶段初期库存属于游戏假设，不代表具体SKU首售"
+      },
+      "specs": {
+        "coolerType": "air",
+        "socketSupport": null,
+        "dimensionsMm": null,
+        "heightMm": null,
+        "ramClearanceMm": null,
+        "heatpipeCount": null,
+        "fanDimensionsMm": null,
+        "radiatorSizeMm": null
+      },
+      "verifiedFields": [
+        "specs.coolerType"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "deep"
+      ],
+      "tier": "entry",
+      "useCases": [
+        "散热器适配与机箱净空"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_022",
+      "category": "cooler",
+      "brandId": "deepkool",
+      "realModel": "GAMMAXX 200T",
+      "realSeries": "GAMMAXX",
+      "gameName": {
+        "seriesId": "deepkool_gammaxx",
+        "seriesZh": "冰川",
+        "seriesEn": "GAMMAXX",
+        "model": "GAMMAXX 200T"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "existing_before_phase",
+        "status": "unresolved",
+        "sourceIds": [
+          "deep"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-01",
+        "through": null,
+        "basis": "existing_stock_assumption",
+        "note": "阶段初期库存属于游戏假设，不代表具体SKU首售"
+      },
+      "specs": {
+        "coolerType": "air",
+        "socketSupport": null,
+        "dimensionsMm": null,
+        "heightMm": null,
+        "ramClearanceMm": null,
+        "heatpipeCount": null,
+        "fanDimensionsMm": null,
+        "radiatorSizeMm": null
+      },
+      "verifiedFields": [
+        "specs.coolerType"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "deep"
+      ],
+      "tier": "entry",
+      "useCases": [
+        "散热器适配与机箱净空"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_023",
+      "category": "cooler",
+      "brandId": "deepkool",
+      "realModel": "GAMMAXX S40",
+      "realSeries": "GAMMAXX",
+      "gameName": {
+        "seriesId": "deepkool_gammaxx",
+        "seriesZh": "冰川",
+        "seriesEn": "GAMMAXX",
+        "model": "GAMMAXX S40"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "existing_before_phase",
+        "status": "unresolved",
+        "sourceIds": [
+          "deep"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-01",
+        "through": null,
+        "basis": "existing_stock_assumption",
+        "note": "阶段初期库存属于游戏假设，不代表具体SKU首售"
+      },
+      "specs": {
+        "coolerType": "air",
+        "socketSupport": null,
+        "dimensionsMm": null,
+        "heightMm": null,
+        "ramClearanceMm": null,
+        "heatpipeCount": null,
+        "fanDimensionsMm": null,
+        "radiatorSizeMm": null
+      },
+      "verifiedFields": [
+        "specs.coolerType"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "deep"
+      ],
+      "tier": "entry",
+      "useCases": [
+        "散热器适配与机箱净空"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_024",
+      "category": "cooler",
+      "brandId": "deepkool",
+      "realModel": "LUCIFER V2",
+      "realSeries": "LUCIFER",
+      "gameName": {
+        "seriesId": "deepkool_gammaxx",
+        "seriesZh": "冰川",
+        "seriesEn": "GAMMAXX",
+        "model": "LUCIFER V2"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "existing_before_phase",
+        "status": "unresolved",
+        "sourceIds": [
+          "deep"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-01",
+        "through": null,
+        "basis": "existing_stock_assumption",
+        "note": "阶段初期库存属于游戏假设，不代表具体SKU首售"
+      },
+      "specs": {
+        "coolerType": "air",
+        "socketSupport": null,
+        "dimensionsMm": null,
+        "heightMm": null,
+        "ramClearanceMm": null,
+        "heatpipeCount": null,
+        "fanDimensionsMm": null,
+        "radiatorSizeMm": null
+      },
+      "verifiedFields": [
+        "specs.coolerType"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "deep"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "散热器适配与机箱净空"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_025",
+      "category": "cooler",
+      "brandId": "deepkool",
+      "realModel": "LUCIFER K2",
+      "realSeries": "LUCIFER",
+      "gameName": {
+        "seriesId": "deepkool_gammaxx",
+        "seriesZh": "冰川",
+        "seriesEn": "GAMMAXX",
+        "model": "LUCIFER K2"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "existing_before_phase",
+        "status": "unresolved",
+        "sourceIds": [
+          "deep"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-01",
+        "through": null,
+        "basis": "existing_stock_assumption",
+        "note": "阶段初期库存属于游戏假设，不代表具体SKU首售"
+      },
+      "specs": {
+        "coolerType": "air",
+        "socketSupport": null,
+        "dimensionsMm": null,
+        "heightMm": null,
+        "ramClearanceMm": null,
+        "heatpipeCount": null,
+        "fanDimensionsMm": null,
+        "radiatorSizeMm": null
+      },
+      "verifiedFields": [
+        "specs.coolerType"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "deep"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "散热器适配与机箱净空"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_026",
+      "category": "cooler",
+      "brandId": "deepkool",
+      "realModel": "NEPTWIN V2",
+      "realSeries": "NEPTWIN",
+      "gameName": {
+        "seriesId": "deepkool_gammaxx",
+        "seriesZh": "冰川",
+        "seriesEn": "GAMMAXX",
+        "model": "NEPTWIN V2"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "existing_before_phase",
+        "status": "unresolved",
+        "sourceIds": [
+          "deep"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-01",
+        "through": null,
+        "basis": "existing_stock_assumption",
+        "note": "阶段初期库存属于游戏假设，不代表具体SKU首售"
+      },
+      "specs": {
+        "coolerType": "air",
+        "socketSupport": null,
+        "dimensionsMm": null,
+        "heightMm": null,
+        "ramClearanceMm": null,
+        "heatpipeCount": null,
+        "fanDimensionsMm": null,
+        "radiatorSizeMm": null
+      },
+      "verifiedFields": [
+        "specs.coolerType"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "deep"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "散热器适配与机箱净空"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_027",
+      "category": "cooler",
+      "brandId": "deepkool",
+      "realModel": "FROSTWIN V2.0",
+      "realSeries": "FROSTWIN",
+      "gameName": {
+        "seriesId": "deepkool_gammaxx",
+        "seriesZh": "冰川",
+        "seriesEn": "GAMMAXX",
+        "model": "FROSTWIN V2.0"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "existing_before_phase",
+        "status": "unresolved",
+        "sourceIds": [
+          "deep"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-01",
+        "through": null,
+        "basis": "existing_stock_assumption",
+        "note": "阶段初期库存属于游戏假设，不代表具体SKU首售"
+      },
+      "specs": {
+        "coolerType": "air",
+        "socketSupport": null,
+        "dimensionsMm": null,
+        "heightMm": null,
+        "ramClearanceMm": null,
+        "heatpipeCount": null,
+        "fanDimensionsMm": null,
+        "radiatorSizeMm": null
+      },
+      "verifiedFields": [
+        "specs.coolerType"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "deep"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "散热器适配与机箱净空"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_028",
+      "category": "cooler",
+      "brandId": "coolmaster",
+      "realModel": "Hyper 212 Black Edition",
+      "realSeries": "Hyper 212",
+      "gameName": {
+        "seriesId": "coolmaster_breeze",
+        "seriesZh": "风息",
+        "seriesEn": "BREEZE",
+        "model": "Hyper 212 Black Edition"
+      },
+      "release": {
+        "date": "2018",
+        "precision": "year",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "cmh"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2018-10",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按已知型号出现年份推演游戏供货月；厂商地区首售月未确认"
+      },
+      "specs": {
+        "coolerType": "air",
+        "socketSupport": null,
+        "dimensionsMm": null,
+        "heightMm": null,
+        "ramClearanceMm": null,
+        "heatpipeCount": null,
+        "fanDimensionsMm": null,
+        "radiatorSizeMm": null
+      },
+      "verifiedFields": [
+        "specs.coolerType"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "cmh"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "散热器适配与机箱净空"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_029",
+      "category": "cooler",
+      "brandId": "noctura",
+      "realModel": "NH-D15",
+      "realSeries": "NH-D15",
+      "gameName": {
+        "seriesId": "noctura_dusk",
+        "seriesZh": "暮羽",
+        "seriesEn": "DUSKFEATHER",
+        "model": "NH-D15"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "existing_before_phase",
+        "status": "unresolved",
+        "sourceIds": [
+          "d15"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-01",
+        "through": null,
+        "basis": "existing_stock_assumption",
+        "note": "阶段初期库存属于游戏假设，不代表具体SKU首售"
+      },
+      "specs": {
+        "coolerType": "air",
+        "socketSupport": null,
+        "dimensionsMm": [
+          161,
+          150,
+          168
+        ],
+        "heightMm": 168,
+        "ramClearanceMm": 32,
+        "heatpipeCount": 6,
+        "fanDimensionsMm": [
+          140,
+          150,
+          25
+        ],
+        "radiatorSizeMm": null
+      },
+      "verifiedFields": [
+        "specs.coolerType",
+        "specs.dimensionsMm",
+        "specs.heightMm",
+        "specs.ramClearanceMm",
+        "specs.heatpipeCount",
+        "specs.fanDimensionsMm"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "d15"
+      ],
+      "tier": "flagship",
+      "useCases": [
+        "散热器适配与机箱净空"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_030",
+      "category": "cooler",
+      "brandId": "noctura",
+      "realModel": "NH-U12S",
+      "realSeries": "NH-U12S",
+      "gameName": {
+        "seriesId": "noctura_dusk",
+        "seriesZh": "暮羽",
+        "seriesEn": "DUSKFEATHER",
+        "model": "NH-U12S"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "existing_before_phase",
+        "status": "unresolved",
+        "sourceIds": [
+          "u12"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-01",
+        "through": null,
+        "basis": "existing_stock_assumption",
+        "note": "阶段初期库存属于游戏假设，不代表具体SKU首售"
+      },
+      "specs": {
+        "coolerType": "air",
+        "socketSupport": null,
+        "dimensionsMm": [
+          125,
+          71,
+          158
+        ],
+        "heightMm": 158,
+        "ramClearanceMm": null,
+        "heatpipeCount": 5,
+        "fanDimensionsMm": [
+          120,
+          120,
+          25
+        ],
+        "radiatorSizeMm": null
+      },
+      "verifiedFields": [
+        "specs.coolerType",
+        "specs.dimensionsMm",
+        "specs.heightMm",
+        "specs.heatpipeCount",
+        "specs.fanDimensionsMm"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "u12"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "散热器适配与机箱净空"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_031",
+      "category": "cooler",
+      "brandId": "noctura",
+      "realModel": "NH-D15S",
+      "realSeries": "NH-D15S",
+      "gameName": {
+        "seriesId": "noctura_dusk",
+        "seriesZh": "暮羽",
+        "seriesEn": "DUSKFEATHER",
+        "model": "NH-D15S"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "existing_before_phase",
+        "status": "unresolved",
+        "sourceIds": [
+          "d15"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-01",
+        "through": null,
+        "basis": "existing_stock_assumption",
+        "note": "阶段初期库存属于游戏假设，不代表具体SKU首售"
+      },
+      "specs": {
+        "coolerType": "air",
+        "socketSupport": null,
+        "dimensionsMm": [
+          161,
+          150,
+          168
+        ],
+        "heightMm": 168,
+        "ramClearanceMm": 32,
+        "heatpipeCount": 6,
+        "fanDimensionsMm": [
+          140,
+          150,
+          25
+        ],
+        "radiatorSizeMm": null
+      },
+      "verifiedFields": [
+        "specs.coolerType",
+        "specs.dimensionsMm",
+        "specs.heightMm",
+        "specs.ramClearanceMm",
+        "specs.heatpipeCount",
+        "specs.fanDimensionsMm"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "d15"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "散热器适配与机箱净空"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_032",
+      "category": "cooler",
+      "brandId": "noctura",
+      "realModel": "NH-D15 chromax.black",
+      "realSeries": "chromax.black",
+      "gameName": {
+        "seriesId": "noctura_dusk",
+        "seriesZh": "暮羽",
+        "seriesEn": "DUSKFEATHER",
+        "model": "NH-D15 chromax.black"
+      },
+      "release": {
+        "date": "2019-10",
+        "precision": "month",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "chroma"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2019-10",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方公告月推演游戏供货，地区首售可能不同"
+      },
+      "specs": {
+        "coolerType": "air",
+        "socketSupport": null,
+        "dimensionsMm": null,
+        "heightMm": null,
+        "ramClearanceMm": null,
+        "heatpipeCount": null,
+        "fanDimensionsMm": null,
+        "radiatorSizeMm": null
+      },
+      "verifiedFields": [
+        "specs.coolerType"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "chroma"
+      ],
+      "tier": "flagship",
+      "useCases": [
+        "散热器适配与机箱净空"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_033",
+      "category": "cooler",
+      "brandId": "noctura",
+      "realModel": "NH-U12S chromax.black",
+      "realSeries": "chromax.black",
+      "gameName": {
+        "seriesId": "noctura_dusk",
+        "seriesZh": "暮羽",
+        "seriesEn": "DUSKFEATHER",
+        "model": "NH-U12S chromax.black"
+      },
+      "release": {
+        "date": "2019-10",
+        "precision": "month",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "chroma"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2019-10",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方公告月推演游戏供货，地区首售可能不同"
+      },
+      "specs": {
+        "coolerType": "air",
+        "socketSupport": null,
+        "dimensionsMm": null,
+        "heightMm": null,
+        "ramClearanceMm": null,
+        "heatpipeCount": null,
+        "fanDimensionsMm": null,
+        "radiatorSizeMm": null
+      },
+      "verifiedFields": [
+        "specs.coolerType"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "chroma"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "散热器适配与机箱净空"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_034",
+      "category": "cooler",
+      "brandId": "noctura",
+      "realModel": "NH-L9i chromax.black",
+      "realSeries": "chromax.black",
+      "gameName": {
+        "seriesId": "noctura_dusk",
+        "seriesZh": "暮羽",
+        "seriesEn": "DUSKFEATHER",
+        "model": "NH-L9i chromax.black"
+      },
+      "release": {
+        "date": "2019-10",
+        "precision": "month",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "chroma"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2019-10",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方公告月推演游戏供货，地区首售可能不同"
+      },
+      "specs": {
+        "coolerType": "air",
+        "socketSupport": null,
+        "dimensionsMm": null,
+        "heightMm": null,
+        "ramClearanceMm": null,
+        "heatpipeCount": null,
+        "fanDimensionsMm": null,
+        "radiatorSizeMm": null
+      },
+      "verifiedFields": [
+        "specs.coolerType"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "chroma"
+      ],
+      "tier": "specialist",
+      "useCases": [
+        "散热器适配与机箱净空"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_035",
+      "category": "cooler",
+      "brandId": "corsail",
+      "realModel": "Hydro H100i",
+      "realSeries": "Hydro",
+      "gameName": {
+        "seriesId": "corsail_hydro",
+        "seriesZh": "航海水冷",
+        "seriesEn": "HYDRO",
+        "model": "Hydro H100i"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "existing_before_phase",
+        "status": "unresolved",
+        "sourceIds": [
+          "h100"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-01",
+        "through": null,
+        "basis": "existing_stock_assumption",
+        "note": "阶段初期库存属于游戏假设，不代表具体SKU首售"
+      },
+      "specs": {
+        "coolerType": "AIO liquid",
+        "socketSupport": null,
+        "dimensionsMm": null,
+        "heightMm": null,
+        "ramClearanceMm": null,
+        "heatpipeCount": null,
+        "fanDimensionsMm": null,
+        "radiatorSizeMm": 240
+      },
+      "verifiedFields": [
+        "specs.coolerType",
+        "specs.radiatorSizeMm"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "h100"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "散热器适配与机箱净空"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_036",
+      "category": "cooler",
+      "brandId": "corsail",
+      "realModel": "Hydro H100i v2",
+      "realSeries": "Hydro",
+      "gameName": {
+        "seriesId": "corsail_hydro",
+        "seriesZh": "航海水冷",
+        "seriesEn": "HYDRO",
+        "model": "Hydro H100i v2"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "estimated_window",
+        "status": "unresolved",
+        "sourceIds": [
+          "h100"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-02",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按已知具体型号或系列年代推演游戏供货月；厂商地区首售月未确认"
+      },
+      "specs": {
+        "coolerType": "AIO liquid",
+        "socketSupport": null,
+        "dimensionsMm": null,
+        "heightMm": null,
+        "ramClearanceMm": null,
+        "heatpipeCount": null,
+        "fanDimensionsMm": null,
+        "radiatorSizeMm": 240
+      },
+      "verifiedFields": [
+        "specs.coolerType",
+        "specs.radiatorSizeMm"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "h100",
+        "h100v2"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "散热器适配与机箱净空"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_037",
+      "category": "cooler",
+      "brandId": "corsail",
+      "realModel": "Hydro H100i PRO",
+      "realSeries": "Hydro",
+      "gameName": {
+        "seriesId": "corsail_hydro",
+        "seriesZh": "航海水冷",
+        "seriesEn": "HYDRO",
+        "model": "Hydro H100i PRO"
+      },
+      "release": {
+        "date": "2018-07",
+        "precision": "month",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "hpro"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2018-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方公告月推演游戏供货，地区首售可能不同"
+      },
+      "specs": {
+        "coolerType": "AIO liquid",
+        "socketSupport": null,
+        "dimensionsMm": null,
+        "heightMm": null,
+        "ramClearanceMm": null,
+        "heatpipeCount": null,
+        "fanDimensionsMm": null,
+        "radiatorSizeMm": 240
+      },
+      "verifiedFields": [
+        "specs.coolerType",
+        "specs.radiatorSizeMm"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "hpro"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "散热器适配与机箱净空"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_038",
+      "category": "cooler",
+      "brandId": "corsail",
+      "realModel": "H150i PRO",
+      "realSeries": "Hydro",
+      "gameName": {
+        "seriesId": "corsail_hydro",
+        "seriesZh": "航海水冷",
+        "seriesEn": "HYDRO",
+        "model": "H150i PRO"
+      },
+      "release": {
+        "date": "2018-01",
+        "precision": "month",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "cax"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2018-01",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方公告月推演游戏供货，地区首售可能不同"
+      },
+      "specs": {
+        "coolerType": "AIO liquid",
+        "socketSupport": null,
+        "dimensionsMm": null,
+        "heightMm": null,
+        "ramClearanceMm": null,
+        "heatpipeCount": null,
+        "fanDimensionsMm": null,
+        "radiatorSizeMm": 360
+      },
+      "verifiedFields": [
+        "specs.coolerType",
+        "specs.radiatorSizeMm"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "cax"
+      ],
+      "tier": "flagship",
+      "useCases": [
+        "散热器适配与机箱净空"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_039",
+      "category": "cooler",
+      "brandId": "corsail",
+      "realModel": "H115i PRO",
+      "realSeries": "Hydro",
+      "gameName": {
+        "seriesId": "corsail_hydro",
+        "seriesZh": "航海水冷",
+        "seriesEn": "HYDRO",
+        "model": "H115i PRO"
+      },
+      "release": {
+        "date": "2018-01",
+        "precision": "month",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "cax"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2018-01",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方公告月推演游戏供货，地区首售可能不同"
+      },
+      "specs": {
+        "coolerType": "AIO liquid",
+        "socketSupport": null,
+        "dimensionsMm": null,
+        "heightMm": null,
+        "ramClearanceMm": null,
+        "heatpipeCount": null,
+        "fanDimensionsMm": null,
+        "radiatorSizeMm": 240
+      },
+      "verifiedFields": [
+        "specs.coolerType",
+        "specs.radiatorSizeMm"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "cax"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "散热器适配与机箱净空"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_040",
+      "category": "cooler",
+      "brandId": "corsail",
+      "realModel": "H100i RGB Platinum",
+      "realSeries": "Hydro",
+      "gameName": {
+        "seriesId": "corsail_hydro",
+        "seriesZh": "航海水冷",
+        "seriesEn": "HYDRO",
+        "model": "H100i RGB Platinum"
+      },
+      "release": {
+        "date": "2018-11",
+        "precision": "month",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "hplat"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2018-11",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方公告月推演游戏供货，地区首售可能不同"
+      },
+      "specs": {
+        "coolerType": "AIO liquid",
+        "socketSupport": null,
+        "dimensionsMm": null,
+        "heightMm": null,
+        "ramClearanceMm": null,
+        "heatpipeCount": null,
+        "fanDimensionsMm": null,
+        "radiatorSizeMm": 240
+      },
+      "verifiedFields": [
+        "specs.coolerType",
+        "specs.radiatorSizeMm"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "hplat"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "散热器适配与机箱净空"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_041",
+      "category": "cooler",
+      "brandId": "corsail",
+      "realModel": "H115i RGB Platinum",
+      "realSeries": "Hydro",
+      "gameName": {
+        "seriesId": "corsail_hydro",
+        "seriesZh": "航海水冷",
+        "seriesEn": "HYDRO",
+        "model": "H115i RGB Platinum"
+      },
+      "release": {
+        "date": "2018-11",
+        "precision": "month",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "hplat"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2018-11",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方公告月推演游戏供货，地区首售可能不同"
+      },
+      "specs": {
+        "coolerType": "AIO liquid",
+        "socketSupport": null,
+        "dimensionsMm": null,
+        "heightMm": null,
+        "ramClearanceMm": null,
+        "heatpipeCount": null,
+        "fanDimensionsMm": null,
+        "radiatorSizeMm": 280
+      },
+      "verifiedFields": [
+        "specs.coolerType",
+        "specs.radiatorSizeMm"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "hplat"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "散热器适配与机箱净空"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_042",
+      "category": "cooler",
+      "brandId": "thermalrite",
+      "realModel": "Macho Rev.B",
+      "realSeries": "Macho",
+      "gameName": {
+        "seriesId": "thermalrite_macho",
+        "seriesZh": "镇岳",
+        "seriesEn": "MACHO",
+        "model": "Macho Rev.B"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "existing_before_phase",
+        "status": "unresolved",
+        "sourceIds": [
+          "macho"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-01",
+        "through": null,
+        "basis": "existing_stock_assumption",
+        "note": "阶段初期库存属于游戏假设，不代表具体SKU首售"
+      },
+      "specs": {
+        "coolerType": "air",
+        "socketSupport": null,
+        "dimensionsMm": [
+          140,
+          102,
+          162
+        ],
+        "heightMm": 162,
+        "ramClearanceMm": null,
+        "heatpipeCount": 6,
+        "fanDimensionsMm": null,
+        "radiatorSizeMm": null
+      },
+      "verifiedFields": [
+        "specs.coolerType",
+        "specs.dimensionsMm",
+        "specs.heightMm",
+        "specs.heatpipeCount"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "macho"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "散热器适配与机箱净空"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_044",
+      "category": "cooler",
+      "brandId": "nxzt",
+      "realModel": "Kraken X52",
+      "realSeries": "Kraken X",
+      "gameName": {
+        "seriesId": "nxzt_kraken",
+        "seriesZh": "海妖",
+        "seriesEn": "KRAKEN",
+        "model": "Kraken X52"
+      },
+      "release": {
+        "date": "2016-10",
+        "precision": "day",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "kraken16"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-11",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按已知型号出现年份推演游戏供货月；厂商地区首售月未确认"
+      },
+      "specs": {
+        "coolerType": "AIO liquid",
+        "socketSupport": null,
+        "dimensionsMm": null,
+        "heightMm": null,
+        "ramClearanceMm": null,
+        "heatpipeCount": null,
+        "fanDimensionsMm": null,
+        "radiatorSizeMm": 240
+      },
+      "verifiedFields": [
+        "specs.coolerType",
+        "specs.radiatorSizeMm"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "kraken",
+        "kraken16"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "散热器适配与机箱净空"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_045",
+      "category": "cooler",
+      "brandId": "nxzt",
+      "realModel": "Kraken X62",
+      "realSeries": "Kraken X",
+      "gameName": {
+        "seriesId": "nxzt_kraken",
+        "seriesZh": "海妖",
+        "seriesEn": "KRAKEN",
+        "model": "Kraken X62"
+      },
+      "release": {
+        "date": "2016-10",
+        "precision": "day",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "kraken16"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-11",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按已知型号出现年份推演游戏供货月；厂商地区首售月未确认"
+      },
+      "specs": {
+        "coolerType": "AIO liquid",
+        "socketSupport": null,
+        "dimensionsMm": null,
+        "heightMm": null,
+        "ramClearanceMm": null,
+        "heatpipeCount": null,
+        "fanDimensionsMm": null,
+        "radiatorSizeMm": 280
+      },
+      "verifiedFields": [
+        "specs.coolerType",
+        "specs.radiatorSizeMm"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "kraken",
+        "kraken16"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "散热器适配与机箱净空"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_046",
+      "category": "cooler",
+      "brandId": "nxzt",
+      "realModel": "Kraken X72",
+      "realSeries": "Kraken X",
+      "gameName": {
+        "seriesId": "nxzt_kraken",
+        "seriesZh": "海妖",
+        "seriesEn": "KRAKEN",
+        "model": "Kraken X72"
+      },
+      "release": {
+        "date": "2018-03",
+        "precision": "day",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "kraken18x"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2018-03",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按已知型号出现年份推演游戏供货月；厂商地区首售月未确认"
+      },
+      "specs": {
+        "coolerType": "AIO liquid",
+        "socketSupport": null,
+        "dimensionsMm": null,
+        "heightMm": null,
+        "ramClearanceMm": null,
+        "heatpipeCount": null,
+        "fanDimensionsMm": null,
+        "radiatorSizeMm": 360
+      },
+      "verifiedFields": [
+        "specs.coolerType",
+        "specs.radiatorSizeMm"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "kraken",
+        "kraken18x"
+      ],
+      "tier": "flagship",
+      "useCases": [
+        "散热器适配与机箱净空"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_047",
+      "category": "cooler",
+      "brandId": "nxzt",
+      "realModel": "Kraken M22",
+      "realSeries": "Kraken M",
+      "gameName": {
+        "seriesId": "nxzt_kraken",
+        "seriesZh": "海妖",
+        "seriesEn": "KRAKEN",
+        "model": "Kraken M22"
+      },
+      "release": {
+        "date": "2018-03",
+        "precision": "day",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "kraken18m"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2018-03",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按已知型号出现年份推演游戏供货月；厂商地区首售月未确认"
+      },
+      "specs": {
+        "coolerType": "AIO liquid",
+        "socketSupport": null,
+        "dimensionsMm": null,
+        "heightMm": null,
+        "ramClearanceMm": null,
+        "heatpipeCount": null,
+        "fanDimensionsMm": null,
+        "radiatorSizeMm": 120
+      },
+      "verifiedFields": [
+        "specs.coolerType",
+        "specs.radiatorSizeMm"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "kraken",
+        "kraken18m"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "散热器适配与机箱净空"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_048",
+      "category": "cooler",
+      "brandId": "misi",
+      "realModel": "MAG CORELIQUID 240R",
+      "realSeries": "MAG CORELIQUID",
+      "gameName": {
+        "seriesId": "misi_magcool",
+        "seriesZh": "狮冷",
+        "seriesEn": "LIONCOOL",
+        "model": "MAG CORELIQUID 240R"
+      },
+      "release": {
+        "date": "2020-05",
+        "precision": "month",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "msi"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2020-05",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方公告月推演游戏供货，地区首售可能不同"
+      },
+      "specs": {
+        "coolerType": "AIO liquid",
+        "socketSupport": null,
+        "dimensionsMm": null,
+        "heightMm": null,
+        "ramClearanceMm": null,
+        "heatpipeCount": null,
+        "fanDimensionsMm": null,
+        "radiatorSizeMm": 240
+      },
+      "verifiedFields": [
+        "specs.coolerType",
+        "specs.radiatorSizeMm"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "msi"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "散热器适配与机箱净空"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_049",
+      "category": "cooler",
+      "brandId": "misi",
+      "realModel": "MAG CORELIQUID 360R",
+      "realSeries": "MAG CORELIQUID",
+      "gameName": {
+        "seriesId": "misi_magcool",
+        "seriesZh": "狮冷",
+        "seriesEn": "LIONCOOL",
+        "model": "MAG CORELIQUID 360R"
+      },
+      "release": {
+        "date": "2020-05",
+        "precision": "month",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "msi"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2020-05",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方公告月推演游戏供货，地区首售可能不同"
+      },
+      "specs": {
+        "coolerType": "AIO liquid",
+        "socketSupport": null,
+        "dimensionsMm": null,
+        "heightMm": null,
+        "ramClearanceMm": null,
+        "heatpipeCount": null,
+        "fanDimensionsMm": null,
+        "radiatorSizeMm": 360
+      },
+      "verifiedFields": [
+        "specs.coolerType",
+        "specs.radiatorSizeMm"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "msi"
+      ],
+      "tier": "flagship",
+      "useCases": [
+        "散热器适配与机箱净空"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_050",
+      "category": "cooler",
+      "brandId": "rogue",
+      "realModel": "ROG Ryujin 240",
+      "realSeries": "ROG Ryujin",
+      "gameName": {
+        "seriesId": "rogue_cool",
+        "seriesZh": "王庭",
+        "seriesEn": "ROG COOLING",
+        "model": "ROG Ryujin 240"
+      },
+      "release": {
+        "date": "2018-06",
+        "precision": "month",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "rog"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2018-09",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "官方公告给出2018年第三季度供货窗口，按窗口起始月推演游戏供货"
+      },
+      "specs": {
+        "coolerType": "AIO liquid",
+        "socketSupport": null,
+        "dimensionsMm": null,
+        "heightMm": null,
+        "ramClearanceMm": null,
+        "heatpipeCount": null,
+        "fanDimensionsMm": null,
+        "radiatorSizeMm": 360
+      },
+      "verifiedFields": [
+        "specs.coolerType",
+        "specs.radiatorSizeMm"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "rog"
+      ],
+      "tier": "flagship",
+      "useCases": [
+        "散热器适配与机箱净空"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_051",
+      "category": "cooler",
+      "brandId": "rogue",
+      "realModel": "ROG Ryujin 360",
+      "realSeries": "ROG Ryujin",
+      "gameName": {
+        "seriesId": "rogue_cool",
+        "seriesZh": "王庭",
+        "seriesEn": "ROG COOLING",
+        "model": "ROG Ryujin 360"
+      },
+      "release": {
+        "date": "2018-06",
+        "precision": "month",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "rog"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2018-09",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "官方公告给出2018年第三季度供货窗口，按窗口起始月推演游戏供货"
+      },
+      "specs": {
+        "coolerType": "AIO liquid",
+        "socketSupport": null,
+        "dimensionsMm": null,
+        "heightMm": null,
+        "ramClearanceMm": null,
+        "heatpipeCount": null,
+        "fanDimensionsMm": null,
+        "radiatorSizeMm": 360
+      },
+      "verifiedFields": [
+        "specs.coolerType",
+        "specs.radiatorSizeMm"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "rog"
+      ],
+      "tier": "flagship",
+      "useCases": [
+        "散热器适配与机箱净空"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_052",
+      "category": "cooler",
+      "brandId": "rogue",
+      "realModel": "ROG Ryuo 240",
+      "realSeries": "ROG Ryuo",
+      "gameName": {
+        "seriesId": "rogue_cool",
+        "seriesZh": "王庭",
+        "seriesEn": "ROG COOLING",
+        "model": "ROG Ryuo 240"
+      },
+      "release": {
+        "date": "2018-06",
+        "precision": "month",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "rog"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2018-09",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "官方公告给出2018年第三季度供货窗口，按窗口起始月推演游戏供货"
+      },
+      "specs": {
+        "coolerType": "AIO liquid",
+        "socketSupport": null,
+        "dimensionsMm": null,
+        "heightMm": null,
+        "ramClearanceMm": null,
+        "heatpipeCount": null,
+        "fanDimensionsMm": null,
+        "radiatorSizeMm": 240
+      },
+      "verifiedFields": [
+        "specs.coolerType",
+        "specs.radiatorSizeMm"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "rog"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "散热器适配与机箱净空"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_case_053",
+      "category": "case",
+      "brandId": "corsail",
+      "realModel": "Carbide 275R",
+      "realSeries": "Carbide",
+      "gameName": {
+        "seriesId": "corsail_carbide",
+        "seriesZh": "航海",
+        "seriesEn": "CARBIDE",
+        "model": "Carbide 275R"
+      },
+      "release": {
+        "date": "2018-03",
+        "precision": "day",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "275launch"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2018-03",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按已知型号出现年份推演游戏供货月；厂商地区首售月未确认"
+      },
+      "specs": {
+        "motherboardSupport": [
+          "Mini-ITX",
+          "Micro-ATX",
+          "ATX"
+        ],
+        "maxGpuLengthMm": 370,
+        "maxCpuCoolerHeightMm": 170,
+        "maxPsuLengthMm": 180,
+        "driveBays": {
+          "3.5in": 2,
+          "2.5in": 4
+        },
+        "radiatorMounts": [
+          120,
+          140,
+          240,
+          280,
+          360
+        ]
+      },
+      "verifiedFields": [
+        "specs.motherboardSupport",
+        "specs.maxGpuLengthMm",
+        "specs.maxCpuCoolerHeightMm",
+        "specs.maxPsuLengthMm",
+        "specs.driveBays",
+        "specs.radiatorMounts"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "275r",
+        "275launch"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "机箱板型与组件布局"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_case_054",
+      "category": "case",
+      "brandId": "corsail",
+      "realModel": "Carbide SPEC-04",
+      "realSeries": "Carbide",
+      "gameName": {
+        "seriesId": "corsail_carbide",
+        "seriesZh": "航海",
+        "seriesEn": "CARBIDE",
+        "model": "Carbide SPEC-04"
+      },
+      "release": {
+        "date": "2017-05",
+        "precision": "month",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "spec"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-05",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方公告月推演游戏供货，地区首售可能不同"
+      },
+      "specs": {
+        "motherboardSupport": [
+          "ATX",
+          "Micro-ATX",
+          "Mini-ITX"
+        ],
+        "maxGpuLengthMm": 370,
+        "maxCpuCoolerHeightMm": 150,
+        "maxPsuLengthMm": 225,
+        "driveBays": {
+          "3.5in": 3,
+          "2.5in": 2
+        },
+        "radiatorMounts": {
+          "front": [
+            120,
+            140
+          ],
+          "rear": [
+            120
+          ]
+        }
+      },
+      "verifiedFields": [
+        "specs.motherboardSupport",
+        "specs.maxGpuLengthMm",
+        "specs.maxCpuCoolerHeightMm",
+        "specs.maxPsuLengthMm",
+        "specs.driveBays",
+        "specs.radiatorMounts"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "spec"
+      ],
+      "tier": "entry",
+      "useCases": [
+        "机箱板型与组件布局"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_case_055",
+      "category": "case",
+      "brandId": "corsail",
+      "realModel": "Carbide SPEC-04 Tempered Glass",
+      "realSeries": "Carbide",
+      "gameName": {
+        "seriesId": "corsail_carbide",
+        "seriesZh": "航海",
+        "seriesEn": "CARBIDE",
+        "model": "Carbide SPEC-04 Tempered Glass"
+      },
+      "release": {
+        "date": "2017-10",
+        "precision": "month",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "spec"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-10",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方公告月推演游戏供货，地区首售可能不同"
+      },
+      "specs": {
+        "motherboardSupport": [
+          "ATX",
+          "Micro-ATX",
+          "Mini-ITX"
+        ],
+        "maxGpuLengthMm": 370,
+        "maxCpuCoolerHeightMm": 150,
+        "maxPsuLengthMm": 225,
+        "driveBays": {
+          "3.5in": 3,
+          "2.5in": 2
+        },
+        "radiatorMounts": {
+          "front": [
+            120,
+            140
+          ],
+          "rear": [
+            120
+          ]
+        }
+      },
+      "verifiedFields": [
+        "specs.motherboardSupport",
+        "specs.maxGpuLengthMm",
+        "specs.maxCpuCoolerHeightMm",
+        "specs.maxPsuLengthMm",
+        "specs.driveBays",
+        "specs.radiatorMounts"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "spec"
+      ],
+      "tier": "entry",
+      "useCases": [
+        "机箱板型与组件布局"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_case_056",
+      "category": "case",
+      "brandId": "corsail",
+      "realModel": "Carbide SPEC-OMEGA",
+      "realSeries": "Carbide",
+      "gameName": {
+        "seriesId": "corsail_carbide",
+        "seriesZh": "航海",
+        "seriesEn": "CARBIDE",
+        "model": "Carbide SPEC-OMEGA"
+      },
+      "release": {
+        "date": "2018-01",
+        "precision": "month",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "cax"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2018-01",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方公告月推演游戏供货，地区首售可能不同"
+      },
+      "specs": {
+        "motherboardSupport": null,
+        "maxGpuLengthMm": null,
+        "maxCpuCoolerHeightMm": null,
+        "maxPsuLengthMm": null,
+        "driveBays": null,
+        "radiatorMounts": null
+      },
+      "verifiedFields": [],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "cax"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "机箱板型与组件布局"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_case_057",
+      "category": "case",
+      "brandId": "coolmaster",
+      "realModel": "MasterBox MB511 ARGB",
+      "realSeries": "MasterBox",
+      "gameName": {
+        "seriesId": "coolmaster_masterbox",
+        "seriesZh": "宗师匣",
+        "seriesEn": "MASTERBOX",
+        "model": "MasterBox MB511 ARGB"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "cmcase"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2020-01",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按已知具体型号或系列年代推演游戏供货月；厂商地区首售月未确认"
+      },
+      "specs": {
+        "motherboardSupport": [
+          "Mini-ITX",
+          "Micro-ATX",
+          "ATX"
+        ],
+        "maxGpuLengthMm": 410,
+        "maxCpuCoolerHeightMm": 165,
+        "maxPsuLengthMm": 180,
+        "driveBays": null,
+        "radiatorMounts": {
+          "front": [
+            120,
+            140,
+            240,
+            280,
+            360
+          ],
+          "top": [
+            120,
+            240,
+            360
+          ],
+          "rear": [
+            120
+          ]
+        }
+      },
+      "verifiedFields": [
+        "specs.motherboardSupport",
+        "specs.maxGpuLengthMm",
+        "specs.maxCpuCoolerHeightMm",
+        "specs.maxPsuLengthMm",
+        "specs.radiatorMounts"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "cmcase"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "机箱板型与组件布局"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_case_058",
+      "category": "case",
+      "brandId": "fractik",
+      "realModel": "Define R5",
+      "realSeries": "Define R",
+      "gameName": {
+        "seriesId": "fractik_grid",
+        "seriesZh": "构序",
+        "seriesEn": "GRID",
+        "model": "Define R5"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "existing_before_phase",
+        "status": "unresolved",
+        "sourceIds": [
+          "fr5"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-01",
+        "through": null,
+        "basis": "existing_stock_assumption",
+        "note": "阶段初期库存属于游戏假设，不代表具体SKU首售"
+      },
+      "specs": {
+        "motherboardSupport": null,
+        "maxGpuLengthMm": null,
+        "maxCpuCoolerHeightMm": null,
+        "maxPsuLengthMm": null,
+        "driveBays": null,
+        "radiatorMounts": null
+      },
+      "verifiedFields": [],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "fr5"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "机箱板型与组件布局"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_case_059",
+      "category": "case",
+      "brandId": "fractik",
+      "realModel": "Define R6",
+      "realSeries": "Define R",
+      "gameName": {
+        "seriesId": "fractik_grid",
+        "seriesZh": "构序",
+        "seriesEn": "GRID",
+        "model": "Define R6"
+      },
+      "release": {
+        "date": "2017",
+        "precision": "year",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "frtimeline"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-11",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按已知型号出现年份推演游戏供货月；厂商地区首售月未确认"
+      },
+      "specs": {
+        "motherboardSupport": null,
+        "maxGpuLengthMm": 440,
+        "maxCpuCoolerHeightMm": 185,
+        "maxPsuLengthMm": 300,
+        "driveBays": null,
+        "radiatorMounts": null
+      },
+      "verifiedFields": [
+        "specs.maxGpuLengthMm",
+        "specs.maxCpuCoolerHeightMm",
+        "specs.maxPsuLengthMm"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "fr6",
+        "frtimeline"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "机箱板型与组件布局"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_case_060",
+      "category": "case",
+      "brandId": "fractik",
+      "realModel": "Meshify C",
+      "realSeries": "Meshify",
+      "gameName": {
+        "seriesId": "fractik_grid",
+        "seriesZh": "构序",
+        "seriesEn": "GRID",
+        "model": "Meshify C"
+      },
+      "release": {
+        "date": "2017",
+        "precision": "year",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "frtimeline"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-06",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按已知型号出现年份推演游戏供货月；厂商地区首售月未确认"
+      },
+      "specs": {
+        "motherboardSupport": null,
+        "maxGpuLengthMm": null,
+        "maxCpuCoolerHeightMm": null,
+        "maxPsuLengthMm": null,
+        "driveBays": null,
+        "radiatorMounts": {
+          "top": 240
+        },
+        "motherboardComponentHeightMaxMm": 40
+      },
+      "verifiedFields": [
+        "specs.radiatorMounts",
+        "specs.motherboardComponentHeightMaxMm"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "mesh",
+        "frtimeline"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "机箱板型与组件布局"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_case_061",
+      "category": "case",
+      "brandId": "fractik",
+      "realModel": "Define 7",
+      "realSeries": "Define 7",
+      "gameName": {
+        "seriesId": "fractik_grid",
+        "seriesZh": "构序",
+        "seriesEn": "GRID",
+        "model": "Define 7"
+      },
+      "release": {
+        "date": "2020-02",
+        "precision": "month",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "def7"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2020-02",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方公告月推演游戏供货，地区首售可能不同"
+      },
+      "specs": {
+        "motherboardSupport": [
+          "E-ATX up to 285mm"
+        ],
+        "maxGpuLengthMm": null,
+        "maxCpuCoolerHeightMm": null,
+        "maxPsuLengthMm": null,
+        "driveBays": {
+          "HDD": 14,
+          "SSD": 4,
+          "ODD": 1
+        },
+        "radiatorMounts": {
+          "max": 420
+        }
+      },
+      "verifiedFields": [
+        "specs.motherboardSupport",
+        "specs.driveBays",
+        "specs.radiatorMounts"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "def7"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "机箱板型与组件布局"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_case_062",
+      "category": "case",
+      "brandId": "fractik",
+      "realModel": "Define 7 Compact",
+      "realSeries": "Define 7",
+      "gameName": {
+        "seriesId": "fractik_grid",
+        "seriesZh": "构序",
+        "seriesEn": "GRID",
+        "model": "Define 7 Compact"
+      },
+      "release": {
+        "date": "2020-06",
+        "precision": "month",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "def7c"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2020-06",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方公告月推演游戏供货，地区首售可能不同"
+      },
+      "specs": {
+        "motherboardSupport": null,
+        "maxGpuLengthMm": null,
+        "maxCpuCoolerHeightMm": null,
+        "maxPsuLengthMm": null,
+        "driveBays": null,
+        "radiatorMounts": null
+      },
+      "verifiedFields": [],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "def7c"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "机箱板型与组件布局"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_case_063",
+      "category": "case",
+      "brandId": "fractik",
+      "realModel": "Meshify 2",
+      "realSeries": "Meshify 2",
+      "gameName": {
+        "seriesId": "fractik_grid",
+        "seriesZh": "构序",
+        "seriesEn": "GRID",
+        "model": "Meshify 2"
+      },
+      "release": {
+        "date": "2020-11",
+        "precision": "month",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "mesh2"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2020-11",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方公告月推演游戏供货，地区首售可能不同"
+      },
+      "specs": {
+        "motherboardSupport": null,
+        "maxGpuLengthMm": null,
+        "maxCpuCoolerHeightMm": null,
+        "maxPsuLengthMm": null,
+        "driveBays": null,
+        "radiatorMounts": null
+      },
+      "verifiedFields": [],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "mesh2"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "机箱板型与组件布局"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_case_064",
+      "category": "case",
+      "brandId": "nxzt",
+      "realModel": "H500/H500i",
+      "realSeries": "H Series",
+      "gameName": {
+        "seriesId": "nxzt_h",
+        "seriesZh": "小方舟",
+        "seriesEn": "H",
+        "model": "H500/H500i"
+      },
+      "release": {
+        "date": "2018-05",
+        "precision": "month",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "h500"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2018-05",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方公告月推演游戏供货，地区首售可能不同"
+      },
+      "specs": {
+        "motherboardSupport": null,
+        "maxGpuLengthMm": null,
+        "maxCpuCoolerHeightMm": null,
+        "maxPsuLengthMm": null,
+        "driveBays": null,
+        "radiatorMounts": null
+      },
+      "verifiedFields": [],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "h500"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "机箱板型与组件布局"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_case_065",
+      "category": "case",
+      "brandId": "nxzt",
+      "realModel": "H510 family",
+      "realSeries": "H Series",
+      "gameName": {
+        "seriesId": "nxzt_h",
+        "seriesZh": "小方舟",
+        "seriesEn": "H",
+        "model": "H510 family"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "estimated_window",
+        "status": "unresolved",
+        "sourceIds": [
+          "h510"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2019-07",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按已知具体型号或系列年代推演游戏供货月；厂商地区首售月未确认"
+      },
+      "specs": {
+        "motherboardSupport": [
+          "ATX",
+          "Micro-ATX",
+          "Mini-ITX"
+        ],
+        "maxGpuLengthMm": 381,
+        "maxCpuCoolerHeightMm": 165,
+        "maxPsuLengthMm": null,
+        "driveBays": null,
+        "radiatorMounts": {
+          "front": [
+            240,
+            280
+          ],
+          "rear": [
+            120
+          ]
+        }
+      },
+      "verifiedFields": [
+        "specs.motherboardSupport",
+        "specs.maxGpuLengthMm",
+        "specs.maxCpuCoolerHeightMm",
+        "specs.radiatorMounts"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "h510"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "机箱板型与组件布局"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_case_066",
+      "category": "case",
+      "brandId": "misi",
+      "realModel": "MAG VAMPIRIC 100R",
+      "realSeries": "VAMPIRIC",
+      "gameName": {
+        "seriesId": "misi_gungnir",
+        "seriesZh": "狮箱",
+        "seriesEn": "GUNGNIR",
+        "model": "MAG VAMPIRIC 100R"
+      },
+      "release": {
+        "date": "2020-05",
+        "precision": "month",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "msi"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2020-05",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方公告月推演游戏供货，地区首售可能不同"
+      },
+      "specs": {
+        "motherboardSupport": null,
+        "maxGpuLengthMm": null,
+        "maxCpuCoolerHeightMm": null,
+        "maxPsuLengthMm": null,
+        "driveBays": null,
+        "radiatorMounts": null
+      },
+      "verifiedFields": [],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "msi"
+      ],
+      "tier": "entry",
+      "useCases": [
+        "机箱板型与组件布局"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_case_067",
+      "category": "case",
+      "brandId": "misi",
+      "realModel": "MPG GUNGNIR 110R",
+      "realSeries": "GUNGNIR",
+      "gameName": {
+        "seriesId": "misi_gungnir",
+        "seriesZh": "狮箱",
+        "seriesEn": "GUNGNIR",
+        "model": "MPG GUNGNIR 110R"
+      },
+      "release": {
+        "date": "2020-05",
+        "precision": "month",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "msi"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2020-05",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方公告月推演游戏供货，地区首售可能不同"
+      },
+      "specs": {
+        "motherboardSupport": null,
+        "maxGpuLengthMm": null,
+        "maxCpuCoolerHeightMm": null,
+        "maxPsuLengthMm": null,
+        "driveBays": null,
+        "radiatorMounts": null
+      },
+      "verifiedFields": [],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "msi"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "机箱板型与组件布局"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_case_068",
+      "category": "case",
+      "brandId": "misi",
+      "realModel": "MPG SEKIRA 500X",
+      "realSeries": "SEKIRA",
+      "gameName": {
+        "seriesId": "misi_gungnir",
+        "seriesZh": "狮箱",
+        "seriesEn": "GUNGNIR",
+        "model": "MPG SEKIRA 500X"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "estimated_window",
+        "status": "unresolved",
+        "sourceIds": [
+          "msi2019"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2019-10",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按已知具体型号或系列年代推演游戏供货月；厂商地区首售月未确认"
+      },
+      "specs": {
+        "motherboardSupport": [
+          "E-ATX",
+          "ATX",
+          "Micro-ATX",
+          "Mini-ITX"
+        ],
+        "maxGpuLengthMm": 400,
+        "maxCpuCoolerHeightMm": 170,
+        "maxPsuLengthMm": 200,
+        "driveBays": {
+          "2.5in": 3,
+          "3.5in": 4
+        },
+        "radiatorMounts": {
+          "front": [
+            120,
+            140,
+            240,
+            280
+          ],
+          "top": [
+            120,
+            140,
+            240,
+            280,
+            360
+          ],
+          "rear": [
+            120
+          ]
+        }
+      },
+      "verifiedFields": [
+        "specs.motherboardSupport",
+        "specs.maxGpuLengthMm",
+        "specs.maxCpuCoolerHeightMm",
+        "specs.maxPsuLengthMm",
+        "specs.driveBays",
+        "specs.radiatorMounts"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date",
+        "release.date"
+      ],
+      "sourceIds": [
+        "msicase",
+        "msi2019"
+      ],
+      "tier": "flagship",
+      "useCases": [
+        "机箱板型与组件布局"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_case_069",
+      "category": "case",
+      "brandId": "rogue",
+      "realModel": "ROG Strix Helios",
+      "realSeries": "ROG Strix",
+      "gameName": {
+        "seriesId": "rogue_strix",
+        "seriesZh": "王庭",
+        "seriesEn": "ROG STRIX",
+        "model": "ROG Strix Helios"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "estimated_window",
+        "status": "unresolved",
+        "sourceIds": [
+          "rogcase"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2019-04",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按官方公告月推演游戏供货，地区首售可能不同"
+      },
+      "specs": {
+        "motherboardSupport": [
+          "E-ATX",
+          "ATX",
+          "Micro-ATX",
+          "Mini-ITX"
+        ],
+        "maxGpuLengthMm": 450,
+        "maxCpuCoolerHeightMm": 190,
+        "maxPsuLengthMm": 220,
+        "driveBays": null,
+        "radiatorMounts": {
+          "front": [
+            120,
+            140,
+            240,
+            280,
+            360,
+            420
+          ],
+          "top": [
+            120,
+            140,
+            240,
+            280,
+            360
+          ]
+        }
+      },
+      "verifiedFields": [
+        "specs.motherboardSupport",
+        "specs.maxGpuLengthMm",
+        "specs.maxCpuCoolerHeightMm",
+        "specs.maxPsuLengthMm",
+        "specs.radiatorMounts"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "rogcase"
+      ],
+      "tier": "flagship",
+      "useCases": [
+        "机箱板型与组件布局"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_case_070",
+      "category": "case",
+      "brandId": "inwind",
+      "realModel": "303",
+      "realSeries": "303",
+      "gameName": {
+        "seriesId": "inwind_303",
+        "seriesZh": "迎光",
+        "seriesEn": "INWIN",
+        "model": "303"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "estimated_window",
+        "status": "unresolved",
+        "sourceIds": [
+          "inwin"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-06",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "InWin 303在2016年内按官方规格页和系列年代推演供货，具体首售月未核实"
+      },
+      "specs": {
+        "motherboardSupport": [
+          "ATX",
+          "Micro-ATX",
+          "Mini-ITX"
+        ],
+        "maxGpuLengthMm": 350,
+        "maxCpuCoolerHeightMm": 160,
+        "maxPsuLengthMm": 200,
+        "driveBays": {
+          "3.5in": 2,
+          "2.5in": 2
+        },
+        "radiatorMounts": {
+          "top": [
+            360
+          ],
+          "rear": [
+            120
+          ]
+        }
+      },
+      "verifiedFields": [
+        "specs.motherboardSupport",
+        "specs.maxGpuLengthMm",
+        "specs.maxCpuCoolerHeightMm",
+        "specs.maxPsuLengthMm",
+        "specs.driveBays",
+        "specs.radiatorMounts"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date",
+        "release.date"
+      ],
+      "sourceIds": [
+        "inwin"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "机箱板型与组件布局"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_case_071",
+      "category": "case",
+      "brandId": "phantix",
+      "realModel": "Enthoo Pro",
+      "realSeries": "Enthoo",
+      "gameName": {
+        "seriesId": "phantix_enthoo",
+        "seriesZh": "暮光",
+        "seriesEn": "ENTHOO",
+        "model": "Enthoo Pro"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "existing_before_phase",
+        "status": "unresolved",
+        "sourceIds": [
+          "ph"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-01",
+        "through": null,
+        "basis": "existing_stock_assumption",
+        "note": "阶段初期库存属于游戏假设，不代表具体SKU首售"
+      },
+      "specs": {
+        "motherboardSupport": null,
+        "maxGpuLengthMm": null,
+        "maxCpuCoolerHeightMm": null,
+        "maxPsuLengthMm": null,
+        "driveBays": null,
+        "radiatorMounts": null
+      },
+      "verifiedFields": [],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "ph"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "机箱板型与组件布局"
+      ],
+      "workshopNotes": [
+        "冷排长度、散热器高度和风扇规格不能独自证明整机兼容"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_psu_072",
+      "category": "psu",
+      "brandId": "greatwalls",
+      "realModel": "双卡王发烧版600SE",
+      "realSeries": "双卡王",
+      "gameName": {
+        "seriesId": "greatwalls_wall",
+        "seriesZh": "城垒",
+        "seriesEn": "WALLPOWER",
+        "model": "双卡王发烧版600SE"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "existing_before_phase",
+        "status": "unresolved",
+        "sourceIds": [
+          "gw600"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-01",
+        "through": null,
+        "basis": "existing_stock_assumption",
+        "note": "厂商页面未给上市月，阶段初期库存属于游戏假设"
+      },
+      "specs": {
+        "continuousPowerW": 500,
+        "formFactor": "ATX",
+        "modularity": null,
+        "connectorCounts": {
+          "atx24Pin": null,
+          "eps4Plus4Pin": null,
+          "pcie6Plus2Pin": null,
+          "sata": null,
+          "molex": null
+        },
+        "cableCounts": null,
+        "dimensionsMm": null
+      },
+      "verifiedFields": [
+        "specs.continuousPowerW"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "gw600"
+      ],
+      "tier": "entry",
+      "useCases": [
+        "桌面PC供电"
+      ],
+      "workshopNotes": [
+        "厂商页另列最大功率650W，本目录按额定500W记录"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_psu_073",
+      "category": "psu",
+      "brandId": "evgo",
+      "realModel": "650 GQ",
+      "realSeries": "GQ",
+      "gameName": {
+        "seriesId": "evgo_supernova",
+        "seriesZh": "新星",
+        "seriesEn": "SUPERNOVA",
+        "model": "650 GQ"
+      },
+      "release": {
+        "date": "2016",
+        "precision": "year",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "evga16",
+          "evga17"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2016-10",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按型号或系列的已知证据推演游戏供货窗口，实际地区首售月未核实"
+      },
+      "specs": {
+        "continuousPowerW": 650,
+        "formFactor": "ATX",
+        "modularity": "semi",
+        "connectorCounts": {
+          "atx24Pin": null,
+          "eps4Plus4Pin": null,
+          "pcie6Plus2Pin": null,
+          "sata": null,
+          "molex": null
+        },
+        "cableCounts": null,
+        "dimensionsMm": null
+      },
+      "verifiedFields": [
+        "specs.continuousPowerW",
+        "specs.modularity"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "evga16",
+        "evga17"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "桌面PC供电"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "sc_psu_074",
+      "category": "psu",
+      "brandId": "evgo",
+      "realModel": "SuperNOVA 650 G3",
+      "realSeries": "SuperNOVA G3",
+      "gameName": {
+        "seriesId": "evgo_supernova",
+        "seriesZh": "新星",
+        "seriesEn": "SUPERNOVA",
+        "model": "SuperNOVA 650 G3"
+      },
+      "release": {
+        "date": "2017-Q1",
+        "precision": "quarter",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "evga17"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-04",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按型号或系列的已知证据推演游戏供货窗口，实际地区首售月未核实"
+      },
+      "specs": {
+        "continuousPowerW": 650,
+        "formFactor": "ATX",
+        "modularity": "fully",
+        "connectorCounts": {
+          "atx24Pin": null,
+          "eps4Plus4Pin": null,
+          "pcie6Plus2Pin": null,
+          "sata": null,
+          "molex": null
+        },
+        "cableCounts": null,
+        "dimensionsMm": null
+      },
+      "verifiedFields": [
+        "specs.continuousPowerW",
+        "specs.modularity"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "evga17"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "桌面PC供电"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "sc_psu_075",
+      "category": "psu",
+      "brandId": "superbloom",
+      "realModel": "LEADEX III Gold 650W",
+      "realSeries": "LEADEX III Gold",
+      "gameName": {
+        "seriesId": "superbloom_leadex",
+        "seriesZh": "流萤",
+        "seriesEn": "LEADEX",
+        "model": "LEADEX III Gold 650W"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "estimated_window",
+        "status": "unresolved",
+        "sourceIds": [
+          "sfiii",
+          "sfdate"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2019-08",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按型号或系列的已知证据推演游戏供货窗口，实际地区首售月未核实"
+      },
+      "specs": {
+        "continuousPowerW": 650,
+        "formFactor": "ATX",
+        "modularity": "fully",
+        "connectorCounts": {
+          "atx24Pin": null,
+          "eps4Plus4Pin": null,
+          "pcie6Plus2Pin": null,
+          "sata": null,
+          "molex": null
+        },
+        "cableCounts": null,
+        "dimensionsMm": null
+      },
+      "verifiedFields": [
+        "specs.continuousPowerW",
+        "specs.formFactor",
+        "specs.modularity"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "sfiii",
+        "sfdate"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "桌面PC供电"
+      ],
+      "workshopNotes": [
+        "2019年7月厂商链接已指向LEADEX III系列评测，游戏供货窗口在该证据之后"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_psu_076",
+      "category": "psu",
+      "brandId": "gigabite",
+      "realModel": "GP-P750GM",
+      "realSeries": "GP-PGM",
+      "gameName": {
+        "seriesId": "gigabite_power",
+        "seriesZh": "脉冲",
+        "seriesEn": "GIGABYTE POWER",
+        "model": "GP-P750GM"
+      },
+      "release": {
+        "date": "2020-09",
+        "precision": "month",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "gigap"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2020-09",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按型号或系列的已知证据推演游戏供货窗口，实际地区首售月未核实"
+      },
+      "specs": {
+        "continuousPowerW": 750,
+        "formFactor": "ATX",
+        "modularity": "fully",
+        "connectorCounts": {
+          "atx24Pin": null,
+          "eps4Plus4Pin": null,
+          "pcie6Plus2Pin": null,
+          "sata": null,
+          "molex": null
+        },
+        "cableCounts": null,
+        "dimensionsMm": null
+      },
+      "verifiedFields": [
+        "specs.continuousPowerW",
+        "specs.modularity"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "gigap"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "桌面PC供电"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "sc_psu_077",
+      "category": "psu",
+      "brandId": "gigabite",
+      "realModel": "GP-P850GM",
+      "realSeries": "GP-PGM",
+      "gameName": {
+        "seriesId": "gigabite_power",
+        "seriesZh": "脉冲",
+        "seriesEn": "GIGABYTE POWER",
+        "model": "GP-P850GM"
+      },
+      "release": {
+        "date": "2020-09",
+        "precision": "month",
+        "kind": "announcement",
+        "status": "verified",
+        "sourceIds": [
+          "gigap"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2020-09",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按型号或系列的已知证据推演游戏供货窗口，实际地区首售月未核实"
+      },
+      "specs": {
+        "continuousPowerW": 850,
+        "formFactor": "ATX",
+        "modularity": "fully",
+        "connectorCounts": {
+          "atx24Pin": null,
+          "eps4Plus4Pin": null,
+          "pcie6Plus2Pin": null,
+          "sata": null,
+          "molex": null
+        },
+        "cableCounts": null,
+        "dimensionsMm": null
+      },
+      "verifiedFields": [
+        "specs.continuousPowerW",
+        "specs.modularity"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "gigap"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "桌面PC供电"
+      ],
+      "workshopNotes": [],
+      "variants": []
+    },
+    {
+      "id": "sc_case_078",
+      "category": "case",
+      "brandId": "lianly",
+      "realModel": "O11 Dynamic",
+      "realSeries": "O11 Dynamic",
+      "gameName": {
+        "seriesId": "lianly_o11",
+        "seriesZh": "构序",
+        "seriesEn": "O11",
+        "model": "O11 Dynamic"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "lian_o11"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2020-01",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按已知型号出现年份推演游戏供货月；厂商地区首售月未确认"
+      },
+      "specs": {
+        "motherboardSupport": [
+          "E-ATX",
+          "ATX",
+          "Micro-ATX",
+          "Mini-ITX"
+        ],
+        "maxGpuLengthMm": 420,
+        "maxCpuCoolerHeightMm": 155,
+        "maxPsuLengthMm": 255,
+        "driveBays": {
+          "3.5in": 3,
+          "2.5in": 6
+        },
+        "radiatorMounts": {
+          "top": [
+            280,
+            360
+          ],
+          "side": [
+            360
+          ],
+          "bottom": [
+            360
+          ]
+        }
+      },
+      "verifiedFields": [
+        "specs.motherboardSupport",
+        "specs.maxGpuLengthMm",
+        "specs.maxCpuCoolerHeightMm",
+        "specs.maxPsuLengthMm",
+        "specs.driveBays",
+        "specs.radiatorMounts"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "lian_o11"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "机箱板型与组件布局"
+      ],
+      "workshopNotes": [
+        "双仓布局包含双电源安装空间；显卡和冷排叠厚仍需复核"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_case_079",
+      "category": "case",
+      "brandId": "lianly",
+      "realModel": "LANCOOL II",
+      "realSeries": "LANCOOL II",
+      "gameName": {
+        "seriesId": "lianly_lancool",
+        "seriesZh": "行旅",
+        "seriesEn": "LANCOOL",
+        "model": "LANCOOL II"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "lian_l2"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2020-01",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按已知型号出现年份推演游戏供货月；厂商地区首售月未确认"
+      },
+      "specs": {
+        "motherboardSupport": [
+          "E-ATX",
+          "ATX",
+          "Micro-ATX",
+          "Mini-ITX"
+        ],
+        "maxGpuLengthMm": 384,
+        "maxCpuCoolerHeightMm": 176,
+        "maxPsuLengthMm": 210,
+        "driveBays": {
+          "3.5in": 3,
+          "2.5in": 6
+        },
+        "radiatorMounts": {
+          "front": [
+            240,
+            280,
+            360
+          ],
+          "top": [
+            240
+          ],
+          "rear": [
+            120
+          ]
+        }
+      },
+      "verifiedFields": [
+        "specs.motherboardSupport",
+        "specs.maxGpuLengthMm",
+        "specs.maxCpuCoolerHeightMm",
+        "specs.maxPsuLengthMm",
+        "specs.driveBays",
+        "specs.radiatorMounts"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "lian_l2"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "机箱板型与组件布局"
+      ],
+      "workshopNotes": [
+        "前部多位置冷排架有不同厚度场景，安装厚排需复核显卡净空"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_case_080",
+      "category": "case",
+      "brandId": "lianly",
+      "realModel": "LANCOOL II MESH RGB",
+      "realSeries": "LANCOOL II MESH",
+      "gameName": {
+        "seriesId": "lianly_lancool",
+        "seriesZh": "行旅",
+        "seriesEn": "LANCOOL",
+        "model": "LANCOOL II MESH RGB"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "lian_l2m"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2020-01",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按已知型号出现年份推演游戏供货月；厂商地区首售月未确认"
+      },
+      "specs": {
+        "motherboardSupport": null,
+        "maxGpuLengthMm": null,
+        "maxCpuCoolerHeightMm": null,
+        "maxPsuLengthMm": null,
+        "driveBays": null,
+        "radiatorMounts": null
+      },
+      "verifiedFields": [],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "lian_l2m"
+      ],
+      "tier": "performance",
+      "useCases": [
+        "机箱板型与组件布局"
+      ],
+      "workshopNotes": [
+        "当前官方页仅证明网孔版存在，未证明其阶段首售时间"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_case_081",
+      "category": "case",
+      "brandId": "jonsbox",
+      "realModel": "U4",
+      "realSeries": "U4",
+      "gameName": {
+        "seriesId": "jonsbox_case",
+        "seriesZh": "小匣",
+        "seriesEn": "JONSBO",
+        "model": "U4"
+      },
+      "release": {
+        "date": "2016",
+        "precision": "year",
+        "kind": "retail_availability",
+        "status": "verified",
+        "sourceIds": [
+          "jons_u4"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-01",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按型号或系列的已知证据推演游戏供货窗口，实际地区首售月未核实"
+      },
+      "specs": {
+        "motherboardSupport": [
+          "ATX",
+          "Micro-ATX",
+          "Mini-ITX"
+        ],
+        "maxGpuLengthMm": 305,
+        "maxCpuCoolerHeightMm": 170,
+        "maxPsuLengthMm": 250,
+        "driveBays": {
+          "3.5in": 2,
+          "2.5in": 3
+        },
+        "radiatorMounts": {
+          "front": [
+            120,
+            240
+          ]
+        }
+      },
+      "verifiedFields": [
+        "specs.motherboardSupport",
+        "specs.maxGpuLengthMm",
+        "specs.maxCpuCoolerHeightMm",
+        "specs.maxPsuLengthMm",
+        "specs.driveBays",
+        "specs.radiatorMounts"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from"
+      ],
+      "sourceIds": [
+        "jons_u4"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "机箱板型与组件布局"
+      ],
+      "workshopNotes": [
+        "厂商明确称U4于2016年底推出；安装前置240mm冷排时显卡限长降至255mm"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_case_082",
+      "category": "case",
+      "brandId": "jonsbox",
+      "realModel": "U4 PLUS",
+      "realSeries": "U4 PLUS",
+      "gameName": {
+        "seriesId": "jonsbox_case",
+        "seriesZh": "小匣",
+        "seriesEn": "JONSBO",
+        "model": "U4 PLUS"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "jons_u4p"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2020-10",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按已知型号出现年份推演游戏供货月；厂商地区首售月未确认"
+      },
+      "specs": {
+        "motherboardSupport": [
+          "ATX",
+          "Micro-ATX",
+          "Mini-ITX"
+        ],
+        "maxGpuLengthMm": 330,
+        "maxCpuCoolerHeightMm": 160,
+        "maxPsuLengthMm": 170,
+        "driveBays": {
+          "3.5in": 1,
+          "2.5in": 2
+        },
+        "radiatorMounts": null
+      },
+      "verifiedFields": [
+        "specs.motherboardSupport",
+        "specs.maxGpuLengthMm",
+        "specs.maxCpuCoolerHeightMm",
+        "specs.maxPsuLengthMm",
+        "specs.driveBays"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "jons_u4p"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "机箱板型与组件布局"
+      ],
+      "workshopNotes": [
+        "2020年9月的说明书链接仅用于供货窗口推演，不等同首售公告"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_case_083",
+      "category": "case",
+      "brandId": "cougard",
+      "realModel": "MX330 family",
+      "realSeries": "MX330",
+      "gameName": {
+        "seriesId": "cougard_mx",
+        "seriesZh": "奔狮",
+        "seriesEn": "COUGAR",
+        "model": "MX330 family"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "cougar_mx",
+          "cougar_manual"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2017-03",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按已知型号出现年份推演游戏供货月；厂商地区首售月未确认"
+      },
+      "specs": {
+        "motherboardSupport": [
+          "ATX",
+          "Micro-ATX",
+          "Mini-ITX"
+        ],
+        "maxGpuLengthMm": 350,
+        "maxCpuCoolerHeightMm": 155,
+        "maxPsuLengthMm": 200,
+        "driveBays": {
+          "3.5in": 2,
+          "2.5in": 4
+        },
+        "radiatorMounts": {
+          "front": [
+            240
+          ],
+          "top": [
+            120
+          ],
+          "rear": [
+            120
+          ]
+        },
+        "representativeModels": [
+          "MX330",
+          "MX330-X"
+        ]
+      },
+      "verifiedFields": [
+        "specs.motherboardSupport",
+        "specs.maxGpuLengthMm",
+        "specs.maxCpuCoolerHeightMm",
+        "specs.maxPsuLengthMm",
+        "specs.driveBays",
+        "specs.radiatorMounts"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "cougar_mx",
+        "cougar_manual"
+      ],
+      "tier": "entry",
+      "useCases": [
+        "机箱板型与组件布局"
+      ],
+      "workshopNotes": [
+        "MX330与MX330-X在风扇数量和侧板配置上有差异"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_084",
+      "category": "cooler",
+      "brandId": "pcchiller",
+      "realModel": "GI-X4B",
+      "realSeries": "GI-X4",
+      "gameName": {
+        "seriesId": "pcchiller_gi",
+        "seriesZh": "镇风",
+        "seriesEn": "GI-X",
+        "model": "GI-X4B"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "pcgi4"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2020-01",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按已知型号出现年份推演游戏供货月；厂商地区首售月未确认"
+      },
+      "specs": {
+        "coolerType": "air",
+        "socketSupport": [
+          "Intel mainstream platforms",
+          "AMD original bracket"
+        ],
+        "dimensionsMm": null,
+        "heightMm": null,
+        "ramClearanceMm": null,
+        "heatpipeCount": 4,
+        "fanDimensionsMm": [
+          120,
+          25
+        ],
+        "radiatorSizeMm": null
+      },
+      "verifiedFields": [
+        "specs.coolerType",
+        "specs.heatpipeCount",
+        "specs.fanDimensionsMm"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "pcgi4"
+      ],
+      "tier": "entry",
+      "useCases": [
+        "CPU散热器安装与兼容"
+      ],
+      "workshopNotes": [
+        "官方页列出四根6mm热管；型号级高度、扣具清单和内存避让数值未知"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_085",
+      "category": "cooler",
+      "brandId": "pcchiller",
+      "realModel": "GI-X4S",
+      "realSeries": "GI-X4",
+      "gameName": {
+        "seriesId": "pcchiller_gi",
+        "seriesZh": "镇风",
+        "seriesEn": "GI-X",
+        "model": "GI-X4S"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "pcgi4"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2020-01",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按已知型号出现年份推演游戏供货月；厂商地区首售月未确认"
+      },
+      "specs": {
+        "coolerType": "air",
+        "socketSupport": null,
+        "dimensionsMm": null,
+        "heightMm": null,
+        "ramClearanceMm": null,
+        "heatpipeCount": 4,
+        "fanDimensionsMm": [
+          120,
+          25
+        ],
+        "radiatorSizeMm": null
+      },
+      "verifiedFields": [
+        "specs.coolerType",
+        "specs.heatpipeCount",
+        "specs.fanDimensionsMm"
+      ],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "pcgi4"
+      ],
+      "tier": "entry",
+      "useCases": [
+        "CPU散热器安装与兼容"
+      ],
+      "workshopNotes": [
+        "系列页展示4根6mm热管；平台版本和高度需按具体修订确认"
+      ],
+      "variants": []
+    },
+    {
+      "id": "sc_cooler_086",
+      "category": "cooler",
+      "brandId": "pcchiller",
+      "realModel": "GI-X6 Series",
+      "realSeries": "GI-X6",
+      "gameName": {
+        "seriesId": "pcchiller_gi",
+        "seriesZh": "镇风",
+        "seriesEn": "GI-X",
+        "model": "GI-X6 Series"
+      },
+      "release": {
+        "date": null,
+        "precision": "unknown",
+        "kind": "estimated_window",
+        "status": "inferred",
+        "sourceIds": [
+          "pcgi6"
+        ]
+      },
+      "gameAvailability": {
+        "from": "2020-01",
+        "through": null,
+        "basis": "supply_window_assumption",
+        "note": "按已知型号出现年份推演游戏供货月；厂商地区首售月未确认"
+      },
+      "specs": {
+        "coolerType": "air",
+        "socketSupport": null,
+        "dimensionsMm": null,
+        "heightMm": null,
+        "ramClearanceMm": null,
+        "heatpipeCount": null,
+        "fanDimensionsMm": null,
+        "radiatorSizeMm": null,
+        "representativeModels": [
+          "GI-X6"
+        ]
+      },
+      "verifiedFields": [],
+      "inferredFields": [
+        "gameName.seriesId",
+        "gameName.seriesZh",
+        "gameName.seriesEn",
+        "gameAvailability.from",
+        "release.date"
+      ],
+      "sourceIds": [
+        "pcgi6"
+      ],
+      "tier": "mainstream",
+      "useCases": [
+        "CPU散热器安装与兼容"
+      ],
+      "workshopNotes": [
+        "厂商系列页确认型号族，未取得型号尺寸、扣具及上市时间"
+      ],
+      "variants": []
+    }
+  ],
+  "brandCoverage": [
+    {
+      "brandId": "asux",
+      "roles": [
+        "psu",
+        "cooler",
+        "case"
+      ],
+      "status": "partial",
+      "productIds": [],
+      "note": "已登记分配角色，阶段内型号级官方证据不足",
+      "sourceIds": []
+    },
+    {
+      "brandId": "misi",
+      "roles": [
+        "psu",
+        "cooler",
+        "case"
+      ],
+      "status": "researched",
+      "productIds": [
+        "sc_psu_014",
+        "sc_cooler_048",
+        "sc_cooler_049",
+        "sc_case_066",
+        "sc_case_067",
+        "sc_case_068"
+      ],
+      "note": "分配角色均有阶段内代表型号；其它SKU和地区首售未全部核对",
+      "sourceIds": [
+        "msipromo",
+        "msi",
+        "msicase"
+      ]
+    },
+    {
+      "brandId": "corsail",
+      "roles": [
+        "psu",
+        "cooler",
+        "case"
+      ],
+      "status": "researched",
+      "productIds": [
+        "sc_psu_001",
+        "sc_psu_002",
+        "sc_psu_003",
+        "sc_psu_004",
+        "sc_psu_016",
+        "sc_psu_017",
+        "sc_cooler_035",
+        "sc_cooler_036",
+        "sc_cooler_037",
+        "sc_cooler_038",
+        "sc_cooler_039",
+        "sc_cooler_040",
+        "sc_cooler_041",
+        "sc_case_053",
+        "sc_case_054",
+        "sc_case_055",
+        "sc_case_056"
+      ],
+      "note": "分配角色均有阶段内代表型号；其它SKU和地区首售未全部核对",
+      "sourceIds": [
+        "cx",
+        "rmx",
+        "cax",
+        "h100",
+        "hpro",
+        "hplat",
+        "275r",
+        "spec"
+      ]
+    },
+    {
+      "brandId": "coolmaster",
+      "roles": [
+        "psu",
+        "cooler",
+        "case"
+      ],
+      "status": "partial",
+      "productIds": [
+        "sc_cooler_028",
+        "sc_case_057"
+      ],
+      "note": "仅部分分配角色列出阶段内代表型号；其余角色或旧SKU证据不足",
+      "sourceIds": [
+        "cmh",
+        "cmcase"
+      ]
+    },
+    {
+      "brandId": "noctura",
+      "roles": [
+        "cooler"
+      ],
+      "status": "researched",
+      "productIds": [
+        "sc_cooler_029",
+        "sc_cooler_030",
+        "sc_cooler_031",
+        "sc_cooler_032",
+        "sc_cooler_033",
+        "sc_cooler_034"
+      ],
+      "note": "分配角色均有阶段内代表型号；其它SKU和地区首售未全部核对",
+      "sourceIds": [
+        "d15",
+        "u12",
+        "chroma"
+      ]
+    },
+    {
+      "brandId": "fractik",
+      "roles": [
+        "case",
+        "psu",
+        "cooler"
+      ],
+      "status": "partial",
+      "productIds": [
+        "sc_case_058",
+        "sc_case_059",
+        "sc_case_060",
+        "sc_case_061",
+        "sc_case_062",
+        "sc_case_063"
+      ],
+      "note": "仅部分分配角色列出阶段内代表型号；其余角色或旧SKU证据不足",
+      "sourceIds": [
+        "fr5",
+        "fr6",
+        "mesh",
+        "def7",
+        "def7c",
+        "mesh2"
+      ]
+    },
+    {
+      "brandId": "gigabite",
+      "roles": [
+        "psu",
+        "cooler",
+        "case"
+      ],
+      "status": "partial",
+      "productIds": [
+        "sc_psu_076",
+        "sc_psu_077"
+      ],
+      "note": "仅部分分配角色列出阶段内代表型号；其余角色或旧SKU证据不足",
+      "sourceIds": []
+    },
+    {
+      "brandId": "seasound",
+      "roles": [
+        "psu"
+      ],
+      "status": "researched",
+      "productIds": [
+        "sc_psu_005",
+        "sc_psu_006",
+        "sc_psu_007",
+        "sc_psu_008",
+        "sc_psu_009"
+      ],
+      "note": "分配角色均有阶段内代表型号；其它SKU和地区首售未全部核对",
+      "sourceIds": [
+        "s12",
+        "sea"
+      ]
+    },
+    {
+      "brandId": "superbloom",
+      "roles": [
+        "psu"
+      ],
+      "status": "researched",
+      "productIds": [
+        "sc_psu_075"
+      ],
+      "note": "分配角色均有阶段内代表型号；其它SKU和地区首售未全部核对",
+      "sourceIds": []
+    },
+    {
+      "brandId": "greatwalls",
+      "roles": [
+        "psu",
+        "cooler",
+        "case"
+      ],
+      "status": "partial",
+      "productIds": [
+        "sc_psu_072"
+      ],
+      "note": "仅部分分配角色列出阶段内代表型号；其余角色或旧SKU证据不足",
+      "sourceIds": []
+    },
+    {
+      "brandId": "huntkay",
+      "roles": [
+        "psu",
+        "cooler",
+        "case"
+      ],
+      "status": "unresolved",
+      "productIds": [],
+      "note": "已登记分配角色，历史品牌或阶段内型号证据仍待核实",
+      "sourceIds": []
+    },
+    {
+      "brandId": "samra",
+      "roles": [
+        "psu",
+        "cooler",
+        "case"
+      ],
+      "status": "unresolved",
+      "productIds": [],
+      "note": "已登记分配角色，历史品牌或阶段内型号证据仍待核实",
+      "sourceIds": []
+    },
+    {
+      "brandId": "segotex",
+      "roles": [
+        "psu",
+        "case"
+      ],
+      "status": "unresolved",
+      "productIds": [],
+      "note": "已登记分配角色，历史品牌或阶段内型号证据仍待核实",
+      "sourceIds": []
+    },
+    {
+      "brandId": "goldenriver",
+      "roles": [
+        "psu",
+        "case"
+      ],
+      "status": "unresolved",
+      "productIds": [],
+      "note": "已登记分配角色，历史品牌或阶段内型号证据仍待核实",
+      "sourceIds": []
+    },
+    {
+      "brandId": "deltax",
+      "roles": [
+        "psu"
+      ],
+      "status": "partial",
+      "productIds": [],
+      "note": "已登记分配角色，阶段内型号级官方证据不足",
+      "sourceIds": []
+    },
+    {
+      "brandId": "fspro",
+      "roles": [
+        "psu"
+      ],
+      "status": "researched",
+      "productIds": [
+        "sc_psu_010"
+      ],
+      "note": "分配角色均有阶段内代表型号；其它SKU和地区首售未全部核对",
+      "sourceIds": [
+        "fsp"
+      ]
+    },
+    {
+      "brandId": "silverrock",
+      "roles": [
+        "psu",
+        "case"
+      ],
+      "status": "partial",
+      "productIds": [
+        "sc_psu_012"
+      ],
+      "note": "仅部分分配角色列出阶段内代表型号；其余角色或旧SKU证据不足",
+      "sourceIds": [
+        "sfx"
+      ]
+    },
+    {
+      "brandId": "thermaltak",
+      "roles": [
+        "psu",
+        "cooler",
+        "case"
+      ],
+      "status": "partial",
+      "productIds": [
+        "sc_psu_011"
+      ],
+      "note": "仅部分分配角色列出阶段内代表型号；其余角色或旧SKU证据不足",
+      "sourceIds": [
+        "tt"
+      ]
+    },
+    {
+      "brandId": "anteck",
+      "roles": [
+        "psu",
+        "case"
+      ],
+      "status": "partial",
+      "productIds": [
+        "sc_psu_013"
+      ],
+      "note": "仅部分分配角色列出阶段内代表型号；其余角色或旧SKU证据不足",
+      "sourceIds": [
+        "antec"
+      ]
+    },
+    {
+      "brandId": "evgo",
+      "roles": [
+        "psu"
+      ],
+      "status": "researched",
+      "productIds": [
+        "sc_psu_073",
+        "sc_psu_074"
+      ],
+      "note": "分配角色均有阶段内代表型号；其它SKU和地区首售未全部核对",
+      "sourceIds": []
+    },
+    {
+      "brandId": "phantix",
+      "roles": [
+        "psu",
+        "cooler",
+        "case"
+      ],
+      "status": "partial",
+      "productIds": [
+        "sc_case_071"
+      ],
+      "note": "仅部分分配角色列出阶段内代表型号；其余角色或旧SKU证据不足",
+      "sourceIds": [
+        "ph"
+      ]
+    },
+    {
+      "brandId": "nxzt",
+      "roles": [
+        "psu",
+        "cooler",
+        "case"
+      ],
+      "status": "partial",
+      "productIds": [
+        "sc_cooler_044",
+        "sc_cooler_045",
+        "sc_cooler_046",
+        "sc_cooler_047",
+        "sc_case_064",
+        "sc_case_065"
+      ],
+      "note": "仅部分分配角色列出阶段内代表型号；其余角色或旧SKU证据不足",
+      "sourceIds": [
+        "kraken",
+        "h500",
+        "h510"
+      ]
+    },
+    {
+      "brandId": "deepkool",
+      "roles": [
+        "cooler",
+        "case"
+      ],
+      "status": "partial",
+      "productIds": [
+        "sc_cooler_019",
+        "sc_cooler_020",
+        "sc_cooler_021",
+        "sc_cooler_022",
+        "sc_cooler_023",
+        "sc_cooler_024",
+        "sc_cooler_025",
+        "sc_cooler_026",
+        "sc_cooler_027"
+      ],
+      "note": "仅部分分配角色列出阶段内代表型号；其余角色或旧SKU证据不足",
+      "sourceIds": [
+        "dc400",
+        "deep"
+      ]
+    },
+    {
+      "brandId": "valkyra",
+      "roles": [
+        "cooler"
+      ],
+      "status": "unresolved",
+      "productIds": [],
+      "note": "已登记分配角色，历史品牌或阶段内型号证据仍待核实",
+      "sourceIds": []
+    },
+    {
+      "brandId": "jonsbox",
+      "roles": [
+        "cooler",
+        "case"
+      ],
+      "status": "partial",
+      "productIds": [
+        "sc_case_081",
+        "sc_case_082"
+      ],
+      "note": "仅部分分配角色列出阶段内代表型号；其余角色或旧SKU证据不足",
+      "sourceIds": []
+    },
+    {
+      "brandId": "aigon",
+      "roles": [
+        "cooler",
+        "case"
+      ],
+      "status": "partial",
+      "productIds": [],
+      "note": "已登记分配角色，阶段内型号级官方证据不足",
+      "sourceIds": []
+    },
+    {
+      "brandId": "thermalrite",
+      "roles": [
+        "cooler"
+      ],
+      "status": "researched",
+      "productIds": [
+        "sc_cooler_042"
+      ],
+      "note": "分配角色均有阶段内代表型号；其它SKU和地区首售未全部核对",
+      "sourceIds": [
+        "macho"
+      ]
+    },
+    {
+      "brandId": "pcchiller",
+      "roles": [
+        "cooler"
+      ],
+      "status": "researched",
+      "productIds": [
+        "sc_cooler_084",
+        "sc_cooler_085",
+        "sc_cooler_086"
+      ],
+      "note": "分配角色均有阶段内代表型号；其它SKU和地区首售未全部核对",
+      "sourceIds": []
+    },
+    {
+      "brandId": "proartis",
+      "roles": [
+        "cooler"
+      ],
+      "status": "unresolved",
+      "productIds": [],
+      "note": "已登记分配角色，历史品牌或阶段内型号证据仍待核实",
+      "sourceIds": []
+    },
+    {
+      "brandId": "tcomax",
+      "roles": [
+        "cooler",
+        "case"
+      ],
+      "status": "unresolved",
+      "productIds": [],
+      "note": "已登记分配角色，历史品牌或阶段内型号证据仍待核实",
+      "sourceIds": []
+    },
+    {
+      "brandId": "rogue",
+      "roles": [
+        "psu",
+        "cooler",
+        "case"
+      ],
+      "status": "researched",
+      "productIds": [
+        "sc_psu_015",
+        "sc_cooler_050",
+        "sc_cooler_051",
+        "sc_cooler_052",
+        "sc_case_069"
+      ],
+      "note": "分配角色均有阶段内代表型号；其它SKU和地区首售未全部核对",
+      "sourceIds": [
+        "rog",
+        "rogcase"
+      ]
+    },
+    {
+      "brandId": "lianly",
+      "roles": [
+        "case"
+      ],
+      "status": "researched",
+      "productIds": [
+        "sc_case_078",
+        "sc_case_079",
+        "sc_case_080"
+      ],
+      "note": "分配角色均有阶段内代表型号；其它SKU和地区首售未全部核对",
+      "sourceIds": []
+    },
+    {
+      "brandId": "inwind",
+      "roles": [
+        "case"
+      ],
+      "status": "researched",
+      "productIds": [
+        "sc_case_070"
+      ],
+      "note": "分配角色均有阶段内代表型号；其它SKU和地区首售未全部核对",
+      "sourceIds": [
+        "inwin"
+      ]
+    },
+    {
+      "brandId": "buffalox",
+      "roles": [
+        "case"
+      ],
+      "status": "partial",
+      "productIds": [],
+      "note": "已登记分配角色，阶段内型号级官方证据不足",
+      "sourceIds": []
+    },
+    {
+      "brandId": "cougard",
+      "roles": [
+        "case"
+      ],
+      "status": "researched",
+      "productIds": [
+        "sc_case_083"
+      ],
+      "note": "分配角色均有阶段内代表型号；其它SKU和地区首售未全部核对",
+      "sourceIds": []
+    },
+    {
+      "brandId": "trixy",
+      "roles": [
+        "cooler",
+        "case"
+      ],
+      "status": "outside_phase",
+      "productIds": [],
+      "note": "TRYX游戏时间下限为2024年，本阶段排除",
+      "sourceIds": []
+    }
+  ],
+  "events": [
+    {
+      "id": "sc_evt_prime",
+      "month": "2016-07",
+      "type": "series_launch",
+      "title": "Seasonic PRIME于2016年中推出",
+      "productIds": [
+        "sc_psu_007"
+      ],
+      "sourceIds": [
+        "sea"
+      ],
+      "status": "verified",
+      "procurementEffect": "高端全模组电源进入供货候选"
+    },
+    {
+      "id": "sc_evt_spec",
+      "month": "2017-05",
+      "type": "case_launch",
+      "title": "Corsair发布SPEC-04",
+      "productIds": [
+        "sc_case_054",
+        "sc_case_055"
+      ],
+      "sourceIds": [
+        "spec"
+      ],
+      "status": "verified",
+      "procurementEffect": "按显卡、散热器和PSU净空装配"
+    },
+    {
+      "id": "sc_evt_cax",
+      "month": "2018-01",
+      "type": "product_launch",
+      "title": "Corsair发布AX1600i、H150i/H115i PRO和SPEC-OMEGA",
+      "productIds": [
+        "sc_psu_004",
+        "sc_cooler_038",
+        "sc_cooler_039",
+        "sc_case_056"
+      ],
+      "sourceIds": [
+        "cax"
+      ],
+      "status": "verified",
+      "procurementEffect": "供货窗口从公告月开始"
+    },
+    {
+      "id": "sc_evt_chroma",
+      "month": "2019-10",
+      "type": "cooler_launch",
+      "title": "Noctua发布chromax.black散热器",
+      "productIds": [
+        "sc_cooler_032",
+        "sc_cooler_033",
+        "sc_cooler_034"
+      ],
+      "sourceIds": [
+        "chroma"
+      ],
+      "status": "verified",
+      "procurementEffect": "外观变体单列供货月"
+    },
+    {
+      "id": "sc_evt_msi",
+      "month": "2020-05",
+      "type": "product_announcement",
+      "title": "MSI于2020-05-15公告新冷排和机箱",
+      "productIds": [
+        "sc_psu_014",
+        "sc_cooler_048",
+        "sc_cooler_049",
+        "sc_case_066",
+        "sc_case_067",
+        "sc_case_068"
+      ],
+      "sourceIds": [
+        "msi"
+      ],
+      "status": "verified",
+      "procurementEffect": "MSI相关商品仅在2020年开放"
+    },
+    {
+      "id": "sc_evt_d7",
+      "month": "2020-02",
+      "type": "case_launch",
+      "title": "Fractal发布Define 7",
+      "productIds": [
+        "sc_case_061"
+      ],
+      "sourceIds": [
+        "def7"
+      ],
+      "status": "verified",
+      "procurementEffect": "容纳大板型和420mm冷排"
+    },
+    {
+      "id": "sc_evt_mesh2",
+      "month": "2020-11",
+      "type": "case_launch",
+      "title": "Fractal发布Meshify 2",
+      "productIds": [
+        "sc_case_063"
+      ],
+      "sourceIds": [
+        "mesh2"
+      ],
+      "status": "verified",
+      "procurementEffect": "本系列限于2020年末"
+    },
+    {
+      "id": "sc_evt_275",
+      "month": "2018-03",
+      "type": "case_launch",
+      "title": "Corsair公布Carbide 275R并称当即供货",
+      "productIds": [
+        "sc_case_053"
+      ],
+      "sourceIds": [
+        "275launch"
+      ],
+      "status": "verified",
+      "procurementEffect": "供货窗口从公告月开始"
+    },
+    {
+      "id": "sc_evt_kraken16",
+      "month": "2016-10",
+      "type": "cooler_launch",
+      "title": "NZXT公布Kraken X52与X62",
+      "productIds": [
+        "sc_cooler_044",
+        "sc_cooler_045"
+      ],
+      "sourceIds": [
+        "kraken16"
+      ],
+      "status": "verified",
+      "procurementEffect": "两款冷排从公告月开始进入供货候选"
+    },
+    {
+      "id": "sc_evt_kraken18",
+      "month": "2018-03",
+      "type": "cooler_launch",
+      "title": "NZXT公布Kraken X72与M22",
+      "productIds": [
+        "sc_cooler_046",
+        "sc_cooler_047"
+      ],
+      "sourceIds": [
+        "kraken18x",
+        "kraken18m"
+      ],
+      "status": "verified",
+      "procurementEffect": "X72与M22按2018年3月公告月进入供货候选"
+    }
+  ],
+  "exclusions": [
+    {
+      "brandId": "trixy",
+      "category": "cooler",
+      "notBefore": "2024-01",
+      "reason": "品牌游戏年代下限为2024年",
+      "sourceIds": []
+    },
+    {
+      "brandId": "trixy",
+      "category": "case",
+      "notBefore": "2024-01",
+      "reason": "品牌游戏年代下限为2024年",
+      "sourceIds": []
+    },
+    {
+      "brandId": "tcomax",
+      "category": "cooler",
+      "notBefore": null,
+      "reason": "缺少阶段内官方证据",
+      "sourceIds": []
+    },
+    {
+      "brandId": "valkyra",
+      "category": "cooler",
+      "notBefore": null,
+      "reason": "缺少阶段内官方证据",
+      "sourceIds": []
+    },
+    {
+      "brandId": "aigon",
+      "category": "case",
+      "notBefore": null,
+      "reason": "当前官方产品目录仅证明今日有该品类，未取得2016–2020型号及发布日期证据",
+      "sourceIds": [
+        "aigocase"
+      ]
+    },
+    {
+      "brandId": "aigon",
+      "category": "cooler",
+      "notBefore": null,
+      "reason": "当前官方产品目录仅证明今日有该品类，未取得2016–2020型号及发布日期证据",
+      "sourceIds": [
+        "aigocool"
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "subject": "电源插头数与线缆数",
+      "missingEvidence": "官方接线表只覆盖少数SKU",
+      "gameResolution": "connectorCounts和cableCounts分开，未知值保留null"
+    },
+    {
+      "subject": "历史散热扣具",
+      "missingEvidence": "现行兼容页不证明早期包装内扣具",
+      "gameResolution": "按历史说明书核对，缺失时保留未知"
+    },
+    {
+      "subject": "散热器横向性能",
+      "missingEvidence": "厂商没有统一平台和环境的跨品牌实测",
+      "gameResolution": "不把营销TDP作为统一评分，按尺寸、扣具和RAM避让装配"
+    },
+    {
+      "subject": "冷排与机箱干涉",
+      "missingEvidence": "多数资料未给冷排/风扇叠厚、管路、显卡和主板干涉组合",
+      "gameResolution": "逐位置校验冷排和周边净空，不能从长度推定任意机箱兼容"
+    },
+    {
+      "subject": "中国品牌及跨品类品牌旧SKU",
+      "missingEvidence": "长城、航嘉、先马、鑫谷、金河田、aigo、PCCOOLER、雅浚、乔思伯、TCOMAS、Valkyrie、技嘉及华硕子品牌档案不全",
+      "gameResolution": "coverage保留partial/unresolved；现代注册不代表早期供货"
+    },
+    {
+      "subject": "型号地区首售日期",
+      "missingEvidence": "多数官方规格页未记录首售月份",
+      "gameResolution": "明确公告月写入release.date，游戏供货月份另标假设"
+    }
+  ]
+}

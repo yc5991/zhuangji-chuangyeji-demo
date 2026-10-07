@@ -1,0 +1,21 @@
+[
+  {
+    "__type__": "cc.SceneAsset",
+    "_name": "Bootstrap",
+    "_objFlags": 0,
+    "_native": "",
+    "scene": { "__id__": 1 }
+  },
+  {
+    "__type__": "cc.Scene",
+    "_name": "Bootstrap",
+    "_objFlags": 0,
+    "_parent": null,
+    "_children": [],
+    "_active": true,
+    "_components": [],
+    "_prefab": null,
+    "autoReleaseAssets": false,
+    "_id": "26fb2ed7-3b5c-41ce-9a83-2b5816c79d7a"
+  }
+]

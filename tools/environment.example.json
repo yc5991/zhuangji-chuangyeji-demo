@@ -1,0 +1,6 @@
+{
+  "creatorExecutable": "C:/path/to/CocosCreator.exe",
+  "wechatExecutable": "C:/path/to/wechatdevtools.exe",
+  "wechatCli": "C:/path/to/cli.bat",
+  "wechatAppId": null
+}
