@@ -16,6 +16,8 @@
 
 `design` 目录保存对应数据，`npm run check:design` 验算条目数量、配置兼容、用途评分及样机成本，当前校验范围为数值模型
 
+`design/catalog-2016-2020` 保存 2016—2020 年分阶段参考资料，`npm run check:suppliers` 核对来源记录、品牌覆盖、系列归属、供货月份和字段溯源，两项校验均须通过
+
 [素材制作约定](docs/art-workflow.md)说明原图保存、切图和导入要求
 
 [Figma 素材工作区](https://www.figma.com/design/1Pd44NBRzvtRWywj1V4bz5)包含原图与参考、素材切图、界面草稿三个页面

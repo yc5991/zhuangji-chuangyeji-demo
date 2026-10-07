@@ -331,7 +331,8 @@
       "title": "Enthoo Pro Manual",
       "url": "https://phanteks.com/manuals/Enthoo_Pro_Manual_v1.0.pdf",
       "publisher": "Phanteks",
-      "evidenceScope": "Official case clearance"
+      "evidenceScope": "Official case clearance",
+      "checkedDate": "2026-10-07"
     },
     {
       "id": "gw600",
@@ -3165,7 +3166,7 @@
       },
       "release": {
         "date": "2016-10",
-        "precision": "day",
+        "precision": "month",
         "kind": "announcement",
         "status": "verified",
         "sourceIds": [
@@ -3226,7 +3227,7 @@
       },
       "release": {
         "date": "2016-10",
-        "precision": "day",
+        "precision": "month",
         "kind": "announcement",
         "status": "verified",
         "sourceIds": [
@@ -3287,7 +3288,7 @@
       },
       "release": {
         "date": "2018-03",
-        "precision": "day",
+        "precision": "month",
         "kind": "announcement",
         "status": "verified",
         "sourceIds": [
@@ -3348,7 +3349,7 @@
       },
       "release": {
         "date": "2018-03",
-        "precision": "day",
+        "precision": "month",
         "kind": "announcement",
         "status": "verified",
         "sourceIds": [
@@ -3704,7 +3705,7 @@
       },
       "release": {
         "date": "2018-03",
-        "precision": "day",
+        "precision": "month",
         "kind": "retail_availability",
         "status": "verified",
         "sourceIds": [

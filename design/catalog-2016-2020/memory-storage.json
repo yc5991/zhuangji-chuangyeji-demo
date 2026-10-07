@@ -1150,15 +1150,12 @@
       },
       "verifiedFields": [
         "memoryType",
-        "capacityGB",
         "moduleType"
       ],
       "inferredFields": [
         "gameAvailability.from",
         "gameAvailability.basis",
-        "specs.capacityGB",
-        "specs.memoryType",
-        "specs.moduleType",
+        "capacityGB",
         "release.date"
       ],
       "sourceIds": [
@@ -1228,15 +1225,12 @@
       },
       "verifiedFields": [
         "memoryType",
-        "capacityGB",
         "moduleType"
       ],
       "inferredFields": [
         "gameAvailability.from",
         "gameAvailability.basis",
-        "specs.capacityGB",
-        "specs.memoryType",
-        "specs.moduleType",
+        "capacityGB",
         "release.date"
       ],
       "sourceIds": [
@@ -1689,13 +1683,12 @@
         ]
       },
       "verifiedFields": [
-        "memoryType",
-        "capacityGB"
+        "memoryType"
       ],
       "inferredFields": [
         "gameAvailability.from",
         "gameAvailability.basis",
-        "specs.capacityGB"
+        "capacityGB"
       ],
       "sourceIds": [
         "crucial_ballistix"
@@ -7235,7 +7228,7 @@
       "realSeries": "PANTHER",
       "gameName": {
         "seriesId": "apacerx_panther",
-        "seriesZh": "PANTHER",
+        "seriesZh": "黑豹",
         "seriesEn": "APACERX_PANTHER",
         "model": "PANTHER DDR4-3200 16GB (2x8GB) kit"
       },
