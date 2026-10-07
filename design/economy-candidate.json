@@ -15,10 +15,10 @@
   "employee": { "monthlySalary": 1400, "monthlyLaborHours": 112, "recruitmentCost": 600 },
   "stationMonthlyHours": 160,
   "products": {
-    "office": { "salePrice": 2300, "kind": "standard", "designHours": 0, "assemblyHours": 6, "testSetupHours": 0.5, "packingHours": 0.5, "testStationHours": 2, "developmentLaborHours": 12, "developmentBenchHours": 2, "developmentTestHours": 2, "developmentCost": 120 },
-    "gaming": { "salePrice": 5100, "kind": "standard", "designHours": 0, "assemblyHours": 10, "testSetupHours": 0.5, "packingHours": 0.5, "testStationHours": 3, "developmentLaborHours": 18, "developmentBenchHours": 3, "developmentTestHours": 3, "developmentCost": 180 },
-    "quiet_office": { "salePrice": 3900, "kind": "commission", "designHours": 6, "assemblyHours": 10, "testSetupHours": 1, "packingHours": 1, "testStationHours": 4 },
-    "premium": { "salePrice": 9500, "kind": "commission", "designHours": 10, "assemblyHours": 14, "testSetupHours": 1, "packingHours": 1, "testStationHours": 6 }
+    "office": { "salePrice": 2250, "kind": "standard", "designHours": 0, "assemblyHours": 6, "testSetupHours": 0.5, "packingHours": 0.5, "testStationHours": 2, "developmentLaborHours": 12, "developmentBenchHours": 2, "developmentTestHours": 2, "developmentCost": 120 },
+    "gaming": { "salePrice": 4930, "kind": "standard", "designHours": 0, "assemblyHours": 10, "testSetupHours": 0.5, "packingHours": 0.5, "testStationHours": 3, "developmentLaborHours": 18, "developmentBenchHours": 3, "developmentTestHours": 3, "developmentCost": 180 },
+    "quiet_office": { "salePrice": 5100, "kind": "commission", "designHours": 6, "assemblyHours": 10, "testSetupHours": 1, "packingHours": 1, "testStationHours": 4 },
+    "premium": { "salePrice": 11050, "kind": "commission", "designHours": 10, "assemblyHours": 14, "testSetupHours": 1, "packingHours": 1, "testStationHours": 6 }
   },
   "companyDemandCaps": {
     "office": [8, 10, 12, 16, 22, 26],
@@ -27,7 +27,7 @@
     "premium": [1, 2, 2, 3, 3, 4]
   },
   "investments": {
-    "craft_tools": { "cost": 2800, "commissionAssemblyMultiplier": 0.8, "commissionConsumablesReduction": 120 },
+    "craft_tools": { "cost": 1200, "commissionAssemblyMultiplier": 0.8, "commissionConsumablesReduction": 120 },
     "bench": { "cost": 3000, "addedBenches": 1 },
     "semi_auto": { "cost": 3000, "standardAssemblyMultiplier": 0.65, "additionalMonthlyUtilities": 100, "requiresBenches": 2 }
   },
@@ -36,12 +36,12 @@
       "investments": [{ "month": 3, "id": "craft_tools" }],
       "hires": [],
       "monthlyProductionTargets": [
+        { "quiet_office": 1, "premium": 0 },
+        { "quiet_office": 1, "premium": 1 },
         { "quiet_office": 1, "premium": 1 },
         { "quiet_office": 2, "premium": 1 },
-        { "quiet_office": 3, "premium": 2 },
-        { "quiet_office": 4, "premium": 2 },
-        { "quiet_office": 4, "premium": 3 },
-        { "quiet_office": 5, "premium": 3 }
+        { "quiet_office": 2, "premium": 1 },
+        { "quiet_office": 2, "premium": 2 }
       ]
     },
     "scale": {
@@ -58,14 +58,14 @@
     },
     "mixed": {
       "investments": [{ "month": 3, "id": "craft_tools" }],
-      "hires": [5],
+      "hires": [3],
       "monthlyProductionTargets": [
-        { "office": 4, "gaming": 1, "quiet_office": 1 },
-        { "office": 5, "gaming": 2, "quiet_office": 1, "premium": 1 },
-        { "office": 6, "gaming": 2, "quiet_office": 2, "premium": 1 },
+        { "office": 4, "gaming": 1, "quiet_office": 0, "premium": 0 },
+        { "office": 5, "gaming": 2, "quiet_office": 1, "premium": 0 },
+        { "office": 6, "gaming": 2, "quiet_office": 1, "premium": 1 },
         { "office": 7, "gaming": 3, "quiet_office": 2, "premium": 1 },
-        { "office": 8, "gaming": 4, "quiet_office": 3, "premium": 2 },
-        { "office": 10, "gaming": 5, "quiet_office": 3, "premium": 2 }
+        { "office": 8, "gaming": 4, "quiet_office": 2, "premium": 1 },
+        { "office": 10, "gaming": 5, "quiet_office": 2, "premium": 1 }
       ]
     }
   },
