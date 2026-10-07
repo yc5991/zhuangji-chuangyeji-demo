@@ -95,8 +95,9 @@ function simulate(routeId, scenarioId, difficulty = 'normal') {
         if (Object.keys(need).some(k => used[k] + need[k] > limits[k] + 1e-8)) {
           notices.push(`CAPACITY_LIMIT:${id}`); break;
         }
-        const cost = round(recipe.expectedPartsCost * scenario.partsPriceMultiplier * channelFactor +
-          recipe.directCostCoins - (product.kind === 'commission' ? consumablesReduction : 0));
+        const cost = round(recipe.expectedPartsCost * scenario.partsPriceMultiplier * channelFactor *
+          opening.supplierTermsFactor + recipe.directCostCoins -
+          (product.kind === 'commission' ? consumablesReduction : 0));
         if (cash < fixed + cost) { notices.push(`PROCUREMENT_CASH_LIMIT:${id}`); break; }
         for (const k of Object.keys(need)) used[k] += need[k];
         cash -= cost; procurement += cost; built[id] = (built[id] || 0) + 1;
@@ -133,11 +134,11 @@ function simulate(routeId, scenarioId, difficulty = 'normal') {
     operatingProfit,endCash:round(cash),inventoryCost,cashAndInventoryGain:round(cash+inventoryCost-opening.cash),months};
 }
 
-// Re-run all three routes under the same normal opening; stress runs retain each route's proposed expansion dates.
+// Every route runs under each confirmed difficulty and each stress scenario; expansion dates stay as proposed.
 const results = [];
-for (const scenario of Object.keys(config.scenarios)) for (const route of Object.keys(config.routes)) {
-  results.push(simulate(route,scenario));
-}
+for (const difficulty of Object.keys(config.opening))
+  for (const scenario of Object.keys(config.scenarios))
+    for (const route of Object.keys(config.routes)) results.push(simulate(route,scenario,difficulty));
 const report = {status:'unconfirmed_candidate_scenarios',provenance:config.provenance,
   limitations:[
     'Capacity checks use monthly totals and owner design hours, not a dependency-aware event schedule.',

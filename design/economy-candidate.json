@@ -5,12 +5,13 @@
     "existing": "Parts and direct costs are read from balance.json recipes. No manufacturer fields are changed.",
     "new": "All resources, hours, salaries, demand, prices, investments and scenarios below are original game design candidates, awaiting user preference and playtesting.",
     "procurementChannels": "Route partsChannel ids and discount factors are read from design/supplier-system.json channels; this file does not restate them. Reachable tier follows monthly same-SKU volume.",
+    "difficultyTerms": "opening.<difficulty>.supplierTermsFactor multiplies parts cost only. It represents supplier terms for a new small company and is a game assumption, not a historical price finding.",
     "limits": "A deterministic scenario calculator, not a playable six-month balance validation. Demand, delivery timing and quality feedback are assumptions."
   },
   "opening": {
-    "easy": { "cash": 24000, "ownerHours": 96, "employees": 1, "benches": 2, "testStations": 1, "rent": 800, "utilities": 150 },
-    "normal": { "cash": 16000, "ownerHours": 96, "employees": 1, "benches": 1, "testStations": 1, "rent": 600, "utilities": 150 },
-    "hard": { "cash": 10000, "ownerHours": 96, "employees": 0, "benches": 1, "testStations": 1, "rent": 450, "utilities": 150 }
+    "easy": { "cash": 24000, "ownerHours": 96, "employees": 1, "benches": 2, "testStations": 1, "rent": 600, "utilities": 150, "supplierTermsFactor": 0.97 },
+    "normal": { "cash": 16000, "ownerHours": 96, "employees": 1, "benches": 1, "testStations": 1, "rent": 600, "utilities": 150, "supplierTermsFactor": 1 },
+    "hard": { "cash": 10000, "ownerHours": 96, "employees": 0, "benches": 1, "testStations": 1, "rent": 900, "utilities": 150, "supplierTermsFactor": 1.07 }
   },
   "openingInventory": "none",
   "employee": { "monthlySalary": 1400, "monthlyLaborHours": 112, "recruitmentCost": 600 },
@@ -18,8 +19,8 @@
   "products": {
     "office": { "salePrice": 2115, "kind": "standard", "designHours": 0, "assemblyHours": 6, "testSetupHours": 0.5, "packingHours": 0.5, "testStationHours": 2, "developmentLaborHours": 12, "developmentBenchHours": 2, "developmentTestHours": 2, "developmentCost": 120 },
     "gaming": { "salePrice": 4566, "kind": "standard", "designHours": 0, "assemblyHours": 10, "testSetupHours": 0.5, "packingHours": 0.5, "testStationHours": 3, "developmentLaborHours": 18, "developmentBenchHours": 3, "developmentTestHours": 3, "developmentCost": 180 },
-    "quiet_office": { "salePrice": 5100, "kind": "commission", "designHours": 6, "assemblyHours": 10, "testSetupHours": 1, "packingHours": 1, "testStationHours": 4 },
-    "premium": { "salePrice": 11050, "kind": "commission", "designHours": 10, "assemblyHours": 14, "testSetupHours": 1, "packingHours": 1, "testStationHours": 6 }
+    "quiet_office": { "salePrice": 5100, "kind": "commission", "designHours": 10, "assemblyHours": 16, "testSetupHours": 1, "packingHours": 1, "testStationHours": 4 },
+    "premium": { "salePrice": 11050, "kind": "commission", "designHours": 18, "assemblyHours": 26, "testSetupHours": 1, "packingHours": 1, "testStationHours": 6 }
   },
   "companyDemandCaps": {
     "office": [6, 8, 10, 13, 16, 18],
