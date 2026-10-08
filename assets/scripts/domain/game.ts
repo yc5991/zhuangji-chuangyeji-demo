@@ -443,10 +443,11 @@ export class Game {
     const test=d.test?.revision===d.revision?d.test:evaluate(d,this.date,false),curve=DATA.customers.priceAcceptance;
     const preference=DATA.customers.appearancePreference,span=preference?100-preference.baselineScore:0;
     const appearancePremium=preference&&span>0?Math.max(0,test.appearance-preference.baselineScore)/span*preference.maxPricePremium:0;
-    // Reputation scales the month's expected custom. Below one it shrinks, above the policy's floor it
-    // grows, and in between it is a buffer: a merely respectable record neither helps nor hurts.
-    const rep=this.state.reputation,floor=Number(DATA.customers.reputation.growthFloor??1.1);
-    const growthScale=rep<1?rep:rep>floor?rep:1;
+    // Reputation is a mark out of five: the player starts at one having sold nothing, and a mark below
+    // neutral is the absence of a record rather than a bad one, so it does not penalise. Above neutral
+    // each point lifts the month's expected custom by the policy's step.
+    const repPolicy=DATA.customers.reputation,rep=this.state.reputation,neutral=Number(repPolicy.neutral??3);
+    const growthScale=rep>neutral?1+(rep-neutral)*Number(repPolicy.effectPerPoint??0.15):1;
     const rows=archetypes.map(a=>{
       const r=a.requirements,issues:string[]=[];
       const budgetCeiling=a.budgetCoins[1]*(1+appearancePremium);

@@ -211,7 +211,12 @@ function run() {
   }
 
   const rep = model.reputation;
-  assert(rep.floor < rep.initial && rep.initial < rep.ceiling, 'reputation bounds');
+  // The player starts at the bottom of the scale: one means nothing has been sold, so there is no
+  // record yet, and a mark cannot fall below the absence of one.
+  assert.equal(rep.initial, rep.scale[0], 'reputation starts at the bottom of its scale');
+  assert.equal(rep.floor, rep.scale[0], 'reputation cannot fall below the bottom of its scale');
+  assert.equal(rep.ceiling, rep.scale[1], 'reputation tops out at the top of its scale');
+  assert(rep.floor <= rep.initial && rep.initial < rep.ceiling, 'reputation bounds');
   assert(rep.onTimeMeetingRequirements > 0 && rep.deliveredMissingRequirement < 0 && rep.lateMeetingRequirements < 0, 'reputation deltas');
   assert(model.priceAcceptance.floor < 1 && model.priceAcceptance.ceiling > 1, 'price acceptance clamp');
   assert(model.fit.formula.includes('clamp'), 'fit rule');

@@ -58,6 +58,12 @@ const COINCIDENCES = [
   // Coincidences created when the reputation growth floor moved the model's route profits.
   { doc: 'demo-pacing.md', value: 44614, why: 'a pacing figure that happens to sit near the normal mass profit of 44671' },
   { doc: 'price-ceiling.md', value: 54286, why: 'a ceiling figure that happens to sit near the easy mass profit of 54271' },
+  // Coincidences created when reputation moved to its five-point scale and shifted the route profits.
+  { doc: 'decisions.md', value: 40393, why: 'a recorded figure that sits near the normal mass profit of 40429' },
+  { doc: 'design-candidates.md', value: 40393, why: 'the same figure quoted again' },
+  { doc: 'era-trends.md', value: 40419, why: 'a full-game figure that sits near the normal mass profit of 40429' },
+  { doc: 'spec-conflicts.md', value: 40388, why: 'a full-game figure that sits near the normal mass profit of 40429' },
+  { doc: 'round125-changes.md', value: 19809, why: 'a difference quoted before the scale change, near hard boutique at 19780' },
   { doc: 'era-trends.md', value: 29322, why: 'the boutique profit in 2017 under the era model' },
   { doc: 'era-trends.md', value: 28991, why: 'the boutique profit in 2018 under the era model' },
   { doc: 'era-trends.md', value: 27326, why: 'the boutique profit in 2020 under the era model' },

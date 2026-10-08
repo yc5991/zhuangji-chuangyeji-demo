@@ -32,6 +32,13 @@ for (const r of recipes.values()) {
 }
 const reliability = read('reliability-model.json');
 // Expected rework per unit, derived from the design-quality signals the balance model already reports.
+// A reputation mark below three is not a bad record, it is the absence of one: the player starts at
+// one having sold nothing, and that must not penalise them. Three and above is a real record, and
+// each point above neutral moves the multiplier by the policy's step, so five lands at 1.3.
+const repMultiplier = mark => mark <= customerModel.reputation.neutral
+  ? 1
+  : 1 + (mark - customerModel.reputation.neutral) * customerModel.reputation.effectPerPoint;
+
 function failureRateFor(recipe, gradeMultiplier = 1) {
   const report = evaluate(recipe);
   const r = reliability.failureRate;
@@ -138,6 +145,8 @@ function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
   let totalDeposits = 0, totalPayablesPaid = 0, totalRework = 0;
   let bankrupt = false, bankruptMonth = null;
   // Reputation multiplies how many of the reachable orders actually convert.
+  // Reputation is a mark out of five: one means nothing sold yet, three is neutral and five is the top.
+  // The mark is what the player sees; the multiplier the orders feel is derived from it.
   let reputation = customerModel.reputation.initial;
   // Parts bought on account are owed, not paid. They settle at the month end when the term expires.
   let payables = [];
@@ -230,11 +239,11 @@ function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
       // Only a reputation above one can grow the pool; below one it always shrinks demand.
       // Decision 4 revisited: growth only starts once reputation is clearly good, so a merely average
       // record is a buffer rather than a bonus. The threshold is a knob, not a rule.
-      const growthFloor = overrides.reputationGrowthFloor ?? customerModel.reputation.growthFloor ?? 1.1;
-      const scale = growsThis && reputation > growthFloor ? reputation : 1;
+      const growthFloor = overrides.reputationGrowthFloor ?? customerModel.reputation.growthFloor ?? 3;
+      const scale = growsThis && reputation > growthFloor ? repMultiplier(reputation) : 1;
       const reachable = Math.round(pool * scale);
       orders[id] = reachable;
-      demand[id] = Math.min(reachable, Math.floor(reachable * fit * acceptance * Math.min(1, reputation)));
+      demand[id] = Math.min(reachable, Math.floor(reachable * fit * acceptance * Math.min(1, repMultiplier(reputation))));
     }
     const sold = {}, built = {};
     let revenue = 0, cogs = 0, procurement = 0, development = 0;

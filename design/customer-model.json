@@ -173,15 +173,20 @@
     }
   ],
   "reputation": {
+    "scale": [
+      1,
+      5
+    ],
     "initial": 1,
-    "floor": 0.5,
-    "ceiling": 1.3,
-    "onTimeMeetingRequirements": 0.04,
-    "lateMeetingRequirements": -0.02,
-    "deliveredMissingRequirement": -0.15,
-    "note": "口碑系数 R 乘进月成交量；首轮计算固定为 1，接入订单流程后再启用",
-    "growthFloor": 1.1,
-    "growthFloorNote": "口碑高于这个值才放大客群；低于 1 时照常缩减。中间这一段只是缓冲"
+    "floor": 1,
+    "ceiling": 5,
+    "neutral": 3,
+    "effectPerPoint": 0.15,
+    "onTimeMeetingRequirements": 0.6,
+    "lateMeetingRequirements": -0.3,
+    "deliveredMissingRequirement": -1.2,
+    "growthFloor": 3,
+    "note": "口碑按 1—5 分记。初始 1 分，因为一台都没卖过。3 分是中性：低于 3 分压低月成交量，高于 3 分放大客群，1 分与 5 分对应的倍数分别是 0.7 与 1.3"
   },
   "priceAcceptance": {
     "formula": "ratio = price / reference; below reference: clamp(1 + belowSlope*(1-ratio), 1, ceiling); above reference: clamp(1 - aboveSlope*(ratio-1), floor, 1)",
