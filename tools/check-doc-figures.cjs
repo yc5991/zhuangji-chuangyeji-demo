@@ -33,6 +33,30 @@ const COINCIDENCES = [
   { doc: 'era-trends.md', value: 40599, why: 'the mass profit in 2030 under the era model, not the 2016 baseline' },
 ];
 
+// Rewrite near misses to the live value. Only documents that quote a figure the data no longer
+// produces are touched, and only where the difference is inside the near-miss window, so a number
+// that is deliberately different keeps its meaning. Returns what it changed.
+function repair() {
+  const live = liveFigures();
+  const changed = [];
+  const EXEMPT_DOCS = new Set(['doc-figures.md']);
+  for (const doc of fs.readdirSync(path.join(root, 'docs')).filter(f => f.endsWith('.md') && !EXEMPT_DOCS.has(f))) {
+    const file = path.join(root, 'docs', doc);
+    let text = fs.readFileSync(file, 'utf8');
+    for (const raw of new Set(text.match(/\b\d{4,6}\b/g) || [])) {
+      const n = Number(raw);
+      if (COINCIDENCES.some(c => c.doc === doc && c.value === n)) continue;
+      const near = Object.entries(live).find(([, cur]) => n !== cur && Math.abs(n - cur) <= NEAR);
+      if (!near) continue;
+      const [label, cur] = near;
+      text = text.replace(new RegExp('\\b' + raw + '\\b', 'g'), String(cur));
+      changed.push(doc + ': ' + raw + ' -> ' + cur + ' (' + label + ')');
+    }
+    fs.writeFileSync(file, text);
+  }
+  return changed;
+}
+
 function run() {
   const live = liveFigures();
   const values = Object.values(live);
@@ -69,4 +93,4 @@ function run() {
   return output;
 }
 if (require.main === module) run();
-module.exports = { run, liveFigures };
+module.exports = { run, liveFigures, repair };

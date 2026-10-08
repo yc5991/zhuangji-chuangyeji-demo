@@ -114,7 +114,8 @@ function apply() {
 
 const CHECKS = ['design','suppliers','customers','events','reliability','investments','era','fullgame',
   'schedule','difficulty','evaluation','flow','progression','staff','case-options','cable-routing',
-  'export-coverage','references','temporal','reachability','coverage','seams','wiring','audit'];
+  'export-coverage','references','temporal','reachability','coverage','seams','wiring',
+  'doc-figures','single-source','audit'];
 
 function main() {
   const write = process.argv.includes('--apply');
@@ -125,6 +126,14 @@ function main() {
     if (!write) console.log('\nrun with --apply to write, then the checks and the baseline follow');
     return;
   }
+  // The figures the documents quote are the ones the old data produced, so refresh them now.
+  const { repair } = require('./check-doc-figures.cjs');
+  const refreshed = repair();
+  if (refreshed.length) {
+    console.log('refreshed ' + refreshed.length + ' document figure(s):');
+    for (const line of refreshed) console.log('  ' + line);
+  }
+
   console.log('\nre-running every check');
   const failed = [];
   for (const name of CHECKS) {
