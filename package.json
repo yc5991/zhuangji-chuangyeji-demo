@@ -20,6 +20,7 @@
     "check:schedule": "node tools/check-schedule.cjs",
     "check:difficulty": "node tools/check-difficulty.cjs",
     "check:evaluation": "node tools/check-evaluation.cjs",
+    "check:flow": "node tools/check-flow.cjs",
     "baseline:diff": "node tools/balance-baseline.cjs diff",
     "baseline:update": "node tools/balance-baseline.cjs update",
     "analyze:sensitivity": "node tools/analyze-sensitivity.cjs",

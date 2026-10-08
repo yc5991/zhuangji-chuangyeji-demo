@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "status": "candidate",
+  "provenance": {
+    "existing": "spec section 6.1 confirms the seven steps and their order. Every hour and cost field the steps consume already exists in design/economy-candidate.json products and design/balance.json recipes; this file maps them rather than inventing new ones.",
+    "new": "Which step owns which field, and the note on what each step produces, are original design work.",
+    "limits": "A mapping and a completeness check over the existing numbers. It does not add hours, costs or a new interaction."
+  },
+  "rules": {
+    "orderIsFixed": "The seven steps run in the confirmed order for every new model",
+    "everyFieldClaimed": "Every hour field a product carries must belong to exactly one step, so no work is unaccounted or charged twice",
+    "firstTimeOnly": "Development fields are spent once, when the model is first built; the per-unit fields are spent on every machine"
+  },
+  "steps": [
+    {
+      "id": "positioning",
+      "zh": "确定定位",
+      "order": 1,
+      "consumes": [],
+      "hourFields": [],
+      "costFields": [],
+      "produces": [
+        "targetUseCase",
+        "budgetCoins"
+      ],
+      "note": "玩家选定用途与价位，决定后面每一步的取舍"
+    },
+    {
+      "id": "select_parts",
+      "zh": "选择配件",
+      "order": 2,
+      "consumes": [],
+      "hourFields": [],
+      "costFields": [
+        "partsCost"
+      ],
+      "produces": [
+        "cpu",
+        "motherboard",
+        "gpu",
+        "ram",
+        "storage",
+        "psu",
+        "cooler",
+        "case"
+      ],
+      "note": "八个类别全部选定，配件成本在这一步锁定"
+    },
+    {
+      "id": "design",
+      "zh": "设计装配与外观",
+      "order": 3,
+      "consumes": [
+        "owner",
+        "labor"
+      ],
+      "hourFields": [
+        "designHours",
+        "developmentLaborHours"
+      ],
+      "costFields": [
+        "developmentCost",
+        "finishConsumables"
+      ],
+      "produces": [
+        "finishLevel",
+        "assemblyPlan",
+        "wiringPlan"
+      ],
+      "note": "唯一占用老板工时的步骤；外观工艺的耗材也在这里计入"
+    },
+    {
+      "id": "prototype",
+      "zh": "制作样机",
+      "order": 4,
+      "consumes": [
+        "bench",
+        "labor"
+      ],
+      "hourFields": [
+        "assemblyHours",
+        "developmentBenchHours"
+      ],
+      "costFields": [
+        "directCostCoins"
+      ],
+      "produces": [
+        "prototypeUnit"
+      ],
+      "note": "占用装配台；首次制作还要付开发工时"
+    },
+    {
+      "id": "test_revise",
+      "zh": "测试修改",
+      "order": 5,
+      "consumes": [
+        "labor",
+        "test"
+      ],
+      "hourFields": [
+        "testSetupHours",
+        "testStationHours",
+        "developmentTestHours"
+      ],
+      "costFields": [
+        "reworkConsumables"
+      ],
+      "produces": [
+        "testReport",
+        "deliveryIssues"
+      ],
+      "note": "测试台工时决定故障在工坊内被发现还是流出到客户"
+    },
+    {
+      "id": "name_price",
+      "zh": "命名定价",
+      "order": 6,
+      "consumes": [],
+      "hourFields": [],
+      "costFields": [],
+      "produces": [
+        "name",
+        "salePrice"
+      ],
+      "note": "定价受客户预算上限约束，超过则无人购买"
+    },
+    {
+      "id": "deliver",
+      "zh": "交付或投产",
+      "order": 7,
+      "consumes": [
+        "labor"
+      ],
+      "hourFields": [
+        "packingHours"
+      ],
+      "costFields": [
+        "deliveryCost"
+      ],
+      "produces": [
+        "deliveredOrder",
+        "productionRun"
+      ],
+      "note": "交付一次性订单，或把方案转成可重复生产的定型产品"
+    }
+  ]
+}
