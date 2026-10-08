@@ -14,7 +14,8 @@ const caseOptions = read('case-options.json');
 const balance = read('balance.json');
 // The mechanics live in the simulator and in the evaluator it calls.
 const simulator = fs.readFileSync(path.join(root, 'tools', 'simulate-economy.cjs'), 'utf8') +
-  fs.readFileSync(path.join(root, 'tools', 'evaluate-product.cjs'), 'utf8');
+  fs.readFileSync(path.join(root, 'tools', 'evaluate-product.cjs'), 'utf8') +
+  fs.readFileSync(path.join(root, 'tools', 'price-acceptance.cjs'), 'utf8');
 // Structural keys rather than tuned numbers.
 const IGNORE = new Set(['schemaVersion', 'order']);
 

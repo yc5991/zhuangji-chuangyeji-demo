@@ -17,6 +17,7 @@ for (const [segId, seg] of Object.entries(customerModel.segments)) for (const p 
 const { evaluate } = require('./check-design.cjs');
 const { evaluateDimensions } = require('./evaluate-product.cjs');
 const { satisfies } = require('./check-customers.cjs');
+const { archetypesByProduct, appearancePricePremium, acceptanceOf } = require('./price-acceptance.cjs');
 // Parts cost by category, so an event that names a category only moves the builds exposed to it.
 const partsCatalog = read('components.json');
 const byPart = new Map(partsCatalog.parts.map(p => [p.id, p]));
@@ -94,8 +95,6 @@ function partsCostFor(productId, scenario, month) {
   }
   return total;
 }
-const archetypesByProduct = {};
-for (const a of customerModel.archetypes) (archetypesByProduct[a.referenceRecipe] ||= []).push(a);
 const clamp = (v, lo, hi) => Math.min(hi, Math.max(lo, v));
 
 // Fit: how well the built machine scores against what this archetype expects.
@@ -112,38 +111,7 @@ function fitOf(productId, recipe) {
   }, 0) / weight;
 }
 
-// Price acceptance: a segment slope either side of the archetype's market reference price.
-// A better-finished machine is worth more to the same customer, so it commands a higher price.
-// The customer's willingness to pay moves; the quantity they want does not.
-function appearancePricePremium(appearanceScore) {
-  const pref = customerModel.appearancePreference;
-  if (!pref) return 0;
-  const span = 100 - pref.baselineScore;
-  if (span <= 0) return 0;
-  const above = Math.max(0, appearanceScore - pref.baselineScore);
-  return (above / span) * pref.maxPricePremium;
-}
-
-// A finish the customer values raises both what they will pay and the ceiling they will pay up to,
-// so the same asking price keeps the same acceptance while carrying the premium.
-function acceptanceOf(productId, price, premium = 0) {
-  const members = archetypesByProduct[productId] || [];
-  if (!members.length) return 1;
-  const weight = members.reduce((n, a) => n + a.weight, 0);
-  const lift = 1 + premium;
-  return members.reduce((n, a) => {
-    // The archetype's budget maximum is a hard ceiling: nobody can buy what they cannot afford,
-    // so a plan-limited route cannot sell at any price to a trickle of customers.
-    if (price > a.budgetCoins[1] * lift) return n;
-    const reference = ((a.budgetCoins[0] + a.budgetCoins[1]) / 2) * lift;
-    const ratio = price / reference;
-    const above = customerModel.priceAcceptance.aboveSlopeBySegment[a.segment];
-    const p = ratio <= 1
-      ? clamp(1 + customerModel.priceAcceptance.belowSlope * (1 - ratio), 1, customerModel.priceAcceptance.ceiling)
-      : clamp(1 - above * (ratio - 1), customerModel.priceAcceptance.floor, 1);
-    return n + a.weight * p;
-  }, 0) / weight;
-}
+// Price acceptance lives in price-acceptance.cjs so the customer checks can share it.
 const round = n => Math.round(n * 100) / 100;
 
 // Scenario inputs are proposed business parameters, separate from component reference data.
@@ -433,4 +401,5 @@ console.log(JSON.stringify(results.map(({route,scenario,totalSales,operatingProf
 return results;
 }
 if (require.main === module) runAll();
-module.exports = { simulate, runAll, config, channels, recipes, failureRateFor, partsCostFor, releaseCapacityFactor };
+module.exports = { simulate, runAll, config, channels, recipes, failureRateFor, partsCostFor,
+  releaseCapacityFactor, acceptanceOf };

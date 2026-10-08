@@ -7,7 +7,8 @@ const assert = require('node:assert/strict');
 const root = path.resolve(__dirname, '..');
 
 // The mechanics of the six-month demo: the simulator and everything it pulls in.
-const MECHANICS = ['simulate-economy.cjs', 'evaluate-product.cjs', 'check-design.cjs', 'check-customers.cjs'];
+const MECHANICS = ['simulate-economy.cjs', 'evaluate-product.cjs', 'check-design.cjs',
+  'check-customers.cjs', 'price-acceptance.cjs'];
 
 // Whole files that are not demo mechanics. Each entry states why the numbers are not rules here.
 const WHOLE_FILES = {
