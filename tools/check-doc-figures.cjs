@@ -54,6 +54,7 @@ const COINCIDENCES = [
   { doc: 'era-trends.md', value: 33441, why: 'the boutique profit in 2025 under the era model, not the 2016 baseline' },
   { doc: 'era-trends.md', value: 40599, why: 'the mass profit in 2030 under the era model, not the 2016 baseline' },
   { doc: 'spec-conflicts.md', value: 40568, why: 'the mass profit in 2030 in the full-game simulation, which happens to sit near the 2016 easy-mode figure' },
+  { doc: 'route-spread-criterion.md', value: 40568, why: 'the mass profit in 2030 in the full-game simulation, the same coincidence as above' },
   { doc: 'era-trends.md', value: 29322, why: 'the boutique profit in 2017 under the era model' },
   { doc: 'era-trends.md', value: 28991, why: 'the boutique profit in 2018 under the era model' },
   { doc: 'era-trends.md', value: 27326, why: 'the boutique profit in 2020 under the era model' },
