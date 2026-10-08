@@ -27,6 +27,24 @@ for (const r of recipes.values()) {
   for (const key of ['cpu', 'motherboard', 'gpu', 'psu', 'cooler', 'case']) if (r[key]) add(r[key], 1);
   categoryCost[r.id] = per;
 }
+const reliability = read('reliability-model.json');
+// Expected rework per unit, derived from the design-quality signals the balance model already reports.
+function failureRateFor(recipe) {
+  const report = evaluate(recipe);
+  const r = reliability.failureRate;
+  let rate = r.base;
+  if (!report.thermalStable) rate *= r.conditionMultipliers.thermallyUnstable;
+  if (report.powerHeadroom < r.conditionMultipliers.powerHeadroomThreshold) rate *= r.conditionMultipliers.powerHeadroomBelowThreshold;
+  if (report.deliveryIssues.includes('TEST_UNSTABLE')) rate *= r.conditionMultipliers.deliveryIssueUnstable;
+  return Math.min(r.ceiling, rate);
+}
+// A tested build catches its failures in the workshop; an untested one ships them.
+function escapeRateFor(product) {
+  const qc = reliability.qualityControl;
+  if (product.testStationHours >= qc.caughtWhenTestHoursAtLeast) return qc.escapeRateWithMinimalTesting;
+  return qc.escapeRateWithoutTesting;
+}
+
 // A scenario may scope its effect to a month window and to named categories.
 function partsCostFor(productId, scenario, month) {
   const base = recipes.get(productId).expectedPartsCost;
@@ -85,7 +103,7 @@ function simulate(routeId, scenarioId, difficulty = 'normal') {
   let cash = opening.cash, employees = opening.employees, benches = opening.benches;
   let monthlyUtilities = opening.utilities, standardMultiplier = 1, commissionMultiplier = 1, consumablesReduction = 0;
   let totalSales = 0, totalRevenue = 0, totalCogs = 0, totalFixed = 0, totalInvestment = 0, totalDevelopment = 0;
-  let totalDeposits = 0, totalPayablesPaid = 0;
+  let totalDeposits = 0, totalPayablesPaid = 0, totalRework = 0;
   let bankrupt = false, bankruptMonth = null;
   // Reputation multiplies how many of the reachable orders actually convert.
   let reputation = customerModel.reputation.initial;
@@ -138,7 +156,7 @@ function simulate(routeId, scenarioId, difficulty = 'normal') {
     }
     const sold = {}, built = {};
     let revenue = 0, cogs = 0, procurement = 0, development = 0;
-    let cashProcurement = 0, cashFromSales = 0, depositsTaken = 0, payablesPaid = 0;
+    let cashProcurement = 0, cashFromSales = 0, depositsTaken = 0, payablesPaid = 0, reworkTotal = 0;
 
     // Finished stock is sold first, preserving its historical purchase cost through price changes.
     for (const [id, lots] of Object.entries(stock)) {
@@ -170,8 +188,12 @@ function simulate(routeId, scenarioId, difficulty = 'normal') {
       for (let unit = 0; unit < count; unit++) {
         const multiplier = product.kind === 'standard' ? standardMultiplier : commissionMultiplier;
         const assembly = product.assemblyHours * multiplier;
-        const need = { labor: product.designHours + assembly + product.testSetupHours + product.packingHours,
-          owner: product.designHours, bench: assembly, test: product.testStationHours };
+        // Rework is charged as expected value: its real cost is the capacity it consumes.
+        const failRate = failureRateFor(recipe);
+        const need = { labor: product.designHours + assembly + product.testSetupHours + product.packingHours +
+            failRate * reliability.rework.laborHours,
+          owner: product.designHours, bench: assembly,
+          test: product.testStationHours + failRate * reliability.rework.testStationHours };
         if (Object.keys(need).some(k => used[k] + need[k] > limits[k] + 1e-8)) {
           notices.push(`CAPACITY_LIMIT:${id}`); break;
         }
@@ -197,6 +219,13 @@ function simulate(routeId, scenarioId, difficulty = 'normal') {
           }
           cash -= cost; cashProcurement += cost;
         }
+        for (const k of Object.keys(need)) used[k] += need[k];
+        // Consumables and any replaced part are real money; an escaped defect refunds the sale.
+        const reworkCost = failRate * (reliability.rework.consumablesCoins +
+          reliability.rework.partReplacementChance * recipe.expectedPartsCost);
+        const escapeCost = failRate * escapeRateFor(product) * product.salePrice;
+        cash -= reworkCost + escapeCost;
+        reworkTotal += reworkCost + escapeCost;
         procurement += cost; built[id] = (built[id] || 0) + 1;
         if (demand[id] > 0) {
           const balance = product.salePrice - deposit;
@@ -216,10 +245,11 @@ function simulate(routeId, scenarioId, difficulty = 'normal') {
     }
     cash -= fixed;
     totalRevenue += revenue; totalCogs += cogs; totalFixed += fixed; totalDevelopment += development;
+    totalRework += reworkTotal;
     const salesCount = Object.values(sold).reduce((n, p) => n + p, 0);
     totalSales += salesCount;
     const stockCost = round(Object.values(stock).flat().reduce((n, p) => n + p, 0));
-    const monthProfit = round(revenue - cogs - fixed - development);
+    const monthProfit = round(revenue - cogs - fixed - development - reworkTotal);
     // Reputation tracks whether the workshop delivered what it committed to. The reachable pool is
     // not a backlog: a boutique shop is capacity bound and a mass line is demand bound, so leaving
     // part of the pool unserved is normal. Only a broken commitment costs reputation.
@@ -234,11 +264,12 @@ function simulate(routeId, scenarioId, difficulty = 'normal') {
     months.push({month,startCash:round(startCash),endCash:round(cash),sold,built,revenue:round(revenue),
       costOfGoodsSold:round(cogs),procurement:round(procurement),fixedCost:fixed,developmentCost:development,
       depositsTaken:round(depositsTaken),payablesPaid:round(payablesPaid),payablesOutstanding:outstandingNow,
+      reworkCost:round(reworkTotal),
       orders,servedTotal,orderedTotal,reputationBefore:round(reputationBefore),reputationAfter:round(reputation),
       operatingProfit:monthProfit,inventoryCost:stockCost,inventoryUnits:Object.values(stock).reduce((n,p)=>n+p.length,0),
       capacityUsed:Object.fromEntries(Object.entries(used).map(([k,v])=>[k,round(v)])),capacityAvailable:limits,
       notices:[...new Set(notices)]});
-    assert(Math.abs(cash - (startCash + cashFromSales + depositsTaken - cashProcurement - payablesPaid - fixed - development -
+    assert(Math.abs(cash - (startCash + cashFromSales + depositsTaken - cashProcurement - payablesPaid - reworkTotal - fixed - development -
       (totalInvestment - months.slice(0,-1).reduce((n,m)=>n+(m.investmentPaid||0),0)))) < 0.02, 'Cash ledger does not reconcile.');
     months.at(-1).investmentPaid = totalInvestment - months.slice(0,-1).reduce((n,m)=>n+m.investmentPaid,0);
     for (const k of Object.keys(used)) assert(used[k] <= limits[k] + 1e-8, 'Capacity exceeded.');
@@ -247,7 +278,7 @@ function simulate(routeId, scenarioId, difficulty = 'normal') {
   }
   const inventoryCost = round(Object.values(stock).flat().reduce((n,p)=>n+p,0));
   const payablesOutstanding = round(payables.reduce((n, p) => n + p.amount, 0));
-  const operatingProfit = round(totalRevenue - totalCogs - totalFixed - totalDevelopment);
+  const operatingProfit = round(totalRevenue - totalCogs - totalFixed - totalDevelopment - totalRework);
   // Parts bought on account are a liability, so they are added back before checking the ledger.
   assert(Math.abs(cash + inventoryCost - payablesOutstanding - opening.cash - (operatingProfit - totalInvestment)) < 0.02,
     'Operating profit, inventory, payables and cash do not reconcile.');
@@ -255,6 +286,7 @@ function simulate(routeId, scenarioId, difficulty = 'normal') {
   return {route:routeId,scenario:scenarioId,difficulty,partsChannel:channel.id,partsChannelFactor:channelFactor,
     paymentTermMonths:termMonths,creditLimitCoins:creditLimit,gatedAtStart,reputation:round(reputation),
     totalDeposits:round(totalDeposits),totalPayablesPaid:round(totalPayablesPaid),payablesOutstanding,
+    totalReworkCost:round(totalRework),
     bankrupt,bankruptMonth,totalSales,totalRevenue,totalCostOfGoodsSold:round(totalCogs),
     totalFixedCost:totalFixed,totalDevelopmentCost:totalDevelopment,totalInvestment,
     operatingProfit,endCash:round(cash),inventoryCost,cashAndInventoryGain:round(cash+inventoryCost-opening.cash),months};
