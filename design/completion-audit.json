@@ -188,6 +188,16 @@
       "note": "15 条规则、173 处跨文件 id 引用；分项校验查规则，这一层查接线"
     },
     {
+      "id": "temporal_consistency",
+      "zh": "时序一致性",
+      "state": "complete",
+      "files": [
+        "design/demo-schedule.json"
+      ],
+      "checker": "check:temporal",
+      "note": "Demo 窗口、新品日期与依据、完整版时间线连续、样机配件开局可用；2021-2030 目录缺口被记录"
+    },
+    {
       "id": "export_coverage",
       "zh": "导出覆盖分类",
       "state": "complete",
