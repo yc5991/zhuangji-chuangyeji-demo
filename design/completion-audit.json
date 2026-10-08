@@ -120,12 +120,13 @@
       "id": "staff_capability",
       "zh": "人员能力",
       "state": "pending_decision",
-      "blockedBy": "等级、薪金、装配与故障系数、培训费都已建模并通过校验，但最高等级在三条路线上都无法回本（回报率 -0.55 / -0.48 / 0.10）：没有任何路线受人工约束，所以装配提速不产生额外产量，返工节省（2535 → 1775）盖不过每月 700 的薪金差。要让它有意义，必须让某条路线真正受人工约束",
+      "blockedBy": "已并入决策 5：员工在混合路线晚招是划算的（+2984），在精品与量产不划算（−1400），盈亏平衡点在需求约 1.3 倍处。见 docs/staff-value.md",
       "decidedBy": "用户",
       "evidenceFiles": [
         "design/staff.json"
       ],
-      "evidenceChecker": "check:staff"
+      "evidenceChecker": "check:staff",
+      "note": "已并入决策 5 重测：员工在混合路线晚招是划算的（+2984），在精品与量产不划算（−1400）。盈亏平衡点在需求约 1.3 倍处。详见 docs/decisions.md 决策 5 与 docs/staff-value.md"
     },
     {
       "id": "demo_schedule",
@@ -221,41 +222,58 @@
       "id": "route_rules",
       "zh": "路线收益规则三选二",
       "state": "pending_decision",
-      "blockedBy": "四条已确认规则无法同时成立：精品的总利润、产能约束、单台利润优势只能取二。见 docs/design-candidates.md 4.2",
+      "blockedBy": "决策 1 已给出方案：高定工时抬到 14/20 与 32/45，混合计划 ×1.3 并在第 5 月买台位与招人。实测 精品 34971 < 量产 37174 < 混合 37709，三条规则同时成立",
       "decidedBy": "用户",
-      "decisionPackSection": "docs/decisions.md"
+      "decisionPackSection": "docs/decisions.md",
+      "note": "决策 1。方案：高定工时抬到 14/20 与 32/45，混合计划 ×1.3、第 5 月买台位并招人。实测 精品 34971 < 量产 37174 < 混合 37709，三条规则同时成立"
     },
     {
       "id": "optimal_pricing",
       "zh": "是否把现价抬到最优价",
       "state": "pending_decision",
-      "blockedBy": "四个样机现价均低于最优价 10%—16%，抬价后三条规则仍成立，但困难档可承受亏损月数从 1.2 升到 2.4，需要连带重标难度",
+      "blockedBy": "决策 2 已给出方案：四价抬到最优价的一半，并修正两处客群月上限以消除取整悬崖（归零月份 9 → 0）。见 docs/rounding-cliffs.md",
       "decidedBy": "用户",
-      "decisionPackSection": "docs/decisions.md"
+      "decisionPackSection": "docs/decisions.md",
+      "note": "决策 2。方案：四价抬到最优价的一半（2202 / 4743 / 5391 / 11724），并把静音办公月上限改为 [3,3,4,5,6,6]、创作改为 [1,3,3,3,3,4]。修正后归零月份 9 → 0。详见 docs/rounding-cliffs.md"
     },
     {
       "id": "hard_unlock",
       "zh": "困难档量产与混合的解锁条件",
       "state": "pending_decision",
-      "blockedBy": "候选为口碑阈值、现金阈值、月份门槛或完成 N 台高定；当前两条路线被标记为开局锁定且不参与平衡判定",
+      "blockedBy": "决策 3 已给出方案：累计交付 5 台高定后解锁，方案落地后落在第 4 月末，现金 10272。见 docs/unlock-timing.md",
       "decidedBy": "用户",
-      "decisionPackSection": "docs/decisions.md"
+      "decisionPackSection": "docs/decisions.md",
+      "note": "决策 3。方案：累计交付 5 台高定后解锁。方案落地后第 4 月末达到，现金 10272，够付 300 开发费。详见 docs/unlock-timing.md"
     },
     {
       "id": "reputation_growth",
       "zh": "口碑高于 1 是否放大客群",
       "state": "pending_decision",
-      "blockedBy": "实测放大后量产在简单档追平混合，混合优势从 5885 缩到 37；建议只放大高定客群",
+      "blockedBy": "决策 4 的结论是放弃：放大后量产超过混合，打破「混合总利润最高」，且只帮量产一条路线。见 docs/reputation-setting.md",
       "decidedBy": "用户",
-      "decisionPackSection": "docs/decisions.md"
+      "decisionPackSection": "docs/decisions.md",
+      "note": "决策 4。结论：放弃。all 让量产（37104）超过混合（37008），打破「混合总利润最高」，且只帮量产一条路线（+8064）。详见 docs/reputation-setting.md"
     },
     {
       "id": "adaptive_policy",
       "zh": "路线是否改为自适应生产策略",
       "state": "pending_decision",
-      "blockedBy": "保留量产卖不完与让产能投资回本不可兼得；固定排产计划下没有任何路线受产能约束。第 26 轮补充：人员能力投资同样需要它——产能类投资在方案下已经能回本（混合装配台 4.87），但人员能力仍不行，因为没有路线受人工约束",
+      "blockedBy": "决策 5 的结论是保持固定排产：员工在混合路线有意义，在另外两条没有。若要让员工成为普遍决策，需求需抬到约 1.4 倍",
       "decidedBy": "用户",
-      "decisionPackSection": "docs/decisions.md"
+      "decisionPackSection": "docs/decisions.md",
+      "note": "决策 5。结论：保持固定排产。员工并非永远不划算——混合路线晚招 +2984，精品与量产 −1400。若要让员工成为普遍决策，需求需抬到约 1.4 倍。详见 docs/staff-value.md"
+    },
+    {
+      "id": "month_five_investment",
+      "zh": "第 5 月的投资承诺",
+      "state": "pending_decision",
+      "files": [
+        "design/demo-schedule.json",
+        "design/economy-candidate.json"
+      ],
+      "note": "决策 6。逐月安排承诺第 5 月有「明显改变经营方式的投资机会」，但只有量产有（半自动设备）；精品没有可买的设备投资（台位效果为 0）。建议把承诺限定在量产与混合，并把困难档精品的第 5—6 月选择写成「是否招人」（晚招 +2763）。详见 docs/decision-interaction.md",
+      "blockedBy": "待你选择：把第 5 月的投资承诺限定在量产与混合（建议），或给精品加一项可买投资（会打破三难），或维持现状",
+      "decidedBy": "你（用户）"
     },
     {
       "id": "catalog_2021_2030",
