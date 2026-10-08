@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "status": "candidate",
+  "provenance": {
+    "existing": "docs/design-confirmation-brief.md requires cost, effect and applicable conditions for four investments: craft tools, staff capability, extra stations and semi-automatic equipment. spec line 212 lists staff capability as a screen. The skilled grade reproduces the single employee in design/economy-candidate.json exactly, so nothing already balanced moves.",
+    "new": "The three grades, their salaries, assembly multipliers, failure multipliers, recruitment costs and training costs are original game balance.",
+    "limits": "Three named grades, not a continuous skill system. It says what a worker of each grade costs and produces, and does not model individual attributes, morale or turnover."
+  },
+  "rules": {
+    "skilledIsTheExistingWorker": "The middle grade must match the confirmed employee exactly, so the change is additive",
+    "trainingUpgradesInPlace": "Training raises a worker one grade for a one-off cost, without recruiting a new person",
+    "higherGradeNeverWorse": "A higher grade must never cost more in time or produce more defects than a lower one",
+    "gradeAffectsQuality": "Assembly speed and defect rate both move with grade, so a senior worker is worth more than their hours alone",
+    "baseGradeId": "skilled"
+  },
+  "grades": [
+    {
+      "id": "apprentice",
+      "zh": "学徒",
+      "order": 1,
+      "monthlySalary": 1000,
+      "monthlyLaborHours": 112,
+      "assemblyHourMultiplier": 1.15,
+      "failureRateMultiplier": 1.3,
+      "recruitmentCost": 400,
+      "trainingCost": 0,
+      "note": "便宜但慢，且更容易做出需要返工的机器；资金紧张时临时顶上"
+    },
+    {
+      "id": "skilled",
+      "zh": "熟练工",
+      "order": 2,
+      "monthlySalary": 1400,
+      "monthlyLaborHours": 112,
+      "assemblyHourMultiplier": 1,
+      "failureRateMultiplier": 1,
+      "recruitmentCost": 600,
+      "trainingCost": 2000,
+      "note": "现有员工即此级；薪金 1400、工时 112 与已确认的经济基线完全一致。学徒培训到这个等级花 2000"
+    },
+    {
+      "id": "senior",
+      "zh": "高级技师",
+      "order": 3,
+      "monthlySalary": 2100,
+      "monthlyLaborHours": 112,
+      "assemblyHourMultiplier": 0.85,
+      "failureRateMultiplier": 0.7,
+      "recruitmentCost": 900,
+      "trainingCost": 3000,
+      "note": "装配更快、返工更少；培训一名熟练工花 3000，不改动人数"
+    }
+  ]
+}

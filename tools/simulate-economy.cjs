@@ -29,10 +29,10 @@ for (const r of recipes.values()) {
 }
 const reliability = read('reliability-model.json');
 // Expected rework per unit, derived from the design-quality signals the balance model already reports.
-function failureRateFor(recipe) {
+function failureRateFor(recipe, gradeMultiplier = 1) {
   const report = evaluate(recipe);
   const r = reliability.failureRate;
-  let rate = r.base;
+  let rate = r.base * gradeMultiplier;
   if (!report.thermalStable) rate *= r.conditionMultipliers.thermallyUnstable;
   if (report.powerHeadroom < r.conditionMultipliers.powerHeadroomThreshold) rate *= r.conditionMultipliers.powerHeadroomBelowThreshold;
   if (report.deliveryIssues.includes('TEST_UNSTABLE')) rate *= r.conditionMultipliers.deliveryIssueUnstable;
@@ -96,6 +96,9 @@ const round = n => Math.round(n * 100) / 100;
 function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
   const opening = { ...config.opening[difficulty], ...(overrides.opening || {}) };
   const employee = { ...config.employee, ...(overrides.employee || {}) };
+  // A worker's grade moves how long assembly takes and how often it needs rework.
+  const gradeAssembly = employee.assemblyHourMultiplier ?? 1;
+  const gradeFailure = employee.failureRateMultiplier ?? 1;
   const products = overrides.products || config.products;
   const route = { ...config.routes[routeId], ...overrides };
   // A caller may supply a synthetic scenario, which is how the fifteen-year pacing run works.
@@ -203,9 +206,9 @@ function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
       // Process one complete machine at a time: receipt can fund the next unit, not the current one.
       for (let unit = 0; unit < count; unit++) {
         const multiplier = product.kind === 'standard' ? standardMultiplier : commissionMultiplier;
-        const assembly = product.assemblyHours * multiplier;
+        const assembly = product.assemblyHours * multiplier * gradeAssembly;
         // Rework is charged as expected value: its real cost is the capacity it consumes.
-        const failRate = failureRateFor(recipe);
+        const failRate = failureRateFor(recipe, gradeFailure);
         const need = { labor: product.designHours + assembly + product.testSetupHours + product.packingHours +
             failRate * reliability.rework.laborHours,
           owner: product.designHours, bench: assembly,

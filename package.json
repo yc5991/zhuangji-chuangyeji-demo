@@ -24,6 +24,7 @@
     "check:audit": "node tools/check-audit.cjs",
     "preview:proposal": "node tools/preview-proposal.cjs",
     "check:progression": "node tools/check-progression.cjs",
+    "check:staff": "node tools/check-staff.cjs",
     "baseline:diff": "node tools/balance-baseline.cjs diff",
     "baseline:update": "node tools/balance-baseline.cjs update",
     "analyze:sensitivity": "node tools/analyze-sensitivity.cjs",

@@ -97,6 +97,17 @@
       "note": "四项投资逐项验证回报率不低于 1.0"
     },
     {
+      "id": "staff_capability",
+      "zh": "人员能力",
+      "state": "pending_decision",
+      "blockedBy": "等级、薪金、装配与故障系数、培训费都已建模并通过校验，但最高等级在三条路线上都无法回本（回报率 -0.55 / -0.48 / 0.10）：没有任何路线受人工约束，所以装配提速不产生额外产量，返工节省（2535 → 1775）盖不过每月 700 的薪金差。要让它有意义，必须让某条路线真正受人工约束",
+      "decidedBy": "用户",
+      "evidenceFiles": [
+        "design/staff.json"
+      ],
+      "evidenceChecker": "check:staff"
+    },
+    {
       "id": "demo_schedule",
       "zh": "逐月内容与教学",
       "state": "complete",
@@ -182,7 +193,7 @@
       "id": "adaptive_policy",
       "zh": "路线是否改为自适应生产策略",
       "state": "pending_decision",
-      "blockedBy": "保留量产卖不完与让产能投资回本不可兼得；固定排产计划下没有任何路线受产能约束",
+      "blockedBy": "保留量产卖不完与让产能投资回本不可兼得；固定排产计划下没有任何路线受产能约束。第 26 轮补充：人员能力投资同样需要它——产能类投资在方案下已经能回本（混合装配台 4.87），但人员能力仍不行，因为没有路线受人工约束",
       "decidedBy": "用户",
       "decisionPackSection": "docs/decisions.md"
     },
