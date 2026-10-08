@@ -391,7 +391,7 @@ const report = {status:'unconfirmed_candidate_scenarios',provenance:config.prove
   limitations:[
     'Capacity checks use monthly totals and owner design hours, not a dependency-aware event schedule.',
     'The owner performs design; employees and owner share other work. Only owner design availability is separately checked.',
-    'Delivery costs are in direct costs. Lead times, release-day bottlenecks, component lots, returns, quality and reputation are not simulated.',
+    'Delivery costs are in direct costs. Lead times and returns are not simulated. Release-day capacity, component lots, quality and reputation are simulated; an earlier version of this list predated them.',
     'Stock retains historical cost. No markdown, resale, demand adaptation, depreciation or equipment residual value is modeled.',
     'Existing recipe variants are sold at assumed prices and all valid commissioned orders pay on completion.',
     'Demand is an assumed company sales ceiling, not a validated market forecast. First prototypes are sold, not discarded.'
