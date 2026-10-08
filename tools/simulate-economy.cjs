@@ -187,7 +187,11 @@ function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
 
     // Keep this month's fixed costs available before irreversible procurement or expansion.
     if (cash >= outlay + prospectiveFixed) {
-      for (const purchase of buys) {
+      // Benches bought this month count for equipment bought this month, so the order the route
+      // happens to list them in cannot change whether the purchase succeeds.
+      const ordered = [...buys].sort((a, b) =>
+        (config.investments[b.id].addedBenches || 0) - (config.investments[a.id].addedBenches || 0));
+      for (const purchase of ordered) {
         const investment = config.investments[purchase.id];
         assert(!investment.requiresBenches || benches >= investment.requiresBenches, 'Equipment needs the proposed bench count.');
         cash -= investment.cost;

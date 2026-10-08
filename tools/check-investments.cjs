@@ -84,4 +84,20 @@ function run() {
   return output;
 }
 if (require.main === module) run();
+  // Buying a bench and the equipment that needs it in one month must not depend on the order
+  // the route happens to list them in. The shipped routes buy them a month apart, so this is
+  // probed with a synthetic schedule rather than waiting for a route to trip it.
+  const benchId = Object.keys(config.investments).find(id => config.investments[id].addedBenches > 0);
+  const equipmentId = Object.keys(config.investments).find(id => config.investments[id].requiresBenches > 1);
+  assert(benchId && equipmentId, "the probe needs one investment that adds benches and one that requires them");
+  const probeMonth = 3;
+  const savedInvestments = config.routes.scale.investments;
+  const orders = [];
+  for (const pair of [[benchId, equipmentId], [equipmentId, benchId]]) {
+    config.routes.scale.investments = pair.map(id => ({ month: probeMonth, id }));
+    orders.push(simulate("scale", "baseline", "normal").operatingProfit);
+  }
+  config.routes.scale.investments = savedInvestments;
+  assert.equal(orders[0], orders[1],
+    "buying " + benchId + " and " + equipmentId + " in the same month depends on the order they are listed");
 module.exports = { run };
