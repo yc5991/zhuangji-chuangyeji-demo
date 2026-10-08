@@ -102,16 +102,22 @@ if (require.main === module) run();
   assert.equal(orders[0], orders[1],
     "buying " + benchId + " and " + equipmentId + " in the same month depends on the order they are listed");
   // Recorded design facts about hiring, read from a data file so a confirmed decision cannot be
-  // reversed by accident. apply-decisions.cjs rewrites that file when the decisions land.
+  // reversed by accident. Every month is tried, not just the first: hiring late avoids paying a
+  // wage for months with nothing to do, which is exactly how the mixed route turns a profit on it.
   const recorded = read('recorded-facts.json');
-  const hireEffect = {};
+  const bestHireEffect = {};
   for (const [routeId, route] of Object.entries(config.routes)) {
     const baselineRun = simulate(routeId, "baseline", "normal");
     if (baselineRun.gatedAtStart) continue;
     const savedHires = route.hires;
-    route.hires = [1];
-    hireEffect[routeId] = Math.round(simulate(routeId, "baseline", "normal").operatingProfit - baselineRun.operatingProfit);
+    let best = null;
+    for (let month = 1; month <= 6; month++) {
+      route.hires = [month];
+      const delta = Math.round(simulate(routeId, "baseline", "normal").operatingProfit - baselineRun.operatingProfit);
+      if (best === null || delta > best) best = delta;
+    }
     route.hires = savedHires;
+    bestHireEffect[routeId] = best;
   }
   const hardHire = (() => {
     const route = config.routes.boutique;
@@ -126,9 +132,9 @@ if (require.main === module) run();
   const expectedHard = recorded.hireEffectHardModeLateHire.value;
   assert(expectedNormal && typeof expectedHard === "number",
     "recorded-facts.json has no hiring figures; run tools/apply-decisions.cjs or rewrite them");
-  for (const [routeId, delta] of Object.entries(hireEffect)) {
+  for (const [routeId, delta] of Object.entries(bestHireEffect)) {
     assert.equal(delta, expectedNormal[routeId],
-      routeId + ": hiring in month one now changes profit by " + delta + ", but " + expectedNormal[routeId] +
+      routeId + ": the best month to hire now changes profit by " + delta + ", but " + expectedNormal[routeId] +
       " is recorded; a design decision changed and the record has to be updated with it");
   }
   assert.equal(hardHire, expectedHard,

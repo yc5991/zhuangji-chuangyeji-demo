@@ -3,11 +3,11 @@
   "status": "recorded",
   "note": "Measured design facts the checks assert against, so a confirmed decision cannot be reversed by accident. apply-decisions.cjs rewrites this file when the decisions land.",
   "hireEffectNormalDifficulty": {
-    "note": "Profit change from hiring one worker in month one on normal difficulty, per route.",
+    "note": "The best profit change available from hiring one worker in any single month, on normal difficulty, per route. The best month rather than the first, because a late hire avoids paying a wage for months with nothing to do.",
     "values": {
-      "boutique": -8400,
-      "scale": -8400,
-      "mixed": -4016
+      "boutique": -1400,
+      "scale": -1400,
+      "mixed": 2984
     }
   },
   "hireEffectHardModeLateHire": {

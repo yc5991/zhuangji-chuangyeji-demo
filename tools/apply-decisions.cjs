@@ -75,14 +75,21 @@ function apply() {
   if (fs.existsSync(factsPath)) {
     const { simulate, config } = require('./simulate-economy.cjs');
     const facts = JSON.parse(fs.readFileSync(factsPath, 'utf8'));
+    // The best single month to hire, not the first: hiring late avoids paying a wage for months
+    // with nothing to do, which is how the mixed route makes a profit on it.
     const normal = {};
     for (const route of Object.keys(config.routes)) {
       const before = simulate(route, 'baseline', 'normal');
       if (before.gatedAtStart) continue;
       const saved = config.routes[route].hires;
-      config.routes[route].hires = [1];
-      normal[route] = Math.round(simulate(route, 'baseline', 'normal').operatingProfit - before.operatingProfit);
+      let best = null;
+      for (let month = 1; month <= 6; month++) {
+        config.routes[route].hires = [month];
+        const delta = Math.round(simulate(route, 'baseline', 'normal').operatingProfit - before.operatingProfit);
+        if (best === null || delta > best) best = delta;
+      }
       config.routes[route].hires = saved;
+      normal[route] = best;
     }
     const hardBefore = simulate('boutique', 'baseline', 'hard');
     const savedHires = config.routes.boutique.hires;
