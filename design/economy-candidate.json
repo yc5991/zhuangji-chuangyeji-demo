@@ -305,21 +305,32 @@
     },
     "event_dram_rumour": {
       "demandMultiplier": 1,
-      "categoryMultipliers": { "ram": 1.00, "storage": 1.00 },
+      "categoryMultipliers": {
+        "ram": 1,
+        "storage": 1
+      },
       "fromMonth": 4,
       "throughMonth": 5
     },
     "event_dram_mild": {
       "demandMultiplier": 1,
-      "categoryMultipliers": { "ram": 1.35, "storage": 1.35 },
+      "categoryMultipliers": {
+        "ram": 1.35,
+        "storage": 1.35
+      },
       "fromMonth": 4,
       "throughMonth": 5
     },
     "event_dram_sharp": {
       "demandMultiplier": 1,
-      "categoryMultipliers": { "ram": 1.70, "storage": 1.70 },
+      "categoryMultipliers": {
+        "ram": 1.7,
+        "storage": 1.7
+      },
       "fromMonth": 4,
       "throughMonth": 5
     }
-  }
+  },
+  "productionOvershootCap": 2,
+  "productionOvershootNote": "标准产品最多按需求的这个倍数排产。量产路线本来就造多于卖得掉的量，但无上限的爬坡会在需求下滑时把现金压死：普通档在需求下降 35% 的场景下第 6 月破产，加上这个上限后存活，而全部参考数值一分不变"
 }

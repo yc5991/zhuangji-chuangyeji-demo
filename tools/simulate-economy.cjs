@@ -246,7 +246,13 @@ function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
       assert(recipe, 'Scenario product must use an existing recipe.');
       // The plan cannot be carried out on a machine that cannot be assembled.
       if (appearance[id]?.blocked) continue;
-      const want = product.kind === 'commission' ? Math.min(target, demand[id]) : target;
+      // A commission is built to order. A standard model is built to the route's plan, but no
+      // further than a multiple of what customers want: the mass route is meant to build more
+      // than it sells, yet an unbounded ramp turns a demand drop into a cash crisis.
+      const overshoot = config.productionOvershootCap ?? Infinity;
+      const want = product.kind === 'commission'
+        ? Math.min(target, demand[id])
+        : Math.min(target, Math.ceil(demand[id] * overshoot));
       // A model whose parts arrive mid-month can only use the rest of that month.
       const release = releaseCapacityFactor(id, month);
       const count = release >= 1 ? want : Math.ceil(want * release);

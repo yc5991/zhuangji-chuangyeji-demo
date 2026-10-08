@@ -34,8 +34,8 @@
       "sales": 15
     },
     "easy|demand_down_35|scale": {
-      "profit": 20052.68,
-      "endCash": 5291.72,
+      "profit": 21640.81,
+      "endCash": 76691.8,
       "bankrupt": false,
       "bankruptMonth": null,
       "gatedAtStart": false,
@@ -178,10 +178,10 @@
       "sales": 15
     },
     "normal|demand_down_35|scale": {
-      "profit": 13216.77,
-      "endCash": -10021.23,
-      "bankrupt": true,
-      "bankruptMonth": 6,
+      "profit": 14422.03,
+      "endCash": 33694.03,
+      "bankrupt": false,
+      "bankruptMonth": null,
       "gatedAtStart": false,
       "sales": 62
     },
