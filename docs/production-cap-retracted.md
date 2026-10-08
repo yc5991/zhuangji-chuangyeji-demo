@@ -41,7 +41,7 @@
 | `economy-candidate.json` 的 `productionOvershootCap` | **已删除** |
 | 回归基线 | 已重新标定回上限引入前的数值 |
 
-全部 24 个校验通过
+全部 24 个校验通过（当时的总数；现在 26 个）
 
 ## 5 教训
 

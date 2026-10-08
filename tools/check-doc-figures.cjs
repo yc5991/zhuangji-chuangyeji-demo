@@ -18,6 +18,28 @@ function liveFigures() {
   return out;
 }
 
+// Counts the documents state as fact. A count is as capable of going stale as a profit figure,
+// and these are the ones the package scripts and the file tree fix.
+// The design checks, which is the number the documents quote. Three more scripts start with check:
+// but are not part of the suite: a TypeScript compile, a packaging check, and one that verifies the
+// local environment, which is machine-specific rather than a property of the design.
+const NON_DESIGN_CHECKS = new Set(['check:types', 'check:package', 'check:env']);
+
+function liveCounts() {
+  const scripts = JSON.parse(fs.readFileSync(path.join(root, 'package.json'), 'utf8')).scripts;
+  const checks = Object.keys(scripts)
+    .filter(k => k.startsWith('check:') && !NON_DESIGN_CHECKS.has(k)).length;
+  let designFiles = 0;
+  const walk = dir => {
+    for (const entry of fs.readdirSync(path.join(root, 'design', dir), { withFileTypes: true })) {
+      if (entry.isDirectory()) walk(dir ? dir + '/' + entry.name : entry.name);
+      else if (entry.name.endsWith('.json')) designFiles++;
+    }
+  };
+  walk('');
+  return { checks, designFiles };
+}
+
 // A number this close to a live figure but not equal to it is almost certainly an older copy.
 const NEAR = 60;
 
@@ -68,7 +90,33 @@ function repair() {
   return changed;
 }
 
+// Phrases that name a count, so a stale number can be caught in the sentence that makes it a claim.
+const COUNT_CLAIMS = [
+  [/重跑\s*(?:全部\s*)?(\d+)\s*个校验/g, 'checks'],
+  [/(\d+)\s*个校验[,、]\s*(\d+)\s*个设计文件/g, 'both'],
+  [/现在跑全部\s*(\d+)\s*个/g, 'checks'],
+];
+
 function run() {
+  const counts = liveCounts();
+  const countProblems = [];
+  for (const doc of fs.readdirSync(path.join(root, 'docs')).filter(f => f.endsWith('.md') && f !== 'doc-figures.md')) {
+    const text = fs.readFileSync(path.join(root, 'docs', doc), 'utf8');
+    for (const [re, kind] of COUNT_CLAIMS) {
+      for (const m of text.matchAll(re)) {
+        const stated = Number(m[1]);
+        if (stated === counts.checks) continue;
+        // A sentence explaining what a figure used to be is history, not a claim about now.
+        const around = text.slice(Math.max(0, m.index - 40), m.index + m[0].length + 40);
+        if (/原先|当时|最初|曾/.test(around)) continue;
+        countProblems.push(doc + ': says ' + stated + ' checks, there are ' + counts.checks);
+        break;
+      }
+    }
+  }
+  assert.equal(countProblems.length, 0,
+    countProblems.length + ' documents state a check count that is out of date: ' + countProblems.join('; '));
+
   const live = liveFigures();
   const values = Object.values(live);
   const flagged = [];
@@ -95,6 +143,9 @@ function run() {
     liveFigures: live,
     docsScanned: docs.length,
     docsExempt: [...EXEMPT_DOCS],
+    liveCounts: counts,
+    nonDesignChecksExcluded: [...NON_DESIGN_CHECKS],
+    countClaimsVerified: true,
     nearMissWindow: NEAR,
     coincidencesAllowed: COINCIDENCES.length,
   };
