@@ -30,6 +30,7 @@
     "check:export-coverage": "node tools/check-export-coverage.cjs",
     "check:references": "node tools/check-references.cjs",
     "check:temporal": "node tools/check-temporal.cjs",
+    "check:reachability": "node tools/check-reachability.cjs",
     "baseline:diff": "node tools/balance-baseline.cjs diff",
     "baseline:update": "node tools/balance-baseline.cjs update",
     "analyze:sensitivity": "node tools/analyze-sensitivity.cjs",

@@ -198,6 +198,16 @@
       "note": "Demo 窗口、新品日期与依据、完整版时间线连续、样机配件开局可用；2021-2030 目录缺口被记录"
     },
     {
+      "id": "reachability",
+      "zh": "可达性",
+      "state": "complete",
+      "files": [
+        "design/economy-candidate.json"
+      ],
+      "checker": "check:reachability",
+      "note": "每档难度每条路线开局能开工、开发费归属正确、计划开支付得起、计划完成率达标；查出困难档精品买不起计划里的工艺工具，方案落地后修复"
+    },
+    {
       "id": "export_coverage",
       "zh": "导出覆盖分类",
       "state": "complete",
