@@ -5,12 +5,21 @@
     "version": "3.8.8"
   },
   "scripts": {
+    "prepare:demo": "node tools/prepare-demo.cjs",
+    "test": "npm run prepare:demo && tsc -p tsconfig.tests.json && node --test tests/*.test.cjs",
+    "check:types": "tsc --noEmit -p tsconfig.json",
+    "check:package": "node tools/check-package.cjs",
+    "simulate:economy": "npm run prepare:demo && tsc -p tsconfig.tests.json && node tools/simulate-economy.cjs",
     "check:design": "node tools/check-design.cjs",
     "check:suppliers": "node tools/check-suppliers.cjs",
+    "check:customers": "node tools/check-customers.cjs",
     "check:env": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/check-environment.ps1",
     "editor": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/open-creator.ps1",
     "build:web": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/build-cocos.ps1 -Platform web-desktop",
     "build:wechat": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/build-cocos.ps1 -Platform wechatgame"
   },
-  "uuid": "867a89c5-3e77-4c7e-82c3-f21efda89693"
+  "uuid": "867a89c5-3e77-4c7e-82c3-f21efda89693",
+  "devDependencies": {
+    "typescript": "5.8.3"
+  }
 }

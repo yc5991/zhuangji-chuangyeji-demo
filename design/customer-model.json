@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "status": "candidate",
+  "provenance": {
+    "existing": "Budgets, hard requirements and fit targets are derived from design/balance.json recipes and design/components.json part values. No component, price or demand-cap value is changed here.",
+    "new": "Archetype names, weights, reputation deltas, price-acceptance curve and fit rule are original game design candidates awaiting user review.",
+    "limits": "A monthly order generation model, not a validated market forecast. It splits the existing company demand caps by archetype rather than replacing them."
+  },
+  "segments": {
+    "mass": {
+      "zh": "量产客群",
+      "products": [
+        "office",
+        "gaming"
+      ]
+    },
+    "bespoke": {
+      "zh": "高定客群",
+      "products": [
+        "quiet_office",
+        "premium"
+      ]
+    }
+  },
+  "archetypes": [
+    {
+      "id": "student",
+      "zh": "学生党",
+      "segment": "mass",
+      "referenceRecipe": "office",
+      "weight": 26,
+      "budgetCoins": [
+        1950,
+        2350
+      ],
+      "requirements": {
+        "minimumRamGB": 8,
+        "minimumStorageGB": null,
+        "requiredDiscreteGpu": false,
+        "minimumVramGB": null,
+        "maximumNoiseBurden": null,
+        "minimumScores": {
+          "office": 60
+        }
+      },
+      "fitUseCase": "office",
+      "expectedScore": 74.75,
+      "note": "预算最紧，只要能用；没有静音要求，因此便宜但偏吵的配置也能成交"
+    },
+    {
+      "id": "family",
+      "zh": "家庭用户",
+      "segment": "mass",
+      "referenceRecipe": "office",
+      "weight": 20,
+      "budgetCoins": [
+        1950,
+        2350
+      ],
+      "requirements": {
+        "minimumRamGB": 8,
+        "minimumStorageGB": null,
+        "requiredDiscreteGpu": false,
+        "minimumVramGB": null,
+        "maximumNoiseBurden": 45,
+        "minimumScores": {
+          "office": 60
+        }
+      },
+      "fitUseCase": "office",
+      "expectedScore": 74.75,
+      "note": "有噪声上限，主流游戏样机的 50 会被拒，逼玩家换安静散热或机箱"
+    },
+    {
+      "id": "office_buyer",
+      "zh": "办公采购",
+      "segment": "mass",
+      "referenceRecipe": "office",
+      "weight": 18,
+      "budgetCoins": [
+        2050,
+        2350
+      ],
+      "requirements": {
+        "minimumRamGB": 8,
+        "minimumStorageGB": 120,
+        "requiredDiscreteGpu": false,
+        "minimumVramGB": null,
+        "maximumNoiseBurden": 45,
+        "minimumScores": {
+          "office": 65
+        }
+      },
+      "fitUseCase": "office",
+      "expectedScore": 74.75,
+      "note": "唯一有存储下限的量产客户，120GB 固态刚好达标"
+    },
+    {
+      "id": "gamer",
+      "zh": "主流玩家",
+      "segment": "mass",
+      "referenceRecipe": "gaming",
+      "weight": 22,
+      "budgetCoins": [
+        4400,
+        5200
+      ],
+      "requirements": {
+        "minimumRamGB": 16,
+        "minimumStorageGB": null,
+        "requiredDiscreteGpu": true,
+        "minimumVramGB": 2,
+        "maximumNoiseBurden": null,
+        "minimumScores": {
+          "gaming": 50
+        }
+      },
+      "fitUseCase": "gaming",
+      "expectedScore": 58.1,
+      "note": "必须有独显，核显方案直接出局；不介意噪声"
+    },
+    {
+      "id": "quiet_pro",
+      "zh": "静音高定客户",
+      "segment": "bespoke",
+      "referenceRecipe": "quiet_office",
+      "weight": 63,
+      "budgetCoins": [
+        4500,
+        5700
+      ],
+      "requirements": {
+        "minimumRamGB": 8,
+        "minimumStorageGB": null,
+        "requiredDiscreteGpu": false,
+        "minimumVramGB": null,
+        "maximumNoiseBurden": 20,
+        "minimumScores": {
+          "office": 70
+        }
+      },
+      "fitUseCase": "office",
+      "expectedScore": 76.5,
+      "note": "噪声上限 20 排除了噪声 42 的预算办公，玩家必须真正做静音设计"
+    },
+    {
+      "id": "creator",
+      "zh": "内容创作者",
+      "segment": "bespoke",
+      "referenceRecipe": "premium",
+      "weight": 37,
+      "budgetCoins": [
+        9800,
+        12400
+      ],
+      "requirements": {
+        "minimumRamGB": 16,
+        "minimumStorageGB": 1000,
+        "requiredDiscreteGpu": true,
+        "minimumVramGB": 2,
+        "maximumNoiseBurden": null,
+        "minimumScores": {
+          "creation": 70
+        }
+      },
+      "fitUseCase": "creation",
+      "expectedScore": 80.39,
+      "note": "存储下限 1000GB 排除了只有 250GB 的主流游戏机，必须加工作盘"
+    }
+  ],
+  "reputation": {
+    "initial": 1,
+    "floor": 0.5,
+    "ceiling": 1.3,
+    "onTimeMeetingRequirements": 0.04,
+    "lateMeetingRequirements": -0.02,
+    "deliveredMissingRequirement": -0.15,
+    "note": "口碑系数 R 乘进月成交量；首轮计算固定为 1，接入订单流程后再启用"
+  },
+  "priceAcceptance": {
+    "formula": "clamp((marketReferencePrice / askingPrice)^2, 0.5, 1.3)",
+    "marketReferencePrice": "midpoint of the archetype budget range",
+    "floor": 0.5,
+    "ceiling": 1.3,
+    "note": "降价能提高接受度但有上限，加价会快速流失客群"
+  },
+  "fit": {
+    "formula": "clamp(actualUseCaseScore / expectedScore, 0, 1)",
+    "note": "用途适配 F 只看得分；硬性要求不满足时订单直接不成交，不由 F 补偿"
+  },
+  "monthlyVolume": {
+    "source": "design/economy-candidate.json companyDemandCaps",
+    "splitRule": "Each segment's monthly cap is split across its archetypes in proportion to weight."
+  }
+}
