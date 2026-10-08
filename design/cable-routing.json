@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "status": "candidate",
+  "provenance": {
+    "existing": "docs/design-confirmation-brief.md line 45 requires cable length, capacity, connectors, collision and side panel closure to be checked together. The eight cable roles and their length budgets, the eight anchors with coordinates, and the channel graph with capacities all already exist in design/workbench.json and design/workbench-geometry.json. This file only binds each role to the anchors it runs between, which was missing.",
+    "new": "The anchor pair for each cable role, and which components a cable connects, are original design work derived from the recorded anchor labels.",
+    "limits": "A routing map, not a floor plan. The coordinates, channel shapes and collision volumes remain with the geometry workstream."
+  },
+  "rules": {
+    "everyRoleBound": "Every cable role that has a length budget must be bound to a pair of anchors, or its budget can never be checked",
+    "endpointsMustExist": "Both anchors must exist in every case, or the cable is impossible in that case",
+    "pathMustFitBudget": "A route through the channel graph must exist and must not exceed the role's length budget",
+    "capacityMustSuffice": "A channel must be able to carry every cable routed through it",
+    "channelCapacityUnit": "capacity 的单位是可通过的线缆条数，沿用 workbench-geometry.json 里已有的 24"
+  },
+  "roles": [
+    {
+      "id": "MAINBOARD_POWER",
+      "zh": "主板供电",
+      "from": "A01",
+      "to": "A02",
+      "connects": [
+        "psu",
+        "motherboard"
+      ],
+      "connector": "24-pin",
+      "note": "电源仓出口到托盘下方过线孔"
+    },
+    {
+      "id": "CPU_POWER",
+      "zh": "处理器供电",
+      "from": "A01",
+      "to": "A05",
+      "connects": [
+        "psu",
+        "cpu"
+      ],
+      "connector": "8-pin EPS",
+      "note": "电源仓经背板顶部通道到处理器供电口；CPU 与显卡供电类型不同，不能互换"
+    },
+    {
+      "id": "GPU_POWER",
+      "zh": "显卡供电",
+      "from": "A01",
+      "to": "A07",
+      "connects": [
+        "psu",
+        "gpu"
+      ],
+      "connector": "8-pin PCIe",
+      "note": "走显卡侧方入口，需要留出弯折空间"
+    },
+    {
+      "id": "SATA_POWER",
+      "zh": "储存供电",
+      "from": "A01",
+      "to": "A08",
+      "connects": [
+        "psu",
+        "storage"
+      ],
+      "connector": "SATA power",
+      "note": "到背部储存区"
+    },
+    {
+      "id": "SATA_DATA",
+      "zh": "储存数据线",
+      "from": "A02",
+      "to": "A08",
+      "connects": [
+        "motherboard",
+        "storage"
+      ],
+      "connector": "SATA data",
+      "note": "主板到背部储存区"
+    },
+    {
+      "id": "CPU_FAN",
+      "zh": "散热器风扇线",
+      "from": "A02",
+      "to": "A05",
+      "connects": [
+        "motherboard",
+        "cooler"
+      ],
+      "connector": "4-pin fan",
+      "note": "沿背板顶部通道上到散热器"
+    },
+    {
+      "id": "CASE_FAN",
+      "zh": "机箱风扇线",
+      "from": "A02",
+      "to": "A06",
+      "connects": [
+        "motherboard",
+        "case_fan"
+      ],
+      "connector": "4-pin fan",
+      "note": "从主板到左上入口的风扇位"
+    },
+    {
+      "id": "FRONT_PANEL",
+      "zh": "前面板线",
+      "from": "A02",
+      "to": "A06",
+      "connects": [
+        "motherboard",
+        "front_panel"
+      ],
+      "connector": "front panel header",
+      "note": "前面板跳线，多条细线走同一通道"
+    }
+  ]
+}

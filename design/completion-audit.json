@@ -67,6 +67,16 @@
       "note": "brief 第 43 行要求的面板、侧板、储存托架、风扇位置、颜色、灯效六组共 16 个选项，含成本与散热噪声外观取舍；外观分可逐项验算"
     },
     {
+      "id": "cable_routing",
+      "zh": "线缆走向与线长预算",
+      "state": "complete",
+      "files": [
+        "design/cable-routing.json"
+      ],
+      "checker": "check:cable-routing",
+      "note": "brief 第 45 行要求线长、容量、接口、碰撞和侧板闭合共同检查；八个线缆角色绑定了锚点端点，校验会算最短走线长度并核对容量"
+    },
+    {
       "id": "design_flow",
       "zh": "固定设计流程七步",
       "state": "complete",
