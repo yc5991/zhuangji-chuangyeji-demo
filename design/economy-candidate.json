@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
-  "status": "unconfirmed_candidate",
+  "status": "implementation_baseline",
   "provenance": {
     "existing": "Parts and direct costs are read from balance.json recipes. No manufacturer fields are changed.",
     "new": "All resources, hours, salaries, demand, prices, investments and scenarios below are original game design candidates, awaiting user preference and playtesting.",
-    "procurementChannels": "Route partsChannel ids and discount factors are read from design/supplier-system.json channels; this file does not restate them. Reachable tier follows monthly same-SKU volume.",
+    "procurementChannels": "Single confirmed order line must meet same-SKU minimum quantity. Separate orders never accumulate or receive retroactive discounts. Channel definitions are read from design/supplier-system.json. Confirmed by user on 2026-10-07.",
     "difficultyTerms": "opening.<difficulty>.supplierTermsFactor multiplies parts cost only. It represents supplier terms for a new small company and is a game assumption, not a historical price finding.",
     "limits": "A deterministic scenario calculator, not a playable six-month balance validation. Demand, delivery timing and quality feedback are assumptions."
   },
   "opening": {
-    "easy": { "cash": 24000, "ownerHours": 96, "employees": 1, "benches": 2, "testStations": 1, "rent": 600, "utilities": 150, "supplierTermsFactor": 0.97 },
-    "normal": { "cash": 16000, "ownerHours": 96, "employees": 1, "benches": 1, "testStations": 1, "rent": 600, "utilities": 150, "supplierTermsFactor": 1 },
-    "hard": { "cash": 10000, "ownerHours": 96, "employees": 0, "benches": 1, "testStations": 1, "rent": 900, "utilities": 150, "supplierTermsFactor": 1.07 }
+    "easy": { "cash": 45000, "ownerHours": 96, "employees": 1, "benches": 2, "testStations": 1, "rent": 600, "utilities": 150, "supplierTermsFactor": 0.97 },
+    "normal": { "cash": 16000, "ownerHours": 96, "employees": 1, "benches": 1, "testStations": 1, "rent": 900, "utilities": 400, "supplierTermsFactor": 1 },
+    "hard": { "cash": 14000, "ownerHours": 96, "employees": 1, "benches": 1, "testStations": 1, "rent": 1100, "utilities": 700, "supplierTermsFactor": 1.07 }
   },
   "openingInventory": "none",
   "employee": { "monthlySalary": 1400, "monthlyLaborHours": 112, "recruitmentCost": 600 },

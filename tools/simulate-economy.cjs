@@ -20,10 +20,11 @@ function simulate(routeId, scenarioId, difficulty = 'normal') {
   let cash = opening.cash, employees = opening.employees, benches = opening.benches;
   let monthlyUtilities = opening.utilities, standardMultiplier = 1, commissionMultiplier = 1, consumablesReduction = 0;
   let totalSales = 0, totalRevenue = 0, totalCogs = 0, totalFixed = 0, totalInvestment = 0, totalDevelopment = 0;
+  let bankrupt = false, bankruptMonth = null;
   const developed = new Set(), stock = Object.fromEntries(Object.keys(config.products).map(id => [id, []]));
   const months = [];
 
-  for (let index = 0; index < 6; index++) {
+  for (let index = 0; index < 6 && !bankrupt; index++) {
     const month = index + 1, startCash = cash;
     const buys = route.investments.filter(p => p.month === month);
     const hires = route.hires.filter(m => m === month).length;
@@ -123,13 +124,16 @@ function simulate(routeId, scenarioId, difficulty = 'normal') {
       (totalInvestment - months.slice(0,-1).reduce((n,m)=>n+(m.investmentPaid||0),0)))) < 0.02, 'Cash ledger does not reconcile.');
     months.at(-1).investmentPaid = totalInvestment - months.slice(0,-1).reduce((n,m)=>n+m.investmentPaid,0);
     for (const k of Object.keys(used)) assert(used[k] <= limits[k] + 1e-8, 'Capacity exceeded.');
+    // A company that cannot cover its own month is insolvent; the run stops here.
+    if (cash < 0) { bankrupt = true; bankruptMonth = month; }
   }
   const inventoryCost = round(Object.values(stock).flat().reduce((n,p)=>n+p,0));
   const operatingProfit = round(totalRevenue - totalCogs - totalFixed - totalDevelopment);
   assert(Math.abs(cash + inventoryCost - opening.cash - (operatingProfit - totalInvestment)) < 0.02,
     'Operating profit, inventory and cash do not reconcile.');
+  if (bankrupt) assert(cash < 0, 'Bankruptcy must coincide with a negative cash balance.');
   return {route:routeId,scenario:scenarioId,difficulty,partsChannel:channel.id,partsChannelFactor:channelFactor,
-    totalSales,totalRevenue,totalCostOfGoodsSold:round(totalCogs),
+    bankrupt,bankruptMonth,totalSales,totalRevenue,totalCostOfGoodsSold:round(totalCogs),
     totalFixedCost:totalFixed,totalDevelopmentCost:totalDevelopment,totalInvestment,
     operatingProfit,endCash:round(cash),inventoryCost,cashAndInventoryGain:round(cash+inventoryCost-opening.cash),months};
 }
