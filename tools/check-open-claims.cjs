@@ -41,6 +41,30 @@ function scheduleGaps() {
   });
 }
 
+// The simulator states its own limits. Each limitation names mechanisms it says are absent, and a
+// probe that matches the simulator means that claim is no longer true. Every limitation must be
+// listed, so a new one cannot be added as unchecked prose.
+// Each limitation is either probed (a match means the claim is stale) or marked as not mechanically
+// checkable, with the reason. A silent third option would let one be added as unverified prose.
+const LIMITATION_CLAIMS = {
+  0: { unchecked: 'whether capacity accounting is dependency-aware is a property of the algorithm, not a name that can be searched for' },
+  1: { unchecked: 'whether owner design availability is the only separately checked resource is an algorithmic property' },
+  2: [
+    { item: 'lead times', probe: /leadTime|deliverySimHours/ },
+    { item: 'returns', probe: /\breturns\b(?!\s*[;(\[{])/ },
+  ],
+  3: { unchecked: 'the text is a compound claim about stock costing; partial probes would give false confidence' },
+  4: { unchecked: 'assumed prices for recipe variants is a property of the run, not a name' },
+  5: { unchecked: 'whether demand is validated is about the source of the numbers, not the code' },
+};
+
+function simulatorLimitations() {
+  const src = fs.readFileSync(path.join(root, 'tools', 'simulate-economy.cjs'), 'utf8');
+  const block = src.match(/limitations:\s*\[([\s\S]*?)\n\s*\],results\}/);
+  if (!block) return null;
+  return [...block[1].matchAll(/'([^']+)'/g)].map(m => m[1]);
+}
+
 function resolve(file, dotted) {
   let node = read(file);
   for (const key of dotted.split('.')) {
@@ -69,6 +93,35 @@ function run() {
     if (done) stale.push(item + ' — done, see ' + target[0] + ' ' + target[1]);
     else stillOpen.push(item);
   }
+  // The simulator's statement of its own limits, checked against the simulator.
+  const limitations = simulatorLimitations();
+  assert(limitations, 'could not read the simulator limitations');
+  const unlisted = limitations.map((_, i) => i).filter(i => !(i in LIMITATION_CLAIMS));
+  assert.equal(unlisted.length, 0,
+    'limitations that are neither probed nor marked uncheckable, so nothing notices when they stop being true: ' + unlisted.map(i => '#' + (i + 1)).join(', '));
+  // Probe the simulator, not the sentence doing the claiming: the words in a limitation would
+  // otherwise match the probe for that limitation and report it as stale.
+  const simSrc = fs.readFileSync(path.join(root, 'tools', 'simulate-economy.cjs'), 'utf8')
+    .replace(/limitations:\s*\[[\s\S]*?\n\s*\],results\}/, 'limitations: [],results}');
+  let limitationsUnchecked = 0;
+  for (const [index, spec] of Object.entries(LIMITATION_CLAIMS)) {
+    const text = limitations[Number(index)] || '';
+    if (!Array.isArray(spec)) { limitationsUnchecked++; continue; }
+    let ran = 0;
+    for (const c of spec) {
+      // Only judge a claim the limitation actually makes. The match is case-insensitive because the
+      // prose capitalises the first word: a case mismatch would skip the probe silently.
+      if (!text.toLowerCase().includes(c.item.toLowerCase())) continue;
+      if (c.probe.test(simSrc)) stale.push('simulate-economy.cjs limitation #' + (Number(index) + 1) + ' says ' + c.item + ' is not simulated, but it is');
+      else stillOpen.push('simulate-economy.cjs limitation #' + (Number(index) + 1) + ': ' + c.item);
+      ran++;
+    }
+    // A probe that never ran is a probe that proves nothing.
+    assert.equal(ran, spec.length,
+      'limitation #' + (Number(index) + 1) + ': a probe was skipped because the item name is not in the limitation text');
+    assert(ran > 0, 'limitation #' + (Number(index) + 1) + ': no probes to run');
+  }
+
   // The schedule's own gap list, resolved against the economy data it describes.
   const scheduleClaims = scheduleGaps();
   for (const c of scheduleClaims) {
@@ -84,6 +137,9 @@ function run() {
     itemsStillOpen: stillOpen.length,
     itemsWithoutResolver: Object.values(RESOLVERS).filter(v => v === null).length,
     scheduleGapsChecked: scheduleClaims.length,
+    limitationsChecked: limitations.length,
+    limitationsProbed: Object.values(LIMITATION_CLAIMS).filter(Array.isArray).length,
+    limitationsUnchecked,
     stillOpen,
     note: 'a pending list is unverifiable prose unless each entry names what would resolve it',
   };
