@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "status": "candidate",
+  "objective": "完成整个游戏的数值以及玩法设计",
+  "method": "每一项都指向实际存在的数值文件与可运行的校验命令；标为完成的项由 check:audit 逐条核实文件存在且命令已注册。标为待定的项必须写明阻塞它的具体决定。",
+  "areas": [
+    {
+      "id": "opening_difficulty",
+      "zh": "开局资源与三档难度",
+      "state": "complete",
+      "files": [
+        "design/economy-candidate.json"
+      ],
+      "checker": "check:difficulty",
+      "note": "三档通过现金、账期额度、场地费用与采购条款区分，雇员人数拉平；难度顺序由校验守住"
+    },
+    {
+      "id": "unit_economics",
+      "zh": "单台收益与定价",
+      "state": "complete",
+      "files": [
+        "design/balance.json",
+        "design/economy-candidate.json"
+      ],
+      "checker": "check:design",
+      "note": "四条样机的配件、工时、成本与售价；客户预算上限作为硬性价格天花板"
+    },
+    {
+      "id": "procurement",
+      "zh": "采购渠道与账期",
+      "state": "complete",
+      "files": [
+        "design/supplier-system.json"
+      ],
+      "checker": "check:suppliers",
+      "note": "零售、经销、预约批次三档，含 MOQ、价格系数与账期月数"
+    },
+    {
+      "id": "customers",
+      "zh": "客户与订单",
+      "state": "complete",
+      "files": [
+        "design/customer-model.json"
+      ],
+      "checker": "check:customers",
+      "note": "六个客户原型，含预算、硬性门槛、价格接受斜率与预付定金比例"
+    },
+    {
+      "id": "evaluation",
+      "zh": "产品评价六维",
+      "state": "complete",
+      "files": [
+        "design/evaluation.json",
+        "design/finish-options.json"
+      ],
+      "checker": "check:evaluation",
+      "note": "spec §6.2 要求的用途、性能、温度、噪声、外观、成本全部有分"
+    },
+    {
+      "id": "design_flow",
+      "zh": "固定设计流程七步",
+      "state": "complete",
+      "files": [
+        "design/design-flow.json"
+      ],
+      "checker": "check:flow",
+      "note": "spec §6.1 的七步各自映射到产能、工时字段与费用来源，字段完备性由校验守住"
+    },
+    {
+      "id": "reliability",
+      "zh": "故障与返工",
+      "state": "complete",
+      "files": [
+        "design/reliability-model.json"
+      ],
+      "checker": "check:reliability",
+      "note": "按配件版本、运行条件与玩家质检决定故障率，测试台工时决定故障在哪一层被发现"
+    },
+    {
+      "id": "market_events",
+      "zh": "市场事件",
+      "state": "complete",
+      "files": [
+        "design/market-events.json"
+      ],
+      "checker": "check:events",
+      "note": "spec §7.2 要求的月份 3—4 有预兆且结果不确定的市场变化"
+    },
+    {
+      "id": "investments",
+      "zh": "发展投资",
+      "state": "complete",
+      "files": [
+        "design/economy-candidate.json"
+      ],
+      "checker": "check:investments",
+      "note": "四项投资逐项验证回报率不低于 1.0"
+    },
+    {
+      "id": "demo_schedule",
+      "zh": "逐月内容与教学",
+      "state": "complete",
+      "files": [
+        "design/demo-schedule.json"
+      ],
+      "checker": "check:schedule",
+      "note": "六个月各自的阶段、教学、解锁与内容；§7.1 五个教学科目全部落在第 1—2 月"
+    },
+    {
+      "id": "era_trends",
+      "zh": "十五年年代节奏",
+      "state": "complete",
+      "files": [
+        "design/era-trends.json"
+      ],
+      "checker": "check:era",
+      "note": "2016—2030 的需求、成本与售价指数，逐年标注依据等级"
+    },
+    {
+      "id": "full_game_run",
+      "zh": "全程推演",
+      "state": "complete",
+      "files": [
+        "design/era-trends.json"
+      ],
+      "checker": "check:fullgame",
+      "note": "用年代指数跑完 15 年，最优路线翻转三次，后期无失控增长"
+    },
+    {
+      "id": "calibration_guard",
+      "zh": "标定保护",
+      "state": "complete",
+      "files": [
+        "design/balance-baseline.json"
+      ],
+      "checker": "baseline:diff",
+      "note": "54 组运行、3 档亏损月数、4 项投资边际、4 个故障率、15 年利润全部冻结"
+    },
+    {
+      "id": "route_rules",
+      "zh": "路线收益规则三选二",
+      "state": "pending_decision",
+      "blockedBy": "四条已确认规则无法同时成立：精品的总利润、产能约束、单台利润优势只能取二。见 docs/design-candidates.md 4.2",
+      "decidedBy": "用户"
+    },
+    {
+      "id": "optimal_pricing",
+      "zh": "是否把现价抬到最优价",
+      "state": "pending_decision",
+      "blockedBy": "四个样机现价均低于最优价 10%—16%，抬价后三条规则仍成立，但困难档可承受亏损月数从 1.2 升到 2.4，需要连带重标难度",
+      "decidedBy": "用户"
+    },
+    {
+      "id": "hard_unlock",
+      "zh": "困难档量产与混合的解锁条件",
+      "state": "pending_decision",
+      "blockedBy": "候选为口碑阈值、现金阈值、月份门槛或完成 N 台高定；当前两条路线被标记为开局锁定且不参与平衡判定",
+      "decidedBy": "用户"
+    },
+    {
+      "id": "reputation_growth",
+      "zh": "口碑高于 1 是否放大客群",
+      "state": "pending_decision",
+      "blockedBy": "实测放大后量产在简单档追平混合，混合优势从 5885 缩到 37；建议只放大高定客群",
+      "decidedBy": "用户"
+    },
+    {
+      "id": "adaptive_policy",
+      "zh": "路线是否改为自适应生产策略",
+      "state": "pending_decision",
+      "blockedBy": "保留量产卖不完与让产能投资回本不可兼得；固定排产计划下没有任何路线受产能约束",
+      "decidedBy": "用户"
+    },
+    {
+      "id": "catalog_2021_2030",
+      "zh": "2021—2030 硬件目录",
+      "state": "pending_external",
+      "blockedBy": "目录只覆盖到 2020-12，第二阶段的型号、系列与上市时间尚无资料",
+      "decidedBy": "后续资料阶段"
+    },
+    {
+      "id": "shipment_verification",
+      "zh": "2017—2030 出货量核实",
+      "state": "pending_external",
+      "blockedBy": "本轮所有外部抓取被网络策略拒绝，只有 2016 年是可核实的市场锚点",
+      "decidedBy": "一次可联网的核实"
+    }
+  ],
+  "outOfScope": [
+    {
+      "id": "art",
+      "zh": "美术气质与资产",
+      "reason": "由美术工作流负责，不属于数值策划"
+    },
+    {
+      "id": "brands",
+      "zh": "品牌命名与登记",
+      "reason": "由品牌与目录工作流负责"
+    },
+    {
+      "id": "platform",
+      "zh": "竖屏布局、微信平台与存档",
+      "reason": "由工程工作流负责"
+    },
+    {
+      "id": "interaction",
+      "zh": "工作台手工操作与几何",
+      "reason": "由交互与美术工作流负责"
+    }
+  ]
+}
