@@ -50,6 +50,35 @@ function escapeRateFor(product) {
   return qc.escapeRateWithoutTesting;
 }
 
+// A model cannot be built before its parts exist, and a part that reaches the market mid-month
+// cannot support a full month of production. The second half is what
+// workbench.scheduleRules.lateReleaseCannotUseFullMonthCapacity requires.
+const DAYS_IN_MONTH = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+const DEMO_FIRST_MONTH = 1;
+function releaseCapacityFactor(productId, month) {
+  const recipe = recipes.get(productId);
+  if (!recipe) return 1;
+  const ids = [];
+  for (const key of ['cpu', 'motherboard', 'gpu', 'psu', 'cooler', 'case', 'systemDrive', 'workDrive']) {
+    const v = recipe[key];
+    if (v) ids.push(typeof v === 'string' ? v : v.id);
+  }
+  for (const key of ['ram', 'storage']) for (const e of recipe[key] || []) ids.push(e.id);
+  let latest = null;
+  for (const id of ids) {
+    const date = byPart.get(id)?.availability?.gameDate;
+    if (date && (!latest || date > latest)) latest = date;
+  }
+  if (!latest) return 1;
+  const [year, mon, day] = latest.split('-').map(Number);
+  // Only the demo window is modelled; anything arriving after it never becomes available in six months.
+  if (year !== 2016 || mon < DEMO_FIRST_MONTH || mon > 6) return 0;
+  if (mon > month) return 0;      // the part is not on the market yet
+  if (mon < month) return 1;      // it arrived in an earlier month
+  const days = DAYS_IN_MONTH[mon - 1];
+  return Math.max(0, (days - day + 1) / days);   // arrives mid-month
+}
+
 // A scenario may scope its effect to a month window and to named categories.
 function partsCostFor(productId, scenario, month) {
   const base = recipes.get(productId).expectedPartsCost;
@@ -228,7 +257,10 @@ function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
     for (const [id, target] of Object.entries(route.monthlyProductionTargets[index])) {
       const product = products[id], recipe = recipes.get(id);
       assert(recipe, 'Scenario product must use an existing recipe.');
-      const count = product.kind === 'commission' ? Math.min(target, demand[id]) : target;
+      const want = product.kind === 'commission' ? Math.min(target, demand[id]) : target;
+      // A model whose parts arrive mid-month can only use the rest of that month.
+      const release = releaseCapacityFactor(id, month);
+      const count = release >= 1 ? want : Math.ceil(want * release);
       if (count === 0) continue;
       if (product.kind === 'standard' && !developed.has(id)) {
         const need = { labor: product.developmentLaborHours, owner: product.developmentLaborHours,
@@ -376,4 +408,4 @@ console.log(JSON.stringify(results.map(({route,scenario,totalSales,operatingProf
 return results;
 }
 if (require.main === module) runAll();
-module.exports = { simulate, runAll, config, channels, recipes, failureRateFor, partsCostFor };
+module.exports = { simulate, runAll, config, channels, recipes, failureRateFor, partsCostFor, releaseCapacityFactor };

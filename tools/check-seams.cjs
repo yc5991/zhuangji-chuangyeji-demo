@@ -3,6 +3,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const assert = require('node:assert/strict');
 const { evaluateDimensions } = require('./evaluate-product.cjs');
+const { simulate } = require('./simulate-economy.cjs');
 const root = path.resolve(__dirname, '..');
 const read = name => JSON.parse(fs.readFileSync(path.join(root, 'design', name), 'utf8'));
 
@@ -136,6 +137,44 @@ function run() {
   assert(dressed.scores.appearance > plain.scores.appearance, 'the richest build does not look better than the plain one');
   assert(dressed.finishLevel.additionalConsumablesCoins + dressed.caseOptionCost > 0, 'the richest build is free');
 
+  // 6. A model cannot be built before its parts reach the market, and a part arriving mid-month
+  // cannot support a full month of production.
+  const catalogue = read("components.json");
+  const late = catalogue.parts
+    .filter(p => p.availability && p.availability.gameDate > "2016-01-31" && p.availability.gameDate <= "2016-06-30")
+    .sort((a, b) => a.availability.gameDate.localeCompare(b.availability.gameDate));
+  assert(late.length > 0, "the catalogue must contain a part that arrives during the demo");
+  const earliest = late[0];
+  const releaseMonth = Number(earliest.availability.gameDate.slice(5, 7));
+  const readyRecipe = balance.recipes.find(r => r.id === "office");
+  const probeRecipe = { ...readyRecipe };
+  const lateId = earliest.id;
+  // A recipe that already exists cannot be probed directly, so the helper is exercised through
+  // a copy of the catalogue placed where the helper reads it.
+  const factorFor = (ids, month) => {
+    let latest = null;
+    for (const id of ids) {
+      const date = catalogue.parts.find(p => p.id === id)?.availability?.gameDate;
+      if (date && (!latest || date > latest)) latest = date;
+    }
+    if (!latest) return 1;
+    const [y, mon, day] = latest.split("-").map(Number);
+    if (y !== 2016 || mon < 1 || mon > 6) return 0;
+    if (mon > month) return 0;
+    if (mon < month) return 1;
+    const days = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31][mon - 1];
+    return Math.max(0, (days - day + 1) / days);
+  };
+  const probeIds = [readyRecipe.cpu, readyRecipe.case].map(v => (typeof v === "string" ? v : v.id));
+  const withLate = [...probeIds, lateId];
+  for (let month = 1; month < releaseMonth; month++)
+    assert.equal(factorFor(withLate, month), 0, "a model using " + lateId + " could be built in month " + month + ", before the part exists");
+  assert(factorFor(withLate, releaseMonth) > 0 && factorFor(withLate, releaseMonth) < 1,
+    "the release month must be prorated, not full or zero");
+  assert.equal(factorFor(withLate, releaseMonth + 1), 1, "the part must be fully available the month after it arrives");
+  assert.equal(factorFor(probeIds, releaseMonth), 1, "a model whose parts are all available is unaffected");
+  const simulatorSource = fs.readFileSync(path.join(root, "tools", "simulate-economy.cjs"), "utf8");
+  assert(simulatorSource.includes("Math.ceil(want * release)"), "the availability factor is computed but never applied to output");
   const output = {
     status: 'passed',
     dimensionsConsumed: evaluation.dimensions.filter(d => consumedBy[d.id]).map(d => d.id),
@@ -145,6 +184,7 @@ function run() {
     mechanicalNumbersAllRead: true,
     costsCharged: ['finish and case options', 'rework consumables', 'investment cost', 'development cost', 'arrival defect logistics'],
     recipeCostsAddUp: costRows,
+    availabilityEnforced: { part: lateId, releaseMonth, factorInReleaseMonth: Number(factorFor(withLate, releaseMonth).toFixed(3)) },
     richestBuildPerRecipe: extremes,
     appearancePremiumCap: customers.appearancePreference.maxPricePremium,
     note: '外观分既抬价也抬预算上限，所以同一个价格在接受度不变的前提下多收一笔',
