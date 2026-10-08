@@ -87,7 +87,9 @@ function evaluate(plan, date = '2016-06-30', demand = {}) {
   const cpuCooling = cooler.game.coolingUnits * profile.cooling;
   const caseCooling = (chassis.game.caseCoolingUnits + Math.max(0, fanCount - chassis.game.defaultFans) * balance.additionalFanCoolingUnits +
     (cageRemoved ? chassis.game.cageRemovalCoolingBonusUnits || 0 : 0)) * profile.cooling;
-  const caseHeat = cpu.game.heatUnits + (gpu?.game.heatUnits || 0) + balance.thermal.mainboardHeatUnits;
+  // Fans move air but also draw power, and that power ends up as heat inside the case.
+  const caseHeat = cpu.game.heatUnits + (gpu?.game.heatUnits || 0) + balance.thermal.mainboardHeatUnits +
+    fanCount * balance.fanHeatUnits;
   const coolingRatio = Math.min(1, cpuCooling / cpu.game.heatUnits, caseCooling / caseHeat);
   const thermalStable = coolingRatio >= balance.thermal.stabilityRequiresCoolingRatio;
   if (!thermalStable) warnings.push('THERMAL_TUNING_REQUIRED');

@@ -212,6 +212,13 @@ function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
     // Appearance depends only on the product definition, so it is worked out once a month.
     const appearance = {};
     for (const id of Object.keys(products)) {
+      // An incompatible build cannot be assembled at all, whatever the customer wants.
+      const blocked = evaluate(recipes.get(id)).blocked;
+      if (blocked.length) {
+        appearance[id] = { blocked: true, score: 0, premium: 0, cost: 0, hours: 0, price: 0 };
+        if (!notices.includes('BUILD_BLOCKED:' + id)) notices.push('BUILD_BLOCKED:' + id);
+        continue;
+      }
       const report = evaluateDimensions(recipes.get(id), {
         targetUseCase: products[id].targetUseCase || 'office',
         finishLevelId: products[id].finishLevelId || 'standard',
@@ -231,6 +238,8 @@ function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
     // Reachable orders per product, then reduced by fit, price acceptance and reputation.
     const demand = {}, orders = {};
     for (const id of Object.keys(products)) {
+      // A blocked build reaches no customer, so no order exists for it at all.
+      if (appearance[id]?.blocked) { demand[id] = 0; orders[id] = 0; continue; }
       const inWindow = month >= (scenario.fromMonth ?? 1) && month <= (scenario.throughMonth ?? 6);
       const caps = overrides.demandCaps || config.companyDemandCaps;
       const pool = Math.round(caps[id][index] * (inWindow ? scenario.demandMultiplier : 1));
@@ -263,6 +272,8 @@ function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
     for (const [id, target] of Object.entries(route.monthlyProductionTargets[index])) {
       const product = products[id], recipe = recipes.get(id);
       assert(recipe, 'Scenario product must use an existing recipe.');
+      // The plan cannot be carried out on a machine that cannot be assembled.
+      if (appearance[id]?.blocked) continue;
       const want = product.kind === 'commission' ? Math.min(target, demand[id]) : target;
       // A model whose parts arrive mid-month can only use the rest of that month.
       const release = releaseCapacityFactor(id, month);

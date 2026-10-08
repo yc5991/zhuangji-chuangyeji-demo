@@ -121,6 +121,18 @@ function run() {
     "a total miss must cost more reputation than a late delivery");
   assert(reputation.lateMeetingRequirements < reputation.onTimeMeetingRequirements,
     "a late delivery must cost more reputation than an on-time one");
+  // 3d. An incompatible build must not be produced or sold, whatever the plan says.
+  assert(simulator.includes("evaluate(recipes.get(id)).blocked"), "the simulator never asks whether a recipe is compatible");
+  const simulatorText = fs.readFileSync(path.join(root, "tools", "simulate-economy.cjs"), "utf8");
+  const GUARD = "appearance[id]?.blocked";
+  assert(simulatorText.includes(GUARD),
+    "incompatibility is checked but never stops demand or production");
+  // The build loop and the demand loop must both skip a blocked machine.
+  const blockGuards = simulatorText.split(GUARD).length - 1;
+  assert(blockGuards >= 2, "a blocked machine is skipped in only " + blockGuards + " place(s); both demand and production must skip it");
+  // Fan heat is part of the thermal sum, so it cannot be a value nobody reads.
+  const designText = fs.readFileSync(path.join(root, "tools", "check-design.cjs"), "utf8");
+  assert(designText.includes("balance.fanHeatUnits"), "fanHeatUnits is defined but never enters the thermal sum");
   // 4. Scores must stay inside the declared range even at the richest build.
   const everyOption = Object.fromEntries(caseOptions.groups.map(g => {
     const richest = [...g.options].sort((a, b) => b.appearancePoints - a.appearancePoints || b.coolingMultiplier - a.coolingMultiplier)[0];
@@ -197,6 +209,7 @@ function run() {
     fullGameModelsCheckedElsewhere: FULL_GAME_MODELS,
     mechanicalNumbersAllRead: true,
     hardGatesEnforced: true,
+    blockedBuildsRefused: blockGuards,
     reputationOutcomes: outcomes,
     costsCharged: ['finish and case options', 'rework consumables', 'investment cost', 'development cost', 'arrival defect logistics'],
     recipeCostsAddUp: costRows,
