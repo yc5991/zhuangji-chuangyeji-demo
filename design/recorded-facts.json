@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "status": "recorded",
+  "note": "Measured design facts the checks assert against, so a confirmed decision cannot be reversed by accident. apply-decisions.cjs rewrites this file when the decisions land.",
+  "hireEffectNormalDifficulty": {
+    "note": "Profit change from hiring one worker in month one on normal difficulty, per route.",
+    "values": {
+      "boutique": -8400,
+      "scale": -8400,
+      "mixed": -4016
+    }
+  },
+  "hireEffectHardModeLateHire": {
+    "note": "Profit change from hiring in month six on hard mode for the boutique route. Negative before the decisions land, positive afterwards, because the longer commission hours make a premium commission capacity limited.",
+    "value": 0
+  }
+}

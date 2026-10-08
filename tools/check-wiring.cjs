@@ -31,6 +31,7 @@ const WHOLE_FILES = {
   'design-flow.json': 'step mapping, guarded by check-flow',
   'evaluation.json': 'dimension definitions, guarded by check-seams and check-evaluation',
   'art-runtime.json': 'owned by the art workstream',
+  'recorded-facts.json': 'measured design facts the checks assert against, not rules to implement',
 };
 
 // Individual numbers inside otherwise mechanical files that are statements rather than mechanics.

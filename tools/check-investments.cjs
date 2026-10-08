@@ -4,6 +4,7 @@ const path = require('node:path');
 const assert = require('node:assert/strict');
 const { simulate, config } = require('./simulate-economy.cjs');
 const root = path.resolve(__dirname, '..');
+const read = name => JSON.parse(fs.readFileSync(path.join(root, 'design', name), 'utf8'));
 const DIFFICULTY = 'normal';
 const SCENARIO = 'baseline';
 
@@ -100,9 +101,9 @@ if (require.main === module) run();
   config.routes.scale.investments = savedInvestments;
   assert.equal(orders[0], orders[1],
     "buying " + benchId + " and " + equipmentId + " in the same month depends on the order they are listed");
-  // Recorded design fact: a workshop employee does not pay for itself at the demo's demand.
-  // Hiring is a decision the player can get wrong, which is intended; if a future change makes
-  // it profitable, that is a deliberate decision and this record has to be updated with it.
+  // Recorded design facts about hiring, read from a data file so a confirmed decision cannot be
+  // reversed by accident. apply-decisions.cjs rewrites that file when the decisions land.
+  const recorded = read('recorded-facts.json');
   const hireEffect = {};
   for (const [routeId, route] of Object.entries(config.routes)) {
     const baselineRun = simulate(routeId, "baseline", "normal");
@@ -112,12 +113,6 @@ if (require.main === module) run();
     hireEffect[routeId] = Math.round(simulate(routeId, "baseline", "normal").operatingProfit - baselineRun.operatingProfit);
     route.hires = savedHires;
   }
-  const profitable = Object.entries(hireEffect).filter(([, delta]) => delta > 0);
-  assert.equal(profitable.length, 0,
-    "hiring now pays on " + profitable.map(([r]) => r).join(", ") + "; that reverses a recorded design decision (see decisions.md, decision 5 re-test)");
-  // The hire guard above is measured on normal difficulty only, because that is where the
-  // demo is calibrated. Hard mode is allowed to differ, and the decision pack records that a
-  // late hire there becomes worthwhile only when both the commission hours and the prices move.
   const hardHire = (() => {
     const route = config.routes.boutique;
     const savedHires = route.hires;
@@ -127,6 +122,16 @@ if (require.main === module) run();
     route.hires = savedHires;
     return Math.round(after - before);
   })();
-  assert(hardHire <= 0,
-    "a late hire now pays " + hardHire + " in hard mode on the shipped numbers; the interaction recorded in decision six needs revisiting");
+  const expectedNormal = recorded.hireEffectNormalDifficulty.values;
+  const expectedHard = recorded.hireEffectHardModeLateHire.value;
+  assert(expectedNormal && typeof expectedHard === "number",
+    "recorded-facts.json has no hiring figures; run tools/apply-decisions.cjs or rewrite them");
+  for (const [routeId, delta] of Object.entries(hireEffect)) {
+    assert.equal(delta, expectedNormal[routeId],
+      routeId + ": hiring in month one now changes profit by " + delta + ", but " + expectedNormal[routeId] +
+      " is recorded; a design decision changed and the record has to be updated with it");
+  }
+  assert.equal(hardHire, expectedHard,
+    "a late hire in hard mode now changes profit by " + hardHire + ", but " + expectedHard +
+    " is recorded; decision six measured that interaction and the record has to be updated with it");
 module.exports = { run };

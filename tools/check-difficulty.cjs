@@ -65,13 +65,21 @@ function run() {
   assert(tolerance.normal.months > tolerance.hard.months,
     `normal absorbs ${tolerance.normal.months} losing months against hard's ${tolerance.hard.months}`);
 
-  // Bankruptcy must get more likely as difficulty rises, never less.
+  // Bankruptcy must get more likely as difficulty rises, never less. Hard mode locks most routes
+  // at the start, so counting every combination would compare three routes against one and make
+  // hard look safest simply for having less to lose. Only routes every tier offers are compared.
+  const sharedRoutes = Object.keys(config.routes).filter(route =>
+    ORDER.every(difficulty => (config.opening[difficulty].startingRoutes || []).includes(route)));
   const bankruptcies = {};
   for (const difficulty of ORDER) {
-    bankruptcies[difficulty] = results.filter(x => x.difficulty === difficulty && x.bankrupt && !x.gatedAtStart).length;
+    bankruptcies[difficulty] = results.filter(x => x.difficulty === difficulty && x.bankrupt &&
+      !x.gatedAtStart && sharedRoutes.includes(x.route)).length;
   }
   assert(bankruptcies.easy <= bankruptcies.normal, `easy goes bankrupt ${bankruptcies.easy} times against normal's ${bankruptcies.normal}`);
   assert(bankruptcies.normal <= bankruptcies.hard, `normal goes bankrupt ${bankruptcies.normal} times against hard's ${bankruptcies.hard}`);
+  // Every combination, gated or not, is still reported so nothing hides behind the comparison.
+  const allBankruptcies = Object.fromEntries(ORDER.map(difficulty => [difficulty,
+    results.filter(x => x.difficulty === difficulty && x.bankrupt && !x.gatedAtStart).length]));
 
   // The confirmed rule is that mixed earns the most of the three routes. Reputation above one
   // may or may not grow the reachable pool, and that setting can break the rule, so every
@@ -104,6 +112,8 @@ function run() {
     inversions: inversions.length,
     lossToleranceMonths: tolerance,
     bankruptcyCounts: bankruptcies,
+    bankruptcyCountsAllRoutes: allBankruptcies,
+    routesComparedAcrossTiers: sharedRoutes,
     gatedRoutes: Object.fromEntries(ORDER.map(d => [d, config.opening[d].startingRoutes])),
     routeRuleByReputationSetting: routeRule,
     reputationSettingsBreakingMixedHighest: breaking,
