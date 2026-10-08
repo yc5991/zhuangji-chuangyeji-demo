@@ -17,10 +17,16 @@ const META_TOOLS = ['check-package.cjs', 'balance-baseline.cjs', 'preview-propos
 // Files owned by another workstream; reported, not enforced.
 const OWNED_ELSEWHERE = ['art-runtime.json'];
 
+// The research files, reached through a computed path rather than a literal one, so a checker that
+// reads the catalogue directory covers all four.
+const CATALOG_FILES = ['cpu-motherboard.json', 'gpu.json', 'memory-storage.json', 'structural.json'];
+
 function designReads(src) {
   const found = new Set();
   for (const m of src.matchAll(/read\(\s*'([^']+\.json)'/g)) found.add(path.basename(m[1]));
-  for (const m of src.matchAll(/read\(\s*path\.join\(\s*'([^']+)'/g)) found.add(m[1].startsWith('design') ? '(catalog)' : '(dir)');
+  // A computed path into the catalogue directory covers every research file in it.
+  if (/design[\\/]catalog-2016-2020/.test(src) || /read\(\s*path\.join\(\s*'design/.test(src))
+    for (const name of CATALOG_FILES) found.add('catalog-2016-2020/' + name);
   // Any mention of design/<file>.json counts, whatever wrapper it uses.
   for (const m of src.matchAll(/design[\\/]([a-z0-9-]+\.json)/g)) found.add(m[1]);
   return found;
@@ -30,7 +36,18 @@ function importsSimulator(src) {
 }
 
 function run() {
-  const designFiles = fs.readdirSync(path.join(root, 'design')).filter(f => f.endsWith('.json'));
+  // Walk the whole tree. Reading only the top level left the four research files under
+  // design/catalog-2016-2020 out of the count entirely, so the check was reporting coverage of
+  // twenty-seven files when there were thirty-one.
+  const designFiles = [];
+  const walkDesign = dir => {
+    for (const entry of fs.readdirSync(path.join(root, 'design', dir), { withFileTypes: true })) {
+      const rel = dir ? dir + '/' + entry.name : entry.name;
+      if (entry.isDirectory()) walkDesign(rel);
+      else if (entry.name.endsWith('.json')) designFiles.push(rel);
+    }
+  };
+  walkDesign('');
   const toolNames = fs.readdirSync(toolsDir).filter(f => f.endsWith('.cjs'));
   const sources = Object.fromEntries(toolNames.map(t => [t, fs.readFileSync(path.join(toolsDir, t), 'utf8')]));
 
