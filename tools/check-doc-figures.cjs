@@ -100,7 +100,8 @@ const COUNT_CLAIMS = [
 function run() {
   const counts = liveCounts();
   const countProblems = [];
-  for (const doc of fs.readdirSync(path.join(root, 'docs')).filter(f => f.endsWith('.md') && f !== 'doc-figures.md')) {
+  const COUNT_EXEMPT = new Set(['doc-figures.md', 'check-counts.md']);
+  for (const doc of fs.readdirSync(path.join(root, 'docs')).filter(f => f.endsWith('.md') && !COUNT_EXEMPT.has(f))) {
     const text = fs.readFileSync(path.join(root, 'docs', doc), 'utf8');
     for (const [re, kind] of COUNT_CLAIMS) {
       for (const m of text.matchAll(re)) {
@@ -120,8 +121,9 @@ function run() {
   const live = liveFigures();
   const values = Object.values(live);
   const flagged = [];
-  // This file's own documentation quotes the old values as examples of what it catches.
-  const EXEMPT_DOCS = new Set(['doc-figures.md']);
+  // These two document the checks themselves and quote old values as examples of what is caught,
+  // which is the one case where a stale number is the point rather than a mistake.
+  const EXEMPT_DOCS = new Set(['doc-figures.md', 'check-counts.md']);
   const docs = fs.readdirSync(path.join(root, 'docs'))
     .filter(f => f.endsWith('.md') && !EXEMPT_DOCS.has(f));
   for (const doc of docs) {
