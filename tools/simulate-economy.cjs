@@ -93,7 +93,8 @@ const round = n => Math.round(n * 100) / 100;
 function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
   const opening = config.opening[difficulty];
   const route = { ...config.routes[routeId], ...overrides };
-  const scenario = config.scenarios[scenarioId];
+  // A caller may supply a synthetic scenario, which is how the fifteen-year pacing run works.
+  const scenario = overrides.scenario || config.scenarios[scenarioId];
   const channel = channels.get(route.partsChannel);
   assert(channel, `Route ${routeId} must name a procurement channel.`);
   const channelFactor = channel.nominalUnitPriceFactor;
@@ -164,7 +165,7 @@ function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
     for (const [id, lots] of Object.entries(stock)) {
       while (lots.length && demand[id] > 0) {
         const cost = lots.shift();
-        const price = config.products[id].salePrice;
+        const price = Math.round(config.products[id].salePrice * (scenario.priceIndex ?? 1));
         cash += price; cashFromSales += price; revenue += price; cogs += cost; demand[id]--;
         sold[id] = (sold[id] || 0) + 1;
       }
@@ -203,8 +204,10 @@ function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
           opening.supplierTermsFactor + recipe.directCostCoins -
           (product.kind === 'commission' ? consumablesReduction : standardConsumablesReduction));
         // A commissioned build is paid in advance, so the deposit arrives before the parts are bought.
+        // The era price index moves the asking price with the market, not only the parts bill.
+        const price = Math.round(product.salePrice * (scenario.priceIndex ?? 1));
         const deposit = product.kind === 'commission'
-          ? Math.round(product.salePrice * (depositFraction[productSegment[id]] || 0)) : 0;
+          ? Math.round(price * (depositFraction[productSegment[id]] || 0)) : 0;
         if (deposit) { cash += deposit; depositsTaken += deposit; totalDeposits += deposit; }
         // Buy on account while credit remains; otherwise the parts must be paid for in cash.
         const outstanding = payables.reduce((n, p) => n + p.amount, 0);
@@ -213,7 +216,7 @@ function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
         } else {
           // A commissioned build is self-funding: the deposit is already in cash and the balance
           // arrives on delivery, so only the shortfall has to come out of the workshop's own money.
-          const receivable = product.kind === 'commission' ? product.salePrice - deposit : 0;
+          const receivable = product.kind === 'commission' ? price - deposit : 0;
           if (cash + receivable < fixed + cost) {
             // The order is not taken after all, so the advance goes back to the customer.
             if (deposit) { cash -= deposit; depositsTaken -= deposit; totalDeposits -= deposit; }
@@ -225,13 +228,13 @@ function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
         // Consumables and any replaced part are real money; an escaped defect refunds the sale.
         const reworkCost = failRate * (reliability.rework.consumablesCoins +
           reliability.rework.partReplacementChance * recipe.expectedPartsCost);
-        const escapeCost = failRate * escapeRateFor(product) * product.salePrice;
+        const escapeCost = failRate * escapeRateFor(product) * price;
         cash -= reworkCost + escapeCost;
         reworkTotal += reworkCost + escapeCost;
         procurement += cost; built[id] = (built[id] || 0) + 1;
         if (demand[id] > 0) {
-          const balance = product.salePrice - deposit;
-          cash += balance; cashFromSales += balance; revenue += product.salePrice; cogs += cost; demand[id]--;
+          const balance = price - deposit;
+          cash += balance; cashFromSales += balance; revenue += price; cogs += cost; demand[id]--;
           sold[id] = (sold[id] || 0) + 1;
         } else stock[id].push(cost);
       }
