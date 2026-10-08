@@ -16,6 +16,7 @@ for (const [segId, seg] of Object.entries(customerModel.segments)) for (const p 
 // Each archetype is eligible for exactly one recipe, so orders can be attributed per product.
 const { evaluate } = require('./check-design.cjs');
 const { evaluateDimensions } = require('./evaluate-product.cjs');
+const { satisfies } = require('./check-customers.cjs');
 // Parts cost by category, so an event that names a category only moves the builds exposed to it.
 const partsCatalog = read('components.json');
 const byPart = new Map(partsCatalog.parts.map(p => [p.id, p]));
@@ -103,7 +104,12 @@ function fitOf(productId, recipe) {
   if (!members.length) return 1;
   const report = evaluate(recipe);
   const weight = members.reduce((n, a) => n + a.weight, 0);
-  return members.reduce((n, a) => n + a.weight * clamp(report.scores[a.fitUseCase] / a.expectedScore, 0, 1), 0) / weight;
+  return members.reduce((n, a) => {
+    // Scoring high is not enough: a machine that fails an archetype's hard gates never reaches
+    // that customer, so its weight contributes nothing.
+    if (!satisfies(recipe, a.requirements)) return n;
+    return n + a.weight * clamp(report.scores[a.fitUseCase] / a.expectedScore, 0, 1);
+  }, 0) / weight;
 }
 
 // Price acceptance: a segment slope either side of the archetype's market reference price.
@@ -352,8 +358,12 @@ function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
     const rep = customerModel.reputation;
     const reputationBefore = reputation;
     const missedCommitment = notices.some(n => n.startsWith('CAPACITY_LIMIT') || n.startsWith('PROCUREMENT_CASH_LIMIT') || n.startsWith('DEVELOPMENT_BLOCKED'));
-    reputation = clamp(reputation + (missedCommitment ? rep.deliveredMissingRequirement : rep.onTimeMeetingRequirements),
-      rep.floor, rep.ceiling);
+    // Three outcomes, not two: a month that delivers some of what it committed to is late rather
+    // than missed, and late costs less reputation than letting a customer down completely.
+    const lateCommitment = missedCommitment && servedTotal > 0;
+    const reputationDelta = lateCommitment ? rep.lateMeetingRequirements
+      : missedCommitment ? rep.deliveredMissingRequirement : rep.onTimeMeetingRequirements;
+    reputation = clamp(reputation + reputationDelta, rep.floor, rep.ceiling);
     const outstandingNow = round(payables.reduce((n, p) => n + p.amount, 0));
     months.push({month,startCash:round(startCash),endCash:round(cash),sold,built,revenue:round(revenue),
       costOfGoodsSold:round(cogs),procurement:round(procurement),fixedCost:fixed,developmentCost:development,

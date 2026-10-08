@@ -107,6 +107,20 @@ function run() {
       recipe.id + ": the parts add up to " + sum + " but the recipe declares " + recipe.expectedPartsCost);
     costRows.push({ recipe: recipe.id, partsSum: sum, declared: recipe.expectedPartsCost, directCost: recipe.directCostCoins });
   }
+  // 3c. Hard gates and every reputation outcome must actually be reachable in play.
+  assert(simulator.includes("satisfies("),
+    "the simulator never checks an archetype hard gate, so a failed build still sells");
+  const reputation = customers.reputation;
+  const outcomes = ["onTimeMeetingRequirements", "lateMeetingRequirements", "deliveredMissingRequirement"];
+  for (const key of outcomes) {
+    assert(typeof reputation[key] === "number", "the reputation model must define " + key);
+    assert(simulator.includes("rep." + key), "the reputation outcome " + key + " is defined but never applied");
+  }
+  // A late delivery must sit between an on-time one and a total miss, or the middle state is pointless.
+  assert(reputation.deliveredMissingRequirement < reputation.lateMeetingRequirements,
+    "a total miss must cost more reputation than a late delivery");
+  assert(reputation.lateMeetingRequirements < reputation.onTimeMeetingRequirements,
+    "a late delivery must cost more reputation than an on-time one");
   // 4. Scores must stay inside the declared range even at the richest build.
   const everyOption = Object.fromEntries(caseOptions.groups.map(g => {
     const richest = [...g.options].sort((a, b) => b.appearancePoints - a.appearancePoints || b.coolingMultiplier - a.coolingMultiplier)[0];
@@ -182,6 +196,8 @@ function run() {
     mechanicalModelsChecked: MECHANICAL,
     fullGameModelsCheckedElsewhere: FULL_GAME_MODELS,
     mechanicalNumbersAllRead: true,
+    hardGatesEnforced: true,
+    reputationOutcomes: outcomes,
     costsCharged: ['finish and case options', 'rework consumables', 'investment cost', 'development cost', 'arrival defect logistics'],
     recipeCostsAddUp: costRows,
     availabilityEnforced: { part: lateId, releaseMonth, factorInReleaseMonth: Number(factorFor(withLate, releaseMonth).toFixed(3)) },

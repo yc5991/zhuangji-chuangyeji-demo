@@ -314,12 +314,12 @@
       "sales": 0
     },
     "hard|demand_down_35|boutique": {
-      "profit": -4128.94,
-      "endCash": -2628.94,
-      "bankrupt": true,
-      "bankruptMonth": 3,
+      "profit": 7686.05,
+      "endCash": 9186.05,
+      "bankrupt": false,
+      "bankruptMonth": null,
       "gatedAtStart": false,
-      "sales": 2
+      "sales": 9
     },
     "hard|demand_down_35|scale": {
       "profit": -3200,
