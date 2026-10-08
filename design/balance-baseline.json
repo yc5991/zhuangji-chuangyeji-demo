@@ -1,0 +1,480 @@
+{
+  "note": "Frozen balance metrics. Run npm run baseline:diff after a change, and npm run baseline:update to accept the new numbers.",
+  "runs": {
+    "easy|baseline|boutique": {
+      "profit": 33479.04,
+      "endCash": 77279.04,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 15
+    },
+    "easy|baseline|scale": {
+      "profit": 40617.39,
+      "endCash": 94725.54,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 95
+    },
+    "easy|baseline|mixed": {
+      "profit": 45414.39,
+      "endCash": 118249.27,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 68
+    },
+    "easy|demand_down_35|boutique": {
+      "profit": 33479.04,
+      "endCash": 77279.04,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 15
+    },
+    "easy|demand_down_35|scale": {
+      "profit": 20083.5,
+      "endCash": 5322.54,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 62
+    },
+    "easy|demand_down_35|mixed": {
+      "profit": 44751.25,
+      "endCash": 113683.27,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 67
+    },
+    "easy|parts_up_10|boutique": {
+      "profit": 27496.08,
+      "endCash": 71296.08,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 15
+    },
+    "easy|parts_up_10|scale": {
+      "profit": 21305.45,
+      "endCash": 73377.47,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 95
+    },
+    "easy|parts_up_10|mixed": {
+      "profit": 28967.51,
+      "endCash": 100256.71,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 68
+    },
+    "easy|event_dram_rumour|boutique": {
+      "profit": 33479.04,
+      "endCash": 77279.04,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 15
+    },
+    "easy|event_dram_rumour|scale": {
+      "profit": 40617.39,
+      "endCash": 94725.54,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 95
+    },
+    "easy|event_dram_rumour|mixed": {
+      "profit": 45414.39,
+      "endCash": 118249.27,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 68
+    },
+    "easy|event_dram_mild|boutique": {
+      "profit": 31944.5,
+      "endCash": 75744.5,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 15
+    },
+    "easy|event_dram_mild|scale": {
+      "profit": 33766.92,
+      "endCash": 87753.96,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 95
+    },
+    "easy|event_dram_mild|mixed": {
+      "profit": 40350.75,
+      "endCash": 115774.67,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 68
+    },
+    "easy|event_dram_sharp|boutique": {
+      "profit": 30409.96,
+      "endCash": 74209.96,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 15
+    },
+    "easy|event_dram_sharp|scale": {
+      "profit": 26916.58,
+      "endCash": 80538.07,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 95
+    },
+    "easy|event_dram_sharp|mixed": {
+      "profit": 35287.07,
+      "endCash": 108121.95,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 68
+    },
+    "normal|baseline|boutique": {
+      "profit": 28328.64,
+      "endCash": 57128.64,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 15
+    },
+    "normal|baseline|scale": {
+      "profit": 31344.72,
+      "endCash": 41469.72,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 95
+    },
+    "normal|baseline|mixed": {
+      "profit": 37027.91,
+      "endCash": 83652.91,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 68
+    },
+    "normal|demand_down_35|boutique": {
+      "profit": 28328.64,
+      "endCash": 57128.64,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 15
+    },
+    "normal|demand_down_35|scale": {
+      "profit": 13244.7,
+      "endCash": -9993.3,
+      "bankrupt": true,
+      "bankruptMonth": 6,
+      "gatedAtStart": false,
+      "sales": 62
+    },
+    "normal|demand_down_35|mixed": {
+      "profit": 36479.91,
+      "endCash": 79086.91,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 67
+    },
+    "normal|parts_up_10|boutique": {
+      "profit": 22160.64,
+      "endCash": 50960.64,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 15
+    },
+    "normal|parts_up_10|scale": {
+      "profit": 11435.82,
+      "endCash": 14837.82,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 95
+    },
+    "normal|parts_up_10|mixed": {
+      "profit": 20072.31,
+      "endCash": 66411.06,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 68
+    },
+    "normal|event_dram_rumour|boutique": {
+      "profit": 28328.64,
+      "endCash": 57128.64,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 15
+    },
+    "normal|event_dram_rumour|scale": {
+      "profit": 31344.72,
+      "endCash": 41469.72,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 95
+    },
+    "normal|event_dram_rumour|mixed": {
+      "profit": 37027.91,
+      "endCash": 83652.91,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 68
+    },
+    "normal|event_dram_mild|boutique": {
+      "profit": 26746.64,
+      "endCash": 55546.64,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 15
+    },
+    "normal|event_dram_mild|scale": {
+      "profit": 24282.42,
+      "endCash": 32019.42,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 95
+    },
+    "normal|event_dram_mild|mixed": {
+      "profit": 31807.66,
+      "endCash": 78432.66,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 68
+    },
+    "normal|event_dram_sharp|boutique": {
+      "profit": 25164.64,
+      "endCash": 53964.64,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 15
+    },
+    "normal|event_dram_sharp|scale": {
+      "profit": 17220.12,
+      "endCash": 25839.12,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 95
+    },
+    "normal|event_dram_sharp|mixed": {
+      "profit": 26587.41,
+      "endCash": 73212.41,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 68
+    },
+    "hard|baseline|boutique": {
+      "profit": 7688.64,
+      "endCash": 9188.64,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 9
+    },
+    "hard|baseline|scale": {
+      "profit": -3200,
+      "endCash": -1700,
+      "bankrupt": true,
+      "bankruptMonth": 1,
+      "gatedAtStart": true,
+      "sales": 0
+    },
+    "hard|baseline|mixed": {
+      "profit": -3200,
+      "endCash": -1700,
+      "bankrupt": true,
+      "bankruptMonth": 1,
+      "gatedAtStart": true,
+      "sales": 0
+    },
+    "hard|demand_down_35|boutique": {
+      "profit": -4128.36,
+      "endCash": -2628.36,
+      "bankrupt": true,
+      "bankruptMonth": 3,
+      "gatedAtStart": false,
+      "sales": 2
+    },
+    "hard|demand_down_35|scale": {
+      "profit": -3200,
+      "endCash": -1700,
+      "bankrupt": true,
+      "bankruptMonth": 1,
+      "gatedAtStart": true,
+      "sales": 0
+    },
+    "hard|demand_down_35|mixed": {
+      "profit": -3200,
+      "endCash": -1700,
+      "bankrupt": true,
+      "bankruptMonth": 1,
+      "gatedAtStart": true,
+      "sales": 0
+    },
+    "hard|parts_up_10|boutique": {
+      "profit": -4693.52,
+      "endCash": -3193.52,
+      "bankrupt": true,
+      "bankruptMonth": 2,
+      "gatedAtStart": false,
+      "sales": 1
+    },
+    "hard|parts_up_10|scale": {
+      "profit": -3200,
+      "endCash": -1700,
+      "bankrupt": true,
+      "bankruptMonth": 1,
+      "gatedAtStart": true,
+      "sales": 0
+    },
+    "hard|parts_up_10|mixed": {
+      "profit": -3200,
+      "endCash": -1700,
+      "bankrupt": true,
+      "bankruptMonth": 1,
+      "gatedAtStart": true,
+      "sales": 0
+    },
+    "hard|event_dram_rumour|boutique": {
+      "profit": 7688.64,
+      "endCash": 9188.64,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 9
+    },
+    "hard|event_dram_rumour|scale": {
+      "profit": -3200,
+      "endCash": -1700,
+      "bankrupt": true,
+      "bankruptMonth": 1,
+      "gatedAtStart": true,
+      "sales": 0
+    },
+    "hard|event_dram_rumour|mixed": {
+      "profit": -3200,
+      "endCash": -1700,
+      "bankrupt": true,
+      "bankruptMonth": 1,
+      "gatedAtStart": true,
+      "sales": 0
+    },
+    "hard|event_dram_mild|boutique": {
+      "profit": 2814.06,
+      "endCash": 4314.06,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "gatedAtStart": false,
+      "sales": 7
+    },
+    "hard|event_dram_mild|scale": {
+      "profit": -3200,
+      "endCash": -1700,
+      "bankrupt": true,
+      "bankruptMonth": 1,
+      "gatedAtStart": true,
+      "sales": 0
+    },
+    "hard|event_dram_mild|mixed": {
+      "profit": -3200,
+      "endCash": -1700,
+      "bankrupt": true,
+      "bankruptMonth": 1,
+      "gatedAtStart": true,
+      "sales": 0
+    },
+    "hard|event_dram_sharp|boutique": {
+      "profit": -4459.66,
+      "endCash": -2959.66,
+      "bankrupt": true,
+      "bankruptMonth": 5,
+      "gatedAtStart": false,
+      "sales": 4
+    },
+    "hard|event_dram_sharp|scale": {
+      "profit": -3200,
+      "endCash": -1700,
+      "bankrupt": true,
+      "bankruptMonth": 1,
+      "gatedAtStart": true,
+      "sales": 0
+    },
+    "hard|event_dram_sharp|mixed": {
+      "profit": -3200,
+      "endCash": -1700,
+      "bankrupt": true,
+      "bankruptMonth": 1,
+      "gatedAtStart": true,
+      "sales": 0
+    }
+  },
+  "lossTolerance": {
+    "easy": {
+      "worstMonth": -5654,
+      "months": 7.96
+    },
+    "normal": {
+      "worstMonth": -14441,
+      "months": 2.08
+    },
+    "hard": {
+      "worstMonth": -1220,
+      "months": 1.23
+    }
+  },
+  "investments": {
+    "boutique|craft_tools": 1440,
+    "scale|bench": 6642.02,
+    "scale|semi_auto": 3794.01,
+    "mixed|craft_tools": 1200
+  },
+  "reliability": {
+    "office": 0.04,
+    "gaming": 0.04,
+    "premium": 0.04,
+    "quiet_office": 0.04
+  },
+  "fullGame": {
+    "2016": 37027.91,
+    "2017": 36758.72,
+    "2018": 36836.81,
+    "2019": 37219,
+    "2020": 37297.09,
+    "2021": 36949.82,
+    "2022": 37106,
+    "2023": 37407.11,
+    "2024": 37488.19,
+    "2025": 37566.28,
+    "2026": 37693.25,
+    "2027": 37771.34,
+    "2028": 37884.35,
+    "2029": 37925.69,
+    "2030": 37962.44
+  }
+}

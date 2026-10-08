@@ -19,6 +19,8 @@
     "check:fullgame": "node tools/simulate-fullgame.cjs",
     "check:schedule": "node tools/check-schedule.cjs",
     "check:difficulty": "node tools/check-difficulty.cjs",
+    "baseline:diff": "node tools/balance-baseline.cjs diff",
+    "baseline:update": "node tools/balance-baseline.cjs update",
     "analyze:sensitivity": "node tools/analyze-sensitivity.cjs",
     "check:env": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/check-environment.ps1",
     "editor": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/open-creator.ps1",
