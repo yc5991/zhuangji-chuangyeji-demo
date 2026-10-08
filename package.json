@@ -27,6 +27,7 @@
     "check:staff": "node tools/check-staff.cjs",
     "check:case-options": "node tools/check-case-options.cjs",
     "check:cable-routing": "node tools/check-cable-routing.cjs",
+    "check:export-coverage": "node tools/check-export-coverage.cjs",
     "baseline:diff": "node tools/balance-baseline.cjs diff",
     "baseline:update": "node tools/balance-baseline.cjs update",
     "analyze:sensitivity": "node tools/analyze-sensitivity.cjs",

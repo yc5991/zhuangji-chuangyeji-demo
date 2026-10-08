@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "status": "candidate",
+  "provenance": {
+    "existing": "tools/prepare-demo.cjs exports the approved Demo inputs, records a sha256 fingerprint of each and writes two generated files. This manifest classifies every file in design/ against that tool rather than restating it.",
+    "new": "The classification of each file as runtime input, generated output or tooling is original work.",
+    "limits": "A coverage map for the export tool. It does not change what the runtime renders and does not judge whether a design file is finished."
+  },
+  "rules": {
+    "everythingClassified": "Every json file in design/ must appear here, so a new data file cannot be silently left out of the export",
+    "inputsAreFingerprinted": "A runtime input must be listed in prepare-demo's sourceFiles, or changing it will not invalidate the recorded baseline",
+    "outputsAreGenerated": "A generated output must never be hand-edited, because prepare-demo overwrites it",
+    "toolingStaysOut": "Checker and analysis artifacts are not shipped"
+  },
+  "categories": {
+    "runtime_input": "Shipped data the game reads; must be fingerprinted",
+    "runtime_output": "Written by prepare-demo from the inputs",
+    "tooling": "Checker, audit and simulation artifacts; never shipped"
+  },
+  "files": {
+    "components.json": "runtime_input",
+    "balance.json": "runtime_input",
+    "economy-candidate.json": "runtime_input",
+    "supplier-system.json": "runtime_input",
+    "customer-model.json": "runtime_input",
+    "workbench.json": "runtime_input",
+    "market-events.json": "runtime_input",
+    "demo-schedule.json": "runtime_input",
+    "design-flow.json": "runtime_input",
+    "evaluation.json": "runtime_input",
+    "finish-options.json": "runtime_input",
+    "case-options.json": "runtime_input",
+    "cable-routing.json": "runtime_input",
+    "reliability-model.json": "runtime_input",
+    "staff.json": "runtime_input",
+    "era-trends.json": "runtime_input",
+    "company-progression.json": "runtime_input",
+    "brands.json": "runtime_input",
+    "product-series.json": "runtime_input",
+    "art-runtime.json": "runtime_input",
+    "workbench-geometry.json": "runtime_output",
+    "demo-baseline.json": "runtime_output",
+    "balance-baseline.json": "tooling",
+    "completion-audit.json": "tooling",
+    "economy-review-results.json": "tooling",
+    "export-manifest.json": "tooling"
+  },
+  "ownershipNote": "brands.json, product-series.json and art-runtime.json belong to the brand and art workstreams. This manifest records that they are runtime inputs; whether and when their contents are ready to ship is theirs to decide."
+}
