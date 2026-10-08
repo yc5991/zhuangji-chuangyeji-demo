@@ -70,6 +70,42 @@ function run() {
   assert.equal(orphans.length, 0,
     orphans.length + ' numbers are defined in a mechanical model but the simulator never reads them: ' + orphans.join(', '));
 
+  // 3b. A recipe declares its parts cost; the parts it lists have to add up to it.
+  const components = read("components.json");
+  const partPrice = new Map(components.parts.map(p => [p.id, p.game.basePriceCoins]));
+  // systemDrive and workDrive name roles played by drives already listed under storage.
+  const ROLE_KEYS = ["systemDrive", "workDrive"];
+  const SINGLE_KEYS = ["cpu", "motherboard", "gpu", "psu", "cooler", "case"];
+  const costRows = [];
+  for (const recipe of balance.recipes) {
+    let sum = 0;
+    const counted = [];
+    const take = id => {
+      const price = partPrice.get(id);
+      if (price === undefined) throw new Error(recipe.id + " names unknown part " + id);
+      sum += price; counted.push(id);
+    };
+    for (const key of SINGLE_KEYS) {
+      const v = recipe[key];
+      if (v) take(typeof v === "string" ? v : v.id);
+    }
+    for (const key of ["ram", "storage"]) for (const e of recipe[key] || []) {
+      const price = partPrice.get(e.id);
+      if (price === undefined) throw new Error(recipe.id + " names unknown part " + e.id);
+      sum += price * (e.quantity || 1);
+      for (let i = 0; i < (e.quantity || 1); i++) counted.push(e.id);
+    }
+    // A role must point at a drive the recipe already carries, or it is an uncounted part.
+    for (const key of ROLE_KEYS) {
+      const role = recipe[key];
+      if (!role) continue;
+      const id = typeof role === "string" ? role : role.id;
+      if (!counted.includes(id)) throw new Error(recipe.id + ": " + key + " points at " + id + ", which is not among the parts the recipe carries");
+    }
+    assert.equal(sum, recipe.expectedPartsCost,
+      recipe.id + ": the parts add up to " + sum + " but the recipe declares " + recipe.expectedPartsCost);
+    costRows.push({ recipe: recipe.id, partsSum: sum, declared: recipe.expectedPartsCost, directCost: recipe.directCostCoins });
+  }
   // 4. Scores must stay inside the declared range even at the richest build.
   const everyOption = Object.fromEntries(caseOptions.groups.map(g => {
     const richest = [...g.options].sort((a, b) => b.appearancePoints - a.appearancePoints || b.coolingMultiplier - a.coolingMultiplier)[0];
@@ -108,6 +144,7 @@ function run() {
     fullGameModelsCheckedElsewhere: FULL_GAME_MODELS,
     mechanicalNumbersAllRead: true,
     costsCharged: ['finish and case options', 'rework consumables', 'investment cost', 'development cost', 'arrival defect logistics'],
+    recipeCostsAddUp: costRows,
     richestBuildPerRecipe: extremes,
     appearancePremiumCap: customers.appearancePreference.maxPricePremium,
     note: '外观分既抬价也抬预算上限，所以同一个价格在接受度不变的前提下多收一笔',
