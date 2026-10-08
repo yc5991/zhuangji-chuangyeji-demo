@@ -55,7 +55,8 @@ function evaluateDimensions(recipe, { targetUseCase, finishLevelId = 'standard',
     performance: 100 * clamp01(Object.values(report.scores).reduce((n, v) => n + v, 0) / dim('performance').reference),
     thermals,
     noise: 100 * (1 - clamp01(burden / dim('noise').reference)),
-    appearance: finish.baseAppearancePoints + level.appearancePoints + build.appearance,
+    // Appearance is the sum of its parts but still has to respect the declared range.
+    appearance: Math.min(100, finish.baseAppearancePoints + level.appearancePoints + build.appearance),
     cost: 100 * (1 - clamp01(report.partsCost / budget)),
   };
   return {

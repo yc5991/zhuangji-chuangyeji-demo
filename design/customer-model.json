@@ -192,7 +192,7 @@
     "floor": 0.1,
     "ceiling": 1.3,
     "budgetCeiling": "A price above the archetype budget maximum never sells, whatever the acceptance value.",
-    "note": "斜率按细分市场标定：量产客群极度价格敏感（现实里大厂毛利被压到 13%），高定客群对价格不敏感。斜率取值保证有效贡献在接近市场参考价处最高，加价不能无脑赚钱"
+    "note": "斜率按细分市场标定：量产客群极度价格敏感（现实里大厂毛利被压到 13%），高定客群对价格不敏感。斜率取值保证有效贡献在接近市场参考价处最高，加价不能无脑赚钱 接受度还会乘以外观偏好系数，见 appearancePreference"
   },
   "fit": {
     "formula": "clamp(actualUseCaseScore / expectedScore, 0, 1)",
@@ -201,5 +201,10 @@
   "monthlyVolume": {
     "source": "design/economy-candidate.json companyDemandCaps",
     "splitRule": "Each segment's monthly cap is split across its archetypes in proportion to weight."
+  },
+  "appearancePreference": {
+    "baselineScore": 30,
+    "maxPricePremium": 0.15,
+    "note": "外观分高于基准时客户愿意为这台机器多付钱，满分外最多 +15%；客户想要的数量不变，所以这条只作用于价格，不影响需求上限"
   }
 }

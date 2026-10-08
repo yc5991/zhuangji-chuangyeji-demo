@@ -24,7 +24,8 @@
       "source": "absolute",
       "direction": "higher",
       "reference": 260,
-      "note": "与目标无关的绝对能力：三个用途得分之和除以参考值。用途单一但极强的机器与三项均衡的机器在这里会得到不同的分数"
+      "note": "与目标无关的绝对能力：三个用途得分之和除以参考值。用途单一但极强的机器与三项均衡的机器在这里会得到不同的分数；这个分数给玩家看，不直接进入客户决策——客户看的是目标用途分",
+      "informational": true
     },
     {
       "id": "thermals",
@@ -33,7 +34,8 @@
       "direction": "higher",
       "stableFloor": 60,
       "headroomReference": 0.8,
-      "note": "通过热稳定得 60 分起步，再按供电余量加分；不稳定则最多 40 分"
+      "note": "通过热稳定得 60 分起步，再按供电余量加分；不稳定则最多 40 分；这个分数给玩家看，不直接进入客户决策——热稳定本身已经通过交付问题与返工影响结果",
+      "informational": true
     },
     {
       "id": "noise",
@@ -60,6 +62,7 @@
   ],
   "rules": {
     "everyDimensionScored": "A machine must produce a score for all six dimensions or the evaluation is incomplete",
-    "independentOfTarget": "Performance and appearance never depend on the target use case; use-case fit does"
+    "independentOfTarget": "Performance and appearance never depend on the target use case; use-case fit does",
+    "everyDimensionUsedOrDeclared": "每个维度要么被客户决策读取，要么显式标为 informational；不允许默默无人使用"
   }
 }

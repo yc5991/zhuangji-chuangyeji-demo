@@ -15,6 +15,7 @@ for (const [segId, seg] of Object.entries(customerModel.segments)) for (const p 
 
 // Each archetype is eligible for exactly one recipe, so orders can be attributed per product.
 const { evaluate } = require('./check-design.cjs');
+const { evaluateDimensions } = require('./evaluate-product.cjs');
 // Parts cost by category, so an event that names a category only moves the builds exposed to it.
 const partsCatalog = read('components.json');
 const byPart = new Map(partsCatalog.parts.map(p => [p.id, p]));
@@ -73,15 +74,29 @@ function fitOf(productId, recipe) {
 }
 
 // Price acceptance: a segment slope either side of the archetype's market reference price.
-function acceptanceOf(productId, price) {
+// A better-finished machine is worth more to the same customer, so it commands a higher price.
+// The customer's willingness to pay moves; the quantity they want does not.
+function appearancePricePremium(appearanceScore) {
+  const pref = customerModel.appearancePreference;
+  if (!pref) return 0;
+  const span = 100 - pref.baselineScore;
+  if (span <= 0) return 0;
+  const above = Math.max(0, appearanceScore - pref.baselineScore);
+  return (above / span) * pref.maxPricePremium;
+}
+
+// A finish the customer values raises both what they will pay and the ceiling they will pay up to,
+// so the same asking price keeps the same acceptance while carrying the premium.
+function acceptanceOf(productId, price, premium = 0) {
   const members = archetypesByProduct[productId] || [];
   if (!members.length) return 1;
   const weight = members.reduce((n, a) => n + a.weight, 0);
+  const lift = 1 + premium;
   return members.reduce((n, a) => {
     // The archetype's budget maximum is a hard ceiling: nobody can buy what they cannot afford,
     // so a plan-limited route cannot sell at any price to a trickle of customers.
-    if (price > a.budgetCoins[1]) return n;
-    const reference = (a.budgetCoins[0] + a.budgetCoins[1]) / 2;
+    if (price > a.budgetCoins[1] * lift) return n;
+    const reference = ((a.budgetCoins[0] + a.budgetCoins[1]) / 2) * lift;
     const ratio = price / reference;
     const above = customerModel.priceAcceptance.aboveSlopeBySegment[a.segment];
     const p = ratio <= 1
@@ -155,6 +170,25 @@ function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
       owner: opening.ownerHours, bench: benches * config.stationMonthlyHours,
       test: opening.testStations * config.stationMonthlyHours };
     const used = { labor: 0, owner: 0, bench: 0, test: 0 };
+    // Appearance depends only on the product definition, so it is worked out once a month.
+    const appearance = {};
+    for (const id of Object.keys(products)) {
+      const report = evaluateDimensions(recipes.get(id), {
+        targetUseCase: products[id].targetUseCase || 'office',
+        finishLevelId: products[id].finishLevelId || 'standard',
+        caseOptions: products[id].caseOptions || {},
+      });
+      const premium = appearancePricePremium(report.scores.appearance);
+      appearance[id] = {
+        score: report.scores.appearance,
+        premium,
+        // Appearance is not free: the finish and the chosen case options both cost money and time.
+        cost: report.finishLevel.additionalConsumablesCoins + report.caseOptionCost,
+        hours: report.finishLevel.additionalLaborHours,
+        // The customer pays what the finish is worth, so the asking price carries the premium.
+        price: Math.round(products[id].salePrice * (1 + premium)),
+      };
+    }
     // Reachable orders per product, then reduced by fit, price acceptance and reputation.
     const demand = {}, orders = {};
     for (const id of Object.keys(products)) {
@@ -162,7 +196,7 @@ function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
       const caps = overrides.demandCaps || config.companyDemandCaps;
       const pool = Math.round(caps[id][index] * (inWindow ? scenario.demandMultiplier : 1));
       const fit = fitOf(id, recipes.get(id));
-      const acceptance = acceptanceOf(id, products[id].salePrice);
+      const acceptance = acceptanceOf(id, appearance[id].price, appearance[id].premium);
       // Reputation above one may grow the reachable pool. The default keeps it a hard ceiling, so
       // a good reputation is a buffer rather than a bonus.
       const grows = overrides.reputationGrowsPool || 'none';
@@ -181,7 +215,7 @@ function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
     for (const [id, lots] of Object.entries(stock)) {
       while (lots.length && demand[id] > 0) {
         const cost = lots.shift();
-        const price = Math.round(products[id].salePrice * (scenario.priceIndex ?? 1));
+        const price = Math.round(appearance[id].price * (scenario.priceIndex ?? 1));
         cash += price; cashFromSales += price; revenue += price; cogs += cost; demand[id]--;
         sold[id] = (sold[id] || 0) + 1;
       }
@@ -210,18 +244,18 @@ function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
         // Rework is charged as expected value: its real cost is the capacity it consumes.
         const failRate = failureRateFor(recipe, gradeFailure);
         const need = { labor: product.designHours + assembly + product.testSetupHours + product.packingHours +
-            failRate * reliability.rework.laborHours,
+            appearance[id].hours + failRate * reliability.rework.laborHours,
           owner: product.designHours, bench: assembly,
           test: product.testStationHours + failRate * reliability.rework.testStationHours };
         if (Object.keys(need).some(k => used[k] + need[k] > limits[k] + 1e-8)) {
           notices.push(`CAPACITY_LIMIT:${id}`); break;
         }
         const cost = round(partsCostFor(id, scenario, month) * channelFactor *
-          opening.supplierTermsFactor + recipe.directCostCoins -
+          opening.supplierTermsFactor + recipe.directCostCoins + appearance[id].cost -
           (product.kind === 'commission' ? consumablesReduction : standardConsumablesReduction));
         // A commissioned build is paid in advance, so the deposit arrives before the parts are bought.
         // The era price index moves the asking price with the market, not only the parts bill.
-        const price = Math.round(product.salePrice * (scenario.priceIndex ?? 1));
+        const price = Math.round(appearance[id].price * (scenario.priceIndex ?? 1));
         const deposit = product.kind === 'commission'
           ? Math.round(price * (depositFraction[productSegment[id]] || 0)) : 0;
         if (deposit) { cash += deposit; depositsTaken += deposit; totalDeposits += deposit; }
