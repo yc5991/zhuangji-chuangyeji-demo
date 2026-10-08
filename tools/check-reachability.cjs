@@ -18,6 +18,15 @@ function run() {
       const first = result.months[0];
       const built = Object.values(first.built || {}).reduce((a, b) => a + b, 0);
 
+      // Hard mode opens every route, and the non-boutique ones are meant to fail at the start: the
+      // player discovers that mass production does not work rather than being locked out. So these
+      // routes are asserted to fail, and the others to be playable.
+      const intendedFailure = difficulty === 'hard' && route !== 'boutique';
+      if (intendedFailure) {
+        assert(result.bankruptMonth === 1,
+          `${difficulty}/${route}: this route is meant to fail in the first month, but it survived`);
+        continue;
+      }
       // A run that cannot build anything in month one is not playable.
       assert(built > 0, `${difficulty}/${route}: nothing is built in the first month`);
       assert(!first.notices.some(n => n.startsWith('DEVELOPMENT_BLOCKED')),
@@ -52,10 +61,11 @@ function run() {
     }
   }
 
-  // Hard is allowed to fall short, but it must still produce something.
+  // Hard is allowed to fall short, but its intended routes must still produce something. The
+  // non-boutique routes are the ones the opening economy is meant to reject, so they are exempt.
   for (const route of routes) {
+    if (route !== 'boutique') continue;
     const result = simulate(route, 'baseline', 'hard');
-    if (result.gatedAtStart) continue;
     const built = result.months.reduce((a, m) => a + Object.values(m.built || {}).reduce((x, y) => x + y, 0), 0);
     assert(built > 0, `hard/${route}: the whole run builds nothing`);
   }
@@ -69,7 +79,10 @@ function run() {
       for (const scenario of scenarios) {
         const run = simulate(route, scenario, difficulty);
         if (run.gatedAtStart) continue;
-        if (run.bankruptMonth === 1) fragile.push(difficulty + "/" + route + "/" + scenario);
+        // Hard mode opens every route, and the non-boutique ones are meant to fail immediately: the
+    // player discovers that mass production does not work at the start rather than being locked out.
+    const intended = difficulty === 'hard' && route !== 'boutique';
+    if (run.bankruptMonth === 1 && !intended) fragile.push(difficulty + "/" + route + "/" + scenario);
       }
     }
   }

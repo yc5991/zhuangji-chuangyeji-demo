@@ -302,7 +302,7 @@
       "endCash": -1700,
       "bankrupt": true,
       "bankruptMonth": 1,
-      "gatedAtStart": true,
+      "gatedAtStart": false,
       "sales": 0
     },
     "hard|baseline|mixed": {
@@ -310,7 +310,7 @@
       "endCash": -1700,
       "bankrupt": true,
       "bankruptMonth": 1,
-      "gatedAtStart": true,
+      "gatedAtStart": false,
       "sales": 0
     },
     "hard|demand_down_35|boutique": {
@@ -326,7 +326,7 @@
       "endCash": -1700,
       "bankrupt": true,
       "bankruptMonth": 1,
-      "gatedAtStart": true,
+      "gatedAtStart": false,
       "sales": 0
     },
     "hard|demand_down_35|mixed": {
@@ -334,7 +334,7 @@
       "endCash": -1700,
       "bankrupt": true,
       "bankruptMonth": 1,
-      "gatedAtStart": true,
+      "gatedAtStart": false,
       "sales": 0
     },
     "hard|parts_up_10|boutique": {
@@ -350,7 +350,7 @@
       "endCash": -1700,
       "bankrupt": true,
       "bankruptMonth": 1,
-      "gatedAtStart": true,
+      "gatedAtStart": false,
       "sales": 0
     },
     "hard|parts_up_10|mixed": {
@@ -358,7 +358,7 @@
       "endCash": -1700,
       "bankrupt": true,
       "bankruptMonth": 1,
-      "gatedAtStart": true,
+      "gatedAtStart": false,
       "sales": 0
     },
     "hard|event_dram_rumour|boutique": {
@@ -374,7 +374,7 @@
       "endCash": -1700,
       "bankrupt": true,
       "bankruptMonth": 1,
-      "gatedAtStart": true,
+      "gatedAtStart": false,
       "sales": 0
     },
     "hard|event_dram_rumour|mixed": {
@@ -382,7 +382,7 @@
       "endCash": -1700,
       "bankrupt": true,
       "bankruptMonth": 1,
-      "gatedAtStart": true,
+      "gatedAtStart": false,
       "sales": 0
     },
     "hard|event_dram_mild|boutique": {
@@ -398,7 +398,7 @@
       "endCash": -1700,
       "bankrupt": true,
       "bankruptMonth": 1,
-      "gatedAtStart": true,
+      "gatedAtStart": false,
       "sales": 0
     },
     "hard|event_dram_mild|mixed": {
@@ -406,7 +406,7 @@
       "endCash": -1700,
       "bankrupt": true,
       "bankruptMonth": 1,
-      "gatedAtStart": true,
+      "gatedAtStart": false,
       "sales": 0
     },
     "hard|event_dram_sharp|boutique": {
@@ -422,7 +422,7 @@
       "endCash": -1700,
       "bankrupt": true,
       "bankruptMonth": 1,
-      "gatedAtStart": true,
+      "gatedAtStart": false,
       "sales": 0
     },
     "hard|event_dram_sharp|mixed": {
@@ -430,7 +430,7 @@
       "endCash": -1700,
       "bankrupt": true,
       "bankruptMonth": 1,
-      "gatedAtStart": true,
+      "gatedAtStart": false,
       "sales": 0
     }
   },
@@ -444,8 +444,8 @@
       "months": 2.08
     },
     "hard": {
-      "worstMonth": -1220,
-      "months": 1.23
+      "worstMonth": -3200,
+      "months": 0.47
     }
   },
   "investments": {

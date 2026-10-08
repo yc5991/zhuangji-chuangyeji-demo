@@ -48,7 +48,9 @@
       "cash": 1500,
       "creditLimitCoins": 15000,
       "startingRoutes": [
-        "boutique"
+        "boutique",
+        "scale",
+        "mixed"
       ],
       "ownerHours": 96,
       "employees": 1,

@@ -7,7 +7,7 @@ export const DATA: GameData = {
     "sourceHashes": {
       "components.json": "5f491656d52a8739d505e9e0a205efcf83bbf4155b4589dcedc43f64be0cd033",
       "balance.json": "cbe33aa0404a1dd0a8429e54c346a775d8a37ff2f68ff9c739bed5d2d4bc0356",
-      "economy-candidate.json": "1145414be86f9ef2bb8ad55cfa2528138246fbaeb4db9c2a2dd3f83763c56768",
+      "economy-candidate.json": "d9fa5d6e953ce923f0c787f6c87a8bb0d735609fdfd7afae4c3860fa7e517c9d",
       "supplier-system.json": "c10b7edb3ac69d1f829e35245a63d30d23e058bfd7ce635acd1d4bf531138170",
       "customer-model.json": "92fd79fc75849cbdbbae293ba6a139425bda11219d942573aa90bdf5bb037cf7",
       "workbench.json": "037082244a64a98e1cb0efe5ff799f9312b823bc4984224f93df202d45b7050c",
@@ -21,7 +21,8 @@ export const DATA: GameData = {
       "reliability-model.json": "5955da878458060e144f41479e329ff5464f857dfe4e98265052944f37fb7e90",
       "staff.json": "61d60c99f0554b9484bc4593af741a5f2966aa675064f9a5aad04d4acafb0674",
       "era-trends.json": "7dc97d077923a985f6d4533b58d73207e49a1171153dbde67a663ab479c775bd",
-      "company-progression.json": "defc2cdaa9a64e737f599920afbbc3757362a6ff981aefc67c640b31ee74494b"
+      "company-progression.json": "defc2cdaa9a64e737f599920afbbc3757362a6ff981aefc67c640b31ee74494b",
+      "workbench-layouts.json": "a15e470e712eac96375a8810fc6979f4da5dae650d132955650221da69a44a90"
     },
     "scope": {
       "firstMonth": "2016-01",
@@ -149,6 +150,10 @@ export const DATA: GameData = {
         "caseFanControlInputs": 1,
         "includedSataDataCables": 2,
         "biosReady": true
+      },
+      "referenceDimensionsMm": {
+        "height": 226,
+        "width": 183
       }
     },
     {
@@ -180,6 +185,10 @@ export const DATA: GameData = {
         "caseFanControlInputs": 1,
         "includedSataDataCables": 2,
         "biosReady": true
+      },
+      "referenceDimensionsMm": {
+        "height": 305,
+        "width": 218
       }
     },
     {
@@ -209,6 +218,10 @@ export const DATA: GameData = {
         "caseFanControlInputs": 1,
         "includedSataDataCables": 2,
         "biosReady": true
+      },
+      "referenceDimensionsMm": {
+        "height": 305,
+        "width": 229
       }
     },
     {
@@ -237,6 +250,11 @@ export const DATA: GameData = {
           "thickness": 33
         },
         "gpuSlots": 2
+      },
+      "referenceDimensionsMm": {
+        "length": 165,
+        "height": 111,
+        "thickness": 33
       }
     },
     {
@@ -267,6 +285,11 @@ export const DATA: GameData = {
           "thickness": 35
         },
         "gpuSlots": 2
+      },
+      "referenceDimensionsMm": {
+        "length": 242,
+        "height": 111,
+        "thickness": 35
       }
     },
     {
@@ -298,6 +321,11 @@ export const DATA: GameData = {
           "thickness": 35
         },
         "gpuSlots": 2
+      },
+      "referenceDimensionsMm": {
+        "length": 277,
+        "height": 140,
+        "thickness": 35
       }
     },
     {
@@ -329,6 +357,11 @@ export const DATA: GameData = {
           "thickness": 40
         },
         "gpuSlots": 2
+      },
+      "referenceDimensionsMm": {
+        "length": 268,
+        "height": 138,
+        "thickness": 40
       }
     },
     {
@@ -359,6 +392,11 @@ export const DATA: GameData = {
           "thickness": 40
         },
         "gpuSlots": 2
+      },
+      "referenceDimensionsMm": {
+        "length": 269,
+        "height": 111,
+        "thickness": 40
       }
     },
     {
@@ -389,6 +427,11 @@ export const DATA: GameData = {
           "thickness": 38
         },
         "gpuSlots": 2
+      },
+      "referenceDimensionsMm": {
+        "length": 268,
+        "height": 111,
+        "thickness": 38
       }
     },
     {
@@ -419,6 +462,11 @@ export const DATA: GameData = {
           "thickness": 37
         },
         "gpuSlots": 2
+      },
+      "referenceDimensionsMm": {
+        "length": 242,
+        "height": 112,
+        "thickness": 37
       }
     },
     {
@@ -449,6 +497,11 @@ export const DATA: GameData = {
           "thickness": 37
         },
         "gpuSlots": 2
+      },
+      "referenceDimensionsMm": {
+        "length": 240,
+        "height": 112,
+        "thickness": 37
       }
     },
     {
@@ -539,6 +592,11 @@ export const DATA: GameData = {
         "designLoadW": 4,
         "responseScore": 85,
         "noiseBurden": 0
+      },
+      "referenceDimensionsMm": {
+        "length": 100,
+        "width": 69.85,
+        "height": 6.8
       }
     },
     {
@@ -557,6 +615,11 @@ export const DATA: GameData = {
         "designLoadW": 4,
         "responseScore": 90,
         "noiseBurden": 0
+      },
+      "referenceDimensionsMm": {
+        "length": 100,
+        "width": 69.85,
+        "height": 6.8
       }
     },
     {
@@ -575,6 +638,11 @@ export const DATA: GameData = {
         "designLoadW": 4,
         "responseScore": 92,
         "noiseBurden": 0
+      },
+      "referenceDimensionsMm": {
+        "length": 100,
+        "width": 69.85,
+        "height": 6.8
       }
     },
     {
@@ -593,6 +661,11 @@ export const DATA: GameData = {
         "designLoadW": 8,
         "responseScore": 35,
         "noiseBurden": 8
+      },
+      "referenceDimensionsMm": {
+        "length": 147,
+        "width": 101.6,
+        "height": 26.1
       }
     },
     {
@@ -938,6 +1011,186 @@ export const DATA: GameData = {
       }
     }
   ],
+  "boardLayouts": [
+    {
+      "partId": "mb_h110",
+      "artPath": "art/exports/parts/mb_h110_side.png",
+      "bodyRectLtrbPx": [
+        26,
+        2,
+        653,
+        766
+      ],
+      "cpuCenterPx": [
+        321,
+        260
+      ],
+      "dimmCentersPx": [
+        [
+          534,
+          257
+        ],
+        [
+          569,
+          257
+        ]
+      ],
+      "pcieLinePx": [
+        320,
+        526
+      ],
+      "connectorsPx": {
+        "mainPower": [
+          636,
+          283
+        ],
+        "cpuPower": [
+          143,
+          35
+        ],
+        "cpuFan": [
+          461,
+          59
+        ],
+        "caseFan": [
+          181,
+          738
+        ],
+        "frontPanel": [
+          584,
+          740
+        ],
+        "sata": [
+          591,
+          677
+        ]
+      }
+    },
+    {
+      "partId": "mb_b150",
+      "artPath": "assets/art/workbench/side/mb_b150.png",
+      "bodyRectLtrbPx": [
+        20,
+        1,
+        587,
+        766
+      ],
+      "cpuCenterPx": [
+        305.421,
+        227.731
+      ],
+      "dimmCentersPx": [
+        [
+          437.078,
+          218.242
+        ],
+        [
+          460.8,
+          218.242
+        ],
+        [
+          484.522,
+          218.242
+        ],
+        [
+          507.651,
+          218.242
+        ]
+      ],
+      "pcieLinePx": [
+        276.954,
+        454.869
+      ],
+      "connectorsPx": {
+        "mainPower": [
+          549,
+          245
+        ],
+        "cpuPower": [
+          142,
+          26
+        ],
+        "cpuFan": [
+          378,
+          36
+        ],
+        "caseFan": [
+          178,
+          734
+        ],
+        "frontPanel": [
+          514,
+          742
+        ],
+        "sata": [
+          535,
+          633
+        ]
+      }
+    },
+    {
+      "partId": "mb_am3",
+      "artPath": "art/exports/parts/mb_am3_side.png",
+      "bodyRectLtrbPx": [
+        22,
+        1,
+        588,
+        766
+      ],
+      "cpuCenterPx": [
+        294,
+        243
+      ],
+      "dimmCentersPx": [
+        [
+          439,
+          236
+        ],
+        [
+          462,
+          236
+        ],
+        [
+          505,
+          236
+        ],
+        [
+          527,
+          236
+        ]
+      ],
+      "pcieLinePx": [
+        243,
+        539
+      ],
+      "connectorsPx": {
+        "mainPower": [
+          567,
+          300
+        ],
+        "cpuPower": [
+          137,
+          25
+        ],
+        "cpuFan": [
+          378,
+          32
+        ],
+        "caseFan": [
+          190,
+          728
+        ],
+        "frontPanel": [
+          541,
+          738
+        ],
+        "sata": [
+          532,
+          658
+        ]
+      }
+    }
+  ],
   "balance": {
     "schemaVersion": 1,
     "status": "draft",
@@ -1204,7 +1457,9 @@ export const DATA: GameData = {
         "cash": 1500,
         "creditLimitCoins": 15000,
         "startingRoutes": [
-          "boutique"
+          "boutique",
+          "scale",
+          "mixed"
         ],
         "ownerHours": 96,
         "employees": 1,

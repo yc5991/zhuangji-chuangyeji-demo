@@ -34,8 +34,12 @@ function run() {
           easierBankrupt: a.bankrupt, harderBankrupt: b.bankrupt,
         };
         comparisons.push(row);
-        if (b.operatingProfit >= a.operatingProfit) inversions.push({ ...row, kind: 'profit' });
-        if (b.endCash >= a.endCash) inversions.push({ ...row, kind: 'cash' });
+        // A run that goes bankrupt does not have a meaningful profit or closing cash, so those are
+        // only compared when the harder tier survives. Survival itself is compared separately.
+        if (!b.bankrupt) {
+          if (b.operatingProfit >= a.operatingProfit) inversions.push({ ...row, kind: 'profit' });
+          if (b.endCash >= a.endCash) inversions.push({ ...row, kind: 'cash' });
+        }
         if (a.bankrupt && !b.bankrupt) inversions.push({ ...row, kind: 'survival' });
       }
     }
