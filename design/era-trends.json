@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "status": "candidate",
+  "provenance": {
+    "existing": "The generation cadence is measured from the 46 platform and CPU launch events already recorded in design/catalog-2016-2020/*.json. The 2016 anchor is the IDC figure already recorded in docs/market-reference.md.",
+    "new": "Every yearly demand index, parts-cost index, era name and the 2021-2030 cadence are original game design, not verified market data.",
+    "limits": "A pacing model for the fifteen-year game, not a shipment forecast. Only 2016 is a verified market anchor; 2021 is an unopened lead; every other year is a design projection."
+  },
+  "basisLevels": {
+    "verified_anchor": "Read from a source actually opened and recorded in docs/market-reference.md",
+    "lead": "Seen only in a search result title that could not be opened; direction only, never a fact",
+    "design_projection": "Original game design, chosen so the fifteen years have a playable rhythm"
+  },
+  "cadence": {
+    "source": "design/catalog-2016-2020/*.json events",
+    "totalEvents": 72,
+    "generationLaunches": 43,
+    "observedWindow": "2016-01 to 2020-12",
+    "observedYears": 5,
+    "eventsPerYear": 14.4,
+    "generationLaunchesPerYear": 8.6,
+    "note": "2016-2020 目录实测每年约 14.4 个事件、8.6 个平台或处理器发布事件，节奏密集且跨 CPU 与 GPU 两条线。2021-2030 沿用同一密度，让玩家的定型设计持续面临过时压力。发布间隔本身没有从目录推出可验证的固定周期，因此不写成具体月数。"
+  },
+  "years": [
+    {
+      "year": 2016,
+      "demandIndex": 1,
+      "partsCostIndex": 1,
+      "basis": "verified_anchor",
+      "era": "14nm 成熟期，Pascal 与 Polaris 同月换代",
+      "note": "IDC 全年 2.60 亿台，同比 −5.7%，见 docs/market-reference.md"
+    },
+    {
+      "year": 2017,
+      "demandIndex": 0.99,
+      "partsCostIndex": 1.06,
+      "basis": "design_projection",
+      "era": "内存涨价，多核开始普及",
+      "note": "Ryzen 1000 与 Threadripper 同一年落地，颗粒涨价推高整机成本"
+    },
+    {
+      "year": 2018,
+      "demandIndex": 0.99,
+      "partsCostIndex": 1.04,
+      "basis": "design_projection",
+      "era": "光追登场，显卡换代加速",
+      "note": "Turing 与 RTX 2080 上市，同一年出现 Coffee Lake Refresh"
+    },
+    {
+      "year": 2019,
+      "demandIndex": 1,
+      "partsCostIndex": 0.96,
+      "basis": "design_projection",
+      "era": "7nm 与 SUPER 混战",
+      "note": "Ryzen 3000、Navi、SUPER 三条线同年铺开，代际节奏最快"
+    },
+    {
+      "year": 2020,
+      "demandIndex": 1.16,
+      "partsCostIndex": 0.94,
+      "basis": "design_projection",
+      "era": "疫情拉动需求",
+      "note": "居家办公推高整机需求，Ampere 与 RDNA 2 在年末集中上市"
+    },
+    {
+      "year": 2021,
+      "demandIndex": 1.31,
+      "partsCostIndex": 1.02,
+      "basis": "lead",
+      "era": "缺货与挖矿高峰",
+      "note": "线索：公开报道称 2021 年出货 3.41 亿台、同比 +15%；本页未能打开原文核实，仅作方向参考"
+    },
+    {
+      "year": 2022,
+      "demandIndex": 1.1,
+      "partsCostIndex": 0.98,
+      "basis": "design_projection",
+      "era": "需求回落，库存高企",
+      "note": "渠道积压，量产路线在这一年最难受"
+    },
+    {
+      "year": 2023,
+      "demandIndex": 0.93,
+      "partsCostIndex": 0.92,
+      "basis": "design_projection",
+      "era": "周期低谷",
+      "note": "需求回到 2016 年以下，薄毛利路线承压"
+    },
+    {
+      "year": 2024,
+      "demandIndex": 0.94,
+      "partsCostIndex": 0.9,
+      "basis": "design_projection",
+      "era": "复苏起步",
+      "note": "出货回到疫情前水平附近"
+    },
+    {
+      "year": 2025,
+      "demandIndex": 0.98,
+      "partsCostIndex": 0.88,
+      "basis": "design_projection",
+      "era": "换机周期重启",
+      "note": "设计与供应链进一步成熟，配件成本继续下探"
+    },
+    {
+      "year": 2026,
+      "demandIndex": 1.02,
+      "partsCostIndex": 0.86,
+      "basis": "design_projection",
+      "era": "稳定增长",
+      "note": ""
+    },
+    {
+      "year": 2027,
+      "demandIndex": 1.06,
+      "partsCostIndex": 0.84,
+      "basis": "design_projection",
+      "era": "成熟期",
+      "note": ""
+    },
+    {
+      "year": 2028,
+      "demandIndex": 1.1,
+      "partsCostIndex": 0.82,
+      "basis": "design_projection",
+      "era": "成熟期",
+      "note": ""
+    },
+    {
+      "year": 2029,
+      "demandIndex": 1.14,
+      "partsCostIndex": 0.81,
+      "basis": "design_projection",
+      "era": "成熟期",
+      "note": ""
+    },
+    {
+      "year": 2030,
+      "demandIndex": 1.18,
+      "partsCostIndex": 0.8,
+      "basis": "design_projection",
+      "era": "成熟期",
+      "note": ""
+    }
+  ],
+  "gaps": [
+    {
+      "subject": "2017-2020 与 2022-2030 的出货量",
+      "missingEvidence": "本轮所有外部抓取均被网络策略拒绝，无法打开 IDC 或 Gartner 的年度原始数据",
+      "gameResolution": "按设计推演给出指数，逐年标注 basis，接入前需要一次可联网的核实"
+    },
+    {
+      "subject": "2021 出货 3.41 亿台",
+      "missingEvidence": "只在搜索结果标题中出现，原文未能打开",
+      "gameResolution": "标为线索，仅用于确认 2021 年的方向是高峰，不作为已核实数值"
+    },
+    {
+      "subject": "2021-2030 的技术代际",
+      "missingEvidence": "目录只覆盖到 2020-12，之后没有厂商资料",
+      "gameResolution": "沿用 2016-2020 实测节奏外推，等第二阶段目录补齐后替换"
+    }
+  ]
+}

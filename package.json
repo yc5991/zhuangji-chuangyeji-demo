@@ -15,6 +15,7 @@
     "check:events": "node tools/check-events.cjs",
     "check:reliability": "node tools/check-reliability.cjs",
     "check:investments": "node tools/check-investments.cjs",
+    "check:era": "node tools/check-era.cjs",
     "check:env": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/check-environment.ps1",
     "editor": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/open-creator.ps1",
     "build:web": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/build-cocos.ps1 -Platform web-desktop",
