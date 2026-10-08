@@ -126,6 +126,18 @@ function main() {
     if (!write) console.log('\nrun with --apply to write, then the checks and the baseline follow');
     return;
   }
+  // The game reads a generated copy of the design data, so writing the data is not enough: without
+  // regenerating it the game would keep the old numbers and the design-to-game check would say so.
+  console.log('\nregenerating the game data');
+  try {
+    execFileSync('npm', ['run', 'prepare:demo', '--silent'], { cwd: root, stdio: 'pipe', shell: true });
+    console.log('  assets/scripts/domain/data.ts rewritten from the new design data');
+  } catch (e) {
+    console.log('  FAILED to regenerate: ' + ((e.stdout || '') + (e.stderr || '')).slice(-300));
+    process.exitCode = 1;
+    return;
+  }
+
   // The figures the documents quote are the ones the old data produced, so refresh them now.
   const { repair } = require('./check-doc-figures.cjs');
   const refreshed = repair();
