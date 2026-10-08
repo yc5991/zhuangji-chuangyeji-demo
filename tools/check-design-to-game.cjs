@@ -21,8 +21,28 @@ const GAME_MUST_IMPLEMENT = {
 // Full-game files the demo deliberately does not need.
 const DEMO_DOES_NOT_NEED = new Set(['staff.json', 'era-trends.json', 'company-progression.json']);
 
+// Fields the game reads off a customer order that carry a design rule. Each has to come from the
+// customer model, since a requirement invented in code is one the balance model cannot see.
+// Runtime bookkeeping, order identity and player-set values are not rules and are listed as such.
+const CUSTOMER_FIELD_SOURCES = {
+  budget: 'budgetCoins',
+  minRam: 'minimumRamGB',
+  minStorage: 'minimumStorageGB',
+  discreteGpu: 'requiredDiscreteGpu',
+  minVram: 'minimumVramGB',
+  maxNoise: 'maximumNoiseBurden',
+  minimumScores: 'minimumScores',
+};
+const CUSTOMER_FIELDS_NOT_RULES = new Set(['id', 'archetype', 'kind', 'name', 'dueMonth', 'status',
+  'designId', 'satisfaction', 'agreedPrice', 'deposit']);
+
 // Rules the game does not implement today, each with the decision that would resolve it. Listing
 // them keeps the check useful: a new divergence fails, while these stay visible rather than silent.
+// Fields the game requires of a customer that the design data has no source for.
+const KNOWN_UNGROUNDED = {
+  color: 'the game requires the machine colour to match a randomly drawn customer preference; awaiting decision L',
+};
+
 const KNOWN_GAPS = {
   'reliability-model.json': 'the game has no faults, quality control or arrival defects; awaiting decision I1',
   'evaluation.json': 'the game shows raw values rather than the six scored dimensions; awaiting decision K',
@@ -88,14 +108,39 @@ function run() {
   assert.equal(fresh.length, 0,
     `${fresh.length} design rules are neither carried into the game nor implemented in it: ${fresh.join('; ')}`);
 
+  // 4. A customer field the game reads that carries a rule has to come from the customer model, or
+  // it is a requirement the balance model does not know about. This is the opposite direction to
+  // the check above: not a design rule the game lacks, but a game rule the design lacks.
+  const customers = read('customer-model.json');
+  const declared = new Set(Object.keys(customers.archetypes[0])
+    .concat(Object.keys(customers.archetypes[0].requirements)));
+  const wanted = new Set([
+    ...Object.values(CUSTOMER_FIELD_SOURCES),
+    ...Object.keys(CUSTOMER_FIELD_SOURCES),
+  ]);
+  const readFields = new Set([...game.matchAll(/customer[!.]+([a-zA-Z][a-zA-Z0-9]*)/g)].map(m => m[1]));
+  const ungrounded = [...readFields].filter(f =>
+    !CUSTOMER_FIELD_SOURCES[f] && !CUSTOMER_FIELDS_NOT_RULES.has(f));
+  const knownUngrounded = ungrounded.filter(f => KNOWN_UNGROUNDED[f]);
+  const freshUngrounded = ungrounded.filter(f => !KNOWN_UNGROUNDED[f]);
+  assert.equal(freshUngrounded.length, 0,
+    `the game reads customer fields that are neither in the customer model nor runtime bookkeeping: ${freshUngrounded.join(', ')}`);
+  // And every mapped source has to actually exist in the model.
+  const missingSource = Object.entries(CUSTOMER_FIELD_SOURCES)
+    .filter(([, src]) => !declared.has(src)).map(([f, src]) => f + ' <- ' + src);
+  assert.equal(missingSource.length, 0,
+    `customer fields map to design sources that do not exist: ${missingSource.join('; ')}`);
+
   const output = {
-    status: known.length ? 'passed_with_known_gaps' : 'passed',
+    status: known.length || knownUngrounded.length ? 'passed_with_known_gaps' : 'passed',
     sourceFilesHashed: Object.keys(hashes).length,
     keysProvided: [...provided].length,
     keysReferenced: [...referenced].length,
     designRulesTracked: Object.keys(GAME_MUST_IMPLEMENT).length,
     demoDoesNotNeed: [...DEMO_DOES_NOT_NEED],
     knownGaps: known.map(u => ({ rule: u.split(' ')[0], reason: KNOWN_GAPS[u.split(' ')[0]] })),
+    customerFieldsGrounded: Object.keys(CUSTOMER_FIELD_SOURCES).length,
+    knownUngroundedFields: knownUngrounded.map(f => ({ field: f, reason: KNOWN_UNGROUNDED[f] })),
   };
   fs.mkdirSync(path.join(root, '.local'), { recursive: true });
   fs.writeFileSync(path.join(root, '.local', 'design-to-game-verification.json'), JSON.stringify(output, null, 2) + '\n');
