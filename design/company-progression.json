@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "status": "candidate",
+  "provenance": {
+    "existing": "spec section 11 confirms the player grows a computer brand company and that the factory carries production; section 89 and 239 confirm the full game runs about twenty hours and that quarterly settlement is reserved for its later stages. The demo tier reuses the confirmed opening numbers from design/economy-candidate.json.",
+    "new": "The four tiers, their capacity ceilings, rents, utilities, move costs and the month quarterly settlement begins are original game balance.",
+    "limits": "A progression ladder, not a building sim. It says what capacity the player can reach and what it costs, and does not model floor plans, construction time or staffing detail."
+  },
+  "rules": {
+    "demoIsTierOne": "The confirmed demo opening must be exactly the first tier, so the demo and the full game start from the same workshop",
+    "onlyUpward": "Capacity ceilings, rent, utilities and move cost must all rise with each tier, so a later tier is never strictly worse",
+    "moveIsOptional": "Moving is a purchase the player chooses; a tier's ceiling does not force a move",
+    "quarterlyUnlock": "Quarterly settlement becomes available at the tier named here, which must be a later stage as section 89 requires",
+    "moveIsAffordable": "每一次搬迁都要能在上一次搬迁之后累积的利润里付得起，校验会拒绝付不起的阶梯"
+  },
+  "quarterly": {
+    "unlocksAtTier": "mini_factory",
+    "monthsPerSettlement": 3,
+    "reason": "spec §89 后期支持更快推进，spec §239 季度处理留给完整版后期",
+    "keepsMonthlyOption": "玩家可以继续用月结，季度结算只是更快推进的选项"
+  },
+  "tiers": [
+    {
+      "id": "workshop_small",
+      "zh": "小工坊",
+      "fromYear": 2016,
+      "order": 1,
+      "maxBenches": 3,
+      "maxEmployees": 3,
+      "maxTestStations": 2,
+      "monthlyRent": 900,
+      "monthlyUtilities": 400,
+      "moveCost": 0,
+      "assembly": "hand",
+      "note": "Demo 起点：一张装配台、一个测试台、老板一人，工人手工装配"
+    },
+    {
+      "id": "workshop_large",
+      "zh": "大工坊",
+      "fromYear": 2018,
+      "order": 2,
+      "maxBenches": 6,
+      "maxEmployees": 8,
+      "maxTestStations": 4,
+      "monthlyRent": 3200,
+      "monthlyUtilities": 1100,
+      "moveCost": 25000,
+      "assembly": "hand",
+      "note": "多张台位并行，可以同时跑标准机与高定；仍是手工装配"
+    },
+    {
+      "id": "mini_factory",
+      "zh": "小型工厂",
+      "fromYear": 2021,
+      "order": 3,
+      "maxBenches": 12,
+      "maxEmployees": 20,
+      "maxTestStations": 8,
+      "monthlyRent": 9000,
+      "monthlyUtilities": 3000,
+      "moveCost": 90000,
+      "assembly": "semi_auto",
+      "note": "半自动产线进场，产量不再受单人手速限制；季度结算从这里开放"
+    },
+    {
+      "id": "factory",
+      "zh": "工厂",
+      "fromYear": 2025,
+      "order": 4,
+      "maxBenches": 24,
+      "maxEmployees": 45,
+      "maxTestStations": 16,
+      "monthlyRent": 24000,
+      "monthlyUtilities": 8000,
+      "moveCost": 200000,
+      "assembly": "automated",
+      "note": "spec §11 的工厂承担生产职能，老板回到设计与决策"
+    }
+  ]
+}

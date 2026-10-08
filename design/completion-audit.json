@@ -127,6 +127,16 @@
       "note": "用年代指数跑完 15 年，最优路线翻转三次，后期无失控增长"
     },
     {
+      "id": "company_progression",
+      "zh": "完整版公司成长阶梯与季度结算",
+      "state": "complete",
+      "files": [
+        "design/company-progression.json"
+      ],
+      "checker": "check:progression",
+      "note": "spec §11 的工厂承担生产职能与 §89 的后期季度处理，四个阶段含产能上限、租金、搬迁费与季度结算开放点"
+    },
+    {
       "id": "calibration_guard",
       "zh": "标定保护",
       "state": "complete",
