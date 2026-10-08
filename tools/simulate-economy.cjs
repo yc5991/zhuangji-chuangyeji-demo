@@ -160,8 +160,15 @@ function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
       const pool = Math.round(caps[id][index] * (inWindow ? scenario.demandMultiplier : 1));
       const fit = fitOf(id, recipes.get(id));
       const acceptance = acceptanceOf(id, products[id].salePrice);
-      orders[id] = pool;
-      demand[id] = Math.min(pool, Math.floor(pool * fit * acceptance * reputation));
+      // Reputation above one may grow the reachable pool. The default keeps it a hard ceiling, so
+      // a good reputation is a buffer rather than a bonus.
+      const grows = overrides.reputationGrowsPool || 'none';
+      const growsThis = grows === 'all' || (grows === 'bespoke' && productSegment[id] === 'bespoke');
+      // Only a reputation above one can grow the pool; below one it always shrinks demand.
+      const scale = growsThis ? Math.max(1, reputation) : 1;
+      const reachable = Math.round(pool * scale);
+      orders[id] = reachable;
+      demand[id] = Math.min(reachable, Math.floor(reachable * fit * acceptance * Math.min(1, reputation)));
     }
     const sold = {}, built = {};
     let revenue = 0, cogs = 0, procurement = 0, development = 0;
