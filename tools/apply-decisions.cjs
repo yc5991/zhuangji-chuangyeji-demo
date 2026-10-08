@@ -115,7 +115,7 @@ function apply() {
 const CHECKS = ['design','suppliers','customers','events','reliability','investments','era','fullgame',
   'schedule','difficulty','evaluation','flow','progression','staff','case-options','cable-routing',
   'export-coverage','references','temporal','reachability','coverage','seams','wiring',
-  'doc-figures','single-source','design-to-game','audit'];
+  'doc-figures','single-source','design-to-game','open-claims','audit'];
 
 function main() {
   const write = process.argv.includes('--apply');

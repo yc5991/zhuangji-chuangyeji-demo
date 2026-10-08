@@ -44,7 +44,8 @@
     "build:web": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/build-cocos.ps1 -Platform web-desktop",
     "build:wechat": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/build-cocos.ps1 -Platform wechatgame",
     "preview": "node tools/preview.cjs",
-    "check:design-to-game": "node tools/check-design-to-game.cjs"
+    "check:design-to-game": "node tools/check-design-to-game.cjs",
+    "check:open-claims": "node tools/check-open-claims.cjs"
   },
   "uuid": "867a89c5-3e77-4c7e-82c3-f21efda89693",
   "devDependencies": {
