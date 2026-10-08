@@ -8,7 +8,7 @@ const read = name => JSON.parse(fs.readFileSync(path.join(root, 'design', name),
 const schedule = read('demo-schedule.json');
 const economy = read('economy-candidate.json');
 const events = read('market-events.json');
-const DEMO_MONTHS = 6;
+const { DEMO_MONTHS } = require('./demo-facts.cjs');
 
 // The spec fixes which months each phase covers.
 const PHASE_WINDOWS = { '7.1': [1, 2], '7.2': [3, 4], '7.3': [5, 6] };

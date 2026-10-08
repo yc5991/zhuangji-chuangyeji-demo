@@ -11,7 +11,7 @@ require('node:child_process').execFileSync(process.execPath, [path.join(__dirnam
 const events = read('market-events.json');
 const economy = read('economy-candidate.json');
 const results = read('economy-review-results.json').results;
-const DEMO_MONTHS = 6;
+const { DEMO_MONTHS } = require('./demo-facts.cjs');
 
 function run() {
   assert.equal(events.schemaVersion, 1, 'schema');

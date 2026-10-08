@@ -7,8 +7,8 @@ const read = name => JSON.parse(fs.readFileSync(path.join(root, 'design', name),
 
 const model = read('era-trends.json');
 const CATALOG = ['cpu-motherboard.json', 'gpu.json', 'memory-storage.json', 'structural.json'];
-const FIRST_YEAR = 2016;
-const LAST_YEAR = 2030; // the confirmed full-game timeline
+const { FIRST_YEAR, LAST_YEAR } = require('./demo-facts.cjs');
+// Both ends of the timeline come from the era model, so a change there is felt here.
 
 function run() {
   assert.equal(model.schemaVersion, 1, 'schema');

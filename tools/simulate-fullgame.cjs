@@ -7,7 +7,7 @@ const root = path.resolve(__dirname, '..');
 const read = name => JSON.parse(fs.readFileSync(path.join(root, 'design', name), 'utf8'));
 
 const era = read('era-trends.json');
-const DIFFICULTY = 'normal';
+const { DIFFICULTY } = require('./demo-facts.cjs');
 
 function run() {
   const routes = Object.keys(config.routes).filter(r => config.opening[DIFFICULTY].startingRoutes.includes(r));

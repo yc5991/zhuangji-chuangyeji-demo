@@ -5,7 +5,7 @@ const { simulate, config, channels } = require('./simulate-economy.cjs');
 const root = path.resolve(__dirname, '..');
 const read = name => JSON.parse(fs.readFileSync(path.join(root, 'design', name), 'utf8'));
 
-const DIFFICULTY = 'normal', SCENARIO = 'baseline', STEP = 0.10;
+const { DIFFICULTY, SCENARIO } = require('./demo-facts.cjs');
 const routes = Object.keys(config.routes).filter(r => config.opening[DIFFICULTY].startingRoutes.includes(r));
 
 const scale = (obj, key, f) => Object.fromEntries(Object.entries(obj).map(([k, v]) =>

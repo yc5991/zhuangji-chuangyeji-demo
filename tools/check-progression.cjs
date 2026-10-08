@@ -9,7 +9,7 @@ const read = name => JSON.parse(fs.readFileSync(path.join(root, 'design', name),
 const progression = read('company-progression.json');
 const economy = read('economy-candidate.json');
 const era = read('era-trends.json');
-const FIRST_YEAR = 2016, LAST_YEAR = 2030;
+const { FIRST_YEAR, LAST_YEAR } = require('./demo-facts.cjs');
 
 function run() {
   assert.equal(progression.schemaVersion, 1, 'schema');

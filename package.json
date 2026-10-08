@@ -35,6 +35,7 @@
     "check:seams": "node tools/check-seams.cjs",
     "check:wiring": "node tools/check-wiring.cjs",
     "check:doc-figures": "node tools/check-doc-figures.cjs",
+    "check:single-source": "node tools/check-single-source.cjs",
     "baseline:diff": "node tools/balance-baseline.cjs diff",
     "baseline:update": "node tools/balance-baseline.cjs update",
     "analyze:sensitivity": "node tools/analyze-sensitivity.cjs",

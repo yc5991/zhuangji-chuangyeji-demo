@@ -5,8 +5,8 @@ const assert = require('node:assert/strict');
 const { simulate, config } = require('./simulate-economy.cjs');
 const root = path.resolve(__dirname, '..');
 const read = name => JSON.parse(fs.readFileSync(path.join(root, 'design', name), 'utf8'));
-const DIFFICULTY = 'normal';
-const SCENARIO = 'baseline';
+const { DIFFICULTY } = require('./demo-facts.cjs');
+const { SCENARIO } = require('./demo-facts.cjs');
 
 // Removing a bench can invalidate equipment that needs two of them, so drop dependants together.
 function without(route, removedIds) {

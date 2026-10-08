@@ -11,7 +11,9 @@ const META_TOOLS = ['check-package.cjs', 'balance-baseline.cjs', 'preview-propos
   // Reads the tools rather than the data, so it polices coverage instead of a file.
   'check-coverage.cjs',
   // Reads every design file dynamically, so no single file appears in its source.
-  'check-wiring.cjs'];
+  'check-wiring.cjs',
+  // Reads the tools rather than the data, looking for facts declared in more than one place.
+  'check-single-source.cjs'];
 // Files owned by another workstream; reported, not enforced.
 const OWNED_ELSEWHERE = ['art-runtime.json'];
 
