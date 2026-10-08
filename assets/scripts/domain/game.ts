@@ -1,7 +1,8 @@
 import {DATA} from './data';
 import type {GameState, Difficulty, ProductKind, ComputerDesign, CustomerOrder, ScheduledJob, ResourceUsage, MonthReport, FinishedUnit,RandomAdapter,DemandAssessment} from './types';
-import {part,bill,evaluate,geometry,install,connect,assistAssembly,assistRouting,invalidate} from './workbench';
+import {part,bill,evaluate,geometry,instances,install,uninstall,connect,assistAssembly,assistRouting,invalidate} from './workbench';
 import {SEEDED_RANDOM,categoryPriceFactor,updateMarket} from './market';
+import {failureRate,escapeRate,reworkCost,escapeCost} from './reliability';
 import {businessSummary} from './summary';
 import {finishing,finishWork} from './finishing';
 
@@ -154,8 +155,17 @@ export class Game {
     const caseGame=part(draft.case).game;
     requireThat(['quiet','balanced','performance'].includes(draft.fanProfile),'运行模式不存在');
     requireThat(Number.isInteger(draft.fanCount)&&draft.fanCount>=2&&draft.fanCount<=caseGame.maxFans,'风扇数量超出机箱安装位');
+    requireThat(!draft.caseModules.removeHddCage||caseGame.removableHddCage,'这个机箱的硬盘架不能拆除');
     finishing(draft);
-    if(draft.fanCount!==d.fanCount) {draft.fanPositions=geometry(draft).fanZones.slice(0,draft.fanCount).map(f=>f.id);draft.fanDirections=Object.fromEntries(geometry(draft).fanZones.slice(0,draft.fanCount).map(f=>[f.id,f.direction]));draft.cableRoutes=[];}
+    if(draft.caseModules.removeHddCage&&!d.caseModules.removeHddCage) {
+      for(const i of instances(draft))if(i.part.category==='storage'&&i.part.game.bayType==='3.5-inch')uninstall(draft,i.key,false);
+    }
+    if(draft.fanCount!==d.fanCount) {
+      const zones=geometry(draft).fanZones,positions=d.fanPositions.slice(0,draft.fanCount);
+      for(const zone of zones)if(positions.length<draft.fanCount&&!positions.includes(zone.id))positions.push(zone.id);
+      draft.fanPositions=positions;draft.fanDirections=Object.fromEntries(positions.map(position=>[position,d.fanDirections[position]||zones.find(z=>z.id===position)!.direction]));
+      draft.cableRoutes=d.cableRoutes.filter(r=>!r.to.startsWith('case_fan_')||Number(r.to.slice('case_fan_'.length))<draft.fanCount);
+    }
     invalidate(draft);Object.assign(d,draft);
   }
   setIdentity(id:string,name:string,price:number) {
@@ -169,7 +179,24 @@ export class Game {
       unit.design.name=d.name;unit.design.price=d.price;
     }
   }
+  setFanPosition(id:string,index:number,target:string) {
+    this.active();const d=this.design(id),g=geometry(d);
+    requireThat(Number.isInteger(index)&&index>=0&&index<d.fanPositions.length,'风扇不存在');
+    requireThat(g.fanZones.some(f=>f.id===target),'这个机箱没有该风扇位置');
+    requireThat(!d.fanPositions.some((p,i)=>p===target&&i!==index),'这个位置已经装有风扇');
+    const before=d.fanPositions[index];if(before===target)return;
+    const direction=d.fanDirections[before];delete d.fanDirections[before];d.fanPositions[index]=target;d.fanDirections[target]=direction;
+    d.cableRoutes=d.cableRoutes.filter(r=>r.to!==`case_fan_${index}`);invalidate(d);
+  }
+  setFanDirection(id:string,index:number,direction:'intake'|'exhaust') {
+    this.active();const d=this.design(id);
+    requireThat(Number.isInteger(index)&&index>=0&&index<d.fanPositions.length,'风扇不存在');
+    requireThat(direction==='intake'||direction==='exhaust','风扇方向需要选择进风或出风');
+    const position=d.fanPositions[index];if(d.fanDirections[position]===direction)return;
+    d.fanDirections[position]=direction;invalidate(d);
+  }
   installPart(id:string,instance:string,slot:string) {this.active();install(this.design(id),instance,slot);}
+  uninstallPart(id:string,instance:string) {this.active();return uninstall(this.design(id),instance);}
   connectWire(id:string,request:string,source:string,nodes:string[]) {this.active();connect(this.design(id),request,source,nodes);}
   assemble(id:string) {this.active();assistAssembly(this.design(id));}
   route(id:string) {this.active();assistRouting(this.design(id));}
@@ -292,8 +319,12 @@ export class Game {
     const finish=finishWork(d,old?.design);
     const consumables=(old?0:Math.max(0,d.directCostCoins-(commission?tools?.commissionConsumablesReduction||0:automation?.standardConsumablesReduction||0))+
       Math.max(0,d.fanCount-part(d.case).game.defaultFans)*DATA.balance.additionalFanCostCoins)+finish.cost;
+    // The economy records no per-employee failure multiplier, so the model uses one and so does this.
+    // If grades ever carry one, this is where it would be read.
+    const failRate=failureRate(d,evaluation,1);
     const development=kind==='prototype'&&!old&&!commission?(recipe.developmentCost||0):0;
-    requireThat(this.state.cash>=consumables*quantity+development,'资金不足以支付本次制作耗材');
+    const reworkUnitCost=reworkCost(failRate,Number(recipe.expectedPartsCost)||0);
+    requireThat(this.state.cash>=(consumables+reworkUnitCost)*quantity+development,'资金不足以支付本次制作耗材');
     if(customerId) {const c=this.state.customers.find(c=>c.id===customerId);requireThat(c&&c.status==='accepted'&&c.designId===d.id,'客户订单没有绑定这个设计');}
     const assembly=recipe.assemblyHours*(commission?tools?.commissionAssemblyMultiplier||1:automation?.standardAssemblyMultiplier||1);
     const stages:ScheduledJob['stages']=[];
@@ -306,9 +337,15 @@ export class Game {
     stages.push({name:old?'修改装配':'手工装配',hours:assembly,labor:1,owner:0,bench:1,test:0});
     if(finish.labor)stages.push({name:'外观工艺',hours:finish.labor*(tools?.commissionAssemblyMultiplier||1),labor:1,owner:0,bench:0,test:0});
     stages.push({name:'测试准备',hours:recipe.testSetupHours,labor:1,owner:0,bench:0,test:0},{name:'压力测试',hours:recipe.testStationHours,labor:0,owner:0,bench:0,test:1},{name:'包装交付',hours:recipe.packingHours,labor:1,owner:0,bench:0,test:0});
+    // The expected cost of things going wrong. Rework occupies labour and the test station, so an
+    // unstable or power-starved design is slower as well as dearer; the consumables and any replaced
+    // part are charged with the run.
+    const rw=DATA.reliability.rework;
+    if(failRate*rw.laborHours>0) stages.push({name:'返工预留',hours:failRate*rw.laborHours,labor:1,owner:0,bench:0,test:0});
+    if(failRate*rw.testStationHours>0) stages.push({name:'返工测试预留',hours:failRate*rw.testStationHours,labor:0,owner:0,bench:0,test:1});
     const id=this.id('job');
     const job:ReworkJob={id,designId:d.id,design:clone(d),kind,customerId,quantity,completed:0,phase:0,remaining:stages[0].hours,
-      materialReservations:allocations,unitPartsCost:components.reduce((n,c)=>n+c.quantity*c.unitCost,0)/quantity,consumables,stages,status:'queued',components,reuseUnitId:old?.id};
+      materialReservations:allocations,unitPartsCost:components.reduce((n,c)=>n+c.quantity*c.unitCost,0)/quantity,consumables:consumables+reworkUnitCost,stages,status:'queued',components,reuseUnitId:old?.id};
     for(const row of allocations) this.state.inventory.find(l=>l.id===row.lotId)!.reserved+=row.quantity;
     if(old) {
       old.status='rework';
@@ -428,6 +465,26 @@ export class Game {
     if(this.state.reputation<1)reasons.push('客户口碑降低了本月成交预期');
     return {available:Math.max(0,estimated-alreadySold),estimated,alreadySold,rows,reasons};
   }
+  /**
+   * A fault that reached the customer: the sale is refunded, the machine shipped back and
+   * reputation takes the hit the customer model defines.
+   *
+   * The balance model charges this as an expected value per machine built. Here it is rolled, so a
+   * player can actually meet a faulty machine; the rates are the same, so the long-run totals match
+   * and a single run varies.
+   */
+  private escapedDefect(unitId:string,design:ComputerDesign,price:number,label:string):boolean {
+    const report=design.test;if(!report)return false;
+    const hours=Number(DATA.economy.products[design.kind].testStationHours)||0;
+    const chance=failureRate(design,report,1)*escapeRate(hours);
+    if(this.random()>=chance)return false;
+    const ad=DATA.reliability.arrivalDefect;
+    this.post(`${unitId}:refund`,'refund',-price*ad.refundFraction,0,`${label}：到货故障退款`);
+    this.post(`${unitId}:logistics`,'refund',-ad.logisticsCoins,0,`${label}：到货故障物流`);
+    this.state.reputation=Math.max(DATA.customers.reputation.floor,
+      this.state.reputation+DATA.customers.reputation.deliveredMissingRequirement);
+    return true;
+  }
   sellStock(designId:string,maximum=80) {
     this.active();const d=this.design(designId);requireThat(d.standardized,'先将作品保存为标准产品');
     const kind=d.kind,assessment=this.demandAssessment(d.id),demand=assessment.available;
@@ -435,7 +492,8 @@ export class Game {
     for(const unit of this.state.finished.filter(u=>u.designId===designId&&u.design.revision===d.revision&&u.status==='stock'&&!u.customerId)) {
       if(sold>=Math.min(maximum,demand)) break;
       requireThat(unit.design.test&&!unit.design.test.blocked.length&&unit.design.test.coolingRatio>=1,'库存中的旧版本未通过测试');
-      this.post(`${unit.id}:sale`,'sale',d.price,unit.cost,d.name);unit.status='sold';sold++;
+      if(!this.escapedDefect(unit.id,d,d.price,d.name)) this.post(`${unit.id}:sale`,'sale',d.price,unit.cost,d.name);
+      unit.status='sold';sold++;
     }
     this.state.soldThisMonth[kind]=(this.state.soldThisMonth[kind]||0)+sold;
     return {sold,remainingDemand:Math.max(0,demand-sold),reason:!demand?assessment.reasons.join('；'):'已按本月需求销售，未售出的成品留在库存'};
@@ -449,7 +507,8 @@ export class Game {
     const unit=this.state.finished.find(u=>u.designId===d.id&&u.design.revision===d.revision&&u.status==='stock'&&(!u.customerId||u.customerId===customerId));
     requireThat(unit&&unit.design.test?.revision===d.revision,'当前设计版本尚未完成制作和测试');
     requireThat(d.test?.revision===d.revision,'设计修改后需要重新测试');
-    this.post(`${unit!.id}:sale`,'sale',d.price-c!.deposit,unit!.cost,`${c!.name}：${d.name}`);
+    if(!this.escapedDefect(unit!.id,d,d.price,`${c!.name}：${d.name}`))
+      this.post(`${unit!.id}:sale`,'sale',d.price-c!.deposit,unit!.cost,`${c!.name}：${d.name}`);
     this.post(`${c!.id}:earnedDeposit`,'earnedDeposit',0,0,String(c!.deposit));
     unit!.status='sold';unit!.customerId=c!.id;c!.status='completed';c!.satisfaction=Math.round(Math.min(100,80+(d.test!.appearance-65)*.2+(d.test!.tidiness-65)*.2));
     this.state.reputation=Math.min(DATA.customers.reputation.ceiling,this.state.reputation+DATA.customers.reputation.onTimeMeetingRequirements);
