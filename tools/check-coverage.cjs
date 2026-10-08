@@ -17,7 +17,10 @@ const META_TOOLS = ['check-package.cjs', 'balance-baseline.cjs', 'preview-propos
   // Hashes every design file to prove the generated game data came from the current ones.
   'check-design-to-game.cjs'];
 // Files owned by another workstream; reported, not enforced.
-const OWNED_ELSEWHERE = ['art-runtime.json'];
+const OWNED_ELSEWHERE = ['art-runtime.json',
+  // The interface design system: canvas, safe areas, tokens and screen states. It is the interface
+  // workstream's, and no numerical check should demand a reader for it.
+  'ui-system.json'];
 
 // The research files, reached through a computed path rather than a literal one, so a checker that
 // reads the catalogue directory covers all four.

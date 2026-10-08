@@ -45,7 +45,8 @@
     "economy-review-results.json": "tooling",
     "export-manifest.json": "tooling",
     "recorded-facts.json": "tooling",
-    "workbench-layouts.json": "runtime_input"
+    "workbench-layouts.json": "runtime_input",
+    "ui-system.json": "tooling"
   },
   "ownershipNote": "brands.json, product-series.json and art-runtime.json belong to the brand and art workstreams. This manifest records that they are runtime inputs; whether and when their contents are ready to ship is theirs to decide."
 }

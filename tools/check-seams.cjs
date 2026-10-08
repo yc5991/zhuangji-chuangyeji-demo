@@ -145,7 +145,9 @@ function run() {
       for (const opts of [{}, everyOption]) {
         const out = evaluateDimensions(recipe, { targetUseCase: 'office', finishLevelId: level.id, caseOptions: opts });
         for (const dim of evaluation.dimensions) {
-          const v = out.scores[dim.id];
+          // The rounded scores are the ones reported on the declared scale; the raw ones are the
+          // internal 0-100 working values that the price premium is built on.
+          const v = out.rounded[dim.id];
           assert(Number.isFinite(v) && v >= lo && v <= hi,
             recipe.id + '/' + level.id + ': ' + dim.id + ' scored ' + v + ' with the richest options, outside ' + lo + '-' + hi);
         }

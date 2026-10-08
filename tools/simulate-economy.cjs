@@ -228,7 +228,10 @@ function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
   const grows = overrides.reputationGrowsPool || 'all';
       const growsThis = grows === 'all' || (grows === 'bespoke' && productSegment[id] === 'bespoke');
       // Only a reputation above one can grow the pool; below one it always shrinks demand.
-      const scale = growsThis ? Math.max(1, reputation) : 1;
+      // Decision 4 revisited: growth only starts once reputation is clearly good, so a merely average
+      // record is a buffer rather than a bonus. The threshold is a knob, not a rule.
+      const growthFloor = overrides.reputationGrowthFloor ?? customerModel.reputation.growthFloor ?? 1.1;
+      const scale = growsThis && reputation > growthFloor ? reputation : 1;
       const reachable = Math.round(pool * scale);
       orders[id] = reachable;
       demand[id] = Math.min(reachable, Math.floor(reachable * fit * acceptance * Math.min(1, reputation)));

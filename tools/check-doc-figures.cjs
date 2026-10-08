@@ -55,6 +55,9 @@ const COINCIDENCES = [
   { doc: 'era-trends.md', value: 40599, why: 'the mass profit in 2030 under the era model, not the 2016 baseline' },
   { doc: 'spec-conflicts.md', value: 40568, why: 'the mass profit in 2030 in the full-game simulation, which happens to sit near the 2016 easy-mode figure' },
   { doc: 'route-spread-criterion.md', value: 40568, why: 'the mass profit in 2030 in the full-game simulation, the same coincidence as above' },
+  // Coincidences created when the reputation growth floor moved the model's route profits.
+  { doc: 'demo-pacing.md', value: 44614, why: 'a pacing figure that happens to sit near the normal mass profit of 44671' },
+  { doc: 'price-ceiling.md', value: 54286, why: 'a ceiling figure that happens to sit near the easy mass profit of 54271' },
   { doc: 'era-trends.md', value: 29322, why: 'the boutique profit in 2017 under the era model' },
   { doc: 'era-trends.md', value: 28991, why: 'the boutique profit in 2018 under the era model' },
   { doc: 'era-trends.md', value: 27326, why: 'the boutique profit in 2020 under the era model' },

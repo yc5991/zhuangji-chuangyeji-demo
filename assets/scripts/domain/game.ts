@@ -120,7 +120,9 @@ export class Game {
   design(id:string) {const d=this.state.designs.find(d=>d.id===id);requireThat(d,'找不到这个设计');return d!;}
   createDesign(kind:ProductKind,name?:string):ComputerDesign {
     this.active();
-    requireThat(DATA.economy.products[kind].kind!=='standard'||this.startingRoutes.includes('scale'),'当前难度开局先经营高定，量产路线的解锁条件仍待确认');
+    // Every difficulty opens all three routes: which one to run is the player's decision, not a gate.
+    // Hard mode needs no lock because the opening economy already rejects mass production -- taking it
+    // loses the first month -- so the player discovers the same thing by trying it.
     const recipe=DATA.balance.recipes.find(r=>r.id===kind)!;
     const d:ComputerDesign={...clone(recipe),id:this.id('design'),name:name?.trim().slice(0,28)||`${recipe.name} ${this.state.designs.length+1}`,kind,revision:1,
       slotAssignments:{},cableRoutes:[],caseModules:{panel:'solid',sidePanel:'steel',removeHddCage:false,nameplate:this.state.companyName},colors:{body:'graphite',cables:'black'},lighting:'off',finishLevelId:'standard',
@@ -441,6 +443,10 @@ export class Game {
     const test=d.test?.revision===d.revision?d.test:evaluate(d,this.date,false),curve=DATA.customers.priceAcceptance;
     const preference=DATA.customers.appearancePreference,span=preference?100-preference.baselineScore:0;
     const appearancePremium=preference&&span>0?Math.max(0,test.appearance-preference.baselineScore)/span*preference.maxPricePremium:0;
+    // Reputation scales the month's expected custom. Below one it shrinks, above the policy's floor it
+    // grows, and in between it is a buffer: a merely respectable record neither helps nor hurts.
+    const rep=this.state.reputation,floor=Number(DATA.customers.reputation.growthFloor??1.1);
+    const growthScale=rep<1?rep:rep>floor?rep:1;
     const rows=archetypes.map(a=>{
       const r=a.requirements,issues:string[]=[];
       const budgetCeiling=a.budgetCoins[1]*(1+appearancePremium);
@@ -454,7 +460,7 @@ export class Game {
       const referencePrice=(a.budgetCoins[0]+a.budgetCoins[1])/2*(1+appearancePremium),ratio=d.price/referencePrice;
       const acceptance=ratio<=1?Math.min(curve.ceiling,1+curve.belowSlope*(1-ratio)):Math.max(curve.floor,1-curve.aboveSlopeBySegment[a.segment]*(ratio-1));
       const fit=Math.min(1,test.scores[a.fitUseCase]/a.expectedScore);
-      return {archetype:a.id,name:a.zh,eligible:!issues.length,issues,referencePrice,acceptance,fit,expectedUnits:issues.length?0:cap*a.weight/weights*fit*acceptance*this.state.reputation};
+      return {archetype:a.id,name:a.zh,eligible:!issues.length,issues,referencePrice,acceptance,fit,expectedUnits:issues.length?0:cap*a.weight/weights*fit*acceptance*growthScale};
     });
     const estimated=Math.max(0,Math.floor(rows.reduce((n,r)=>n+r.expectedUnits,0))),alreadySold=this.state.soldThisMonth[d.kind]||0;
     const reasons:string[]=[];

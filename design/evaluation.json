@@ -7,8 +7,8 @@
     "limits": "A reporting model that turns the existing numbers into six comparable 0-100 scores. It does not change how a machine is built or priced."
   },
   "scoreRange": [
-    0,
-    100
+    1,
+    5
   ],
   "dimensions": [
     {

@@ -26,7 +26,7 @@ function run() {
     assert(d.source && d.note, `${id}: source and note`);
   }
   assert.equal(new Set(ids).size, ids.length, 'duplicate dimension id');
-  assert.deepEqual([...evaluation.scoreRange], [0, 100], 'scores are 0-100');
+  assert.deepEqual([...evaluation.scoreRange], [1, 5], 'scores are reported on the five-point scale');
 
   // Every recipe must score on every dimension, at every finish level.
   const rows = [];

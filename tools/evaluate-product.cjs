@@ -61,7 +61,11 @@ function evaluateDimensions(recipe, { targetUseCase, finishLevelId = 'standard',
   };
   return {
     scores,
-    rounded: Object.fromEntries(Object.entries(scores).map(([k, v]) => [k, Math.round(v * 10) / 10])),
+    // The scores are worked out out of a hundred and reported on the declared scale, one decimal place
+    // so they can sit between marks. Only the raw appearance score feeds the price premium, so moving
+    // the reported scale does not touch the balance.
+    rounded: Object.fromEntries(Object.entries(scores).map(([k, v]) =>
+      [k, Math.round((evaluation.scoreRange[0] + (evaluation.scoreRange[1] - evaluation.scoreRange[0]) * clamp01(v / 100)) * 10) / 10])),
     report, finishLevel: level, targetUseCase: target,
     caseOptions: build.picked, caseOptionCost: build.cost, adjustedNoiseBurden: burden,
   };

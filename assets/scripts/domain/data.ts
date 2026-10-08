@@ -6,15 +6,15 @@ export const DATA: GameData = {
     "creatorVersion": "3.8.8",
     "sourceHashes": {
       "components.json": "5f491656d52a8739d505e9e0a205efcf83bbf4155b4589dcedc43f64be0cd033",
-      "balance.json": "cbe33aa0404a1dd0a8429e54c346a775d8a37ff2f68ff9c739bed5d2d4bc0356",
+      "balance.json": "5d63b4aa2ffcc512c57a9116d61ec96788575f080bfe2b8a9e963fe67a71360a",
       "economy-candidate.json": "ac8ce0120743a62e542f98a25ea198312ba7bd08c56171ddc19b0c19c6ee9a32",
       "supplier-system.json": "c10b7edb3ac69d1f829e35245a63d30d23e058bfd7ce635acd1d4bf531138170",
-      "customer-model.json": "92fd79fc75849cbdbbae293ba6a139425bda11219d942573aa90bdf5bb037cf7",
+      "customer-model.json": "2a18fb702e9364faeea568ca17a7f8bd88d2d61c4b992202e7171725b537ef1c",
       "workbench.json": "037082244a64a98e1cb0efe5ff799f9312b823bc4984224f93df202d45b7050c",
       "market-events.json": "6f0d3a2ba55c983eba8eaa3b79bf33e281815e04e5088b4a316067ccd5bce5b5",
       "demo-schedule.json": "c29b97ac7eaa877e12cc95fe2e53dfe1d501b4469e0d7c20fb1fb0027871706c",
       "design-flow.json": "06120a5d038c5aed79a9e7b5a73d7d53e8346873fcc8e466a343c654b0e417cb",
-      "evaluation.json": "8280d0e78874578de9faa188ae5052de39322d57af56ad862c6561d2cbf11564",
+      "evaluation.json": "aa0d52d86984148920328549475213c0bcc79c082a4b26b5c221d1f88d33fcdc",
       "finish-options.json": "2fbd119468d8f0286cc4bc31bf920087a1363fd0388294bf62b4b23a4b8829da",
       "case-options.json": "6db9917aabca55b9a6fc8b4cdc7c836acb106a0e06ad3bc44d1a5d140960de7c",
       "cable-routing.json": "eb3915e7aa4a7fc5c8be84b89196342541b5f93e5760996d0dfb3a493fcc8851",
@@ -1196,8 +1196,8 @@ export const DATA: GameData = {
     "status": "draft",
     "provenance": "User v0.2 initial prices and scores, with explicitly provisional load, noise and cooling model",
     "scoreRange": [
-      0,
-      100
+      1,
+      5
     ],
     "weights": {
       "office": {
@@ -1930,7 +1930,9 @@ export const DATA: GameData = {
       "onTimeMeetingRequirements": 0.04,
       "lateMeetingRequirements": -0.02,
       "deliveredMissingRequirement": -0.15,
-      "note": "口碑系数 R 乘进月成交量；首轮计算固定为 1，接入订单流程后再启用"
+      "note": "口碑系数 R 乘进月成交量；首轮计算固定为 1，接入订单流程后再启用",
+      "growthFloor": 1.1,
+      "growthFloorNote": "口碑高于这个值才放大客群；低于 1 时照常缩减。中间这一段只是缓冲"
     },
     "priceAcceptance": {
       "formula": "ratio = price / reference; below reference: clamp(1 + belowSlope*(1-ratio), 1, ceiling); above reference: clamp(1 - aboveSlope*(ratio-1), floor, 1)",
@@ -3496,8 +3498,8 @@ export const DATA: GameData = {
       "limits": "A reporting model that turns the existing numbers into six comparable 0-100 scores. It does not change how a machine is built or priced."
     },
     "scoreRange": [
-      0,
-      100
+      1,
+      5
     ],
     "dimensions": [
       {

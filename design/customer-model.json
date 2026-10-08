@@ -179,7 +179,9 @@
     "onTimeMeetingRequirements": 0.04,
     "lateMeetingRequirements": -0.02,
     "deliveredMissingRequirement": -0.15,
-    "note": "口碑系数 R 乘进月成交量；首轮计算固定为 1，接入订单流程后再启用"
+    "note": "口碑系数 R 乘进月成交量；首轮计算固定为 1，接入订单流程后再启用",
+    "growthFloor": 1.1,
+    "growthFloorNote": "口碑高于这个值才放大客群；低于 1 时照常缩减。中间这一段只是缓冲"
   },
   "priceAcceptance": {
     "formula": "ratio = price / reference; below reference: clamp(1 + belowSlope*(1-ratio), 1, ceiling); above reference: clamp(1 - aboveSlope*(ratio-1), floor, 1)",

@@ -3,8 +3,8 @@
   "status": "draft",
   "provenance": "User v0.2 initial prices and scores, with explicitly provisional load, noise and cooling model",
   "scoreRange": [
-    0,
-    100
+    1,
+    5
   ],
   "weights": {
     "office": {
