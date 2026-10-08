@@ -10,7 +10,7 @@ export const DATA: GameData = {
       "economy-candidate.json": "1145414be86f9ef2bb8ad55cfa2528138246fbaeb4db9c2a2dd3f83763c56768",
       "supplier-system.json": "c10b7edb3ac69d1f829e35245a63d30d23e058bfd7ce635acd1d4bf531138170",
       "customer-model.json": "92fd79fc75849cbdbbae293ba6a139425bda11219d942573aa90bdf5bb037cf7",
-      "workbench.json": "78675cedb89a74ee2232de24b666c1016b60a9a7a0e436c81d7140ddb77df15a",
+      "workbench.json": "037082244a64a98e1cb0efe5ff799f9312b823bc4984224f93df202d45b7050c",
       "market-events.json": "6f0d3a2ba55c983eba8eaa3b79bf33e281815e04e5088b4a316067ccd5bce5b5",
       "demo-schedule.json": "c29b97ac7eaa877e12cc95fe2e53dfe1d501b4469e0d7c20fb1fb0027871706c",
       "design-flow.json": "06120a5d038c5aed79a9e7b5a73d7d53e8346873fcc8e466a343c654b0e417cb",

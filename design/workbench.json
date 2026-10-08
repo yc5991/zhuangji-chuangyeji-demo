@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "status": "interaction_draft",
-  "geometryStatus": "requires_art_review",
+  "geometryStatus": "game_geometry_implemented; art detail still requires review",
   "confirmedInteractionPreference": {
     "basis": "User answers in the design confirmation chat on 2026-10-07",
     "assembly": "tap_or_drag",
@@ -160,12 +160,9 @@
     "finalDemoResults"
   ],
   "pendingGeometry": [
-    "per_case_anchor_coordinates",
-    "channel_neighbors_and_capacity",
-    "cable_lengths",
     "port_transforms",
     "collision_volumes",
-    "cooler_ram_clearance",
-    "gpu_connector_bend_space"
-  ]
+    "art_detail"
+  ],
+  "pendingGeometryNote": "第 109 轮核对：原有 7 项里 5 项已实现并有校验——机箱锚点、通道与容量、线长、散热器与内存间距、显卡弯折空间（见 design/workbench-geometry.json，其 cases[].anchors / channels / cableLengths / cpuRamClearanceMm / gpuCableBendMm，由 check:cable-routing 校验）。余下三项：端口姿态未在几何里显式建模；碰撞体与美术细节属交互与美术工作流。本字段不被任何程序读取，改动前请先核对 workbench-geometry.json 的 status。"
 }
