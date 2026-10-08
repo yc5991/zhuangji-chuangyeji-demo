@@ -12,6 +12,37 @@ const customerModel = read('customer-model.json');
 const depositFraction = Object.fromEntries(Object.entries(customerModel.segments).map(([id, s]) => [id, s.depositFraction || 0]));
 const productSegment = {};
 for (const [segId, seg] of Object.entries(customerModel.segments)) for (const p of seg.products) productSegment[p] = segId;
+
+// Each archetype is eligible for exactly one recipe, so orders can be attributed per product.
+const { evaluate } = require('./check-design.cjs');
+const archetypesByProduct = {};
+for (const a of customerModel.archetypes) (archetypesByProduct[a.referenceRecipe] ||= []).push(a);
+const clamp = (v, lo, hi) => Math.min(hi, Math.max(lo, v));
+
+// Fit: how well the built machine scores against what this archetype expects.
+function fitOf(productId, recipe) {
+  const members = archetypesByProduct[productId] || [];
+  if (!members.length) return 1;
+  const report = evaluate(recipe);
+  const weight = members.reduce((n, a) => n + a.weight, 0);
+  return members.reduce((n, a) => n + a.weight * clamp(report.scores[a.fitUseCase] / a.expectedScore, 0, 1), 0) / weight;
+}
+
+// Price acceptance: a segment slope either side of the archetype's market reference price.
+function acceptanceOf(productId, price) {
+  const members = archetypesByProduct[productId] || [];
+  if (!members.length) return 1;
+  const weight = members.reduce((n, a) => n + a.weight, 0);
+  return members.reduce((n, a) => {
+    const reference = (a.budgetCoins[0] + a.budgetCoins[1]) / 2;
+    const ratio = price / reference;
+    const above = customerModel.priceAcceptance.aboveSlopeBySegment[a.segment];
+    const p = ratio <= 1
+      ? clamp(1 + customerModel.priceAcceptance.belowSlope * (1 - ratio), 1, customerModel.priceAcceptance.ceiling)
+      : clamp(1 - above * (ratio - 1), customerModel.priceAcceptance.floor, 1);
+    return n + a.weight * p;
+  }, 0) / weight;
+}
 const round = n => Math.round(n * 100) / 100;
 
 // Scenario inputs are proposed business parameters, separate from component reference data.
@@ -30,6 +61,8 @@ function simulate(routeId, scenarioId, difficulty = 'normal') {
   let totalSales = 0, totalRevenue = 0, totalCogs = 0, totalFixed = 0, totalInvestment = 0, totalDevelopment = 0;
   let totalDeposits = 0, totalPayablesPaid = 0;
   let bankrupt = false, bankruptMonth = null;
+  // Reputation multiplies how many of the reachable orders actually convert.
+  let reputation = customerModel.reputation.initial;
   // Parts bought on account are owed, not paid. They settle at the month end when the term expires.
   let payables = [];
   const developed = new Set(), stock = Object.fromEntries(Object.keys(config.products).map(id => [id, []]));
@@ -67,8 +100,15 @@ function simulate(routeId, scenarioId, difficulty = 'normal') {
       owner: opening.ownerHours, bench: benches * config.stationMonthlyHours,
       test: opening.testStations * config.stationMonthlyHours };
     const used = { labor: 0, owner: 0, bench: 0, test: 0 };
-    const demand = Object.fromEntries(Object.keys(config.products).map(id =>
-      [id, Math.round(config.companyDemandCaps[id][index] * scenario.demandMultiplier)]));
+    // Reachable orders per product, then reduced by fit, price acceptance and reputation.
+    const demand = {}, orders = {};
+    for (const id of Object.keys(config.products)) {
+      const pool = Math.round(config.companyDemandCaps[id][index] * scenario.demandMultiplier);
+      const fit = fitOf(id, recipes.get(id));
+      const acceptance = acceptanceOf(id, config.products[id].salePrice);
+      orders[id] = pool;
+      demand[id] = Math.min(pool, Math.floor(pool * fit * acceptance * reputation));
+    }
     const sold = {}, built = {};
     let revenue = 0, cogs = 0, procurement = 0, development = 0;
     let cashProcurement = 0, cashFromSales = 0, depositsTaken = 0, payablesPaid = 0;
@@ -153,10 +193,21 @@ function simulate(routeId, scenarioId, difficulty = 'normal') {
     totalSales += salesCount;
     const stockCost = round(Object.values(stock).flat().reduce((n, p) => n + p, 0));
     const monthProfit = round(revenue - cogs - fixed - development);
+    // Reputation tracks whether the workshop delivered what it committed to. The reachable pool is
+    // not a backlog: a boutique shop is capacity bound and a mass line is demand bound, so leaving
+    // part of the pool unserved is normal. Only a broken commitment costs reputation.
+    const orderedTotal = Object.values(orders).reduce((n, v) => n + v, 0);
+    const servedTotal = Object.values(sold).reduce((n, v) => n + v, 0);
+    const rep = customerModel.reputation;
+    const reputationBefore = reputation;
+    const missedCommitment = notices.some(n => n.startsWith('CAPACITY_LIMIT') || n.startsWith('PROCUREMENT_CASH_LIMIT') || n.startsWith('DEVELOPMENT_BLOCKED'));
+    reputation = clamp(reputation + (missedCommitment ? rep.deliveredMissingRequirement : rep.onTimeMeetingRequirements),
+      rep.floor, rep.ceiling);
     const outstandingNow = round(payables.reduce((n, p) => n + p.amount, 0));
     months.push({month,startCash:round(startCash),endCash:round(cash),sold,built,revenue:round(revenue),
       costOfGoodsSold:round(cogs),procurement:round(procurement),fixedCost:fixed,developmentCost:development,
       depositsTaken:round(depositsTaken),payablesPaid:round(payablesPaid),payablesOutstanding:outstandingNow,
+      orders,servedTotal,orderedTotal,reputationBefore:round(reputationBefore),reputationAfter:round(reputation),
       operatingProfit:monthProfit,inventoryCost:stockCost,inventoryUnits:Object.values(stock).reduce((n,p)=>n+p.length,0),
       capacityUsed:Object.fromEntries(Object.entries(used).map(([k,v])=>[k,round(v)])),capacityAvailable:limits,
       notices:[...new Set(notices)]});
@@ -175,7 +226,7 @@ function simulate(routeId, scenarioId, difficulty = 'normal') {
     'Operating profit, inventory, payables and cash do not reconcile.');
   if (bankrupt) assert(cash < 0, 'Bankruptcy must coincide with a negative cash balance.');
   return {route:routeId,scenario:scenarioId,difficulty,partsChannel:channel.id,partsChannelFactor:channelFactor,
-    paymentTermMonths:termMonths,creditLimitCoins:creditLimit,gatedAtStart,
+    paymentTermMonths:termMonths,creditLimitCoins:creditLimit,gatedAtStart,reputation:round(reputation),
     totalDeposits:round(totalDeposits),totalPayablesPaid:round(totalPayablesPaid),payablesOutstanding,
     bankrupt,bankruptMonth,totalSales,totalRevenue,totalCostOfGoodsSold:round(totalCogs),
     totalFixedCost:totalFixed,totalDevelopmentCost:totalDevelopment,totalInvestment,
