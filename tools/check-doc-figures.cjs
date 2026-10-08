@@ -31,6 +31,17 @@ const COINCIDENCES = [
   { doc: 'era-trends.md', value: 36950, why: 'the mixed profit in 2021 under the era model, not the 2016 baseline' },
   { doc: 'era-trends.md', value: 33441, why: 'the boutique profit in 2025 under the era model, not the 2016 baseline' },
   { doc: 'era-trends.md', value: 40599, why: 'the mass profit in 2030 under the era model, not the 2016 baseline' },
+  { doc: 'spec-conflicts.md', value: 40568, why: 'the mass profit in 2030 in the full-game simulation, which happens to sit near the 2016 easy-mode figure' },
+  { doc: 'era-trends.md', value: 29322, why: 'the boutique profit in 2017 under the era model' },
+  { doc: 'era-trends.md', value: 28991, why: 'the boutique profit in 2018 under the era model' },
+  { doc: 'era-trends.md', value: 27326, why: 'the boutique profit in 2020 under the era model' },
+  { doc: 'era-trends.md', value: 26986, why: 'the boutique profit in 2023 under the era model' },
+  { doc: 'era-trends.md', value: 26660, why: 'the boutique profit in 2024 under the era model' },
+  { doc: 'era-trends.md', value: 26329, why: 'the boutique profit in 2025 under the era model' },
+  { doc: 'era-trends.md', value: 25988, why: 'the boutique profit in 2026 under the era model' },
+  { doc: 'era-trends.md', value: 25656, why: 'the boutique profit in 2027 under the era model' },
+  { doc: 'era-trends.md', value: 25322, why: 'the boutique profit in 2028 under the era model' },
+  { doc: 'era-trends.md', value: 25157, why: 'the boutique profit in 2029 under the era model' },
 ];
 
 // Rewrite near misses to the live value. Only documents that quote a figure the data no longer
