@@ -330,7 +330,5 @@
       "fromMonth": 4,
       "throughMonth": 5
     }
-  },
-  "productionOvershootCap": 2,
-  "productionOvershootNote": "标准产品最多按需求的这个倍数排产。量产路线本来就造多于卖得掉的量，但无上限的爬坡会在需求下滑时把现金压死：普通档在需求下降 35% 的场景下第 6 月破产，加上这个上限后存活，而全部参考数值一分不变"
+  }
 }
