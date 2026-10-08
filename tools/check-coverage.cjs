@@ -13,7 +13,9 @@ const META_TOOLS = ['check-package.cjs', 'balance-baseline.cjs', 'preview-propos
   // Reads every design file dynamically, so no single file appears in its source.
   'check-wiring.cjs',
   // Reads the tools rather than the data, looking for facts declared in more than one place.
-  'check-single-source.cjs'];
+  'check-single-source.cjs',
+  // Hashes every design file to prove the generated game data came from the current ones.
+  'check-design-to-game.cjs'];
 // Files owned by another workstream; reported, not enforced.
 const OWNED_ELSEWHERE = ['art-runtime.json'];
 

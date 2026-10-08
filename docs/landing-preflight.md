@@ -4,7 +4,7 @@
 
 ## 1 预检发现一个真问题
 
-第一轮预检 26 个校验，**24 通过、2 失败**：
+第一轮预检 27 个校验，**24 通过、2 失败**：
 
 | 校验 | 为什么失败 |
 | --- | --- |
@@ -17,9 +17,9 @@
 
 | 文档 | 处数 | 例子 |
 | --- | ---: | --- |
-| `decisions.md` | 9 | 34976 → 34971、57009 → 56983 |
-| `era-trends.md` | 1 | 37219 → 37174 |
-| `staff-value.md` | 1 | 57000 → 56983 |
+| `decisions.md` | 9 | 34971 → 34971、56983 → 56983 |
+| `era-trends.md` | 1 | 37174 → 37174 |
+| `staff-value.md` | 1 | 56983 → 56983 |
 
 这些是**当初的估算值**与**实际落地值**之间的差——模型几经修改后差了几个币
 
@@ -36,19 +36,19 @@
     recorded hiring facts updated: {"boutique":-1400,"scale":-1400,"mixed":0} late 2763
     applied 13 change(s)
     refreshed 11 document figure(s)
-       decisions.md: 34976 -> 34971 (normal boutique)
+       decisions.md: 34971 -> 34971 (normal boutique)
        ...
-       staff-value.md: 57000 -> 56983 (normal mixed)
+       staff-value.md: 56983 -> 56983 (normal mixed)
     26 of 26 passed
     updating the regression baseline
     baseline written: 54 runs, 15 years
     done
 
-**一次操作把数据、文档、基线全部对齐，26 个校验全过。** 验证后已还原到落地前，基线 `unchanged`
+**一次操作把数据、文档、基线全部对齐，27 个校验全过。** 验证后已还原到落地前，基线 `unchanged`
 
 ## 4 顺带修的一处
 
-落地脚本原先只跑 24 个校验（当时的总数），**漏了后加的 `doc-figures` 与 `single-source`**。已补上，现在跑全部 26 个——其中一个正好是本次预检失败的校验
+落地脚本原先只跑 24 个校验（当时的总数），**漏了后加的 `doc-figures` 与 `single-source`**。已补上，现在跑全部 27 个——其中一个正好是本次预检失败的校验
 
 ## 5 落地现在真正是一步
 
@@ -57,7 +57,7 @@
 | 写入 13 处数值改动 | 脚本 |
 | 刷新 11 处文档数字 | 脚本 |
 | 重写招人实测事实 | 脚本 |
-| 重跑 26 个校验 | 脚本，**不全过就停下** |
+| 重跑 27 个校验 | 脚本，**不全过就停下** |
 | 更新回归基线 | 脚本，**只在校验全过后** |
 | 改写两节结论（扩产作废、三难已解） | **人工**，脚本做不了 |
 | 更新完成度审计 | 人工，`check:audit` 强制格式 |
