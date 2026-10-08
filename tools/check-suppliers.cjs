@@ -10,7 +10,7 @@ const role = {cpu:'cpu',motherboard:'motherboard',gpu:'gpu_board',ram:'ram',stor
 const monthPattern = /^(20\d\d)-(0[1-9]|1[0-2])$/;
 const knownKind = new Set(['retail_availability','announcement','existing_before_phase','estimated_window']);
 const knownStatus = new Set(['verified','inferred','unresolved']);
-const normalizeField = name => name.replace(/^specs\./, '');
+const {canonicalPath, resolve} = require('./normalize-catalog.cjs');
 
 // A coarse date gives only its earliest possible month; it never proves an exact day.
 function earliestMonth(release) {
@@ -83,14 +83,26 @@ function run() {
       if (candidateSeries.has(product.gameName.seriesId)) assert.deepEqual(series,candidateSeries.get(product.gameName.seriesId),`${product.id}: conflicting candidate series`);
       else candidateSeries.set(product.gameName.seriesId,series);
       assert(product.specs && typeof product.specs==='object',`${product.id}: specs`);
+      // A name that exists both at the top level and under specs can only ever be referenced in its
+      // specs form, because canonicalPath resolves the bare name to specs first. The top-level one
+      // would silently become unreferenceable, so the collision is refused outright.
+      const shadowed = Object.keys(product).filter(k => k in product.specs);
+      assert.equal(shadowed.length, 0,
+        `${product.id}: ${shadowed.join(', ')} exist both at the top level and under specs, so the top-level form could never be cited`);
       assert(Array.isArray(product.verifiedFields) && Array.isArray(product.inferredFields),`${product.id}: field provenance`);
-      const verified = new Set(product.verifiedFields.map(normalizeField));
+      const verified = new Set(product.verifiedFields);
+      for (const kind of ['verifiedFields','inferredFields']) {
+        assert.equal(new Set(product[kind]).size,product[kind].length,`${product.id}: duplicate ${kind}`);
+        for (const field of product[kind]) {
+          assert.equal(field,canonicalPath(product,field),`${product.id}: noncanonical path ${field}`);
+          assert(resolve(product,field)!==undefined,`${product.id}: missing provenance field ${field}`);
+        }
+      }
       for (const field of product.verifiedFields) {
-        const chain = field.split('.');
-        const value = chain.length>1 ? chain.reduce((o,key)=>o?.[key],product) : Object.hasOwn(product.specs,field) ? product.specs[field] : product[field];
+        const value = resolve(product,field);
         assert(value!==null && value!==undefined,`${product.id}: verified field is unknown: ${field}`);
       }
-      for (const field of product.inferredFields) assert(!verified.has(normalizeField(field)),`${product.id}: field both verified and inferred: ${field}`);
+      for (const field of product.inferredFields) assert(!verified.has(field),`${product.id}: field both verified and inferred: ${field}`);
       checkSources(product.sourceIds, product.id);
       if (file==='memory-storage.json') {
         assert(!product.sourceIds.includes('samdocs') || product.brandId==='samsong',`${product.id}: Samsung directory cannot verify another supplier`);
