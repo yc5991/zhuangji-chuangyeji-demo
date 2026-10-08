@@ -9,7 +9,9 @@ const toolsDir = path.join(root, 'tools');
 const META_TOOLS = ['check-package.cjs', 'balance-baseline.cjs', 'preview-proposal.cjs',
   'prepare-demo.cjs', 'normalize-catalog.cjs', 'analyze-sensitivity.cjs',
   // Reads the tools rather than the data, so it polices coverage instead of a file.
-  'check-coverage.cjs'];
+  'check-coverage.cjs',
+  // Reads every design file dynamically, so no single file appears in its source.
+  'check-wiring.cjs'];
 // Files owned by another workstream; reported, not enforced.
 const OWNED_ELSEWHERE = ['art-runtime.json'];
 

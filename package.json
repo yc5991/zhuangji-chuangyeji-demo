@@ -33,6 +33,7 @@
     "check:reachability": "node tools/check-reachability.cjs",
     "check:coverage": "node tools/check-coverage.cjs",
     "check:seams": "node tools/check-seams.cjs",
+    "check:wiring": "node tools/check-wiring.cjs",
     "baseline:diff": "node tools/balance-baseline.cjs diff",
     "baseline:update": "node tools/balance-baseline.cjs update",
     "analyze:sensitivity": "node tools/analyze-sensitivity.cjs",

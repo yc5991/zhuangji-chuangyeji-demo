@@ -51,12 +51,15 @@ function evaluate(plan, date = '2016-06-30', demand = {}) {
   const block = code => { if (!blocked.includes(code)) blocked.push(code); };
   for (const part of all) if (part.availability.gameDate > date) block('NOT_RELEASED');
   if (!board.game.supportedCpuIds.includes(cpu.id) || board.game.platform !== cpu.game.platform) block('CPU_PLATFORM');
+  // A board whose firmware does not know the processor cannot post, however well the socket fits.
+  if (board.game.biosReady === false) block('BIOS_NOT_READY');
   if (ram.some(p => p.game.ramType !== board.game.ramType)) block('RAM_TYPE');
   if (ram.length > board.game.ramSlots) block('RAM_SLOTS');
   const ramGB = ram.reduce((n, p) => n + p.game.capacityGB, 0);
   if (ramGB === 0 || ramGB > board.game.maxRamGB) block('RAM_CAPACITY');
   if (!chassis.game.supportedForms.includes(board.game.formFactor)) block('BOARD_FORM');
   if (!cooler.game.supportedPlatforms.includes(cpu.game.platform)) block('COOLER_MOUNT');
+  if (cooler.game.includesMountingKits === false) block('COOLER_MOUNTING_KITS');
   if (cooler.game.dimensionsMm.height > chassis.game.coolerMaxHeightMm) block('COOLER_HEIGHT');
   if (psu.game.dimensionsMm.depth > chassis.game.psuMaxDepthMm) block('PSU_DEPTH');
   const cageRemoved = !!plan.removeHddCage;
@@ -72,6 +75,8 @@ function evaluate(plan, date = '2016-06-30', demand = {}) {
     if (count > max) block('STORAGE_BAYS');
   }
   if (disks.length > board.game.sataPorts || disks.some(p => p.game.interface !== 'SATA')) block('STORAGE_INTERFACE');
+  // The board only ships so many data cables; the rest would have to be bought separately.
+  if (disks.length > board.game.includedSataDataCables) block('SATA_DATA_CABLES');
   if (disks.length + 1 > psu.game.sataPowerConnectors) block('SATA_POWER_CONNECTORS');
   const system = get(plan.systemDrive), work = get(plan.workDrive);
   if (!disks.some(p => p.id === system.id) || !disks.some(p => p.id === work.id)) block('DRIVE_SELECTION');
