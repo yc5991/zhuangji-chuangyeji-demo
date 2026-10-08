@@ -42,7 +42,42 @@ function satisfies(recipe, req) {
   return true;
 }
 
+function checkRoundingCliffs() {
+  // Orders are whole numbers, so a pool of exactly one order is a cliff: any acceptance below
+  // one floors to zero and the customer disappears rather than paying less. That only bites
+  // when a route actually plans to build that model in a month whose pool can shrink to one.
+  const cliffRisks = [];
+  for (const [productId, product] of Object.entries(economyConfig.products)) {
+    const acceptance = acceptanceOf(productId, product.salePrice);
+    if (acceptance >= 1) continue;   // priced at or under what the customers expect, so no cliff
+    // The smallest pool each month can shrink to across every scenario.
+    const pools = [];
+    for (const scenario of Object.values(economyConfig.scenarios)) {
+      for (let month = 1; month <= 6; month++) {
+        const inWindow = month >= (scenario.fromMonth ?? 1) && month <= (scenario.throughMonth ?? 6);
+        const multiplier = inWindow ? (scenario.demandMultiplier ?? 1) : 1;
+        const pool = Math.round(economyConfig.companyDemandCaps[productId][month - 1] * multiplier);
+        pools[month - 1] = Math.min(pools[month - 1] ?? Infinity, pool);
+      }
+    }
+    // Only a month that some route plans to build in can be harmed.
+    const planned = [];
+    for (const route of Object.values(economyConfig.routes))
+      route.monthlyProductionTargets.forEach((targets, index) => {
+        if ((targets[productId] || 0) > 0) planned[index] = true;
+      });
+    const doomed = planned
+      .map((want, index) => (want && pools[index] <= 1 ? index + 1 : null))
+      .filter(Boolean);
+    if (doomed.length) cliffRisks.push(productId + " (acceptance " + acceptance.toFixed(3) +
+      ", pool of one in month " + doomed.join(", ") + ")");
+  }
+  assert.equal(cliffRisks.length, 0,
+    "a route plans to build these models in a month where the pool can be a single order, which floors to zero: " + cliffRisks.join("; "));
+}
+
 function run() {
+  checkRoundingCliffs();
   assert.equal(model.schemaVersion, 1, 'schema');
   assert(model.status && model.provenance?.existing && model.provenance?.new, 'provenance');
   assert.equal(new Set(model.archetypes.map(a => a.id)).size, model.archetypes.length, 'duplicate archetype id');
@@ -196,36 +231,4 @@ function run() {
   return output;
 }
 if (require.main === module) run();
-  // Orders are whole numbers, so a pool of exactly one order is a cliff: any acceptance below
-  // one floors to zero and the customer disappears rather than paying less. That only bites
-  // when a route actually plans to build that model in a month whose pool can shrink to one.
-  const cliffRisks = [];
-  for (const [productId, product] of Object.entries(economyConfig.products)) {
-    const acceptance = acceptanceOf(productId, product.salePrice);
-    if (acceptance >= 1) continue;   // priced at or under what the customers expect, so no cliff
-    // The smallest pool each month can shrink to across every scenario.
-    const pools = [];
-    for (const scenario of Object.values(economyConfig.scenarios)) {
-      for (let month = 1; month <= 6; month++) {
-        const inWindow = month >= (scenario.fromMonth ?? 1) && month <= (scenario.throughMonth ?? 6);
-        const multiplier = inWindow ? (scenario.demandMultiplier ?? 1) : 1;
-        const pool = Math.round(economyConfig.companyDemandCaps[productId][month - 1] * multiplier);
-        pools[month - 1] = Math.min(pools[month - 1] ?? Infinity, pool);
-      }
-    }
-    // Only a month that some route plans to build in can be harmed.
-    const planned = [];
-    for (const route of Object.values(economyConfig.routes))
-      route.monthlyProductionTargets.forEach((targets, index) => {
-        if ((targets[productId] || 0) > 0) planned[index] = true;
-      });
-    const doomed = planned
-      .map((want, index) => (want && pools[index] <= 1 ? index + 1 : null))
-      .filter(Boolean);
-    if (doomed.length) cliffRisks.push(productId + " (acceptance " + acceptance.toFixed(3) +
-      ", pool of one in month " + doomed.join(", ") + ")");
-  }
-  assert.equal(cliffRisks.length, 0,
-    "a route plans to build these models in a month where the pool can be a single order, which floors to zero: " + cliffRisks.join("; "));
-
-module.exports = { run, satisfies, eligible, affordable };
+module.exports = { run, satisfies, eligible, affordable, checkRoundingCliffs };
