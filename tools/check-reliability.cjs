@@ -54,7 +54,13 @@ function run() {
 
   const ad = model.arrivalDefect;
   assert(ad.refundFraction > 0 && ad.refundFraction <= 1, 'refund fraction');
-  assert(ad.reputationDelta < 0, 'an arrival defect must cost reputation');
+  // The reputation penalty has one home: the customer model. Pointing at it keeps the two from drifting.
+  assert(!('reputationDelta' in ad), 'the reputation penalty must not be duplicated here');
+  assert(ad.reputationSource && /customer-model/.test(ad.reputationSource),
+    'an arrival defect must say where its reputation penalty comes from');
+  const reputation = read('customer-model.json').reputation;
+  assert(reputation.deliveredMissingRequirement < 0,
+    'the customer model must charge reputation for a delivery that misses a requirement');
 
   const recipes = [];
   for (const recipe of balance.recipes) {

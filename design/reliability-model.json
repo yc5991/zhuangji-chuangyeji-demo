@@ -9,7 +9,8 @@
   "rules": {
     "neverBrandReputation": "Failure depends on revision, operating condition and player quality control, never on brand name",
     "caughtByTesting": "A failure is caught before delivery when the build is tested; otherwise it reaches the customer",
-    "expectedValue": "The economy model charges the expected rework cost per unit rather than rolling dice, so runs stay reproducible"
+    "expectedValue": "The economy model charges the expected rework cost per unit rather than rolling dice, so runs stay reproducible",
+    "threeTestingTiers": "测试分成未测试、部分测试、完整测试三档，两档阈值都必须被实际使用"
   },
   "failureRate": {
     "base": 0.04,
@@ -27,7 +28,8 @@
     "escapeRateWithoutTesting": 1,
     "escapeRateWithMinimalTesting": 0.06,
     "minimalTestingHours": 1,
-    "note": "Test station hours decide whether a failure is caught in the workshop or reaches the customer"
+    "note": "测试台工时决定故障在工坊内被发现还是流出到客户：低于 0.5 小时等于没测，0.5 到 1 小时之间只拦下一部分，达到 1 小时才是完整测试",
+    "escapeRateWithPartialTesting": 0.3
   },
   "rework": {
     "zh": "局部返工",
@@ -40,8 +42,8 @@
   "arrivalDefect": {
     "zh": "到货故障",
     "refundFraction": 1,
-    "reputationDelta": -0.15,
     "logisticsCoins": 120,
-    "note": "A machine that reaches the customer faulty is refunded in full, costs logistics and reputation"
+    "note": "A machine that reaches the customer faulty is refunded in full, costs logistics, and costs reputation through the customer model",
+    "reputationSource": "customer-model.json 的 reputation.deliveredMissingRequirement，口碑只保留一处定义"
   }
 }

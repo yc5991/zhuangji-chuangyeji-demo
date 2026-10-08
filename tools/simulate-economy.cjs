@@ -40,9 +40,13 @@ function failureRateFor(recipe, gradeMultiplier = 1) {
   return Math.min(r.ceiling, rate);
 }
 // A tested build catches its failures in the workshop; an untested one ships them.
+// Three tiers, not two: below the catch threshold nothing is found, between the two thresholds only
+// part is caught, and a full test catches nearly everything.
 function escapeRateFor(product) {
   const qc = reliability.qualityControl;
-  if (product.testStationHours >= qc.caughtWhenTestHoursAtLeast) return qc.escapeRateWithMinimalTesting;
+  const hours = product.testStationHours;
+  if (hours >= qc.minimalTestingHours) return qc.escapeRateWithMinimalTesting;
+  if (hours >= qc.caughtWhenTestHoursAtLeast) return qc.escapeRateWithPartialTesting;
   return qc.escapeRateWithoutTesting;
 }
 
@@ -278,7 +282,10 @@ function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
         // Consumables and any replaced part are real money; an escaped defect refunds the sale.
         const reworkCost = failRate * (reliability.rework.consumablesCoins +
           reliability.rework.partReplacementChance * recipe.expectedPartsCost);
-        const escapeCost = failRate * escapeRateFor(product) * price;
+        // An escaped defect refunds the sale and pays the logistics of getting it back.
+        const escorts = escapeRateFor(product);
+        const escapeCost = failRate * escorts *
+          (price * reliability.arrivalDefect.refundFraction + reliability.arrivalDefect.logisticsCoins);
         cash -= reworkCost + escapeCost;
         reworkTotal += reworkCost + escapeCost;
         procurement += cost; built[id] = (built[id] || 0) + 1;
