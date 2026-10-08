@@ -217,7 +217,14 @@ function run() {
   assert.equal(rep.floor, rep.scale[0], 'reputation cannot fall below the bottom of its scale');
   assert.equal(rep.ceiling, rep.scale[1], 'reputation tops out at the top of its scale');
   assert(rep.floor <= rep.initial && rep.initial < rep.ceiling, 'reputation bounds');
-  assert(rep.onTimeMeetingRequirements > 0 && rep.deliveredMissingRequirement < 0 && rep.lateMeetingRequirements < 0, 'reputation deltas');
+  // The mark is the average of the marks customers leave, so the old flat deltas are gone.
+  const marks = k => Object.entries(rep.reviews[k]).map(([m, share]) => Number(m) * share).reduce((a, b) => a + b, 0);
+  assert(marks('met') >= 3, 'a met commitment must be rated at least a three');
+  assert(marks('exceeded') > marks('met'), 'exceeding expectations must rate better than merely meeting them');
+  assert(marks('missed') < 3 && marks('late') < 3, 'a missed or late commitment must rate below a three');
+  for (const k of ['met', 'exceeded', 'late', 'missed'])
+    assert(Math.abs(Object.values(rep.reviews[k]).reduce((a, b) => a + b, 0) - 1) < 1e-9, k + ' shares must sum to one');
+  assert(rep.priorWeight > 0, 'a shop with no reviews must not start with a good name');
   assert(model.priceAcceptance.floor < 1 && model.priceAcceptance.ceiling > 1, 'price acceptance clamp');
   assert(model.fit.formula.includes('clamp'), 'fit rule');
 

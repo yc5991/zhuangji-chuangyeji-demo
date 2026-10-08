@@ -148,6 +148,9 @@ function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
   // Reputation is a mark out of five: one means nothing sold yet, three is neutral and five is the top.
   // The mark is what the player sees; the multiplier the orders feel is derived from it.
   let reputation = customerModel.reputation.initial;
+  // Reputation is the running average of the reviews customers leave, smoothed by a prior that
+  // stands for having no record yet. Each delivered machine is one review.
+  let ratingSum = 0, ratingCount = 0;
   // Parts bought on account are owed, not paid. They settle at the month end when the term expires.
   let payables = [];
   const developed = new Set(), stock = Object.fromEntries(Object.keys(products).map(id => [id, []]));
@@ -364,9 +367,17 @@ function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
     // Three outcomes, not two: a month that delivers some of what it committed to is late rather
     // than missed, and late costs less reputation than letting a customer down completely.
     const lateCommitment = missedCommitment && servedTotal > 0;
-    const reputationDelta = lateCommitment ? rep.lateMeetingRequirements
-      : missedCommitment ? rep.deliveredMissingRequirement : rep.onTimeMeetingRequirements;
-    reputation = clamp(reputation + reputationDelta, rep.floor, rep.ceiling);
+    // Every delivered machine leaves one review: a bad mark when the commitment was missed, a
+    // middling one when it was late, and at least a three when it was met, with more fives when the
+    // machine gave the customer more than the reference they had in mind.
+    const expected = dist => Object.entries(dist).reduce((n, [mark, share]) => n + Number(mark) * share, 0);
+    const exceeded = Object.values(appearance).some(a => (a.premium || 0) > 0);
+    const rating = missedCommitment
+      ? (lateCommitment ? expected(rep.reviews.late) : expected(rep.reviews.missed))
+      : expected(exceeded ? rep.reviews.exceeded : rep.reviews.met);
+    ratingSum += rating * servedTotal; ratingCount += servedTotal;
+    const prior = Number(rep.priorWeight) || 0;
+    reputation = clamp((prior * rep.initial + ratingSum) / (prior + ratingCount), rep.floor, rep.ceiling);
     const outstandingNow = round(payables.reduce((n, p) => n + p.amount, 0));
     months.push({month,startCash:round(startCash),endCash:round(cash),sold,built,revenue:round(revenue),
       costOfGoodsSold:round(cogs),procurement:round(procurement),fixedCost:fixed,developmentCost:development,

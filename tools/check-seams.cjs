@@ -110,16 +110,18 @@ function run() {
   assert(simulator.includes("satisfies("),
     "the simulator never checks an archetype hard gate, so a failed build still sells");
   const reputation = customers.reputation;
-  const outcomes = ["onTimeMeetingRequirements", "lateMeetingRequirements", "deliveredMissingRequirement"];
+  // Every outcome a month can end in must have a review distribution, and the simulator must use each.
+  const outcomes = ['met', 'exceeded', 'late', 'missed'];
+  const mark = key => Object.entries(reputation.reviews[key])
+    .reduce((n, [m, share]) => n + Number(m) * share, 0);
   for (const key of outcomes) {
-    assert(typeof reputation[key] === "number", "the reputation model must define " + key);
-    assert(simulator.includes("rep." + key), "the reputation outcome " + key + " is defined but never applied");
+    assert(reputation.reviews[key], 'the reputation model must define reviews for ' + key);
+    assert(simulator.includes("'" + key + "'"), 'the reputation outcome ' + key + ' is defined but never applied');
   }
-  // A late delivery must sit between an on-time one and a total miss, or the middle state is pointless.
-  assert(reputation.deliveredMissingRequirement < reputation.lateMeetingRequirements,
-    "a total miss must cost more reputation than a late delivery");
-  assert(reputation.lateMeetingRequirements < reputation.onTimeMeetingRequirements,
-    "a late delivery must cost more reputation than an on-time one");
+  // A late delivery must sit between a met one and a total miss, or the middle state is pointless.
+  assert(mark('missed') < mark('late'), 'a total miss must be rated below a late delivery');
+  assert(mark('late') < mark('met'), 'a late delivery must be rated below a met one');
+  assert(mark('met') < mark('exceeded'), 'exceeding expectations must be rated above merely meeting them');
   // 3d. An incompatible build must not be produced or sold, whatever the plan says.
   assert(simulator.includes("evaluate(recipes.get(id)).blocked"), "the simulator never asks whether a recipe is compatible");
   const simulatorText = fs.readFileSync(path.join(root, "tools", "simulate-economy.cjs"), "utf8");

@@ -64,6 +64,7 @@ const COINCIDENCES = [
   { doc: 'era-trends.md', value: 40419, why: 'a full-game figure that sits near the normal mass profit of 40429' },
   { doc: 'spec-conflicts.md', value: 40388, why: 'a full-game figure that sits near the normal mass profit of 40429' },
   { doc: 'round125-changes.md', value: 19809, why: 'a difference quoted before the scale change, near hard boutique at 19780' },
+  { doc: 'demo-pacing.md', value: 42601, why: 'a pacing figure that sits near the normal mass profit of 42550' },
   { doc: 'era-trends.md', value: 29322, why: 'the boutique profit in 2017 under the era model' },
   { doc: 'era-trends.md', value: 28991, why: 'the boutique profit in 2018 under the era model' },
   { doc: 'era-trends.md', value: 27326, why: 'the boutique profit in 2020 under the era model' },

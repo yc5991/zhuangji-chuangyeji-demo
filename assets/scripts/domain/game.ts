@@ -20,7 +20,7 @@ export class Game {
     const opening=DATA.economy.opening[difficulty];
     this.state={schemaVersion:2,baseline:clone(DATA.baseline.sourceHashes),companyName:name.trim().slice(0,18)||'橙序电脑',difficulty,
       month:1,elapsed:0,sequence:0,seed:Math.floor(now)>>>0,cash:opening.cash,employees:opening.employees,benches:opening.benches,testStations:opening.testStations,
-      investments:[],reputation:DATA.customers.reputation.initial,inventory:[],purchases:[],jobs:[],designs:[],customers:[],finished:[],transactions:[],reports:[],used:emptyUsage(),soldThisMonth:{},supplierStock:{},seenEvents:[],
+      investments:[],reputation:DATA.customers.reputation.initial,ratingSum:0,ratingCount:0,inventory:[],purchases:[],jobs:[],designs:[],customers:[],finished:[],transactions:[],reports:[],used:emptyUsage(),soldThisMonth:{},supplierStock:{},seenEvents:[],
       pendingNews:['欢迎来到一月。可以开发自己的产品，也可以接受高定委托；完成样机测试后交付或投产。'],marketRecords:[],tutorial:[],closed:false,bankrupt:false,lastWallTime:now};
     this.refreshMonth();
   }
@@ -480,6 +480,20 @@ export class Game {
    * player can actually meet a faulty machine; the rates are the same, so the long-run totals match
    * and a single run varies.
    */
+  /**
+   * A customer leaves one review per delivered machine, and the shop's mark is their weighted
+   * average. Meeting the commitment guarantees at least a three, exceeding it makes a five much more
+   * likely, and missing or mishandling it lands in the low marks, so the mark drifts with each order
+   * rather than stepping by a fixed amount.
+   */
+  private recordReview(outcome:'met'|'exceeded'|'late'|'missed',exceeded=false) {
+    const rep=DATA.customers.reputation,dist=(rep.reviews as Record<string,Record<string,number>>)[outcome];
+    let roll=this.random(),mark=Number(Object.keys(dist)[0]);
+    for(const [value,share] of Object.entries(dist) as [string,number][]) { mark=Number(value); if((roll-=share)<=0) break; }
+    this.state.ratingSum+=mark;this.state.ratingCount+=1;
+    const prior=Number(rep.priorWeight)||0;
+    this.state.reputation=Math.min(rep.ceiling,Math.max(rep.floor,(prior*rep.initial+this.state.ratingSum)/(prior+this.state.ratingCount)));
+  }
   private escapedDefect(unitId:string,design:ComputerDesign,price:number,label:string):boolean {
     const report=design.test;if(!report)return false;
     const hours=Number(DATA.economy.products[design.kind].testStationHours)||0;
@@ -488,8 +502,7 @@ export class Game {
     const ad=DATA.reliability.arrivalDefect;
     this.post(`${unitId}:refund`,'refund',-price*ad.refundFraction,0,`${label}：到货故障退款`);
     this.post(`${unitId}:logistics`,'refund',-ad.logisticsCoins,0,`${label}：到货故障物流`);
-    this.state.reputation=Math.max(DATA.customers.reputation.floor,
-      this.state.reputation+DATA.customers.reputation.deliveredMissingRequirement);
+    this.recordReview('missed');
     return true;
   }
   sellStock(designId:string,maximum=80) {
@@ -500,6 +513,8 @@ export class Game {
       if(sold>=Math.min(maximum,demand)) break;
       requireThat(unit.design.test&&!unit.design.test.blocked.length&&unit.design.test.coolingRatio>=1,'库存中的旧版本未通过测试');
       if(!this.escapedDefect(unit.id,d,d.price,d.name)) this.post(`${unit.id}:sale`,'sale',d.price,unit.cost,d.name);
+      const pref=DATA.customers.appearancePreference;
+      this.recordReview(pref&&unit.design.test&&unit.design.test.appearance>pref.baselineScore?'exceeded':'met');
       unit.status='sold';sold++;
     }
     this.state.soldThisMonth[kind]=(this.state.soldThisMonth[kind]||0)+sold;
@@ -518,7 +533,10 @@ export class Game {
       this.post(`${unit!.id}:sale`,'sale',d.price-c!.deposit,unit!.cost,`${c!.name}：${d.name}`);
     this.post(`${c!.id}:earnedDeposit`,'earnedDeposit',0,0,String(c!.deposit));
     unit!.status='sold';unit!.customerId=c!.id;c!.status='completed';c!.satisfaction=Math.round(Math.min(100,80+(d.test!.appearance-65)*.2+(d.test!.tidiness-65)*.2));
-    this.state.reputation=Math.min(DATA.customers.reputation.ceiling,this.state.reputation+DATA.customers.reputation.onTimeMeetingRequirements);
+    // The customer rates the job. A machine that looks better than the reference they had in mind
+    // reads as exceeding expectations, which is what makes a five much more likely.
+    const pref=DATA.customers.appearancePreference;
+    this.recordReview(pref&&d.test!.appearance>pref.baselineScore?'exceeded':'met');
     this.state.soldThisMonth[d.kind]=(this.state.soldThisMonth[d.kind]||0)+1;
     return c!.satisfaction;
   }
@@ -550,7 +568,7 @@ export class Game {
     }
     const report:MonthReport={month:this.state.month,revenue,cogs,fixed,development,profit:revenue-cogs-fixed-development,cash:this.state.cash,sold:sales.length,unsold:stock.length,reputation:this.state.reputation,used:clone(this.state.used),feedback,stockCost:stock.reduce((n,u)=>n+u.cost,0),payables:this.outstandingCredit,standardSold:soldUnits.filter(u=>!u.customerId).length,commissionSold:soldUnits.filter(u=>!!u.customerId).length};
     for(const c of this.state.customers) if(c.dueMonth<=this.state.month&&['open','accepted'].includes(c.status)) {
-      if(c.status==='accepted') {this.post(`${c.id}:refund`,'refund',-c.deposit,0,'逾期委托退回预付款');this.state.reputation=Math.max(DATA.customers.reputation.floor,this.state.reputation+DATA.customers.reputation.lateMeetingRequirements);feedback.push(`${c.name}：未按月交付，退回预付款并影响口碑。`);}c.status='expired';
+      if(c.status==='accepted') {this.post(`${c.id}:refund`,'refund',-c.deposit,0,'逾期委托退回预付款');this.recordReview('late');feedback.push(`${c.name}：未按月交付，退回预付款并影响口碑。`);}c.status='expired';
     }
     report.cash=this.state.cash;report.reputation=this.state.reputation;this.state.reports.push(report);this.taught('monthly_settlement');
     if(this.state.cash<0) {this.state.bankrupt=true;this.state.closed=true;}

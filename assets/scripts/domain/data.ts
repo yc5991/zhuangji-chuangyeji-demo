@@ -9,7 +9,7 @@ export const DATA: GameData = {
       "balance.json": "5d63b4aa2ffcc512c57a9116d61ec96788575f080bfe2b8a9e963fe67a71360a",
       "economy-candidate.json": "ac8ce0120743a62e542f98a25ea198312ba7bd08c56171ddc19b0c19c6ee9a32",
       "supplier-system.json": "c10b7edb3ac69d1f829e35245a63d30d23e058bfd7ce635acd1d4bf531138170",
-      "customer-model.json": "1c995b607f12628b6b97885eeb7af1ae6487985a6eaecede3f3032c47f8d839c",
+      "customer-model.json": "2498427f4ca2bcf781b29db8a15408ba28adb8ef18465eef2623e936d509f5e4",
       "workbench.json": "037082244a64a98e1cb0efe5ff799f9312b823bc4984224f93df202d45b7050c",
       "market-events.json": "6f0d3a2ba55c983eba8eaa3b79bf33e281815e04e5088b4a316067ccd5bce5b5",
       "demo-schedule.json": "c29b97ac7eaa877e12cc95fe2e53dfe1d501b4469e0d7c20fb1fb0027871706c",
@@ -1933,11 +1933,31 @@ export const DATA: GameData = {
       "ceiling": 5,
       "neutral": 3,
       "effectPerPoint": 0.15,
-      "onTimeMeetingRequirements": 0.6,
-      "lateMeetingRequirements": -0.3,
-      "deliveredMissingRequirement": -1.2,
-      "growthFloor": 3,
-      "note": "口碑按 1—5 分记。初始 1 分，因为一台都没卖过。3 分是中性：低于 3 分压低月成交量，高于 3 分放大客群，1 分与 5 分对应的倍数分别是 0.7 与 1.3"
+      "note": "顾客给店铺打分，与外卖平台的商家评分同一套做法：每交付一台就留下一条评价，店铺的分是这些评价的加权平均。所以它随每一单跳动，而且单子越多越难被少数几条好评拉起来。初始 1 分，因为一条评价都没有。",
+      "model": "weighted_average_of_reviews",
+      "priorWeight": 3,
+      "priorNote": "开局按 3 条 1 分评价计入，等价于「没有记录就不该有好名声」。它决定新店要多少单才能把分数拉上来。",
+      "reviews": {
+        "met": {
+          "3": 0.4,
+          "4": 0.4,
+          "5": 0.2
+        },
+        "exceeded": {
+          "3": 0.1,
+          "4": 0.4,
+          "5": 0.5
+        },
+        "late": {
+          "2": 0.5,
+          "3": 0.5
+        },
+        "missed": {
+          "1": 0.4,
+          "2": 0.6
+        }
+      },
+      "reviewsNote": "达标时 3 分保底、有机会拿到 4 与 5；超额完成时 5 分的比例大幅上升；迟交与让客户失望则落在 1—3 分。每一条评价都是随机的，所以店铺的分会自然跳动。"
     },
     "priceAcceptance": {
       "formula": "ratio = price / reference; below reference: clamp(1 + belowSlope*(1-ratio), 1, ceiling); above reference: clamp(1 - aboveSlope*(ratio-1), floor, 1)",

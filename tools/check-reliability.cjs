@@ -59,7 +59,9 @@ function run() {
   assert(ad.reputationSource && /customer-model/.test(ad.reputationSource),
     'an arrival defect must say where its reputation penalty comes from');
   const reputation = read('customer-model.json').reputation;
-  assert(reputation.deliveredMissingRequirement < 0,
+  const missedMark = Object.entries(reputation.reviews.missed)
+    .reduce((n, [m, share]) => n + Number(m) * share, 0);
+  assert(missedMark < reputation.neutral,
     'the customer model must charge reputation for a delivery that misses a requirement');
 
   const recipes = [];
