@@ -115,4 +115,18 @@ if (require.main === module) run();
   const profitable = Object.entries(hireEffect).filter(([, delta]) => delta > 0);
   assert.equal(profitable.length, 0,
     "hiring now pays on " + profitable.map(([r]) => r).join(", ") + "; that reverses a recorded design decision (see decisions.md, decision 5 re-test)");
+  // The hire guard above is measured on normal difficulty only, because that is where the
+  // demo is calibrated. Hard mode is allowed to differ, and the decision pack records that a
+  // late hire there becomes worthwhile only when both the commission hours and the prices move.
+  const hardHire = (() => {
+    const route = config.routes.boutique;
+    const savedHires = route.hires;
+    const before = simulate("boutique", "baseline", "hard").operatingProfit;
+    route.hires = [6];
+    const after = simulate("boutique", "baseline", "hard").operatingProfit;
+    route.hires = savedHires;
+    return Math.round(after - before);
+  })();
+  assert(hardHire <= 0,
+    "a late hire now pays " + hardHire + " in hard mode on the shipped numbers; the interaction recorded in decision six needs revisiting");
 module.exports = { run };
