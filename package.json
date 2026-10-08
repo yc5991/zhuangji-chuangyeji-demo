@@ -17,6 +17,7 @@
     "check:investments": "node tools/check-investments.cjs",
     "check:era": "node tools/check-era.cjs",
     "check:fullgame": "node tools/simulate-fullgame.cjs",
+    "check:schedule": "node tools/check-schedule.cjs",
     "check:env": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/check-environment.ps1",
     "editor": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/open-creator.ps1",
     "build:web": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/build-cocos.ps1 -Platform web-desktop",

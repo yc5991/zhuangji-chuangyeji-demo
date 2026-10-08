@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "status": "candidate",
+  "provenance": {
+    "existing": "Phase boundaries, the five teaching subjects, the month 3-4 market change, the month 5-6 investment opportunity and the closing summary all come from docs/spec.md section 7. The event and investment months are read from design/market-events.json and design/economy-candidate.json.",
+    "new": "The month-by-month placement of each teaching step, the unlock list and the per-month content notes are original Demo design.",
+    "limits": "A content schedule, not a simulation. It says what the Demo introduces when, and is checked against the data files that carry the months."
+  },
+  "teachingSubjects": [
+    "procurement",
+    "basic_config",
+    "prototyping",
+    "testing",
+    "monthly_settlement"
+  ],
+  "teachingSubjectZh": {
+    "procurement": "采购",
+    "basic_config": "基本配置",
+    "prototyping": "打样",
+    "testing": "测试",
+    "monthly_settlement": "月结"
+  },
+  "months": [
+    {
+      "month": 1,
+      "phase": "7.1",
+      "zh": "第一台电脑",
+      "teaching": [
+        "procurement",
+        "basic_config",
+        "monthly_settlement"
+      ],
+      "unlocks": [
+        "procurement",
+        "configuration",
+        "assembly",
+        "testing",
+        "monthly_settlement"
+      ],
+      "content": [
+        "从符合开局难度的小工坊出发",
+        "完成第一台电脑的设计、制作和销售",
+        "第一次月结"
+      ],
+      "freeChoice": false
+    },
+    {
+      "month": 2,
+      "phase": "7.1",
+      "zh": "打样与测试",
+      "teaching": [
+        "prototyping",
+        "testing"
+      ],
+      "unlocks": [],
+      "content": [
+        "制作样机并测试修改",
+        "基础教学结束，玩家可自主决定产品方向"
+      ],
+      "freeChoice": true
+    },
+    {
+      "month": 3,
+      "phase": "7.2",
+      "zh": "客户与预兆",
+      "teaching": [],
+      "unlocks": [
+        "commission",
+        "customer_archetypes"
+      ],
+      "content": [
+        "引入不同需求的客户与产品反馈",
+        "内存颗粒涨价的预兆出现"
+      ],
+      "freeChoice": true
+    },
+    {
+      "month": 4,
+      "phase": "7.2",
+      "zh": "市场变化落地",
+      "teaching": [],
+      "unlocks": [
+        "workbench_full"
+      ],
+      "content": [
+        "市场变化按权重抽取结果",
+        "高定工作台在这一阶段充分展开",
+        "玩家可以调整配置、接受较低利润、修改售价、改变定位或放弃不合适的订单"
+      ],
+      "freeChoice": true
+    },
+    {
+      "month": 5,
+      "phase": "7.3",
+      "zh": "投资机会",
+      "teaching": [],
+      "unlocks": [
+        "development_investment"
+      ],
+      "content": [
+        "提供一次能明显改变经营方式的投资机会",
+        "两条路线分别体现其价值"
+      ],
+      "freeChoice": true
+    },
+    {
+      "month": 6,
+      "phase": "7.3",
+      "zh": "结算",
+      "teaching": [],
+      "unlocks": [],
+      "content": [
+        "投资效果延续",
+        "Demo 结束总结产品销量、代表作品、客户口碑、产能和经营方向"
+      ],
+      "freeChoice": true
+    }
+  ],
+  "summaryFields": [
+    "sales",
+    "representative_work",
+    "customer_reputation",
+    "capacity",
+    "business_direction"
+  ],
+  "summaryFieldsZh": {
+    "sales": "产品销量",
+    "representative_work": "代表作品",
+    "customer_reputation": "客户口碑",
+    "capacity": "产能",
+    "business_direction": "经营方向"
+  },
+  "openGaps": [
+    {
+      "subject": "精品与混合路线在第 5—6 月没有投资机会",
+      "detail": "spec §7.3 要求第 5—6 月提供一次能明显改变经营方式的投资机会，且两条路线分别体现其价值。design/economy-candidate.json 里精品与混合只在第 3 月投入精细工艺工具，第 5—6 月没有任何投入；只有量产在第 5 月上半自动设备。",
+      "blockedBy": "docs/design-candidates.md 4.2 的路线规则三选二，未定之前无法给精品安排一个能回本的第 5 月投资"
+    }
+  ]
+}
