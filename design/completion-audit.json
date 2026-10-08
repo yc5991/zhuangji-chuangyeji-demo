@@ -141,35 +141,40 @@
       "zh": "路线收益规则三选二",
       "state": "pending_decision",
       "blockedBy": "四条已确认规则无法同时成立：精品的总利润、产能约束、单台利润优势只能取二。见 docs/design-candidates.md 4.2",
-      "decidedBy": "用户"
+      "decidedBy": "用户",
+      "decisionPackSection": "docs/decisions.md"
     },
     {
       "id": "optimal_pricing",
       "zh": "是否把现价抬到最优价",
       "state": "pending_decision",
       "blockedBy": "四个样机现价均低于最优价 10%—16%，抬价后三条规则仍成立，但困难档可承受亏损月数从 1.2 升到 2.4，需要连带重标难度",
-      "decidedBy": "用户"
+      "decidedBy": "用户",
+      "decisionPackSection": "docs/decisions.md"
     },
     {
       "id": "hard_unlock",
       "zh": "困难档量产与混合的解锁条件",
       "state": "pending_decision",
       "blockedBy": "候选为口碑阈值、现金阈值、月份门槛或完成 N 台高定；当前两条路线被标记为开局锁定且不参与平衡判定",
-      "decidedBy": "用户"
+      "decidedBy": "用户",
+      "decisionPackSection": "docs/decisions.md"
     },
     {
       "id": "reputation_growth",
       "zh": "口碑高于 1 是否放大客群",
       "state": "pending_decision",
       "blockedBy": "实测放大后量产在简单档追平混合，混合优势从 5885 缩到 37；建议只放大高定客群",
-      "decidedBy": "用户"
+      "decidedBy": "用户",
+      "decisionPackSection": "docs/decisions.md"
     },
     {
       "id": "adaptive_policy",
       "zh": "路线是否改为自适应生产策略",
       "state": "pending_decision",
       "blockedBy": "保留量产卖不完与让产能投资回本不可兼得；固定排产计划下没有任何路线受产能约束",
-      "decidedBy": "用户"
+      "decidedBy": "用户",
+      "decisionPackSection": "docs/decisions.md"
     },
     {
       "id": "catalog_2021_2030",
@@ -207,5 +212,6 @@
       "zh": "工作台手工操作与几何",
       "reason": "由交互与美术工作流负责"
     }
-  ]
+  ],
+  "decisionPack": "docs/decisions.md"
 }
