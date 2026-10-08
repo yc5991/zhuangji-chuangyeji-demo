@@ -6,6 +6,8 @@ const root = path.resolve(__dirname, '..');
 const read = name => JSON.parse(fs.readFileSync(path.join(root, 'design', name), 'utf8'));
 
 const { DIFFICULTY, SCENARIO } = require('./demo-facts.cjs');
+// How far each lever is moved when measuring its effect.
+const STEP = 0.10;
 const routes = Object.keys(config.routes).filter(r => config.opening[DIFFICULTY].startingRoutes.includes(r));
 
 const scale = (obj, key, f) => Object.fromEntries(Object.entries(obj).map(([k, v]) =>
