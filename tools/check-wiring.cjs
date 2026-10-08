@@ -32,6 +32,10 @@ const WHOLE_FILES = {
   'evaluation.json': 'dimension definitions, guarded by check-seams and check-evaluation',
   'art-runtime.json': 'owned by the art workstream',
   'recorded-facts.json': 'measured design facts the checks assert against, not rules to implement',
+  'catalog-2016-2020/cpu-motherboard.json': 'research record of what was verified, guarded by check-suppliers',
+  'catalog-2016-2020/gpu.json': 'research record, guarded by check-suppliers',
+  'catalog-2016-2020/memory-storage.json': 'research record, guarded by check-suppliers',
+  'catalog-2016-2020/structural.json': 'research record, guarded by check-suppliers',
 };
 
 // Individual numbers inside otherwise mechanical files that are statements rather than mechanics.
@@ -74,7 +78,18 @@ const WHOLE_PATHS = [
 function run() {
   const mechanics = mechanicsSource();
   const escapeRe = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const files = fs.readdirSync(path.join(root, 'design')).filter(f => f.endsWith('.json'));
+  // Walk the whole tree. Reading only the top level meant the four research files under
+  // design/catalog-2016-2020 were never examined, and were not listed as excused either, so the
+  // check could not tell "nothing in there needs wiring" from "nothing in there was looked at".
+  const files = [];
+  const walkDesign = dir => {
+    for (const entry of fs.readdirSync(path.join(root, 'design', dir), { withFileTypes: true })) {
+      const rel = dir ? dir + '/' + entry.name : entry.name;
+      if (entry.isDirectory()) walkDesign(rel);
+      else if (entry.name.endsWith('.json')) files.push(rel);
+    }
+  };
+  walkDesign('');
 
   const unwired = [];
   const checked = { files: 0, numbers: 0, skippedFiles: Object.keys(WHOLE_FILES).length };

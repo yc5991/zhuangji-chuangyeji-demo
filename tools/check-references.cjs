@@ -101,10 +101,29 @@ function run() {
     report.push({ id: rule.id, zh: rule.zh, checked: list.length, resolved: list.length });
   }
 
+  // Summary counts are claims about a file's own contents, and a claim nothing checks is a claim
+  // that can quietly stop being true. The audit's counts are verified the same way.
+  const brands = read('brands.json');
+  const participation = {};
+  for (const brand of brands.brands)
+    participation[brand.catalogParticipation] = (participation[brand.catalogParticipation] || 0) + 1;
+  assert.equal(brands.counts.entries, brands.brands.length,
+    `brands.counts.entries says ${brands.counts.entries} but there are ${brands.brands.length} brands`);
+  assert.equal(brands.counts.demoSelected, participation.demo_selected || 0,
+    `brands.counts.demoSelected says ${brands.counts.demoSelected} but ${participation.demo_selected || 0} brands are marked demo_selected`);
+  const kinds = {};
+  for (const brand of brands.brands) kinds[brand.entityKind] = (kinds[brand.entityKind] || 0) + 1;
+  for (const [kind, n] of Object.entries(brands.counts.kinds || {}))
+    assert.equal(kinds[kind] || 0, n, `brands.counts.kinds.${kind} says ${n} but ${kinds[kind] || 0} brands are of that kind`);
+  for (const [kind, n] of Object.entries(kinds))
+    assert(brands.counts.kinds && brands.counts.kinds[kind] === n,
+      `${n} brands are of kind ${kind}, which brands.counts.kinds does not record`);
+
   const output = {
     status: 'passed',
     rules: report.length,
     referencesChecked: report.reduce((n, r) => n + r.checked, 0),
+    brandCountsVerified: { entries: brands.counts.entries, demoSelected: brands.counts.demoSelected, kinds: Object.keys(kinds).length },
     detail: report,
   };
   fs.mkdirSync(path.join(root, '.local'), { recursive: true });
