@@ -5,6 +5,9 @@
     "new": "All resources, hours, salaries, demand, prices, investments and scenarios below are original game design candidates, awaiting user preference and playtesting.",
     "procurementChannels": "Single confirmed order line must meet same-SKU minimum quantity. Separate orders never accumulate or receive retroactive discounts. Channel definitions are read from design/supplier-system.json. Confirmed by user on 2026-10-07.",
     "difficultyTerms": "opening.<difficulty>.supplierTermsFactor multiplies parts cost only. It represents supplier terms for a new small company and is a game assumption, not a historical price finding.",
+    "supplierCredit": "Channel paymentTermMonths and opening.creditLimitCoins come from the user decision on 2026-10-08 to let a workshop buy parts on account. Outstanding payables are capped by creditLimitCoins and settle at the month end when due.",
+    "customerDeposits": "Segment depositFraction comes from the same decision. A commissioned build collects half the agreed price before any part is bought; standard machines are built to stock and collect nothing early.",
+    "startingRoutes": "opening.<difficulty>.startingRoutes lists the routes open in month one. Hard opens with the boutique route only, per the same user decision. The unlock condition for the mass route is not yet decided.",
     "limits": "A deterministic scenario calculator, not a playable six-month balance validation. Demand, delivery timing and quality feedback are assumptions."
   },
   "limitations": [
@@ -22,6 +25,12 @@
       "difficulty": "easy",
       "partsChannel": "retail",
       "partsChannelFactor": 1,
+      "paymentTermMonths": 0,
+      "creditLimitCoins": 60000,
+      "gatedAtStart": false,
+      "totalDeposits": 56100,
+      "totalPayablesPaid": 0,
+      "payablesOutstanding": 0,
       "bankrupt": false,
       "bankruptMonth": null,
       "totalSales": 15,
@@ -50,14 +59,17 @@
           "procurement": 2833.2,
           "fixedCost": 2150,
           "developmentCost": 0,
+          "depositsTaken": 2550,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": 116.8,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 28,
-            "owner": 10,
-            "bench": 16,
-            "test": 4
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -85,14 +97,17 @@
           "procurement": 9680,
           "fixedCost": 2150,
           "developmentCost": 0,
+          "depositsTaken": 8075,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": 4320,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 74,
-            "owner": 28,
-            "bench": 42,
-            "test": 10
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -120,14 +135,17 @@
           "procurement": 9440,
           "fixedCost": 2150,
           "developmentCost": 0,
+          "depositsTaken": 8075,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": 4560,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 65.6,
-            "owner": 28,
-            "bench": 33.6,
-            "test": 10
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -155,14 +173,17 @@
           "procurement": 12153.2,
           "fixedCost": 2150,
           "developmentCost": 0,
+          "depositsTaken": 10625,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": 6946.8,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 90.4,
-            "owner": 38,
-            "bench": 46.4,
-            "test": 14
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -190,14 +211,17 @@
           "procurement": 12153.2,
           "fixedCost": 2150,
           "developmentCost": 0,
+          "depositsTaken": 10625,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": 6946.8,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 90.4,
-            "owner": 38,
-            "bench": 46.4,
-            "test": 14
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -225,14 +249,17 @@
           "procurement": 18880,
           "fixedCost": 2150,
           "developmentCost": 0,
+          "depositsTaken": 16150,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": 11270,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 131.2,
-            "owner": 56,
-            "bench": 67.2,
-            "test": 20
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -251,6 +278,12 @@
       "difficulty": "easy",
       "partsChannel": "scheduled_batch",
       "partsChannelFactor": 0.9,
+      "paymentTermMonths": 2,
+      "creditLimitCoins": 60000,
+      "gatedAtStart": false,
+      "totalDeposits": 0,
+      "totalPayablesPaid": 72910.35,
+      "payablesOutstanding": 44489.25,
       "bankrupt": false,
       "bankruptMonth": null,
       "totalSales": 95,
@@ -260,14 +293,14 @@
       "totalDevelopmentCost": 300,
       "totalInvestment": 6000,
       "operatingProfit": 40392.67,
-      "endCash": 49323.82,
+      "endCash": 93813.07,
       "inventoryCost": 30068.85,
-      "cashAndInventoryGain": 34392.67,
+      "cashAndInventoryGain": 78881.92,
       "months": [
         {
           "month": 1,
           "startCash": 45000,
-          "endCash": 46212.58,
+          "endCash": 59806,
           "sold": {
             "office": 6,
             "gaming": 1
@@ -281,14 +314,17 @@
           "procurement": 13593.42,
           "fixedCost": 2150,
           "developmentCost": 300,
+          "depositsTaken": 0,
+          "payablesPaid": 0,
+          "payablesOutstanding": 13593.42,
           "operatingProfit": 1212.58,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 83,
+            "labor": 30,
             "owner": 30,
-            "bench": 51,
-            "test": 20
+            "bench": 5,
+            "test": 5
           },
           "capacityAvailable": {
             "labor": 208,
@@ -301,8 +337,8 @@
         },
         {
           "month": 2,
-          "startCash": 46212.58,
-          "endCash": 49518.74,
+          "startCash": 59806,
+          "endCash": 83708,
           "sold": {
             "office": 8,
             "gaming": 2
@@ -316,14 +352,17 @@
           "procurement": 20595.84,
           "fixedCost": 2150,
           "developmentCost": 0,
+          "depositsTaken": 0,
+          "payablesPaid": 0,
+          "payablesOutstanding": 34189.26,
           "operatingProfit": 3306.16,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 78,
+            "labor": 0,
             "owner": 0,
-            "bench": 68,
-            "test": 22
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -336,8 +375,8 @@
         },
         {
           "month": 3,
-          "startCash": 49518.74,
-          "endCash": 51618.48,
+          "startCash": 83708,
+          "endCash": 96105.66,
           "sold": {
             "office": 10,
             "gaming": 3
@@ -351,14 +390,17 @@
           "procurement": 27598.26,
           "fixedCost": 2150,
           "developmentCost": 0,
+          "depositsTaken": 0,
+          "payablesPaid": 13593.42,
+          "payablesOutstanding": 44487.18,
           "operatingProfit": 5099.74,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 103,
+            "labor": 0,
             "owner": 0,
-            "bench": 90,
-            "test": 29
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -371,8 +413,8 @@
         },
         {
           "month": 4,
-          "startCash": 51618.48,
-          "endCash": 53624.38,
+          "startCash": 96105.66,
+          "endCash": 92345.47,
           "sold": {
             "office": 13,
             "gaming": 4
@@ -386,14 +428,17 @@
           "procurement": 41603.1,
           "fixedCost": 2150,
           "developmentCost": 0,
+          "depositsTaken": 0,
+          "payablesPaid": 20595.84,
+          "payablesOutstanding": 38721.09,
           "operatingProfit": 7360.57,
           "inventoryCost": 5354.67,
           "inventoryUnits": 2,
           "capacityUsed": {
-            "labor": 153,
+            "labor": 0,
             "owner": 0,
-            "bench": 134,
-            "test": 43
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -406,8 +451,8 @@
         },
         {
           "month": 5,
-          "startCash": 53624.38,
-          "endCash": 50295.52,
+          "startCash": 92345.47,
+          "endCash": 84898.27,
           "sold": {
             "office": 16,
             "gaming": 6
@@ -421,14 +466,17 @@
           "procurement": 59314.86,
           "fixedCost": 2250,
           "developmentCost": 0,
+          "depositsTaken": 0,
+          "payablesPaid": 23891.34,
+          "payablesOutstanding": 34602.75,
           "operatingProfit": 10380.48,
           "inventoryCost": 16064.01,
           "inventoryUnits": 6,
           "capacityUsed": {
-            "labor": 148.2,
+            "labor": 0,
             "owner": 0,
-            "bench": 122.2,
-            "test": 60
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -441,8 +489,8 @@
         },
         {
           "month": 6,
-          "startCash": 50295.52,
-          "endCash": 49323.82,
+          "startCash": 84898.27,
+          "endCash": 93813.07,
           "sold": {
             "office": 18,
             "gaming": 8
@@ -456,14 +504,17 @@
           "procurement": 73319.7,
           "fixedCost": 2250,
           "developmentCost": 0,
+          "depositsTaken": 0,
+          "payablesPaid": 14829.75,
+          "payablesOutstanding": 44489.25,
           "operatingProfit": 13033.14,
           "inventoryCost": 30068.85,
           "inventoryUnits": 12,
           "capacityUsed": {
-            "labor": 182.8,
+            "labor": 0,
             "owner": 0,
-            "bench": 150.8,
-            "test": 74
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -482,6 +533,12 @@
       "difficulty": "easy",
       "partsChannel": "distributor",
       "partsChannelFactor": 0.95,
+      "paymentTermMonths": 1,
+      "creditLimitCoins": 60000,
+      "gatedAtStart": false,
+      "totalDeposits": 42500,
+      "totalPayablesPaid": 115703.84,
+      "payablesOutstanding": 29034.88,
       "bankrupt": false,
       "bankruptMonth": null,
       "totalSales": 69,
@@ -491,14 +548,14 @@
       "totalDevelopmentCost": 300,
       "totalInvestment": 1800,
       "operatingProfit": 46278.02,
-      "endCash": 89478.02,
+      "endCash": 118512.9,
       "inventoryCost": 0,
-      "cashAndInventoryGain": 44478.02,
+      "cashAndInventoryGain": 73512.9,
       "months": [
         {
           "month": 1,
           "startCash": 45000,
-          "endCash": 44742.62,
+          "endCash": 55576,
           "sold": {
             "office": 4,
             "gaming": 1
@@ -512,14 +569,17 @@
           "procurement": 10833.38,
           "fixedCost": 2150,
           "developmentCost": 300,
+          "depositsTaken": 0,
+          "payablesPaid": 0,
+          "payablesOutstanding": 10833.38,
           "operatingProfit": -257.38,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 69,
+            "labor": 30,
             "owner": 30,
-            "bench": 39,
-            "test": 16
+            "bench": 5,
+            "test": 5
           },
           "capacityAvailable": {
             "labor": 208,
@@ -532,8 +592,8 @@
         },
         {
           "month": 2,
-          "startCash": 44742.62,
-          "endCash": 48221.71,
+          "startCash": 55576,
+          "endCash": 67399.62,
           "sold": {
             "office": 5,
             "gaming": 2,
@@ -549,14 +609,17 @@
           "procurement": 19177.91,
           "fixedCost": 2150,
           "developmentCost": 0,
+          "depositsTaken": 2550,
+          "payablesPaid": 10833.38,
+          "payablesOutstanding": 19177.91,
           "operatingProfit": 3479.09,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 85,
-            "owner": 10,
-            "bench": 66,
-            "test": 20
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -569,8 +632,8 @@
         },
         {
           "month": 3,
-          "startCash": 48221.71,
-          "endCash": 53638.71,
+          "startCash": 67399.62,
+          "endCash": 80843.71,
           "sold": {
             "office": 6,
             "gaming": 2,
@@ -588,14 +651,17 @@
           "procurement": 27205,
           "fixedCost": 3550,
           "developmentCost": 0,
+          "depositsTaken": 8075,
+          "payablesPaid": 19177.91,
+          "payablesOutstanding": 27205,
           "operatingProfit": 7217,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 129.6,
-            "owner": 28,
-            "bench": 89.6,
-            "test": 28
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 320,
@@ -608,8 +674,8 @@
         },
         {
           "month": 4,
-          "startCash": 53638.71,
-          "endCash": 64412.18,
+          "startCash": 80843.71,
+          "endCash": 93427.25,
           "sold": {
             "office": 7,
             "gaming": 3,
@@ -627,14 +693,17 @@
           "procurement": 35429.53,
           "fixedCost": 3550,
           "developmentCost": 0,
+          "depositsTaken": 10625,
+          "payablesPaid": 27205,
+          "payablesOutstanding": 29015.07,
           "operatingProfit": 10773.47,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 172.4,
-            "owner": 38,
-            "bench": 118.4,
-            "test": 37
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 320,
@@ -647,8 +716,8 @@
         },
         {
           "month": 5,
-          "startCash": 64412.18,
-          "endCash": 76231.16,
+          "startCash": 93427.25,
+          "endCash": 105703.64,
           "sold": {
             "office": 8,
             "gaming": 4,
@@ -666,14 +735,17 @@
           "procurement": 41065.02,
           "fixedCost": 3550,
           "developmentCost": 0,
+          "depositsTaken": 10625,
+          "payablesPaid": 29015.07,
+          "payablesOutstanding": 29472.48,
           "operatingProfit": 11818.98,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 190.4,
-            "owner": 38,
-            "bench": 134.4,
-            "test": 42
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 320,
@@ -686,8 +758,8 @@
         },
         {
           "month": 6,
-          "startCash": 76231.16,
-          "endCash": 89478.02,
+          "startCash": 105703.64,
+          "endCash": 118512.9,
           "sold": {
             "office": 10,
             "gaming": 5,
@@ -705,14 +777,17 @@
           "procurement": 48433.14,
           "fixedCost": 3550,
           "developmentCost": 0,
+          "depositsTaken": 10625,
+          "payablesPaid": 29472.48,
+          "payablesOutstanding": 29034.88,
           "operatingProfit": 13246.86,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 215.4,
-            "owner": 38,
-            "bench": 156.4,
-            "test": 49
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 320,
@@ -731,6 +806,12 @@
       "difficulty": "easy",
       "partsChannel": "retail",
       "partsChannelFactor": 1,
+      "paymentTermMonths": 0,
+      "creditLimitCoins": 60000,
+      "gatedAtStart": false,
+      "totalDeposits": 56100,
+      "totalPayablesPaid": 0,
+      "payablesOutstanding": 0,
       "bankrupt": false,
       "bankruptMonth": null,
       "totalSales": 15,
@@ -759,14 +840,17 @@
           "procurement": 2833.2,
           "fixedCost": 2150,
           "developmentCost": 0,
+          "depositsTaken": 2550,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": 116.8,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 28,
-            "owner": 10,
-            "bench": 16,
-            "test": 4
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -794,14 +878,17 @@
           "procurement": 9680,
           "fixedCost": 2150,
           "developmentCost": 0,
+          "depositsTaken": 8075,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": 4320,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 74,
-            "owner": 28,
-            "bench": 42,
-            "test": 10
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -829,14 +916,17 @@
           "procurement": 9440,
           "fixedCost": 2150,
           "developmentCost": 0,
+          "depositsTaken": 8075,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": 4560,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 65.6,
-            "owner": 28,
-            "bench": 33.6,
-            "test": 10
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -864,14 +954,17 @@
           "procurement": 12153.2,
           "fixedCost": 2150,
           "developmentCost": 0,
+          "depositsTaken": 10625,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": 6946.8,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 90.4,
-            "owner": 38,
-            "bench": 46.4,
-            "test": 14
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -899,14 +992,17 @@
           "procurement": 12153.2,
           "fixedCost": 2150,
           "developmentCost": 0,
+          "depositsTaken": 10625,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": 6946.8,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 90.4,
-            "owner": 38,
-            "bench": 46.4,
-            "test": 14
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -934,14 +1030,17 @@
           "procurement": 18880,
           "fixedCost": 2150,
           "developmentCost": 0,
+          "depositsTaken": 16150,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": 11270,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 131.2,
-            "owner": 56,
-            "bench": 67.2,
-            "test": 20
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -960,6 +1059,12 @@
       "difficulty": "easy",
       "partsChannel": "scheduled_batch",
       "partsChannelFactor": 0.9,
+      "paymentTermMonths": 2,
+      "creditLimitCoins": 60000,
+      "gatedAtStart": false,
+      "totalDeposits": 0,
+      "totalPayablesPaid": 72910.35,
+      "payablesOutstanding": 44489.25,
       "bankrupt": false,
       "bankruptMonth": null,
       "totalSales": 62,
@@ -969,14 +1074,14 @@
       "totalDevelopmentCost": 300,
       "totalInvestment": 6000,
       "operatingProfit": 21838.78,
-      "endCash": 696.94,
-      "inventoryCost": 60141.84,
-      "cashAndInventoryGain": 15838.78,
+      "endCash": 4410.07,
+      "inventoryCost": 100917.96,
+      "cashAndInventoryGain": 60328.03,
       "months": [
         {
           "month": 1,
           "startCash": 45000,
-          "endCash": 41982.58,
+          "endCash": 55576,
           "sold": {
             "office": 4,
             "gaming": 1
@@ -990,14 +1095,17 @@
           "procurement": 13593.42,
           "fixedCost": 2150,
           "developmentCost": 300,
+          "depositsTaken": 0,
+          "payablesPaid": 0,
+          "payablesOutstanding": 13593.42,
           "operatingProfit": 278.08,
           "inventoryCost": 3295.5,
           "inventoryUnits": 2,
           "capacityUsed": {
-            "labor": 83,
+            "labor": 30,
             "owner": 30,
-            "bench": 51,
-            "test": 20
+            "bench": 5,
+            "test": 5
           },
           "capacityAvailable": {
             "labor": 208,
@@ -1010,8 +1118,8 @@
         },
         {
           "month": 2,
-          "startCash": 41982.58,
-          "endCash": 34377.74,
+          "startCash": 55576,
+          "endCash": 68567,
           "sold": {
             "office": 5,
             "gaming": 1
@@ -1025,14 +1133,17 @@
           "procurement": 20595.84,
           "fixedCost": 2150,
           "developmentCost": 0,
+          "depositsTaken": 0,
+          "payablesPaid": 0,
+          "payablesOutstanding": 34189.26,
           "operatingProfit": 1045.33,
           "inventoryCost": 11945.67,
           "inventoryUnits": 6,
           "capacityUsed": {
-            "labor": 78,
+            "labor": 0,
             "owner": 0,
-            "bench": 68,
-            "test": 22
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -1045,8 +1156,8 @@
         },
         {
           "month": 3,
-          "startCash": 34377.74,
-          "endCash": 25566.48,
+          "startCash": 68567,
+          "endCash": 70053.66,
           "sold": {
             "office": 7,
             "gaming": 2
@@ -1060,14 +1171,17 @@
           "procurement": 27598.26,
           "fixedCost": 2150,
           "developmentCost": 0,
+          "depositsTaken": 0,
+          "payablesPaid": 13593.42,
+          "payablesOutstanding": 44487.18,
           "operatingProfit": 2838.91,
           "inventoryCost": 20595.84,
           "inventoryUnits": 10,
           "capacityUsed": {
-            "labor": 103,
+            "labor": 0,
             "owner": 0,
-            "bench": 90,
-            "test": 29
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -1080,8 +1194,8 @@
         },
         {
           "month": 4,
-          "startCash": 25566.48,
-          "endCash": 12431.38,
+          "startCash": 70053.66,
+          "endCash": 51152.47,
           "sold": {
             "office": 8,
             "gaming": 3
@@ -1095,14 +1209,17 @@
           "procurement": 41603.1,
           "fixedCost": 2150,
           "developmentCost": 0,
+          "depositsTaken": 0,
+          "payablesPaid": 20595.84,
+          "payablesOutstanding": 38721.09,
           "operatingProfit": 4165.24,
           "inventoryCost": 37896.18,
           "inventoryUnits": 18,
           "capacityUsed": {
-            "labor": 153,
+            "labor": 0,
             "owner": 0,
-            "bench": 134,
-            "test": 43
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -1115,29 +1232,32 @@
         },
         {
           "month": 5,
-          "startCash": 12431.38,
-          "endCash": 2108.2,
+          "startCash": 51152.47,
+          "endCash": 21883.27,
           "sold": {
             "office": 10,
             "gaming": 4
           },
           "built": {
             "office": 18,
-            "gaming": 4
+            "gaming": 8
           },
           "revenue": 39414,
           "costOfGoodsSold": 31305.18,
-          "procurement": 44487.18,
+          "procurement": 59314.86,
           "fixedCost": 2250,
           "developmentCost": 0,
+          "depositsTaken": 0,
+          "payablesPaid": 23891.34,
+          "payablesOutstanding": 34602.75,
           "operatingProfit": 5858.82,
-          "inventoryCost": 51078.18,
-          "inventoryUnits": 26,
+          "inventoryCost": 65905.86,
+          "inventoryUnits": 30,
           "capacityUsed": {
-            "labor": 118.2,
+            "labor": 0,
             "owner": 0,
-            "bench": 96.2,
-            "test": 48
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -1145,36 +1265,37 @@
             "bench": 480,
             "test": 160
           },
-          "notices": [
-            "PROCUREMENT_CASH_LIMIT:gaming"
-          ],
+          "notices": [],
           "investmentPaid": 3000
         },
         {
           "month": 6,
-          "startCash": 2108.2,
-          "endCash": 696.94,
+          "startCash": 21883.27,
+          "endCash": 4410.07,
           "sold": {
             "office": 12,
             "gaming": 5
           },
           "built": {
             "office": 22,
-            "gaming": 3
+            "gaming": 10
           },
           "revenue": 48210,
           "costOfGoodsSold": 38307.6,
-          "procurement": 47371.26,
+          "procurement": 73319.7,
           "fixedCost": 2250,
           "developmentCost": 0,
+          "depositsTaken": 0,
+          "payablesPaid": 14829.75,
+          "payablesOutstanding": 44489.25,
           "operatingProfit": 7652.4,
-          "inventoryCost": 60141.84,
-          "inventoryUnits": 34,
+          "inventoryCost": 100917.96,
+          "inventoryUnits": 45,
           "capacityUsed": {
-            "labor": 130.3,
+            "labor": 0,
             "owner": 0,
-            "bench": 105.3,
-            "test": 53
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -1182,9 +1303,7 @@
             "bench": 480,
             "test": 160
           },
-          "notices": [
-            "PROCUREMENT_CASH_LIMIT:gaming"
-          ],
+          "notices": [],
           "investmentPaid": 0
         }
       ]
@@ -1195,6 +1314,12 @@
       "difficulty": "easy",
       "partsChannel": "distributor",
       "partsChannelFactor": 0.95,
+      "paymentTermMonths": 1,
+      "creditLimitCoins": 60000,
+      "gatedAtStart": false,
+      "totalDeposits": 42500,
+      "totalPayablesPaid": 115703.84,
+      "payablesOutstanding": 29034.88,
       "bankrupt": false,
       "bankruptMonth": null,
       "totalSales": 68,
@@ -1204,14 +1329,14 @@
       "totalDevelopmentCost": 300,
       "totalInvestment": 1800,
       "operatingProfit": 45614.88,
-      "endCash": 84912.02,
+      "endCash": 113946.9,
       "inventoryCost": 3902.86,
-      "cashAndInventoryGain": 43814.88,
+      "cashAndInventoryGain": 72849.76,
       "months": [
         {
           "month": 1,
           "startCash": 45000,
-          "endCash": 44742.62,
+          "endCash": 55576,
           "sold": {
             "office": 4,
             "gaming": 1
@@ -1225,14 +1350,17 @@
           "procurement": 10833.38,
           "fixedCost": 2150,
           "developmentCost": 300,
+          "depositsTaken": 0,
+          "payablesPaid": 0,
+          "payablesOutstanding": 10833.38,
           "operatingProfit": -257.38,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 69,
+            "labor": 30,
             "owner": 30,
-            "bench": 39,
-            "test": 16
+            "bench": 5,
+            "test": 5
           },
           "capacityAvailable": {
             "labor": 208,
@@ -1245,8 +1373,8 @@
         },
         {
           "month": 2,
-          "startCash": 44742.62,
-          "endCash": 43655.71,
+          "startCash": 55576,
+          "endCash": 62833.62,
           "sold": {
             "office": 5,
             "gaming": 1,
@@ -1262,14 +1390,17 @@
           "procurement": 19177.91,
           "fixedCost": 2150,
           "developmentCost": 0,
+          "depositsTaken": 2550,
+          "payablesPaid": 10833.38,
+          "payablesOutstanding": 19177.91,
           "operatingProfit": 2815.95,
           "inventoryCost": 3902.86,
           "inventoryUnits": 1,
           "capacityUsed": {
-            "labor": 85,
-            "owner": 10,
-            "bench": 66,
-            "test": 20
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -1282,8 +1413,8 @@
         },
         {
           "month": 3,
-          "startCash": 43655.71,
-          "endCash": 49072.71,
+          "startCash": 62833.62,
+          "endCash": 76277.71,
           "sold": {
             "gaming": 2,
             "office": 6,
@@ -1301,14 +1432,17 @@
           "procurement": 27205,
           "fixedCost": 3550,
           "developmentCost": 0,
+          "depositsTaken": 8075,
+          "payablesPaid": 19177.91,
+          "payablesOutstanding": 27205,
           "operatingProfit": 7217,
           "inventoryCost": 3902.86,
           "inventoryUnits": 1,
           "capacityUsed": {
-            "labor": 129.6,
-            "owner": 28,
-            "bench": 89.6,
-            "test": 28
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 320,
@@ -1321,8 +1455,8 @@
         },
         {
           "month": 4,
-          "startCash": 49072.71,
-          "endCash": 59846.18,
+          "startCash": 76277.71,
+          "endCash": 88861.25,
           "sold": {
             "gaming": 3,
             "office": 7,
@@ -1340,14 +1474,17 @@
           "procurement": 35429.53,
           "fixedCost": 3550,
           "developmentCost": 0,
+          "depositsTaken": 10625,
+          "payablesPaid": 27205,
+          "payablesOutstanding": 29015.07,
           "operatingProfit": 10773.47,
           "inventoryCost": 3902.86,
           "inventoryUnits": 1,
           "capacityUsed": {
-            "labor": 172.4,
-            "owner": 38,
-            "bench": 118.4,
-            "test": 37
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 320,
@@ -1360,8 +1497,8 @@
         },
         {
           "month": 5,
-          "startCash": 59846.18,
-          "endCash": 71665.16,
+          "startCash": 88861.25,
+          "endCash": 101137.64,
           "sold": {
             "gaming": 4,
             "office": 8,
@@ -1379,14 +1516,17 @@
           "procurement": 41065.02,
           "fixedCost": 3550,
           "developmentCost": 0,
+          "depositsTaken": 10625,
+          "payablesPaid": 29015.07,
+          "payablesOutstanding": 29472.48,
           "operatingProfit": 11818.98,
           "inventoryCost": 3902.86,
           "inventoryUnits": 1,
           "capacityUsed": {
-            "labor": 190.4,
-            "owner": 38,
-            "bench": 134.4,
-            "test": 42
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 320,
@@ -1399,8 +1539,8 @@
         },
         {
           "month": 6,
-          "startCash": 71665.16,
-          "endCash": 84912.02,
+          "startCash": 101137.64,
+          "endCash": 113946.9,
           "sold": {
             "gaming": 5,
             "office": 10,
@@ -1418,14 +1558,17 @@
           "procurement": 48433.14,
           "fixedCost": 3550,
           "developmentCost": 0,
+          "depositsTaken": 10625,
+          "payablesPaid": 29472.48,
+          "payablesOutstanding": 29034.88,
           "operatingProfit": 13246.86,
           "inventoryCost": 3902.86,
           "inventoryUnits": 1,
           "capacityUsed": {
-            "labor": 215.4,
-            "owner": 38,
-            "bench": 156.4,
-            "test": 49
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 320,
@@ -1444,6 +1587,12 @@
       "difficulty": "easy",
       "partsChannel": "retail",
       "partsChannelFactor": 1,
+      "paymentTermMonths": 0,
+      "creditLimitCoins": 60000,
+      "gatedAtStart": false,
+      "totalDeposits": 56100,
+      "totalPayablesPaid": 0,
+      "payablesOutstanding": 0,
       "bankrupt": false,
       "bankruptMonth": null,
       "totalSales": 15,
@@ -1472,14 +1621,17 @@
           "procurement": 3081.52,
           "fixedCost": 2150,
           "developmentCost": 0,
+          "depositsTaken": 2550,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": -131.52,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 28,
-            "owner": 10,
-            "bench": 16,
-            "test": 4
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -1507,14 +1659,17 @@
           "procurement": 10553,
           "fixedCost": 2150,
           "developmentCost": 0,
+          "depositsTaken": 8075,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": 3447,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 74,
-            "owner": 28,
-            "bench": 42,
-            "test": 10
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -1542,14 +1697,17 @@
           "procurement": 10313,
           "fixedCost": 2150,
           "developmentCost": 0,
+          "depositsTaken": 8075,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": 3687,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 65.6,
-            "owner": 28,
-            "bench": 33.6,
-            "test": 10
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -1577,14 +1735,17 @@
           "procurement": 13274.52,
           "fixedCost": 2150,
           "developmentCost": 0,
+          "depositsTaken": 10625,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": 5825.48,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 90.4,
-            "owner": 38,
-            "bench": 46.4,
-            "test": 14
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -1612,14 +1773,17 @@
           "procurement": 13274.52,
           "fixedCost": 2150,
           "developmentCost": 0,
+          "depositsTaken": 10625,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": 5825.48,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 90.4,
-            "owner": 38,
-            "bench": 46.4,
-            "test": 14
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -1647,14 +1811,17 @@
           "procurement": 20626,
           "fixedCost": 2150,
           "developmentCost": 0,
+          "depositsTaken": 16150,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": 9524,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 131.2,
-            "owner": 56,
-            "bench": 67.2,
-            "test": 20
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -1673,6 +1840,12 @@
       "difficulty": "easy",
       "partsChannel": "scheduled_batch",
       "partsChannelFactor": 0.9,
+      "paymentTermMonths": 2,
+      "creditLimitCoins": 60000,
+      "gatedAtStart": false,
+      "totalDeposits": 0,
+      "totalPayablesPaid": 73855.4,
+      "payablesOutstanding": 45013.25,
       "bankrupt": false,
       "bankruptMonth": null,
       "totalSales": 95,
@@ -1682,14 +1855,14 @@
       "totalDevelopmentCost": 300,
       "totalInvestment": 6000,
       "operatingProfit": 21080.73,
-      "endCash": 27178.97,
+      "endCash": 72192.22,
       "inventoryCost": 32901.76,
-      "cashAndInventoryGain": 15080.73,
+      "cashAndInventoryGain": 60093.98,
       "months": [
         {
           "month": 1,
           "startCash": 45000,
-          "endCash": 44943.21,
+          "endCash": 59806,
           "sold": {
             "office": 6,
             "gaming": 1
@@ -1703,14 +1876,17 @@
           "procurement": 14862.79,
           "fixedCost": 2150,
           "developmentCost": 300,
+          "depositsTaken": 0,
+          "payablesPaid": 0,
+          "payablesOutstanding": 14862.79,
           "operatingProfit": -56.79,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 83,
+            "labor": 30,
             "owner": 30,
-            "bench": 51,
-            "test": 20
+            "bench": 5,
+            "test": 5
           },
           "capacityAvailable": {
             "labor": 208,
@@ -1723,8 +1899,8 @@
         },
         {
           "month": 2,
-          "startCash": 44943.21,
-          "endCash": 46321.75,
+          "startCash": 59806,
+          "endCash": 83708,
           "sold": {
             "office": 8,
             "gaming": 2
@@ -1738,14 +1914,17 @@
           "procurement": 22523.46,
           "fixedCost": 2150,
           "developmentCost": 0,
+          "depositsTaken": 0,
+          "payablesPaid": 0,
+          "payablesOutstanding": 37386.25,
           "operatingProfit": 1378.54,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 78,
+            "labor": 0,
             "owner": 0,
-            "bench": 68,
-            "test": 22
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -1758,8 +1937,8 @@
         },
         {
           "month": 3,
-          "startCash": 46321.75,
-          "endCash": 45835.62,
+          "startCash": 83708,
+          "endCash": 90423.99,
           "sold": {
             "office": 10,
             "gaming": 3
@@ -1773,14 +1952,17 @@
           "procurement": 30184.13,
           "fixedCost": 2150,
           "developmentCost": 0,
+          "depositsTaken": 0,
+          "payablesPaid": 14862.79,
+          "payablesOutstanding": 44588.37,
           "operatingProfit": 2513.87,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 103,
+            "labor": 0,
             "owner": 0,
-            "bench": 90,
-            "test": 29
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -1793,8 +1975,8 @@
         },
         {
           "month": 4,
-          "startCash": 45835.62,
-          "endCash": 43939.15,
+          "startCash": 90423.99,
+          "endCash": 80408.3,
           "sold": {
             "office": 13,
             "gaming": 4
@@ -1808,14 +1990,17 @@
           "procurement": 45505.47,
           "fixedCost": 2150,
           "developmentCost": 0,
+          "depositsTaken": 0,
+          "payablesPaid": 22523.46,
+          "payablesOutstanding": 36469.15,
           "operatingProfit": 3963.67,
           "inventoryCost": 5860.14,
           "inventoryUnits": 2,
           "capacityUsed": {
-            "labor": 153,
+            "labor": 0,
             "owner": 0,
-            "bench": 134,
-            "test": 43
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -1828,8 +2013,8 @@
         },
         {
           "month": 5,
-          "startCash": 43939.15,
-          "endCash": 35038.73,
+          "startCash": 80408.3,
+          "endCash": 72849.86,
           "sold": {
             "office": 16,
             "gaming": 6
@@ -1843,14 +2028,17 @@
           "procurement": 64886.42,
           "fixedCost": 2250,
           "developmentCost": 0,
+          "depositsTaken": 0,
+          "payablesPaid": 22064.91,
+          "payablesOutstanding": 37811.13,
           "operatingProfit": 5819.86,
           "inventoryCost": 17580.42,
           "inventoryUnits": 6,
           "capacityUsed": {
-            "labor": 148.2,
+            "labor": 0,
             "owner": 0,
-            "bench": 122.2,
-            "test": 60
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -1863,8 +2051,8 @@
         },
         {
           "month": 6,
-          "startCash": 35038.73,
-          "endCash": 27178.97,
+          "startCash": 72849.86,
+          "endCash": 72192.22,
           "sold": {
             "office": 18,
             "gaming": 8
@@ -1878,14 +2066,17 @@
           "procurement": 80207.76,
           "fixedCost": 2250,
           "developmentCost": 0,
+          "depositsTaken": 0,
+          "payablesPaid": 14404.24,
+          "payablesOutstanding": 45013.25,
           "operatingProfit": 7461.58,
           "inventoryCost": 32901.76,
           "inventoryUnits": 12,
           "capacityUsed": {
-            "labor": 182.8,
+            "labor": 0,
             "owner": 0,
-            "bench": 150.8,
-            "test": 74
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -1904,6 +2095,12 @@
       "difficulty": "easy",
       "partsChannel": "distributor",
       "partsChannelFactor": 0.95,
+      "paymentTermMonths": 1,
+      "creditLimitCoins": 60000,
+      "gatedAtStart": false,
+      "totalDeposits": 42500,
+      "totalPayablesPaid": 122271.02,
+      "payablesOutstanding": 27489.2,
       "bankrupt": false,
       "bankruptMonth": null,
       "totalSales": 69,
@@ -1913,14 +2110,14 @@
       "totalDevelopmentCost": 300,
       "totalInvestment": 1800,
       "operatingProfit": 29237.69,
-      "endCash": 72437.69,
+      "endCash": 99926.89,
       "inventoryCost": 0,
-      "cashAndInventoryGain": 27437.69,
+      "cashAndInventoryGain": 54926.89,
       "months": [
         {
           "month": 1,
           "startCash": 45000,
-          "endCash": 43725.29,
+          "endCash": 55576,
           "sold": {
             "office": 4,
             "gaming": 1
@@ -1934,14 +2131,17 @@
           "procurement": 11850.71,
           "fixedCost": 2150,
           "developmentCost": 300,
+          "depositsTaken": 0,
+          "payablesPaid": 0,
+          "payablesOutstanding": 11850.71,
           "operatingProfit": -1274.71,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 69,
+            "labor": 30,
             "owner": 30,
-            "bench": 39,
-            "test": 16
+            "bench": 5,
+            "test": 5
           },
           "capacityAvailable": {
             "labor": 208,
@@ -1954,8 +2154,8 @@
         },
         {
           "month": 2,
-          "startCash": 43725.29,
-          "endCash": 45417.6,
+          "startCash": 55576,
+          "endCash": 66382.29,
           "sold": {
             "office": 5,
             "gaming": 2,
@@ -1971,14 +2171,17 @@
           "procurement": 20964.69,
           "fixedCost": 2150,
           "developmentCost": 0,
+          "depositsTaken": 2550,
+          "payablesPaid": 11850.71,
+          "payablesOutstanding": 20964.69,
           "operatingProfit": 1692.31,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 85,
-            "owner": 10,
-            "bench": 66,
-            "test": 20
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -1991,8 +2194,8 @@
         },
         {
           "month": 3,
-          "startCash": 45417.6,
-          "endCash": 48293.11,
+          "startCash": 66382.29,
+          "endCash": 78039.6,
           "sold": {
             "office": 6,
             "gaming": 2,
@@ -2010,14 +2213,17 @@
           "procurement": 29746.49,
           "fixedCost": 3550,
           "developmentCost": 0,
+          "depositsTaken": 8075,
+          "payablesPaid": 20964.69,
+          "payablesOutstanding": 29746.49,
           "operatingProfit": 4675.51,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 129.6,
-            "owner": 28,
-            "bench": 89.6,
-            "test": 28
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 320,
@@ -2030,8 +2236,8 @@
         },
         {
           "month": 4,
-          "startCash": 48293.11,
-          "endCash": 55755.64,
+          "startCash": 78039.6,
+          "endCash": 84663.26,
           "sold": {
             "office": 7,
             "gaming": 3,
@@ -2049,14 +2255,17 @@
           "procurement": 38740.47,
           "fixedCost": 3550,
           "developmentCost": 0,
+          "depositsTaken": 10625,
+          "payablesPaid": 29746.49,
+          "payablesOutstanding": 28907.62,
           "operatingProfit": 7462.53,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 172.4,
-            "owner": 38,
-            "bench": 118.4,
-            "test": 37
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 320,
@@ -2069,8 +2278,8 @@
         },
         {
           "month": 5,
-          "startCash": 55755.64,
-          "endCash": 63730.13,
+          "startCash": 84663.26,
+          "endCash": 94531.64,
           "sold": {
             "office": 8,
             "gaming": 4,
@@ -2088,14 +2297,17 @@
           "procurement": 44909.51,
           "fixedCost": 3550,
           "developmentCost": 0,
+          "depositsTaken": 10625,
+          "payablesPaid": 28907.62,
+          "payablesOutstanding": 30801.51,
           "operatingProfit": 7974.49,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 190.4,
-            "owner": 38,
-            "bench": 134.4,
-            "test": 42
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 320,
@@ -2108,8 +2320,8 @@
         },
         {
           "month": 6,
-          "startCash": 63730.13,
-          "endCash": 72437.69,
+          "startCash": 94531.64,
+          "endCash": 99926.89,
           "sold": {
             "office": 10,
             "gaming": 5,
@@ -2127,14 +2339,17 @@
           "procurement": 52972.44,
           "fixedCost": 3550,
           "developmentCost": 0,
+          "depositsTaken": 10625,
+          "payablesPaid": 30801.51,
+          "payablesOutstanding": 27489.2,
           "operatingProfit": 8707.56,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 215.4,
-            "owner": 38,
-            "bench": 156.4,
-            "test": 49
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 320,
@@ -2153,6 +2368,12 @@
       "difficulty": "normal",
       "partsChannel": "retail",
       "partsChannelFactor": 1,
+      "paymentTermMonths": 0,
+      "creditLimitCoins": 30000,
+      "gatedAtStart": false,
+      "totalDeposits": 56100,
+      "totalPayablesPaid": 0,
+      "payablesOutstanding": 0,
       "bankrupt": false,
       "bankruptMonth": null,
       "totalSales": 15,
@@ -2162,14 +2383,14 @@
       "totalDevelopmentCost": 0,
       "totalInvestment": 1200,
       "operatingProfit": 29010,
-      "endCash": 43810,
+      "endCash": 57810,
       "inventoryCost": 0,
       "cashAndInventoryGain": 27810,
       "months": [
         {
           "month": 1,
-          "startCash": 16000,
-          "endCash": 15490,
+          "startCash": 30000,
+          "endCash": 29490,
           "sold": {
             "quiet_office": 1
           },
@@ -2181,14 +2402,17 @@
           "procurement": 2910,
           "fixedCost": 2700,
           "developmentCost": 0,
+          "depositsTaken": 2550,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": -510,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 28,
-            "owner": 10,
-            "bench": 16,
-            "test": 4
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -2201,8 +2425,8 @@
         },
         {
           "month": 2,
-          "startCash": 15490,
-          "endCash": 18990,
+          "startCash": 29490,
+          "endCash": 32990,
           "sold": {
             "quiet_office": 1,
             "premium": 1
@@ -2216,14 +2440,17 @@
           "procurement": 9950,
           "fixedCost": 2700,
           "developmentCost": 0,
+          "depositsTaken": 8075,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": 3500,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 74,
-            "owner": 28,
-            "bench": 42,
-            "test": 10
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -2236,8 +2463,8 @@
         },
         {
           "month": 3,
-          "startCash": 18990,
-          "endCash": 21530,
+          "startCash": 32990,
+          "endCash": 35530,
           "sold": {
             "quiet_office": 1,
             "premium": 1
@@ -2251,14 +2478,17 @@
           "procurement": 9710,
           "fixedCost": 2700,
           "developmentCost": 0,
+          "depositsTaken": 8075,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": 3740,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 65.6,
-            "owner": 28,
-            "bench": 33.6,
-            "test": 10
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -2271,8 +2501,8 @@
         },
         {
           "month": 4,
-          "startCash": 21530,
-          "endCash": 27580,
+          "startCash": 35530,
+          "endCash": 41580,
           "sold": {
             "quiet_office": 2,
             "premium": 1
@@ -2286,14 +2516,17 @@
           "procurement": 12500,
           "fixedCost": 2700,
           "developmentCost": 0,
+          "depositsTaken": 10625,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": 6050,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 90.4,
-            "owner": 38,
-            "bench": 46.4,
-            "test": 14
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -2306,8 +2539,8 @@
         },
         {
           "month": 5,
-          "startCash": 27580,
-          "endCash": 33630,
+          "startCash": 41580,
+          "endCash": 47630,
           "sold": {
             "quiet_office": 2,
             "premium": 1
@@ -2321,14 +2554,17 @@
           "procurement": 12500,
           "fixedCost": 2700,
           "developmentCost": 0,
+          "depositsTaken": 10625,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": 6050,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 90.4,
-            "owner": 38,
-            "bench": 46.4,
-            "test": 14
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -2341,8 +2577,8 @@
         },
         {
           "month": 6,
-          "startCash": 33630,
-          "endCash": 43810,
+          "startCash": 47630,
+          "endCash": 57810,
           "sold": {
             "quiet_office": 2,
             "premium": 2
@@ -2356,14 +2592,17 @@
           "procurement": 19420,
           "fixedCost": 2700,
           "developmentCost": 0,
+          "depositsTaken": 16150,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": 10180,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 131.2,
-            "owner": 56,
-            "bench": 67.2,
-            "test": 20
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -2382,6 +2621,12 @@
       "difficulty": "normal",
       "partsChannel": "scheduled_batch",
       "partsChannelFactor": 0.9,
+      "paymentTermMonths": 2,
+      "creditLimitCoins": 30000,
+      "gatedAtStart": false,
+      "totalDeposits": 0,
+      "totalPayablesPaid": 42801,
+      "payablesOutstanding": 15255,
       "bankrupt": false,
       "bankruptMonth": null,
       "totalSales": 95,
@@ -2391,14 +2636,14 @@
       "totalDevelopmentCost": 300,
       "totalInvestment": 6000,
       "operatingProfit": 31120,
-      "endCash": 10175,
+      "endCash": 39430,
       "inventoryCost": 30945,
-      "cashAndInventoryGain": 25120,
+      "cashAndInventoryGain": 40375,
       "months": [
         {
           "month": 1,
-          "startCash": 16000,
-          "endCash": 16270,
+          "startCash": 30000,
+          "endCash": 44256,
           "sold": {
             "office": 6,
             "gaming": 1
@@ -2412,14 +2657,17 @@
           "procurement": 13986,
           "fixedCost": 2700,
           "developmentCost": 300,
+          "depositsTaken": 0,
+          "payablesPaid": 0,
+          "payablesOutstanding": 13986,
           "operatingProfit": 270,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 83,
+            "labor": 30,
             "owner": 30,
-            "bench": 51,
-            "test": 20
+            "bench": 5,
+            "test": 5
           },
           "capacityAvailable": {
             "labor": 208,
@@ -2432,8 +2680,8 @@
         },
         {
           "month": 2,
-          "startCash": 16270,
-          "endCash": 18430,
+          "startCash": 44256,
+          "endCash": 59976,
           "sold": {
             "office": 8,
             "gaming": 2
@@ -2447,14 +2695,17 @@
           "procurement": 21192,
           "fixedCost": 2700,
           "developmentCost": 0,
+          "depositsTaken": 0,
+          "payablesPaid": 0,
+          "payablesOutstanding": 27546,
           "operatingProfit": 2160,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 78,
+            "labor": 0,
             "owner": 0,
-            "bench": 68,
-            "test": 22
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -2467,8 +2718,8 @@
         },
         {
           "month": 3,
-          "startCash": 18430,
-          "endCash": 19180,
+          "startCash": 59976,
+          "endCash": 48435,
           "sold": {
             "office": 10,
             "gaming": 3
@@ -2482,14 +2733,17 @@
           "procurement": 28398,
           "fixedCost": 2700,
           "developmentCost": 0,
+          "depositsTaken": 0,
+          "payablesPaid": 13986,
+          "payablesOutstanding": 15255,
           "operatingProfit": 3750,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 103,
+            "labor": 0,
             "owner": 0,
-            "bench": 90,
-            "test": 29
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -2502,8 +2756,8 @@
         },
         {
           "month": 4,
-          "startCash": 19180,
-          "endCash": 19429,
+          "startCash": 48435,
+          "endCash": 48684,
           "sold": {
             "office": 13,
             "gaming": 4
@@ -2517,14 +2771,17 @@
           "procurement": 42810,
           "fixedCost": 2700,
           "developmentCost": 0,
+          "depositsTaken": 0,
+          "payablesPaid": 13560,
+          "payablesOutstanding": 15255,
           "operatingProfit": 5760,
           "inventoryCost": 5511,
           "inventoryUnits": 2,
           "capacityUsed": {
-            "labor": 153,
+            "labor": 0,
             "owner": 0,
-            "bench": 134,
-            "test": 43
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -2537,8 +2794,8 @@
         },
         {
           "month": 5,
-          "startCash": 19429,
-          "endCash": 13827,
+          "startCash": 48684,
+          "endCash": 54947,
           "sold": {
             "office": 16,
             "gaming": 6
@@ -2552,14 +2809,17 @@
           "procurement": 61038,
           "fixedCost": 2800,
           "developmentCost": 0,
+          "depositsTaken": 0,
+          "payablesPaid": 1695,
+          "payablesOutstanding": 27120,
           "operatingProfit": 8420,
           "inventoryCost": 16533,
           "inventoryUnits": 6,
           "capacityUsed": {
-            "labor": 148.2,
+            "labor": 0,
             "owner": 0,
-            "bench": 122.2,
-            "test": 60
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -2572,8 +2832,8 @@
         },
         {
           "month": 6,
-          "startCash": 13827,
-          "endCash": 10175,
+          "startCash": 54947,
+          "endCash": 39430,
           "sold": {
             "office": 18,
             "gaming": 8
@@ -2587,14 +2847,17 @@
           "procurement": 75450,
           "fixedCost": 2800,
           "developmentCost": 0,
+          "depositsTaken": 0,
+          "payablesPaid": 13560,
+          "payablesOutstanding": 15255,
           "operatingProfit": 10760,
           "inventoryCost": 30945,
           "inventoryUnits": 12,
           "capacityUsed": {
-            "labor": 182.8,
+            "labor": 0,
             "owner": 0,
-            "bench": 150.8,
-            "test": 74
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -2613,6 +2876,12 @@
       "difficulty": "normal",
       "partsChannel": "distributor",
       "partsChannelFactor": 0.95,
+      "paymentTermMonths": 1,
+      "creditLimitCoins": 30000,
+      "gatedAtStart": false,
+      "totalDeposits": 42500,
+      "totalPayablesPaid": 68644,
+      "payablesOutstanding": 17825,
       "bankrupt": false,
       "bankruptMonth": null,
       "totalSales": 69,
@@ -2622,14 +2891,14 @@
       "totalDevelopmentCost": 300,
       "totalInvestment": 1800,
       "operatingProfit": 37708,
-      "endCash": 51908,
+      "endCash": 83733,
       "inventoryCost": 0,
-      "cashAndInventoryGain": 35908,
+      "cashAndInventoryGain": 53733,
       "months": [
         {
           "month": 1,
-          "startCash": 16000,
-          "endCash": 14878,
+          "startCash": 30000,
+          "endCash": 40026,
           "sold": {
             "office": 4,
             "gaming": 1
@@ -2643,14 +2912,17 @@
           "procurement": 11148,
           "fixedCost": 2700,
           "developmentCost": 300,
+          "depositsTaken": 0,
+          "payablesPaid": 0,
+          "payablesOutstanding": 11148,
           "operatingProfit": -1122,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 69,
+            "labor": 30,
             "owner": 30,
-            "bench": 39,
-            "test": 16
+            "bench": 5,
+            "test": 5
           },
           "capacityAvailable": {
             "labor": 208,
@@ -2663,8 +2935,8 @@
         },
         {
           "month": 2,
-          "startCash": 14878,
-          "endCash": 17254.5,
+          "startCash": 40026,
+          "endCash": 48203,
           "sold": {
             "office": 5,
             "gaming": 2,
@@ -2680,14 +2952,17 @@
           "procurement": 19730.5,
           "fixedCost": 2700,
           "developmentCost": 0,
+          "depositsTaken": 2550,
+          "payablesPaid": 11148,
+          "payablesOutstanding": 16948.5,
           "operatingProfit": 2376.5,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 85,
-            "owner": 10,
-            "bench": 66,
-            "test": 20
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -2700,8 +2975,8 @@
         },
         {
           "month": 3,
-          "startCash": 17254.5,
-          "endCash": 21335.5,
+          "startCash": 48203,
+          "endCash": 46030.5,
           "sold": {
             "office": 6,
             "gaming": 2,
@@ -2719,14 +2994,17 @@
           "procurement": 27991,
           "fixedCost": 4100,
           "developmentCost": 0,
+          "depositsTaken": 8075,
+          "payablesPaid": 16948.5,
+          "payablesOutstanding": 10695,
           "operatingProfit": 5881,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 129.6,
-            "owner": 28,
-            "bench": 89.6,
-            "test": 28
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 320,
@@ -2739,8 +3017,8 @@
         },
         {
           "month": 4,
-          "startCash": 21335.5,
-          "endCash": 30535,
+          "startCash": 46030.5,
+          "endCash": 63692.5,
           "sold": {
             "office": 7,
             "gaming": 3,
@@ -2758,14 +3036,17 @@
           "procurement": 36453.5,
           "fixedCost": 4100,
           "developmentCost": 0,
+          "depositsTaken": 10625,
+          "payablesPaid": 10695,
+          "payablesOutstanding": 19157.5,
           "operatingProfit": 9199.5,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 172.4,
-            "owner": 38,
-            "bench": 118.4,
-            "test": 37
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 320,
@@ -2778,8 +3059,8 @@
         },
         {
           "month": 5,
-          "startCash": 30535,
-          "endCash": 40615,
+          "startCash": 63692.5,
+          "endCash": 65310,
           "sold": {
             "office": 8,
             "gaming": 4,
@@ -2797,14 +3078,17 @@
           "procurement": 42254,
           "fixedCost": 4100,
           "developmentCost": 0,
+          "depositsTaken": 10625,
+          "payablesPaid": 19157.5,
+          "payablesOutstanding": 10695,
           "operatingProfit": 10080,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 190.4,
-            "owner": 38,
-            "bench": 134.4,
-            "test": 42
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 320,
@@ -2817,8 +3101,8 @@
         },
         {
           "month": 6,
-          "startCash": 40615,
-          "endCash": 51908,
+          "startCash": 65310,
+          "endCash": 83733,
           "sold": {
             "office": 10,
             "gaming": 5,
@@ -2836,14 +3120,17 @@
           "procurement": 49837,
           "fixedCost": 4100,
           "developmentCost": 0,
+          "depositsTaken": 10625,
+          "payablesPaid": 10695,
+          "payablesOutstanding": 17825,
           "operatingProfit": 11293,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 215.4,
-            "owner": 38,
-            "bench": 156.4,
-            "test": 49
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 320,
@@ -2862,6 +3149,12 @@
       "difficulty": "normal",
       "partsChannel": "retail",
       "partsChannelFactor": 1,
+      "paymentTermMonths": 0,
+      "creditLimitCoins": 30000,
+      "gatedAtStart": false,
+      "totalDeposits": 56100,
+      "totalPayablesPaid": 0,
+      "payablesOutstanding": 0,
       "bankrupt": false,
       "bankruptMonth": null,
       "totalSales": 15,
@@ -2871,14 +3164,14 @@
       "totalDevelopmentCost": 0,
       "totalInvestment": 1200,
       "operatingProfit": 29010,
-      "endCash": 43810,
+      "endCash": 57810,
       "inventoryCost": 0,
       "cashAndInventoryGain": 27810,
       "months": [
         {
           "month": 1,
-          "startCash": 16000,
-          "endCash": 15490,
+          "startCash": 30000,
+          "endCash": 29490,
           "sold": {
             "quiet_office": 1
           },
@@ -2890,14 +3183,17 @@
           "procurement": 2910,
           "fixedCost": 2700,
           "developmentCost": 0,
+          "depositsTaken": 2550,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": -510,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 28,
-            "owner": 10,
-            "bench": 16,
-            "test": 4
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -2910,8 +3206,8 @@
         },
         {
           "month": 2,
-          "startCash": 15490,
-          "endCash": 18990,
+          "startCash": 29490,
+          "endCash": 32990,
           "sold": {
             "quiet_office": 1,
             "premium": 1
@@ -2925,14 +3221,17 @@
           "procurement": 9950,
           "fixedCost": 2700,
           "developmentCost": 0,
+          "depositsTaken": 8075,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": 3500,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 74,
-            "owner": 28,
-            "bench": 42,
-            "test": 10
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -2945,8 +3244,8 @@
         },
         {
           "month": 3,
-          "startCash": 18990,
-          "endCash": 21530,
+          "startCash": 32990,
+          "endCash": 35530,
           "sold": {
             "quiet_office": 1,
             "premium": 1
@@ -2960,14 +3259,17 @@
           "procurement": 9710,
           "fixedCost": 2700,
           "developmentCost": 0,
+          "depositsTaken": 8075,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": 3740,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 65.6,
-            "owner": 28,
-            "bench": 33.6,
-            "test": 10
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -2980,8 +3282,8 @@
         },
         {
           "month": 4,
-          "startCash": 21530,
-          "endCash": 27580,
+          "startCash": 35530,
+          "endCash": 41580,
           "sold": {
             "quiet_office": 2,
             "premium": 1
@@ -2995,14 +3297,17 @@
           "procurement": 12500,
           "fixedCost": 2700,
           "developmentCost": 0,
+          "depositsTaken": 10625,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": 6050,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 90.4,
-            "owner": 38,
-            "bench": 46.4,
-            "test": 14
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -3015,8 +3320,8 @@
         },
         {
           "month": 5,
-          "startCash": 27580,
-          "endCash": 33630,
+          "startCash": 41580,
+          "endCash": 47630,
           "sold": {
             "quiet_office": 2,
             "premium": 1
@@ -3030,14 +3335,17 @@
           "procurement": 12500,
           "fixedCost": 2700,
           "developmentCost": 0,
+          "depositsTaken": 10625,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": 6050,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 90.4,
-            "owner": 38,
-            "bench": 46.4,
-            "test": 14
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -3050,8 +3358,8 @@
         },
         {
           "month": 6,
-          "startCash": 33630,
-          "endCash": 43810,
+          "startCash": 47630,
+          "endCash": 57810,
           "sold": {
             "quiet_office": 2,
             "premium": 2
@@ -3065,14 +3373,17 @@
           "procurement": 19420,
           "fixedCost": 2700,
           "developmentCost": 0,
+          "depositsTaken": 16150,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": 10180,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 131.2,
-            "owner": 56,
-            "bench": 67.2,
-            "test": 20
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -3091,23 +3402,29 @@
       "difficulty": "normal",
       "partsChannel": "scheduled_batch",
       "partsChannelFactor": 0.9,
-      "bankrupt": false,
-      "bankruptMonth": null,
-      "totalSales": 49,
-      "totalRevenue": 110988,
-      "totalCostOfGoodsSold": 89418,
-      "totalFixedCost": 16200,
+      "paymentTermMonths": 2,
+      "creditLimitCoins": 30000,
+      "gatedAtStart": false,
+      "totalDeposits": 0,
+      "totalPayablesPaid": 29241,
+      "payablesOutstanding": 27120,
+      "bankrupt": true,
+      "bankruptMonth": 5,
+      "totalSales": 45,
+      "totalRevenue": 122136,
+      "totalCostOfGoodsSold": 99606,
+      "totalFixedCost": 13600,
       "totalDevelopmentCost": 300,
-      "totalInvestment": 0,
-      "operatingProfit": 5070,
-      "endCash": 730,
-      "inventoryCost": 20340,
-      "cashAndInventoryGain": 5070,
+      "totalInvestment": 6000,
+      "operatingProfit": 8630,
+      "endCash": -436,
+      "inventoryCost": 60186,
+      "cashAndInventoryGain": 29750,
       "months": [
         {
           "month": 1,
-          "startCash": 16000,
-          "endCash": 12040,
+          "startCash": 30000,
+          "endCash": 40026,
           "sold": {
             "office": 4,
             "gaming": 1
@@ -3121,14 +3438,17 @@
           "procurement": 13986,
           "fixedCost": 2700,
           "developmentCost": 300,
+          "depositsTaken": 0,
+          "payablesPaid": 0,
+          "payablesOutstanding": 13986,
           "operatingProfit": -570,
           "inventoryCost": 3390,
           "inventoryUnits": 2,
           "capacityUsed": {
-            "labor": 83,
+            "labor": 30,
             "owner": 30,
-            "bench": 51,
-            "test": 20
+            "bench": 5,
+            "test": 5
           },
           "capacityAvailable": {
             "labor": 208,
@@ -3141,8 +3461,8 @@
         },
         {
           "month": 2,
-          "startCash": 12040,
-          "endCash": 3289,
+          "startCash": 40026,
+          "endCash": 44835,
           "sold": {
             "office": 5,
             "gaming": 1
@@ -3156,14 +3476,17 @@
           "procurement": 21192,
           "fixedCost": 2700,
           "developmentCost": 0,
+          "depositsTaken": 0,
+          "payablesPaid": 0,
+          "payablesOutstanding": 27546,
           "operatingProfit": 150,
           "inventoryCost": 12291,
           "inventoryUnits": 6,
           "capacityUsed": {
-            "labor": 78,
+            "labor": 0,
             "owner": 0,
-            "bench": 68,
-            "test": 22
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -3176,149 +3499,119 @@
         },
         {
           "month": 3,
-          "startCash": 3289,
-          "endCash": 3010,
+          "startCash": 44835,
+          "endCash": 22383,
           "sold": {
             "office": 7,
-            "gaming": 1
+            "gaming": 2
           },
           "built": {
-            "office": 10
+            "office": 10,
+            "gaming": 3
           },
-          "revenue": 19371,
-          "costOfGoodsSold": 15681,
-          "procurement": 16950,
+          "revenue": 23937,
+          "costOfGoodsSold": 19497,
+          "procurement": 28398,
           "fixedCost": 2700,
           "developmentCost": 0,
-          "operatingProfit": 990,
-          "inventoryCost": 13560,
-          "inventoryUnits": 8,
+          "depositsTaken": 0,
+          "payablesPaid": 13986,
+          "payablesOutstanding": 15255,
+          "operatingProfit": 1740,
+          "inventoryCost": 21192,
+          "inventoryUnits": 10,
           "capacityUsed": {
-            "labor": 70,
+            "labor": 0,
             "owner": 0,
-            "bench": 60,
-            "test": 20
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
             "owner": 96,
-            "bench": 160,
+            "bench": 320,
             "test": 160
           },
-          "notices": [
-            "EXPANSION_UNAFFORDABLE",
-            "PROCUREMENT_CASH_LIMIT:gaming"
-          ],
-          "investmentPaid": 0
+          "notices": [],
+          "investmentPaid": 3000
         },
         {
           "month": 4,
-          "startCash": 3010,
-          "endCash": 280,
+          "startCash": 22383,
+          "endCash": 7491,
           "sold": {
-            "office": 8
+            "office": 8,
+            "gaming": 3
           },
           "built": {
-            "office": 10
+            "office": 14,
+            "gaming": 5
           },
-          "revenue": 16920,
-          "costOfGoodsSold": 13560,
-          "procurement": 16950,
+          "revenue": 30618,
+          "costOfGoodsSold": 25008,
+          "procurement": 42810,
           "fixedCost": 2700,
           "developmentCost": 0,
-          "operatingProfit": 660,
-          "inventoryCost": 16950,
-          "inventoryUnits": 10,
+          "depositsTaken": 0,
+          "payablesPaid": 13560,
+          "payablesOutstanding": 15255,
+          "operatingProfit": 2910,
+          "inventoryCost": 38994,
+          "inventoryUnits": 18,
           "capacityUsed": {
-            "labor": 70,
+            "labor": 0,
             "owner": 0,
-            "bench": 60,
-            "test": 20
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
             "owner": 96,
-            "bench": 160,
+            "bench": 320,
             "test": 160
           },
-          "notices": [
-            "PROCUREMENT_CASH_LIMIT:office",
-            "PROCUREMENT_CASH_LIMIT:gaming"
-          ],
+          "notices": [],
           "investmentPaid": 0
         },
         {
           "month": 5,
-          "startCash": 280,
-          "endCash": 85,
+          "startCash": 7491,
+          "endCash": -436,
           "sold": {
-            "office": 10
+            "office": 10,
+            "gaming": 4
           },
           "built": {
-            "office": 11
+            "office": 18,
+            "gaming": 6
           },
-          "revenue": 21150,
-          "costOfGoodsSold": 16950,
-          "procurement": 18645,
-          "fixedCost": 2700,
+          "revenue": 39414,
+          "costOfGoodsSold": 32214,
+          "procurement": 53406,
+          "fixedCost": 2800,
           "developmentCost": 0,
-          "operatingProfit": 1500,
-          "inventoryCost": 18645,
-          "inventoryUnits": 11,
+          "depositsTaken": 0,
+          "payablesPaid": 1695,
+          "payablesOutstanding": 27120,
+          "operatingProfit": 4400,
+          "inventoryCost": 60186,
+          "inventoryUnits": 28,
           "capacityUsed": {
-            "labor": 77,
+            "labor": 0,
             "owner": 0,
-            "bench": 66,
-            "test": 22
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
             "owner": 96,
-            "bench": 160,
+            "bench": 320,
             "test": 160
           },
           "notices": [
-            "EXPANSION_UNAFFORDABLE",
-            "PROCUREMENT_CASH_LIMIT:office",
             "PROCUREMENT_CASH_LIMIT:gaming"
           ],
-          "investmentPaid": 0
-        },
-        {
-          "month": 6,
-          "startCash": 85,
-          "endCash": 730,
-          "sold": {
-            "office": 12
-          },
-          "built": {
-            "office": 13
-          },
-          "revenue": 25380,
-          "costOfGoodsSold": 20340,
-          "procurement": 22035,
-          "fixedCost": 2700,
-          "developmentCost": 0,
-          "operatingProfit": 2340,
-          "inventoryCost": 20340,
-          "inventoryUnits": 12,
-          "capacityUsed": {
-            "labor": 91,
-            "owner": 0,
-            "bench": 78,
-            "test": 26
-          },
-          "capacityAvailable": {
-            "labor": 208,
-            "owner": 96,
-            "bench": 160,
-            "test": 160
-          },
-          "notices": [
-            "PROCUREMENT_CASH_LIMIT:office",
-            "PROCUREMENT_CASH_LIMIT:gaming"
-          ],
-          "investmentPaid": 0
+          "investmentPaid": 3000
         }
       ]
     },
@@ -3328,6 +3621,12 @@
       "difficulty": "normal",
       "partsChannel": "distributor",
       "partsChannelFactor": 0.95,
+      "paymentTermMonths": 1,
+      "creditLimitCoins": 30000,
+      "gatedAtStart": false,
+      "totalDeposits": 42500,
+      "totalPayablesPaid": 68644,
+      "payablesOutstanding": 17825,
       "bankrupt": false,
       "bankruptMonth": null,
       "totalSales": 68,
@@ -3337,14 +3636,14 @@
       "totalDevelopmentCost": 300,
       "totalInvestment": 1800,
       "operatingProfit": 37160,
-      "endCash": 47342,
+      "endCash": 79167,
       "inventoryCost": 4018,
-      "cashAndInventoryGain": 35360,
+      "cashAndInventoryGain": 53185,
       "months": [
         {
           "month": 1,
-          "startCash": 16000,
-          "endCash": 14878,
+          "startCash": 30000,
+          "endCash": 40026,
           "sold": {
             "office": 4,
             "gaming": 1
@@ -3358,14 +3657,17 @@
           "procurement": 11148,
           "fixedCost": 2700,
           "developmentCost": 300,
+          "depositsTaken": 0,
+          "payablesPaid": 0,
+          "payablesOutstanding": 11148,
           "operatingProfit": -1122,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 69,
+            "labor": 30,
             "owner": 30,
-            "bench": 39,
-            "test": 16
+            "bench": 5,
+            "test": 5
           },
           "capacityAvailable": {
             "labor": 208,
@@ -3378,8 +3680,8 @@
         },
         {
           "month": 2,
-          "startCash": 14878,
-          "endCash": 12688.5,
+          "startCash": 40026,
+          "endCash": 43637,
           "sold": {
             "office": 5,
             "gaming": 1,
@@ -3395,14 +3697,17 @@
           "procurement": 19730.5,
           "fixedCost": 2700,
           "developmentCost": 0,
+          "depositsTaken": 2550,
+          "payablesPaid": 11148,
+          "payablesOutstanding": 16948.5,
           "operatingProfit": 1828.5,
           "inventoryCost": 4018,
           "inventoryUnits": 1,
           "capacityUsed": {
-            "labor": 85,
-            "owner": 10,
-            "bench": 66,
-            "test": 20
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -3415,8 +3720,8 @@
         },
         {
           "month": 3,
-          "startCash": 12688.5,
-          "endCash": 16769.5,
+          "startCash": 43637,
+          "endCash": 41464.5,
           "sold": {
             "gaming": 2,
             "office": 6,
@@ -3434,14 +3739,17 @@
           "procurement": 27991,
           "fixedCost": 4100,
           "developmentCost": 0,
+          "depositsTaken": 8075,
+          "payablesPaid": 16948.5,
+          "payablesOutstanding": 10695,
           "operatingProfit": 5881,
           "inventoryCost": 4018,
           "inventoryUnits": 1,
           "capacityUsed": {
-            "labor": 129.6,
-            "owner": 28,
-            "bench": 89.6,
-            "test": 28
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 320,
@@ -3454,8 +3762,8 @@
         },
         {
           "month": 4,
-          "startCash": 16769.5,
-          "endCash": 25969,
+          "startCash": 41464.5,
+          "endCash": 59126.5,
           "sold": {
             "gaming": 3,
             "office": 7,
@@ -3473,14 +3781,17 @@
           "procurement": 36453.5,
           "fixedCost": 4100,
           "developmentCost": 0,
+          "depositsTaken": 10625,
+          "payablesPaid": 10695,
+          "payablesOutstanding": 19157.5,
           "operatingProfit": 9199.5,
           "inventoryCost": 4018,
           "inventoryUnits": 1,
           "capacityUsed": {
-            "labor": 172.4,
-            "owner": 38,
-            "bench": 118.4,
-            "test": 37
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 320,
@@ -3493,8 +3804,8 @@
         },
         {
           "month": 5,
-          "startCash": 25969,
-          "endCash": 36049,
+          "startCash": 59126.5,
+          "endCash": 60744,
           "sold": {
             "gaming": 4,
             "office": 8,
@@ -3512,14 +3823,17 @@
           "procurement": 42254,
           "fixedCost": 4100,
           "developmentCost": 0,
+          "depositsTaken": 10625,
+          "payablesPaid": 19157.5,
+          "payablesOutstanding": 10695,
           "operatingProfit": 10080,
           "inventoryCost": 4018,
           "inventoryUnits": 1,
           "capacityUsed": {
-            "labor": 190.4,
-            "owner": 38,
-            "bench": 134.4,
-            "test": 42
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 320,
@@ -3532,8 +3846,8 @@
         },
         {
           "month": 6,
-          "startCash": 36049,
-          "endCash": 47342,
+          "startCash": 60744,
+          "endCash": 79167,
           "sold": {
             "gaming": 5,
             "office": 10,
@@ -3551,14 +3865,17 @@
           "procurement": 49837,
           "fixedCost": 4100,
           "developmentCost": 0,
+          "depositsTaken": 10625,
+          "payablesPaid": 10695,
+          "payablesOutstanding": 17825,
           "operatingProfit": 11293,
           "inventoryCost": 4018,
           "inventoryUnits": 1,
           "capacityUsed": {
-            "labor": 215.4,
-            "owner": 38,
-            "bench": 156.4,
-            "test": 49
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 320,
@@ -3577,6 +3894,12 @@
       "difficulty": "normal",
       "partsChannel": "retail",
       "partsChannelFactor": 1,
+      "paymentTermMonths": 0,
+      "creditLimitCoins": 30000,
+      "gatedAtStart": false,
+      "totalDeposits": 56100,
+      "totalPayablesPaid": 0,
+      "payablesOutstanding": 0,
       "bankrupt": false,
       "bankruptMonth": null,
       "totalSales": 15,
@@ -3586,14 +3909,14 @@
       "totalDevelopmentCost": 0,
       "totalInvestment": 1200,
       "operatingProfit": 22842,
-      "endCash": 37642,
+      "endCash": 51642,
       "inventoryCost": 0,
       "cashAndInventoryGain": 21642,
       "months": [
         {
           "month": 1,
-          "startCash": 16000,
-          "endCash": 15234,
+          "startCash": 30000,
+          "endCash": 29234,
           "sold": {
             "quiet_office": 1
           },
@@ -3605,14 +3928,17 @@
           "procurement": 3166,
           "fixedCost": 2700,
           "developmentCost": 0,
+          "depositsTaken": 2550,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": -766,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 28,
-            "owner": 10,
-            "bench": 16,
-            "test": 4
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -3625,8 +3951,8 @@
         },
         {
           "month": 2,
-          "startCash": 15234,
-          "endCash": 17834,
+          "startCash": 29234,
+          "endCash": 31834,
           "sold": {
             "quiet_office": 1,
             "premium": 1
@@ -3640,14 +3966,17 @@
           "procurement": 10850,
           "fixedCost": 2700,
           "developmentCost": 0,
+          "depositsTaken": 8075,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": 2600,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 74,
-            "owner": 28,
-            "bench": 42,
-            "test": 10
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -3660,8 +3989,8 @@
         },
         {
           "month": 3,
-          "startCash": 17834,
-          "endCash": 19474,
+          "startCash": 31834,
+          "endCash": 33474,
           "sold": {
             "quiet_office": 1,
             "premium": 1
@@ -3675,14 +4004,17 @@
           "procurement": 10610,
           "fixedCost": 2700,
           "developmentCost": 0,
+          "depositsTaken": 8075,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": 2840,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 65.6,
-            "owner": 28,
-            "bench": 33.6,
-            "test": 10
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -3695,8 +4027,8 @@
         },
         {
           "month": 4,
-          "startCash": 19474,
-          "endCash": 24368,
+          "startCash": 33474,
+          "endCash": 38368,
           "sold": {
             "quiet_office": 2,
             "premium": 1
@@ -3710,14 +4042,17 @@
           "procurement": 13656,
           "fixedCost": 2700,
           "developmentCost": 0,
+          "depositsTaken": 10625,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": 4894,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 90.4,
-            "owner": 38,
-            "bench": 46.4,
-            "test": 14
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -3730,8 +4065,8 @@
         },
         {
           "month": 5,
-          "startCash": 24368,
-          "endCash": 29262,
+          "startCash": 38368,
+          "endCash": 43262,
           "sold": {
             "quiet_office": 2,
             "premium": 1
@@ -3745,14 +4080,17 @@
           "procurement": 13656,
           "fixedCost": 2700,
           "developmentCost": 0,
+          "depositsTaken": 10625,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": 4894,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 90.4,
-            "owner": 38,
-            "bench": 46.4,
-            "test": 14
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -3765,8 +4103,8 @@
         },
         {
           "month": 6,
-          "startCash": 29262,
-          "endCash": 37642,
+          "startCash": 43262,
+          "endCash": 51642,
           "sold": {
             "quiet_office": 2,
             "premium": 2
@@ -3780,14 +4118,17 @@
           "procurement": 21220,
           "fixedCost": 2700,
           "developmentCost": 0,
+          "depositsTaken": 16150,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": 8380,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 131.2,
-            "owner": 56,
-            "bench": 67.2,
-            "test": 20
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -3806,6 +4147,12 @@
       "difficulty": "normal",
       "partsChannel": "scheduled_batch",
       "partsChannelFactor": 0.9,
+      "paymentTermMonths": 2,
+      "creditLimitCoins": 30000,
+      "gatedAtStart": false,
+      "totalDeposits": 0,
+      "totalPayablesPaid": 44934.6,
+      "payablesOutstanding": 12967.5,
       "bankrupt": false,
       "bankruptMonth": null,
       "totalSales": 95,
@@ -3815,14 +4162,14 @@
       "totalDevelopmentCost": 300,
       "totalInvestment": 6000,
       "operatingProfit": 11211.1,
-      "endCash": 4064,
-      "inventoryCost": 17147.1,
-      "cashAndInventoryGain": 5211.1,
+      "endCash": 14313.1,
+      "inventoryCost": 33865.5,
+      "cashAndInventoryGain": 18178.6,
       "months": [
         {
           "month": 1,
-          "startCash": 16000,
-          "endCash": 14961.4,
+          "startCash": 30000,
+          "endCash": 44256,
           "sold": {
             "office": 6,
             "gaming": 1
@@ -3836,14 +4183,17 @@
           "procurement": 15294.6,
           "fixedCost": 2700,
           "developmentCost": 300,
+          "depositsTaken": 0,
+          "payablesPaid": 0,
+          "payablesOutstanding": 15294.6,
           "operatingProfit": -1038.6,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 83,
+            "labor": 30,
             "owner": 30,
-            "bench": 51,
-            "test": 20
+            "bench": 5,
+            "test": 5
           },
           "capacityAvailable": {
             "labor": 208,
@@ -3856,8 +4206,8 @@
         },
         {
           "month": 2,
-          "startCash": 14961.4,
-          "endCash": 15134.2,
+          "startCash": 44256,
+          "endCash": 57396.3,
           "sold": {
             "office": 8,
             "gaming": 2
@@ -3871,14 +4221,17 @@
           "procurement": 23179.2,
           "fixedCost": 2700,
           "developmentCost": 0,
+          "depositsTaken": 0,
+          "payablesPaid": 0,
+          "payablesOutstanding": 28262.1,
           "operatingProfit": 172.8,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 78,
+            "labor": 0,
             "owner": 0,
-            "bench": 68,
-            "test": 22
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -3891,8 +4244,8 @@
         },
         {
           "month": 3,
-          "startCash": 15134.2,
-          "endCash": 13218.4,
+          "startCash": 57396.3,
+          "endCash": 40185.9,
           "sold": {
             "office": 10,
             "gaming": 3
@@ -3906,14 +4259,17 @@
           "procurement": 31063.8,
           "fixedCost": 2700,
           "developmentCost": 0,
+          "depositsTaken": 0,
+          "payablesPaid": 15294.6,
+          "payablesOutstanding": 12967.5,
           "operatingProfit": 1084.2,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 103,
+            "labor": 0,
             "owner": 0,
-            "bench": 90,
-            "test": 29
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -3926,8 +4282,8 @@
         },
         {
           "month": 4,
-          "startCash": 13218.4,
-          "endCash": 9444.4,
+          "startCash": 40185.9,
+          "endCash": 40116.9,
           "sold": {
             "office": 13,
             "gaming": 4
@@ -3941,14 +4297,17 @@
           "procurement": 46833,
           "fixedCost": 2700,
           "developmentCost": 0,
+          "depositsTaken": 0,
+          "payablesPaid": 12967.5,
+          "payablesOutstanding": 16672.5,
           "operatingProfit": 2258.1,
           "inventoryCost": 6032.1,
           "inventoryUnits": 2,
           "capacityUsed": {
-            "labor": 153,
+            "labor": 0,
             "owner": 0,
-            "bench": 134,
-            "test": 43
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -3961,29 +4320,32 @@
         },
         {
           "month": 5,
-          "startCash": 9444.4,
-          "endCash": 2278.2,
+          "startCash": 40116.9,
+          "endCash": 41738.6,
           "sold": {
             "office": 16,
             "gaming": 6
           },
           "built": {
             "office": 18,
-            "gaming": 7
+            "gaming": 8
           },
           "revenue": 61236,
           "costOfGoodsSold": 54717.6,
-          "procurement": 62602.2,
+          "procurement": 66781.8,
           "fixedCost": 2800,
           "developmentCost": 0,
+          "depositsTaken": 0,
+          "payablesPaid": 0,
+          "payablesOutstanding": 29640,
           "operatingProfit": 3718.4,
-          "inventoryCost": 13916.7,
-          "inventoryUnits": 5,
+          "inventoryCost": 18096.3,
+          "inventoryUnits": 6,
           "capacityUsed": {
-            "labor": 140.7,
+            "labor": 0,
             "owner": 0,
-            "bench": 115.7,
-            "test": 57
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -3991,36 +4353,37 @@
             "bench": 320,
             "test": 160
           },
-          "notices": [
-            "PROCUREMENT_CASH_LIMIT:gaming"
-          ],
+          "notices": [],
           "investmentPaid": 3000
         },
         {
           "month": 6,
-          "startCash": 2278.2,
-          "endCash": 4064,
+          "startCash": 41738.6,
+          "endCash": 14313.1,
           "sold": {
             "office": 18,
             "gaming": 8
           },
           "built": {
             "office": 22,
-            "gaming": 7
+            "gaming": 10
           },
           "revenue": 74598,
           "costOfGoodsSold": 66781.8,
-          "procurement": 70012.2,
+          "procurement": 82551,
           "fixedCost": 2800,
           "developmentCost": 0,
+          "depositsTaken": 0,
+          "payablesPaid": 16672.5,
+          "payablesOutstanding": 12967.5,
           "operatingProfit": 5016.2,
-          "inventoryCost": 17147.1,
-          "inventoryUnits": 8,
+          "inventoryCost": 33865.5,
+          "inventoryUnits": 12,
           "capacityUsed": {
-            "labor": 160.3,
+            "labor": 0,
             "owner": 0,
-            "bench": 131.3,
-            "test": 65
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -4028,9 +4391,7 @@
             "bench": 320,
             "test": 160
           },
-          "notices": [
-            "PROCUREMENT_CASH_LIMIT:gaming"
-          ],
+          "notices": [],
           "investmentPaid": 0
         }
       ]
@@ -4041,6 +4402,12 @@
       "difficulty": "normal",
       "partsChannel": "distributor",
       "partsChannelFactor": 0.95,
+      "paymentTermMonths": 1,
+      "creditLimitCoins": 30000,
+      "gatedAtStart": false,
+      "totalDeposits": 42500,
+      "totalPayablesPaid": 70795.6,
+      "payablesOutstanding": 17538.75,
       "bankrupt": false,
       "bankruptMonth": null,
       "totalSales": 69,
@@ -4050,14 +4417,14 @@
       "totalDevelopmentCost": 300,
       "totalInvestment": 1800,
       "operatingProfit": 20140.6,
-      "endCash": 34340.6,
+      "endCash": 65879.35,
       "inventoryCost": 0,
-      "cashAndInventoryGain": 18340.6,
+      "cashAndInventoryGain": 35879.35,
       "months": [
         {
           "month": 1,
-          "startCash": 16000,
-          "endCash": 13829.2,
+          "startCash": 30000,
+          "endCash": 40026,
           "sold": {
             "office": 4,
             "gaming": 1
@@ -4071,14 +4438,17 @@
           "procurement": 12196.8,
           "fixedCost": 2700,
           "developmentCost": 300,
+          "depositsTaken": 0,
+          "payablesPaid": 0,
+          "payablesOutstanding": 12196.8,
           "operatingProfit": -2170.8,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 69,
+            "labor": 30,
             "owner": 30,
-            "bench": 39,
-            "test": 16
+            "bench": 5,
+            "test": 5
           },
           "capacityAvailable": {
             "labor": 208,
@@ -4091,8 +4461,8 @@
         },
         {
           "month": 2,
-          "startCash": 13829.2,
-          "endCash": 14363.65,
+          "startCash": 40026,
+          "endCash": 45534.4,
           "sold": {
             "office": 5,
             "gaming": 2,
@@ -4108,14 +4478,17 @@
           "procurement": 21572.55,
           "fixedCost": 2700,
           "developmentCost": 0,
+          "depositsTaken": 2550,
+          "payablesPaid": 12196.8,
+          "payablesOutstanding": 17170.75,
           "operatingProfit": 534.45,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 85,
-            "owner": 10,
-            "bench": 66,
-            "test": 20
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -4128,8 +4501,8 @@
         },
         {
           "month": 3,
-          "startCash": 14363.65,
-          "endCash": 15824.55,
+          "startCash": 45534.4,
+          "endCash": 41517.05,
           "sold": {
             "office": 6,
             "gaming": 2,
@@ -4147,14 +4520,17 @@
           "procurement": 30611.1,
           "fixedCost": 4100,
           "developmentCost": 0,
+          "depositsTaken": 8075,
+          "payablesPaid": 17170.75,
+          "payablesOutstanding": 11692.5,
           "operatingProfit": 3260.9,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 129.6,
-            "owner": 28,
-            "bench": 89.6,
-            "test": 28
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 320,
@@ -4167,8 +4543,8 @@
         },
         {
           "month": 4,
-          "startCash": 15824.55,
-          "endCash": 21610.7,
+          "startCash": 41517.05,
+          "endCash": 53653.75,
           "sold": {
             "office": 7,
             "gaming": 3,
@@ -4186,14 +4562,17 @@
           "procurement": 39866.85,
           "fixedCost": 4100,
           "developmentCost": 0,
+          "depositsTaken": 10625,
+          "payablesPaid": 11692.5,
+          "payablesOutstanding": 18043.05,
           "operatingProfit": 5786.15,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 172.4,
-            "owner": 38,
-            "bench": 118.4,
-            "test": 37
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 320,
@@ -4206,8 +4585,8 @@
         },
         {
           "month": 5,
-          "startCash": 21610.7,
-          "endCash": 27727.3,
+          "startCash": 53653.75,
+          "endCash": 53419.8,
           "sold": {
             "office": 8,
             "gaming": 4,
@@ -4225,14 +4604,17 @@
           "procurement": 46217.4,
           "fixedCost": 4100,
           "developmentCost": 0,
+          "depositsTaken": 10625,
+          "payablesPaid": 18043.05,
+          "payablesOutstanding": 11692.5,
           "operatingProfit": 6116.6,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 190.4,
-            "owner": 38,
-            "bench": 134.4,
-            "test": 42
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 320,
@@ -4245,8 +4627,8 @@
         },
         {
           "month": 6,
-          "startCash": 27727.3,
-          "endCash": 34340.6,
+          "startCash": 53419.8,
+          "endCash": 65879.35,
           "sold": {
             "office": 10,
             "gaming": 5,
@@ -4264,14 +4646,17 @@
           "procurement": 54516.7,
           "fixedCost": 4100,
           "developmentCost": 0,
+          "depositsTaken": 10625,
+          "payablesPaid": 11692.5,
+          "payablesOutstanding": 17538.75,
           "operatingProfit": 6613.3,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 215.4,
-            "owner": 38,
-            "bench": 156.4,
-            "test": 49
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 320,
@@ -4290,986 +4675,51 @@
       "difficulty": "hard",
       "partsChannel": "retail",
       "partsChannelFactor": 1,
+      "paymentTermMonths": 0,
+      "creditLimitCoins": 15000,
+      "gatedAtStart": false,
+      "totalDeposits": 45900,
+      "totalPayablesPaid": 0,
+      "payablesOutstanding": 0,
       "bankrupt": false,
       "bankruptMonth": null,
-      "totalSales": 15,
-      "totalRevenue": 112200,
-      "totalCostOfGoodsSold": 71307.6,
+      "totalSales": 11,
+      "totalRevenue": 91800,
+      "totalCostOfGoodsSold": 60390.8,
       "totalFixedCost": 19200,
       "totalDevelopmentCost": 0,
-      "totalInvestment": 1200,
-      "operatingProfit": 21692.4,
-      "endCash": 34492.4,
-      "inventoryCost": 0,
-      "cashAndInventoryGain": 20492.4,
-      "months": [
-        {
-          "month": 1,
-          "startCash": 14000,
-          "endCash": 12810.8,
-          "sold": {
-            "quiet_office": 1
-          },
-          "built": {
-            "quiet_office": 1
-          },
-          "revenue": 5100,
-          "costOfGoodsSold": 3089.2,
-          "procurement": 3089.2,
-          "fixedCost": 3200,
-          "developmentCost": 0,
-          "operatingProfit": -1189.2,
-          "inventoryCost": 0,
-          "inventoryUnits": 0,
-          "capacityUsed": {
-            "labor": 28,
-            "owner": 10,
-            "bench": 16,
-            "test": 4
-          },
-          "capacityAvailable": {
-            "labor": 208,
-            "owner": 96,
-            "bench": 160,
-            "test": 160
-          },
-          "notices": [],
-          "investmentPaid": 0
-        },
-        {
-          "month": 2,
-          "startCash": 12810.8,
-          "endCash": 15180.8,
-          "sold": {
-            "quiet_office": 1,
-            "premium": 1
-          },
-          "built": {
-            "quiet_office": 1,
-            "premium": 1
-          },
-          "revenue": 16150,
-          "costOfGoodsSold": 10580,
-          "procurement": 10580,
-          "fixedCost": 3200,
-          "developmentCost": 0,
-          "operatingProfit": 2370,
-          "inventoryCost": 0,
-          "inventoryUnits": 0,
-          "capacityUsed": {
-            "labor": 74,
-            "owner": 28,
-            "bench": 42,
-            "test": 10
-          },
-          "capacityAvailable": {
-            "labor": 208,
-            "owner": 96,
-            "bench": 160,
-            "test": 160
-          },
-          "notices": [],
-          "investmentPaid": 0
-        },
-        {
-          "month": 3,
-          "startCash": 15180.8,
-          "endCash": 16590.8,
-          "sold": {
-            "quiet_office": 1,
-            "premium": 1
-          },
-          "built": {
-            "quiet_office": 1,
-            "premium": 1
-          },
-          "revenue": 16150,
-          "costOfGoodsSold": 10340,
-          "procurement": 10340,
-          "fixedCost": 3200,
-          "developmentCost": 0,
-          "operatingProfit": 2610,
-          "inventoryCost": 0,
-          "inventoryUnits": 0,
-          "capacityUsed": {
-            "labor": 65.6,
-            "owner": 28,
-            "bench": 33.6,
-            "test": 10
-          },
-          "capacityAvailable": {
-            "labor": 208,
-            "owner": 96,
-            "bench": 160,
-            "test": 160
-          },
-          "notices": [],
-          "investmentPaid": 1200
-        },
-        {
-          "month": 4,
-          "startCash": 16590.8,
-          "endCash": 21331.6,
-          "sold": {
-            "quiet_office": 2,
-            "premium": 1
-          },
-          "built": {
-            "quiet_office": 2,
-            "premium": 1
-          },
-          "revenue": 21250,
-          "costOfGoodsSold": 13309.2,
-          "procurement": 13309.2,
-          "fixedCost": 3200,
-          "developmentCost": 0,
-          "operatingProfit": 4740.8,
-          "inventoryCost": 0,
-          "inventoryUnits": 0,
-          "capacityUsed": {
-            "labor": 90.4,
-            "owner": 38,
-            "bench": 46.4,
-            "test": 14
-          },
-          "capacityAvailable": {
-            "labor": 208,
-            "owner": 96,
-            "bench": 160,
-            "test": 160
-          },
-          "notices": [],
-          "investmentPaid": 0
-        },
-        {
-          "month": 5,
-          "startCash": 21331.6,
-          "endCash": 26072.4,
-          "sold": {
-            "quiet_office": 2,
-            "premium": 1
-          },
-          "built": {
-            "quiet_office": 2,
-            "premium": 1
-          },
-          "revenue": 21250,
-          "costOfGoodsSold": 13309.2,
-          "procurement": 13309.2,
-          "fixedCost": 3200,
-          "developmentCost": 0,
-          "operatingProfit": 4740.8,
-          "inventoryCost": 0,
-          "inventoryUnits": 0,
-          "capacityUsed": {
-            "labor": 90.4,
-            "owner": 38,
-            "bench": 46.4,
-            "test": 14
-          },
-          "capacityAvailable": {
-            "labor": 208,
-            "owner": 96,
-            "bench": 160,
-            "test": 160
-          },
-          "notices": [],
-          "investmentPaid": 0
-        },
-        {
-          "month": 6,
-          "startCash": 26072.4,
-          "endCash": 34492.4,
-          "sold": {
-            "quiet_office": 2,
-            "premium": 2
-          },
-          "built": {
-            "quiet_office": 2,
-            "premium": 2
-          },
-          "revenue": 32300,
-          "costOfGoodsSold": 20680,
-          "procurement": 20680,
-          "fixedCost": 3200,
-          "developmentCost": 0,
-          "operatingProfit": 8420,
-          "inventoryCost": 0,
-          "inventoryUnits": 0,
-          "capacityUsed": {
-            "labor": 131.2,
-            "owner": 56,
-            "bench": 67.2,
-            "test": 20
-          },
-          "capacityAvailable": {
-            "labor": 208,
-            "owner": 96,
-            "bench": 160,
-            "test": 160
-          },
-          "notices": [],
-          "investmentPaid": 0
-        }
-      ]
-    },
-    {
-      "route": "scale",
-      "scenario": "baseline",
-      "difficulty": "hard",
-      "partsChannel": "scheduled_batch",
-      "partsChannelFactor": 0.9,
-      "bankrupt": false,
-      "bankruptMonth": null,
-      "totalSales": 95,
-      "totalRevenue": 259749,
-      "totalCostOfGoodsSold": 225865.23,
-      "totalFixedCost": 19400,
-      "totalDevelopmentCost": 300,
-      "totalInvestment": 6000,
-      "operatingProfit": 14183.77,
-      "endCash": 1405.98,
-      "inventoryCost": 20777.79,
-      "cashAndInventoryGain": 8183.77,
-      "months": [
-        {
-          "month": 1,
-          "startCash": 14000,
-          "endCash": 12853.98,
-          "sold": {
-            "office": 6,
-            "gaming": 1
-          },
-          "built": {
-            "office": 6,
-            "gaming": 1
-          },
-          "revenue": 17256,
-          "costOfGoodsSold": 14902.02,
-          "procurement": 14902.02,
-          "fixedCost": 3200,
-          "developmentCost": 300,
-          "operatingProfit": -1146.02,
-          "inventoryCost": 0,
-          "inventoryUnits": 0,
-          "capacityUsed": {
-            "labor": 83,
-            "owner": 30,
-            "bench": 51,
-            "test": 20
-          },
-          "capacityAvailable": {
-            "labor": 208,
-            "owner": 96,
-            "bench": 160,
-            "test": 160
-          },
-          "notices": [],
-          "investmentPaid": 0
-        },
-        {
-          "month": 2,
-          "startCash": 12853.98,
-          "endCash": 13122.94,
-          "sold": {
-            "office": 8,
-            "gaming": 2
-          },
-          "built": {
-            "office": 8,
-            "gaming": 2
-          },
-          "revenue": 26052,
-          "costOfGoodsSold": 22583.04,
-          "procurement": 22583.04,
-          "fixedCost": 3200,
-          "developmentCost": 0,
-          "operatingProfit": 268.96,
-          "inventoryCost": 0,
-          "inventoryUnits": 0,
-          "capacityUsed": {
-            "labor": 78,
-            "owner": 0,
-            "bench": 68,
-            "test": 22
-          },
-          "capacityAvailable": {
-            "labor": 208,
-            "owner": 96,
-            "bench": 160,
-            "test": 160
-          },
-          "notices": [],
-          "investmentPaid": 0
-        },
-        {
-          "month": 3,
-          "startCash": 13122.94,
-          "endCash": 11506.88,
-          "sold": {
-            "office": 10,
-            "gaming": 3
-          },
-          "built": {
-            "office": 10,
-            "gaming": 3
-          },
-          "revenue": 34848,
-          "costOfGoodsSold": 30264.06,
-          "procurement": 30264.06,
-          "fixedCost": 3200,
-          "developmentCost": 0,
-          "operatingProfit": 1383.94,
-          "inventoryCost": 0,
-          "inventoryUnits": 0,
-          "capacityUsed": {
-            "labor": 103,
-            "owner": 0,
-            "bench": 90,
-            "test": 29
-          },
-          "capacityAvailable": {
-            "labor": 208,
-            "owner": 96,
-            "bench": 320,
-            "test": 160
-          },
-          "notices": [],
-          "investmentPaid": 3000
-        },
-        {
-          "month": 4,
-          "startCash": 11506.88,
-          "endCash": 8439.78,
-          "sold": {
-            "office": 13,
-            "gaming": 4
-          },
-          "built": {
-            "office": 14,
-            "gaming": 5
-          },
-          "revenue": 45759,
-          "costOfGoodsSold": 39750.33,
-          "procurement": 45626.1,
-          "fixedCost": 3200,
-          "developmentCost": 0,
-          "operatingProfit": 2808.67,
-          "inventoryCost": 5875.77,
-          "inventoryUnits": 2,
-          "capacityUsed": {
-            "labor": 153,
-            "owner": 0,
-            "bench": 134,
-            "test": 43
-          },
-          "capacityAvailable": {
-            "labor": 208,
-            "owner": 96,
-            "bench": 320,
-            "test": 160
-          },
-          "notices": [],
-          "investmentPaid": 0
-        },
-        {
-          "month": 5,
-          "startCash": 8439.78,
-          "endCash": 2387.64,
-          "sold": {
-            "office": 16,
-            "gaming": 6
-          },
-          "built": {
-            "office": 18,
-            "gaming": 7
-          },
-          "revenue": 61236,
-          "costOfGoodsSold": 53307.12,
-          "procurement": 60988.14,
-          "fixedCost": 3300,
-          "developmentCost": 0,
-          "operatingProfit": 4628.88,
-          "inventoryCost": 13556.79,
-          "inventoryUnits": 5,
-          "capacityUsed": {
-            "labor": 140.7,
-            "owner": 0,
-            "bench": 115.7,
-            "test": 57
-          },
-          "capacityAvailable": {
-            "labor": 208,
-            "owner": 96,
-            "bench": 320,
-            "test": 160
-          },
-          "notices": [
-            "PROCUREMENT_CASH_LIMIT:gaming"
-          ],
-          "investmentPaid": 3000
-        },
-        {
-          "month": 6,
-          "startCash": 2387.64,
-          "endCash": 1405.98,
-          "sold": {
-            "office": 18,
-            "gaming": 8
-          },
-          "built": {
-            "office": 22,
-            "gaming": 8
-          },
-          "revenue": 74598,
-          "costOfGoodsSold": 65058.66,
-          "procurement": 72279.66,
-          "fixedCost": 3300,
-          "developmentCost": 0,
-          "operatingProfit": 6239.34,
-          "inventoryCost": 20777.79,
-          "inventoryUnits": 9,
-          "capacityUsed": {
-            "labor": 167.8,
-            "owner": 0,
-            "bench": 137.8,
-            "test": 68
-          },
-          "capacityAvailable": {
-            "labor": 208,
-            "owner": 96,
-            "bench": 320,
-            "test": 160
-          },
-          "notices": [
-            "PROCUREMENT_CASH_LIMIT:gaming"
-          ],
-          "investmentPaid": 0
-        }
-      ]
-    },
-    {
-      "route": "mixed",
-      "scenario": "baseline",
-      "difficulty": "hard",
-      "partsChannel": "distributor",
-      "partsChannelFactor": 0.95,
-      "bankrupt": false,
-      "bankruptMonth": null,
-      "totalSales": 69,
-      "totalRevenue": 247222,
-      "totalCostOfGoodsSold": 199711.38,
-      "totalFixedCost": 24800,
-      "totalDevelopmentCost": 300,
-      "totalInvestment": 1800,
-      "operatingProfit": 22410.62,
-      "endCash": 34610.62,
-      "inventoryCost": 0,
-      "cashAndInventoryGain": 20610.62,
-      "months": [
-        {
-          "month": 1,
-          "startCash": 14000,
-          "endCash": 11643.82,
-          "sold": {
-            "office": 4,
-            "gaming": 1
-          },
-          "built": {
-            "office": 4,
-            "gaming": 1
-          },
-          "revenue": 13026,
-          "costOfGoodsSold": 11882.18,
-          "procurement": 11882.18,
-          "fixedCost": 3200,
-          "developmentCost": 300,
-          "operatingProfit": -2356.18,
-          "inventoryCost": 0,
-          "inventoryUnits": 0,
-          "capacityUsed": {
-            "labor": 69,
-            "owner": 30,
-            "bench": 39,
-            "test": 16
-          },
-          "capacityAvailable": {
-            "labor": 208,
-            "owner": 96,
-            "bench": 160,
-            "test": 160
-          },
-          "notices": [],
-          "investmentPaid": 0
-        },
-        {
-          "month": 2,
-          "startCash": 11643.82,
-          "endCash": 12230.86,
-          "sold": {
-            "office": 5,
-            "gaming": 2,
-            "quiet_office": 1
-          },
-          "built": {
-            "office": 5,
-            "gaming": 2,
-            "quiet_office": 1
-          },
-          "revenue": 24807,
-          "costOfGoodsSold": 21019.96,
-          "procurement": 21019.96,
-          "fixedCost": 3200,
-          "developmentCost": 0,
-          "operatingProfit": 587.04,
-          "inventoryCost": 0,
-          "inventoryUnits": 0,
-          "capacityUsed": {
-            "labor": 85,
-            "owner": 10,
-            "bench": 66,
-            "test": 20
-          },
-          "capacityAvailable": {
-            "labor": 208,
-            "owner": 96,
-            "bench": 160,
-            "test": 160
-          },
-          "notices": [],
-          "investmentPaid": 0
-        },
-        {
-          "month": 3,
-          "startCash": 12230.86,
-          "endCash": 13977.76,
-          "sold": {
-            "office": 6,
-            "gaming": 2,
-            "quiet_office": 1,
-            "premium": 1
-          },
-          "built": {
-            "office": 6,
-            "gaming": 2,
-            "quiet_office": 1,
-            "premium": 1
-          },
-          "revenue": 37972,
-          "costOfGoodsSold": 29825.1,
-          "procurement": 29825.1,
-          "fixedCost": 4600,
-          "developmentCost": 0,
-          "operatingProfit": 3546.9,
-          "inventoryCost": 0,
-          "inventoryUnits": 0,
-          "capacityUsed": {
-            "labor": 129.6,
-            "owner": 28,
-            "bench": 89.6,
-            "test": 28
-          },
-          "capacityAvailable": {
-            "labor": 320,
-            "owner": 96,
-            "bench": 160,
-            "test": 160
-          },
-          "notices": [],
-          "investmentPaid": 1800
-        },
-        {
-          "month": 4,
-          "startCash": 13977.76,
-          "endCash": 20287.88,
-          "sold": {
-            "office": 7,
-            "gaming": 3,
-            "quiet_office": 2,
-            "premium": 1
-          },
-          "built": {
-            "office": 7,
-            "gaming": 3,
-            "quiet_office": 2,
-            "premium": 1
-          },
-          "revenue": 49753,
-          "costOfGoodsSold": 38842.88,
-          "procurement": 38842.88,
-          "fixedCost": 4600,
-          "developmentCost": 0,
-          "operatingProfit": 6310.12,
-          "inventoryCost": 0,
-          "inventoryUnits": 0,
-          "capacityUsed": {
-            "labor": 172.4,
-            "owner": 38,
-            "bench": 118.4,
-            "test": 37
-          },
-          "capacityAvailable": {
-            "labor": 320,
-            "owner": 96,
-            "bench": 160,
-            "test": 160
-          },
-          "notices": [],
-          "investmentPaid": 0
-        },
-        {
-          "month": 5,
-          "startCash": 20287.88,
-          "endCash": 27093.46,
-          "sold": {
-            "office": 8,
-            "gaming": 4,
-            "quiet_office": 2,
-            "premium": 1
-          },
-          "built": {
-            "office": 8,
-            "gaming": 4,
-            "quiet_office": 2,
-            "premium": 1
-          },
-          "revenue": 56434,
-          "costOfGoodsSold": 45028.42,
-          "procurement": 45028.42,
-          "fixedCost": 4600,
-          "developmentCost": 0,
-          "operatingProfit": 6805.58,
-          "inventoryCost": 0,
-          "inventoryUnits": 0,
-          "capacityUsed": {
-            "labor": 190.4,
-            "owner": 38,
-            "bench": 134.4,
-            "test": 42
-          },
-          "capacityAvailable": {
-            "labor": 320,
-            "owner": 96,
-            "bench": 160,
-            "test": 160
-          },
-          "notices": [],
-          "investmentPaid": 0
-        },
-        {
-          "month": 6,
-          "startCash": 27093.46,
-          "endCash": 34610.62,
-          "sold": {
-            "office": 10,
-            "gaming": 5,
-            "quiet_office": 2,
-            "premium": 1
-          },
-          "built": {
-            "office": 10,
-            "gaming": 5,
-            "quiet_office": 2,
-            "premium": 1
-          },
-          "revenue": 65230,
-          "costOfGoodsSold": 53112.84,
-          "procurement": 53112.84,
-          "fixedCost": 4600,
-          "developmentCost": 0,
-          "operatingProfit": 7517.16,
-          "inventoryCost": 0,
-          "inventoryUnits": 0,
-          "capacityUsed": {
-            "labor": 215.4,
-            "owner": 38,
-            "bench": 156.4,
-            "test": 49
-          },
-          "capacityAvailable": {
-            "labor": 320,
-            "owner": 96,
-            "bench": 160,
-            "test": 160
-          },
-          "notices": [],
-          "investmentPaid": 0
-        }
-      ]
-    },
-    {
-      "route": "boutique",
-      "scenario": "demand_down_35",
-      "difficulty": "hard",
-      "partsChannel": "retail",
-      "partsChannelFactor": 1,
-      "bankrupt": false,
-      "bankruptMonth": null,
-      "totalSales": 15,
-      "totalRevenue": 112200,
-      "totalCostOfGoodsSold": 71307.6,
-      "totalFixedCost": 19200,
-      "totalDevelopmentCost": 0,
-      "totalInvestment": 1200,
-      "operatingProfit": 21692.4,
-      "endCash": 34492.4,
-      "inventoryCost": 0,
-      "cashAndInventoryGain": 20492.4,
-      "months": [
-        {
-          "month": 1,
-          "startCash": 14000,
-          "endCash": 12810.8,
-          "sold": {
-            "quiet_office": 1
-          },
-          "built": {
-            "quiet_office": 1
-          },
-          "revenue": 5100,
-          "costOfGoodsSold": 3089.2,
-          "procurement": 3089.2,
-          "fixedCost": 3200,
-          "developmentCost": 0,
-          "operatingProfit": -1189.2,
-          "inventoryCost": 0,
-          "inventoryUnits": 0,
-          "capacityUsed": {
-            "labor": 28,
-            "owner": 10,
-            "bench": 16,
-            "test": 4
-          },
-          "capacityAvailable": {
-            "labor": 208,
-            "owner": 96,
-            "bench": 160,
-            "test": 160
-          },
-          "notices": [],
-          "investmentPaid": 0
-        },
-        {
-          "month": 2,
-          "startCash": 12810.8,
-          "endCash": 15180.8,
-          "sold": {
-            "quiet_office": 1,
-            "premium": 1
-          },
-          "built": {
-            "quiet_office": 1,
-            "premium": 1
-          },
-          "revenue": 16150,
-          "costOfGoodsSold": 10580,
-          "procurement": 10580,
-          "fixedCost": 3200,
-          "developmentCost": 0,
-          "operatingProfit": 2370,
-          "inventoryCost": 0,
-          "inventoryUnits": 0,
-          "capacityUsed": {
-            "labor": 74,
-            "owner": 28,
-            "bench": 42,
-            "test": 10
-          },
-          "capacityAvailable": {
-            "labor": 208,
-            "owner": 96,
-            "bench": 160,
-            "test": 160
-          },
-          "notices": [],
-          "investmentPaid": 0
-        },
-        {
-          "month": 3,
-          "startCash": 15180.8,
-          "endCash": 16590.8,
-          "sold": {
-            "quiet_office": 1,
-            "premium": 1
-          },
-          "built": {
-            "quiet_office": 1,
-            "premium": 1
-          },
-          "revenue": 16150,
-          "costOfGoodsSold": 10340,
-          "procurement": 10340,
-          "fixedCost": 3200,
-          "developmentCost": 0,
-          "operatingProfit": 2610,
-          "inventoryCost": 0,
-          "inventoryUnits": 0,
-          "capacityUsed": {
-            "labor": 65.6,
-            "owner": 28,
-            "bench": 33.6,
-            "test": 10
-          },
-          "capacityAvailable": {
-            "labor": 208,
-            "owner": 96,
-            "bench": 160,
-            "test": 160
-          },
-          "notices": [],
-          "investmentPaid": 1200
-        },
-        {
-          "month": 4,
-          "startCash": 16590.8,
-          "endCash": 21331.6,
-          "sold": {
-            "quiet_office": 2,
-            "premium": 1
-          },
-          "built": {
-            "quiet_office": 2,
-            "premium": 1
-          },
-          "revenue": 21250,
-          "costOfGoodsSold": 13309.2,
-          "procurement": 13309.2,
-          "fixedCost": 3200,
-          "developmentCost": 0,
-          "operatingProfit": 4740.8,
-          "inventoryCost": 0,
-          "inventoryUnits": 0,
-          "capacityUsed": {
-            "labor": 90.4,
-            "owner": 38,
-            "bench": 46.4,
-            "test": 14
-          },
-          "capacityAvailable": {
-            "labor": 208,
-            "owner": 96,
-            "bench": 160,
-            "test": 160
-          },
-          "notices": [],
-          "investmentPaid": 0
-        },
-        {
-          "month": 5,
-          "startCash": 21331.6,
-          "endCash": 26072.4,
-          "sold": {
-            "quiet_office": 2,
-            "premium": 1
-          },
-          "built": {
-            "quiet_office": 2,
-            "premium": 1
-          },
-          "revenue": 21250,
-          "costOfGoodsSold": 13309.2,
-          "procurement": 13309.2,
-          "fixedCost": 3200,
-          "developmentCost": 0,
-          "operatingProfit": 4740.8,
-          "inventoryCost": 0,
-          "inventoryUnits": 0,
-          "capacityUsed": {
-            "labor": 90.4,
-            "owner": 38,
-            "bench": 46.4,
-            "test": 14
-          },
-          "capacityAvailable": {
-            "labor": 208,
-            "owner": 96,
-            "bench": 160,
-            "test": 160
-          },
-          "notices": [],
-          "investmentPaid": 0
-        },
-        {
-          "month": 6,
-          "startCash": 26072.4,
-          "endCash": 34492.4,
-          "sold": {
-            "quiet_office": 2,
-            "premium": 2
-          },
-          "built": {
-            "quiet_office": 2,
-            "premium": 2
-          },
-          "revenue": 32300,
-          "costOfGoodsSold": 20680,
-          "procurement": 20680,
-          "fixedCost": 3200,
-          "developmentCost": 0,
-          "operatingProfit": 8420,
-          "inventoryCost": 0,
-          "inventoryUnits": 0,
-          "capacityUsed": {
-            "labor": 131.2,
-            "owner": 56,
-            "bench": 67.2,
-            "test": 20
-          },
-          "capacityAvailable": {
-            "labor": 208,
-            "owner": 96,
-            "bench": 160,
-            "test": 160
-          },
-          "notices": [],
-          "investmentPaid": 0
-        }
-      ]
-    },
-    {
-      "route": "scale",
-      "scenario": "demand_down_35",
-      "difficulty": "hard",
-      "partsChannel": "scheduled_batch",
-      "partsChannelFactor": 0.9,
-      "bankrupt": false,
-      "bankruptMonth": null,
-      "totalSales": 47,
-      "totalRevenue": 101856,
-      "totalCostOfGoodsSold": 87112.02,
-      "totalFixedCost": 19200,
-      "totalDevelopmentCost": 300,
       "totalInvestment": 0,
-      "operatingProfit": -4756.02,
-      "endCash": 217.73,
-      "inventoryCost": 9026.25,
-      "cashAndInventoryGain": -4756.02,
+      "operatingProfit": 12209.2,
+      "endCash": 13709.2,
+      "inventoryCost": 0,
+      "cashAndInventoryGain": 12209.2,
       "months": [
         {
           "month": 1,
-          "startCash": 14000,
-          "endCash": 8623.98,
+          "startCash": 1500,
+          "endCash": 310.8,
           "sold": {
-            "office": 4,
-            "gaming": 1
+            "quiet_office": 1
           },
           "built": {
-            "office": 6,
-            "gaming": 1
+            "quiet_office": 1
           },
-          "revenue": 13026,
-          "costOfGoodsSold": 11291.52,
-          "procurement": 14902.02,
+          "revenue": 5100,
+          "costOfGoodsSold": 3089.2,
+          "procurement": 3089.2,
           "fixedCost": 3200,
-          "developmentCost": 300,
-          "operatingProfit": -1765.52,
-          "inventoryCost": 3610.5,
-          "inventoryUnits": 2,
+          "developmentCost": 0,
+          "depositsTaken": 2550,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
+          "operatingProfit": -1189.2,
+          "inventoryCost": 0,
+          "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 83,
-            "owner": 30,
-            "bench": 51,
-            "test": 20
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -5282,27 +4732,30 @@
         },
         {
           "month": 2,
-          "startCash": 8623.98,
-          "endCash": 1556.98,
+          "startCash": 310.8,
+          "endCash": 670,
           "sold": {
-            "office": 5
+            "premium": 1
           },
           "built": {
-            "office": 8
+            "premium": 1
           },
-          "revenue": 10575,
-          "costOfGoodsSold": 9026.25,
-          "procurement": 14442,
+          "revenue": 11050,
+          "costOfGoodsSold": 7490.8,
+          "procurement": 7490.8,
           "fixedCost": 3200,
           "developmentCost": 0,
-          "operatingProfit": -1651.25,
-          "inventoryCost": 9026.25,
-          "inventoryUnits": 5,
+          "depositsTaken": 5525,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
+          "operatingProfit": 359.2,
+          "inventoryCost": 0,
+          "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 56,
+            "labor": 0,
             "owner": 0,
-            "bench": 48,
-            "test": 16
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -5311,33 +4764,36 @@
             "test": 160
           },
           "notices": [
-            "PROCUREMENT_CASH_LIMIT:gaming"
+            "PROCUREMENT_CASH_LIMIT:quiet_office"
           ],
           "investmentPaid": 0
         },
         {
           "month": 3,
-          "startCash": 1556.98,
-          "endCash": 525.23,
+          "startCash": 670,
+          "endCash": 1029.2,
           "sold": {
-            "office": 7
+            "premium": 1
           },
           "built": {
-            "office": 7
+            "premium": 1
           },
-          "revenue": 14805,
-          "costOfGoodsSold": 12636.75,
-          "procurement": 12636.75,
+          "revenue": 11050,
+          "costOfGoodsSold": 7490.8,
+          "procurement": 7490.8,
           "fixedCost": 3200,
           "developmentCost": 0,
-          "operatingProfit": -1031.75,
-          "inventoryCost": 9026.25,
-          "inventoryUnits": 5,
+          "depositsTaken": 5525,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
+          "operatingProfit": 359.2,
+          "inventoryCost": 0,
+          "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 49,
+            "labor": 0,
             "owner": 0,
-            "bench": 42,
-            "test": 14
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -5347,34 +4803,36 @@
           },
           "notices": [
             "EXPANSION_UNAFFORDABLE",
-            "PROCUREMENT_CASH_LIMIT:office",
-            "PROCUREMENT_CASH_LIMIT:gaming"
+            "PROCUREMENT_CASH_LIMIT:quiet_office"
           ],
           "investmentPaid": 0
         },
         {
           "month": 4,
-          "startCash": 525.23,
-          "endCash": 1608.48,
+          "startCash": 1029.2,
+          "endCash": 1388.4,
           "sold": {
-            "office": 8
+            "premium": 1
           },
           "built": {
-            "office": 7
+            "premium": 1
           },
-          "revenue": 16920,
-          "costOfGoodsSold": 14442,
-          "procurement": 12636.75,
+          "revenue": 11050,
+          "costOfGoodsSold": 7490.8,
+          "procurement": 7490.8,
           "fixedCost": 3200,
           "developmentCost": 0,
-          "operatingProfit": -722,
-          "inventoryCost": 7221,
-          "inventoryUnits": 4,
+          "depositsTaken": 5525,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
+          "operatingProfit": 359.2,
+          "inventoryCost": 0,
+          "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 49,
+            "labor": 0,
             "owner": 0,
-            "bench": 42,
-            "test": 14
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -5383,34 +4841,337 @@
             "test": 160
           },
           "notices": [
-            "PROCUREMENT_CASH_LIMIT:office",
-            "PROCUREMENT_CASH_LIMIT:gaming"
+            "PROCUREMENT_CASH_LIMIT:quiet_office"
           ],
           "investmentPaid": 0
         },
         {
           "month": 5,
-          "startCash": 1608.48,
-          "endCash": 1505.98,
+          "startCash": 1388.4,
+          "endCash": 5769.2,
           "sold": {
-            "office": 10
+            "quiet_office": 2,
+            "premium": 1
           },
           "built": {
-            "office": 10
+            "quiet_office": 2,
+            "premium": 1
           },
-          "revenue": 21150,
-          "costOfGoodsSold": 18052.5,
-          "procurement": 18052.5,
+          "revenue": 21250,
+          "costOfGoodsSold": 13669.2,
+          "procurement": 13669.2,
           "fixedCost": 3200,
           "developmentCost": 0,
-          "operatingProfit": -102.5,
-          "inventoryCost": 7221,
-          "inventoryUnits": 4,
+          "depositsTaken": 10625,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
+          "operatingProfit": 4380.8,
+          "inventoryCost": 0,
+          "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 70,
+            "labor": 0,
             "owner": 0,
-            "bench": 60,
-            "test": 20
+            "bench": 0,
+            "test": 0
+          },
+          "capacityAvailable": {
+            "labor": 208,
+            "owner": 96,
+            "bench": 160,
+            "test": 160
+          },
+          "notices": [],
+          "investmentPaid": 0
+        },
+        {
+          "month": 6,
+          "startCash": 5769.2,
+          "endCash": 13709.2,
+          "sold": {
+            "quiet_office": 2,
+            "premium": 2
+          },
+          "built": {
+            "quiet_office": 2,
+            "premium": 2
+          },
+          "revenue": 32300,
+          "costOfGoodsSold": 21160,
+          "procurement": 21160,
+          "fixedCost": 3200,
+          "developmentCost": 0,
+          "depositsTaken": 16150,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
+          "operatingProfit": 7940,
+          "inventoryCost": 0,
+          "inventoryUnits": 0,
+          "capacityUsed": {
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
+          },
+          "capacityAvailable": {
+            "labor": 208,
+            "owner": 96,
+            "bench": 160,
+            "test": 160
+          },
+          "notices": [],
+          "investmentPaid": 0
+        }
+      ]
+    },
+    {
+      "route": "scale",
+      "scenario": "baseline",
+      "difficulty": "hard",
+      "partsChannel": "scheduled_batch",
+      "partsChannelFactor": 0.9,
+      "paymentTermMonths": 2,
+      "creditLimitCoins": 15000,
+      "gatedAtStart": true,
+      "totalDeposits": 0,
+      "totalPayablesPaid": 0,
+      "payablesOutstanding": 0,
+      "bankrupt": true,
+      "bankruptMonth": 1,
+      "totalSales": 0,
+      "totalRevenue": 0,
+      "totalCostOfGoodsSold": 0,
+      "totalFixedCost": 3200,
+      "totalDevelopmentCost": 0,
+      "totalInvestment": 0,
+      "operatingProfit": -3200,
+      "endCash": -1700,
+      "inventoryCost": 0,
+      "cashAndInventoryGain": -3200,
+      "months": [
+        {
+          "month": 1,
+          "startCash": 1500,
+          "endCash": -1700,
+          "sold": {},
+          "built": {},
+          "revenue": 0,
+          "costOfGoodsSold": 0,
+          "procurement": 0,
+          "fixedCost": 3200,
+          "developmentCost": 0,
+          "depositsTaken": 0,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
+          "operatingProfit": -3200,
+          "inventoryCost": 0,
+          "inventoryUnits": 0,
+          "capacityUsed": {
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
+          },
+          "capacityAvailable": {
+            "labor": 208,
+            "owner": 96,
+            "bench": 160,
+            "test": 160
+          },
+          "notices": [
+            "DEVELOPMENT_BLOCKED:office",
+            "DEVELOPMENT_BLOCKED:gaming"
+          ],
+          "investmentPaid": 0
+        }
+      ]
+    },
+    {
+      "route": "mixed",
+      "scenario": "baseline",
+      "difficulty": "hard",
+      "partsChannel": "distributor",
+      "partsChannelFactor": 0.95,
+      "paymentTermMonths": 1,
+      "creditLimitCoins": 15000,
+      "gatedAtStart": true,
+      "totalDeposits": 0,
+      "totalPayablesPaid": 0,
+      "payablesOutstanding": 0,
+      "bankrupt": true,
+      "bankruptMonth": 1,
+      "totalSales": 0,
+      "totalRevenue": 0,
+      "totalCostOfGoodsSold": 0,
+      "totalFixedCost": 3200,
+      "totalDevelopmentCost": 0,
+      "totalInvestment": 0,
+      "operatingProfit": -3200,
+      "endCash": -1700,
+      "inventoryCost": 0,
+      "cashAndInventoryGain": -3200,
+      "months": [
+        {
+          "month": 1,
+          "startCash": 1500,
+          "endCash": -1700,
+          "sold": {},
+          "built": {},
+          "revenue": 0,
+          "costOfGoodsSold": 0,
+          "procurement": 0,
+          "fixedCost": 3200,
+          "developmentCost": 0,
+          "depositsTaken": 0,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
+          "operatingProfit": -3200,
+          "inventoryCost": 0,
+          "inventoryUnits": 0,
+          "capacityUsed": {
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
+          },
+          "capacityAvailable": {
+            "labor": 208,
+            "owner": 96,
+            "bench": 160,
+            "test": 160
+          },
+          "notices": [
+            "DEVELOPMENT_BLOCKED:office",
+            "DEVELOPMENT_BLOCKED:gaming"
+          ],
+          "investmentPaid": 0
+        }
+      ]
+    },
+    {
+      "route": "boutique",
+      "scenario": "demand_down_35",
+      "difficulty": "hard",
+      "partsChannel": "retail",
+      "partsChannelFactor": 1,
+      "paymentTermMonths": 0,
+      "creditLimitCoins": 15000,
+      "gatedAtStart": false,
+      "totalDeposits": 45900,
+      "totalPayablesPaid": 0,
+      "payablesOutstanding": 0,
+      "bankrupt": false,
+      "bankruptMonth": null,
+      "totalSales": 11,
+      "totalRevenue": 91800,
+      "totalCostOfGoodsSold": 60390.8,
+      "totalFixedCost": 19200,
+      "totalDevelopmentCost": 0,
+      "totalInvestment": 0,
+      "operatingProfit": 12209.2,
+      "endCash": 13709.2,
+      "inventoryCost": 0,
+      "cashAndInventoryGain": 12209.2,
+      "months": [
+        {
+          "month": 1,
+          "startCash": 1500,
+          "endCash": 310.8,
+          "sold": {
+            "quiet_office": 1
+          },
+          "built": {
+            "quiet_office": 1
+          },
+          "revenue": 5100,
+          "costOfGoodsSold": 3089.2,
+          "procurement": 3089.2,
+          "fixedCost": 3200,
+          "developmentCost": 0,
+          "depositsTaken": 2550,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
+          "operatingProfit": -1189.2,
+          "inventoryCost": 0,
+          "inventoryUnits": 0,
+          "capacityUsed": {
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
+          },
+          "capacityAvailable": {
+            "labor": 208,
+            "owner": 96,
+            "bench": 160,
+            "test": 160
+          },
+          "notices": [],
+          "investmentPaid": 0
+        },
+        {
+          "month": 2,
+          "startCash": 310.8,
+          "endCash": 670,
+          "sold": {
+            "premium": 1
+          },
+          "built": {
+            "premium": 1
+          },
+          "revenue": 11050,
+          "costOfGoodsSold": 7490.8,
+          "procurement": 7490.8,
+          "fixedCost": 3200,
+          "developmentCost": 0,
+          "depositsTaken": 5525,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
+          "operatingProfit": 359.2,
+          "inventoryCost": 0,
+          "inventoryUnits": 0,
+          "capacityUsed": {
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
+          },
+          "capacityAvailable": {
+            "labor": 208,
+            "owner": 96,
+            "bench": 160,
+            "test": 160
+          },
+          "notices": [
+            "PROCUREMENT_CASH_LIMIT:quiet_office"
+          ],
+          "investmentPaid": 0
+        },
+        {
+          "month": 3,
+          "startCash": 670,
+          "endCash": 1029.2,
+          "sold": {
+            "premium": 1
+          },
+          "built": {
+            "premium": 1
+          },
+          "revenue": 11050,
+          "costOfGoodsSold": 7490.8,
+          "procurement": 7490.8,
+          "fixedCost": 3200,
+          "developmentCost": 0,
+          "depositsTaken": 5525,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
+          "operatingProfit": 359.2,
+          "inventoryCost": 0,
+          "inventoryUnits": 0,
+          "capacityUsed": {
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -5420,34 +5181,36 @@
           },
           "notices": [
             "EXPANSION_UNAFFORDABLE",
-            "PROCUREMENT_CASH_LIMIT:office",
-            "PROCUREMENT_CASH_LIMIT:gaming"
+            "PROCUREMENT_CASH_LIMIT:quiet_office"
           ],
           "investmentPaid": 0
         },
         {
-          "month": 6,
-          "startCash": 1505.98,
-          "endCash": 217.73,
+          "month": 4,
+          "startCash": 1029.2,
+          "endCash": 1388.4,
           "sold": {
-            "office": 12
+            "premium": 1
           },
           "built": {
-            "office": 13
+            "premium": 1
           },
-          "revenue": 25380,
-          "costOfGoodsSold": 21663,
-          "procurement": 23468.25,
+          "revenue": 11050,
+          "costOfGoodsSold": 7490.8,
+          "procurement": 7490.8,
           "fixedCost": 3200,
           "developmentCost": 0,
-          "operatingProfit": 517,
-          "inventoryCost": 9026.25,
-          "inventoryUnits": 5,
+          "depositsTaken": 5525,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
+          "operatingProfit": 359.2,
+          "inventoryCost": 0,
+          "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 91,
+            "labor": 0,
             "owner": 0,
-            "bench": 78,
-            "test": 26
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -5456,8 +5219,145 @@
             "test": 160
           },
           "notices": [
-            "PROCUREMENT_CASH_LIMIT:office",
-            "PROCUREMENT_CASH_LIMIT:gaming"
+            "PROCUREMENT_CASH_LIMIT:quiet_office"
+          ],
+          "investmentPaid": 0
+        },
+        {
+          "month": 5,
+          "startCash": 1388.4,
+          "endCash": 5769.2,
+          "sold": {
+            "quiet_office": 2,
+            "premium": 1
+          },
+          "built": {
+            "quiet_office": 2,
+            "premium": 1
+          },
+          "revenue": 21250,
+          "costOfGoodsSold": 13669.2,
+          "procurement": 13669.2,
+          "fixedCost": 3200,
+          "developmentCost": 0,
+          "depositsTaken": 10625,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
+          "operatingProfit": 4380.8,
+          "inventoryCost": 0,
+          "inventoryUnits": 0,
+          "capacityUsed": {
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
+          },
+          "capacityAvailable": {
+            "labor": 208,
+            "owner": 96,
+            "bench": 160,
+            "test": 160
+          },
+          "notices": [],
+          "investmentPaid": 0
+        },
+        {
+          "month": 6,
+          "startCash": 5769.2,
+          "endCash": 13709.2,
+          "sold": {
+            "quiet_office": 2,
+            "premium": 2
+          },
+          "built": {
+            "quiet_office": 2,
+            "premium": 2
+          },
+          "revenue": 32300,
+          "costOfGoodsSold": 21160,
+          "procurement": 21160,
+          "fixedCost": 3200,
+          "developmentCost": 0,
+          "depositsTaken": 16150,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
+          "operatingProfit": 7940,
+          "inventoryCost": 0,
+          "inventoryUnits": 0,
+          "capacityUsed": {
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
+          },
+          "capacityAvailable": {
+            "labor": 208,
+            "owner": 96,
+            "bench": 160,
+            "test": 160
+          },
+          "notices": [],
+          "investmentPaid": 0
+        }
+      ]
+    },
+    {
+      "route": "scale",
+      "scenario": "demand_down_35",
+      "difficulty": "hard",
+      "partsChannel": "scheduled_batch",
+      "partsChannelFactor": 0.9,
+      "paymentTermMonths": 2,
+      "creditLimitCoins": 15000,
+      "gatedAtStart": true,
+      "totalDeposits": 0,
+      "totalPayablesPaid": 0,
+      "payablesOutstanding": 0,
+      "bankrupt": true,
+      "bankruptMonth": 1,
+      "totalSales": 0,
+      "totalRevenue": 0,
+      "totalCostOfGoodsSold": 0,
+      "totalFixedCost": 3200,
+      "totalDevelopmentCost": 0,
+      "totalInvestment": 0,
+      "operatingProfit": -3200,
+      "endCash": -1700,
+      "inventoryCost": 0,
+      "cashAndInventoryGain": -3200,
+      "months": [
+        {
+          "month": 1,
+          "startCash": 1500,
+          "endCash": -1700,
+          "sold": {},
+          "built": {},
+          "revenue": 0,
+          "costOfGoodsSold": 0,
+          "procurement": 0,
+          "fixedCost": 3200,
+          "developmentCost": 0,
+          "depositsTaken": 0,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
+          "operatingProfit": -3200,
+          "inventoryCost": 0,
+          "inventoryUnits": 0,
+          "capacityUsed": {
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
+          },
+          "capacityAvailable": {
+            "labor": 208,
+            "owner": 96,
+            "bench": 160,
+            "test": 160
+          },
+          "notices": [
+            "DEVELOPMENT_BLOCKED:office",
+            "DEVELOPMENT_BLOCKED:gaming"
           ],
           "investmentPaid": 0
         }
@@ -5469,245 +5369,58 @@
       "difficulty": "hard",
       "partsChannel": "distributor",
       "partsChannelFactor": 0.95,
-      "bankrupt": false,
-      "bankruptMonth": null,
-      "totalSales": 67,
-      "totalRevenue": 231606,
-      "totalCostOfGoodsSold": 188398.46,
-      "totalFixedCost": 24800,
-      "totalDevelopmentCost": 300,
-      "totalInvestment": 1800,
-      "operatingProfit": 18107.54,
-      "endCash": 26020.88,
-      "inventoryCost": 4286.66,
-      "cashAndInventoryGain": 16307.54,
+      "paymentTermMonths": 1,
+      "creditLimitCoins": 15000,
+      "gatedAtStart": true,
+      "totalDeposits": 0,
+      "totalPayablesPaid": 0,
+      "payablesOutstanding": 0,
+      "bankrupt": true,
+      "bankruptMonth": 1,
+      "totalSales": 0,
+      "totalRevenue": 0,
+      "totalCostOfGoodsSold": 0,
+      "totalFixedCost": 3200,
+      "totalDevelopmentCost": 0,
+      "totalInvestment": 0,
+      "operatingProfit": -3200,
+      "endCash": -1700,
+      "inventoryCost": 0,
+      "cashAndInventoryGain": -3200,
       "months": [
         {
           "month": 1,
-          "startCash": 14000,
-          "endCash": 11643.82,
-          "sold": {
-            "office": 4,
-            "gaming": 1
-          },
-          "built": {
-            "office": 4,
-            "gaming": 1
-          },
-          "revenue": 13026,
-          "costOfGoodsSold": 11882.18,
-          "procurement": 11882.18,
+          "startCash": 1500,
+          "endCash": -1700,
+          "sold": {},
+          "built": {},
+          "revenue": 0,
+          "costOfGoodsSold": 0,
+          "procurement": 0,
           "fixedCost": 3200,
-          "developmentCost": 300,
-          "operatingProfit": -2356.18,
+          "developmentCost": 0,
+          "depositsTaken": 0,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
+          "operatingProfit": -3200,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 69,
-            "owner": 30,
-            "bench": 39,
-            "test": 16
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
-            "owner": 96,
-            "bench": 160,
-            "test": 160
-          },
-          "notices": [],
-          "investmentPaid": 0
-        },
-        {
-          "month": 2,
-          "startCash": 11643.82,
-          "endCash": 7664.86,
-          "sold": {
-            "office": 5,
-            "gaming": 1,
-            "quiet_office": 1
-          },
-          "built": {
-            "office": 5,
-            "gaming": 2,
-            "quiet_office": 1
-          },
-          "revenue": 20241,
-          "costOfGoodsSold": 16733.3,
-          "procurement": 21019.96,
-          "fixedCost": 3200,
-          "developmentCost": 0,
-          "operatingProfit": 307.7,
-          "inventoryCost": 4286.66,
-          "inventoryUnits": 1,
-          "capacityUsed": {
-            "labor": 85,
-            "owner": 10,
-            "bench": 66,
-            "test": 20
-          },
-          "capacityAvailable": {
-            "labor": 208,
-            "owner": 96,
-            "bench": 160,
-            "test": 160
-          },
-          "notices": [],
-          "investmentPaid": 0
-        },
-        {
-          "month": 3,
-          "startCash": 7664.86,
-          "endCash": 5388.02,
-          "sold": {
-            "gaming": 2,
-            "office": 6,
-            "quiet_office": 1
-          },
-          "built": {
-            "office": 6,
-            "gaming": 2,
-            "quiet_office": 1
-          },
-          "revenue": 26922,
-          "costOfGoodsSold": 22798.84,
-          "procurement": 22798.84,
-          "fixedCost": 4600,
-          "developmentCost": 0,
-          "operatingProfit": -476.84,
-          "inventoryCost": 4286.66,
-          "inventoryUnits": 1,
-          "capacityUsed": {
-            "labor": 88.8,
-            "owner": 10,
-            "bench": 68.8,
-            "test": 22
-          },
-          "capacityAvailable": {
-            "labor": 320,
             "owner": 96,
             "bench": 160,
             "test": 160
           },
           "notices": [
-            "PROCUREMENT_CASH_LIMIT:premium"
+            "DEVELOPMENT_BLOCKED:office",
+            "DEVELOPMENT_BLOCKED:gaming"
           ],
-          "investmentPaid": 1800
-        },
-        {
-          "month": 4,
-          "startCash": 5388.02,
-          "endCash": 11698.14,
-          "sold": {
-            "gaming": 3,
-            "office": 7,
-            "quiet_office": 2,
-            "premium": 1
-          },
-          "built": {
-            "office": 7,
-            "gaming": 3,
-            "quiet_office": 2,
-            "premium": 1
-          },
-          "revenue": 49753,
-          "costOfGoodsSold": 38842.88,
-          "procurement": 38842.88,
-          "fixedCost": 4600,
-          "developmentCost": 0,
-          "operatingProfit": 6310.12,
-          "inventoryCost": 4286.66,
-          "inventoryUnits": 1,
-          "capacityUsed": {
-            "labor": 172.4,
-            "owner": 38,
-            "bench": 118.4,
-            "test": 37
-          },
-          "capacityAvailable": {
-            "labor": 320,
-            "owner": 96,
-            "bench": 160,
-            "test": 160
-          },
-          "notices": [],
-          "investmentPaid": 0
-        },
-        {
-          "month": 5,
-          "startCash": 11698.14,
-          "endCash": 18503.72,
-          "sold": {
-            "gaming": 4,
-            "office": 8,
-            "quiet_office": 2,
-            "premium": 1
-          },
-          "built": {
-            "office": 8,
-            "gaming": 4,
-            "quiet_office": 2,
-            "premium": 1
-          },
-          "revenue": 56434,
-          "costOfGoodsSold": 45028.42,
-          "procurement": 45028.42,
-          "fixedCost": 4600,
-          "developmentCost": 0,
-          "operatingProfit": 6805.58,
-          "inventoryCost": 4286.66,
-          "inventoryUnits": 1,
-          "capacityUsed": {
-            "labor": 190.4,
-            "owner": 38,
-            "bench": 134.4,
-            "test": 42
-          },
-          "capacityAvailable": {
-            "labor": 320,
-            "owner": 96,
-            "bench": 160,
-            "test": 160
-          },
-          "notices": [],
-          "investmentPaid": 0
-        },
-        {
-          "month": 6,
-          "startCash": 18503.72,
-          "endCash": 26020.88,
-          "sold": {
-            "gaming": 5,
-            "office": 10,
-            "quiet_office": 2,
-            "premium": 1
-          },
-          "built": {
-            "office": 10,
-            "gaming": 5,
-            "quiet_office": 2,
-            "premium": 1
-          },
-          "revenue": 65230,
-          "costOfGoodsSold": 53112.84,
-          "procurement": 53112.84,
-          "fixedCost": 4600,
-          "developmentCost": 0,
-          "operatingProfit": 7517.16,
-          "inventoryCost": 4286.66,
-          "inventoryUnits": 1,
-          "capacityUsed": {
-            "labor": 215.4,
-            "owner": 38,
-            "bench": 156.4,
-            "test": 49
-          },
-          "capacityAvailable": {
-            "labor": 320,
-            "owner": 96,
-            "bench": 160,
-            "test": 160
-          },
-          "notices": [],
           "investmentPaid": 0
         }
       ]
@@ -5718,23 +5431,29 @@
       "difficulty": "hard",
       "partsChannel": "retail",
       "partsChannelFactor": 1,
-      "bankrupt": false,
-      "bankruptMonth": null,
-      "totalSales": 15,
-      "totalRevenue": 112200,
-      "totalCostOfGoodsSold": 77907.36,
-      "totalFixedCost": 19200,
+      "paymentTermMonths": 0,
+      "creditLimitCoins": 15000,
+      "gatedAtStart": false,
+      "totalDeposits": 2550,
+      "totalPayablesPaid": 0,
+      "payablesOutstanding": 0,
+      "bankrupt": true,
+      "bankruptMonth": 2,
+      "totalSales": 1,
+      "totalRevenue": 5100,
+      "totalCostOfGoodsSold": 3363.12,
+      "totalFixedCost": 6400,
       "totalDevelopmentCost": 0,
-      "totalInvestment": 1200,
-      "operatingProfit": 15092.64,
-      "endCash": 27892.64,
+      "totalInvestment": 0,
+      "operatingProfit": -4663.12,
+      "endCash": -3163.12,
       "inventoryCost": 0,
-      "cashAndInventoryGain": 13892.64,
+      "cashAndInventoryGain": -4663.12,
       "months": [
         {
           "month": 1,
-          "startCash": 14000,
-          "endCash": 12536.88,
+          "startCash": 1500,
+          "endCash": 36.88,
           "sold": {
             "quiet_office": 1
           },
@@ -5746,14 +5465,17 @@
           "procurement": 3363.12,
           "fixedCost": 3200,
           "developmentCost": 0,
+          "depositsTaken": 2550,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": -1463.12,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 28,
-            "owner": 10,
-            "bench": 16,
-            "test": 4
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -5766,29 +5488,26 @@
         },
         {
           "month": 2,
-          "startCash": 12536.88,
-          "endCash": 13943.88,
-          "sold": {
-            "quiet_office": 1,
-            "premium": 1
-          },
-          "built": {
-            "quiet_office": 1,
-            "premium": 1
-          },
-          "revenue": 16150,
-          "costOfGoodsSold": 11543,
-          "procurement": 11543,
+          "startCash": 36.88,
+          "endCash": -3163.12,
+          "sold": {},
+          "built": {},
+          "revenue": 0,
+          "costOfGoodsSold": 0,
+          "procurement": 0,
           "fixedCost": 3200,
           "developmentCost": 0,
-          "operatingProfit": 1407,
+          "depositsTaken": 0,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
+          "operatingProfit": -3200,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 74,
-            "owner": 28,
-            "bench": 42,
-            "test": 10
+            "labor": 0,
+            "owner": 0,
+            "bench": 0,
+            "test": 0
           },
           "capacityAvailable": {
             "labor": 208,
@@ -5796,147 +5515,10 @@
             "bench": 160,
             "test": 160
           },
-          "notices": [],
-          "investmentPaid": 0
-        },
-        {
-          "month": 3,
-          "startCash": 13943.88,
-          "endCash": 14390.88,
-          "sold": {
-            "quiet_office": 1,
-            "premium": 1
-          },
-          "built": {
-            "quiet_office": 1,
-            "premium": 1
-          },
-          "revenue": 16150,
-          "costOfGoodsSold": 11303,
-          "procurement": 11303,
-          "fixedCost": 3200,
-          "developmentCost": 0,
-          "operatingProfit": 1647,
-          "inventoryCost": 0,
-          "inventoryUnits": 0,
-          "capacityUsed": {
-            "labor": 65.6,
-            "owner": 28,
-            "bench": 33.6,
-            "test": 10
-          },
-          "capacityAvailable": {
-            "labor": 208,
-            "owner": 96,
-            "bench": 160,
-            "test": 160
-          },
-          "notices": [],
-          "investmentPaid": 1200
-        },
-        {
-          "month": 4,
-          "startCash": 14390.88,
-          "endCash": 17894.76,
-          "sold": {
-            "quiet_office": 2,
-            "premium": 1
-          },
-          "built": {
-            "quiet_office": 2,
-            "premium": 1
-          },
-          "revenue": 21250,
-          "costOfGoodsSold": 14546.12,
-          "procurement": 14546.12,
-          "fixedCost": 3200,
-          "developmentCost": 0,
-          "operatingProfit": 3503.88,
-          "inventoryCost": 0,
-          "inventoryUnits": 0,
-          "capacityUsed": {
-            "labor": 90.4,
-            "owner": 38,
-            "bench": 46.4,
-            "test": 14
-          },
-          "capacityAvailable": {
-            "labor": 208,
-            "owner": 96,
-            "bench": 160,
-            "test": 160
-          },
-          "notices": [],
-          "investmentPaid": 0
-        },
-        {
-          "month": 5,
-          "startCash": 17894.76,
-          "endCash": 21398.64,
-          "sold": {
-            "quiet_office": 2,
-            "premium": 1
-          },
-          "built": {
-            "quiet_office": 2,
-            "premium": 1
-          },
-          "revenue": 21250,
-          "costOfGoodsSold": 14546.12,
-          "procurement": 14546.12,
-          "fixedCost": 3200,
-          "developmentCost": 0,
-          "operatingProfit": 3503.88,
-          "inventoryCost": 0,
-          "inventoryUnits": 0,
-          "capacityUsed": {
-            "labor": 90.4,
-            "owner": 38,
-            "bench": 46.4,
-            "test": 14
-          },
-          "capacityAvailable": {
-            "labor": 208,
-            "owner": 96,
-            "bench": 160,
-            "test": 160
-          },
-          "notices": [],
-          "investmentPaid": 0
-        },
-        {
-          "month": 6,
-          "startCash": 21398.64,
-          "endCash": 27892.64,
-          "sold": {
-            "quiet_office": 2,
-            "premium": 2
-          },
-          "built": {
-            "quiet_office": 2,
-            "premium": 2
-          },
-          "revenue": 32300,
-          "costOfGoodsSold": 22606,
-          "procurement": 22606,
-          "fixedCost": 3200,
-          "developmentCost": 0,
-          "operatingProfit": 6494,
-          "inventoryCost": 0,
-          "inventoryUnits": 0,
-          "capacityUsed": {
-            "labor": 131.2,
-            "owner": 56,
-            "bench": 67.2,
-            "test": 20
-          },
-          "capacityAvailable": {
-            "labor": 208,
-            "owner": 96,
-            "bench": 160,
-            "test": 160
-          },
-          "notices": [],
+          "notices": [
+            "PROCUREMENT_CASH_LIMIT:quiet_office",
+            "PROCUREMENT_CASH_LIMIT:premium"
+          ],
           "investmentPaid": 0
         }
       ]
@@ -5947,128 +5529,29 @@
       "difficulty": "hard",
       "partsChannel": "scheduled_batch",
       "partsChannelFactor": 0.9,
+      "paymentTermMonths": 2,
+      "creditLimitCoins": 15000,
+      "gatedAtStart": true,
+      "totalDeposits": 0,
+      "totalPayablesPaid": 0,
+      "payablesOutstanding": 0,
       "bankrupt": true,
-      "bankruptMonth": 5,
-      "totalSales": 30,
-      "totalRevenue": 78156,
-      "totalCostOfGoodsSold": 74128.14,
-      "totalFixedCost": 16000,
-      "totalDevelopmentCost": 300,
-      "totalInvestment": 3000,
-      "operatingProfit": -12272.14,
-      "endCash": -1272.14,
+      "bankruptMonth": 1,
+      "totalSales": 0,
+      "totalRevenue": 0,
+      "totalCostOfGoodsSold": 0,
+      "totalFixedCost": 3200,
+      "totalDevelopmentCost": 0,
+      "totalInvestment": 0,
+      "operatingProfit": -3200,
+      "endCash": -1700,
       "inventoryCost": 0,
-      "cashAndInventoryGain": -15272.14,
+      "cashAndInventoryGain": -3200,
       "months": [
         {
           "month": 1,
-          "startCash": 14000,
-          "endCash": 11453.75,
-          "sold": {
-            "office": 6,
-            "gaming": 1
-          },
-          "built": {
-            "office": 6,
-            "gaming": 1
-          },
-          "revenue": 17256,
-          "costOfGoodsSold": 16302.25,
-          "procurement": 16302.25,
-          "fixedCost": 3200,
-          "developmentCost": 300,
-          "operatingProfit": -2546.25,
-          "inventoryCost": 0,
-          "inventoryUnits": 0,
-          "capacityUsed": {
-            "labor": 83,
-            "owner": 30,
-            "bench": 51,
-            "test": 20
-          },
-          "capacityAvailable": {
-            "labor": 208,
-            "owner": 96,
-            "bench": 160,
-            "test": 160
-          },
-          "notices": [],
-          "investmentPaid": 0
-        },
-        {
-          "month": 2,
-          "startCash": 11453.75,
-          "endCash": 9596.37,
-          "sold": {
-            "office": 8,
-            "gaming": 2
-          },
-          "built": {
-            "office": 8,
-            "gaming": 2
-          },
-          "revenue": 26052,
-          "costOfGoodsSold": 24709.38,
-          "procurement": 24709.38,
-          "fixedCost": 3200,
-          "developmentCost": 0,
-          "operatingProfit": -1857.38,
-          "inventoryCost": 0,
-          "inventoryUnits": 0,
-          "capacityUsed": {
-            "labor": 78,
-            "owner": 0,
-            "bench": 68,
-            "test": 22
-          },
-          "capacityAvailable": {
-            "labor": 208,
-            "owner": 96,
-            "bench": 160,
-            "test": 160
-          },
-          "notices": [],
-          "investmentPaid": 0
-        },
-        {
-          "month": 3,
-          "startCash": 9596.37,
-          "endCash": 5127.86,
-          "sold": {
-            "office": 10,
-            "gaming": 3
-          },
-          "built": {
-            "office": 10,
-            "gaming": 3
-          },
-          "revenue": 34848,
-          "costOfGoodsSold": 33116.51,
-          "procurement": 33116.51,
-          "fixedCost": 3200,
-          "developmentCost": 0,
-          "operatingProfit": -1468.51,
-          "inventoryCost": 0,
-          "inventoryUnits": 0,
-          "capacityUsed": {
-            "labor": 103,
-            "owner": 0,
-            "bench": 90,
-            "test": 29
-          },
-          "capacityAvailable": {
-            "labor": 208,
-            "owner": 96,
-            "bench": 320,
-            "test": 160
-          },
-          "notices": [],
-          "investmentPaid": 3000
-        },
-        {
-          "month": 4,
-          "startCash": 5127.86,
-          "endCash": 1927.86,
+          "startCash": 1500,
+          "endCash": -1700,
           "sold": {},
           "built": {},
           "revenue": 0,
@@ -6076,6 +5559,9 @@
           "procurement": 0,
           "fixedCost": 3200,
           "developmentCost": 0,
+          "depositsTaken": 0,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
           "operatingProfit": -3200,
           "inventoryCost": 0,
           "inventoryUnits": 0,
@@ -6088,45 +5574,12 @@
           "capacityAvailable": {
             "labor": 208,
             "owner": 96,
-            "bench": 320,
+            "bench": 160,
             "test": 160
           },
           "notices": [
-            "PROCUREMENT_CASH_LIMIT:office",
-            "PROCUREMENT_CASH_LIMIT:gaming"
-          ],
-          "investmentPaid": 0
-        },
-        {
-          "month": 5,
-          "startCash": 1927.86,
-          "endCash": -1272.14,
-          "sold": {},
-          "built": {},
-          "revenue": 0,
-          "costOfGoodsSold": 0,
-          "procurement": 0,
-          "fixedCost": 3200,
-          "developmentCost": 0,
-          "operatingProfit": -3200,
-          "inventoryCost": 0,
-          "inventoryUnits": 0,
-          "capacityUsed": {
-            "labor": 0,
-            "owner": 0,
-            "bench": 0,
-            "test": 0
-          },
-          "capacityAvailable": {
-            "labor": 208,
-            "owner": 96,
-            "bench": 320,
-            "test": 160
-          },
-          "notices": [
-            "EXPANSION_UNAFFORDABLE",
-            "PROCUREMENT_CASH_LIMIT:office",
-            "PROCUREMENT_CASH_LIMIT:gaming"
+            "DEVELOPMENT_BLOCKED:office",
+            "DEVELOPMENT_BLOCKED:gaming"
           ],
           "investmentPaid": 0
         }
@@ -6138,140 +5591,40 @@
       "difficulty": "hard",
       "partsChannel": "distributor",
       "partsChannelFactor": 0.95,
+      "paymentTermMonths": 1,
+      "creditLimitCoins": 15000,
+      "gatedAtStart": true,
+      "totalDeposits": 0,
+      "totalPayablesPaid": 0,
+      "payablesOutstanding": 0,
       "bankrupt": true,
-      "bankruptMonth": 4,
-      "totalSales": 19,
-      "totalRevenue": 50523,
-      "totalCostOfGoodsSold": 48455.85,
-      "totalFixedCost": 15600,
-      "totalDevelopmentCost": 300,
-      "totalInvestment": 1800,
-      "operatingProfit": -13832.85,
-      "endCash": -1632.85,
+      "bankruptMonth": 1,
+      "totalSales": 0,
+      "totalRevenue": 0,
+      "totalCostOfGoodsSold": 0,
+      "totalFixedCost": 3200,
+      "totalDevelopmentCost": 0,
+      "totalInvestment": 0,
+      "operatingProfit": -3200,
+      "endCash": -1700,
       "inventoryCost": 0,
-      "cashAndInventoryGain": -15632.85,
+      "cashAndInventoryGain": -3200,
       "months": [
         {
           "month": 1,
-          "startCash": 14000,
-          "endCash": 10521.63,
-          "sold": {
-            "office": 4,
-            "gaming": 1
-          },
-          "built": {
-            "office": 4,
-            "gaming": 1
-          },
-          "revenue": 13026,
-          "costOfGoodsSold": 13004.37,
-          "procurement": 13004.37,
-          "fixedCost": 3200,
-          "developmentCost": 300,
-          "operatingProfit": -3478.37,
-          "inventoryCost": 0,
-          "inventoryUnits": 0,
-          "capacityUsed": {
-            "labor": 69,
-            "owner": 30,
-            "bench": 39,
-            "test": 16
-          },
-          "capacityAvailable": {
-            "labor": 208,
-            "owner": 96,
-            "bench": 160,
-            "test": 160
-          },
-          "notices": [],
-          "investmentPaid": 0
-        },
-        {
-          "month": 2,
-          "startCash": 10521.63,
-          "endCash": 9137.71,
-          "sold": {
-            "office": 5,
-            "gaming": 2,
-            "quiet_office": 1
-          },
-          "built": {
-            "office": 5,
-            "gaming": 2,
-            "quiet_office": 1
-          },
-          "revenue": 24807,
-          "costOfGoodsSold": 22990.92,
-          "procurement": 22990.92,
-          "fixedCost": 3200,
-          "developmentCost": 0,
-          "operatingProfit": -1383.92,
-          "inventoryCost": 0,
-          "inventoryUnits": 0,
-          "capacityUsed": {
-            "labor": 85,
-            "owner": 10,
-            "bench": 66,
-            "test": 20
-          },
-          "capacityAvailable": {
-            "labor": 208,
-            "owner": 96,
-            "bench": 160,
-            "test": 160
-          },
-          "notices": [],
-          "investmentPaid": 0
-        },
-        {
-          "month": 3,
-          "startCash": 9137.71,
-          "endCash": 2967.15,
-          "sold": {
-            "office": 6
-          },
-          "built": {
-            "office": 6
-          },
-          "revenue": 12690,
-          "costOfGoodsSold": 12460.56,
-          "procurement": 12460.56,
-          "fixedCost": 4600,
-          "developmentCost": 0,
-          "operatingProfit": -4370.56,
-          "inventoryCost": 0,
-          "inventoryUnits": 0,
-          "capacityUsed": {
-            "labor": 42,
-            "owner": 0,
-            "bench": 36,
-            "test": 12
-          },
-          "capacityAvailable": {
-            "labor": 320,
-            "owner": 96,
-            "bench": 160,
-            "test": 160
-          },
-          "notices": [
-            "PROCUREMENT_CASH_LIMIT:gaming",
-            "PROCUREMENT_CASH_LIMIT:quiet_office",
-            "PROCUREMENT_CASH_LIMIT:premium"
-          ],
-          "investmentPaid": 1800
-        },
-        {
-          "month": 4,
-          "startCash": 2967.15,
-          "endCash": -1632.85,
+          "startCash": 1500,
+          "endCash": -1700,
           "sold": {},
           "built": {},
           "revenue": 0,
           "costOfGoodsSold": 0,
           "procurement": 0,
-          "fixedCost": 4600,
+          "fixedCost": 3200,
           "developmentCost": 0,
-          "operatingProfit": -4600,
+          "depositsTaken": 0,
+          "payablesPaid": 0,
+          "payablesOutstanding": 0,
+          "operatingProfit": -3200,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
@@ -6281,16 +5634,14 @@
             "test": 0
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 160,
             "test": 160
           },
           "notices": [
-            "PROCUREMENT_CASH_LIMIT:office",
-            "PROCUREMENT_CASH_LIMIT:gaming",
-            "PROCUREMENT_CASH_LIMIT:quiet_office",
-            "PROCUREMENT_CASH_LIMIT:premium"
+            "DEVELOPMENT_BLOCKED:office",
+            "DEVELOPMENT_BLOCKED:gaming"
           ],
           "investmentPaid": 0
         }

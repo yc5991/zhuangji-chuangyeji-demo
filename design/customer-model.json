@@ -9,6 +9,8 @@
   "segments": {
     "mass": {
       "zh": "量产客群",
+      "depositFraction": 0,
+      "depositNote": "Standard machines are built to stock, so no customer pays before delivery. The mass route runs on supplier credit instead.",
       "products": [
         "office",
         "gaming"
@@ -16,6 +18,8 @@
     },
     "bespoke": {
       "zh": "高定客群",
+      "depositFraction": 0.5,
+      "depositNote": "A commissioned build is ordered in advance, so half the agreed price arrives before any part is bought. This is what lets a workshop start with almost no cash.",
       "products": [
         "quiet_office",
         "premium"

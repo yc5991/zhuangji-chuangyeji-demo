@@ -28,8 +28,10 @@
       "nominalDeliverySimHours": 2,
       "nominalUnitPriceFactor": 1,
       "nominalBatchStockUnits": 12,
+      "paymentTermMonths": 0,
       "eligibility": "legal product in current calendar; stock and compatibility checked",
-      "note": "All eligible brands can be bought in single units. The stock value is a simulation proposal per SKU, not a global limit or historical retailer inventory."
+      "note": "All eligible brands can be bought in single units. The stock value is a simulation proposal per SKU, not a global limit or historical retailer inventory.",
+      "paymentNote": "Counter purchase. Retail does not extend credit, so a one-off commission has to be funded by the customer deposit."
     },
     {
       "id": "distributor",
@@ -39,6 +41,7 @@
       "nominalDeliverySimHours": 8,
       "nominalUnitPriceFactor": 0.95,
       "nominalBatchStockUnits": 40,
+      "paymentTermMonths": 1,
       "eligibility": "Five identical physical SKUs per line; not tied to company level",
       "note": "A five-unit quote may suit a proven standard product. It is always optional for custom commissions.",
       "calibration": "Gradient widened with the economics review so channel choice is a real decision; the mass route cannot compete on retail parts prices."
@@ -51,6 +54,7 @@
       "nominalDeliverySimHours": 24,
       "nominalUnitPriceFactor": 0.90,
       "nominalBatchStockUnits": 80,
+      "paymentTermMonths": 2,
       "eligibility": "Explicit confirmed delivery batch and 20 identical units per line; no promise of stock before launch",
       "note": "Consolidated channel order, not a claim that every real brand accepts direct factory orders from small companies. Bulk ties up cash and stock without granting extra customer demand.",
       "calibration": "Deepest tier is the mass route's only viable basis; it demands the largest cash commitment and is unusable for one-off commissions."

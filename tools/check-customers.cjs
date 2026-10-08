@@ -46,10 +46,43 @@ function run() {
   assert.equal(new Set(model.archetypes.map(a => a.id)).size, model.archetypes.length, 'duplicate archetype id');
 
   const segmentProducts = {};
+  const deposits = [];
   for (const [id, seg] of Object.entries(model.segments)) {
     assert(seg.zh && Array.isArray(seg.products) && seg.products.length, `segment ${id}`);
     for (const p of seg.products) assert(Object.hasOwn(economy.products, p), `segment ${id}: unknown product ${p}`);
     segmentProducts[id] = seg.products;
+    assert(Number.isFinite(seg.depositFraction) && seg.depositFraction >= 0 && seg.depositFraction < 1,
+      `segment ${id}: depositFraction must be in [0, 1)`);
+    // A build-to-stock segment has no customer before delivery, so it can never take an advance.
+    const kinds = seg.products.map(p => economy.products[p].kind);
+    if (kinds.every(k => k === 'standard')) assert.equal(seg.depositFraction, 0, `segment ${id}: a build-to-stock segment cannot take a deposit`);
+    // An ordered segment must be self-funding: the advance has to cover most of the parts bill,
+    // otherwise the route still needs working capital and the difficulty spread collapses.
+    if (kinds.every(k => k === 'commission')) {
+      assert(seg.depositFraction > 0, `segment ${id}: a commissioned segment must take a deposit`);
+      for (const p of seg.products) {
+        const recipe = recipes.get(p);
+        const price = economy.products[p].salePrice;
+        const advance = price * seg.depositFraction;
+        const parts = recipe.expectedPartsCost;
+        assert(advance >= parts * 0.5,
+          `segment ${id}/${p}: advance ${Math.round(advance)} covers under half of the ${parts} parts bill`);
+        deposits.push({ segment: id, product: p, price, advance: Math.round(advance), parts, coverage: Number((advance / parts).toFixed(3)) });
+      }
+    }
+  }
+
+  // Supplier payment terms decide how much working capital each route needs.
+  const supplier = read('supplier-system.json');
+  const terms = [];
+  for (const channel of supplier.channels) {
+    assert(Number.isInteger(channel.paymentTermMonths) && channel.paymentTermMonths >= 0,
+      `channel ${channel.id}: paymentTermMonths must be a non-negative integer`);
+    terms.push({ channel: channel.id, zh: channel.zh, paymentTermMonths: channel.paymentTermMonths });
+  }
+  for (const [routeId, route] of Object.entries(economy.routes)) {
+    const channel = supplier.channels.find(c => c.id === route.partsChannel);
+    assert(channel, `route ${routeId}: unknown parts channel`);
   }
 
   const rows = [];
@@ -144,7 +177,7 @@ function run() {
     massWeight: model.archetypes.filter(a => a.segment === 'mass').reduce((n, a) => n + a.weight, 0),
     bespokeWeight: model.archetypes.filter(a => a.segment === 'bespoke').reduce((n, a) => n + a.weight, 0),
     demandCapTotals: capTotals,
-    ratios, rows, pricing,
+    ratios, rows, pricing, deposits, terms,
   };
   fs.mkdirSync(path.join(root, '.local'), { recursive: true });
   fs.writeFileSync(path.join(root, '.local', 'customer-verification.json'), JSON.stringify(output, null, 2) + '\n');

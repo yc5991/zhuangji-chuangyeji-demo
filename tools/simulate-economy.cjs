@@ -7,6 +7,11 @@ const config = read('economy-candidate.json');
 const recipes = new Map(read('balance.json').recipes.map(p => [p.id, p]));
 // Procurement channels live in supplier-system.json so the discount has one source of truth.
 const channels = new Map(read('supplier-system.json').channels.map(c => [c.id, c]));
+// Customer deposits live with the segments, so a commission's advance has one source of truth.
+const customerModel = read('customer-model.json');
+const depositFraction = Object.fromEntries(Object.entries(customerModel.segments).map(([id, s]) => [id, s.depositFraction || 0]));
+const productSegment = {};
+for (const [segId, seg] of Object.entries(customerModel.segments)) for (const p of seg.products) productSegment[p] = segId;
 const round = n => Math.round(n * 100) / 100;
 
 // Scenario inputs are proposed business parameters, separate from component reference data.
@@ -17,10 +22,16 @@ function simulate(routeId, scenarioId, difficulty = 'normal') {
   const channel = channels.get(route.partsChannel);
   assert(channel, `Route ${routeId} must name a procurement channel.`);
   const channelFactor = channel.nominalUnitPriceFactor;
+  const termMonths = channel.paymentTermMonths || 0;
+  const creditLimit = opening.creditLimitCoins || 0;
+  const gatedAtStart = !opening.startingRoutes.includes(routeId);
   let cash = opening.cash, employees = opening.employees, benches = opening.benches;
   let monthlyUtilities = opening.utilities, standardMultiplier = 1, commissionMultiplier = 1, consumablesReduction = 0;
   let totalSales = 0, totalRevenue = 0, totalCogs = 0, totalFixed = 0, totalInvestment = 0, totalDevelopment = 0;
+  let totalDeposits = 0, totalPayablesPaid = 0;
   let bankrupt = false, bankruptMonth = null;
+  // Parts bought on account are owed, not paid. They settle at the month end when the term expires.
+  let payables = [];
   const developed = new Set(), stock = Object.fromEntries(Object.keys(config.products).map(id => [id, []]));
   const months = [];
 
@@ -60,13 +71,14 @@ function simulate(routeId, scenarioId, difficulty = 'normal') {
       [id, Math.round(config.companyDemandCaps[id][index] * scenario.demandMultiplier)]));
     const sold = {}, built = {};
     let revenue = 0, cogs = 0, procurement = 0, development = 0;
+    let cashProcurement = 0, cashFromSales = 0, depositsTaken = 0, payablesPaid = 0;
 
     // Finished stock is sold first, preserving its historical purchase cost through price changes.
     for (const [id, lots] of Object.entries(stock)) {
       while (lots.length && demand[id] > 0) {
         const cost = lots.shift();
         const price = config.products[id].salePrice;
-        cash += price; revenue += price; cogs += cost; demand[id]--;
+        cash += price; cashFromSales += price; revenue += price; cogs += cost; demand[id]--;
         sold[id] = (sold[id] || 0) + 1;
       }
     }
@@ -99,28 +111,56 @@ function simulate(routeId, scenarioId, difficulty = 'normal') {
         const cost = round(recipe.expectedPartsCost * scenario.partsPriceMultiplier * channelFactor *
           opening.supplierTermsFactor + recipe.directCostCoins -
           (product.kind === 'commission' ? consumablesReduction : 0));
-        if (cash < fixed + cost) { notices.push(`PROCUREMENT_CASH_LIMIT:${id}`); break; }
-        for (const k of Object.keys(need)) used[k] += need[k];
-        cash -= cost; procurement += cost; built[id] = (built[id] || 0) + 1;
+        // A commissioned build is paid in advance, so the deposit arrives before the parts are bought.
+        const deposit = product.kind === 'commission'
+          ? Math.round(product.salePrice * (depositFraction[productSegment[id]] || 0)) : 0;
+        if (deposit) { cash += deposit; depositsTaken += deposit; totalDeposits += deposit; }
+        // Buy on account while credit remains; otherwise the parts must be paid for in cash.
+        const outstanding = payables.reduce((n, p) => n + p.amount, 0);
+        if (termMonths > 0 && outstanding + cost <= creditLimit) {
+          payables.push({ amount: cost, dueMonth: month + termMonths });
+        } else {
+          // A commissioned build is self-funding: the deposit is already in cash and the balance
+          // arrives on delivery, so only the shortfall has to come out of the workshop's own money.
+          const receivable = product.kind === 'commission' ? product.salePrice - deposit : 0;
+          if (cash + receivable < fixed + cost) {
+            // The order is not taken after all, so the advance goes back to the customer.
+            if (deposit) { cash -= deposit; depositsTaken -= deposit; totalDeposits -= deposit; }
+            notices.push(`PROCUREMENT_CASH_LIMIT:${id}`); break;
+          }
+          cash -= cost; cashProcurement += cost;
+        }
+        procurement += cost; built[id] = (built[id] || 0) + 1;
         if (demand[id] > 0) {
-          cash += product.salePrice; revenue += product.salePrice; cogs += cost; demand[id]--;
+          const balance = product.salePrice - deposit;
+          cash += balance; cashFromSales += balance; revenue += product.salePrice; cogs += cost; demand[id]--;
           sold[id] = (sold[id] || 0) + 1;
         } else stock[id].push(cost);
       }
     }
 
+    // Settle everything whose term has expired, then pay the month's own fixed costs.
+    const due = payables.filter(p => p.dueMonth <= month);
+    if (due.length) {
+      payablesPaid = due.reduce((n, p) => n + p.amount, 0);
+      totalPayablesPaid += payablesPaid;
+      cash -= payablesPaid;
+      payables = payables.filter(p => p.dueMonth > month);
+    }
     cash -= fixed;
     totalRevenue += revenue; totalCogs += cogs; totalFixed += fixed; totalDevelopment += development;
     const salesCount = Object.values(sold).reduce((n, p) => n + p, 0);
     totalSales += salesCount;
     const stockCost = round(Object.values(stock).flat().reduce((n, p) => n + p, 0));
     const monthProfit = round(revenue - cogs - fixed - development);
+    const outstandingNow = round(payables.reduce((n, p) => n + p.amount, 0));
     months.push({month,startCash:round(startCash),endCash:round(cash),sold,built,revenue:round(revenue),
       costOfGoodsSold:round(cogs),procurement:round(procurement),fixedCost:fixed,developmentCost:development,
+      depositsTaken:round(depositsTaken),payablesPaid:round(payablesPaid),payablesOutstanding:outstandingNow,
       operatingProfit:monthProfit,inventoryCost:stockCost,inventoryUnits:Object.values(stock).reduce((n,p)=>n+p.length,0),
       capacityUsed:Object.fromEntries(Object.entries(used).map(([k,v])=>[k,round(v)])),capacityAvailable:limits,
       notices:[...new Set(notices)]});
-    assert(Math.abs(cash - (startCash + revenue - procurement - fixed - development -
+    assert(Math.abs(cash - (startCash + cashFromSales + depositsTaken - cashProcurement - payablesPaid - fixed - development -
       (totalInvestment - months.slice(0,-1).reduce((n,m)=>n+(m.investmentPaid||0),0)))) < 0.02, 'Cash ledger does not reconcile.');
     months.at(-1).investmentPaid = totalInvestment - months.slice(0,-1).reduce((n,m)=>n+m.investmentPaid,0);
     for (const k of Object.keys(used)) assert(used[k] <= limits[k] + 1e-8, 'Capacity exceeded.');
@@ -128,11 +168,15 @@ function simulate(routeId, scenarioId, difficulty = 'normal') {
     if (cash < 0) { bankrupt = true; bankruptMonth = month; }
   }
   const inventoryCost = round(Object.values(stock).flat().reduce((n,p)=>n+p,0));
+  const payablesOutstanding = round(payables.reduce((n, p) => n + p.amount, 0));
   const operatingProfit = round(totalRevenue - totalCogs - totalFixed - totalDevelopment);
-  assert(Math.abs(cash + inventoryCost - opening.cash - (operatingProfit - totalInvestment)) < 0.02,
-    'Operating profit, inventory and cash do not reconcile.');
+  // Parts bought on account are a liability, so they are added back before checking the ledger.
+  assert(Math.abs(cash + inventoryCost - payablesOutstanding - opening.cash - (operatingProfit - totalInvestment)) < 0.02,
+    'Operating profit, inventory, payables and cash do not reconcile.');
   if (bankrupt) assert(cash < 0, 'Bankruptcy must coincide with a negative cash balance.');
   return {route:routeId,scenario:scenarioId,difficulty,partsChannel:channel.id,partsChannelFactor:channelFactor,
+    paymentTermMonths:termMonths,creditLimitCoins:creditLimit,gatedAtStart,
+    totalDeposits:round(totalDeposits),totalPayablesPaid:round(totalPayablesPaid),payablesOutstanding,
     bankrupt,bankruptMonth,totalSales,totalRevenue,totalCostOfGoodsSold:round(totalCogs),
     totalFixedCost:totalFixed,totalDevelopmentCost:totalDevelopment,totalInvestment,
     operatingProfit,endCash:round(cash),inventoryCost,cashAndInventoryGain:round(cash+inventoryCost-opening.cash),months};
