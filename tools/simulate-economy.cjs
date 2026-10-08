@@ -92,6 +92,7 @@ const round = n => Math.round(n * 100) / 100;
 // Scenario inputs are proposed business parameters, separate from component reference data.
 function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
   const opening = config.opening[difficulty];
+  const products = overrides.products || config.products;
   const route = { ...config.routes[routeId], ...overrides };
   // A caller may supply a synthetic scenario, which is how the fifteen-year pacing run works.
   const scenario = overrides.scenario || config.scenarios[scenarioId];
@@ -111,7 +112,7 @@ function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
   let reputation = customerModel.reputation.initial;
   // Parts bought on account are owed, not paid. They settle at the month end when the term expires.
   let payables = [];
-  const developed = new Set(), stock = Object.fromEntries(Object.keys(config.products).map(id => [id, []]));
+  const developed = new Set(), stock = Object.fromEntries(Object.keys(products).map(id => [id, []]));
   const months = [];
 
   for (let index = 0; index < 6 && !bankrupt; index++) {
@@ -149,11 +150,11 @@ function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
     const used = { labor: 0, owner: 0, bench: 0, test: 0 };
     // Reachable orders per product, then reduced by fit, price acceptance and reputation.
     const demand = {}, orders = {};
-    for (const id of Object.keys(config.products)) {
+    for (const id of Object.keys(products)) {
       const inWindow = month >= (scenario.fromMonth ?? 1) && month <= (scenario.throughMonth ?? 6);
       const pool = Math.round(config.companyDemandCaps[id][index] * (inWindow ? scenario.demandMultiplier : 1));
       const fit = fitOf(id, recipes.get(id));
-      const acceptance = acceptanceOf(id, config.products[id].salePrice);
+      const acceptance = acceptanceOf(id, products[id].salePrice);
       orders[id] = pool;
       demand[id] = Math.min(pool, Math.floor(pool * fit * acceptance * reputation));
     }
@@ -165,14 +166,14 @@ function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
     for (const [id, lots] of Object.entries(stock)) {
       while (lots.length && demand[id] > 0) {
         const cost = lots.shift();
-        const price = Math.round(config.products[id].salePrice * (scenario.priceIndex ?? 1));
+        const price = Math.round(products[id].salePrice * (scenario.priceIndex ?? 1));
         cash += price; cashFromSales += price; revenue += price; cogs += cost; demand[id]--;
         sold[id] = (sold[id] || 0) + 1;
       }
     }
 
     for (const [id, target] of Object.entries(route.monthlyProductionTargets[index])) {
-      const product = config.products[id], recipe = recipes.get(id);
+      const product = products[id], recipe = recipes.get(id);
       assert(recipe, 'Scenario product must use an existing recipe.');
       const count = product.kind === 'commission' ? Math.min(target, demand[id]) : target;
       if (count === 0) continue;
