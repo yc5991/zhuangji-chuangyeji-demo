@@ -6,9 +6,8 @@ const path = require('node:path');
 const assert = require('node:assert/strict');
 const root = path.resolve(__dirname, '..');
 
-// The mechanics of the six-month demo: the simulator and everything it pulls in.
-const MECHANICS = ['simulate-economy.cjs', 'evaluate-product.cjs', 'check-design.cjs',
-  'check-customers.cjs', 'price-acceptance.cjs'];
+// The mechanics of the six-month demo, found by following what the simulator requires.
+const { requireClosure, mechanicsSource } = require('./mechanics-source.cjs');
 
 // Whole files that are not demo mechanics. Each entry states why the numbers are not rules here.
 const WHOLE_FILES = {
@@ -72,8 +71,7 @@ const WHOLE_PATHS = [
 ];
 
 function run() {
-  const mechanics = MECHANICS
-    .map(f => fs.readFileSync(path.join(root, 'tools', f), 'utf8')).join('\n');
+  const mechanics = mechanicsSource();
   const escapeRe = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   const files = fs.readdirSync(path.join(root, 'design')).filter(f => f.endsWith('.json'));
 
@@ -112,7 +110,7 @@ function run() {
     filesExcused: Object.keys(WHOLE_FILES).length,
     keysExcused: Object.keys(WHOLE_KEYS).length,
     pathsExcused: WHOLE_PATHS.length,
-    mechanics: MECHANICS,
+    mechanics: requireClosure(),
     note: '每一个豁免都写明了理由；新增规则若没人读取，这一项就会失败',
   };
   fs.mkdirSync(path.join(root, '.local'), { recursive: true });
