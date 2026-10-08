@@ -1,0 +1,49 @@
+{
+  "recordedAt": "2026-10-08T04:19:42.696Z",
+  "creatorVersion": "3.8.8",
+  "sourceHashes": {
+    "components.json": "5f491656d52a8739d505e9e0a205efcf83bbf4155b4589dcedc43f64be0cd033",
+    "balance.json": "cbe33aa0404a1dd0a8429e54c346a775d8a37ff2f68ff9c739bed5d2d4bc0356",
+    "economy-candidate.json": "309a95d905d75282a77bbc4451b567a8d1f470a79ced90d6c99a21509655e664",
+    "supplier-system.json": "c10b7edb3ac69d1f829e35245a63d30d23e058bfd7ce635acd1d4bf531138170",
+    "customer-model.json": "8a2ab45b122163dc6282546fe4145f5cdde1f382c8e6289d904a39c7bfcbdfd3",
+    "workbench.json": "78675cedb89a74ee2232de24b666c1016b60a9a7a0e436c81d7140ddb77df15a"
+  },
+  "scope": "first-month-playable-prototype",
+  "gameplayBuildHash": "93735bc78719ff96c4c09c5847b201448d977dd71f09431c0d9908f0a7a00b2b",
+  "browser": {
+    "checkedAt": "2026-10-08T04:19:17.962Z",
+    "viewport": "390x844",
+    "manualDrag": "passed",
+    "firstMonthIndependent": "passed",
+    "firstMonthCommission": "passed",
+    "reloadCompleteDesign": "passed",
+    "manualSettlement": "passed",
+    "errors": [],
+    "build": "passed"
+  },
+  "wechat": {
+    "build": "passed",
+    "orientation": "portrait",
+    "measuredAt": "2026-10-08T04:17:05.934Z",
+    "localMainBytes": 1663814,
+    "localTotalBytes": 4155367,
+    "packageBudgetPassed": true,
+    "subpackages": [
+      {
+        "name": "workbench",
+        "root": "subpackages/workbench/",
+        "bytes": 2491553
+      }
+    ],
+    "uploadBytes": null,
+    "simulator": "awaiting-first-Codex-authorization",
+    "realDevice": "not-verified"
+  },
+  "rules": {
+    "functionalTests": 10,
+    "result": "passed",
+    "numericalBalance": "not-run-user-delegated"
+  },
+  "art": "geometry-placeholder-reviewed-art-pending"
+}
