@@ -40,6 +40,7 @@ function run() {
 
   const definedRoles = workbench.connectionRoles;
   const boundRoles = routing.roles.map(r => r.id);
+  assert(definedRoles.length, "no connection roles to check");
   for (const role of definedRoles)
     assert(boundRoles.includes(role), `cable role ${role} is defined but never bound to anchors, so its length budget is never checked`);
   assert.equal(new Set(boundRoles).size, boundRoles.length, 'duplicate role');

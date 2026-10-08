@@ -23,6 +23,7 @@ function run() {
   assert.equal(new Set(ids).size, ids.length, 'duplicate group id');
 
   const defaults = {}, best = {};
+  assert(model.groups.length, "no case option groups to check");
   for (const group of model.groups) {
     assert(group.options.length >= 2, `${group.id}: a group with one option is not a choice`);
     const free = group.options.filter(o => o.cost === 0);

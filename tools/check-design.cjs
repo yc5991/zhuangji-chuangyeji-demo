@@ -157,9 +157,11 @@ function run() {
     if (p.category === 'gpu') assert(brandData.brands.some(b => b.id === p.game.chipBrandId && b.roles.includes('graphics_platform')));
     assert(Number.isFinite(p.game.basePriceCoins) && p.game.basePriceCoins > 0);
   }
+  assert(Object.keys(balance.weights).length, "no score weight groups to check");
   for (const weights of Object.values(balance.weights)) assert(Math.abs(Object.values(weights).reduce((a,b)=>a+b,0) - 1) < 1e-9);
   const eventDates = workbench.eventDates.map(e => e.date);
   assert.deepEqual(eventDates, [...eventDates].sort());
+  assert(workbench.eventDates.length, "no workbench event dates to check");
   for (const event of workbench.eventDates) for (const id of event.parts || []) assert.equal(get(id).availability.gameDate, event.date);
   const reports = balance.recipes.map(plan => {
     const report = evaluate(plan);

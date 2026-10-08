@@ -73,6 +73,7 @@ function run() {
   }
 
   // The reference builds are well designed, so they must sit at the base rate.
+  assert(recipes.length, "no recipes to check reliability against");
   for (const row of recipes) assert.equal(row.failureRate, r.base, `${row.recipe}: a sound build must sit at the base rate`);
 
   // A build the balance model already flags must cost materially more, or the mechanic is inert.

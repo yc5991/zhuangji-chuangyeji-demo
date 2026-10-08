@@ -47,6 +47,7 @@ function run() {
   assert(schedule.months.filter(m => m.month > 2).every(m => m.freeChoice === true), 'every month after teaching is free');
 
   // Section 7.2 puts the market change in months 3-4.
+  assert(events.events.length, "no market events to check");
   for (const event of events.events) {
     assert(event.omenMonth >= 3 && event.omenMonth <= 4, `${event.id}: the omen must land in months 3-4`);
     assert(event.resolveMonth >= 3 && event.resolveMonth <= 4, `${event.id}: the result must land in months 3-4`);
