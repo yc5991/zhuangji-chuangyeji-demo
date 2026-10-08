@@ -15,6 +15,32 @@ for (const [segId, seg] of Object.entries(customerModel.segments)) for (const p 
 
 // Each archetype is eligible for exactly one recipe, so orders can be attributed per product.
 const { evaluate } = require('./check-design.cjs');
+// Parts cost by category, so an event that names a category only moves the builds exposed to it.
+const partsCatalog = read('components.json');
+const byPart = new Map(partsCatalog.parts.map(p => [p.id, p]));
+const categoryCost = {};
+for (const r of recipes.values()) {
+  const per = {};
+  const add = (id, q) => { const p = byPart.get(id); per[p.category] = (per[p.category] || 0) + p.game.basePriceCoins * q; };
+  for (const e of r.ram) add(e.id, e.quantity);
+  for (const e of r.storage) add(e.id, e.quantity);
+  for (const key of ['cpu', 'motherboard', 'gpu', 'psu', 'cooler', 'case']) if (r[key]) add(r[key], 1);
+  categoryCost[r.id] = per;
+}
+// A scenario may scope its effect to a month window and to named categories.
+function partsCostFor(productId, scenario, month) {
+  const base = recipes.get(productId).expectedPartsCost;
+  const from = scenario.fromMonth ?? 1, through = scenario.throughMonth ?? 6;
+  if (month < from || month > through) return base;
+  if (!scenario.categoryMultipliers) return base * (scenario.partsPriceMultiplier ?? 1);
+  const per = categoryCost[productId];
+  let total = base;
+  for (const [cat, mult] of Object.entries(scenario.categoryMultipliers)) {
+    const exposed = per[cat] || 0;
+    total += exposed * (mult - 1);
+  }
+  return total;
+}
 const archetypesByProduct = {};
 for (const a of customerModel.archetypes) (archetypesByProduct[a.referenceRecipe] ||= []).push(a);
 const clamp = (v, lo, hi) => Math.min(hi, Math.max(lo, v));
@@ -103,7 +129,8 @@ function simulate(routeId, scenarioId, difficulty = 'normal') {
     // Reachable orders per product, then reduced by fit, price acceptance and reputation.
     const demand = {}, orders = {};
     for (const id of Object.keys(config.products)) {
-      const pool = Math.round(config.companyDemandCaps[id][index] * scenario.demandMultiplier);
+      const inWindow = month >= (scenario.fromMonth ?? 1) && month <= (scenario.throughMonth ?? 6);
+      const pool = Math.round(config.companyDemandCaps[id][index] * (inWindow ? scenario.demandMultiplier : 1));
       const fit = fitOf(id, recipes.get(id));
       const acceptance = acceptanceOf(id, config.products[id].salePrice);
       orders[id] = pool;
@@ -148,7 +175,7 @@ function simulate(routeId, scenarioId, difficulty = 'normal') {
         if (Object.keys(need).some(k => used[k] + need[k] > limits[k] + 1e-8)) {
           notices.push(`CAPACITY_LIMIT:${id}`); break;
         }
-        const cost = round(recipe.expectedPartsCost * scenario.partsPriceMultiplier * channelFactor *
+        const cost = round(partsCostFor(id, scenario, month) * channelFactor *
           opening.supplierTermsFactor + recipe.directCostCoins -
           (product.kind === 'commission' ? consumablesReduction : 0));
         // A commissioned build is paid in advance, so the deposit arrives before the parts are bought.

@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "status": "candidate",
+  "provenance": {
+    "existing": "The omen and resolution months sit inside the confirmed Demo window of 2016-01 to 2016-06. Effects reuse the same scenario machinery the balance already tests, and each recipe's exposure is computed from design/components.json part prices.",
+    "new": "The event, its omens, outcome weights, player feedback and the category price factors are original game content. They are not a reconstruction of 2016 market history and make no claim about real prices.",
+    "limits": "A scheduled narrative event with a weighted outcome, not a market forecast. Only the single event below is scheduled in the Demo."
+  },
+  "rules": {
+    "omenLeadsResolutionByMonths": 1,
+    "playerCanReactDuringOmen": "Stock up on memory and storage, switch to a cheaper capacity tier, reprice the affected model, or accept the risk",
+    "outcomeIsDrawnOnce": true,
+    "seededForReproducibility": true,
+    "scope": "Effects name component categories, so a build is hit in proportion to how much memory and storage it carries"
+  },
+  "events": [
+    {
+      "id": "dram_squeeze",
+      "zh": "内存颗粒涨价",
+      "omenMonth": 3,
+      "resolveMonth": 4,
+      "throughMonth": 5,
+      "affectedCategories": [
+        "ram",
+        "storage"
+      ],
+      "omen": "上游颗粒厂传出减产消息，内存与固态报价开始走高。供应商提醒下月价格可能上调，建议提前备货",
+      "whyItIsUncertain": "减产消息本身不保证落地，涨幅取决于颗粒厂的实际执行与渠道库存，玩家提前备货要占用资金并承担落空风险",
+      "outcomes": [
+        {
+          "id": "rumour_only",
+          "zh": "传闻落空",
+          "weight": 25,
+          "categoryMultiplier": 1,
+          "scenarioId": "event_dram_rumour",
+          "feedback": "报价回落，提前备的货暂时压住资金，但成本没有上升"
+        },
+        {
+          "id": "mild",
+          "zh": "温和上涨",
+          "weight": 45,
+          "categoryMultiplier": 1.35,
+          "scenarioId": "event_dram_mild",
+          "feedback": "内存与固态成本上升约三成半，提前备货的部分抵消了影响"
+        },
+        {
+          "id": "sharp",
+          "zh": "明显上涨",
+          "weight": 30,
+          "categoryMultiplier": 1.7,
+          "scenarioId": "event_dram_sharp",
+          "feedback": "涨幅远超预期，没有备货的整机单台贡献被明显压缩"
+        }
+      ]
+    }
+  ]
+}

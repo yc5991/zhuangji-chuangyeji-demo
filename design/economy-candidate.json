@@ -303,6 +303,24 @@
     "parts_up_10": {
       "demandMultiplier": 1,
       "partsPriceMultiplier": 1.1
+    },
+    "event_dram_rumour": {
+      "demandMultiplier": 1,
+      "categoryMultipliers": { "ram": 1.00, "storage": 1.00 },
+      "fromMonth": 4,
+      "throughMonth": 5
+    },
+    "event_dram_mild": {
+      "demandMultiplier": 1,
+      "categoryMultipliers": { "ram": 1.35, "storage": 1.35 },
+      "fromMonth": 4,
+      "throughMonth": 5
+    },
+    "event_dram_sharp": {
+      "demandMultiplier": 1,
+      "categoryMultipliers": { "ram": 1.70, "storage": 1.70 },
+      "fromMonth": 4,
+      "throughMonth": 5
     }
   }
 }
