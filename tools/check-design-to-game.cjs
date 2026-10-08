@@ -34,13 +34,16 @@ const CUSTOMER_FIELD_SOURCES = {
   minimumScores: 'minimumScores',
 };
 const CUSTOMER_FIELDS_NOT_RULES = new Set(['id', 'archetype', 'kind', 'name', 'dueMonth', 'status',
-  'designId', 'satisfaction', 'agreedPrice', 'deposit']);
+  'designId', 'satisfaction', 'agreedPrice', 'deposit',
+  // The colour the customer prefers. It is not a requirement any more: the game uses it to pre-fill a
+  // new design's body colour, and a mismatch no longer blocks the order.
+  'color']);
 
 // Rules the game does not implement today, each with the decision that would resolve it. Listing
 // them keeps the check useful: a new divergence fails, while these stay visible rather than silent.
 // Fields the game requires of a customer that the design data has no source for.
 const KNOWN_UNGROUNDED = {
-  color: 'the game requires the machine colour to match a randomly drawn customer preference; awaiting decision L',
+  // Empty: the colour requirement was removed, so the game reads no customer field without a source.
 };
 
 const KNOWN_GAPS = {
