@@ -10,9 +10,11 @@ const write = (file, value) => {
   const contents = typeof value === 'string' ? value : JSON.stringify(value,null,2)+'\n';
   if (!fs.existsSync(target) || fs.readFileSync(target,'utf8') !== contents) fs.writeFileSync(target,contents);
 };
-const sourceFiles = ['components.json','balance.json','economy-candidate.json','supplier-system.json','customer-model.json','workbench.json','market-events.json','demo-schedule.json','design-flow.json','evaluation.json','finish-options.json','case-options.json','cable-routing.json','reliability-model.json','staff.json','era-trends.json','company-progression.json'];
+const sourceFiles = ['components.json','balance.json','economy-candidate.json','supplier-system.json','customer-model.json','workbench.json','market-events.json','demo-schedule.json','design-flow.json','evaluation.json','finish-options.json','case-options.json','cable-routing.json','reliability-model.json','staff.json','era-trends.json','company-progression.json','workbench-layouts.json'];
 const fingerprints = Object.fromEntries(sourceFiles.map(file => [file,crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'design',file))).digest('hex')]));
 const components = read('design/components.json');
+const ssdSize=components.parts.find(p=>p.id==='ssd_250').reference.specs.dimensionsMm;
+const hddSize=components.parts.find(p=>p.id==='hdd_1000').reference.specs.dimensionsMm;
 const cases = components.parts.filter(p=>p.category==='case');
 const geometries = cases.map(part => {
   const {height:h,depth:w} = part.game.dimensionsMm;
@@ -28,8 +30,8 @@ const geometries = cases.map(part => {
     {id:'psu',kind:'psu',rect:[8,4,part.game.psuMaxDepthMm,86],plane:'side'}
   ];
   for(let i=0;i<4;i++) slots.push({id:`ram${i}`,kind:'ram',rect:[trayX+163+i*13,trayY+86,10,135],plane:'side'});
-  for(let i=0;i<2;i++) slots.push({id:`ssd${i}`,kind:'storage',bay:'2.5-inch',rect:[w-80,101+i*107,70,100],plane:'rear'});
-  for(let i=0;i<part.game.storageBays['3.5-inch'];i++) slots.push({id:`hdd${i}`,kind:'storage',bay:'3.5-inch',rect:[w-115,4+i*39,100,35],plane:'side'});
+  for(let i=0;i<part.game.storageBays['2.5-inch'];i++) slots.push({id:`ssd${i}`,kind:'storage',bay:'2.5-inch',rect:[w-80,101+i*107,ssdSize.width,ssdSize.length],plane:'rear'});
+  for(let i=0;i<part.game.storageBays['3.5-inch'];i++) slots.push({id:`hdd${i}`,kind:'storage',bay:'3.5-inch',rect:[w-hddSize.length-8,4+i*39,hddSize.length,hddSize.height],plane:'side'});
   const fanZones = [
     {id:'fan0',rect:[w-20,105,16,120],direction:'intake',plane:'side'},
     {id:'fan1',rect:[2,h-132,16,120],direction:'exhaust',plane:'side'},
@@ -47,23 +49,43 @@ const geometries = cases.map(part => {
     cableLengths:{MAINBOARD_POWER:1600,CPU_POWER:1800,GPU_POWER:1400,SATA_POWER:1500,SATA_DATA:800,CPU_FAN:650,CASE_FAN:1300,FRONT_PANEL:1400},
     cpuRamClearanceMm:34,gpuCableBendMm:15};
 });
-write('design/workbench-geometry.json',{schemaVersion:1,status:'implemented_game_geometry',provenance:'Original fixed-view game geometry derived from selected game case envelopes; not verified manufacturer internals.',cases:geometries});
+write('design/workbench-geometry.json',{schemaVersion:1,status:'case_envelopes_with_runtime_board_adaptation',provenance:'Original fixed-view case mounting envelopes, not verified manufacturer internals. Installed board, CPU, DIMM, GPU, PSU and cooler rectangles are derived at runtime from workbench-layouts.json and selected component dimensions.',cases:geometries});
+const boardLayouts=read('design/workbench-layouts.json').boards;
+for(const board of components.parts.filter(p=>p.category==='motherboard')) {
+  const layout=boardLayouts.find(b=>b.partId===board.id),size=board.reference?.specs?.dimensionsMm;
+  if(!layout||!size||!Number.isFinite(size.width)||!Number.isFinite(size.height)||size.width<=0||size.height<=0)throw new Error(`Board mounting size or layout missing: ${board.id}`);
+  const [left,top,right,bottom]=layout.bodyRectLtrbPx;
+  if(![left,top,right,bottom].every(Number.isFinite)||left<0||top<0||right<=left||bottom<=top||layout.dimmCentersPx.length!==board.game.ramSlots)throw new Error(`Board mounting bounds or DIMM count invalid: ${board.id}`);
+  const points=[layout.cpuCenterPx,layout.pcieLinePx,...layout.dimmCentersPx,...Object.values(layout.connectorsPx)];
+  if(points.some(p=>p.length!==2||!p.every(Number.isFinite)||p[0]<left||p[0]>right||p[1]<top||p[1]>bottom))throw new Error(`Board landmark outside body: ${board.id}`);
+  for(const role of ['mainPower','cpuPower','cpuFan','caseFan','frontPanel','sata'])if(!layout.connectorsPx[role])throw new Error(`Board connector measurement missing: ${board.id}/${role}`);
+}
 const balance = read('design/balance.json');
 const workbench = read('design/workbench.json');
 const baseline = {recordedDate:'2026-10-08',creatorVersion:'3.8.8',sourceHashes:fingerprints,scope:{firstMonth:'2016-01',lastMonth:'2016-06',purchaseEntries:32,cloudSaves:false,views:['side','rear','exterior']},budgetBytes:{main:3500000,total:20000000}};
 write('design/demo-baseline.json',baseline);
 const data = {
   baseline,
-  parts:components.parts.map(p=>({id:p.id,category:p.category,brandId:p.brandId,seriesId:p.seriesId,model:p.model,displayName:p.displayName,release:p.availability.gameDate,game:p.game})),
+  parts:components.parts.map(p=>({id:p.id,category:p.category,brandId:p.brandId,seriesId:p.seriesId,model:p.model,displayName:p.displayName,release:p.availability.gameDate,game:p.game,referenceDimensionsMm:p.reference?.specs?.dimensionsMm})),
+  boardLayouts,
   balance,economy:read('design/economy-candidate.json'),customers:read('design/customer-model.json'),channels:read('design/supplier-system.json').channels,geometry:geometries,
   marketEvents:read('design/market-events.json').events,schedule:read('design/demo-schedule.json').months,
+  finish:read('design/finish-options.json'),caseOptions:read('design/case-options.json'),evaluation:read('design/evaluation.json'),
+  // The failure, quality-control and arrival-defect rules. The game had no copy of these, which is
+  // why machines could never fail; carrying them is the first step of implementing that model.
+  reliability:read('design/reliability-model.json'),
   events:workbench.eventDates.map(e=>({...e,title:e.action==='forecast_only'?'老黄的新卡发布会快到了，采购前留意供货日':'新配件开始供货，旧机型仍能继续销售'}))
 };
 const artwork=read('design/art-runtime.json');
 for(const entry of artwork.entries) {
   if(!['reviewed','approved'].includes(entry.state)) throw new Error(`Runtime artwork has not passed review: ${entry.partId}`);
   if(!entry.outlinePx||entry.outlinePx.length!==4||!entry.pivot||entry.pivot.length!==2) throw new Error(`Artwork outline or pivot missing: ${entry.partId}`);
-  if(!fs.existsSync(path.join(root,'assets/art',entry.bundle,entry.path+'.png'))) throw new Error(`Artwork export missing: ${entry.path}`);
+  const file=path.join(root,'assets/art',entry.bundle,entry.path+'.png');
+  if(!fs.existsSync(file)) throw new Error(`Artwork export missing: ${entry.path}`);
+  const png=fs.readFileSync(file),width=png.readUInt32BE(16),height=png.readUInt32BE(20),[x,y,w,h]=entry.outlinePx;
+  if(![x,y,w,h,...entry.pivot].every(Number.isFinite)||x<0||y<0||w<=0||h<=0||x+w>width||y+h>height||entry.pivot.some(p=>p<0||p>1))throw new Error(`Artwork bounds outside export: ${entry.partId}`);
+  if(entry.exportPx&&(entry.exportPx[0]!==width||entry.exportPx[1]!==height))throw new Error(`Artwork export dimensions changed: ${entry.partId}`);
+  if(entry.bodyRectLtrbPx) {const [l,t,r,b]=entry.bodyRectLtrbPx;if(![l,t,r,b].every(Number.isFinite)||l<0||t<0||r<=l||b<=t||r>width||b>height)throw new Error(`Artwork body rectangle invalid: ${entry.partId}`);}
 }
 write('assets/scripts/runtime-art.ts',`// Generated from reviewed Figma exports.\nimport type {RuntimeArt} from './domain/types';\nexport const ART:RuntimeArt[]=${JSON.stringify(artwork.entries,null,2)};\n`);
 write('assets/scripts/domain/data.ts',`// Generated by tools/prepare-demo.cjs from design inputs; do not edit prices here.\nimport type { GameData } from './types';\nexport const DATA: GameData = ${JSON.stringify(data,null,2)};\n`);

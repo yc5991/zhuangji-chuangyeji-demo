@@ -2117,7 +2117,7 @@ export const DATA: GameData = {
           "rect": [
             250,
             101,
-            70,
+            69.85,
             100
           ],
           "plane": "rear"
@@ -2129,7 +2129,7 @@ export const DATA: GameData = {
           "rect": [
             250,
             208,
-            70,
+            69.85,
             100
           ],
           "plane": "rear"
@@ -2139,10 +2139,10 @@ export const DATA: GameData = {
           "kind": "storage",
           "bay": "3.5-inch",
           "rect": [
-            215,
+            175,
             4,
-            100,
-            35
+            147,
+            26.1
           ],
           "plane": "side"
         }
@@ -2446,7 +2446,7 @@ export const DATA: GameData = {
           "rect": [
             350,
             101,
-            70,
+            69.85,
             100
           ],
           "plane": "rear"
@@ -2458,7 +2458,7 @@ export const DATA: GameData = {
           "rect": [
             350,
             208,
-            70,
+            69.85,
             100
           ],
           "plane": "rear"
@@ -2468,10 +2468,10 @@ export const DATA: GameData = {
           "kind": "storage",
           "bay": "3.5-inch",
           "rect": [
-            315,
+            275,
             4,
-            100,
-            35
+            147,
+            26.1
           ],
           "plane": "side"
         },
@@ -2480,10 +2480,10 @@ export const DATA: GameData = {
           "kind": "storage",
           "bay": "3.5-inch",
           "rect": [
-            315,
+            275,
             43,
-            100,
-            35
+            147,
+            26.1
           ],
           "plane": "side"
         }
@@ -2829,7 +2829,7 @@ export const DATA: GameData = {
           "rect": [
             370,
             101,
-            70,
+            69.85,
             100
           ],
           "plane": "rear"
@@ -2841,7 +2841,7 @@ export const DATA: GameData = {
           "rect": [
             370,
             208,
-            70,
+            69.85,
             100
           ],
           "plane": "rear"
@@ -2851,10 +2851,10 @@ export const DATA: GameData = {
           "kind": "storage",
           "bay": "3.5-inch",
           "rect": [
-            335,
+            295,
             4,
-            100,
-            35
+            147,
+            26.1
           ],
           "plane": "side"
         },
@@ -2863,10 +2863,10 @@ export const DATA: GameData = {
           "kind": "storage",
           "bay": "3.5-inch",
           "rect": [
-            335,
+            295,
             43,
-            100,
-            35
+            147,
+            26.1
           ],
           "plane": "side"
         }
@@ -3553,6 +3553,55 @@ export const DATA: GameData = {
       "everyDimensionScored": "A machine must produce a score for all six dimensions or the evaluation is incomplete",
       "independentOfTarget": "Performance and appearance never depend on the target use case; use-case fit does",
       "everyDimensionUsedOrDeclared": "每个维度要么被客户决策读取，要么显式标为 informational；不允许默默无人使用"
+    }
+  },
+  "reliability": {
+    "schemaVersion": 1,
+    "status": "candidate",
+    "provenance": {
+      "existing": "Design-quality signals are read from the existing balance model: thermal stability and power headroom come from check-design's evaluate, and part revisions come from design/components.json. Rework cost follows the candidate already recorded in docs/design-candidates.md.",
+      "new": "Base failure rate, condition multipliers, quality-control effects, rework costs and refund rules are original game balance. They are not real defect statistics.",
+      "limits": "A game balance model by part revision and operating condition. It never assigns reliability to a real brand name."
+    },
+    "rules": {
+      "neverBrandReputation": "Failure depends on revision, operating condition and player quality control, never on brand name",
+      "caughtByTesting": "A failure is caught before delivery when the build is tested; otherwise it reaches the customer",
+      "expectedValue": "The economy model charges the expected rework cost per unit rather than rolling dice, so runs stay reproducible",
+      "threeTestingTiers": "测试分成未测试、部分测试、完整测试三档，两档阈值都必须被实际使用"
+    },
+    "failureRate": {
+      "base": 0.04,
+      "conditionMultipliers": {
+        "thermallyUnstable": 3,
+        "powerHeadroomBelowThreshold": 1.8,
+        "powerHeadroomThreshold": 0.2,
+        "deliveryIssueUnstable": 2
+      },
+      "ceiling": 0.6,
+      "note": "A competent build in a new hand-assembly workshop starts at 4 percent, above a factory line; a thermally unstable or power-starved design multiplies from there"
+    },
+    "qualityControl": {
+      "caughtWhenTestHoursAtLeast": 0.5,
+      "escapeRateWithoutTesting": 1,
+      "escapeRateWithMinimalTesting": 0.06,
+      "minimalTestingHours": 1,
+      "note": "测试台工时决定故障在工坊内被发现还是流出到客户：低于 0.5 小时等于没测，0.5 到 1 小时之间只拦下一部分，达到 1 小时才是完整测试",
+      "escapeRateWithPartialTesting": 0.3
+    },
+    "rework": {
+      "zh": "局部返工",
+      "laborHours": 3,
+      "testStationHours": 1.5,
+      "consumablesCoins": 70,
+      "partReplacementChance": 0.15,
+      "note": "Within the candidate range already recorded: 2-4 labour hours, 1-2 test hours, 40-100 consumables"
+    },
+    "arrivalDefect": {
+      "zh": "到货故障",
+      "refundFraction": 1,
+      "logisticsCoins": 120,
+      "note": "A machine that reaches the customer faulty is refunded in full, costs logistics, and costs reputation through the customer model",
+      "reputationSource": "customer-model.json 的 reputation.deliveredMissingRequirement，口碑只保留一处定义"
     }
   },
   "events": [

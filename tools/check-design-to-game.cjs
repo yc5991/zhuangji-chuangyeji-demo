@@ -47,7 +47,7 @@ const KNOWN_UNGROUNDED = {
 };
 
 const KNOWN_GAPS = {
-  'reliability-model.json': 'the game has no faults, quality control or arrival defects; awaiting decision I1',
+  'reliability-model.json': 'the data is carried but the game has no faults, quality control or arrival defects; implementation approved, plan written',
   'evaluation.json': 'the game shows raw values rather than the six scored dimensions; awaiting decision K',
 };
 
@@ -70,7 +70,10 @@ function gameSource() {
     for (const e of fs.readdirSync(path.join(root, dir), { withFileTypes: true })) {
       const rel = dir + '/' + e.name;
       if (e.isDirectory()) walk(rel);
-      else if (e.name.endsWith('.ts')) parts.push(fs.readFileSync(path.join(root, rel), 'utf8'));
+      else if (e.name.endsWith('.ts') && e.name !== 'data.ts')
+        // The generated data carries the model's own values, so including it would make carried and
+        // implemented indistinguishable: a rule would look implemented the moment it was carried.
+        parts.push(fs.readFileSync(path.join(root, rel), 'utf8'));
     }
   };
   walk('assets/scripts');
@@ -103,8 +106,10 @@ function run() {
   for (const [file, rule] of Object.entries(GAME_MUST_IMPLEMENT)) {
     if (DEMO_DOES_NOT_NEED.has(file)) continue;
     const carried = provided.has(file.replace('.json', '').replace('-model', ''));
+    // Carrying the values is not implementing them: a rule is only implemented when the game's own
+    // logic names it. Both are required, which is why the generated data is excluded from the probe.
     const implemented = rule.markers.some(m => new RegExp(m).test(game));
-    if (!carried && !implemented) unimplemented.push(file + ' (' + rule.note + ')');
+    if (!carried || !implemented) unimplemented.push(file + ' (' + rule.note + ')');
   }
   const known = unimplemented.filter(u => KNOWN_GAPS[u.split(' ')[0]]);
   const fresh = unimplemented.filter(u => !KNOWN_GAPS[u.split(' ')[0]]);
