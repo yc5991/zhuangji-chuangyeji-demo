@@ -1,38 +1,42 @@
-// Apply the proposed decisions in a preview harness and check every invariant before they ship.
+// Apply the confirmed decisions in a preview harness and check every invariant before they ship.
+// The decisions themselves live in apply-decisions.cjs so that the preview and the landing step
+// cannot describe two different sets of changes.
 const fs = require('node:fs');
 const path = require('node:path');
 const { simulate, config, failureRateFor } = require('./simulate-economy.cjs');
+const { DECISIONS } = require('./apply-decisions.cjs');
 const root = path.resolve(__dirname, '..');
 const read = name => JSON.parse(fs.readFileSync(path.join(root, 'design', name), 'utf8'));
 
-// Decision 1: raise commission hours, grow mixed's plan, move its expansion to month five.
-// Decision 2: raise every price half way to its measured optimum.
-// Decision 4: let a reputation above one grow every customer pool.
+// Decision 4 is withdrawn: reputation above one stays a buffer rather than growing any pool.
 const PROPOSAL = {
-  hours: { quiet_office: { designHours: 14, assemblyHours: 20 }, premium: { designHours: 32, assemblyHours: 45 } },
-  prices: { office: 2202, gaming: 4743, quiet_office: 5391, premium: 11724 },
-  mixedPlanFactor: 1.3,
-  mixedInvestments: [{ month: 3, id: 'craft_tools' }, { month: 5, id: 'bench' }],
-  mixedHires: [5],
-  reputationGrowsPool: 'all',
+  hours: DECISIONS.hours,
+  prices: DECISIONS.prices,
+  demandCaps: DECISIONS.demandCaps,
+  mixedPlanFactor: DECISIONS.mixedPlanFactor,
+  mixedInvestments: DECISIONS.mixedInvestments,
+  mixedHires: DECISIONS.mixedHires,
+  reputationGrowsPool: 'none',
 };
 
 function proposal() {
   const products = JSON.parse(JSON.stringify(config.products));
   for (const [id, v] of Object.entries(PROPOSAL.hours)) Object.assign(products[id], v);
   for (const [id, v] of Object.entries(PROPOSAL.prices)) products[id].salePrice = v;
+  const demandCaps = JSON.parse(JSON.stringify(config.companyDemandCaps));
+  for (const [id, caps] of Object.entries(PROPOSAL.demandCaps)) demandCaps[id] = caps;
   const routes = JSON.parse(JSON.stringify(config.routes));
   routes.mixed.monthlyProductionTargets = routes.mixed.monthlyProductionTargets.map(
     t => Object.fromEntries(Object.entries(t).map(([k, v]) => [k, Math.round(v * PROPOSAL.mixedPlanFactor)])));
   routes.mixed.investments = PROPOSAL.mixedInvestments;
   routes.mixed.hires = PROPOSAL.mixedHires;
-  return { products, routes };
+  return { products, routes, demandCaps };
 }
 
 function run() {
-  const { products, routes } = proposal();
+  const { products, routes, demandCaps } = proposal();
   const go = (route, scenario, difficulty) => simulate(route, scenario, difficulty,
-    { products, ...(route === 'mixed' ? { monthlyProductionTargets: routes.mixed.monthlyProductionTargets,
+    { products, demandCaps, ...(route === 'mixed' ? { monthlyProductionTargets: routes.mixed.monthlyProductionTargets,
       investments: routes.mixed.investments, hires: routes.mixed.hires } : {}),
       reputationGrowsPool: PROPOSAL.reputationGrowsPool });
 
