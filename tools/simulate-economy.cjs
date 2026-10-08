@@ -142,6 +142,9 @@ function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
   // Parts bought on account are owed, not paid. They settle at the month end when the term expires.
   let payables = [];
   const developed = new Set(), stock = Object.fromEntries(Object.keys(products).map(id => [id, []]));
+  // Decision H: reputation may bring orders forward but not add to the period's total. The ceiling is
+  // the sum of the monthly caps, so a good reputation fills the same order book sooner.
+  const growthBudget = Object.fromEntries(Object.keys(products).map(id => [id, 0]));
   const months = [];
 
   for (let index = 0; index < 6 && !bankrupt; index++) {
