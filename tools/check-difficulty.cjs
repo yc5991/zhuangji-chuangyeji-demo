@@ -8,6 +8,7 @@ const read = name => JSON.parse(fs.readFileSync(path.join(root, 'design', name),
 const config = read('economy-candidate.json');
 const results = read('economy-review-results.json').results;
 const ORDER = ['easy', 'normal', 'hard'];
+const { simulate } = require('./simulate-economy.cjs');
 
 const cell = (difficulty, route, scenario) =>
   results.find(x => x.difficulty === difficulty && x.route === route && x.scenario === scenario);
@@ -72,6 +73,30 @@ function run() {
   assert(bankruptcies.easy <= bankruptcies.normal, `easy goes bankrupt ${bankruptcies.easy} times against normal's ${bankruptcies.normal}`);
   assert(bankruptcies.normal <= bankruptcies.hard, `normal goes bankrupt ${bankruptcies.normal} times against hard's ${bankruptcies.hard}`);
 
+  // The confirmed rule is that mixed earns the most of the three routes. Reputation above one
+  // may or may not grow the reachable pool, and that setting can break the rule, so every
+  // setting has to be measured rather than assumed.
+  const growsSettings = ["none", "bespoke", "all"];
+  const routeRule = {};
+  for (const grows of growsSettings) {
+    const profits = {};
+    for (const route of ["boutique", "scale", "mixed"])
+      profits[route] = simulate(route, "baseline", "normal", { reputationGrowsPool: grows }).operatingProfit;
+    routeRule[grows] = {
+      boutique: Math.round(profits.boutique),
+      scale: Math.round(profits.scale),
+      mixed: Math.round(profits.mixed),
+      boutiqueBelowScale: profits.boutique < profits.scale,
+      mixedHighest: profits.mixed > profits.boutique && profits.mixed > profits.scale,
+      mixedBelowSum: profits.mixed < profits.boutique + profits.scale,
+    };
+  }
+  const shipped = config.opening.normal.reputationGrowsPool || "none";
+  const active = routeRule[shipped];
+  assert(active.boutiqueBelowScale && active.mixedHighest && active.mixedBelowSum,
+    "the shipped reputation setting " + shipped + " breaks a confirmed route rule: " + JSON.stringify(active));
+  const breaking = growsSettings.filter(g => !routeRule[g].mixedHighest);
+  
   const output = {
     status: 'passed',
     order: ORDER,
@@ -80,6 +105,8 @@ function run() {
     lossToleranceMonths: tolerance,
     bankruptcyCounts: bankruptcies,
     gatedRoutes: Object.fromEntries(ORDER.map(d => [d, config.opening[d].startingRoutes])),
+    routeRuleByReputationSetting: routeRule,
+    reputationSettingsBreakingMixedHighest: breaking,
   };
   fs.mkdirSync(path.join(root, '.local'), { recursive: true });
   fs.writeFileSync(path.join(root, '.local', 'difficulty-verification.json'), JSON.stringify(output, null, 2) + '\n');
