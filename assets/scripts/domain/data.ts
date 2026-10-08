@@ -9,7 +9,7 @@ export const DATA: GameData = {
       "balance.json": "5d63b4aa2ffcc512c57a9116d61ec96788575f080bfe2b8a9e963fe67a71360a",
       "economy-candidate.json": "ac8ce0120743a62e542f98a25ea198312ba7bd08c56171ddc19b0c19c6ee9a32",
       "supplier-system.json": "c10b7edb3ac69d1f829e35245a63d30d23e058bfd7ce635acd1d4bf531138170",
-      "customer-model.json": "2a18fb702e9364faeea568ca17a7f8bd88d2d61c4b992202e7171725b537ef1c",
+      "customer-model.json": "1c995b607f12628b6b97885eeb7af1ae6487985a6eaecede3f3032c47f8d839c",
       "workbench.json": "037082244a64a98e1cb0efe5ff799f9312b823bc4984224f93df202d45b7050c",
       "market-events.json": "6f0d3a2ba55c983eba8eaa3b79bf33e281815e04e5088b4a316067ccd5bce5b5",
       "demo-schedule.json": "c29b97ac7eaa877e12cc95fe2e53dfe1d501b4469e0d7c20fb1fb0027871706c",
@@ -1924,15 +1924,20 @@ export const DATA: GameData = {
       }
     ],
     "reputation": {
+      "scale": [
+        1,
+        5
+      ],
       "initial": 1,
-      "floor": 0.5,
-      "ceiling": 1.3,
-      "onTimeMeetingRequirements": 0.04,
-      "lateMeetingRequirements": -0.02,
-      "deliveredMissingRequirement": -0.15,
-      "note": "口碑系数 R 乘进月成交量；首轮计算固定为 1，接入订单流程后再启用",
-      "growthFloor": 1.1,
-      "growthFloorNote": "口碑高于这个值才放大客群；低于 1 时照常缩减。中间这一段只是缓冲"
+      "floor": 1,
+      "ceiling": 5,
+      "neutral": 3,
+      "effectPerPoint": 0.15,
+      "onTimeMeetingRequirements": 0.6,
+      "lateMeetingRequirements": -0.3,
+      "deliveredMissingRequirement": -1.2,
+      "growthFloor": 3,
+      "note": "口碑按 1—5 分记。初始 1 分，因为一台都没卖过。3 分是中性：低于 3 分压低月成交量，高于 3 分放大客群，1 分与 5 分对应的倍数分别是 0.7 与 1.3"
     },
     "priceAcceptance": {
       "formula": "ratio = price / reference; below reference: clamp(1 + belowSlope*(1-ratio), 1, ceiling); above reference: clamp(1 - aboveSlope*(ratio-1), floor, 1)",
