@@ -75,6 +75,18 @@ function run() {
   }
   assert.equal(idle.length, 0, `${idle.length} checkers read no design file: ${idle.join(', ')}`);
 
+  // A tool that no script runs and no other tool requires is either dead or unwired. Both are
+  // worth knowing about: preview.cjs served the web build but had no script to launch it.
+  const scriptText = Object.values(JSON.parse(fs.readFileSync(path.join(root, 'package.json'), 'utf8')).scripts).join(' ');
+  const required = new Set();
+  for (const tool of toolNames) {
+    const src = sources[tool];
+    for (const m of src.matchAll(/require\(['"]\.\/([^'"]+\.cjs)['"]\)/g)) required.add(m[1]);
+  }
+  const orphans = toolNames.filter(t => !scriptText.includes(t) && !required.has(t));
+  assert.equal(orphans.length, 0,
+    `${orphans.length} tools are unreachable from every script and every other tool: ${orphans.join(', ')}`);
+
   const output = {
     status: mine.length ? 'failed' : 'passed',
     designFiles: designFiles.length,
