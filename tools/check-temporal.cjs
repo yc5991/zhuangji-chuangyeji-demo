@@ -81,6 +81,40 @@ function run() {
     if (!availableAtStart) findings.at(-1).note = `${latestPart} arrives ${latest}, after the Demo opens`;
   }
 
+  // A part must not be purchasable before the release window its own evidence records.
+  // reference.specs.releaseWindow is verified manufacturer data; availability.gameDate is a game
+  // assumption, and the assumption must not contradict the evidence.
+  const windowStart = w => {
+    if (!w) return null;
+    const q = String(w).match(/^(\d{4})-Q([1-4])$/);
+    if (q) return Number(q[1]) * 100 + (Number(q[2]) - 1) * 3 + 1;
+    const m = String(w).match(/^(\d{4})-(\d{2})$/);
+    if (m) return Number(m[1]) * 100 + Number(m[2]);
+    // A bare year is the coarsest form the evidence uses; treat it as the start of that year.
+    const y = String(w).match(/^(\d{4})$/);
+    if (y) return Number(y[1]) * 100 + 1;
+    return null;
+  };
+  let checkedWindows = 0;
+  for (const part of components.parts) {
+    const window = part.reference?.specs?.releaseWindow;
+    const gameDate = part.availability?.gameDate;
+    if (!window || !gameDate) continue;
+    const start = windowStart(window);
+    assert(start !== null, `${part.id}: release window ${window} is not a month or a quarter`);
+    const gameMonth = Number(gameDate.slice(0, 4)) * 100 + Number(gameDate.slice(5, 7));
+    assert(gameMonth >= start,
+      `${part.id}: the game offers it from ${gameDate}, before the ${window} release window the evidence records`);
+    checkedWindows++;
+  }
+  assert(checkedWindows > 0, 'no part carries both a release window and a game date, so nothing was checked');
+  // Coverage is honest, not implied: only the parts whose own evidence records a window can be checked.
+  const windowsCoverage = {
+    checked: checkedWindows,
+    parts: components.parts.length,
+    note: '其余配件的参考规格里没有上市窗口，只能靠 demo_opening_assumption 或 graphics_platform_release 标注，无法与证据对照',
+  };
+
   // The catalog must begin with the Demo and its events must carry a month.
   const months = catalog.map(e => e.month).sort();
   assert.equal(months[0], DEMO_FIRST, `the catalog starts at ${months[0]}, the Demo starts at ${DEMO_FIRST}`);
@@ -93,6 +127,7 @@ function run() {
     workbenchEvents: workbench.eventDates.map(e => ({ date: e.date, basis: e.dateBasis })),
     catalogWindow: `${months[0]} to ${months.at(-1)}`,
     catalogEvents: catalog.length,
+    releaseWindowCoverage: windowsCoverage,
     recipes: findings,
     gaps: [{
       subject: '2021-2030 的硬件目录',
