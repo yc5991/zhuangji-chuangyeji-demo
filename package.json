@@ -18,6 +18,7 @@
     "check:era": "node tools/check-era.cjs",
     "check:fullgame": "node tools/simulate-fullgame.cjs",
     "check:schedule": "node tools/check-schedule.cjs",
+    "check:difficulty": "node tools/check-difficulty.cjs",
     "analyze:sensitivity": "node tools/analyze-sensitivity.cjs",
     "check:env": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/check-environment.ps1",
     "editor": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/open-creator.ps1",
