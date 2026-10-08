@@ -8,6 +8,7 @@ const read = name => JSON.parse(fs.readFileSync(path.join(root, 'design', name),
 const routing = read('cable-routing.json');
 const geometry = read('workbench-geometry.json');
 const workbench = read('workbench.json');
+const components = read('components.json');
 
 const dist = (a, b) => Math.hypot(a[0] - b[0], a[1] - b[1]);
 
@@ -52,6 +53,18 @@ function run() {
 
   const perCase = [];
   for (const theCase of geometry.cases) {
+    // The case footprint is recorded twice: components.json holds width, height and depth, and the
+    // workbench geometry holds the same case as width and height meaning depth and height. Nothing
+    // compared them, so resizing a case in one place would leave the other lying.
+    const part = components.parts.find(p => p.id === theCase.caseId);
+    assert(part, `${theCase.caseId}: the geometry names a case that is not in the catalogue`);
+    const dims = part.game.dimensionsMm;
+    assert(dims && Number.isFinite(dims.depth) && Number.isFinite(dims.height),
+      `${theCase.caseId}: the catalogue entry carries no depth or height`);
+    assert.equal(theCase.width, dims.depth,
+      `${theCase.caseId}: the workbench is ${theCase.width}mm across but the catalogue case is ${dims.depth}mm deep`);
+    assert.equal(theCase.height, dims.height,
+      `${theCase.caseId}: the workbench is ${theCase.height}mm tall but the catalogue case is ${dims.height}mm tall`);
     const anchorIds = theCase.anchors.map(a => a.id);
     const rows = [];
     const load = {};
