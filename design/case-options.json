@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "status": "candidate",
+  "provenance": {
+    "existing": "docs/design-confirmation-brief.md requires specific options and costs for case panels, side panels, storage bays, fan positions, colours and lighting, and requires appearance and customer preference to be explainable. docs/spec.md confirms appearance craft and performance tuning are both core content, and AGENTS.md keeps colour and panel customisation outside the fixed 32-item catalog. The cooling and noise hooks already exist in design/balance.json fanProfiles and thermal.",
+    "new": "The options, their costs and their cooling, noise and appearance effects are original game balance.",
+    "limits": "A cost and effect model for case customisation. Which panel or colour is drawn, and how it looks, belong to the art and workbench workstreams."
+  },
+  "rules": {
+    "everyOptionCosts": "Anything above the default choice costs money, so appearance is never free",
+    "tradeOffsAreReal": "A panel that cools better must be louder or plainer, so no single option is best on every dimension",
+    "appearanceIsExplainable": "The appearance score is the sum of the chosen options plus the finish level, so the player can see exactly where the points came from",
+    "outsideCatalog": "These are customisation options, not catalog entries; the fixed 32-item purchase list is unchanged"
+  },
+  "groups": [
+    {
+      "id": "front_panel",
+      "zh": "面板",
+      "order": 1,
+      "options": [
+        {
+          "id": "solid",
+          "zh": "封闭面板",
+          "cost": 0,
+          "coolingMultiplier": 1,
+          "noiseMultiplier": 1,
+          "appearancePoints": 0,
+          "note": "默认；外观朴素但也不吵"
+        },
+        {
+          "id": "mesh",
+          "zh": "网孔面板",
+          "cost": 60,
+          "coolingMultiplier": 1.15,
+          "noiseMultiplier": 1.1,
+          "appearancePoints": 5,
+          "note": "散热更好但更吵；游戏机常选"
+        },
+        {
+          "id": "damped",
+          "zh": "静音面板",
+          "cost": 120,
+          "coolingMultiplier": 0.9,
+          "noiseMultiplier": 0.75,
+          "appearancePoints": 10,
+          "note": "最安静但散热最差；静音高定的首选"
+        }
+      ]
+    },
+    {
+      "id": "side_panel",
+      "zh": "侧板",
+      "order": 2,
+      "options": [
+        {
+          "id": "steel",
+          "zh": "钢板侧板",
+          "cost": 0,
+          "coolingMultiplier": 1,
+          "noiseMultiplier": 1,
+          "appearancePoints": 0,
+          "note": "默认；隔音略好"
+        },
+        {
+          "id": "acrylic",
+          "zh": "亚克力侧板",
+          "cost": 40,
+          "coolingMultiplier": 1,
+          "noiseMultiplier": 1.02,
+          "appearancePoints": 8,
+          "note": "便宜的通透做法，质感一般"
+        },
+        {
+          "id": "glass",
+          "zh": "钢化玻璃侧板",
+          "cost": 90,
+          "coolingMultiplier": 1,
+          "noiseMultiplier": 1.05,
+          "appearancePoints": 15,
+          "note": "外观分最高，但更吵一点"
+        }
+      ]
+    },
+    {
+      "id": "colour",
+      "zh": "颜色",
+      "order": 3,
+      "options": [
+        {
+          "id": "black",
+          "zh": "标准黑",
+          "cost": 0,
+          "coolingMultiplier": 1,
+          "noiseMultiplier": 1,
+          "appearancePoints": 0,
+          "note": "默认"
+        },
+        {
+          "id": "white",
+          "zh": "白色",
+          "cost": 30,
+          "coolingMultiplier": 1,
+          "noiseMultiplier": 1,
+          "appearancePoints": 5,
+          "note": "办公高定常见"
+        },
+        {
+          "id": "custom",
+          "zh": "定制配色",
+          "cost": 150,
+          "coolingMultiplier": 1,
+          "noiseMultiplier": 1,
+          "appearancePoints": 18,
+          "note": "要单独调漆，只有高定值回票价"
+        }
+      ]
+    },
+    {
+      "id": "lighting",
+      "zh": "灯效",
+      "order": 4,
+      "options": [
+        {
+          "id": "none",
+          "zh": "无灯效",
+          "cost": 0,
+          "coolingMultiplier": 1,
+          "noiseMultiplier": 1,
+          "appearancePoints": 0,
+          "note": "默认；静音与办公场景不加分也不减分"
+        },
+        {
+          "id": "single",
+          "zh": "单色灯",
+          "cost": 40,
+          "coolingMultiplier": 1,
+          "noiseMultiplier": 1,
+          "appearancePoints": 8,
+          "note": "低调点缀"
+        },
+        {
+          "id": "argb",
+          "zh": "可编程灯效",
+          "cost": 120,
+          "coolingMultiplier": 1,
+          "noiseMultiplier": 1,
+          "appearancePoints": 20,
+          "note": "游戏客户喜欢，办公客户不在意"
+        }
+      ]
+    },
+    {
+      "id": "storage_bays",
+      "zh": "储存托架",
+      "order": 5,
+      "options": [
+        {
+          "id": "two_35",
+          "zh": "2 个 3.5 寸位",
+          "cost": 0,
+          "coolingMultiplier": 1,
+          "noiseMultiplier": 1,
+          "appearancePoints": 0,
+          "note": "默认"
+        },
+        {
+          "id": "three_35_two_25",
+          "zh": "3 个 3.5 寸位 + 2 个 2.5 寸位",
+          "cost": 50,
+          "coolingMultiplier": 0.97,
+          "noiseMultiplier": 1,
+          "appearancePoints": 6,
+          "note": "能装下更多硬盘，是高储量客户的前置条件；内部走线更整齐，外观加 6 分，但挡住一部分风道（散热 ×0.97）"
+        }
+      ]
+    },
+    {
+      "id": "fan_positions",
+      "zh": "风扇位",
+      "order": 6,
+      "options": [
+        {
+          "id": "front2_rear1",
+          "zh": "前 2 后 1",
+          "cost": 0,
+          "coolingMultiplier": 1,
+          "noiseMultiplier": 1,
+          "appearancePoints": 0,
+          "note": "默认"
+        },
+        {
+          "id": "front3_rear1_top2",
+          "zh": "前 3 后 1 顶 2",
+          "cost": 80,
+          "coolingMultiplier": 1.12,
+          "noiseMultiplier": 1.08,
+          "appearancePoints": 0,
+          "note": "风道更强也更吵，外观不加分"
+        }
+      ]
+    }
+  ]
+}

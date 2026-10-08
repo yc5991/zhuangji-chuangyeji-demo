@@ -57,6 +57,16 @@
       "note": "spec §6.2 要求的用途、性能、温度、噪声、外观、成本全部有分"
     },
     {
+      "id": "case_options",
+      "zh": "机箱定制选项",
+      "state": "complete",
+      "files": [
+        "design/case-options.json"
+      ],
+      "checker": "check:case-options",
+      "note": "brief 第 43 行要求的面板、侧板、储存托架、风扇位置、颜色、灯效六组共 16 个选项，含成本与散热噪声外观取舍；外观分可逐项验算"
+    },
+    {
       "id": "design_flow",
       "zh": "固定设计流程七步",
       "state": "complete",
