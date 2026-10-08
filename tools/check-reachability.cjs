@@ -60,12 +60,28 @@ function run() {
     assert(built > 0, `hard/${route}: the whole run builds nothing`);
   }
 
+  // A run must survive its own first month in every scenario, not only the baseline. A price
+  // or cost change can otherwise make a starting month impossible under a stress scenario.
+  const scenarios = Object.keys(read("economy-candidate.json").scenarios);
+  const fragile = [];
+  for (const difficulty of difficulties) {
+    for (const route of routes) {
+      for (const scenario of scenarios) {
+        const run = simulate(route, scenario, difficulty);
+        if (run.gatedAtStart) continue;
+        if (run.bankruptMonth === 1) fragile.push(difficulty + "/" + route + "/" + scenario);
+      }
+    }
+  }
+  assert.equal(fragile.length, 0,
+    fragile.length + " combinations go bankrupt in their first month: " + fragile.join(", "));
   const output = {
     status: 'passed',
     difficultyRoutes: starts.length,
     starts,
     scheduledCosts: costs,
     unreachableCosts: findings,
+    scenariosTested: scenarios,
     notes: [
       '委托（高定）是一次性制作，不承担开发费；只有定型机需要开发',
       '困难档开局只走精品，量产与混合被标记为开局锁定，不参与本节检查',
