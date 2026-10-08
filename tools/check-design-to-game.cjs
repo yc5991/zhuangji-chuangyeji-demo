@@ -14,6 +14,8 @@ const read = name => JSON.parse(fs.readFileSync(path.join(root, 'design', name),
 const GAME_MUST_IMPLEMENT = {
   'reliability-model.json': { carried: false, markers: ['failureRate', 'escapeRate', 'arrivalDefect'],
     note: 'faults, quality control and arrival defects' },
+  'evaluation.json': { carried: false, markers: ['evaluateDimensions', 'stableFloor', 'headroomReference'],
+    note: 'the six scored dimensions the specification promises the player' },
 };
 
 // Full-game files the demo deliberately does not need.
@@ -23,6 +25,7 @@ const DEMO_DOES_NOT_NEED = new Set(['staff.json', 'era-trends.json', 'company-pr
 // them keeps the check useful: a new divergence fails, while these stay visible rather than silent.
 const KNOWN_GAPS = {
   'reliability-model.json': 'the game has no faults, quality control or arrival defects; awaiting decision I1',
+  'evaluation.json': 'the game shows raw values rather than the six scored dimensions; awaiting decision K',
 };
 
 function sourceFiles() {
