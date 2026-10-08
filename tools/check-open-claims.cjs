@@ -19,6 +19,28 @@ const RESOLVERS = {
   art_detail: null,                   // art workstream
 };
 
+// The schedule records gaps too. Each is resolved by inspecting the economy data it describes.
+function scheduleGaps() {
+  const schedule = read('demo-schedule.json');
+  const economy = read('economy-candidate.json');
+  const hasMonthFiveOrSix = route => (economy.routes[route].investments || [])
+    .some(i => i.month >= 5 && i.month <= 6);
+  return (schedule.openGaps || []).map(g => {
+    // This gap says the boutique and mixed routes have no month five or six investment. It cannot
+    // be resolved by data: decision six resolves it by narrowing the schedule's promise to the mass
+    // and mixed routes, because the boutique route has nothing worth buying. So the only mechanical
+    // test is whether both routes did get one, which would make the gap's wording wrong the other way.
+    if (/精品与混合路线在第 5—6 月没有投资机会/.test(g.subject)) {
+      return {
+        claim: 'demo-schedule.json openGaps: ' + g.subject,
+        done: hasMonthFiveOrSix('boutique') && hasMonthFiveOrSix('mixed'),
+        evidence: 'both routes gained a month five or six investment, so the gap wording needs revisiting',
+      };
+    }
+    return { claim: 'demo-schedule.json openGaps: ' + g.subject, done: null, evidence: 'no mechanical resolver' };
+  });
+}
+
 function resolve(file, dotted) {
   let node = read(file);
   for (const key of dotted.split('.')) {
@@ -47,6 +69,12 @@ function run() {
     if (done) stale.push(item + ' — done, see ' + target[0] + ' ' + target[1]);
     else stillOpen.push(item);
   }
+  // The schedule's own gap list, resolved against the economy data it describes.
+  const scheduleClaims = scheduleGaps();
+  for (const c of scheduleClaims) {
+    if (c.done === true) stale.push(c.claim + ' — done, see ' + c.evidence);
+    else if (c.done === false) stillOpen.push(c.claim);
+  }
   assert.equal(stale.length, 0,
     stale.length + ' items are listed as pending but the data shows they are done: ' + stale.join('; '));
 
@@ -55,6 +83,7 @@ function run() {
     pendingItemsDeclared: items.length,
     itemsStillOpen: stillOpen.length,
     itemsWithoutResolver: Object.values(RESOLVERS).filter(v => v === null).length,
+    scheduleGapsChecked: scheduleClaims.length,
     stillOpen,
     note: 'a pending list is unverifiable prose unless each entry names what would resolve it',
   };
