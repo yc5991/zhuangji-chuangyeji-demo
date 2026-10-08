@@ -31,8 +31,7 @@ const WHOLE_FILES = {
   'design-flow.json': 'step mapping, guarded by check-flow',
   'evaluation.json': 'dimension definitions, guarded by check-seams and check-evaluation',
   'art-runtime.json': 'owned by the art workstream',
-  'ui-system.json': 'owned by the interface workstream; its tokens describe layout rather than a
-    numerical mechanic',
+  'ui-system.json': 'owned by the interface workstream; its tokens describe layout rather than a numerical mechanic',
   'recorded-facts.json': 'measured design facts the checks assert against, not rules to implement',
   'catalog-2016-2020/cpu-motherboard.json': 'research record of what was verified, guarded by check-suppliers',
   'catalog-2016-2020/gpu.json': 'research record, guarded by check-suppliers',
