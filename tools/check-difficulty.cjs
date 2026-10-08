@@ -109,11 +109,32 @@ function run() {
     "the shipped reputation setting " + shipped + " breaks a confirmed route rule: " + JSON.stringify(active));
   const breaking = growsSettings.filter(g => !routeRule[g].mixedHighest);
   
+  // The routes are not required to rank in any particular order; what matters is that they stay
+  // comparable, so a choice is a preference rather than a trap. Measured on the shipped data the
+  // widest spread across the whole timeline is under two fifths of the best route.
+  const ROUTE_SPREAD_LIMIT = 0.45;
+  const spreads = [];
+  for (const difficulty of ORDER) {
+    // Hard mode's non-boutique routes are meant to fail, so they are not part of the comparison.
+    const comparable = difficulty === 'hard' ? ['boutique'] : routes;
+    const vals = comparable.map(route => cell(difficulty, route, 'baseline'))
+      .filter(x => x && !x.gatedAtStart)
+      .map(x => x.operatingProfit);
+    if (vals.length < 2) continue;
+    const best = Math.max(...vals), worst = Math.min(...vals);
+    if (best <= 0) continue;
+    spreads.push({ difficulty, best: Math.round(best), worst: Math.round(worst), share: (best - worst) / best });
+  }
+  const tooWide = spreads.filter(s => s.share > ROUTE_SPREAD_LIMIT);
+  assert.equal(tooWide.length, 0,
+    tooWide.map(s => `${s.difficulty}: the routes differ by ${(s.share * 100).toFixed(0)} percent, over the ${(ROUTE_SPREAD_LIMIT * 100)} percent limit`).join('; '));
   const output = {
     status: 'passed',
     order: ORDER,
     comparisons: comparisons.length,
     inversions: inversions.length,
+    routeSpread: spreads.map(s => ({ difficulty: s.difficulty, share: Number(s.share.toFixed(3)) })),
+    routeSpreadLimit: ROUTE_SPREAD_LIMIT,
     lossToleranceMonths: tolerance,
     bankruptcyCounts: bankruptcies,
     bankruptcyCountsAllRoutes: allBankruptcies,
