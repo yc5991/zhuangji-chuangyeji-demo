@@ -142,6 +142,16 @@ function main() {
     } catch { failed.push(name); }
   }
   console.log('  ' + (CHECKS.length - failed.length) + ' of ' + CHECKS.length + ' passed');
+  // The domain tests exercise the game's TypeScript logic against the same data. They are separate
+  // from the design checks and were not part of this script, so a landed change could have broken
+  // them silently.
+  console.log('\nrunning the domain test suite');
+  try {
+    const out = execFileSync('npm', ['test'], { cwd: root, stdio: 'pipe', shell: true, encoding: 'utf8' });
+    const m = out.match(/ℹ pass (\d+)[\s\S]*?ℹ fail (\d+)/);
+    console.log('  ' + (m ? m[1] + ' passed, ' + m[2] + ' failed' : 'ran'));
+    if (m && m[2] !== '0') failed.push('test');
+  } catch { failed.push('test'); console.log('  the test suite failed'); }
   if (failed.length) {
     console.log('  FAILED: ' + failed.join(', '));
     console.log('\nThe checks did not all pass, so the baseline was NOT updated.');
