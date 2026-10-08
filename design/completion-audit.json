@@ -178,6 +178,26 @@
       "note": "54 组运行、3 档亏损月数、4 项投资边际、4 个故障率、15 年利润全部冻结"
     },
     {
+      "id": "reference_integrity",
+      "zh": "跨文件引用完整性",
+      "state": "complete",
+      "files": [
+        "design/export-manifest.json"
+      ],
+      "checker": "check:references",
+      "note": "15 条规则、173 处跨文件 id 引用；分项校验查规则，这一层查接线"
+    },
+    {
+      "id": "export_coverage",
+      "zh": "导出覆盖分类",
+      "state": "complete",
+      "files": [
+        "design/export-manifest.json"
+      ],
+      "checker": "check:export-coverage",
+      "note": "design 下每个 json 都显式分类；未分类即失败，新文件不会被悄悄漏出导出"
+    },
+    {
       "id": "route_rules",
       "zh": "路线收益规则三选二",
       "state": "pending_decision",

@@ -28,6 +28,7 @@
     "check:case-options": "node tools/check-case-options.cjs",
     "check:cable-routing": "node tools/check-cable-routing.cjs",
     "check:export-coverage": "node tools/check-export-coverage.cjs",
+    "check:references": "node tools/check-references.cjs",
     "baseline:diff": "node tools/balance-baseline.cjs diff",
     "baseline:update": "node tools/balance-baseline.cjs update",
     "analyze:sensitivity": "node tools/analyze-sensitivity.cjs",
