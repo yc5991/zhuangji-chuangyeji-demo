@@ -352,20 +352,20 @@
       "reputation": 1.24,
       "totalDeposits": 0,
       "totalPayablesPaid": 72910.35,
-      "payablesOutstanding": 44489.25,
+      "payablesOutstanding": 44457,
       "totalReworkCost": 2535.28,
       "bankrupt": false,
       "bankruptMonth": null,
       "totalSales": 95,
       "totalRevenue": 259749,
-      "totalCostOfGoodsSold": 205956.33,
+      "totalCostOfGoodsSold": 203196.33,
       "totalFixedCost": 13100,
       "totalDevelopmentCost": 300,
       "totalInvestment": 6000,
-      "operatingProfit": 37857.39,
-      "endCash": 91277.79,
-      "inventoryCost": 30068.85,
-      "cashAndInventoryGain": 76346.64,
+      "operatingProfit": 40617.39,
+      "endCash": 94725.54,
+      "inventoryCost": 29348.85,
+      "cashAndInventoryGain": 79074.39,
       "months": [
         {
           "month": 1,
@@ -566,7 +566,7 @@
         {
           "month": 5,
           "startCash": 91229.2,
-          "endCash": 83147.24,
+          "endCash": 85574.99,
           "sold": {
             "office": 16,
             "gaming": 6
@@ -576,13 +576,13 @@
             "gaming": 8
           },
           "revenue": 61236,
-          "costOfGoodsSold": 48605.52,
-          "procurement": 59314.86,
+          "costOfGoodsSold": 47405.52,
+          "procurement": 57754.86,
           "fixedCost": 2250,
           "developmentCost": 0,
           "depositsTaken": 0,
           "payablesPaid": 23891.34,
-          "payablesOutstanding": 34602.75,
+          "payablesOutstanding": 35470.5,
           "reworkCost": 634.76,
           "orders": {
             "office": 16,
@@ -594,8 +594,8 @@
           "orderedTotal": 31,
           "reputationBefore": 1.16,
           "reputationAfter": 1.2,
-          "operatingProfit": 9745.72,
-          "inventoryCost": 16064.01,
+          "operatingProfit": 10945.72,
+          "inventoryCost": 15704.01,
           "inventoryUnits": 6,
           "capacityUsed": {
             "labor": 151.32,
@@ -614,8 +614,8 @@
         },
         {
           "month": 6,
-          "startCash": 83147.24,
-          "endCash": 91277.79,
+          "startCash": 85574.99,
+          "endCash": 94725.54,
           "sold": {
             "office": 18,
             "gaming": 8
@@ -625,13 +625,13 @@
             "gaming": 10
           },
           "revenue": 74598,
-          "costOfGoodsSold": 59314.86,
-          "procurement": 73319.7,
+          "costOfGoodsSold": 57754.86,
+          "procurement": 71399.7,
           "fixedCost": 2250,
           "developmentCost": 0,
           "depositsTaken": 0,
           "payablesPaid": 14829.75,
-          "payablesOutstanding": 44489.25,
+          "payablesOutstanding": 44457,
           "reworkCost": 784.26,
           "orders": {
             "office": 18,
@@ -643,8 +643,8 @@
           "orderedTotal": 36,
           "reputationBefore": 1.2,
           "reputationAfter": 1.24,
-          "operatingProfit": 12248.88,
-          "inventoryCost": 30068.85,
+          "operatingProfit": 13808.88,
+          "inventoryCost": 29348.85,
           "inventoryUnits": 12,
           "capacityUsed": {
             "labor": 186.64,
@@ -672,23 +672,23 @@
       "paymentTermMonths": 1,
       "creditLimitCoins": 60000,
       "gatedAtStart": false,
-      "reputation": 1.24,
-      "totalDeposits": 42500,
+      "reputation": 1.05,
+      "totalDeposits": 36975,
       "totalPayablesPaid": 115703.84,
       "payablesOutstanding": 29034.88,
-      "totalReworkCost": 1896.05,
+      "totalReworkCost": 1828.09,
       "bankrupt": false,
       "bankruptMonth": null,
-      "totalSales": 69,
-      "totalRevenue": 247222,
-      "totalCostOfGoodsSold": 182143.98,
-      "totalFixedCost": 18500,
+      "totalSales": 68,
+      "totalRevenue": 236172,
+      "totalCostOfGoodsSold": 175729.52,
+      "totalFixedCost": 12900,
       "totalDevelopmentCost": 300,
-      "totalInvestment": 1800,
-      "operatingProfit": 44381.97,
-      "endCash": 116616.85,
+      "totalInvestment": 1200,
+      "operatingProfit": 45414.39,
+      "endCash": 118249.27,
       "inventoryCost": 0,
-      "cashAndInventoryGain": 71616.85,
+      "cashAndInventoryGain": 73249.27,
       "months": [
         {
           "month": 1,
@@ -793,7 +793,7 @@
         {
           "month": 3,
           "startCash": 67089.84,
-          "endCash": 80249.32,
+          "endCash": 82249.32,
           "sold": {
             "office": 6,
             "gaming": 2,
@@ -809,7 +809,7 @@
           "revenue": 37972,
           "costOfGoodsSold": 27205,
           "procurement": 27205,
-          "fixedCost": 3550,
+          "fixedCost": 2150,
           "developmentCost": 0,
           "depositsTaken": 8075,
           "payablesPaid": 19177.91,
@@ -825,7 +825,7 @@
           "orderedTotal": 19,
           "reputationBefore": 1.08,
           "reputationAfter": 1.12,
-          "operatingProfit": 6932.39,
+          "operatingProfit": 8332.39,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
@@ -835,18 +835,18 @@
             "test": 28.6
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 320,
             "test": 160
           },
           "notices": [],
-          "investmentPaid": 1800
+          "investmentPaid": 1200
         },
         {
           "month": 4,
-          "startCash": 80249.32,
-          "endCash": 92461.47,
+          "startCash": 82249.32,
+          "endCash": 95861.47,
           "sold": {
             "office": 7,
             "gaming": 3,
@@ -862,7 +862,7 @@
           "revenue": 49753,
           "costOfGoodsSold": 35429.53,
           "procurement": 35429.53,
-          "fixedCost": 3550,
+          "fixedCost": 2150,
           "developmentCost": 0,
           "depositsTaken": 10625,
           "payablesPaid": 27205,
@@ -878,7 +878,7 @@
           "orderedTotal": 25,
           "reputationBefore": 1.12,
           "reputationAfter": 1.16,
-          "operatingProfit": 10402.08,
+          "operatingProfit": 11802.08,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
@@ -888,7 +888,7 @@
             "test": 37.78
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 320,
             "test": 160
@@ -898,8 +898,8 @@
         },
         {
           "month": 5,
-          "startCash": 92461.47,
-          "endCash": 104310.1,
+          "startCash": 95861.47,
+          "endCash": 109110.1,
           "sold": {
             "office": 8,
             "gaming": 4,
@@ -915,7 +915,7 @@
           "revenue": 56434,
           "costOfGoodsSold": 41065.02,
           "procurement": 41065.02,
-          "fixedCost": 3550,
+          "fixedCost": 2150,
           "developmentCost": 0,
           "depositsTaken": 10625,
           "payablesPaid": 29015.07,
@@ -931,7 +931,7 @@
           "orderedTotal": 31,
           "reputationBefore": 1.16,
           "reputationAfter": 1.2,
-          "operatingProfit": 11391.22,
+          "operatingProfit": 12791.22,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
@@ -941,7 +941,7 @@
             "test": 42.9
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 320,
             "test": 160
@@ -951,55 +951,55 @@
         },
         {
           "month": 6,
-          "startCash": 104310.1,
-          "endCash": 116616.85,
+          "startCash": 109110.1,
+          "endCash": 118249.27,
           "sold": {
             "office": 10,
             "gaming": 5,
-            "quiet_office": 2,
-            "premium": 1
+            "quiet_office": 2
           },
           "built": {
             "office": 10,
             "gaming": 5,
-            "quiet_office": 2,
-            "premium": 1
+            "quiet_office": 2
           },
-          "revenue": 65230,
-          "costOfGoodsSold": 48433.14,
-          "procurement": 48433.14,
-          "fixedCost": 3550,
+          "revenue": 54180,
+          "costOfGoodsSold": 42018.68,
+          "procurement": 42018.68,
+          "fixedCost": 2150,
           "developmentCost": 0,
-          "depositsTaken": 10625,
+          "depositsTaken": 5100,
           "payablesPaid": 29472.48,
           "payablesOutstanding": 29034.88,
-          "reworkCost": 502.51,
+          "reworkCost": 434.55,
           "orders": {
             "office": 18,
             "gaming": 8,
             "quiet_office": 6,
             "premium": 4
           },
-          "servedTotal": 18,
+          "servedTotal": 17,
           "orderedTotal": 36,
           "reputationBefore": 1.2,
-          "reputationAfter": 1.24,
-          "operatingProfit": 12744.35,
+          "reputationAfter": 1.05,
+          "operatingProfit": 9576.77,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 217.56,
-            "owner": 38,
-            "bench": 156.4,
-            "test": 50.08
+            "labor": 176.64,
+            "owner": 20,
+            "bench": 135.6,
+            "test": 44.02
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 320,
             "test": 160
           },
-          "notices": [],
+          "notices": [
+            "CAPACITY_LIMIT:premium"
+          ],
           "investmentPaid": 0
         }
       ]
@@ -1337,20 +1337,20 @@
       "reputation": 1.24,
       "totalDeposits": 0,
       "totalPayablesPaid": 72910.35,
-      "payablesOutstanding": 44489.25,
+      "payablesOutstanding": 44457,
       "totalReworkCost": 2535.28,
       "bankrupt": false,
       "bankruptMonth": null,
       "totalSales": 62,
       "totalRevenue": 170346,
-      "totalCostOfGoodsSold": 135107.22,
+      "totalCostOfGoodsSold": 134327.22,
       "totalFixedCost": 13100,
       "totalDevelopmentCost": 300,
       "totalInvestment": 6000,
-      "operatingProfit": 19303.5,
-      "endCash": 1874.79,
-      "inventoryCost": 100917.96,
-      "cashAndInventoryGain": 57792.75,
+      "operatingProfit": 20083.5,
+      "endCash": 5322.54,
+      "inventoryCost": 98217.96,
+      "cashAndInventoryGain": 58540.5,
       "months": [
         {
           "month": 1,
@@ -1551,7 +1551,7 @@
         {
           "month": 5,
           "startCash": 50036.2,
-          "endCash": 20132.24,
+          "endCash": 22559.99,
           "sold": {
             "office": 10,
             "gaming": 4
@@ -1562,12 +1562,12 @@
           },
           "revenue": 39414,
           "costOfGoodsSold": 31305.18,
-          "procurement": 59314.86,
+          "procurement": 57754.86,
           "fixedCost": 2250,
           "developmentCost": 0,
           "depositsTaken": 0,
           "payablesPaid": 23891.34,
-          "payablesOutstanding": 34602.75,
+          "payablesOutstanding": 35470.5,
           "reworkCost": 634.76,
           "orders": {
             "office": 10,
@@ -1580,7 +1580,7 @@
           "reputationBefore": 1.16,
           "reputationAfter": 1.2,
           "operatingProfit": 5224.06,
-          "inventoryCost": 65905.86,
+          "inventoryCost": 64345.86,
           "inventoryUnits": 30,
           "capacityUsed": {
             "labor": 151.32,
@@ -1599,8 +1599,8 @@
         },
         {
           "month": 6,
-          "startCash": 20132.24,
-          "endCash": 1874.79,
+          "startCash": 22559.99,
+          "endCash": 5322.54,
           "sold": {
             "office": 12,
             "gaming": 5
@@ -1610,13 +1610,13 @@
             "gaming": 10
           },
           "revenue": 48210,
-          "costOfGoodsSold": 38307.6,
-          "procurement": 73319.7,
+          "costOfGoodsSold": 37527.6,
+          "procurement": 71399.7,
           "fixedCost": 2250,
           "developmentCost": 0,
           "depositsTaken": 0,
           "payablesPaid": 14829.75,
-          "payablesOutstanding": 44489.25,
+          "payablesOutstanding": 44457,
           "reworkCost": 784.26,
           "orders": {
             "office": 12,
@@ -1628,8 +1628,8 @@
           "orderedTotal": 24,
           "reputationBefore": 1.2,
           "reputationAfter": 1.24,
-          "operatingProfit": 6868.14,
-          "inventoryCost": 100917.96,
+          "operatingProfit": 7648.14,
+          "inventoryCost": 98217.96,
           "inventoryUnits": 45,
           "capacityUsed": {
             "labor": 186.64,
@@ -1657,23 +1657,23 @@
       "paymentTermMonths": 1,
       "creditLimitCoins": 60000,
       "gatedAtStart": false,
-      "reputation": 1.24,
-      "totalDeposits": 42500,
+      "reputation": 1.05,
+      "totalDeposits": 36975,
       "totalPayablesPaid": 115703.84,
       "payablesOutstanding": 29034.88,
-      "totalReworkCost": 1896.05,
+      "totalReworkCost": 1828.09,
       "bankrupt": false,
       "bankruptMonth": null,
-      "totalSales": 68,
-      "totalRevenue": 242656,
-      "totalCostOfGoodsSold": 178241.12,
-      "totalFixedCost": 18500,
+      "totalSales": 67,
+      "totalRevenue": 231606,
+      "totalCostOfGoodsSold": 171826.66,
+      "totalFixedCost": 12900,
       "totalDevelopmentCost": 300,
-      "totalInvestment": 1800,
-      "operatingProfit": 43718.83,
-      "endCash": 112050.85,
+      "totalInvestment": 1200,
+      "operatingProfit": 44751.25,
+      "endCash": 113683.27,
       "inventoryCost": 3902.86,
-      "cashAndInventoryGain": 70953.71,
+      "cashAndInventoryGain": 72586.13,
       "months": [
         {
           "month": 1,
@@ -1778,7 +1778,7 @@
         {
           "month": 3,
           "startCash": 62523.84,
-          "endCash": 75683.32,
+          "endCash": 77683.32,
           "sold": {
             "gaming": 2,
             "office": 6,
@@ -1794,7 +1794,7 @@
           "revenue": 37972,
           "costOfGoodsSold": 27205,
           "procurement": 27205,
-          "fixedCost": 3550,
+          "fixedCost": 2150,
           "developmentCost": 0,
           "depositsTaken": 8075,
           "payablesPaid": 19177.91,
@@ -1810,7 +1810,7 @@
           "orderedTotal": 13,
           "reputationBefore": 1.08,
           "reputationAfter": 1.12,
-          "operatingProfit": 6932.39,
+          "operatingProfit": 8332.39,
           "inventoryCost": 3902.86,
           "inventoryUnits": 1,
           "capacityUsed": {
@@ -1820,18 +1820,18 @@
             "test": 28.6
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 320,
             "test": 160
           },
           "notices": [],
-          "investmentPaid": 1800
+          "investmentPaid": 1200
         },
         {
           "month": 4,
-          "startCash": 75683.32,
-          "endCash": 87895.47,
+          "startCash": 77683.32,
+          "endCash": 91295.47,
           "sold": {
             "gaming": 3,
             "office": 7,
@@ -1847,7 +1847,7 @@
           "revenue": 49753,
           "costOfGoodsSold": 35429.53,
           "procurement": 35429.53,
-          "fixedCost": 3550,
+          "fixedCost": 2150,
           "developmentCost": 0,
           "depositsTaken": 10625,
           "payablesPaid": 27205,
@@ -1863,7 +1863,7 @@
           "orderedTotal": 16,
           "reputationBefore": 1.12,
           "reputationAfter": 1.16,
-          "operatingProfit": 10402.08,
+          "operatingProfit": 11802.08,
           "inventoryCost": 3902.86,
           "inventoryUnits": 1,
           "capacityUsed": {
@@ -1873,7 +1873,7 @@
             "test": 37.78
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 320,
             "test": 160
@@ -1883,8 +1883,8 @@
         },
         {
           "month": 5,
-          "startCash": 87895.47,
-          "endCash": 99744.1,
+          "startCash": 91295.47,
+          "endCash": 104544.1,
           "sold": {
             "gaming": 4,
             "office": 8,
@@ -1900,7 +1900,7 @@
           "revenue": 56434,
           "costOfGoodsSold": 41065.02,
           "procurement": 41065.02,
-          "fixedCost": 3550,
+          "fixedCost": 2150,
           "developmentCost": 0,
           "depositsTaken": 10625,
           "payablesPaid": 29015.07,
@@ -1916,7 +1916,7 @@
           "orderedTotal": 20,
           "reputationBefore": 1.16,
           "reputationAfter": 1.2,
-          "operatingProfit": 11391.22,
+          "operatingProfit": 12791.22,
           "inventoryCost": 3902.86,
           "inventoryUnits": 1,
           "capacityUsed": {
@@ -1926,7 +1926,7 @@
             "test": 42.9
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 320,
             "test": 160
@@ -1936,55 +1936,55 @@
         },
         {
           "month": 6,
-          "startCash": 99744.1,
-          "endCash": 112050.85,
+          "startCash": 104544.1,
+          "endCash": 113683.27,
           "sold": {
             "gaming": 5,
             "office": 10,
-            "quiet_office": 2,
-            "premium": 1
+            "quiet_office": 2
           },
           "built": {
             "office": 10,
             "gaming": 5,
-            "quiet_office": 2,
-            "premium": 1
+            "quiet_office": 2
           },
-          "revenue": 65230,
-          "costOfGoodsSold": 48433.14,
-          "procurement": 48433.14,
-          "fixedCost": 3550,
+          "revenue": 54180,
+          "costOfGoodsSold": 42018.68,
+          "procurement": 42018.68,
+          "fixedCost": 2150,
           "developmentCost": 0,
-          "depositsTaken": 10625,
+          "depositsTaken": 5100,
           "payablesPaid": 29472.48,
           "payablesOutstanding": 29034.88,
-          "reworkCost": 502.51,
+          "reworkCost": 434.55,
           "orders": {
             "office": 12,
             "gaming": 5,
             "quiet_office": 4,
             "premium": 3
           },
-          "servedTotal": 18,
+          "servedTotal": 17,
           "orderedTotal": 24,
           "reputationBefore": 1.2,
-          "reputationAfter": 1.24,
-          "operatingProfit": 12744.35,
+          "reputationAfter": 1.05,
+          "operatingProfit": 9576.77,
           "inventoryCost": 3902.86,
           "inventoryUnits": 1,
           "capacityUsed": {
-            "labor": 217.56,
-            "owner": 38,
-            "bench": 156.4,
-            "test": 50.08
+            "labor": 176.64,
+            "owner": 20,
+            "bench": 135.6,
+            "test": 44.02
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 320,
             "test": 160
           },
-          "notices": [],
+          "notices": [
+            "CAPACITY_LIMIT:premium"
+          ],
           "investmentPaid": 0
         }
       ]
@@ -2322,20 +2322,20 @@
       "reputation": 1.24,
       "totalDeposits": 0,
       "totalPayablesPaid": 73855.4,
-      "payablesOutstanding": 45013.25,
+      "payablesOutstanding": 45253.78,
       "totalReworkCost": 2535.28,
       "bankrupt": false,
       "bankruptMonth": null,
       "totalSales": 95,
       "totalRevenue": 259749,
-      "totalCostOfGoodsSold": 225268.27,
+      "totalCostOfGoodsSold": 222508.27,
       "totalFixedCost": 13100,
       "totalDevelopmentCost": 300,
       "totalInvestment": 6000,
-      "operatingProfit": 18545.45,
-      "endCash": 69656.94,
-      "inventoryCost": 32901.76,
-      "cashAndInventoryGain": 57558.7,
+      "operatingProfit": 21305.45,
+      "endCash": 73377.47,
+      "inventoryCost": 32181.76,
+      "cashAndInventoryGain": 60559.23,
       "months": [
         {
           "month": 1,
@@ -2536,7 +2536,7 @@
         {
           "month": 5,
           "startCash": 79292.03,
-          "endCash": 71098.83,
+          "endCash": 71878.83,
           "sold": {
             "office": 16,
             "gaming": 6
@@ -2546,13 +2546,13 @@
             "gaming": 8
           },
           "revenue": 61236,
-          "costOfGoodsSold": 53166.14,
-          "procurement": 64886.42,
+          "costOfGoodsSold": 51966.14,
+          "procurement": 63326.42,
           "fixedCost": 2250,
           "developmentCost": 0,
           "depositsTaken": 0,
           "payablesPaid": 22064.91,
-          "payablesOutstanding": 37811.13,
+          "payablesOutstanding": 37031.13,
           "reworkCost": 634.76,
           "orders": {
             "office": 16,
@@ -2564,8 +2564,8 @@
           "orderedTotal": 31,
           "reputationBefore": 1.16,
           "reputationAfter": 1.2,
-          "operatingProfit": 5185.1,
-          "inventoryCost": 17580.42,
+          "operatingProfit": 6385.1,
+          "inventoryCost": 17220.42,
           "inventoryUnits": 6,
           "capacityUsed": {
             "labor": 151.32,
@@ -2584,8 +2584,8 @@
         },
         {
           "month": 6,
-          "startCash": 71098.83,
-          "endCash": 69656.94,
+          "startCash": 71878.83,
+          "endCash": 73377.47,
           "sold": {
             "office": 18,
             "gaming": 8
@@ -2595,13 +2595,13 @@
             "gaming": 10
           },
           "revenue": 74598,
-          "costOfGoodsSold": 64886.42,
-          "procurement": 80207.76,
+          "costOfGoodsSold": 63326.42,
+          "procurement": 78287.76,
           "fixedCost": 2250,
           "developmentCost": 0,
           "depositsTaken": 0,
           "payablesPaid": 14404.24,
-          "payablesOutstanding": 45013.25,
+          "payablesOutstanding": 45253.78,
           "reworkCost": 784.26,
           "orders": {
             "office": 18,
@@ -2613,8 +2613,8 @@
           "orderedTotal": 36,
           "reputationBefore": 1.2,
           "reputationAfter": 1.24,
-          "operatingProfit": 6677.32,
-          "inventoryCost": 32901.76,
+          "operatingProfit": 8237.32,
+          "inventoryCost": 32181.76,
           "inventoryUnits": 12,
           "capacityUsed": {
             "labor": 186.64,
@@ -2642,23 +2642,23 @@
       "paymentTermMonths": 1,
       "creditLimitCoins": 60000,
       "gatedAtStart": false,
-      "reputation": 1.24,
-      "totalDeposits": 42500,
+      "reputation": 1.05,
+      "totalDeposits": 36975,
       "totalPayablesPaid": 122271.02,
       "payablesOutstanding": 27489.2,
-      "totalReworkCost": 1896.05,
+      "totalReworkCost": 1828.09,
       "bankrupt": false,
       "bankruptMonth": null,
-      "totalSales": 69,
-      "totalRevenue": 247222,
-      "totalCostOfGoodsSold": 199184.31,
-      "totalFixedCost": 18500,
+      "totalSales": 68,
+      "totalRevenue": 236172,
+      "totalCostOfGoodsSold": 192176.4,
+      "totalFixedCost": 12900,
       "totalDevelopmentCost": 300,
-      "totalInvestment": 1800,
-      "operatingProfit": 27341.64,
-      "endCash": 98030.84,
+      "totalInvestment": 1200,
+      "operatingProfit": 28967.51,
+      "endCash": 100256.71,
       "inventoryCost": 0,
-      "cashAndInventoryGain": 53030.84,
+      "cashAndInventoryGain": 55256.71,
       "months": [
         {
           "month": 1,
@@ -2763,7 +2763,7 @@
         {
           "month": 3,
           "startCash": 66072.51,
-          "endCash": 77445.21,
+          "endCash": 79445.21,
           "sold": {
             "office": 6,
             "gaming": 2,
@@ -2779,7 +2779,7 @@
           "revenue": 37972,
           "costOfGoodsSold": 29746.49,
           "procurement": 29746.49,
-          "fixedCost": 3550,
+          "fixedCost": 2150,
           "developmentCost": 0,
           "depositsTaken": 8075,
           "payablesPaid": 20964.69,
@@ -2795,7 +2795,7 @@
           "orderedTotal": 19,
           "reputationBefore": 1.08,
           "reputationAfter": 1.12,
-          "operatingProfit": 4390.9,
+          "operatingProfit": 5790.9,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
@@ -2805,18 +2805,18 @@
             "test": 28.6
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 320,
             "test": 160
           },
           "notices": [],
-          "investmentPaid": 1800
+          "investmentPaid": 1200
         },
         {
           "month": 4,
-          "startCash": 77445.21,
-          "endCash": 83697.48,
+          "startCash": 79445.21,
+          "endCash": 87097.48,
           "sold": {
             "office": 7,
             "gaming": 3,
@@ -2832,7 +2832,7 @@
           "revenue": 49753,
           "costOfGoodsSold": 38740.47,
           "procurement": 38740.47,
-          "fixedCost": 3550,
+          "fixedCost": 2150,
           "developmentCost": 0,
           "depositsTaken": 10625,
           "payablesPaid": 29746.49,
@@ -2848,7 +2848,7 @@
           "orderedTotal": 25,
           "reputationBefore": 1.12,
           "reputationAfter": 1.16,
-          "operatingProfit": 7091.14,
+          "operatingProfit": 8491.14,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
@@ -2858,7 +2858,7 @@
             "test": 37.78
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 320,
             "test": 160
@@ -2868,8 +2868,8 @@
         },
         {
           "month": 5,
-          "startCash": 83697.48,
-          "endCash": 93138.1,
+          "startCash": 87097.48,
+          "endCash": 97938.1,
           "sold": {
             "office": 8,
             "gaming": 4,
@@ -2885,7 +2885,7 @@
           "revenue": 56434,
           "costOfGoodsSold": 44909.51,
           "procurement": 44909.51,
-          "fixedCost": 3550,
+          "fixedCost": 2150,
           "developmentCost": 0,
           "depositsTaken": 10625,
           "payablesPaid": 28907.62,
@@ -2901,7 +2901,7 @@
           "orderedTotal": 31,
           "reputationBefore": 1.16,
           "reputationAfter": 1.2,
-          "operatingProfit": 7546.73,
+          "operatingProfit": 8946.73,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
@@ -2911,7 +2911,7 @@
             "test": 42.9
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 320,
             "test": 160
@@ -2921,55 +2921,55 @@
         },
         {
           "month": 6,
-          "startCash": 93138.1,
-          "endCash": 98030.84,
+          "startCash": 97938.1,
+          "endCash": 100256.71,
           "sold": {
             "office": 10,
             "gaming": 5,
-            "quiet_office": 2,
-            "premium": 1
+            "quiet_office": 2
           },
           "built": {
             "office": 10,
             "gaming": 5,
-            "quiet_office": 2,
-            "premium": 1
+            "quiet_office": 2
           },
-          "revenue": 65230,
-          "costOfGoodsSold": 52972.44,
-          "procurement": 52972.44,
-          "fixedCost": 3550,
+          "revenue": 54180,
+          "costOfGoodsSold": 45964.53,
+          "procurement": 45964.53,
+          "fixedCost": 2150,
           "developmentCost": 0,
-          "depositsTaken": 10625,
+          "depositsTaken": 5100,
           "payablesPaid": 30801.51,
           "payablesOutstanding": 27489.2,
-          "reworkCost": 502.51,
+          "reworkCost": 434.55,
           "orders": {
             "office": 18,
             "gaming": 8,
             "quiet_office": 6,
             "premium": 4
           },
-          "servedTotal": 18,
+          "servedTotal": 17,
           "orderedTotal": 36,
           "reputationBefore": 1.2,
-          "reputationAfter": 1.24,
-          "operatingProfit": 8205.05,
+          "reputationAfter": 1.05,
+          "operatingProfit": 5630.92,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 217.56,
-            "owner": 38,
-            "bench": 156.4,
-            "test": 50.08
+            "labor": 176.64,
+            "owner": 20,
+            "bench": 135.6,
+            "test": 44.02
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 320,
             "test": 160
           },
-          "notices": [],
+          "notices": [
+            "CAPACITY_LIMIT:premium"
+          ],
           "investmentPaid": 0
         }
       ]
@@ -3307,20 +3307,20 @@
       "reputation": 1.24,
       "totalDeposits": 0,
       "totalPayablesPaid": 72910.35,
-      "payablesOutstanding": 44489.25,
+      "payablesOutstanding": 44457,
       "totalReworkCost": 2535.28,
       "bankrupt": false,
       "bankruptMonth": null,
       "totalSales": 95,
       "totalRevenue": 259749,
-      "totalCostOfGoodsSold": 205956.33,
+      "totalCostOfGoodsSold": 203196.33,
       "totalFixedCost": 13100,
       "totalDevelopmentCost": 300,
       "totalInvestment": 6000,
-      "operatingProfit": 37857.39,
-      "endCash": 91277.79,
-      "inventoryCost": 30068.85,
-      "cashAndInventoryGain": 76346.64,
+      "operatingProfit": 40617.39,
+      "endCash": 94725.54,
+      "inventoryCost": 29348.85,
+      "cashAndInventoryGain": 79074.39,
       "months": [
         {
           "month": 1,
@@ -3521,7 +3521,7 @@
         {
           "month": 5,
           "startCash": 91229.2,
-          "endCash": 83147.24,
+          "endCash": 85574.99,
           "sold": {
             "office": 16,
             "gaming": 6
@@ -3531,13 +3531,13 @@
             "gaming": 8
           },
           "revenue": 61236,
-          "costOfGoodsSold": 48605.52,
-          "procurement": 59314.86,
+          "costOfGoodsSold": 47405.52,
+          "procurement": 57754.86,
           "fixedCost": 2250,
           "developmentCost": 0,
           "depositsTaken": 0,
           "payablesPaid": 23891.34,
-          "payablesOutstanding": 34602.75,
+          "payablesOutstanding": 35470.5,
           "reworkCost": 634.76,
           "orders": {
             "office": 16,
@@ -3549,8 +3549,8 @@
           "orderedTotal": 31,
           "reputationBefore": 1.16,
           "reputationAfter": 1.2,
-          "operatingProfit": 9745.72,
-          "inventoryCost": 16064.01,
+          "operatingProfit": 10945.72,
+          "inventoryCost": 15704.01,
           "inventoryUnits": 6,
           "capacityUsed": {
             "labor": 151.32,
@@ -3569,8 +3569,8 @@
         },
         {
           "month": 6,
-          "startCash": 83147.24,
-          "endCash": 91277.79,
+          "startCash": 85574.99,
+          "endCash": 94725.54,
           "sold": {
             "office": 18,
             "gaming": 8
@@ -3580,13 +3580,13 @@
             "gaming": 10
           },
           "revenue": 74598,
-          "costOfGoodsSold": 59314.86,
-          "procurement": 73319.7,
+          "costOfGoodsSold": 57754.86,
+          "procurement": 71399.7,
           "fixedCost": 2250,
           "developmentCost": 0,
           "depositsTaken": 0,
           "payablesPaid": 14829.75,
-          "payablesOutstanding": 44489.25,
+          "payablesOutstanding": 44457,
           "reworkCost": 784.26,
           "orders": {
             "office": 18,
@@ -3598,8 +3598,8 @@
           "orderedTotal": 36,
           "reputationBefore": 1.2,
           "reputationAfter": 1.24,
-          "operatingProfit": 12248.88,
-          "inventoryCost": 30068.85,
+          "operatingProfit": 13808.88,
+          "inventoryCost": 29348.85,
           "inventoryUnits": 12,
           "capacityUsed": {
             "labor": 186.64,
@@ -3627,23 +3627,23 @@
       "paymentTermMonths": 1,
       "creditLimitCoins": 60000,
       "gatedAtStart": false,
-      "reputation": 1.24,
-      "totalDeposits": 42500,
+      "reputation": 1.05,
+      "totalDeposits": 36975,
       "totalPayablesPaid": 115703.84,
       "payablesOutstanding": 29034.88,
-      "totalReworkCost": 1896.05,
+      "totalReworkCost": 1828.09,
       "bankrupt": false,
       "bankruptMonth": null,
-      "totalSales": 69,
-      "totalRevenue": 247222,
-      "totalCostOfGoodsSold": 182143.98,
-      "totalFixedCost": 18500,
+      "totalSales": 68,
+      "totalRevenue": 236172,
+      "totalCostOfGoodsSold": 175729.52,
+      "totalFixedCost": 12900,
       "totalDevelopmentCost": 300,
-      "totalInvestment": 1800,
-      "operatingProfit": 44381.97,
-      "endCash": 116616.85,
+      "totalInvestment": 1200,
+      "operatingProfit": 45414.39,
+      "endCash": 118249.27,
       "inventoryCost": 0,
-      "cashAndInventoryGain": 71616.85,
+      "cashAndInventoryGain": 73249.27,
       "months": [
         {
           "month": 1,
@@ -3748,7 +3748,7 @@
         {
           "month": 3,
           "startCash": 67089.84,
-          "endCash": 80249.32,
+          "endCash": 82249.32,
           "sold": {
             "office": 6,
             "gaming": 2,
@@ -3764,7 +3764,7 @@
           "revenue": 37972,
           "costOfGoodsSold": 27205,
           "procurement": 27205,
-          "fixedCost": 3550,
+          "fixedCost": 2150,
           "developmentCost": 0,
           "depositsTaken": 8075,
           "payablesPaid": 19177.91,
@@ -3780,7 +3780,7 @@
           "orderedTotal": 19,
           "reputationBefore": 1.08,
           "reputationAfter": 1.12,
-          "operatingProfit": 6932.39,
+          "operatingProfit": 8332.39,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
@@ -3790,18 +3790,18 @@
             "test": 28.6
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 320,
             "test": 160
           },
           "notices": [],
-          "investmentPaid": 1800
+          "investmentPaid": 1200
         },
         {
           "month": 4,
-          "startCash": 80249.32,
-          "endCash": 92461.47,
+          "startCash": 82249.32,
+          "endCash": 95861.47,
           "sold": {
             "office": 7,
             "gaming": 3,
@@ -3817,7 +3817,7 @@
           "revenue": 49753,
           "costOfGoodsSold": 35429.53,
           "procurement": 35429.53,
-          "fixedCost": 3550,
+          "fixedCost": 2150,
           "developmentCost": 0,
           "depositsTaken": 10625,
           "payablesPaid": 27205,
@@ -3833,7 +3833,7 @@
           "orderedTotal": 25,
           "reputationBefore": 1.12,
           "reputationAfter": 1.16,
-          "operatingProfit": 10402.08,
+          "operatingProfit": 11802.08,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
@@ -3843,7 +3843,7 @@
             "test": 37.78
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 320,
             "test": 160
@@ -3853,8 +3853,8 @@
         },
         {
           "month": 5,
-          "startCash": 92461.47,
-          "endCash": 104310.1,
+          "startCash": 95861.47,
+          "endCash": 109110.1,
           "sold": {
             "office": 8,
             "gaming": 4,
@@ -3870,7 +3870,7 @@
           "revenue": 56434,
           "costOfGoodsSold": 41065.02,
           "procurement": 41065.02,
-          "fixedCost": 3550,
+          "fixedCost": 2150,
           "developmentCost": 0,
           "depositsTaken": 10625,
           "payablesPaid": 29015.07,
@@ -3886,7 +3886,7 @@
           "orderedTotal": 31,
           "reputationBefore": 1.16,
           "reputationAfter": 1.2,
-          "operatingProfit": 11391.22,
+          "operatingProfit": 12791.22,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
@@ -3896,7 +3896,7 @@
             "test": 42.9
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 320,
             "test": 160
@@ -3906,55 +3906,55 @@
         },
         {
           "month": 6,
-          "startCash": 104310.1,
-          "endCash": 116616.85,
+          "startCash": 109110.1,
+          "endCash": 118249.27,
           "sold": {
             "office": 10,
             "gaming": 5,
-            "quiet_office": 2,
-            "premium": 1
+            "quiet_office": 2
           },
           "built": {
             "office": 10,
             "gaming": 5,
-            "quiet_office": 2,
-            "premium": 1
+            "quiet_office": 2
           },
-          "revenue": 65230,
-          "costOfGoodsSold": 48433.14,
-          "procurement": 48433.14,
-          "fixedCost": 3550,
+          "revenue": 54180,
+          "costOfGoodsSold": 42018.68,
+          "procurement": 42018.68,
+          "fixedCost": 2150,
           "developmentCost": 0,
-          "depositsTaken": 10625,
+          "depositsTaken": 5100,
           "payablesPaid": 29472.48,
           "payablesOutstanding": 29034.88,
-          "reworkCost": 502.51,
+          "reworkCost": 434.55,
           "orders": {
             "office": 18,
             "gaming": 8,
             "quiet_office": 6,
             "premium": 4
           },
-          "servedTotal": 18,
+          "servedTotal": 17,
           "orderedTotal": 36,
           "reputationBefore": 1.2,
-          "reputationAfter": 1.24,
-          "operatingProfit": 12744.35,
+          "reputationAfter": 1.05,
+          "operatingProfit": 9576.77,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 217.56,
-            "owner": 38,
-            "bench": 156.4,
-            "test": 50.08
+            "labor": 176.64,
+            "owner": 20,
+            "bench": 135.6,
+            "test": 44.02
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 320,
             "test": 160
           },
-          "notices": [],
+          "notices": [
+            "CAPACITY_LIMIT:premium"
+          ],
           "investmentPaid": 0
         }
       ]
@@ -4292,20 +4292,20 @@
       "reputation": 1.24,
       "totalDeposits": 0,
       "totalPayablesPaid": 72240.36,
-      "payablesOutstanding": 44308.14,
+      "payablesOutstanding": 44335.89,
       "totalReworkCost": 2535.28,
       "bankrupt": false,
       "bankruptMonth": null,
       "totalSales": 95,
       "totalRevenue": 259749,
-      "totalCostOfGoodsSold": 212806.8,
+      "totalCostOfGoodsSold": 210046.8,
       "totalFixedCost": 13100,
       "totalDevelopmentCost": 300,
       "totalInvestment": 6000,
-      "operatingProfit": 31006.92,
-      "endCash": 84246.21,
-      "inventoryCost": 30068.85,
-      "cashAndInventoryGain": 69315.06,
+      "operatingProfit": 33766.92,
+      "endCash": 87753.96,
+      "inventoryCost": 29348.85,
+      "cashAndInventoryGain": 72102.81,
       "months": [
         {
           "month": 1,
@@ -4506,7 +4506,7 @@
         {
           "month": 5,
           "startCash": 87717.58,
-          "endCash": 77093.42,
+          "endCash": 77933.42,
           "sold": {
             "office": 16,
             "gaming": 6
@@ -4516,13 +4516,13 @@
             "gaming": 8
           },
           "revenue": 61236,
-          "costOfGoodsSold": 51917.7,
-          "procurement": 63323.7,
+          "costOfGoodsSold": 50717.7,
+          "procurement": 61763.7,
           "fixedCost": 2250,
           "developmentCost": 0,
           "depositsTaken": 0,
           "payablesPaid": 23891.34,
-          "payablesOutstanding": 35399.4,
+          "payablesOutstanding": 34679.4,
           "reworkCost": 634.76,
           "orders": {
             "office": 16,
@@ -4534,8 +4534,8 @@
           "orderedTotal": 31,
           "reputationBefore": 1.16,
           "reputationAfter": 1.2,
-          "operatingProfit": 6433.54,
-          "inventoryCost": 17109,
+          "operatingProfit": 7633.54,
+          "inventoryCost": 16749,
           "inventoryUnits": 6,
           "capacityUsed": {
             "labor": 151.32,
@@ -4554,8 +4554,8 @@
         },
         {
           "month": 6,
-          "startCash": 77093.42,
-          "endCash": 84246.21,
+          "startCash": 77933.42,
+          "endCash": 87753.96,
           "sold": {
             "office": 18,
             "gaming": 8
@@ -4565,13 +4565,13 @@
             "gaming": 10
           },
           "revenue": 74598,
-          "costOfGoodsSold": 60359.85,
-          "procurement": 73319.7,
+          "costOfGoodsSold": 58799.85,
+          "procurement": 71399.7,
           "fixedCost": 2250,
           "developmentCost": 0,
           "depositsTaken": 0,
           "payablesPaid": 14159.76,
-          "payablesOutstanding": 44308.14,
+          "payablesOutstanding": 44335.89,
           "reworkCost": 784.26,
           "orders": {
             "office": 18,
@@ -4583,8 +4583,8 @@
           "orderedTotal": 36,
           "reputationBefore": 1.2,
           "reputationAfter": 1.24,
-          "operatingProfit": 11203.89,
-          "inventoryCost": 30068.85,
+          "operatingProfit": 12763.89,
+          "inventoryCost": 29348.85,
           "inventoryUnits": 12,
           "capacityUsed": {
             "labor": 186.64,
@@ -4612,23 +4612,23 @@
       "paymentTermMonths": 1,
       "creditLimitCoins": 60000,
       "gatedAtStart": false,
-      "reputation": 1.24,
-      "totalDeposits": 42500,
+      "reputation": 1.05,
+      "totalDeposits": 36975,
       "totalPayablesPaid": 115503.57,
       "payablesOutstanding": 31623.92,
-      "totalReworkCost": 1896.05,
+      "totalReworkCost": 1828.09,
       "bankrupt": false,
       "bankruptMonth": null,
-      "totalSales": 69,
-      "totalRevenue": 247222,
-      "totalCostOfGoodsSold": 187207.62,
-      "totalFixedCost": 18500,
+      "totalSales": 68,
+      "totalRevenue": 236172,
+      "totalCostOfGoodsSold": 180793.16,
+      "totalFixedCost": 12900,
       "totalDevelopmentCost": 300,
-      "totalInvestment": 1800,
-      "operatingProfit": 39318.33,
-      "endCash": 114142.25,
+      "totalInvestment": 1200,
+      "operatingProfit": 40350.75,
+      "endCash": 115774.67,
       "inventoryCost": 0,
-      "cashAndInventoryGain": 69142.25,
+      "cashAndInventoryGain": 70774.67,
       "months": [
         {
           "month": 1,
@@ -4733,7 +4733,7 @@
         {
           "month": 3,
           "startCash": 67089.84,
-          "endCash": 80249.32,
+          "endCash": 82249.32,
           "sold": {
             "office": 6,
             "gaming": 2,
@@ -4749,7 +4749,7 @@
           "revenue": 37972,
           "costOfGoodsSold": 27205,
           "procurement": 27205,
-          "fixedCost": 3550,
+          "fixedCost": 2150,
           "developmentCost": 0,
           "depositsTaken": 8075,
           "payablesPaid": 19177.91,
@@ -4765,7 +4765,7 @@
           "orderedTotal": 19,
           "reputationBefore": 1.08,
           "reputationAfter": 1.12,
-          "operatingProfit": 6932.39,
+          "operatingProfit": 8332.39,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
@@ -4775,18 +4775,18 @@
             "test": 28.6
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 320,
             "test": 160
           },
           "notices": [],
-          "investmentPaid": 1800
+          "investmentPaid": 1200
         },
         {
           "month": 4,
-          "startCash": 80249.32,
-          "endCash": 92067.99,
+          "startCash": 82249.32,
+          "endCash": 95467.99,
           "sold": {
             "office": 7,
             "gaming": 3,
@@ -4802,7 +4802,7 @@
           "revenue": 49753,
           "costOfGoodsSold": 37777.51,
           "procurement": 37777.51,
-          "fixedCost": 3550,
+          "fixedCost": 2150,
           "developmentCost": 0,
           "depositsTaken": 10625,
           "payablesPaid": 27205,
@@ -4818,7 +4818,7 @@
           "orderedTotal": 25,
           "reputationBefore": 1.12,
           "reputationAfter": 1.16,
-          "operatingProfit": 8054.1,
+          "operatingProfit": 9454.1,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
@@ -4828,7 +4828,7 @@
             "test": 37.78
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 320,
             "test": 160
@@ -4838,8 +4838,8 @@
         },
         {
           "month": 5,
-          "startCash": 92067.99,
-          "endCash": 97091.69,
+          "startCash": 95467.99,
+          "endCash": 101891.69,
           "sold": {
             "office": 8,
             "gaming": 4,
@@ -4855,7 +4855,7 @@
           "revenue": 56434,
           "costOfGoodsSold": 43780.68,
           "procurement": 43780.68,
-          "fixedCost": 3550,
+          "fixedCost": 2150,
           "developmentCost": 0,
           "depositsTaken": 10625,
           "payablesPaid": 30969.57,
@@ -4871,7 +4871,7 @@
           "orderedTotal": 31,
           "reputationBefore": 1.16,
           "reputationAfter": 1.2,
-          "operatingProfit": 8675.56,
+          "operatingProfit": 10075.56,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
@@ -4881,7 +4881,7 @@
             "test": 42.9
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 320,
             "test": 160
@@ -4891,55 +4891,55 @@
         },
         {
           "month": 6,
-          "startCash": 97091.69,
-          "endCash": 114142.25,
+          "startCash": 101891.69,
+          "endCash": 115774.67,
           "sold": {
             "office": 10,
             "gaming": 5,
-            "quiet_office": 2,
-            "premium": 1
+            "quiet_office": 2
           },
           "built": {
             "office": 10,
             "gaming": 5,
-            "quiet_office": 2,
-            "premium": 1
+            "quiet_office": 2
           },
-          "revenue": 65230,
-          "costOfGoodsSold": 48433.14,
-          "procurement": 48433.14,
-          "fixedCost": 3550,
+          "revenue": 54180,
+          "costOfGoodsSold": 42018.68,
+          "procurement": 42018.68,
+          "fixedCost": 2150,
           "developmentCost": 0,
-          "depositsTaken": 10625,
+          "depositsTaken": 5100,
           "payablesPaid": 27317.71,
           "payablesOutstanding": 31623.92,
-          "reworkCost": 502.51,
+          "reworkCost": 434.55,
           "orders": {
             "office": 18,
             "gaming": 8,
             "quiet_office": 6,
             "premium": 4
           },
-          "servedTotal": 18,
+          "servedTotal": 17,
           "orderedTotal": 36,
           "reputationBefore": 1.2,
-          "reputationAfter": 1.24,
-          "operatingProfit": 12744.35,
+          "reputationAfter": 1.05,
+          "operatingProfit": 9576.77,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 217.56,
-            "owner": 38,
-            "bench": 156.4,
-            "test": 50.08
+            "labor": 176.64,
+            "owner": 20,
+            "bench": 135.6,
+            "test": 44.02
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 320,
             "test": 160
           },
-          "notices": [],
+          "notices": [
+            "CAPACITY_LIMIT:premium"
+          ],
           "investmentPaid": 0
         }
       ]
@@ -5277,20 +5277,20 @@
       "reputation": 1.24,
       "totalDeposits": 0,
       "totalPayablesPaid": 73218.12,
-      "payablesOutstanding": 43882.59,
+      "payablesOutstanding": 43970.34,
       "totalReworkCost": 2535.28,
       "bankrupt": false,
       "bankruptMonth": null,
       "totalSales": 95,
       "totalRevenue": 259749,
-      "totalCostOfGoodsSold": 219657.14,
+      "totalCostOfGoodsSold": 216897.14,
       "totalFixedCost": 13100,
       "totalDevelopmentCost": 300,
       "totalInvestment": 6000,
-      "operatingProfit": 24156.58,
-      "endCash": 76970.32,
-      "inventoryCost": 30068.85,
-      "cashAndInventoryGain": 62039.17,
+      "operatingProfit": 26916.58,
+      "endCash": 80538.07,
+      "inventoryCost": 29348.85,
+      "cashAndInventoryGain": 64886.92,
       "months": [
         {
           "month": 1,
@@ -5491,7 +5491,7 @@
         {
           "month": 5,
           "startCash": 85853.76,
-          "endCash": 70795.29,
+          "endCash": 71695.29,
           "sold": {
             "office": 16,
             "gaming": 6
@@ -5501,13 +5501,13 @@
             "gaming": 8
           },
           "revenue": 61236,
-          "costOfGoodsSold": 55229.82,
-          "procurement": 67332.46,
+          "costOfGoodsSold": 54029.82,
+          "procurement": 65772.46,
           "fixedCost": 2250,
           "developmentCost": 0,
           "depositsTaken": 0,
           "payablesPaid": 23891.34,
-          "payablesOutstanding": 35951.61,
+          "payablesOutstanding": 35291.61,
           "reworkCost": 634.76,
           "orders": {
             "office": 16,
@@ -5519,8 +5519,8 @@
           "orderedTotal": 31,
           "reputationBefore": 1.16,
           "reputationAfter": 1.2,
-          "operatingProfit": 3121.42,
-          "inventoryCost": 18153.96,
+          "operatingProfit": 4321.42,
+          "inventoryCost": 17793.96,
           "inventoryUnits": 6,
           "capacityUsed": {
             "labor": 151.32,
@@ -5539,8 +5539,8 @@
         },
         {
           "month": 6,
-          "startCash": 70795.29,
-          "endCash": 76970.32,
+          "startCash": 71695.29,
+          "endCash": 80538.07,
           "sold": {
             "office": 18,
             "gaming": 8
@@ -5550,13 +5550,13 @@
             "gaming": 10
           },
           "revenue": 74598,
-          "costOfGoodsSold": 61404.81,
-          "procurement": 73319.7,
+          "costOfGoodsSold": 59844.81,
+          "procurement": 71399.7,
           "fixedCost": 2250,
           "developmentCost": 0,
           "depositsTaken": 0,
           "payablesPaid": 15137.52,
-          "payablesOutstanding": 43882.59,
+          "payablesOutstanding": 43970.34,
           "reworkCost": 784.26,
           "orders": {
             "office": 18,
@@ -5568,8 +5568,8 @@
           "orderedTotal": 36,
           "reputationBefore": 1.2,
           "reputationAfter": 1.24,
-          "operatingProfit": 10158.93,
-          "inventoryCost": 30068.85,
+          "operatingProfit": 11718.93,
+          "inventoryCost": 29348.85,
           "inventoryUnits": 12,
           "capacityUsed": {
             "labor": 186.64,
@@ -5597,23 +5597,23 @@
       "paymentTermMonths": 1,
       "creditLimitCoins": 60000,
       "gatedAtStart": false,
-      "reputation": 1.24,
-      "totalDeposits": 42500,
+      "reputation": 1.05,
+      "totalDeposits": 36975,
       "totalPayablesPaid": 116281.71,
       "payablesOutstanding": 29034.88,
-      "totalReworkCost": 1896.05,
+      "totalReworkCost": 1828.09,
       "bankrupt": false,
       "bankruptMonth": null,
-      "totalSales": 69,
-      "totalRevenue": 247222,
-      "totalCostOfGoodsSold": 192271.3,
-      "totalFixedCost": 18500,
+      "totalSales": 68,
+      "totalRevenue": 236172,
+      "totalCostOfGoodsSold": 185856.84,
+      "totalFixedCost": 12900,
       "totalDevelopmentCost": 300,
-      "totalInvestment": 1800,
-      "operatingProfit": 34254.65,
-      "endCash": 106489.53,
+      "totalInvestment": 1200,
+      "operatingProfit": 35287.07,
+      "endCash": 108121.95,
       "inventoryCost": 0,
-      "cashAndInventoryGain": 61489.53,
+      "cashAndInventoryGain": 63121.95,
       "months": [
         {
           "month": 1,
@@ -5718,7 +5718,7 @@
         {
           "month": 3,
           "startCash": 67089.84,
-          "endCash": 80249.32,
+          "endCash": 82249.32,
           "sold": {
             "office": 6,
             "gaming": 2,
@@ -5734,7 +5734,7 @@
           "revenue": 37972,
           "costOfGoodsSold": 27205,
           "procurement": 27205,
-          "fixedCost": 3550,
+          "fixedCost": 2150,
           "developmentCost": 0,
           "depositsTaken": 8075,
           "payablesPaid": 19177.91,
@@ -5750,7 +5750,7 @@
           "orderedTotal": 19,
           "reputationBefore": 1.08,
           "reputationAfter": 1.12,
-          "operatingProfit": 6932.39,
+          "operatingProfit": 8332.39,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
@@ -5760,18 +5760,18 @@
             "test": 28.6
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 320,
             "test": 160
           },
           "notices": [],
-          "investmentPaid": 1800
+          "investmentPaid": 1200
         },
         {
           "month": 4,
-          "startCash": 80249.32,
-          "endCash": 88750.04,
+          "startCash": 82249.32,
+          "endCash": 92150.04,
           "sold": {
             "office": 7,
             "gaming": 3,
@@ -5787,7 +5787,7 @@
           "revenue": 49753,
           "costOfGoodsSold": 40125.51,
           "procurement": 40125.51,
-          "fixedCost": 3550,
+          "fixedCost": 2150,
           "developmentCost": 0,
           "depositsTaken": 10625,
           "payablesPaid": 27205,
@@ -5803,7 +5803,7 @@
           "orderedTotal": 25,
           "reputationBefore": 1.12,
           "reputationAfter": 1.16,
-          "operatingProfit": 5706.1,
+          "operatingProfit": 7106.1,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
@@ -5813,7 +5813,7 @@
             "test": 37.78
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 320,
             "test": 160
@@ -5823,8 +5823,8 @@
         },
         {
           "month": 5,
-          "startCash": 88750.04,
-          "endCash": 93776.1,
+          "startCash": 92150.04,
+          "endCash": 98576.1,
           "sold": {
             "office": 8,
             "gaming": 4,
@@ -5840,7 +5840,7 @@
           "revenue": 56434,
           "costOfGoodsSold": 46496.36,
           "procurement": 46496.36,
-          "fixedCost": 3550,
+          "fixedCost": 2150,
           "developmentCost": 0,
           "depositsTaken": 10625,
           "payablesPaid": 29999.62,
@@ -5856,7 +5856,7 @@
           "orderedTotal": 31,
           "reputationBefore": 1.16,
           "reputationAfter": 1.2,
-          "operatingProfit": 5959.88,
+          "operatingProfit": 7359.88,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
@@ -5866,7 +5866,7 @@
             "test": 42.9
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 320,
             "test": 160
@@ -5876,55 +5876,55 @@
         },
         {
           "month": 6,
-          "startCash": 93776.1,
-          "endCash": 106489.53,
+          "startCash": 98576.1,
+          "endCash": 108121.95,
           "sold": {
             "office": 10,
             "gaming": 5,
-            "quiet_office": 2,
-            "premium": 1
+            "quiet_office": 2
           },
           "built": {
             "office": 10,
             "gaming": 5,
-            "quiet_office": 2,
-            "premium": 1
+            "quiet_office": 2
           },
-          "revenue": 65230,
-          "costOfGoodsSold": 48433.14,
-          "procurement": 48433.14,
-          "fixedCost": 3550,
+          "revenue": 54180,
+          "costOfGoodsSold": 42018.68,
+          "procurement": 42018.68,
+          "fixedCost": 2150,
           "developmentCost": 0,
-          "depositsTaken": 10625,
+          "depositsTaken": 5100,
           "payablesPaid": 29065.8,
           "payablesOutstanding": 29034.88,
-          "reworkCost": 502.51,
+          "reworkCost": 434.55,
           "orders": {
             "office": 18,
             "gaming": 8,
             "quiet_office": 6,
             "premium": 4
           },
-          "servedTotal": 18,
+          "servedTotal": 17,
           "orderedTotal": 36,
           "reputationBefore": 1.2,
-          "reputationAfter": 1.24,
-          "operatingProfit": 12744.35,
+          "reputationAfter": 1.05,
+          "operatingProfit": 9576.77,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 217.56,
-            "owner": 38,
-            "bench": 156.4,
-            "test": 50.08
+            "labor": 176.64,
+            "owner": 20,
+            "bench": 135.6,
+            "test": 44.02
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 320,
             "test": 160
           },
-          "notices": [],
+          "notices": [
+            "CAPACITY_LIMIT:premium"
+          ],
           "investmentPaid": 0
         }
       ]
@@ -6262,20 +6262,20 @@
       "reputation": 1.24,
       "totalDeposits": 0,
       "totalPayablesPaid": 42801,
-      "payablesOutstanding": 15255,
+      "payablesOutstanding": 16350,
       "totalReworkCost": 2535.28,
       "bankrupt": false,
       "bankruptMonth": null,
       "totalSales": 95,
       "totalRevenue": 259749,
-      "totalCostOfGoodsSold": 211929,
+      "totalCostOfGoodsSold": 209169,
       "totalFixedCost": 16400,
       "totalDevelopmentCost": 300,
       "totalInvestment": 6000,
-      "operatingProfit": 28584.72,
-      "endCash": 36894.72,
-      "inventoryCost": 30945,
-      "cashAndInventoryGain": 37839.72,
+      "operatingProfit": 31344.72,
+      "endCash": 41469.72,
+      "inventoryCost": 30225,
+      "cashAndInventoryGain": 41694.72,
       "months": [
         {
           "month": 1,
@@ -6476,7 +6476,7 @@
         {
           "month": 5,
           "startCash": 47567.73,
-          "endCash": 53195.97,
+          "endCash": 55910.97,
           "sold": {
             "office": 16,
             "gaming": 6
@@ -6486,13 +6486,13 @@
             "gaming": 8
           },
           "revenue": 61236,
-          "costOfGoodsSold": 50016,
-          "procurement": 61038,
+          "costOfGoodsSold": 48816,
+          "procurement": 59478,
           "fixedCost": 2800,
           "developmentCost": 0,
           "depositsTaken": 0,
           "payablesPaid": 1695,
-          "payablesOutstanding": 27120,
+          "payablesOutstanding": 28275,
           "reworkCost": 634.76,
           "orders": {
             "office": 16,
@@ -6504,8 +6504,8 @@
           "orderedTotal": 31,
           "reputationBefore": 1.16,
           "reputationAfter": 1.2,
-          "operatingProfit": 7785.24,
-          "inventoryCost": 16533,
+          "operatingProfit": 8985.24,
+          "inventoryCost": 16173,
           "inventoryUnits": 6,
           "capacityUsed": {
             "labor": 151.32,
@@ -6524,8 +6524,8 @@
         },
         {
           "month": 6,
-          "startCash": 53195.97,
-          "endCash": 36894.72,
+          "startCash": 55910.97,
+          "endCash": 41469.72,
           "sold": {
             "office": 18,
             "gaming": 8
@@ -6535,13 +6535,13 @@
             "gaming": 10
           },
           "revenue": 74598,
-          "costOfGoodsSold": 61038,
-          "procurement": 75450,
+          "costOfGoodsSold": 59478,
+          "procurement": 73530,
           "fixedCost": 2800,
           "developmentCost": 0,
           "depositsTaken": 0,
           "payablesPaid": 13560,
-          "payablesOutstanding": 15255,
+          "payablesOutstanding": 16350,
           "reworkCost": 784.26,
           "orders": {
             "office": 18,
@@ -6553,8 +6553,8 @@
           "orderedTotal": 36,
           "reputationBefore": 1.2,
           "reputationAfter": 1.24,
-          "operatingProfit": 9975.74,
-          "inventoryCost": 30945,
+          "operatingProfit": 11535.74,
+          "inventoryCost": 30225,
           "inventoryUnits": 12,
           "capacityUsed": {
             "labor": 186.64,
@@ -6582,23 +6582,23 @@
       "paymentTermMonths": 1,
       "creditLimitCoins": 30000,
       "gatedAtStart": false,
-      "reputation": 1.24,
-      "totalDeposits": 42500,
+      "reputation": 1.05,
+      "totalDeposits": 36975,
       "totalPayablesPaid": 68644,
       "payablesOutstanding": 17825,
-      "totalReworkCost": 1896.05,
+      "totalReworkCost": 1828.09,
       "bankrupt": false,
       "bankruptMonth": null,
-      "totalSales": 69,
-      "totalRevenue": 247222,
-      "totalCostOfGoodsSold": 187414,
-      "totalFixedCost": 21800,
+      "totalSales": 68,
+      "totalRevenue": 236172,
+      "totalCostOfGoodsSold": 180816,
+      "totalFixedCost": 16200,
       "totalDevelopmentCost": 300,
-      "totalInvestment": 1800,
-      "operatingProfit": 35811.95,
-      "endCash": 81836.95,
+      "totalInvestment": 1200,
+      "operatingProfit": 37027.91,
+      "endCash": 83652.91,
       "inventoryCost": 0,
-      "cashAndInventoryGain": 51836.95,
+      "cashAndInventoryGain": 53652.91,
       "months": [
         {
           "month": 1,
@@ -6703,7 +6703,7 @@
         {
           "month": 3,
           "startCash": 47893.22,
-          "endCash": 45436.11,
+          "endCash": 47436.11,
           "sold": {
             "office": 6,
             "gaming": 2,
@@ -6719,7 +6719,7 @@
           "revenue": 37972,
           "costOfGoodsSold": 27991,
           "procurement": 27991,
-          "fixedCost": 4100,
+          "fixedCost": 2700,
           "developmentCost": 0,
           "depositsTaken": 8075,
           "payablesPaid": 16948.5,
@@ -6735,7 +6735,7 @@
           "orderedTotal": 19,
           "reputationBefore": 1.08,
           "reputationAfter": 1.12,
-          "operatingProfit": 5596.39,
+          "operatingProfit": 6996.39,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
@@ -6745,18 +6745,18 @@
             "test": 28.6
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 160,
             "test": 160
           },
           "notices": [],
-          "investmentPaid": 1800
+          "investmentPaid": 1200
         },
         {
           "month": 4,
-          "startCash": 45436.11,
-          "endCash": 62726.72,
+          "startCash": 47436.11,
+          "endCash": 66126.72,
           "sold": {
             "office": 7,
             "gaming": 3,
@@ -6772,7 +6772,7 @@
           "revenue": 49753,
           "costOfGoodsSold": 36453.5,
           "procurement": 36453.5,
-          "fixedCost": 4100,
+          "fixedCost": 2700,
           "developmentCost": 0,
           "depositsTaken": 10625,
           "payablesPaid": 10695,
@@ -6788,7 +6788,7 @@
           "orderedTotal": 25,
           "reputationBefore": 1.12,
           "reputationAfter": 1.16,
-          "operatingProfit": 8828.11,
+          "operatingProfit": 10228.11,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
@@ -6798,7 +6798,7 @@
             "test": 37.78
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 160,
             "test": 160
@@ -6808,8 +6808,8 @@
         },
         {
           "month": 5,
-          "startCash": 62726.72,
-          "endCash": 63916.46,
+          "startCash": 66126.72,
+          "endCash": 68716.46,
           "sold": {
             "office": 8,
             "gaming": 4,
@@ -6825,7 +6825,7 @@
           "revenue": 56434,
           "costOfGoodsSold": 42254,
           "procurement": 42254,
-          "fixedCost": 4100,
+          "fixedCost": 2700,
           "developmentCost": 0,
           "depositsTaken": 10625,
           "payablesPaid": 19157.5,
@@ -6841,7 +6841,7 @@
           "orderedTotal": 31,
           "reputationBefore": 1.16,
           "reputationAfter": 1.2,
-          "operatingProfit": 9652.24,
+          "operatingProfit": 11052.24,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
@@ -6851,7 +6851,7 @@
             "test": 42.9
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 160,
             "test": 160
@@ -6861,55 +6861,55 @@
         },
         {
           "month": 6,
-          "startCash": 63916.46,
-          "endCash": 81836.95,
+          "startCash": 68716.46,
+          "endCash": 83652.91,
           "sold": {
             "office": 10,
             "gaming": 5,
-            "quiet_office": 2,
-            "premium": 1
+            "quiet_office": 2
           },
           "built": {
             "office": 10,
             "gaming": 5,
-            "quiet_office": 2,
-            "premium": 1
+            "quiet_office": 2
           },
-          "revenue": 65230,
-          "costOfGoodsSold": 49837,
-          "procurement": 49837,
-          "fixedCost": 4100,
+          "revenue": 54180,
+          "costOfGoodsSold": 43239,
+          "procurement": 43239,
+          "fixedCost": 2700,
           "developmentCost": 0,
-          "depositsTaken": 10625,
+          "depositsTaken": 5100,
           "payablesPaid": 10695,
           "payablesOutstanding": 17825,
-          "reworkCost": 502.51,
+          "reworkCost": 434.55,
           "orders": {
             "office": 18,
             "gaming": 8,
             "quiet_office": 6,
             "premium": 4
           },
-          "servedTotal": 18,
+          "servedTotal": 17,
           "orderedTotal": 36,
           "reputationBefore": 1.2,
-          "reputationAfter": 1.24,
-          "operatingProfit": 10790.49,
+          "reputationAfter": 1.05,
+          "operatingProfit": 7806.45,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 217.56,
-            "owner": 38,
-            "bench": 156.4,
-            "test": 50.08
+            "labor": 176.64,
+            "owner": 20,
+            "bench": 135.6,
+            "test": 44.02
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 160,
             "test": 160
           },
-          "notices": [],
+          "notices": [
+            "CAPACITY_LIMIT:premium"
+          ],
           "investmentPaid": 0
         }
       ]
@@ -7247,20 +7247,20 @@
       "reputation": 0.86,
       "totalDeposits": 0,
       "totalPayablesPaid": 42801,
-      "payablesOutstanding": 15255,
-      "totalReworkCost": 2117.3,
+      "payablesOutstanding": 16350,
+      "totalReworkCost": 2155.3,
       "bankrupt": true,
       "bankruptMonth": 6,
       "totalSales": 62,
       "totalRevenue": 170346,
-      "totalCostOfGoodsSold": 139026,
+      "totalCostOfGoodsSold": 138246,
       "totalFixedCost": 16400,
       "totalDevelopmentCost": 300,
       "totalInvestment": 6000,
-      "operatingProfit": 12502.7,
-      "endCash": -10114.3,
-      "inventoryCost": 61872,
-      "cashAndInventoryGain": 21757.7,
+      "operatingProfit": 13244.7,
+      "endCash": -9993.3,
+      "inventoryCost": 63588,
+      "cashAndInventoryGain": 23594.7,
       "months": [
         {
           "month": 1,
@@ -7461,24 +7461,24 @@
         {
           "month": 5,
           "startCash": 6374.73,
-          "endCash": 1742.97,
+          "endCash": 483.97,
           "sold": {
             "office": 10,
             "gaming": 4
           },
           "built": {
             "office": 18,
-            "gaming": 5
+            "gaming": 6
           },
           "revenue": 39414,
           "costOfGoodsSold": 32214,
-          "procurement": 49590,
+          "procurement": 51966,
           "fixedCost": 2800,
           "developmentCost": 0,
           "depositsTaken": 0,
           "payablesPaid": 1695,
-          "payablesOutstanding": 27120,
-          "reworkCost": 520.76,
+          "payablesOutstanding": 28275,
+          "reworkCost": 558.76,
           "orders": {
             "office": 10,
             "gaming": 4,
@@ -7489,14 +7489,14 @@
           "orderedTotal": 20,
           "reputationBefore": 1.16,
           "reputationAfter": 1.01,
-          "operatingProfit": 3879.24,
-          "inventoryCost": 56370,
-          "inventoryUnits": 27,
+          "operatingProfit": 3841.24,
+          "inventoryCost": 58746,
+          "inventoryUnits": 28,
           "capacityUsed": {
-            "labor": 128.46,
+            "labor": 136.08,
             "owner": 0,
-            "bench": 102.7,
-            "test": 52.38
+            "bench": 109.2,
+            "test": 55.44
           },
           "capacityAvailable": {
             "labor": 208,
@@ -7511,8 +7511,8 @@
         },
         {
           "month": 6,
-          "startCash": 1742.97,
-          "endCash": -10114.3,
+          "startCash": 483.97,
+          "endCash": -9993.3,
           "sold": {
             "office": 12,
             "gaming": 5
@@ -7522,13 +7522,13 @@
             "gaming": 2
           },
           "revenue": 48210,
-          "costOfGoodsSold": 39420,
-          "procurement": 44922,
+          "costOfGoodsSold": 38640,
+          "procurement": 43482,
           "fixedCost": 2800,
           "developmentCost": 0,
           "depositsTaken": 0,
           "payablesPaid": 13560,
-          "payablesOutstanding": 15255,
+          "payablesOutstanding": 16350,
           "reworkCost": 480.27,
           "orders": {
             "office": 12,
@@ -7540,9 +7540,9 @@
           "orderedTotal": 24,
           "reputationBefore": 1.01,
           "reputationAfter": 0.86,
-          "operatingProfit": 5509.73,
-          "inventoryCost": 61872,
-          "inventoryUnits": 34,
+          "operatingProfit": 6289.73,
+          "inventoryCost": 63588,
+          "inventoryUnits": 35,
           "capacityUsed": {
             "labor": 125.68,
             "owner": 0,
@@ -7571,23 +7571,23 @@
       "paymentTermMonths": 1,
       "creditLimitCoins": 30000,
       "gatedAtStart": false,
-      "reputation": 1.24,
-      "totalDeposits": 42500,
+      "reputation": 1.05,
+      "totalDeposits": 36975,
       "totalPayablesPaid": 68644,
       "payablesOutstanding": 17825,
-      "totalReworkCost": 1896.05,
+      "totalReworkCost": 1828.09,
       "bankrupt": false,
       "bankruptMonth": null,
-      "totalSales": 68,
-      "totalRevenue": 242656,
-      "totalCostOfGoodsSold": 183396,
-      "totalFixedCost": 21800,
+      "totalSales": 67,
+      "totalRevenue": 231606,
+      "totalCostOfGoodsSold": 176798,
+      "totalFixedCost": 16200,
       "totalDevelopmentCost": 300,
-      "totalInvestment": 1800,
-      "operatingProfit": 35263.95,
-      "endCash": 77270.95,
+      "totalInvestment": 1200,
+      "operatingProfit": 36479.91,
+      "endCash": 79086.91,
       "inventoryCost": 4018,
-      "cashAndInventoryGain": 51288.95,
+      "cashAndInventoryGain": 53104.91,
       "months": [
         {
           "month": 1,
@@ -7692,7 +7692,7 @@
         {
           "month": 3,
           "startCash": 43327.22,
-          "endCash": 40870.11,
+          "endCash": 42870.11,
           "sold": {
             "gaming": 2,
             "office": 6,
@@ -7708,7 +7708,7 @@
           "revenue": 37972,
           "costOfGoodsSold": 27991,
           "procurement": 27991,
-          "fixedCost": 4100,
+          "fixedCost": 2700,
           "developmentCost": 0,
           "depositsTaken": 8075,
           "payablesPaid": 16948.5,
@@ -7724,7 +7724,7 @@
           "orderedTotal": 13,
           "reputationBefore": 1.08,
           "reputationAfter": 1.12,
-          "operatingProfit": 5596.39,
+          "operatingProfit": 6996.39,
           "inventoryCost": 4018,
           "inventoryUnits": 1,
           "capacityUsed": {
@@ -7734,18 +7734,18 @@
             "test": 28.6
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 160,
             "test": 160
           },
           "notices": [],
-          "investmentPaid": 1800
+          "investmentPaid": 1200
         },
         {
           "month": 4,
-          "startCash": 40870.11,
-          "endCash": 58160.72,
+          "startCash": 42870.11,
+          "endCash": 61560.72,
           "sold": {
             "gaming": 3,
             "office": 7,
@@ -7761,7 +7761,7 @@
           "revenue": 49753,
           "costOfGoodsSold": 36453.5,
           "procurement": 36453.5,
-          "fixedCost": 4100,
+          "fixedCost": 2700,
           "developmentCost": 0,
           "depositsTaken": 10625,
           "payablesPaid": 10695,
@@ -7777,7 +7777,7 @@
           "orderedTotal": 16,
           "reputationBefore": 1.12,
           "reputationAfter": 1.16,
-          "operatingProfit": 8828.11,
+          "operatingProfit": 10228.11,
           "inventoryCost": 4018,
           "inventoryUnits": 1,
           "capacityUsed": {
@@ -7787,7 +7787,7 @@
             "test": 37.78
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 160,
             "test": 160
@@ -7797,8 +7797,8 @@
         },
         {
           "month": 5,
-          "startCash": 58160.72,
-          "endCash": 59350.46,
+          "startCash": 61560.72,
+          "endCash": 64150.46,
           "sold": {
             "gaming": 4,
             "office": 8,
@@ -7814,7 +7814,7 @@
           "revenue": 56434,
           "costOfGoodsSold": 42254,
           "procurement": 42254,
-          "fixedCost": 4100,
+          "fixedCost": 2700,
           "developmentCost": 0,
           "depositsTaken": 10625,
           "payablesPaid": 19157.5,
@@ -7830,7 +7830,7 @@
           "orderedTotal": 20,
           "reputationBefore": 1.16,
           "reputationAfter": 1.2,
-          "operatingProfit": 9652.24,
+          "operatingProfit": 11052.24,
           "inventoryCost": 4018,
           "inventoryUnits": 1,
           "capacityUsed": {
@@ -7840,7 +7840,7 @@
             "test": 42.9
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 160,
             "test": 160
@@ -7850,55 +7850,55 @@
         },
         {
           "month": 6,
-          "startCash": 59350.46,
-          "endCash": 77270.95,
+          "startCash": 64150.46,
+          "endCash": 79086.91,
           "sold": {
             "gaming": 5,
             "office": 10,
-            "quiet_office": 2,
-            "premium": 1
+            "quiet_office": 2
           },
           "built": {
             "office": 10,
             "gaming": 5,
-            "quiet_office": 2,
-            "premium": 1
+            "quiet_office": 2
           },
-          "revenue": 65230,
-          "costOfGoodsSold": 49837,
-          "procurement": 49837,
-          "fixedCost": 4100,
+          "revenue": 54180,
+          "costOfGoodsSold": 43239,
+          "procurement": 43239,
+          "fixedCost": 2700,
           "developmentCost": 0,
-          "depositsTaken": 10625,
+          "depositsTaken": 5100,
           "payablesPaid": 10695,
           "payablesOutstanding": 17825,
-          "reworkCost": 502.51,
+          "reworkCost": 434.55,
           "orders": {
             "office": 12,
             "gaming": 5,
             "quiet_office": 4,
             "premium": 3
           },
-          "servedTotal": 18,
+          "servedTotal": 17,
           "orderedTotal": 24,
           "reputationBefore": 1.2,
-          "reputationAfter": 1.24,
-          "operatingProfit": 10790.49,
+          "reputationAfter": 1.05,
+          "operatingProfit": 7806.45,
           "inventoryCost": 4018,
           "inventoryUnits": 1,
           "capacityUsed": {
-            "labor": 217.56,
-            "owner": 38,
-            "bench": 156.4,
-            "test": 50.08
+            "labor": 176.64,
+            "owner": 20,
+            "bench": 135.6,
+            "test": 44.02
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 160,
             "test": 160
           },
-          "notices": [],
+          "notices": [
+            "CAPACITY_LIMIT:premium"
+          ],
           "investmentPaid": 0
         }
       ]
@@ -8236,20 +8236,20 @@
       "reputation": 1.24,
       "totalDeposits": 0,
       "totalPayablesPaid": 44934.6,
-      "payablesOutstanding": 12967.5,
+      "payablesOutstanding": 12547.5,
       "totalReworkCost": 2535.28,
       "bankrupt": false,
       "bankruptMonth": null,
       "totalSales": 95,
       "totalRevenue": 259749,
-      "totalCostOfGoodsSold": 231837.9,
+      "totalCostOfGoodsSold": 229077.9,
       "totalFixedCost": 16400,
       "totalDevelopmentCost": 300,
       "totalInvestment": 6000,
-      "operatingProfit": 8675.82,
-      "endCash": 11777.82,
-      "inventoryCost": 33865.5,
-      "cashAndInventoryGain": 15643.32,
+      "operatingProfit": 11435.82,
+      "endCash": 14837.82,
+      "inventoryCost": 33145.5,
+      "cashAndInventoryGain": 17983.32,
       "months": [
         {
           "month": 1,
@@ -8450,7 +8450,7 @@
         {
           "month": 5,
           "startCash": 39000.63,
-          "endCash": 39987.57,
+          "endCash": 41127.57,
           "sold": {
             "office": 16,
             "gaming": 6
@@ -8460,13 +8460,13 @@
             "gaming": 8
           },
           "revenue": 61236,
-          "costOfGoodsSold": 54717.6,
-          "procurement": 66781.8,
+          "costOfGoodsSold": 53517.6,
+          "procurement": 65221.8,
           "fixedCost": 2800,
           "developmentCost": 0,
           "depositsTaken": 0,
           "payablesPaid": 0,
-          "payablesOutstanding": 29640,
+          "payablesOutstanding": 29220,
           "reworkCost": 634.76,
           "orders": {
             "office": 16,
@@ -8478,8 +8478,8 @@
           "orderedTotal": 31,
           "reputationBefore": 1.16,
           "reputationAfter": 1.2,
-          "operatingProfit": 3083.64,
-          "inventoryCost": 18096.3,
+          "operatingProfit": 4283.64,
+          "inventoryCost": 17736.3,
           "inventoryUnits": 6,
           "capacityUsed": {
             "labor": 151.32,
@@ -8498,8 +8498,8 @@
         },
         {
           "month": 6,
-          "startCash": 39987.57,
-          "endCash": 11777.82,
+          "startCash": 41127.57,
+          "endCash": 14837.82,
           "sold": {
             "office": 18,
             "gaming": 8
@@ -8509,13 +8509,13 @@
             "gaming": 10
           },
           "revenue": 74598,
-          "costOfGoodsSold": 66781.8,
-          "procurement": 82551,
+          "costOfGoodsSold": 65221.8,
+          "procurement": 80631,
           "fixedCost": 2800,
           "developmentCost": 0,
           "depositsTaken": 0,
           "payablesPaid": 16672.5,
-          "payablesOutstanding": 12967.5,
+          "payablesOutstanding": 12547.5,
           "reworkCost": 784.26,
           "orders": {
             "office": 18,
@@ -8527,8 +8527,8 @@
           "orderedTotal": 36,
           "reputationBefore": 1.2,
           "reputationAfter": 1.24,
-          "operatingProfit": 4231.94,
-          "inventoryCost": 33865.5,
+          "operatingProfit": 5791.94,
+          "inventoryCost": 33145.5,
           "inventoryUnits": 12,
           "capacityUsed": {
             "labor": 186.64,
@@ -8556,23 +8556,23 @@
       "paymentTermMonths": 1,
       "creditLimitCoins": 30000,
       "gatedAtStart": false,
-      "reputation": 1.24,
-      "totalDeposits": 42500,
+      "reputation": 1.05,
+      "totalDeposits": 36975,
       "totalPayablesPaid": 70795.6,
       "payablesOutstanding": 17538.75,
-      "totalReworkCost": 1896.05,
+      "totalReworkCost": 1828.09,
       "bankrupt": false,
       "bankruptMonth": null,
-      "totalSales": 69,
-      "totalRevenue": 247222,
-      "totalCostOfGoodsSold": 204981.4,
-      "totalFixedCost": 21800,
+      "totalSales": 68,
+      "totalRevenue": 236172,
+      "totalCostOfGoodsSold": 197771.6,
+      "totalFixedCost": 16200,
       "totalDevelopmentCost": 300,
-      "totalInvestment": 1800,
-      "operatingProfit": 18244.55,
-      "endCash": 63983.3,
+      "totalInvestment": 1200,
+      "operatingProfit": 20072.31,
+      "endCash": 66411.06,
       "inventoryCost": 0,
-      "cashAndInventoryGain": 33983.3,
+      "cashAndInventoryGain": 36411.06,
       "months": [
         {
           "month": 1,
@@ -8677,7 +8677,7 @@
         {
           "month": 3,
           "startCash": 45224.62,
-          "endCash": 40922.66,
+          "endCash": 42922.66,
           "sold": {
             "office": 6,
             "gaming": 2,
@@ -8693,7 +8693,7 @@
           "revenue": 37972,
           "costOfGoodsSold": 30611.1,
           "procurement": 30611.1,
-          "fixedCost": 4100,
+          "fixedCost": 2700,
           "developmentCost": 0,
           "depositsTaken": 8075,
           "payablesPaid": 17170.75,
@@ -8709,7 +8709,7 @@
           "orderedTotal": 19,
           "reputationBefore": 1.08,
           "reputationAfter": 1.12,
-          "operatingProfit": 2976.29,
+          "operatingProfit": 4376.29,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
@@ -8719,18 +8719,18 @@
             "test": 28.6
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 160,
             "test": 160
           },
           "notices": [],
-          "investmentPaid": 1800
+          "investmentPaid": 1200
         },
         {
           "month": 4,
-          "startCash": 40922.66,
-          "endCash": 52687.97,
+          "startCash": 42922.66,
+          "endCash": 56087.97,
           "sold": {
             "office": 7,
             "gaming": 3,
@@ -8746,7 +8746,7 @@
           "revenue": 49753,
           "costOfGoodsSold": 39866.85,
           "procurement": 39866.85,
-          "fixedCost": 4100,
+          "fixedCost": 2700,
           "developmentCost": 0,
           "depositsTaken": 10625,
           "payablesPaid": 11692.5,
@@ -8762,7 +8762,7 @@
           "orderedTotal": 25,
           "reputationBefore": 1.12,
           "reputationAfter": 1.16,
-          "operatingProfit": 5414.76,
+          "operatingProfit": 6814.76,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
@@ -8772,7 +8772,7 @@
             "test": 37.78
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 160,
             "test": 160
@@ -8782,8 +8782,8 @@
         },
         {
           "month": 5,
-          "startCash": 52687.97,
-          "endCash": 52026.26,
+          "startCash": 56087.97,
+          "endCash": 56826.26,
           "sold": {
             "office": 8,
             "gaming": 4,
@@ -8799,7 +8799,7 @@
           "revenue": 56434,
           "costOfGoodsSold": 46217.4,
           "procurement": 46217.4,
-          "fixedCost": 4100,
+          "fixedCost": 2700,
           "developmentCost": 0,
           "depositsTaken": 10625,
           "payablesPaid": 18043.05,
@@ -8815,7 +8815,7 @@
           "orderedTotal": 31,
           "reputationBefore": 1.16,
           "reputationAfter": 1.2,
-          "operatingProfit": 5688.84,
+          "operatingProfit": 7088.84,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
@@ -8825,7 +8825,7 @@
             "test": 42.9
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 160,
             "test": 160
@@ -8835,55 +8835,55 @@
         },
         {
           "month": 6,
-          "startCash": 52026.26,
-          "endCash": 63983.3,
+          "startCash": 56826.26,
+          "endCash": 66411.06,
           "sold": {
             "office": 10,
             "gaming": 5,
-            "quiet_office": 2,
-            "premium": 1
+            "quiet_office": 2
           },
           "built": {
             "office": 10,
             "gaming": 5,
-            "quiet_office": 2,
-            "premium": 1
+            "quiet_office": 2
           },
-          "revenue": 65230,
-          "costOfGoodsSold": 54516.7,
-          "procurement": 54516.7,
-          "fixedCost": 4100,
+          "revenue": 54180,
+          "costOfGoodsSold": 47306.9,
+          "procurement": 47306.9,
+          "fixedCost": 2700,
           "developmentCost": 0,
-          "depositsTaken": 10625,
+          "depositsTaken": 5100,
           "payablesPaid": 11692.5,
           "payablesOutstanding": 17538.75,
-          "reworkCost": 502.51,
+          "reworkCost": 434.55,
           "orders": {
             "office": 18,
             "gaming": 8,
             "quiet_office": 6,
             "premium": 4
           },
-          "servedTotal": 18,
+          "servedTotal": 17,
           "orderedTotal": 36,
           "reputationBefore": 1.2,
-          "reputationAfter": 1.24,
-          "operatingProfit": 6110.79,
+          "reputationAfter": 1.05,
+          "operatingProfit": 3738.55,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 217.56,
-            "owner": 38,
-            "bench": 156.4,
-            "test": 50.08
+            "labor": 176.64,
+            "owner": 20,
+            "bench": 135.6,
+            "test": 44.02
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 160,
             "test": 160
           },
-          "notices": [],
+          "notices": [
+            "CAPACITY_LIMIT:premium"
+          ],
           "investmentPaid": 0
         }
       ]
@@ -9221,20 +9221,20 @@
       "reputation": 1.24,
       "totalDeposits": 0,
       "totalPayablesPaid": 42801,
-      "payablesOutstanding": 15255,
+      "payablesOutstanding": 16350,
       "totalReworkCost": 2535.28,
       "bankrupt": false,
       "bankruptMonth": null,
       "totalSales": 95,
       "totalRevenue": 259749,
-      "totalCostOfGoodsSold": 211929,
+      "totalCostOfGoodsSold": 209169,
       "totalFixedCost": 16400,
       "totalDevelopmentCost": 300,
       "totalInvestment": 6000,
-      "operatingProfit": 28584.72,
-      "endCash": 36894.72,
-      "inventoryCost": 30945,
-      "cashAndInventoryGain": 37839.72,
+      "operatingProfit": 31344.72,
+      "endCash": 41469.72,
+      "inventoryCost": 30225,
+      "cashAndInventoryGain": 41694.72,
       "months": [
         {
           "month": 1,
@@ -9435,7 +9435,7 @@
         {
           "month": 5,
           "startCash": 47567.73,
-          "endCash": 53195.97,
+          "endCash": 55910.97,
           "sold": {
             "office": 16,
             "gaming": 6
@@ -9445,13 +9445,13 @@
             "gaming": 8
           },
           "revenue": 61236,
-          "costOfGoodsSold": 50016,
-          "procurement": 61038,
+          "costOfGoodsSold": 48816,
+          "procurement": 59478,
           "fixedCost": 2800,
           "developmentCost": 0,
           "depositsTaken": 0,
           "payablesPaid": 1695,
-          "payablesOutstanding": 27120,
+          "payablesOutstanding": 28275,
           "reworkCost": 634.76,
           "orders": {
             "office": 16,
@@ -9463,8 +9463,8 @@
           "orderedTotal": 31,
           "reputationBefore": 1.16,
           "reputationAfter": 1.2,
-          "operatingProfit": 7785.24,
-          "inventoryCost": 16533,
+          "operatingProfit": 8985.24,
+          "inventoryCost": 16173,
           "inventoryUnits": 6,
           "capacityUsed": {
             "labor": 151.32,
@@ -9483,8 +9483,8 @@
         },
         {
           "month": 6,
-          "startCash": 53195.97,
-          "endCash": 36894.72,
+          "startCash": 55910.97,
+          "endCash": 41469.72,
           "sold": {
             "office": 18,
             "gaming": 8
@@ -9494,13 +9494,13 @@
             "gaming": 10
           },
           "revenue": 74598,
-          "costOfGoodsSold": 61038,
-          "procurement": 75450,
+          "costOfGoodsSold": 59478,
+          "procurement": 73530,
           "fixedCost": 2800,
           "developmentCost": 0,
           "depositsTaken": 0,
           "payablesPaid": 13560,
-          "payablesOutstanding": 15255,
+          "payablesOutstanding": 16350,
           "reworkCost": 784.26,
           "orders": {
             "office": 18,
@@ -9512,8 +9512,8 @@
           "orderedTotal": 36,
           "reputationBefore": 1.2,
           "reputationAfter": 1.24,
-          "operatingProfit": 9975.74,
-          "inventoryCost": 30945,
+          "operatingProfit": 11535.74,
+          "inventoryCost": 30225,
           "inventoryUnits": 12,
           "capacityUsed": {
             "labor": 186.64,
@@ -9541,23 +9541,23 @@
       "paymentTermMonths": 1,
       "creditLimitCoins": 30000,
       "gatedAtStart": false,
-      "reputation": 1.24,
-      "totalDeposits": 42500,
+      "reputation": 1.05,
+      "totalDeposits": 36975,
       "totalPayablesPaid": 68644,
       "payablesOutstanding": 17825,
-      "totalReworkCost": 1896.05,
+      "totalReworkCost": 1828.09,
       "bankrupt": false,
       "bankruptMonth": null,
-      "totalSales": 69,
-      "totalRevenue": 247222,
-      "totalCostOfGoodsSold": 187414,
-      "totalFixedCost": 21800,
+      "totalSales": 68,
+      "totalRevenue": 236172,
+      "totalCostOfGoodsSold": 180816,
+      "totalFixedCost": 16200,
       "totalDevelopmentCost": 300,
-      "totalInvestment": 1800,
-      "operatingProfit": 35811.95,
-      "endCash": 81836.95,
+      "totalInvestment": 1200,
+      "operatingProfit": 37027.91,
+      "endCash": 83652.91,
       "inventoryCost": 0,
-      "cashAndInventoryGain": 51836.95,
+      "cashAndInventoryGain": 53652.91,
       "months": [
         {
           "month": 1,
@@ -9662,7 +9662,7 @@
         {
           "month": 3,
           "startCash": 47893.22,
-          "endCash": 45436.11,
+          "endCash": 47436.11,
           "sold": {
             "office": 6,
             "gaming": 2,
@@ -9678,7 +9678,7 @@
           "revenue": 37972,
           "costOfGoodsSold": 27991,
           "procurement": 27991,
-          "fixedCost": 4100,
+          "fixedCost": 2700,
           "developmentCost": 0,
           "depositsTaken": 8075,
           "payablesPaid": 16948.5,
@@ -9694,7 +9694,7 @@
           "orderedTotal": 19,
           "reputationBefore": 1.08,
           "reputationAfter": 1.12,
-          "operatingProfit": 5596.39,
+          "operatingProfit": 6996.39,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
@@ -9704,18 +9704,18 @@
             "test": 28.6
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 160,
             "test": 160
           },
           "notices": [],
-          "investmentPaid": 1800
+          "investmentPaid": 1200
         },
         {
           "month": 4,
-          "startCash": 45436.11,
-          "endCash": 62726.72,
+          "startCash": 47436.11,
+          "endCash": 66126.72,
           "sold": {
             "office": 7,
             "gaming": 3,
@@ -9731,7 +9731,7 @@
           "revenue": 49753,
           "costOfGoodsSold": 36453.5,
           "procurement": 36453.5,
-          "fixedCost": 4100,
+          "fixedCost": 2700,
           "developmentCost": 0,
           "depositsTaken": 10625,
           "payablesPaid": 10695,
@@ -9747,7 +9747,7 @@
           "orderedTotal": 25,
           "reputationBefore": 1.12,
           "reputationAfter": 1.16,
-          "operatingProfit": 8828.11,
+          "operatingProfit": 10228.11,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
@@ -9757,7 +9757,7 @@
             "test": 37.78
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 160,
             "test": 160
@@ -9767,8 +9767,8 @@
         },
         {
           "month": 5,
-          "startCash": 62726.72,
-          "endCash": 63916.46,
+          "startCash": 66126.72,
+          "endCash": 68716.46,
           "sold": {
             "office": 8,
             "gaming": 4,
@@ -9784,7 +9784,7 @@
           "revenue": 56434,
           "costOfGoodsSold": 42254,
           "procurement": 42254,
-          "fixedCost": 4100,
+          "fixedCost": 2700,
           "developmentCost": 0,
           "depositsTaken": 10625,
           "payablesPaid": 19157.5,
@@ -9800,7 +9800,7 @@
           "orderedTotal": 31,
           "reputationBefore": 1.16,
           "reputationAfter": 1.2,
-          "operatingProfit": 9652.24,
+          "operatingProfit": 11052.24,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
@@ -9810,7 +9810,7 @@
             "test": 42.9
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 160,
             "test": 160
@@ -9820,55 +9820,55 @@
         },
         {
           "month": 6,
-          "startCash": 63916.46,
-          "endCash": 81836.95,
+          "startCash": 68716.46,
+          "endCash": 83652.91,
           "sold": {
             "office": 10,
             "gaming": 5,
-            "quiet_office": 2,
-            "premium": 1
+            "quiet_office": 2
           },
           "built": {
             "office": 10,
             "gaming": 5,
-            "quiet_office": 2,
-            "premium": 1
+            "quiet_office": 2
           },
-          "revenue": 65230,
-          "costOfGoodsSold": 49837,
-          "procurement": 49837,
-          "fixedCost": 4100,
+          "revenue": 54180,
+          "costOfGoodsSold": 43239,
+          "procurement": 43239,
+          "fixedCost": 2700,
           "developmentCost": 0,
-          "depositsTaken": 10625,
+          "depositsTaken": 5100,
           "payablesPaid": 10695,
           "payablesOutstanding": 17825,
-          "reworkCost": 502.51,
+          "reworkCost": 434.55,
           "orders": {
             "office": 18,
             "gaming": 8,
             "quiet_office": 6,
             "premium": 4
           },
-          "servedTotal": 18,
+          "servedTotal": 17,
           "orderedTotal": 36,
           "reputationBefore": 1.2,
-          "reputationAfter": 1.24,
-          "operatingProfit": 10790.49,
+          "reputationAfter": 1.05,
+          "operatingProfit": 7806.45,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 217.56,
-            "owner": 38,
-            "bench": 156.4,
-            "test": 50.08
+            "labor": 176.64,
+            "owner": 20,
+            "bench": 135.6,
+            "test": 44.02
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 160,
             "test": 160
           },
-          "notices": [],
+          "notices": [
+            "CAPACITY_LIMIT:premium"
+          ],
           "investmentPaid": 0
         }
       ]
@@ -10206,20 +10206,20 @@
       "reputation": 1.24,
       "totalDeposits": 0,
       "totalPayablesPaid": 43809,
-      "payablesOutstanding": 14442,
+      "payablesOutstanding": 13962,
       "totalReworkCost": 2535.28,
       "bankrupt": false,
       "bankruptMonth": null,
       "totalSales": 95,
       "totalRevenue": 259749,
-      "totalCostOfGoodsSold": 218991.3,
+      "totalCostOfGoodsSold": 216231.3,
       "totalFixedCost": 16400,
       "totalDevelopmentCost": 300,
       "totalInvestment": 6000,
-      "operatingProfit": 21522.42,
-      "endCash": 29019.42,
-      "inventoryCost": 30945,
-      "cashAndInventoryGain": 29964.42,
+      "operatingProfit": 24282.42,
+      "endCash": 32019.42,
+      "inventoryCost": 30225,
+      "cashAndInventoryGain": 32244.42,
       "months": [
         {
           "month": 1,
@@ -10420,7 +10420,7 @@
         {
           "month": 5,
           "startCash": 45646.23,
-          "endCash": 46328.67,
+          "endCash": 47468.67,
           "sold": {
             "office": 16,
             "gaming": 6
@@ -10430,13 +10430,13 @@
             "gaming": 8
           },
           "revenue": 61236,
-          "costOfGoodsSold": 53430.6,
-          "procurement": 65170.8,
+          "costOfGoodsSold": 52230.6,
+          "procurement": 63610.8,
           "fixedCost": 2800,
           "developmentCost": 0,
           "depositsTaken": 0,
           "payablesPaid": 1695,
-          "payablesOutstanding": 27315,
+          "payablesOutstanding": 26895,
           "reworkCost": 634.76,
           "orders": {
             "office": 16,
@@ -10448,8 +10448,8 @@
           "orderedTotal": 31,
           "reputationBefore": 1.16,
           "reputationAfter": 1.2,
-          "operatingProfit": 4370.64,
-          "inventoryCost": 17610.3,
+          "operatingProfit": 5570.64,
+          "inventoryCost": 17250.3,
           "inventoryUnits": 6,
           "capacityUsed": {
             "labor": 151.32,
@@ -10468,8 +10468,8 @@
         },
         {
           "month": 6,
-          "startCash": 46328.67,
-          "endCash": 29019.42,
+          "startCash": 47468.67,
+          "endCash": 32019.42,
           "sold": {
             "office": 18,
             "gaming": 8
@@ -10479,13 +10479,13 @@
             "gaming": 10
           },
           "revenue": 74598,
-          "costOfGoodsSold": 62115.3,
-          "procurement": 75450,
+          "costOfGoodsSold": 60555.3,
+          "procurement": 73530,
           "fixedCost": 2800,
           "developmentCost": 0,
           "depositsTaken": 0,
           "payablesPaid": 14568,
-          "payablesOutstanding": 14442,
+          "payablesOutstanding": 13962,
           "reworkCost": 784.26,
           "orders": {
             "office": 18,
@@ -10497,8 +10497,8 @@
           "orderedTotal": 36,
           "reputationBefore": 1.2,
           "reputationAfter": 1.24,
-          "operatingProfit": 8898.44,
-          "inventoryCost": 30945,
+          "operatingProfit": 10458.44,
+          "inventoryCost": 30225,
           "inventoryUnits": 12,
           "capacityUsed": {
             "labor": 186.64,
@@ -10526,23 +10526,23 @@
       "paymentTermMonths": 1,
       "creditLimitCoins": 30000,
       "gatedAtStart": false,
-      "reputation": 1.24,
-      "totalDeposits": 42500,
+      "reputation": 1.05,
+      "totalDeposits": 36975,
       "totalPayablesPaid": 67957.05,
       "payablesOutstanding": 17825,
-      "totalReworkCost": 1896.05,
+      "totalReworkCost": 1828.09,
       "bankrupt": false,
       "bankruptMonth": null,
-      "totalSales": 69,
-      "totalRevenue": 247222,
-      "totalCostOfGoodsSold": 192634.25,
-      "totalFixedCost": 21800,
+      "totalSales": 68,
+      "totalRevenue": 236172,
+      "totalCostOfGoodsSold": 186036.25,
+      "totalFixedCost": 16200,
       "totalDevelopmentCost": 300,
-      "totalInvestment": 1800,
-      "operatingProfit": 30591.7,
-      "endCash": 76616.7,
+      "totalInvestment": 1200,
+      "operatingProfit": 31807.66,
+      "endCash": 78432.66,
       "inventoryCost": 0,
-      "cashAndInventoryGain": 46616.7,
+      "cashAndInventoryGain": 48432.66,
       "months": [
         {
           "month": 1,
@@ -10647,7 +10647,7 @@
         {
           "month": 3,
           "startCash": 47893.22,
-          "endCash": 45436.11,
+          "endCash": 47436.11,
           "sold": {
             "office": 6,
             "gaming": 2,
@@ -10663,7 +10663,7 @@
           "revenue": 37972,
           "costOfGoodsSold": 27991,
           "procurement": 27991,
-          "fixedCost": 4100,
+          "fixedCost": 2700,
           "developmentCost": 0,
           "depositsTaken": 8075,
           "payablesPaid": 16948.5,
@@ -10679,7 +10679,7 @@
           "orderedTotal": 19,
           "reputationBefore": 1.08,
           "reputationAfter": 1.12,
-          "operatingProfit": 5596.39,
+          "operatingProfit": 6996.39,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
@@ -10689,18 +10689,18 @@
             "test": 28.6
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 160,
             "test": 160
           },
           "notices": [],
-          "investmentPaid": 1800
+          "investmentPaid": 1200
         },
         {
           "month": 4,
-          "startCash": 45436.11,
-          "endCash": 58821.17,
+          "startCash": 47436.11,
+          "endCash": 62221.17,
           "sold": {
             "office": 7,
             "gaming": 3,
@@ -10716,7 +10716,7 @@
           "revenue": 49753,
           "costOfGoodsSold": 38874.1,
           "procurement": 38874.1,
-          "fixedCost": 4100,
+          "fixedCost": 2700,
           "developmentCost": 0,
           "depositsTaken": 10625,
           "payablesPaid": 10695,
@@ -10732,7 +10732,7 @@
           "orderedTotal": 25,
           "reputationBefore": 1.12,
           "reputationAfter": 1.16,
-          "operatingProfit": 6407.51,
+          "operatingProfit": 7807.51,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
@@ -10742,7 +10742,7 @@
             "test": 37.78
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 160,
             "test": 160
@@ -10752,8 +10752,8 @@
         },
         {
           "month": 5,
-          "startCash": 58821.17,
-          "endCash": 59494.21,
+          "startCash": 62221.17,
+          "endCash": 64294.21,
           "sold": {
             "office": 8,
             "gaming": 4,
@@ -10769,7 +10769,7 @@
           "revenue": 56434,
           "costOfGoodsSold": 45053.65,
           "procurement": 45053.65,
-          "fixedCost": 4100,
+          "fixedCost": 2700,
           "developmentCost": 0,
           "depositsTaken": 10625,
           "payablesPaid": 17672.55,
@@ -10785,7 +10785,7 @@
           "orderedTotal": 31,
           "reputationBefore": 1.16,
           "reputationAfter": 1.2,
-          "operatingProfit": 6852.59,
+          "operatingProfit": 8252.59,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
@@ -10795,7 +10795,7 @@
             "test": 42.9
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 160,
             "test": 160
@@ -10805,55 +10805,55 @@
         },
         {
           "month": 6,
-          "startCash": 59494.21,
-          "endCash": 76616.7,
+          "startCash": 64294.21,
+          "endCash": 78432.66,
           "sold": {
             "office": 10,
             "gaming": 5,
-            "quiet_office": 2,
-            "premium": 1
+            "quiet_office": 2
           },
           "built": {
             "office": 10,
             "gaming": 5,
-            "quiet_office": 2,
-            "premium": 1
+            "quiet_office": 2
           },
-          "revenue": 65230,
-          "costOfGoodsSold": 49837,
-          "procurement": 49837,
-          "fixedCost": 4100,
+          "revenue": 54180,
+          "costOfGoodsSold": 43239,
+          "procurement": 43239,
+          "fixedCost": 2700,
           "developmentCost": 0,
-          "depositsTaken": 10625,
+          "depositsTaken": 5100,
           "payablesPaid": 11493,
           "payablesOutstanding": 17825,
-          "reworkCost": 502.51,
+          "reworkCost": 434.55,
           "orders": {
             "office": 18,
             "gaming": 8,
             "quiet_office": 6,
             "premium": 4
           },
-          "servedTotal": 18,
+          "servedTotal": 17,
           "orderedTotal": 36,
           "reputationBefore": 1.2,
-          "reputationAfter": 1.24,
-          "operatingProfit": 10790.49,
+          "reputationAfter": 1.05,
+          "operatingProfit": 7806.45,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 217.56,
-            "owner": 38,
-            "bench": 156.4,
-            "test": 50.08
+            "labor": 176.64,
+            "owner": 20,
+            "bench": 135.6,
+            "test": 44.02
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 160,
             "test": 160
           },
-          "notices": [],
+          "notices": [
+            "CAPACITY_LIMIT:premium"
+          ],
           "investmentPaid": 0
         }
       ]
@@ -11191,20 +11191,20 @@
       "reputation": 1.24,
       "totalDeposits": 0,
       "totalPayablesPaid": 42870,
-      "payablesOutstanding": 15324,
+      "payablesOutstanding": 14844,
       "totalReworkCost": 2535.28,
       "bankrupt": false,
       "bankruptMonth": null,
       "totalSales": 95,
       "totalRevenue": 259749,
-      "totalCostOfGoodsSold": 226053.6,
+      "totalCostOfGoodsSold": 223293.6,
       "totalFixedCost": 16400,
       "totalDevelopmentCost": 300,
       "totalInvestment": 6000,
-      "operatingProfit": 14460.12,
-      "endCash": 22839.12,
-      "inventoryCost": 30945,
-      "cashAndInventoryGain": 23784.12,
+      "operatingProfit": 17220.12,
+      "endCash": 25839.12,
+      "inventoryCost": 30225,
+      "cashAndInventoryGain": 26064.12,
       "months": [
         {
           "month": 1,
@@ -11405,7 +11405,7 @@
         {
           "month": 5,
           "startCash": 41777.73,
-          "endCash": 39209.37,
+          "endCash": 40349.37,
           "sold": {
             "office": 16,
             "gaming": 6
@@ -11415,13 +11415,13 @@
             "gaming": 8
           },
           "revenue": 61236,
-          "costOfGoodsSold": 56845.2,
-          "procurement": 69303.6,
+          "costOfGoodsSold": 55645.2,
+          "procurement": 67743.6,
           "fixedCost": 2800,
           "developmentCost": 0,
           "depositsTaken": 0,
           "payablesPaid": 1695,
-          "payablesOutstanding": 27258,
+          "payablesOutstanding": 26838,
           "reworkCost": 634.76,
           "orders": {
             "office": 16,
@@ -11433,8 +11433,8 @@
           "orderedTotal": 31,
           "reputationBefore": 1.16,
           "reputationAfter": 1.2,
-          "operatingProfit": 956.04,
-          "inventoryCost": 18687.6,
+          "operatingProfit": 2156.04,
+          "inventoryCost": 18327.6,
           "inventoryUnits": 6,
           "capacityUsed": {
             "labor": 151.32,
@@ -11453,8 +11453,8 @@
         },
         {
           "month": 6,
-          "startCash": 39209.37,
-          "endCash": 22839.12,
+          "startCash": 40349.37,
+          "endCash": 25839.12,
           "sold": {
             "office": 18,
             "gaming": 8
@@ -11464,13 +11464,13 @@
             "gaming": 10
           },
           "revenue": 74598,
-          "costOfGoodsSold": 63192.6,
-          "procurement": 75450,
+          "costOfGoodsSold": 61632.6,
+          "procurement": 73530,
           "fixedCost": 2800,
           "developmentCost": 0,
           "depositsTaken": 0,
           "payablesPaid": 13629,
-          "payablesOutstanding": 15324,
+          "payablesOutstanding": 14844,
           "reworkCost": 784.26,
           "orders": {
             "office": 18,
@@ -11482,8 +11482,8 @@
           "orderedTotal": 36,
           "reputationBefore": 1.2,
           "reputationAfter": 1.24,
-          "operatingProfit": 7821.14,
-          "inventoryCost": 30945,
+          "operatingProfit": 9381.14,
+          "inventoryCost": 30225,
           "inventoryUnits": 12,
           "capacityUsed": {
             "labor": 186.64,
@@ -11511,23 +11511,23 @@
       "paymentTermMonths": 1,
       "creditLimitCoins": 30000,
       "gatedAtStart": false,
-      "reputation": 1.24,
-      "totalDeposits": 42500,
+      "reputation": 1.05,
+      "totalDeposits": 36975,
       "totalPayablesPaid": 67883.6,
       "payablesOutstanding": 17825,
-      "totalReworkCost": 1896.05,
+      "totalReworkCost": 1828.09,
       "bankrupt": false,
       "bankruptMonth": null,
-      "totalSales": 69,
-      "totalRevenue": 247222,
-      "totalCostOfGoodsSold": 197854.5,
-      "totalFixedCost": 21800,
+      "totalSales": 68,
+      "totalRevenue": 236172,
+      "totalCostOfGoodsSold": 191256.5,
+      "totalFixedCost": 16200,
       "totalDevelopmentCost": 300,
-      "totalInvestment": 1800,
-      "operatingProfit": 25371.45,
-      "endCash": 71396.45,
+      "totalInvestment": 1200,
+      "operatingProfit": 26587.41,
+      "endCash": 73212.41,
       "inventoryCost": 0,
-      "cashAndInventoryGain": 41396.45,
+      "cashAndInventoryGain": 43212.41,
       "months": [
         {
           "month": 1,
@@ -11632,7 +11632,7 @@
         {
           "month": 3,
           "startCash": 47893.22,
-          "endCash": 45436.11,
+          "endCash": 47436.11,
           "sold": {
             "office": 6,
             "gaming": 2,
@@ -11648,7 +11648,7 @@
           "revenue": 37972,
           "costOfGoodsSold": 27991,
           "procurement": 27991,
-          "fixedCost": 4100,
+          "fixedCost": 2700,
           "developmentCost": 0,
           "depositsTaken": 8075,
           "payablesPaid": 16948.5,
@@ -11664,7 +11664,7 @@
           "orderedTotal": 19,
           "reputationBefore": 1.08,
           "reputationAfter": 1.12,
-          "operatingProfit": 5596.39,
+          "operatingProfit": 6996.39,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
@@ -11674,18 +11674,18 @@
             "test": 28.6
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 160,
             "test": 160
           },
           "notices": [],
-          "investmentPaid": 1800
+          "investmentPaid": 1200
         },
         {
           "month": 4,
-          "startCash": 45436.11,
-          "endCash": 57577.62,
+          "startCash": 47436.11,
+          "endCash": 60977.62,
           "sold": {
             "office": 7,
             "gaming": 3,
@@ -11701,7 +11701,7 @@
           "revenue": 49753,
           "costOfGoodsSold": 41294.7,
           "procurement": 41294.7,
-          "fixedCost": 4100,
+          "fixedCost": 2700,
           "developmentCost": 0,
           "depositsTaken": 10625,
           "payablesPaid": 10695,
@@ -11717,7 +11717,7 @@
           "orderedTotal": 25,
           "reputationBefore": 1.12,
           "reputationAfter": 1.16,
-          "operatingProfit": 3986.91,
+          "operatingProfit": 5386.91,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
@@ -11727,7 +11727,7 @@
             "test": 37.78
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 160,
             "test": 160
@@ -11737,8 +11737,8 @@
         },
         {
           "month": 5,
-          "startCash": 57577.62,
-          "endCash": 53023.46,
+          "startCash": 60977.62,
+          "endCash": 57823.46,
           "sold": {
             "office": 8,
             "gaming": 4,
@@ -11754,7 +11754,7 @@
           "revenue": 56434,
           "costOfGoodsSold": 47853.3,
           "procurement": 47853.3,
-          "fixedCost": 4100,
+          "fixedCost": 2700,
           "developmentCost": 0,
           "depositsTaken": 10625,
           "payablesPaid": 18849.6,
@@ -11770,7 +11770,7 @@
           "orderedTotal": 31,
           "reputationBefore": 1.16,
           "reputationAfter": 1.2,
-          "operatingProfit": 4052.94,
+          "operatingProfit": 5452.94,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
@@ -11780,7 +11780,7 @@
             "test": 42.9
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 160,
             "test": 160
@@ -11790,55 +11790,55 @@
         },
         {
           "month": 6,
-          "startCash": 53023.46,
-          "endCash": 71396.45,
+          "startCash": 57823.46,
+          "endCash": 73212.41,
           "sold": {
             "office": 10,
             "gaming": 5,
-            "quiet_office": 2,
-            "premium": 1
+            "quiet_office": 2
           },
           "built": {
             "office": 10,
             "gaming": 5,
-            "quiet_office": 2,
-            "premium": 1
+            "quiet_office": 2
           },
-          "revenue": 65230,
-          "costOfGoodsSold": 49837,
-          "procurement": 49837,
-          "fixedCost": 4100,
+          "revenue": 54180,
+          "costOfGoodsSold": 43239,
+          "procurement": 43239,
+          "fixedCost": 2700,
           "developmentCost": 0,
-          "depositsTaken": 10625,
+          "depositsTaken": 5100,
           "payablesPaid": 10242.5,
           "payablesOutstanding": 17825,
-          "reworkCost": 502.51,
+          "reworkCost": 434.55,
           "orders": {
             "office": 18,
             "gaming": 8,
             "quiet_office": 6,
             "premium": 4
           },
-          "servedTotal": 18,
+          "servedTotal": 17,
           "orderedTotal": 36,
           "reputationBefore": 1.2,
-          "reputationAfter": 1.24,
-          "operatingProfit": 10790.49,
+          "reputationAfter": 1.05,
+          "operatingProfit": 7806.45,
           "inventoryCost": 0,
           "inventoryUnits": 0,
           "capacityUsed": {
-            "labor": 217.56,
-            "owner": 38,
-            "bench": 156.4,
-            "test": 50.08
+            "labor": 176.64,
+            "owner": 20,
+            "bench": 135.6,
+            "test": 44.02
           },
           "capacityAvailable": {
-            "labor": 320,
+            "labor": 208,
             "owner": 96,
             "bench": 160,
             "test": 160
           },
-          "notices": [],
+          "notices": [
+            "CAPACITY_LIMIT:premium"
+          ],
           "investmentPaid": 0
         }
       ]

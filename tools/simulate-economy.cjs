@@ -90,9 +90,9 @@ function acceptanceOf(productId, price) {
 const round = n => Math.round(n * 100) / 100;
 
 // Scenario inputs are proposed business parameters, separate from component reference data.
-function simulate(routeId, scenarioId, difficulty = 'normal') {
+function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
   const opening = config.opening[difficulty];
-  const route = config.routes[routeId];
+  const route = { ...config.routes[routeId], ...overrides };
   const scenario = config.scenarios[scenarioId];
   const channel = channels.get(route.partsChannel);
   assert(channel, `Route ${routeId} must name a procurement channel.`);
@@ -102,6 +102,7 @@ function simulate(routeId, scenarioId, difficulty = 'normal') {
   const gatedAtStart = !opening.startingRoutes.includes(routeId);
   let cash = opening.cash, employees = opening.employees, benches = opening.benches;
   let monthlyUtilities = opening.utilities, standardMultiplier = 1, commissionMultiplier = 1, consumablesReduction = 0;
+  let standardConsumablesReduction = 0;
   let totalSales = 0, totalRevenue = 0, totalCogs = 0, totalFixed = 0, totalInvestment = 0, totalDevelopment = 0;
   let totalDeposits = 0, totalPayablesPaid = 0, totalRework = 0;
   let bankrupt = false, bankruptMonth = null;
@@ -133,6 +134,7 @@ function simulate(routeId, scenarioId, difficulty = 'normal') {
         standardMultiplier = investment.standardAssemblyMultiplier || standardMultiplier;
         commissionMultiplier = investment.commissionAssemblyMultiplier || commissionMultiplier;
         consumablesReduction = investment.commissionConsumablesReduction || consumablesReduction;
+        standardConsumablesReduction = investment.standardConsumablesReduction || standardConsumablesReduction;
       }
       employees += hires;
       cash -= hires * config.employee.recruitmentCost;
@@ -199,7 +201,7 @@ function simulate(routeId, scenarioId, difficulty = 'normal') {
         }
         const cost = round(partsCostFor(id, scenario, month) * channelFactor *
           opening.supplierTermsFactor + recipe.directCostCoins -
-          (product.kind === 'commission' ? consumablesReduction : 0));
+          (product.kind === 'commission' ? consumablesReduction : standardConsumablesReduction));
         // A commissioned build is paid in advance, so the deposit arrives before the parts are bought.
         const deposit = product.kind === 'commission'
           ? Math.round(product.salePrice * (depositFraction[productSegment[id]] || 0)) : 0;
@@ -293,6 +295,7 @@ function simulate(routeId, scenarioId, difficulty = 'normal') {
 }
 
 // Every route runs under each confirmed difficulty and each stress scenario; expansion dates stay as proposed.
+function runAll() {
 const results = [];
 for (const difficulty of Object.keys(config.opening))
   for (const scenario of Object.keys(config.scenarios))
@@ -310,3 +313,7 @@ fs.writeFileSync(path.join(root,'design','economy-review-results.json'), JSON.st
 console.log(JSON.stringify(results.map(({route,scenario,totalSales,operatingProfit,totalInvestment,endCash,inventoryCost,cashAndInventoryGain,months}) =>
   ({route,scenario,totalSales,operatingProfit,totalInvestment,endCash,inventoryCost,cashAndInventoryGain,
     constrainedMonths:months.filter(m=>m.notices.length).map(m=>({month:m.month,notices:m.notices}))})),null,2));
+return results;
+}
+if (require.main === module) runAll();
+module.exports = { simulate, runAll, config, channels, recipes, failureRateFor, partsCostFor };

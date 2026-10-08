@@ -159,6 +159,7 @@
     "semi_auto": {
       "cost": 3000,
       "standardAssemblyMultiplier": 0.65,
+      "standardConsumablesReduction": 60,
       "additionalMonthlyUtilities": 100,
       "requiresBenches": 2
     }
@@ -248,9 +249,7 @@
           "id": "craft_tools"
         }
       ],
-      "hires": [
-        3
-      ],
+      "hires": [],
       "monthlyProductionTargets": [
         {
           "office": 4,
