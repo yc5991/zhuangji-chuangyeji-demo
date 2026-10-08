@@ -102,6 +102,35 @@ function run() {
     }
   }
 
+  // Pricing must be a real decision. If raising the price above the market reference always
+  // increased contribution, the only correct play would be to max the price.
+  const pricing = [];
+  for (const a of model.archetypes) {
+    const recipe = recipes.get(a.referenceRecipe);
+    const reference = (a.budgetCoins[0] + a.budgetCoins[1]) / 2;
+    const direct = recipe.expectedPartsCost + recipe.directCostCoins;
+    const above = model.priceAcceptance.aboveSlopeBySegment[a.segment];
+    assert(Number.isFinite(above) && above > 0, `${a.id}: missing price slope for ${a.segment}`);
+    const contribution = price => {
+      const ratio = price / reference;
+      const p = ratio <= 1
+        ? Math.min(model.priceAcceptance.ceiling, 1 + model.priceAcceptance.belowSlope * (1 - ratio))
+        : Math.max(model.priceAcceptance.floor, 1 - above * (ratio - 1));
+      return (price - direct) * p;
+    };
+    const atReference = contribution(reference);
+    let best = atReference, bestRatio = 1;
+    for (let ratio = 1.01; ratio <= 1.6; ratio += 0.01) {
+      const price = reference * ratio;
+      if (price > a.budgetCoins[1]) break;
+      const value = contribution(price);
+      if (value > best) { best = value; bestRatio = ratio; }
+    }
+    assert(best <= atReference + 1e-6,
+      `${a.id}: pricing ${((bestRatio - 1) * 100).toFixed(0)}% above market raises contribution from ${atReference.toFixed(1)} to ${best.toFixed(1)}`);
+    pricing.push({ archetype: a.id, segment: a.segment, reference, atReference: Math.round(atReference), bestAboveMarketRatio: Number(bestRatio.toFixed(3)) });
+  }
+
   const rep = model.reputation;
   assert(rep.floor < rep.initial && rep.initial < rep.ceiling, 'reputation bounds');
   assert(rep.onTimeMeetingRequirements > 0 && rep.deliveredMissingRequirement < 0 && rep.lateMeetingRequirements < 0, 'reputation deltas');
@@ -115,7 +144,7 @@ function run() {
     massWeight: model.archetypes.filter(a => a.segment === 'mass').reduce((n, a) => n + a.weight, 0),
     bespokeWeight: model.archetypes.filter(a => a.segment === 'bespoke').reduce((n, a) => n + a.weight, 0),
     demandCapTotals: capTotals,
-    ratios, rows,
+    ratios, rows, pricing,
   };
   fs.mkdirSync(path.join(root, '.local'), { recursive: true });
   fs.writeFileSync(path.join(root, '.local', 'customer-verification.json'), JSON.stringify(output, null, 2) + '\n');

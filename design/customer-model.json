@@ -178,11 +178,17 @@
     "note": "口碑系数 R 乘进月成交量；首轮计算固定为 1，接入订单流程后再启用"
   },
   "priceAcceptance": {
-    "formula": "clamp((marketReferencePrice / askingPrice)^2, 0.5, 1.3)",
+    "formula": "ratio = price / reference; below reference: clamp(1 + belowSlope*(1-ratio), 1, ceiling); above reference: clamp(1 - aboveSlope*(ratio-1), floor, 1)",
     "marketReferencePrice": "midpoint of the archetype budget range",
-    "floor": 0.5,
+    "aboveSlopeBySegment": {
+      "mass": 9,
+      "bespoke": 3
+    },
+    "belowSlope": 2,
+    "floor": 0.1,
     "ceiling": 1.3,
-    "note": "降价能提高接受度但有上限，加价会快速流失客群"
+    "budgetCeiling": "A price above the archetype budget maximum never sells, whatever the acceptance value.",
+    "note": "斜率按细分市场标定：量产客群极度价格敏感（现实里大厂毛利被压到 13%），高定客群对价格不敏感。斜率取值保证有效贡献在接近市场参考价处最高，加价不能无脑赚钱"
   },
   "fit": {
     "formula": "clamp(actualUseCaseScore / expectedScore, 0, 1)",
