@@ -84,6 +84,35 @@ function run() {
   const goodRate = failureRateFor(good), badRate = failureRateFor(bad);
   assert(badRate >= goodRate * 3, `a thermally unstable build only reaches ${badRate.toFixed(3)} against ${goodRate.toFixed(3)}`);
 
+  // Every condition multiplier has to be reachable by some legal build, or it is a number the checks
+  // read and nothing can ever trigger. The threshold above was set below anything the parts allow,
+  // which the wiring check cannot see: it proves the value is read, not that it can take effect.
+  const parts = read('components.json').parts.filter(x => x.availability.gameDate <= '2016-06-30');
+  const pool = category => parts.filter(x => x.category === category).map(x => x.id);
+  const legal = [];
+  for (const cpu of pool('cpu')) for (const cooler of pool('cooler')) for (const chassis of pool('case'))
+    for (const psu of pool('psu')) for (const gpu of [...pool('gpu'), null]) {
+      const plan = {
+        cpu, motherboard: parts.find(x => x.category === 'motherboard' && x.game.supportedCpuIds.includes(cpu))?.id,
+        gpu, ram: [{ id: pool('ram')[0], quantity: 1 }], storage: [{ id: pool('storage')[0], quantity: 1 }],
+        psu, cooler, case: chassis, fanCount: 2, budgetCoins: [0, 99999],
+        systemDrive: pool('storage')[0], workDrive: pool('storage')[0], removeHddCage: false,
+      };
+      if (!plan.motherboard) continue;
+      let report;
+      try { report = evaluate(plan); } catch { continue; }
+      if (report.blocked.length) continue;
+      legal.push(report);
+    }
+  assert(legal.length, 'no legal builds to test reachability against');
+  const unstable = legal.filter(x => !x.thermalStable).length;
+  const threshold = r.conditionMultipliers.powerHeadroomThreshold;
+  const tightPower = legal.filter(x => x.powerHeadroom < threshold).length;
+  assert(unstable > 0,
+    'no legal build is thermally unstable, so the thermal multiplier can never fire');
+  assert(tightPower > 0,
+    `no legal build reaches a power headroom below ${threshold}, so that multiplier can never fire; ` +
+    `the lowest any build achieves is ${Math.min(...legal.map(x => x.powerHeadroom)).toFixed(3)}`);
   // Rework must move the six-month result, otherwise "repeated rework erodes profit" is not true in game.
   const results = read('economy-review-results.json').results;
   const impact = [];
