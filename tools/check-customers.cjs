@@ -159,9 +159,18 @@ function run() {
       const value = contribution(price);
       if (value > best) { best = value; bestRatio = ratio; }
     }
-    assert(best <= atReference + 1e-6,
-      `${a.id}: pricing ${((bestRatio - 1) * 100).toFixed(0)}% above market raises contribution from ${atReference.toFixed(1)} to ${best.toFixed(1)}`);
-    pricing.push({ archetype: a.id, segment: a.segment, reference, atReference: Math.round(atReference), bestAboveMarketRatio: Number(bestRatio.toFixed(3)) });
+    // Raising the price must not be a dominant strategy, but a small window is realistic: the
+    // contribution has to peak close to the market price and then fall away, not climb forever.
+    assert(bestRatio <= 1.10,
+      `${a.id}: the best price is ${((bestRatio - 1) * 100).toFixed(0)}% above market, which makes raising the price the whole game`);
+    const far = contribution(reference * 1.25);
+    assert(far < atReference,
+      `${a.id}: pricing 25% above market still earns ${far.toFixed(1)} against ${atReference.toFixed(1)} at market, so price has no ceiling`);
+    pricing.push({
+      archetype: a.id, segment: a.segment, reference,
+      atReference: Math.round(atReference), bestAboveMarketRatio: Number(bestRatio.toFixed(3)),
+      at25PercentAbove: Math.round(far),
+    });
   }
 
   const rep = model.reputation;

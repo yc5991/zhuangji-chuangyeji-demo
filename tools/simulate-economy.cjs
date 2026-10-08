@@ -78,6 +78,9 @@ function acceptanceOf(productId, price) {
   if (!members.length) return 1;
   const weight = members.reduce((n, a) => n + a.weight, 0);
   return members.reduce((n, a) => {
+    // The archetype's budget maximum is a hard ceiling: nobody can buy what they cannot afford,
+    // so a plan-limited route cannot sell at any price to a trickle of customers.
+    if (price > a.budgetCoins[1]) return n;
     const reference = (a.budgetCoins[0] + a.budgetCoins[1]) / 2;
     const ratio = price / reference;
     const above = customerModel.priceAcceptance.aboveSlopeBySegment[a.segment];
@@ -91,14 +94,15 @@ const round = n => Math.round(n * 100) / 100;
 
 // Scenario inputs are proposed business parameters, separate from component reference data.
 function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
-  const opening = config.opening[difficulty];
+  const opening = { ...config.opening[difficulty], ...(overrides.opening || {}) };
+  const employee = { ...config.employee, ...(overrides.employee || {}) };
   const products = overrides.products || config.products;
   const route = { ...config.routes[routeId], ...overrides };
   // A caller may supply a synthetic scenario, which is how the fifteen-year pacing run works.
   const scenario = overrides.scenario || config.scenarios[scenarioId];
   const channel = channels.get(route.partsChannel);
   assert(channel, `Route ${routeId} must name a procurement channel.`);
-  const channelFactor = channel.nominalUnitPriceFactor;
+  const channelFactor = (overrides.channelFactor ?? channel.nominalUnitPriceFactor);
   const termMonths = channel.paymentTermMonths || 0;
   const creditLimit = opening.creditLimitCoins || 0;
   const gatedAtStart = !opening.startingRoutes.includes(routeId);
@@ -119,9 +123,9 @@ function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
     const month = index + 1, startCash = cash;
     const buys = route.investments.filter(p => p.month === month);
     const hires = route.hires.filter(m => m === month).length;
-    const prospectiveFixed = opening.rent + monthlyUtilities + (employees + hires) * config.employee.monthlySalary +
+    const prospectiveFixed = opening.rent + monthlyUtilities + (employees + hires) * employee.monthlySalary +
       buys.reduce((n, p) => n + (config.investments[p.id].additionalMonthlyUtilities || 0), 0);
-    const outlay = buys.reduce((n, p) => n + config.investments[p.id].cost, 0) + hires * config.employee.recruitmentCost;
+    const outlay = buys.reduce((n, p) => n + config.investments[p.id].cost, 0) + hires * employee.recruitmentCost;
     const notices = [];
 
     // Keep this month's fixed costs available before irreversible procurement or expansion.
@@ -139,12 +143,12 @@ function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
         standardConsumablesReduction = investment.standardConsumablesReduction || standardConsumablesReduction;
       }
       employees += hires;
-      cash -= hires * config.employee.recruitmentCost;
-      totalInvestment += hires * config.employee.recruitmentCost;
+      cash -= hires * employee.recruitmentCost;
+      totalInvestment += hires * employee.recruitmentCost;
     } else if (outlay) notices.push('EXPANSION_UNAFFORDABLE');
 
-    const fixed = opening.rent + monthlyUtilities + employees * config.employee.monthlySalary;
-    const limits = { labor: opening.ownerHours + employees * config.employee.monthlyLaborHours,
+    const fixed = opening.rent + monthlyUtilities + employees * employee.monthlySalary;
+    const limits = { labor: opening.ownerHours + employees * employee.monthlyLaborHours,
       owner: opening.ownerHours, bench: benches * config.stationMonthlyHours,
       test: opening.testStations * config.stationMonthlyHours };
     const used = { labor: 0, owner: 0, bench: 0, test: 0 };
@@ -152,7 +156,8 @@ function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
     const demand = {}, orders = {};
     for (const id of Object.keys(products)) {
       const inWindow = month >= (scenario.fromMonth ?? 1) && month <= (scenario.throughMonth ?? 6);
-      const pool = Math.round(config.companyDemandCaps[id][index] * (inWindow ? scenario.demandMultiplier : 1));
+      const caps = overrides.demandCaps || config.companyDemandCaps;
+      const pool = Math.round(caps[id][index] * (inWindow ? scenario.demandMultiplier : 1));
       const fit = fitOf(id, recipes.get(id));
       const acceptance = acceptanceOf(id, products[id].salePrice);
       orders[id] = pool;

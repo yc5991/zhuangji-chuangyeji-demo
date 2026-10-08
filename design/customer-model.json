@@ -185,7 +185,7 @@
     "formula": "ratio = price / reference; below reference: clamp(1 + belowSlope*(1-ratio), 1, ceiling); above reference: clamp(1 - aboveSlope*(ratio-1), floor, 1)",
     "marketReferencePrice": "midpoint of the archetype budget range",
     "aboveSlopeBySegment": {
-      "mass": 9,
+      "mass": 4,
       "bespoke": 3
     },
     "belowSlope": 2,
