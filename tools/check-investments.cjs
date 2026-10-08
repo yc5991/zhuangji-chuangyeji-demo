@@ -100,4 +100,19 @@ if (require.main === module) run();
   config.routes.scale.investments = savedInvestments;
   assert.equal(orders[0], orders[1],
     "buying " + benchId + " and " + equipmentId + " in the same month depends on the order they are listed");
+  // Recorded design fact: a workshop employee does not pay for itself at the demo's demand.
+  // Hiring is a decision the player can get wrong, which is intended; if a future change makes
+  // it profitable, that is a deliberate decision and this record has to be updated with it.
+  const hireEffect = {};
+  for (const [routeId, route] of Object.entries(config.routes)) {
+    const baselineRun = simulate(routeId, "baseline", "normal");
+    if (baselineRun.gatedAtStart) continue;
+    const savedHires = route.hires;
+    route.hires = [1];
+    hireEffect[routeId] = Math.round(simulate(routeId, "baseline", "normal").operatingProfit - baselineRun.operatingProfit);
+    route.hires = savedHires;
+  }
+  const profitable = Object.entries(hireEffect).filter(([, delta]) => delta > 0);
+  assert.equal(profitable.length, 0,
+    "hiring now pays on " + profitable.map(([r]) => r).join(", ") + "; that reverses a recorded design decision (see decisions.md, decision 5 re-test)");
 module.exports = { run };
