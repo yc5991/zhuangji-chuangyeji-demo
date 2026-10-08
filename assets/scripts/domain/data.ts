@@ -7,7 +7,7 @@ export const DATA: GameData = {
     "sourceHashes": {
       "components.json": "5f491656d52a8739d505e9e0a205efcf83bbf4155b4589dcedc43f64be0cd033",
       "balance.json": "cbe33aa0404a1dd0a8429e54c346a775d8a37ff2f68ff9c739bed5d2d4bc0356",
-      "economy-candidate.json": "d9fa5d6e953ce923f0c787f6c87a8bb0d735609fdfd7afae4c3860fa7e517c9d",
+      "economy-candidate.json": "ac8ce0120743a62e542f98a25ea198312ba7bd08c56171ddc19b0c19c6ee9a32",
       "supplier-system.json": "c10b7edb3ac69d1f829e35245a63d30d23e058bfd7ce635acd1d4bf531138170",
       "customer-model.json": "92fd79fc75849cbdbbae293ba6a139425bda11219d942573aa90bdf5bb037cf7",
       "workbench.json": "037082244a64a98e1cb0efe5ff799f9312b823bc4984224f93df202d45b7050c",
@@ -1479,7 +1479,7 @@ export const DATA: GameData = {
     "stationMonthlyHours": 160,
     "products": {
       "office": {
-        "salePrice": 2115,
+        "salePrice": 2202,
         "kind": "standard",
         "designHours": 0,
         "assemblyHours": 6,
@@ -1492,7 +1492,7 @@ export const DATA: GameData = {
         "developmentCost": 120
       },
       "gaming": {
-        "salePrice": 4566,
+        "salePrice": 4743,
         "kind": "standard",
         "designHours": 0,
         "assemblyHours": 10,
@@ -1505,19 +1505,19 @@ export const DATA: GameData = {
         "developmentCost": 180
       },
       "quiet_office": {
-        "salePrice": 5100,
+        "salePrice": 5391,
         "kind": "commission",
-        "designHours": 10,
-        "assemblyHours": 16,
+        "designHours": 14,
+        "assemblyHours": 20,
         "testSetupHours": 1,
         "packingHours": 1,
         "testStationHours": 4
       },
       "premium": {
-        "salePrice": 11050,
+        "salePrice": 11724,
         "kind": "commission",
-        "designHours": 18,
-        "assemblyHours": 26,
+        "designHours": 32,
+        "assemblyHours": 45,
         "testSetupHours": 1,
         "packingHours": 1,
         "testStationHours": 6
@@ -1541,7 +1541,7 @@ export const DATA: GameData = {
         8
       ],
       "quiet_office": [
-        2,
+        3,
         3,
         4,
         5,
@@ -1550,8 +1550,8 @@ export const DATA: GameData = {
       ],
       "premium": [
         1,
-        2,
-        2,
+        3,
+        3,
         3,
         3,
         4
@@ -1658,44 +1658,50 @@ export const DATA: GameData = {
           {
             "month": 3,
             "id": "craft_tools"
+          },
+          {
+            "month": 5,
+            "id": "bench"
           }
         ],
-        "hires": [],
+        "hires": [
+          5
+        ],
         "monthlyProductionTargets": [
           {
-            "office": 4,
+            "office": 5,
             "gaming": 1,
             "quiet_office": 0,
             "premium": 0
           },
           {
-            "office": 5,
-            "gaming": 2,
+            "office": 7,
+            "gaming": 3,
             "quiet_office": 1,
             "premium": 0
           },
           {
-            "office": 6,
-            "gaming": 2,
+            "office": 8,
+            "gaming": 3,
             "quiet_office": 1,
             "premium": 1
           },
           {
-            "office": 7,
-            "gaming": 3,
-            "quiet_office": 2,
-            "premium": 1
-          },
-          {
-            "office": 8,
+            "office": 9,
             "gaming": 4,
-            "quiet_office": 2,
+            "quiet_office": 3,
             "premium": 1
           },
           {
             "office": 10,
             "gaming": 5,
-            "quiet_office": 2,
+            "quiet_office": 3,
+            "premium": 1
+          },
+          {
+            "office": 13,
+            "gaming": 7,
+            "quiet_office": 3,
             "premium": 1
           }
         ]

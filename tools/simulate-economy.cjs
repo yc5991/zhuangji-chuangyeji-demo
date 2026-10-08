@@ -219,7 +219,10 @@ function simulate(routeId, scenarioId, difficulty = 'normal', overrides = {}) {
       const acceptance = acceptanceOf(id, appearance[id].price, appearance[id].premium);
       // Reputation above one may grow the reachable pool. The default keeps it a hard ceiling, so
       // a good reputation is a buffer rather than a bonus.
-      const grows = overrides.reputationGrowsPool || 'none';
+      // Decision 4: a reputation above one grows the reachable pool. The game already did this; the
+  // model kept it a hard ceiling, so the two disagreed. The rule that mixed must rank highest was
+  // deleted from the specification, so growth no longer breaks anything.
+  const grows = overrides.reputationGrowsPool || 'all';
       const growsThis = grows === 'all' || (grows === 'bespoke' && productSegment[id] === 'bespoke');
       // Only a reputation above one can grow the pool; below one it always shrinks demand.
       const scale = growsThis ? Math.max(1, reputation) : 1;

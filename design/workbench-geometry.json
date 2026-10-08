@@ -1,0 +1,1102 @@
+{
+  "schemaVersion": 1,
+  "status": "case_envelopes_with_runtime_board_adaptation",
+  "provenance": "Original fixed-view case mounting envelopes, not verified manufacturer internals. Installed board, CPU, DIMM, GPU, PSU and cooler rectangles are derived at runtime from workbench-layouts.json and selected component dimensions.",
+  "cases": [
+    {
+      "caseId": "case_small",
+      "width": 330,
+      "height": 320,
+      "units": "mm",
+      "tray": [
+        20,
+        90
+      ],
+      "slots": [
+        {
+          "id": "motherboard",
+          "kind": "motherboard",
+          "rect": [
+            20,
+            90,
+            183,
+            226
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "cpu",
+          "kind": "cpu",
+          "rect": [
+            90,
+            220,
+            38,
+            38
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "cooler",
+          "kind": "cooler",
+          "rect": [
+            58,
+            199,
+            120,
+            80
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "gpu",
+          "kind": "gpu",
+          "rect": [
+            20,
+            125,
+            250,
+            40
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "psu",
+          "kind": "psu",
+          "rect": [
+            8,
+            4,
+            140,
+            86
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "ram0",
+          "kind": "ram",
+          "rect": [
+            183,
+            176,
+            10,
+            135
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "ram1",
+          "kind": "ram",
+          "rect": [
+            196,
+            176,
+            10,
+            135
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "ram2",
+          "kind": "ram",
+          "rect": [
+            209,
+            176,
+            10,
+            135
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "ram3",
+          "kind": "ram",
+          "rect": [
+            222,
+            176,
+            10,
+            135
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "ssd0",
+          "kind": "storage",
+          "bay": "2.5-inch",
+          "rect": [
+            250,
+            101,
+            70,
+            100
+          ],
+          "plane": "rear"
+        },
+        {
+          "id": "ssd1",
+          "kind": "storage",
+          "bay": "2.5-inch",
+          "rect": [
+            250,
+            208,
+            70,
+            100
+          ],
+          "plane": "rear"
+        },
+        {
+          "id": "hdd0",
+          "kind": "storage",
+          "bay": "3.5-inch",
+          "rect": [
+            215,
+            4,
+            100,
+            35
+          ],
+          "plane": "side"
+        }
+      ],
+      "fanZones": [
+        {
+          "id": "fan0",
+          "rect": [
+            310,
+            105,
+            16,
+            120
+          ],
+          "direction": "intake",
+          "plane": "side"
+        },
+        {
+          "id": "fan1",
+          "rect": [
+            2,
+            188,
+            16,
+            120
+          ],
+          "direction": "exhaust",
+          "plane": "side"
+        },
+        {
+          "id": "fan2",
+          "rect": [
+            188,
+            302,
+            120,
+            16
+          ],
+          "direction": "exhaust",
+          "plane": "side"
+        }
+      ],
+      "anchors": [
+        {
+          "id": "A01",
+          "point": [
+            150,
+            49
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "A02",
+          "point": [
+            155,
+            94
+          ],
+          "plane": "rear"
+        },
+        {
+          "id": "A03",
+          "point": [
+            235,
+            94
+          ],
+          "plane": "rear"
+        },
+        {
+          "id": "A04",
+          "point": [
+            285,
+            205
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "A05",
+          "point": [
+            285,
+            295
+          ],
+          "plane": "rear"
+        },
+        {
+          "id": "A06",
+          "point": [
+            60,
+            295
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "A07",
+          "point": [
+            285,
+            143
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "A08",
+          "point": [
+            260,
+            155
+          ],
+          "plane": "rear"
+        }
+      ],
+      "channels": [
+        {
+          "from": "A01",
+          "to": "A02",
+          "capacity": 24
+        },
+        {
+          "from": "A02",
+          "to": "A03",
+          "capacity": 24
+        },
+        {
+          "from": "A03",
+          "to": "A04",
+          "capacity": 24
+        },
+        {
+          "from": "A04",
+          "to": "A05",
+          "capacity": 24
+        },
+        {
+          "from": "A05",
+          "to": "A06",
+          "capacity": 24
+        },
+        {
+          "from": "A04",
+          "to": "A07",
+          "capacity": 24
+        },
+        {
+          "from": "A03",
+          "to": "A08",
+          "capacity": 24
+        }
+      ],
+      "keepouts": [
+        {
+          "id": "fan0",
+          "rect": [
+            310,
+            105,
+            16,
+            120
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "fan1",
+          "rect": [
+            2,
+            188,
+            16,
+            120
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "fan2",
+          "rect": [
+            188,
+            302,
+            120,
+            16
+          ],
+          "plane": "side"
+        }
+      ],
+      "cableLengths": {
+        "MAINBOARD_POWER": 1600,
+        "CPU_POWER": 1800,
+        "GPU_POWER": 1400,
+        "SATA_POWER": 1500,
+        "SATA_DATA": 800,
+        "CPU_FAN": 650,
+        "CASE_FAN": 1300,
+        "FRONT_PANEL": 1400
+      },
+      "cpuRamClearanceMm": 34,
+      "gpuCableBendMm": 15
+    },
+    {
+      "caseId": "case_standard",
+      "width": 430,
+      "height": 430,
+      "units": "mm",
+      "tray": [
+        20,
+        110
+      ],
+      "slots": [
+        {
+          "id": "motherboard",
+          "kind": "motherboard",
+          "rect": [
+            20,
+            110,
+            229,
+            305
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "cpu",
+          "kind": "cpu",
+          "rect": [
+            90,
+            240,
+            38,
+            38
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "cooler",
+          "kind": "cooler",
+          "rect": [
+            58,
+            219,
+            120,
+            80
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "gpu",
+          "kind": "gpu",
+          "rect": [
+            20,
+            145,
+            320,
+            40
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "psu",
+          "kind": "psu",
+          "rect": [
+            8,
+            4,
+            180,
+            86
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "ram0",
+          "kind": "ram",
+          "rect": [
+            183,
+            196,
+            10,
+            135
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "ram1",
+          "kind": "ram",
+          "rect": [
+            196,
+            196,
+            10,
+            135
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "ram2",
+          "kind": "ram",
+          "rect": [
+            209,
+            196,
+            10,
+            135
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "ram3",
+          "kind": "ram",
+          "rect": [
+            222,
+            196,
+            10,
+            135
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "ssd0",
+          "kind": "storage",
+          "bay": "2.5-inch",
+          "rect": [
+            350,
+            101,
+            70,
+            100
+          ],
+          "plane": "rear"
+        },
+        {
+          "id": "ssd1",
+          "kind": "storage",
+          "bay": "2.5-inch",
+          "rect": [
+            350,
+            208,
+            70,
+            100
+          ],
+          "plane": "rear"
+        },
+        {
+          "id": "hdd0",
+          "kind": "storage",
+          "bay": "3.5-inch",
+          "rect": [
+            315,
+            4,
+            100,
+            35
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "hdd1",
+          "kind": "storage",
+          "bay": "3.5-inch",
+          "rect": [
+            315,
+            43,
+            100,
+            35
+          ],
+          "plane": "side"
+        }
+      ],
+      "fanZones": [
+        {
+          "id": "fan0",
+          "rect": [
+            410,
+            105,
+            16,
+            120
+          ],
+          "direction": "intake",
+          "plane": "side"
+        },
+        {
+          "id": "fan1",
+          "rect": [
+            2,
+            298,
+            16,
+            120
+          ],
+          "direction": "exhaust",
+          "plane": "side"
+        },
+        {
+          "id": "fan2",
+          "rect": [
+            288,
+            412,
+            120,
+            16
+          ],
+          "direction": "exhaust",
+          "plane": "side"
+        },
+        {
+          "id": "fan3",
+          "rect": [
+            410,
+            305,
+            16,
+            110
+          ],
+          "direction": "intake",
+          "plane": "side"
+        },
+        {
+          "id": "fan4",
+          "rect": [
+            24,
+            412,
+            110,
+            16
+          ],
+          "direction": "exhaust",
+          "plane": "side"
+        }
+      ],
+      "anchors": [
+        {
+          "id": "A01",
+          "point": [
+            180,
+            49
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "A02",
+          "point": [
+            185,
+            94
+          ],
+          "plane": "rear"
+        },
+        {
+          "id": "A03",
+          "point": [
+            330,
+            94
+          ],
+          "plane": "rear"
+        },
+        {
+          "id": "A04",
+          "point": [
+            385,
+            225
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "A05",
+          "point": [
+            385,
+            405
+          ],
+          "plane": "rear"
+        },
+        {
+          "id": "A06",
+          "point": [
+            60,
+            405
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "A07",
+          "point": [
+            385,
+            163
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "A08",
+          "point": [
+            360,
+            155
+          ],
+          "plane": "rear"
+        }
+      ],
+      "channels": [
+        {
+          "from": "A01",
+          "to": "A02",
+          "capacity": 24
+        },
+        {
+          "from": "A02",
+          "to": "A03",
+          "capacity": 24
+        },
+        {
+          "from": "A03",
+          "to": "A04",
+          "capacity": 24
+        },
+        {
+          "from": "A04",
+          "to": "A05",
+          "capacity": 24
+        },
+        {
+          "from": "A05",
+          "to": "A06",
+          "capacity": 24
+        },
+        {
+          "from": "A04",
+          "to": "A07",
+          "capacity": 24
+        },
+        {
+          "from": "A03",
+          "to": "A08",
+          "capacity": 24
+        }
+      ],
+      "keepouts": [
+        {
+          "id": "fan0",
+          "rect": [
+            410,
+            105,
+            16,
+            120
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "fan1",
+          "rect": [
+            2,
+            298,
+            16,
+            120
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "fan2",
+          "rect": [
+            288,
+            412,
+            120,
+            16
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "fan3",
+          "rect": [
+            410,
+            305,
+            16,
+            110
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "fan4",
+          "rect": [
+            24,
+            412,
+            110,
+            16
+          ],
+          "plane": "side"
+        }
+      ],
+      "cableLengths": {
+        "MAINBOARD_POWER": 1600,
+        "CPU_POWER": 1800,
+        "GPU_POWER": 1400,
+        "SATA_POWER": 1500,
+        "SATA_DATA": 800,
+        "CPU_FAN": 650,
+        "CASE_FAN": 1300,
+        "FRONT_PANEL": 1400
+      },
+      "cpuRamClearanceMm": 34,
+      "gpuCableBendMm": 15
+    },
+    {
+      "caseId": "case_quiet",
+      "width": 450,
+      "height": 460,
+      "units": "mm",
+      "tray": [
+        20,
+        110
+      ],
+      "slots": [
+        {
+          "id": "motherboard",
+          "kind": "motherboard",
+          "rect": [
+            20,
+            110,
+            229,
+            305
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "cpu",
+          "kind": "cpu",
+          "rect": [
+            90,
+            240,
+            38,
+            38
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "cooler",
+          "kind": "cooler",
+          "rect": [
+            58,
+            219,
+            120,
+            80
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "gpu",
+          "kind": "gpu",
+          "rect": [
+            20,
+            145,
+            300,
+            40
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "psu",
+          "kind": "psu",
+          "rect": [
+            8,
+            4,
+            180,
+            86
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "ram0",
+          "kind": "ram",
+          "rect": [
+            183,
+            196,
+            10,
+            135
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "ram1",
+          "kind": "ram",
+          "rect": [
+            196,
+            196,
+            10,
+            135
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "ram2",
+          "kind": "ram",
+          "rect": [
+            209,
+            196,
+            10,
+            135
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "ram3",
+          "kind": "ram",
+          "rect": [
+            222,
+            196,
+            10,
+            135
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "ssd0",
+          "kind": "storage",
+          "bay": "2.5-inch",
+          "rect": [
+            370,
+            101,
+            70,
+            100
+          ],
+          "plane": "rear"
+        },
+        {
+          "id": "ssd1",
+          "kind": "storage",
+          "bay": "2.5-inch",
+          "rect": [
+            370,
+            208,
+            70,
+            100
+          ],
+          "plane": "rear"
+        },
+        {
+          "id": "hdd0",
+          "kind": "storage",
+          "bay": "3.5-inch",
+          "rect": [
+            335,
+            4,
+            100,
+            35
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "hdd1",
+          "kind": "storage",
+          "bay": "3.5-inch",
+          "rect": [
+            335,
+            43,
+            100,
+            35
+          ],
+          "plane": "side"
+        }
+      ],
+      "fanZones": [
+        {
+          "id": "fan0",
+          "rect": [
+            430,
+            105,
+            16,
+            120
+          ],
+          "direction": "intake",
+          "plane": "side"
+        },
+        {
+          "id": "fan1",
+          "rect": [
+            2,
+            328,
+            16,
+            120
+          ],
+          "direction": "exhaust",
+          "plane": "side"
+        },
+        {
+          "id": "fan2",
+          "rect": [
+            308,
+            442,
+            120,
+            16
+          ],
+          "direction": "exhaust",
+          "plane": "side"
+        },
+        {
+          "id": "fan3",
+          "rect": [
+            430,
+            335,
+            16,
+            110
+          ],
+          "direction": "intake",
+          "plane": "side"
+        },
+        {
+          "id": "fan4",
+          "rect": [
+            24,
+            442,
+            110,
+            16
+          ],
+          "direction": "exhaust",
+          "plane": "side"
+        }
+      ],
+      "anchors": [
+        {
+          "id": "A01",
+          "point": [
+            180,
+            49
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "A02",
+          "point": [
+            185,
+            94
+          ],
+          "plane": "rear"
+        },
+        {
+          "id": "A03",
+          "point": [
+            350,
+            94
+          ],
+          "plane": "rear"
+        },
+        {
+          "id": "A04",
+          "point": [
+            405,
+            225
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "A05",
+          "point": [
+            405,
+            435
+          ],
+          "plane": "rear"
+        },
+        {
+          "id": "A06",
+          "point": [
+            60,
+            435
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "A07",
+          "point": [
+            405,
+            163
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "A08",
+          "point": [
+            380,
+            155
+          ],
+          "plane": "rear"
+        }
+      ],
+      "channels": [
+        {
+          "from": "A01",
+          "to": "A02",
+          "capacity": 24
+        },
+        {
+          "from": "A02",
+          "to": "A03",
+          "capacity": 24
+        },
+        {
+          "from": "A03",
+          "to": "A04",
+          "capacity": 24
+        },
+        {
+          "from": "A04",
+          "to": "A05",
+          "capacity": 24
+        },
+        {
+          "from": "A05",
+          "to": "A06",
+          "capacity": 24
+        },
+        {
+          "from": "A04",
+          "to": "A07",
+          "capacity": 24
+        },
+        {
+          "from": "A03",
+          "to": "A08",
+          "capacity": 24
+        }
+      ],
+      "keepouts": [
+        {
+          "id": "fan0",
+          "rect": [
+            430,
+            105,
+            16,
+            120
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "fan1",
+          "rect": [
+            2,
+            328,
+            16,
+            120
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "fan2",
+          "rect": [
+            308,
+            442,
+            120,
+            16
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "fan3",
+          "rect": [
+            430,
+            335,
+            16,
+            110
+          ],
+          "plane": "side"
+        },
+        {
+          "id": "fan4",
+          "rect": [
+            24,
+            442,
+            110,
+            16
+          ],
+          "plane": "side"
+        }
+      ],
+      "cableLengths": {
+        "MAINBOARD_POWER": 1600,
+        "CPU_POWER": 1800,
+        "GPU_POWER": 1400,
+        "SATA_POWER": 1500,
+        "SATA_DATA": 800,
+        "CPU_FAN": 650,
+        "CASE_FAN": 1300,
+        "FRONT_PANEL": 1400
+      },
+      "cpuRamClearanceMm": 34,
+      "gpuCableBendMm": 15
+    }
+  ]
+}

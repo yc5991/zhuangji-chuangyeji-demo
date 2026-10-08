@@ -24,9 +24,10 @@ const DECISIONS = {
   mixedPlanFactor: 1.3,
   mixedInvestments: [{ month: 3, id: 'craft_tools' }, { month: 5, id: 'bench' }],
   mixedHires: [5],
-  // Decision 3 is a rule rather than a number: hard mode unlocks the other routes on five
-  // delivered commissions, which the current numbers reach at the end of month four.
-  // Decision 4 is withdrawn: growing the pool from reputation above one breaks the rule that
+  // Decision 3 was withdrawn: hard mode is not locked, so it needs no unlock. Opening all three
+  // routes already makes mass production bankrupt in the first month, which is the intended signal.
+  // Decision 4 is applied in the simulator rather than here: the reputation default changed from
+  // none to all, so a good reputation grows the pool as the game already did. The old note read:
   // mixed earns most, so reputation above one stays a buffer.
   // Decision 5 is unchanged: hiring still does not pay at the demo's demand, which is recorded
   // as a deliberate fact rather than an oversight.

@@ -7,11 +7,11 @@
     "values": {
       "boutique": -1400,
       "scale": -1400,
-      "mixed": 2984
+      "mixed": 0
     }
   },
   "hireEffectHardModeLateHire": {
     "note": "Profit change from hiring in month six on hard mode for the boutique route. Negative before the decisions land, positive afterwards, because the longer commission hours make a premium commission capacity limited.",
-    "value": 0
+    "value": 2763
   }
 }

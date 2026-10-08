@@ -70,7 +70,7 @@
   "stationMonthlyHours": 160,
   "products": {
     "office": {
-      "salePrice": 2115,
+      "salePrice": 2202,
       "kind": "standard",
       "designHours": 0,
       "assemblyHours": 6,
@@ -83,7 +83,7 @@
       "developmentCost": 120
     },
     "gaming": {
-      "salePrice": 4566,
+      "salePrice": 4743,
       "kind": "standard",
       "designHours": 0,
       "assemblyHours": 10,
@@ -96,19 +96,19 @@
       "developmentCost": 180
     },
     "quiet_office": {
-      "salePrice": 5100,
+      "salePrice": 5391,
       "kind": "commission",
-      "designHours": 10,
-      "assemblyHours": 16,
+      "designHours": 14,
+      "assemblyHours": 20,
       "testSetupHours": 1,
       "packingHours": 1,
       "testStationHours": 4
     },
     "premium": {
-      "salePrice": 11050,
+      "salePrice": 11724,
       "kind": "commission",
-      "designHours": 18,
-      "assemblyHours": 26,
+      "designHours": 32,
+      "assemblyHours": 45,
       "testSetupHours": 1,
       "packingHours": 1,
       "testStationHours": 6
@@ -132,7 +132,7 @@
       8
     ],
     "quiet_office": [
-      2,
+      3,
       3,
       4,
       5,
@@ -141,8 +141,8 @@
     ],
     "premium": [
       1,
-      2,
-      2,
+      3,
+      3,
       3,
       3,
       4
@@ -249,44 +249,50 @@
         {
           "month": 3,
           "id": "craft_tools"
+        },
+        {
+          "month": 5,
+          "id": "bench"
         }
       ],
-      "hires": [],
+      "hires": [
+        5
+      ],
       "monthlyProductionTargets": [
         {
-          "office": 4,
+          "office": 5,
           "gaming": 1,
           "quiet_office": 0,
           "premium": 0
         },
         {
-          "office": 5,
-          "gaming": 2,
+          "office": 7,
+          "gaming": 3,
           "quiet_office": 1,
           "premium": 0
         },
         {
-          "office": 6,
-          "gaming": 2,
+          "office": 8,
+          "gaming": 3,
           "quiet_office": 1,
           "premium": 1
         },
         {
-          "office": 7,
-          "gaming": 3,
-          "quiet_office": 2,
-          "premium": 1
-        },
-        {
-          "office": 8,
+          "office": 9,
           "gaming": 4,
-          "quiet_office": 2,
+          "quiet_office": 3,
           "premium": 1
         },
         {
           "office": 10,
           "gaming": 5,
-          "quiet_office": 2,
+          "quiet_office": 3,
+          "premium": 1
+        },
+        {
+          "office": 13,
+          "gaming": 7,
+          "quiet_office": 3,
           "premium": 1
         }
       ]
