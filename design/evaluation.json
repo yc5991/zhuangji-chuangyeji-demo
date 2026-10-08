@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "status": "candidate",
+  "provenance": {
+    "existing": "spec section 6.2 lists the six dimensions the product evaluation must cover. Use-case scores, parts cost and budget come from the existing balance model; the appearance score comes from design/finish-options.json.",
+    "new": "The normalisation ranges and the direction of each dimension are original game balance.",
+    "limits": "A reporting model that turns the existing numbers into six comparable 0-100 scores. It does not change how a machine is built or priced."
+  },
+  "scoreRange": [
+    0,
+    100
+  ],
+  "dimensions": [
+    {
+      "id": "useCase",
+      "zh": "用途",
+      "source": "scores[target]",
+      "direction": "higher",
+      "note": "该机在目标用途上的适配分，直接取现有用途评分"
+    },
+    {
+      "id": "performance",
+      "zh": "性能",
+      "source": "absolute",
+      "direction": "higher",
+      "reference": 260,
+      "note": "与目标无关的绝对能力：三个用途得分之和除以参考值。用途单一但极强的机器与三项均衡的机器在这里会得到不同的分数"
+    },
+    {
+      "id": "thermals",
+      "zh": "温度",
+      "source": "thermalStable,powerHeadroom",
+      "direction": "higher",
+      "stableFloor": 60,
+      "headroomReference": 0.8,
+      "note": "通过热稳定得 60 分起步，再按供电余量加分；不稳定则最多 40 分"
+    },
+    {
+      "id": "noise",
+      "zh": "噪声",
+      "source": "noiseBurden",
+      "direction": "lower",
+      "reference": 120,
+      "note": "噪声负担越低分越高，参考值取满载风冷机型的负担量级"
+    },
+    {
+      "id": "appearance",
+      "zh": "外观",
+      "source": "finishLevel",
+      "direction": "higher",
+      "note": "基础分加所选工艺档的外观分，见 design/finish-options.json"
+    },
+    {
+      "id": "cost",
+      "zh": "成本",
+      "source": "partsCost,budgetCoins",
+      "direction": "lower",
+      "note": "配件成本占预算的比例越低分越高，预算取该样机的 budgetCoins 上限"
+    }
+  ],
+  "rules": {
+    "everyDimensionScored": "A machine must produce a score for all six dimensions or the evaluation is incomplete",
+    "independentOfTarget": "Performance and appearance never depend on the target use case; use-case fit does"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "status": "candidate",
+  "provenance": {
+    "existing": "spec section 6.3 confirms that appearance craft and performance tuning are both core content, and section 6.2 lists appearance as one of six evaluation dimensions. The hours feed the same capacity model as design/components and design/economy-candidate.",
+    "new": "The four finish levels, their consumable cost, their added labour and their appearance points are original game balance.",
+    "limits": "A numeric model for the appearance score only. What each finish looks like, how it is drawn and how the player applies it belong to the workbench and art workstreams."
+  },
+  "rules": {
+    "oneLevelPerMachine": "A machine carries exactly one finish level, chosen when the design is saved",
+    "craftToolsApply": "The craft tools investment reduces finish labour the same way it reduces commission assembly hours",
+    "appearanceIsNotFree": "Every level above standard costs consumables and workshop time, so a high appearance score competes with output"
+  },
+  "baseAppearancePoints": 10,
+  "levels": [
+    {
+      "id": "standard",
+      "zh": "标准喷涂",
+      "appearancePoints": 20,
+      "additionalConsumablesCoins": 0,
+      "additionalLaborHours": 0,
+      "note": "开局即可用，够交付，拿不到外观分"
+    },
+    {
+      "id": "brushed",
+      "zh": "拉丝面板",
+      "appearancePoints": 45,
+      "additionalConsumablesCoins": 60,
+      "additionalLaborHours": 1.5,
+      "note": "低价位高定最常选的档"
+    },
+    {
+      "id": "two_tone",
+      "zh": "双色喷涂",
+      "appearancePoints": 65,
+      "additionalConsumablesCoins": 120,
+      "additionalLaborHours": 3,
+      "note": "需要遮蔽与二次固化"
+    },
+    {
+      "id": "hand_finish",
+      "zh": "手工包边与理线",
+      "appearancePoints": 85,
+      "additionalConsumablesCoins": 220,
+      "additionalLaborHours": 5,
+      "note": "精品路线证明作品质量的主要手段"
+    }
+  ]
+}
