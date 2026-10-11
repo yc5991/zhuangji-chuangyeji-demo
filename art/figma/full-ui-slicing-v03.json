@@ -1,0 +1,781 @@
+{
+  "schemaVersion": 1,
+  "clientDate": "2026-10-11",
+  "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+  "figmaNodeId": "39:2",
+  "figmaUrl": "https://www.figma.com/design/1Pd44NBRzvtRWywj1V4bz5?node-id=39-2",
+  "method": "Untouched generated bitmap fills with editable SVG crop masks imported into ordinary Figma editor; actual 1x transparent PNG export; fixed-rectangle lossless unpack",
+  "importSvg": "art/figma/full-ui-atlas-v03.svg",
+  "atlasExport": "art/exports/ui/full-v03/full-ui-atlas-v03.png",
+  "originalsPreserved": true,
+  "sources": [
+    {
+      "path": "art/source/ui/full-v03/materials_v03.png",
+      "sha256": "8615ec6e8de6791523265596ebae1af9edc40207b3fca4706ab043904dae9c5d",
+      "nodeId": "38:2",
+      "imageHash": "61dd1e455bb2436b7f8ba527a78330f0951aeab1"
+    },
+    {
+      "path": "art/source/ui/full-v03/portraits_v03.png",
+      "sha256": "8b2ed4617b0f7362ca9c85145ab366b072809837f504daf79ada9d09bc283345",
+      "nodeId": "38:3",
+      "imageHash": "69049cd48642d7904d2fa897d0352ab20c6a1eab"
+    }
+  ],
+  "entries": [
+    {
+      "name": "card_plain",
+      "kind": "surface",
+      "source": "art/source/ui/full-v03/materials_v03.png",
+      "sourcePx": [
+        1254,
+        1254
+      ],
+      "sourceRect": [
+        21,
+        154,
+        289,
+        186
+      ],
+      "atlasRect": [
+        0,
+        0,
+        384,
+        247
+      ],
+      "border": [
+        64,
+        62,
+        68,
+        54
+      ],
+      "exportPath": "art/exports/ui/full-v03/surfaces/card_plain.png",
+      "runtimePath": "assets/art/workbench/ui/full-v03/surfaces/card_plain.png",
+      "exportPx": [
+        384,
+        247
+      ],
+      "sha256": "b720ac372fad57e166985893c6c14fa12ddbf8b175eac9ffc66917f446d462a9"
+    },
+    {
+      "name": "card_leaf",
+      "kind": "surface",
+      "source": "art/source/ui/full-v03/materials_v03.png",
+      "sourcePx": [
+        1254,
+        1254
+      ],
+      "sourceRect": [
+        329,
+        155,
+        288,
+        184
+      ],
+      "atlasRect": [
+        384,
+        0,
+        384,
+        245
+      ],
+      "border": [
+        64,
+        62,
+        68,
+        54
+      ],
+      "exportPath": "art/exports/ui/full-v03/surfaces/card_leaf.png",
+      "runtimePath": "assets/art/workbench/ui/full-v03/surfaces/card_leaf.png",
+      "exportPx": [
+        384,
+        245
+      ],
+      "sha256": "0cd172e4c4ecf4583d9696c86a616c74bbe326121e4fcecaa2539ca6af534509"
+    },
+    {
+      "name": "wood_sign",
+      "kind": "surface",
+      "source": "art/source/ui/full-v03/materials_v03.png",
+      "sourcePx": [
+        1254,
+        1254
+      ],
+      "sourceRect": [
+        636,
+        187,
+        289,
+        111
+      ],
+      "atlasRect": [
+        768,
+        0,
+        384,
+        147
+      ],
+      "border": [
+        84,
+        44,
+        84,
+        44
+      ],
+      "exportPath": "art/exports/ui/full-v03/surfaces/wood_sign.png",
+      "runtimePath": "assets/art/workbench/ui/full-v03/surfaces/wood_sign.png",
+      "exportPx": [
+        384,
+        147
+      ],
+      "sha256": "c4d7501fc895fa61314595f49ff9bd8c4aec8309cd917b5bbbe48ea2512a3ffb"
+    },
+    {
+      "name": "title_ribbon",
+      "kind": "surface",
+      "source": "art/source/ui/full-v03/materials_v03.png",
+      "sourcePx": [
+        1254,
+        1254
+      ],
+      "sourceRect": [
+        944,
+        194,
+        294,
+        99
+      ],
+      "atlasRect": [
+        1152,
+        0,
+        384,
+        129
+      ],
+      "border": [
+        84,
+        44,
+        84,
+        44
+      ],
+      "exportPath": "art/exports/ui/full-v03/surfaces/title_ribbon.png",
+      "runtimePath": "assets/art/workbench/ui/full-v03/surfaces/title_ribbon.png",
+      "exportPx": [
+        384,
+        129
+      ],
+      "sha256": "d1364bd51baaa1458a71c5a198b48417166a9338779497f8c51453a6a29f031c"
+    },
+    {
+      "name": "button_normal",
+      "kind": "surface",
+      "source": "art/source/ui/full-v03/materials_v03.png",
+      "sourcePx": [
+        1254,
+        1254
+      ],
+      "sourceRect": [
+        22,
+        424,
+        289,
+        109
+      ],
+      "atlasRect": [
+        0,
+        384,
+        384,
+        145
+      ],
+      "border": [
+        84,
+        44,
+        84,
+        44
+      ],
+      "exportPath": "art/exports/ui/full-v03/surfaces/button_normal.png",
+      "runtimePath": "assets/art/workbench/ui/full-v03/surfaces/button_normal.png",
+      "exportPx": [
+        384,
+        145
+      ],
+      "sha256": "53c98992997c898bb2b162974988a01be6bd9ddbefbedfce3bbde9008a57e93c"
+    },
+    {
+      "name": "button_pressed",
+      "kind": "surface",
+      "source": "art/source/ui/full-v03/materials_v03.png",
+      "sourcePx": [
+        1254,
+        1254
+      ],
+      "sourceRect": [
+        330,
+        424,
+        287,
+        109
+      ],
+      "atlasRect": [
+        384,
+        384,
+        384,
+        146
+      ],
+      "border": [
+        84,
+        44,
+        84,
+        44
+      ],
+      "exportPath": "art/exports/ui/full-v03/surfaces/button_pressed.png",
+      "runtimePath": "assets/art/workbench/ui/full-v03/surfaces/button_pressed.png",
+      "exportPx": [
+        384,
+        146
+      ],
+      "sha256": "7c8c58bac657870b76e1bc865874265f743c88cb7ed0255cf0923e80670cc904"
+    },
+    {
+      "name": "button_secondary",
+      "kind": "surface",
+      "source": "art/source/ui/full-v03/materials_v03.png",
+      "sourcePx": [
+        1254,
+        1254
+      ],
+      "sourceRect": [
+        638,
+        425,
+        287,
+        108
+      ],
+      "atlasRect": [
+        768,
+        384,
+        384,
+        145
+      ],
+      "border": [
+        84,
+        44,
+        84,
+        44
+      ],
+      "exportPath": "art/exports/ui/full-v03/surfaces/button_secondary.png",
+      "runtimePath": "assets/art/workbench/ui/full-v03/surfaces/button_secondary.png",
+      "exportPx": [
+        384,
+        145
+      ],
+      "sha256": "1a3bdabfa6592a1eaba85f934210abad2b3dccbc4422306f79148275d0b89e48"
+    },
+    {
+      "name": "button_disabled",
+      "kind": "surface",
+      "source": "art/source/ui/full-v03/materials_v03.png",
+      "sourcePx": [
+        1254,
+        1254
+      ],
+      "sourceRect": [
+        945,
+        425,
+        287,
+        108
+      ],
+      "atlasRect": [
+        1152,
+        384,
+        384,
+        145
+      ],
+      "border": [
+        84,
+        44,
+        84,
+        44
+      ],
+      "exportPath": "art/exports/ui/full-v03/surfaces/button_disabled.png",
+      "runtimePath": "assets/art/workbench/ui/full-v03/surfaces/button_disabled.png",
+      "exportPx": [
+        384,
+        145
+      ],
+      "sha256": "658f6506ba4e3062d694bf2c1b95a22eb82aa78d0785bc3eaf259a998b6bf759"
+    },
+    {
+      "name": "tab_selected",
+      "kind": "surface",
+      "source": "art/source/ui/full-v03/materials_v03.png",
+      "sourcePx": [
+        1254,
+        1254
+      ],
+      "sourceRect": [
+        25,
+        670,
+        286,
+        111
+      ],
+      "atlasRect": [
+        0,
+        768,
+        384,
+        149
+      ],
+      "border": [
+        64,
+        38,
+        64,
+        38
+      ],
+      "exportPath": "art/exports/ui/full-v03/surfaces/tab_selected.png",
+      "runtimePath": "assets/art/workbench/ui/full-v03/surfaces/tab_selected.png",
+      "exportPx": [
+        384,
+        149
+      ],
+      "sha256": "1c95a0007e7f7181ff0368a529cfad6b521b27ceb591e0c429c318421ff4f91e"
+    },
+    {
+      "name": "tab_normal",
+      "kind": "surface",
+      "source": "art/source/ui/full-v03/materials_v03.png",
+      "sourcePx": [
+        1254,
+        1254
+      ],
+      "sourceRect": [
+        331,
+        670,
+        286,
+        110
+      ],
+      "atlasRect": [
+        384,
+        768,
+        384,
+        148
+      ],
+      "border": [
+        64,
+        38,
+        64,
+        38
+      ],
+      "exportPath": "art/exports/ui/full-v03/surfaces/tab_normal.png",
+      "runtimePath": "assets/art/workbench/ui/full-v03/surfaces/tab_normal.png",
+      "exportPx": [
+        384,
+        148
+      ],
+      "sha256": "6953c71a780ff09e6d29c1aacab75c5f99221f379de0e9d99389baca115202fd"
+    },
+    {
+      "name": "input_field",
+      "kind": "surface",
+      "source": "art/source/ui/full-v03/materials_v03.png",
+      "sourcePx": [
+        1254,
+        1254
+      ],
+      "sourceRect": [
+        638,
+        681,
+        288,
+        103
+      ],
+      "atlasRect": [
+        768,
+        768,
+        384,
+        137
+      ],
+      "border": [
+        84,
+        44,
+        84,
+        44
+      ],
+      "exportPath": "art/exports/ui/full-v03/surfaces/input_field.png",
+      "runtimePath": "assets/art/workbench/ui/full-v03/surfaces/input_field.png",
+      "exportPx": [
+        384,
+        137
+      ],
+      "sha256": "1d6e05bd520b58e238f2a0639a40b82c03768333e0ac36c5fd8d993f299bf0a3"
+    },
+    {
+      "name": "nav_selected",
+      "kind": "surface",
+      "source": "art/source/ui/full-v03/materials_v03.png",
+      "sourcePx": [
+        1254,
+        1254
+      ],
+      "sourceRect": [
+        985,
+        596,
+        211,
+        249
+      ],
+      "atlasRect": [
+        1152,
+        768,
+        325,
+        384
+      ],
+      "border": [
+        44,
+        44,
+        44,
+        44
+      ],
+      "exportPath": "art/exports/ui/full-v03/surfaces/nav_selected.png",
+      "runtimePath": "assets/art/workbench/ui/full-v03/surfaces/nav_selected.png",
+      "exportPx": [
+        325,
+        384
+      ],
+      "sha256": "db28c9266a46a77c1c7b96f81cfa8fb953182eba2a6ba25cac6cf1c527e1f88d"
+    },
+    {
+      "name": "dialog_paper",
+      "kind": "surface",
+      "source": "art/source/ui/full-v03/materials_v03.png",
+      "sourcePx": [
+        1254,
+        1254
+      ],
+      "sourceRect": [
+        20,
+        874,
+        294,
+        269
+      ],
+      "atlasRect": [
+        0,
+        1152,
+        384,
+        351
+      ],
+      "border": [
+        46,
+        46,
+        46,
+        64
+      ],
+      "exportPath": "art/exports/ui/full-v03/surfaces/dialog_paper.png",
+      "runtimePath": "assets/art/workbench/ui/full-v03/surfaces/dialog_paper.png",
+      "exportPx": [
+        384,
+        351
+      ],
+      "sha256": "339a31d86377d6346f450e820ce580b697f2e1c3d416bbf6e24578f3266d4b60"
+    },
+    {
+      "name": "progress_track",
+      "kind": "surface",
+      "source": "art/source/ui/full-v03/materials_v03.png",
+      "sourcePx": [
+        1254,
+        1254
+      ],
+      "sourceRect": [
+        330,
+        996,
+        288,
+        41
+      ],
+      "atlasRect": [
+        384,
+        1152,
+        384,
+        55
+      ],
+      "border": [
+        30,
+        8,
+        30,
+        8
+      ],
+      "exportPath": "art/exports/ui/full-v03/surfaces/progress_track.png",
+      "runtimePath": "assets/art/workbench/ui/full-v03/surfaces/progress_track.png",
+      "exportPx": [
+        384,
+        55
+      ],
+      "sha256": "3dc728597d1135854a17ae5596bebb54b2a63830077ce4e630bb11011aedc018"
+    },
+    {
+      "name": "badge_green",
+      "kind": "surface",
+      "source": "art/source/ui/full-v03/materials_v03.png",
+      "sourcePx": [
+        1254,
+        1254
+      ],
+      "sourceRect": [
+        638,
+        957,
+        289,
+        112
+      ],
+      "atlasRect": [
+        768,
+        1152,
+        384,
+        149
+      ],
+      "border": [
+        84,
+        44,
+        84,
+        44
+      ],
+      "exportPath": "art/exports/ui/full-v03/surfaces/badge_green.png",
+      "runtimePath": "assets/art/workbench/ui/full-v03/surfaces/badge_green.png",
+      "exportPx": [
+        384,
+        149
+      ],
+      "sha256": "249e67f501ed31cb93fbcd408f4cbb0421a82ad782d892211f4acc81d823970e"
+    },
+    {
+      "name": "badge_blue",
+      "kind": "surface",
+      "source": "art/source/ui/full-v03/materials_v03.png",
+      "sourcePx": [
+        1254,
+        1254
+      ],
+      "sourceRect": [
+        944,
+        957,
+        293,
+        112
+      ],
+      "atlasRect": [
+        1152,
+        1152,
+        384,
+        147
+      ],
+      "border": [
+        84,
+        44,
+        84,
+        44
+      ],
+      "exportPath": "art/exports/ui/full-v03/surfaces/badge_blue.png",
+      "runtimePath": "assets/art/workbench/ui/full-v03/surfaces/badge_blue.png",
+      "exportPx": [
+        384,
+        147
+      ],
+      "sha256": "7ab0aa4640577e4be0671c0ea34a5363a3abf39a1e51ef8e0cbdbd526e10a086"
+    },
+    {
+      "name": "client_0",
+      "kind": "portrait",
+      "source": "art/source/ui/full-v03/portraits_v03.png",
+      "sourcePx": [
+        1536,
+        1024
+      ],
+      "sourceRect": [
+        24,
+        4,
+        464,
+        464
+      ],
+      "atlasRect": [
+        0,
+        1552,
+        192,
+        192
+      ],
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "cornerRadius": 96,
+      "exportPath": "art/exports/ui/full-v03/portraits/client_0.png",
+      "runtimePath": "assets/art/workbench/ui/full-v03/portraits/client_0.png",
+      "exportPx": [
+        192,
+        192
+      ],
+      "sha256": "4f962c012ff5b7308e731c6996a749891e76b11f0405ff0b7fd34dd35cf8f436"
+    },
+    {
+      "name": "client_1",
+      "kind": "portrait",
+      "source": "art/source/ui/full-v03/portraits_v03.png",
+      "sourcePx": [
+        1536,
+        1024
+      ],
+      "sourceRect": [
+        536,
+        4,
+        464,
+        464
+      ],
+      "atlasRect": [
+        256,
+        1552,
+        192,
+        192
+      ],
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "cornerRadius": 96,
+      "exportPath": "art/exports/ui/full-v03/portraits/client_1.png",
+      "runtimePath": "assets/art/workbench/ui/full-v03/portraits/client_1.png",
+      "exportPx": [
+        192,
+        192
+      ],
+      "sha256": "61392ffc8e922c9c936937c950750f49547e353bae65253fa3afe3a33527fbd0"
+    },
+    {
+      "name": "client_2",
+      "kind": "portrait",
+      "source": "art/source/ui/full-v03/portraits_v03.png",
+      "sourcePx": [
+        1536,
+        1024
+      ],
+      "sourceRect": [
+        1048,
+        4,
+        464,
+        464
+      ],
+      "atlasRect": [
+        512,
+        1552,
+        192,
+        192
+      ],
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "cornerRadius": 96,
+      "exportPath": "art/exports/ui/full-v03/portraits/client_2.png",
+      "runtimePath": "assets/art/workbench/ui/full-v03/portraits/client_2.png",
+      "exportPx": [
+        192,
+        192
+      ],
+      "sha256": "3c145c27bd291134f6a91b68feefa77c731b2daaadc66954d77291d7697a72e9"
+    },
+    {
+      "name": "client_3",
+      "kind": "portrait",
+      "source": "art/source/ui/full-v03/portraits_v03.png",
+      "sourcePx": [
+        1536,
+        1024
+      ],
+      "sourceRect": [
+        24,
+        516,
+        464,
+        464
+      ],
+      "atlasRect": [
+        768,
+        1552,
+        192,
+        192
+      ],
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "cornerRadius": 96,
+      "exportPath": "art/exports/ui/full-v03/portraits/client_3.png",
+      "runtimePath": "assets/art/workbench/ui/full-v03/portraits/client_3.png",
+      "exportPx": [
+        192,
+        192
+      ],
+      "sha256": "7c0a5f2793d0e856e5c6e4235e59b19c1aaa2e171783cdb1541808948d5def62"
+    },
+    {
+      "name": "client_4",
+      "kind": "portrait",
+      "source": "art/source/ui/full-v03/portraits_v03.png",
+      "sourcePx": [
+        1536,
+        1024
+      ],
+      "sourceRect": [
+        536,
+        516,
+        464,
+        464
+      ],
+      "atlasRect": [
+        1024,
+        1552,
+        192,
+        192
+      ],
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "cornerRadius": 96,
+      "exportPath": "art/exports/ui/full-v03/portraits/client_4.png",
+      "runtimePath": "assets/art/workbench/ui/full-v03/portraits/client_4.png",
+      "exportPx": [
+        192,
+        192
+      ],
+      "sha256": "00222adaedca38583648f3d0c5c5d7f17532e3ac27ef0936f5d2db98d3e65ae3"
+    },
+    {
+      "name": "client_5",
+      "kind": "portrait",
+      "source": "art/source/ui/full-v03/portraits_v03.png",
+      "sourcePx": [
+        1536,
+        1024
+      ],
+      "sourceRect": [
+        1048,
+        516,
+        464,
+        464
+      ],
+      "atlasRect": [
+        1280,
+        1552,
+        192,
+        192
+      ],
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "cornerRadius": 96,
+      "exportPath": "art/exports/ui/full-v03/portraits/client_5.png",
+      "runtimePath": "assets/art/workbench/ui/full-v03/portraits/client_5.png",
+      "exportPx": [
+        192,
+        192
+      ],
+      "sha256": "1f277593e6f705d77800af6fd68f3c62891bc8edd21aef2705c585df54bd3cc8"
+    }
+  ]
+}

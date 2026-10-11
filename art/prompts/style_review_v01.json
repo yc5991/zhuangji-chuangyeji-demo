@@ -1,6 +1,7 @@
 {
   "id": "style_review_v01",
-  "status": "visual_candidate",
+  "status": "superseded_style_candidate",
+  "reviewOutcome": "User rejected the fairy-tale impression and requested relatively realistic PC Building Simulator-like art. Retained as the historical v01 reference; superseded by style_review_v02.",
   "tool": "built_in_image_gen",
   "sourcePath": "art/source/style_review_v01.png",
   "approvedBasis": "User selected clean hand-drawn cartoon, warm workshop and clear recognizable hardware detail in the design confirmation chat on 2026-10-07.",

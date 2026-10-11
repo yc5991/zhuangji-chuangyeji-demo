@@ -1,0 +1,15 @@
+{
+  "id": "psu_450_rear_v01",
+  "componentId": "psu_450",
+  "tool": "built_in_image_gen",
+  "intent": "generate",
+  "status": "generated_candidate",
+  "sourcePath": "art/source/parts/psu_450_rear_v01.png",
+  "referencePaths": [
+    "art/source/style_review_v02.png",
+    "art/source/parts/psu_450_side_v02.png"
+  ],
+  "transparent_background": true,
+  "structuralBasis": "Original non-modular opposite-side body, shared by350/450 game models. No manufacturer internal layout claim.",
+  "prompt": "Use case: product-mockup. ONE isolated same original nonmodular PSU as reference2, now OPPOSITE plain SIDE panel. Strict orthographic facing SIDE only, zero top/end fan grille plane, zero perspective. Rectangular140mm horizontal DEPTH by86mm vertical HEIGHT, exact1.628 width/height, compact almost square rectangle. Neutral industrial upper-left light. Side plain graphite powdercoated steel, four small round Philips corner screws, small blank gray sticker upper-left corner; slightly folded lower flange. CASE FRONT isLEFT, REAR isRIGHT in this cable-management camera. A tiny round rubber grommet atlowerLEFT edge, but NO cable, sockets or plugs drawn. Only this broad side panel facingcamera, no full ACinput face or fan face. Complete object margins transparent, truealpha, no ground, no outershadow, no text/logo/watermark. Original game body projection."
+}

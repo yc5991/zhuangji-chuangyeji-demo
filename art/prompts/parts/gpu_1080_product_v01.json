@@ -1,0 +1,17 @@
+{
+  "id": "gpu_1080_product_v01",
+  "componentId": "gpu_1080",
+  "tool": "built_in_image_gen",
+  "intent": "generate",
+  "status": "generated_candidate",
+  "sourcePath": "art/source/parts/gpu_1080_product_v01.png",
+  "referencePaths": [
+    "art/source/style_review_v02.png",
+    "art/source/parts/gpu_1080_side_v01.png"
+  ],
+  "transparent_background": true,
+  "structuralBasis": "Original game shroud/cooler turnaround based on catalog dimensions/power count; not exact manufacturer photography.",
+  "prompt": "Use case: product-mockup. ONE isolated procurement product image of same original game GPU asreference2. Reference1gives realisticindustrial PCsimulatorneutral materials. Modestthreequarter product camera reveals broadFANFACE and smallTOPrail, rear metalexpansion bracketatLEFT,longcardtipRIGHT,longaxishorizontal. 269x111x40mm founding reference family blower card. Graphite base, original angular silver metal shroud with a dark rectangular clearwindow revealing silver fins toward center-left, exactlyONE radial blower intake atRIGHT, eightpin2x4 black power socket nearupper-right rear rail. Entire card crisp realisticmillimeter manufactured forms, softupperleftlight andfill, believablemetal/plasticroughness, fine silverfinlamellae, thinPCBedge,goldPCIecontacts onLOWERedge (onlyproductview). Blankcentralfan hub and tiny sideplaque,no logos/text. Fanface shownonlyforcatalog, willfaceDOWNininstalledview. No secondradialfan, noaxialtwins, no decorativehorns or cartoonproportions. Full silhouettecentered withampletransparentmargins onall edges, truealpha, noenvironment, floor, outsideshadow,reflection, cables, motherboard,box,glow,RGB,watermark.",
+  "generatedOutputFile": "exec-e86df454-38d4-4ea6-baf0-2cd522c993f4.png",
+  "resultRecovery": "Recovered completed tool output after session interruption; matched by visual identity and recorded prompt"
+}

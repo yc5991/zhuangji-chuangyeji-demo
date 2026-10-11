@@ -1,0 +1,205 @@
+{
+  "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+  "url": "https://www.figma.com/design/1Pd44NBRzvtRWywj1V4bz5",
+  "sourcePageId": "0:1",
+  "slicePageId": "1:2",
+  "status": "eight_frames_exported_for_review",
+  "apiLimit": "Figma MCP Starter call limit reached on 2026-10-08 after six frame exports. Preserve Figma nodes; do not recreate existing assets.",
+  "exportMethod": "PNG export of clipped frame. Slice-only API exports returned empty alpha; clipped frames export the actual image.",
+  "exports": [
+    {
+      "partId": "case_standard",
+      "view": "side",
+      "sourceId": "5:2",
+      "frameId": "7:2",
+      "imageId": "7:3",
+      "sliceId": "7:4",
+      "sourceCropPx": [
+        91,
+        63,
+        1160,
+        1194
+      ],
+      "scale": 0.905393457117595,
+      "exportPx": [
+        968,
+        1024
+      ],
+      "exportNodeId": "7:2",
+      "stagingPath": "art/exports/parts/case_standard_side.png",
+      "runtimePath": "assets/art/workbench/side/case_standard.png",
+      "state": "exported_for_review",
+      "sourceVersion": "v01"
+    },
+    {
+      "partId": "mb_b150",
+      "view": "side",
+      "sourceId": "5:3",
+      "frameId": "7:5",
+      "imageId": "7:6",
+      "sliceId": "7:7",
+      "sourceCropPx": [
+        33,
+        95,
+        1025,
+        1390
+      ],
+      "scale": 0.593050193050193,
+      "exportPx": [
+        589,
+        768
+      ],
+      "exportNodeId": "7:5",
+      "stagingPath": "art/exports/parts/mb_b150_side.png",
+      "runtimePath": "assets/art/workbench/side/mb_b150.png",
+      "state": "exported_for_review",
+      "sourceVersion": "v03"
+    },
+    {
+      "partId": "cpu_6500",
+      "view": "side",
+      "sourceId": "5:4",
+      "frameId": "7:8",
+      "imageId": "7:9",
+      "sliceId": "7:10",
+      "sourceCropPx": [
+        133,
+        152,
+        1121,
+        1099
+      ],
+      "scale": 0.12955465587044535,
+      "exportPx": [
+        128,
+        123
+      ],
+      "exportNodeId": "7:8",
+      "stagingPath": "art/exports/parts/cpu_6500_side.png",
+      "runtimePath": "assets/art/workbench/side/cpu_6500.png",
+      "state": "exported_for_review",
+      "sourceVersion": "v01"
+    },
+    {
+      "partId": "gpu_960",
+      "view": "side",
+      "sourceId": "5:5",
+      "frameId": "7:11",
+      "imageId": "7:12",
+      "sliceId": "7:13",
+      "sourceCropPx": [
+        48,
+        281,
+        1742,
+        631
+      ],
+      "scale": 0.45336481700118064,
+      "exportPx": [
+        768,
+        159
+      ],
+      "exportNodeId": "7:11",
+      "stagingPath": "art/exports/parts/gpu_960_side.png",
+      "runtimePath": "assets/art/workbench/side/gpu_960.png",
+      "state": "exported_for_review",
+      "sourceVersion": "v01"
+    },
+    {
+      "partId": "ram_ddr4_8",
+      "view": "side",
+      "sourceId": "5:6",
+      "frameId": "7:14",
+      "imageId": "7:15",
+      "sliceId": "7:16",
+      "sourceCropPx": [
+        480,
+        47,
+        545,
+        1489
+      ],
+      "scale": 0.3550624133148405,
+      "exportPx": [
+        24,
+        512
+      ],
+      "exportNodeId": "7:14",
+      "stagingPath": "art/exports/parts/ram_ddr4_8_side.png",
+      "runtimePath": "assets/art/workbench/side/ram_ddr4_8.png",
+      "state": "exported_for_review",
+      "sourceVersion": "v02"
+    },
+    {
+      "partId": "ssd_250",
+      "view": "rear",
+      "sourceId": "5:7",
+      "frameId": "7:17",
+      "imageId": "7:18",
+      "sliceId": "7:19",
+      "sourceCropPx": [
+        115,
+        136,
+        935,
+        1339
+      ],
+      "scale": 0.21280133000831256,
+      "exportPx": [
+        175,
+        256
+      ],
+      "exportNodeId": "7:17",
+      "stagingPath": "art/exports/parts/ssd_250_rear.png",
+      "runtimePath": "assets/art/workbench/rear/ssd_250.png",
+      "state": "exported_for_review",
+      "sourceVersion": "v01"
+    },
+    {
+      "partId": "psu_450",
+      "view": "side",
+      "sourceId": "5:8",
+      "frameId": "7:20",
+      "imageId": "7:21",
+      "sliceId": "7:22",
+      "sourceCropPx": [
+        127,
+        57,
+        1451,
+        892
+      ],
+      "scale": 0.3867069486404834,
+      "exportPx": [
+        512,
+        323
+      ],
+      "exportNodeId": "7:20",
+      "stagingPath": "art/exports/parts/psu_450_side.png",
+      "runtimePath": null,
+      "state": "exported_for_review",
+      "sourceVersion": "v02",
+      "sliceStatus": "historical slice retained; clipped frame is authoritative export"
+    },
+    {
+      "partId": "cooler_tower",
+      "view": "side",
+      "sourceId": "5:9",
+      "frameId": "7:23",
+      "imageId": "7:24",
+      "sliceId": "7:25",
+      "sourceCropPx": [
+        97,
+        80,
+        1446,
+        908
+      ],
+      "scale": 0.3795404002965159,
+      "exportPx": [
+        512,
+        315
+      ],
+      "exportNodeId": "7:23",
+      "stagingPath": "art/exports/parts/cooler_tower_side.png",
+      "runtimePath": null,
+      "state": "exported_for_review",
+      "sourceVersion": "v03",
+      "sliceStatus": "historical slice retained; clipped frame is authoritative export"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "case_standard_side_v01",
+  "componentId": "case_standard",
+  "prompt": "Use case: product-mockup. Production asset for Orangegame, a relatively realistic industrial PC assembly game. Image 1 is only a MATERIAL AND LIGHTING STYLE REFERENCE; do not reuse its composition or perspective. Render ONE independent hardware part on genuine transparent alpha background. Neutral white studio light from upper left, gentle fill, matte realistic physical materials, sharp functional details, no outlines, no cartoon exaggeration, no bloom, no environment, no ground shadow, no typography, logos, numbers, watermark, collage or other components. Absolutely orthographic, no perspective or oblique angle, no camera tilt. Preserve complete silhouette, with transparent padding. Subject: an EMPTY unbranded graphite painted-steel 2016 ATX mid-tower chassis with its entire left side cover removed, viewed straight-on from the open left side, front of tower at image RIGHT, rear at LEFT, top up. The side body is a true 430mm depth by 430mm height SQUARE silhouette, with very small feet below. Very thin realistic folded steel border, top and bottom rails, left rear edge and slim solid front column on right. Large flat bare motherboard tray behind the upper-left chamber with correct screw standoffs and modest cable-routing cutouts to its right. Empty unobstructed main chamber, empty lower-left 140mm-deep PSU area and a small empty two-drive metal cage in lower-right. NO motherboard, NO CPU, NO memory, NO cooler, NO GPU, NO PSU, NO drives, NO cables, NO installed fans, NO side glass. No tall narrow modern case, no PSU shroud, no diagonal faces. Front and rear fans would be edge-on in this camera, leave mounting rails empty. This is the static base sprite; the side cover and moving parts will be separate assets. Center the empty square case on a square canvas.",
+  "sourcePath": "art/source/parts/case_standard_side_v01.png",
+  "tool": "built_in_image_gen",
+  "intent": "generate",
+  "useCase": "product-mockup",
+  "status": "production_candidate",
+  "referencePaths": [
+    "art/source/style_review_v02.png"
+  ]
+}

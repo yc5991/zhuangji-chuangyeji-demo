@@ -1,0 +1,14 @@
+{
+  "id": "case_small_rear_v02",
+  "componentId": "case_small",
+  "intent": "edit",
+  "referencePaths": [
+    "art/source/parts/case_small_rear_v01.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Edit ONLY the expansion slot stack at the far RIGHT rear edge of this compact empty microATX case. Current image has too many stacked positions. Replace with exactly FOUR equal horizontal expansion slot locations, stacked vertically within the bottom-mid portion of the right rear rail. Keep remaining area above slots simple solid case metal, no extra expansion slots or connectors. The entire case must keep its identical outer width and height, top and bottom rails, feet, tray CPU cutout, cable apertures, two SSD mounting plates, lower PSU bay on RIGHT and HDD cage on LEFT. Preserve fixed straight-on orthographic camera, realistic graphite powdercoat metal, ordinary fasteners, lighting and actual transparent alpha. Do not add installed hardware, cables, text, environment, floor or external glow. Four positions only.",
+  "tool": "built_in_image_gen",
+  "transparent_background": true,
+  "status": "generated_candidate",
+  "sourcePath": "art/source/parts/case_small_rear_v02.png",
+  "structuralBasis": "Original game art correction; not a manufacturer mechanical drawing"
+}

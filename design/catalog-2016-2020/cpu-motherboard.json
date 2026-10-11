@@ -350,17 +350,17 @@
         "platformGeneration": "6th"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration",
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration",
         "gameAvailability.from"
       ],
       "sourceIds": [
@@ -412,17 +412,17 @@
         "platformGeneration": "6th"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration",
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration",
         "gameAvailability.from"
       ],
       "sourceIds": [
@@ -474,17 +474,17 @@
         "platformGeneration": "6th"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration",
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration",
         "gameAvailability.from"
       ],
       "sourceIds": [
@@ -536,17 +536,17 @@
         "platformGeneration": "Broadwell-E"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration",
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration",
         "gameAvailability.from"
       ],
       "sourceIds": [
@@ -600,17 +600,17 @@
         "platformGeneration": "7th"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration",
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration",
         "gameAvailability.from"
       ],
       "sourceIds": [
@@ -663,17 +663,17 @@
         "platformGeneration": "7th"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration",
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration",
         "gameAvailability.from"
       ],
       "sourceIds": [
@@ -726,17 +726,17 @@
         "platformGeneration": "7th"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration",
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration",
         "gameAvailability.from"
       ],
       "sourceIds": [
@@ -788,17 +788,17 @@
         "platformGeneration": "Skylake-X"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration",
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration",
         "gameAvailability.from"
       ],
       "sourceIds": [
@@ -852,17 +852,17 @@
         "platformGeneration": "8th"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration",
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration",
         "gameAvailability.from"
       ],
       "sourceIds": [
@@ -914,17 +914,17 @@
         "platformGeneration": "8th"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration",
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration",
         "gameAvailability.from"
       ],
       "sourceIds": [
@@ -976,17 +976,17 @@
         "platformGeneration": "8th"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration",
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration",
         "gameAvailability.from"
       ],
       "sourceIds": [
@@ -1038,17 +1038,17 @@
         "platformGeneration": "9th"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration",
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration",
         "gameAvailability.from"
       ],
       "sourceIds": [
@@ -1100,17 +1100,17 @@
         "platformGeneration": "9th"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration",
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration",
         "gameAvailability.from"
       ],
       "sourceIds": [
@@ -1161,17 +1161,17 @@
         "platformGeneration": "9th"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration",
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration",
         "gameAvailability.from"
       ],
       "sourceIds": [
@@ -1224,17 +1224,17 @@
         "platformGeneration": "9th"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration",
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration",
         "gameAvailability.from"
       ],
       "sourceIds": [
@@ -1287,17 +1287,17 @@
         "platformGeneration": "Cascade Lake-X"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration"
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration"
       ],
       "sourceIds": [
         "intel_launch_dates"
@@ -1350,17 +1350,17 @@
         "platformGeneration": "10th"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration",
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration",
         "gameAvailability.from"
       ],
       "sourceIds": [
@@ -1412,17 +1412,17 @@
         "platformGeneration": "10th"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration",
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration",
         "gameAvailability.from"
       ],
       "sourceIds": [
@@ -1476,17 +1476,17 @@
         "platformGeneration": "10th"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration",
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration",
         "gameAvailability.from"
       ],
       "sourceIds": [
@@ -1540,17 +1540,17 @@
         "platformGeneration": "Piledriver"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration",
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration",
         "gameAvailability.from"
       ],
       "sourceIds": [
@@ -1605,17 +1605,17 @@
         "platformGeneration": "Bristol Ridge"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration",
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration",
         "gameAvailability.from"
       ],
       "sourceIds": [
@@ -1668,17 +1668,17 @@
         "platformGeneration": "Zen"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration"
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration"
       ],
       "sourceIds": [
         "amd_ryzen1000"
@@ -1729,17 +1729,17 @@
         "platformGeneration": "Zen"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration"
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration"
       ],
       "sourceIds": [
         "amd_ryzen1000"
@@ -1790,17 +1790,17 @@
         "platformGeneration": "Zen"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration"
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration"
       ],
       "sourceIds": [
         "amd_ryzen5_1000"
@@ -1851,17 +1851,17 @@
         "platformGeneration": "Zen"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration"
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration"
       ],
       "sourceIds": [
         "amd_ryzen3_1000"
@@ -1912,17 +1912,17 @@
         "platformGeneration": "Zen HEDT"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration"
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration"
       ],
       "sourceIds": [
         "amd_tr1000"
@@ -1975,17 +1975,17 @@
         "platformGeneration": "Zen HEDT"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration"
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration"
       ],
       "sourceIds": [
         "amd_tr1000"
@@ -2038,17 +2038,17 @@
         "platformGeneration": "Zen+"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration"
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration"
       ],
       "sourceIds": [
         "amd_ryzen2000"
@@ -2099,17 +2099,17 @@
         "platformGeneration": "Zen+"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration"
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration"
       ],
       "sourceIds": [
         "amd_ryzen2000"
@@ -2160,17 +2160,17 @@
         "platformGeneration": "Zen APU"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration"
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration"
       ],
       "sourceIds": [
         "amd_ryzen2000"
@@ -2221,17 +2221,17 @@
         "platformGeneration": "Zen APU"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration"
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration"
       ],
       "sourceIds": [
         "amd_ryzen2000"
@@ -2282,17 +2282,17 @@
         "platformGeneration": "Zen+"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration"
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration"
       ],
       "sourceIds": [
         "amd_tr2000"
@@ -2345,17 +2345,17 @@
         "platformGeneration": "Zen+"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration"
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration"
       ],
       "sourceIds": [
         "amd_tr2000"
@@ -2408,17 +2408,17 @@
         "platformGeneration": "Zen 2"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration"
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration"
       ],
       "sourceIds": [
         "amd_ryzen3000"
@@ -2470,17 +2470,17 @@
         "platformGeneration": "Zen 2"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration"
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration"
       ],
       "sourceIds": [
         "amd_ryzen3000"
@@ -2531,17 +2531,17 @@
         "platformGeneration": "Zen 2"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration"
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration"
       ],
       "sourceIds": [
         "amd_ryzen3000"
@@ -2592,17 +2592,17 @@
         "platformGeneration": "Zen 2"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration"
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration"
       ],
       "sourceIds": [
         "amd_ryzen3000"
@@ -2653,17 +2653,17 @@
         "platformGeneration": "Zen+"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration"
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration"
       ],
       "sourceIds": [
         "amd_ryzen3000"
@@ -2714,17 +2714,17 @@
         "platformGeneration": "Zen 2 HEDT"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration"
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration"
       ],
       "sourceIds": [
         "amd_tr3000"
@@ -2777,17 +2777,17 @@
         "platformGeneration": "Zen 2 HEDT"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration"
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration"
       ],
       "sourceIds": [
         "amd_tr3000"
@@ -2840,17 +2840,17 @@
         "platformGeneration": "Zen 3"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration"
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration"
       ],
       "sourceIds": [
         "amd_ryzen5000"
@@ -2901,17 +2901,17 @@
         "platformGeneration": "Zen 3"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration"
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration"
       ],
       "sourceIds": [
         "amd_ryzen5000"
@@ -2962,17 +2962,17 @@
         "platformGeneration": "Zen 3"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration"
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration"
       ],
       "sourceIds": [
         "amd_ryzen5000"
@@ -3023,17 +3023,17 @@
         "platformGeneration": "Zen 3"
       },
       "verifiedFields": [
-        "cores",
-        "threads",
-        "tdpW",
+        "specs.cores",
+        "specs.threads",
+        "specs.tdpW",
         "release.date"
       ],
       "inferredFields": [
-        "socket",
-        "integratedGraphics",
-        "memoryType",
-        "memoryChannels",
-        "platformGeneration"
+        "specs.socket",
+        "specs.integratedGraphics",
+        "specs.memoryType",
+        "specs.memoryChannels",
+        "specs.platformGeneration"
       ],
       "sourceIds": [
         "amd_ryzen5000"
@@ -3083,16 +3083,16 @@
         "cpuSupportCondition": "6th/7th gen; 7th gen requires compatible BIOS"
       },
       "verifiedFields": [
-        "socket",
-        "chipset",
-        "memoryType"
+        "specs.socket",
+        "specs.chipset",
+        "specs.memoryType"
       ],
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "formFactor",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.formFactor",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "asux_h110_z270",
@@ -3143,16 +3143,16 @@
         "cpuSupportCondition": "6th gen; select 7th gen with BIOS update"
       },
       "verifiedFields": [
-        "socket",
-        "chipset",
-        "memoryType"
+        "specs.socket",
+        "specs.chipset",
+        "specs.memoryType"
       ],
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "formFactor",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.formFactor",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "asux_h110_z270",
@@ -3203,16 +3203,16 @@
         "cpuSupportCondition": "6th/7th gen"
       },
       "verifiedFields": [
-        "socket",
-        "chipset",
-        "memoryType",
-        "dimmSlots",
-        "formFactor"
+        "specs.socket",
+        "specs.chipset",
+        "specs.memoryType",
+        "specs.dimmSlots",
+        "specs.formFactor"
       ],
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "cpuSupportCondition"
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "asux_h110_z270",
@@ -3263,16 +3263,16 @@
         "cpuSupportCondition": "6th/7th gen"
       },
       "verifiedFields": [
-        "socket",
-        "chipset",
-        "memoryType"
+        "specs.socket",
+        "specs.chipset",
+        "specs.memoryType"
       ],
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "formFactor",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.formFactor",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "asux_h110_z270",
@@ -3323,16 +3323,16 @@
         "cpuSupportCondition": "8th gen"
       },
       "verifiedFields": [
-        "socket",
-        "chipset",
-        "memoryType"
+        "specs.socket",
+        "specs.chipset",
+        "specs.memoryType"
       ],
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "formFactor",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.formFactor",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "intel_1151",
@@ -3385,16 +3385,16 @@
         "cpuSupportCondition": "8th/9th gen; 9th gen may require BIOS update"
       },
       "verifiedFields": [
-        "socket",
-        "chipset",
-        "memoryType"
+        "specs.socket",
+        "specs.chipset",
+        "specs.memoryType"
       ],
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "formFactor",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.formFactor",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "msi_z390",
@@ -3444,16 +3444,16 @@
         "cpuSupportCondition": "8th/9th gen; check board CPU support list"
       },
       "verifiedFields": [
-        "socket",
-        "chipset",
-        "memoryType"
+        "specs.socket",
+        "specs.chipset",
+        "specs.memoryType"
       ],
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "formFactor",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.formFactor",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "intel_1151"
@@ -3503,16 +3503,16 @@
         "cpuSupportCondition": "10th gen"
       },
       "verifiedFields": [
-        "socket",
-        "chipset",
-        "memoryType"
+        "specs.socket",
+        "specs.chipset",
+        "specs.memoryType"
       ],
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "formFactor",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.formFactor",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "intel_launch_dates",
@@ -3563,16 +3563,16 @@
         "cpuSupportCondition": "10th gen"
       },
       "verifiedFields": [
-        "socket",
-        "chipset",
-        "memoryType"
+        "specs.socket",
+        "specs.chipset",
+        "specs.memoryType"
       ],
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "formFactor",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.formFactor",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "intel_launch_dates",
@@ -3622,16 +3622,16 @@
         "cpuSupportCondition": "6th/7th gen; confirm BIOS for 7th gen"
       },
       "verifiedFields": [
-        "socket",
-        "chipset",
-        "memoryType"
+        "specs.socket",
+        "specs.chipset",
+        "specs.memoryType"
       ],
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "formFactor",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.formFactor",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "intel_1151"
@@ -3680,16 +3680,16 @@
         "cpuSupportCondition": "6th/7th gen; confirm BIOS for 7th gen"
       },
       "verifiedFields": [
-        "socket",
-        "chipset",
-        "memoryType"
+        "specs.socket",
+        "specs.chipset",
+        "specs.memoryType"
       ],
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "formFactor",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.formFactor",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "intel_1151"
@@ -3738,16 +3738,16 @@
         "cpuSupportCondition": "6th/7th gen"
       },
       "verifiedFields": [
-        "socket",
-        "chipset",
-        "memoryType"
+        "specs.socket",
+        "specs.chipset",
+        "specs.memoryType"
       ],
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "formFactor",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.formFactor",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "intel_1151"
@@ -3797,16 +3797,16 @@
         "cpuSupportCondition": "8th gen"
       },
       "verifiedFields": [
-        "socket",
-        "chipset",
-        "memoryType"
+        "specs.socket",
+        "specs.chipset",
+        "specs.memoryType"
       ],
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "formFactor",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.formFactor",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "gigabyte_z370",
@@ -3857,16 +3857,16 @@
         "cpuSupportCondition": "8th/9th gen; 9th gen BIOS-specific"
       },
       "verifiedFields": [
-        "socket",
-        "chipset",
-        "memoryType"
+        "specs.socket",
+        "specs.chipset",
+        "specs.memoryType"
       ],
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "formFactor",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.formFactor",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "msi_z390",
@@ -3916,16 +3916,16 @@
         "cpuSupportCondition": "10th gen"
       },
       "verifiedFields": [
-        "socket",
-        "chipset",
-        "memoryType"
+        "specs.socket",
+        "specs.chipset",
+        "specs.memoryType"
       ],
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "formFactor",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.formFactor",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "gigabyte_z490"
@@ -3977,12 +3977,12 @@
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "socket",
-        "chipset",
-        "formFactor",
-        "memoryType",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.socket",
+        "specs.chipset",
+        "specs.formFactor",
+        "specs.memoryType",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "intel_1151"
@@ -4034,12 +4034,12 @@
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "socket",
-        "chipset",
-        "formFactor",
-        "memoryType",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.socket",
+        "specs.chipset",
+        "specs.formFactor",
+        "specs.memoryType",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "intel_1151"
@@ -4091,12 +4091,12 @@
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "socket",
-        "chipset",
-        "formFactor",
-        "memoryType",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.socket",
+        "specs.chipset",
+        "specs.formFactor",
+        "specs.memoryType",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "intel_1151"
@@ -4146,16 +4146,16 @@
         "cpuSupportCondition": "8th gen"
       },
       "verifiedFields": [
-        "socket",
-        "chipset",
-        "memoryType"
+        "specs.socket",
+        "specs.chipset",
+        "specs.memoryType"
       ],
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "formFactor",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.formFactor",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "gigabyte_z370",
@@ -4208,12 +4208,12 @@
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "socket",
-        "chipset",
-        "formFactor",
-        "memoryType",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.socket",
+        "specs.chipset",
+        "specs.formFactor",
+        "specs.memoryType",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "intel_1151"
@@ -4262,16 +4262,16 @@
         "cpuSupportCondition": "10th gen"
       },
       "verifiedFields": [
-        "socket",
-        "chipset",
-        "memoryType"
+        "specs.socket",
+        "specs.chipset",
+        "specs.memoryType"
       ],
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "formFactor",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.formFactor",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "gigabyte_z490"
@@ -4321,16 +4321,16 @@
         "cpuSupportCondition": "Ryzen 1000/2000/3000/5000 support must be checked by exact revision/BIOS"
       },
       "verifiedFields": [
-        "socket",
-        "chipset",
-        "memoryType"
+        "specs.socket",
+        "specs.chipset",
+        "specs.memoryType"
       ],
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "formFactor",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.formFactor",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "colorful_b350",
@@ -4383,12 +4383,12 @@
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "socket",
-        "chipset",
-        "formFactor",
-        "memoryType",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.socket",
+        "specs.chipset",
+        "specs.formFactor",
+        "specs.memoryType",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "amd_am4_matrix"
@@ -4440,12 +4440,12 @@
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "socket",
-        "chipset",
-        "formFactor",
-        "memoryType",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.socket",
+        "specs.chipset",
+        "specs.formFactor",
+        "specs.memoryType",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "intel_1151"
@@ -4497,12 +4497,12 @@
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "socket",
-        "chipset",
-        "formFactor",
-        "memoryType",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.socket",
+        "specs.chipset",
+        "specs.formFactor",
+        "specs.memoryType",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "intel_launch_dates"
@@ -4551,16 +4551,16 @@
         "cpuSupportCondition": "Ryzen 1000–5000; Ryzen 1000/2000 require a specific BIOS version"
       },
       "verifiedFields": [
-        "socket",
-        "chipset",
-        "memoryType",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.socket",
+        "specs.chipset",
+        "specs.memoryType",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "formFactor"
+        "specs.formFactor"
       ],
       "sourceIds": [
         "maxsun_b450"
@@ -4613,12 +4613,12 @@
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "socket",
-        "chipset",
-        "formFactor",
-        "memoryType",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.socket",
+        "specs.chipset",
+        "specs.formFactor",
+        "specs.memoryType",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "onda_products",
@@ -4672,12 +4672,12 @@
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "socket",
-        "chipset",
-        "formFactor",
-        "memoryType",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.socket",
+        "specs.chipset",
+        "specs.formFactor",
+        "specs.memoryType",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "onda_products",
@@ -4731,12 +4731,12 @@
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "socket",
-        "chipset",
-        "formFactor",
-        "memoryType",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.socket",
+        "specs.chipset",
+        "specs.formFactor",
+        "specs.memoryType",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "biostar_bios_lists",
@@ -4790,12 +4790,12 @@
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "socket",
-        "chipset",
-        "formFactor",
-        "memoryType",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.socket",
+        "specs.chipset",
+        "specs.formFactor",
+        "specs.memoryType",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "biostar_bios_lists",
@@ -4847,16 +4847,16 @@
         "cpuSupportCondition": "Ryzen 3000; selected Ryzen 5000 support via 2020 BIOS notice"
       },
       "verifiedFields": [
-        "socket",
-        "chipset",
-        "memoryType"
+        "specs.socket",
+        "specs.chipset",
+        "specs.memoryType"
       ],
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "formFactor",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.formFactor",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "biostar_bios_lists",
@@ -4909,16 +4909,16 @@
         "cpuSupportCondition": "Ryzen 3000 CPU chiplet models and selected Ryzen 5000 with BIOS; excludes Ryzen 2200G/2400G/3200G/3400G APU families"
       },
       "verifiedFields": [
-        "socket",
-        "chipset",
-        "memoryType"
+        "specs.socket",
+        "specs.chipset",
+        "specs.memoryType"
       ],
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "formFactor",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.formFactor",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "biostar_b550",
@@ -4972,12 +4972,12 @@
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "socket",
-        "chipset",
-        "formFactor",
-        "memoryType",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.socket",
+        "specs.chipset",
+        "specs.formFactor",
+        "specs.memoryType",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "intel_1151"
@@ -5027,16 +5027,16 @@
         "cpuSupportCondition": "6th/7th gen"
       },
       "verifiedFields": [
-        "socket",
-        "chipset",
-        "memoryType"
+        "specs.socket",
+        "specs.chipset",
+        "specs.memoryType"
       ],
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "formFactor",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.formFactor",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "asrock_compare",
@@ -5087,16 +5087,16 @@
         "cpuSupportCondition": "8th gen"
       },
       "verifiedFields": [
-        "socket",
-        "chipset",
-        "memoryType"
+        "specs.socket",
+        "specs.chipset",
+        "specs.memoryType"
       ],
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "formFactor",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.formFactor",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "asrock_compare",
@@ -5147,16 +5147,16 @@
         "cpuSupportCondition": "Ryzen 3000/5000 per exact vendor CPU list and BIOS"
       },
       "verifiedFields": [
-        "socket",
-        "chipset",
-        "memoryType"
+        "specs.socket",
+        "specs.chipset",
+        "specs.memoryType"
       ],
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "formFactor",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.formFactor",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "asrock_am4_cpu",
@@ -5207,16 +5207,16 @@
         "cpuSupportCondition": "Ryzen 3000 CPU chiplet models and 5000; excludes Ryzen 2200G/2400G/3200G/3400G APU families; check exact BIOS list"
       },
       "verifiedFields": [
-        "socket",
-        "chipset",
-        "memoryType"
+        "specs.socket",
+        "specs.chipset",
+        "specs.memoryType"
       ],
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "formFactor",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.formFactor",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "asrock_am4_cpu",
@@ -5270,12 +5270,12 @@
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "socket",
-        "chipset",
-        "formFactor",
-        "memoryType",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.socket",
+        "specs.chipset",
+        "specs.formFactor",
+        "specs.memoryType",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "soyo_archive",
@@ -5330,12 +5330,12 @@
       "inferredFields": [
         "release.date",
         "gameAvailability.from",
-        "socket",
-        "chipset",
-        "formFactor",
-        "memoryType",
-        "dimmSlots",
-        "cpuSupportCondition"
+        "specs.socket",
+        "specs.chipset",
+        "specs.formFactor",
+        "specs.memoryType",
+        "specs.dimmSlots",
+        "specs.cpuSupportCondition"
       ],
       "sourceIds": [
         "soyo_archive",

@@ -1,0 +1,16 @@
+{
+  "id": "ram_ddr3_4_side_v01",
+  "componentId": "ram_ddr3_4",
+  "description": "DDR3-1600 4GB, single-sided RAM edge with eight shallow dark chip shoulders visible only to RIGHT of thin central green PCB; LEFT is a bare narrow green edge",
+  "prompt": "Use case: product-mockup. Draw ONE isolated installed-memory SIDE-EDGE sprite for relatively realistic industrial PC simulator Orangegame. Reference image1 sets realistic material and neutral upper-left lighting. Reference image2 sets exact installed camera and slender form, NOT its chip count. DDR3-1600 4GB, single-sided RAM edge with eight shallow dark chip shoulders visible only to RIGHT of thin central green PCB; LEFT is a bare narrow green edge. Camera strictly ORTHOGRAPHIC looking at narrow TOP EDGE of a133.35mm long bare DIMM seated vertically in image; length goes from TOP to BOTTOM, projected thickness only4mm. In full canvas object height roughly1400 pixels, maximum width42pixels, exactly straight long thin silhouette. No broad chip face visible, no horizontal wide memory stick, no heatsink, no branding, no gold fingers facing camera, no socket, no motherboard, no wires, no text. Dark chips have small repeating shoulders aligned along length, PCB central line dark muted green, clean tiny silver trace points. Blank unprinted tiny end tabs. True transparent alpha outside slender silhouette, no opaque/hazy column, no diffuse green halo, no outer glow or floor shadow. Keep centered entire length, generous horizontal transparency. Single component only.",
+  "referencePaths": [
+    "art/source/style_review_v02.png",
+    "art/source/parts/ram_ddr4_8_side_v02.png"
+  ],
+  "sourcePath": "art/source/parts/ram_ddr3_4_side_v01.png",
+  "tool": "built_in_image_gen",
+  "intent": "generate",
+  "transparent_background": true,
+  "status": "generated_candidate",
+  "structuralBasis": "DDR type and capacity from catalog; single/dual sided edge arrangement is original art reference reconstruction, not a new manufacturer claim."
+}

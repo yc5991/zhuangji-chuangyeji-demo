@@ -5,6 +5,7 @@ import {SEEDED_RANDOM,categoryPriceFactor,updateMarket} from './market';
 import {failureRate,escapeRate,reworkCost,escapeCost} from './reliability';
 import {businessSummary} from './summary';
 import {finishing,finishWork} from './finishing';
+import {monthAmounts,salesRefund,successfulUnit} from './accounting';
 
 const clone=<T>(value:T):T=>JSON.parse(JSON.stringify(value));
 const emptyUsage=():ResourceUsage=>({labor:0,owner:0,bench:0,test:0});
@@ -37,6 +38,22 @@ export class Game {
         const units=(state.finished||[]).filter(u=>(state.transactions||[]).some(t=>t.id===`${u.id}:sale`&&t.month===report.month));
         Object.assign(report,{feedback:[],stockCost:null,payables:null,standardSold:units.filter(u=>!u.customerId).length,commissionSold:units.filter(u=>!!u.customerId).length});
       }
+    }
+    // Additive v2 fields preserve original transactions, cash and historical profit.
+    for(const unit of state.finished||[]) if(unit.status==='sold'&&!unit.deliveryOutcome) {
+      if(state.transactions.some(t=>t.id===`${unit.id}:refund`&&salesRefund(t)))unit.deliveryOutcome='arrival_defect';
+      else if(state.transactions.some(t=>t.id===`${unit.id}:sale`))unit.deliveryOutcome='delivered';
+    }
+    for(const customer of state.customers||[]) if(customer.status==='completed'&&!customer.deliveryOutcome) {
+      const unit=state.finished.find(u=>u.customerId===customer.id&&u.status==='sold');
+      if(unit?.deliveryOutcome)customer.deliveryOutcome=unit.deliveryOutcome;
+    }
+    for(const report of state.reports||[]) {
+      const amounts=monthAmounts(state.transactions.filter(t=>t.month===report.month));
+      if(report.salesRefunds===undefined)report.salesRefunds=amounts.salesRefunds;
+      if(report.logisticsCosts===undefined)report.logisticsCosts=amounts.logisticsCosts;
+      if(report.depositRefunds===undefined)report.depositRefunds=amounts.depositRefunds;
+      if(report.legacyAccounting===undefined)report.legacyAccounting=amounts.legacyAccounting;
     }
     return state;
   }
@@ -358,7 +375,7 @@ export class Game {
         if(removed) this.state.inventory.push({id:this.id('recovered'),orderId:old.id,partId:c.partId,quantity:removed,reserved:0,unitCost:c.unitCost,channel:'recovered',receivedAt:this.absoluteHours});
       }
     }
-    this.post(`${id}:consumables`,'consumables',-consumables*quantity,0,d.name);
+    this.post(`${id}:consumables`,'consumables',-(consumables+reworkUnitCost)*quantity,0,d.name);
     if(development) this.post(`${id}:development`,'development',-development,development,d.name);
     this.state.jobs.push(job);return id;
   }
@@ -500,25 +517,28 @@ export class Game {
     const chance=failureRate(design,report,1)*escapeRate(hours);
     if(this.random()>=chance)return false;
     const ad=DATA.reliability.arrivalDefect;
-    this.post(`${unitId}:refund`,'refund',-price*ad.refundFraction,0,`${label}：到货故障退款`);
-    this.post(`${unitId}:logistics`,'refund',-ad.logisticsCoins,0,`${label}：到货故障物流`);
+    this.post(`${unitId}:refund`,'salesRefund',-price*ad.refundFraction,0,`${label}：到货故障退款`);
+    this.post(`${unitId}:logistics`,'logistics',-ad.logisticsCoins,ad.logisticsCoins,`${label}：到货故障物流`);
     this.recordReview('missed');
     return true;
   }
   sellStock(designId:string,maximum=80) {
     this.active();const d=this.design(designId);requireThat(d.standardized,'先将作品保存为标准产品');
     const kind=d.kind,assessment=this.demandAssessment(d.id),demand=assessment.available;
-    let sold=0;
+    let sold=0,dispatched=0,refunded=0;
     for(const unit of this.state.finished.filter(u=>u.designId===designId&&u.design.revision===d.revision&&u.status==='stock'&&!u.customerId)) {
-      if(sold>=Math.min(maximum,demand)) break;
+      if(dispatched>=Math.min(maximum,demand)) break;
       requireThat(unit.design.test&&!unit.design.test.blocked.length&&unit.design.test.coolingRatio>=1,'库存中的旧版本未通过测试');
-      if(!this.escapedDefect(unit.id,d,d.price,d.name)) this.post(`${unit.id}:sale`,'sale',d.price,unit.cost,d.name);
+      this.post(`${unit.id}:sale`,'sale',d.price,unit.cost,d.name);
+      const fault=this.escapedDefect(unit.id,unit.design,d.price,d.name);
+      unit.deliveryOutcome=fault?'arrival_defect':'delivered';
       const pref=DATA.customers.appearancePreference;
-      this.recordReview(pref&&unit.design.test&&unit.design.test.appearance>pref.baselineScore?'exceeded':'met');
-      unit.status='sold';sold++;
+      if(!fault) {this.recordReview(pref&&unit.design.test&&unit.design.test.appearance>pref.baselineScore?'exceeded':'met');sold++;}
+      else refunded++;
+      unit.status='sold';dispatched++;
     }
-    this.state.soldThisMonth[kind]=(this.state.soldThisMonth[kind]||0)+sold;
-    return {sold,remainingDemand:Math.max(0,demand-sold),reason:!demand?assessment.reasons.join('；'):'已按本月需求销售，未售出的成品留在库存'};
+    this.state.soldThisMonth[kind]=(this.state.soldThisMonth[kind]||0)+dispatched;
+    return {sold,refunded,remainingDemand:Math.max(0,demand-dispatched),reason:!demand?assessment.reasons.join('；'):refunded?`${refunded} 台到货故障，已退款并记录物流支出，未计入成功销量。`:'已按本月需求销售，未售出的成品留在库存'};
   }
   deliver(customerId:string) {
     this.active();const c=this.state.customers.find(c=>c.id===customerId);
@@ -529,14 +549,15 @@ export class Game {
     const unit=this.state.finished.find(u=>u.designId===d.id&&u.design.revision===d.revision&&u.status==='stock'&&(!u.customerId||u.customerId===customerId));
     requireThat(unit&&unit.design.test?.revision===d.revision,'当前设计版本尚未完成制作和测试');
     requireThat(d.test?.revision===d.revision,'设计修改后需要重新测试');
-    if(!this.escapedDefect(unit!.id,d,d.price,`${c!.name}：${d.name}`))
-      this.post(`${unit!.id}:sale`,'sale',d.price-c!.deposit,unit!.cost,`${c!.name}：${d.name}`);
+    this.post(`${unit!.id}:sale`,'sale',d.price-c!.deposit,unit!.cost,`${c!.name}：${d.name}`);
     this.post(`${c!.id}:earnedDeposit`,'earnedDeposit',0,0,String(c!.deposit));
-    unit!.status='sold';unit!.customerId=c!.id;c!.status='completed';c!.satisfaction=Math.round(Math.min(100,80+(d.test!.appearance-65)*.2+(d.test!.tidiness-65)*.2));
+    const fault=this.escapedDefect(unit!.id,unit!.design,d.price,`${c!.name}：${d.name}`);
+    unit!.deliveryOutcome=c!.deliveryOutcome=fault?'arrival_defect':'delivered';
+    unit!.status='sold';unit!.customerId=c!.id;c!.status='completed';c!.satisfaction=fault?null:Math.round(Math.min(100,80+(d.test!.appearance-65)*.2+(d.test!.tidiness-65)*.2));
     // The customer rates the job. A machine that looks better than the reference they had in mind
     // reads as exceeding expectations, which is what makes a five much more likely.
     const pref=DATA.customers.appearancePreference;
-    this.recordReview(pref&&d.test!.appearance>pref.baselineScore?'exceeded':'met');
+    if(!fault)this.recordReview(pref&&d.test!.appearance>pref.baselineScore?'exceeded':'met');
     this.state.soldThisMonth[d.kind]=(this.state.soldThisMonth[d.kind]||0)+1;
     return c!.satisfaction;
   }
@@ -557,19 +578,21 @@ export class Game {
       this.post(`${purchase.id}:payment`,'payable',-purchase.quantity*purchase.unitCost,0,'偿付供应商账款');purchase.paid=true;
     }
     this.post(`month:${this.state.month}:fixed`,'fixed',-this.fixedCost,this.fixedCost,'租金、水电与员工工资');
-    const entries=this.state.transactions.filter(t=>t.month===this.state.month),sales=entries.filter(t=>t.kind==='sale');
-    const revenue=sales.reduce((n,t)=>n+t.cash,0)+entries.filter(t=>t.kind==='earnedDeposit').reduce((n,t)=>n+Number(t.note),0),cogs=sales.reduce((n,t)=>n+t.cost,0),fixed=entries.filter(t=>t.kind==='fixed').reduce((n,t)=>n+t.cost,0),development=entries.filter(t=>t.kind==='development').reduce((n,t)=>n+t.cost,0);
-    const soldUnits=this.state.finished.filter(u=>sales.some(t=>t.id===`${u.id}:sale`)),stock=this.state.finished.filter(u=>u.status==='stock');
     const feedback:string[]=[];
+    for(const c of this.state.customers) if(c.dueMonth<=this.state.month&&['open','accepted'].includes(c.status)) {
+      if(c.status==='accepted') {this.post(`${c.id}:refund`,'depositRefund',-c.deposit,0,'逾期委托退回预付款');this.recordReview('late');feedback.push(`${c.name}：未按月交付，退回预付款并影响口碑。`);}c.status='expired';
+    }
+    const entries=this.state.transactions.filter(t=>t.month===this.state.month),sales=entries.filter(t=>t.kind==='sale');
+    const amounts=monthAmounts(entries),{revenue,cogs,salesRefunds,logisticsCosts,depositRefunds}=amounts;
+    const fixed=entries.filter(t=>t.kind==='fixed').reduce((n,t)=>n+t.cost,0),development=entries.filter(t=>t.kind==='development').reduce((n,t)=>n+t.cost,0);
+    const soldUnits=this.state.finished.filter(u=>successfulUnit(u)&&sales.some(t=>t.id===`${u.id}:sale`)),stock=this.state.finished.filter(u=>u.status==='stock');
+    if(salesRefunds)feedback.push(`到货故障销售退款 ¥${Math.round(salesRefunds)}，物流 ¥${Math.round(logisticsCosts)}；故障电脑不计入成功销量，制作成本仍计入本月支出。`);
     if(stock.length)feedback.push(`${stock.length} 台成品留在库存，占用 ¥${Math.round(stock.reduce((n,u)=>n+u.cost,0))}；月结不会替你卖掉库存。`);
     for(const id of Array.from(new Set(soldUnits.map(u=>u.designId)))) {
       const d=this.design(id),a=this.demandAssessment(id);
       feedback.push(`${d.name}：本月售出 ${soldUnits.filter(u=>u.designId===id).length} 台${a.reasons.length?'，'+a.reasons.join('；'):''}。`);
     }
-    const report:MonthReport={month:this.state.month,revenue,cogs,fixed,development,profit:revenue-cogs-fixed-development,cash:this.state.cash,sold:sales.length,unsold:stock.length,reputation:this.state.reputation,used:clone(this.state.used),feedback,stockCost:stock.reduce((n,u)=>n+u.cost,0),payables:this.outstandingCredit,standardSold:soldUnits.filter(u=>!u.customerId).length,commissionSold:soldUnits.filter(u=>!!u.customerId).length};
-    for(const c of this.state.customers) if(c.dueMonth<=this.state.month&&['open','accepted'].includes(c.status)) {
-      if(c.status==='accepted') {this.post(`${c.id}:refund`,'refund',-c.deposit,0,'逾期委托退回预付款');this.recordReview('late');feedback.push(`${c.name}：未按月交付，退回预付款并影响口碑。`);}c.status='expired';
-    }
+    const report:MonthReport={month:this.state.month,revenue,cogs,fixed,development,profit:revenue-cogs-fixed-development-logisticsCosts,cash:this.state.cash,sold:soldUnits.length,unsold:stock.length,reputation:this.state.reputation,used:clone(this.state.used),feedback,stockCost:stock.reduce((n,u)=>n+u.cost,0),payables:this.outstandingCredit,standardSold:soldUnits.filter(u=>!u.customerId).length,commissionSold:soldUnits.filter(u=>!!u.customerId).length,salesRefunds,logisticsCosts,depositRefunds,legacyAccounting:amounts.legacyAccounting};
     report.cash=this.state.cash;report.reputation=this.state.reputation;this.state.reports.push(report);this.taught('monthly_settlement');
     if(this.state.cash<0) {this.state.bankrupt=true;this.state.closed=true;}
     if(this.state.month===6) this.state.closed=true;

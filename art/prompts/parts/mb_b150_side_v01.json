@@ -1,0 +1,13 @@
+{
+  "id": "mb_b150_side_v01",
+  "componentId": "mb_b150",
+  "prompt": "Use case: product-mockup. Production asset for Orangegame, a relatively realistic industrial PC assembly game. Image 1 is only a MATERIAL AND LIGHTING STYLE REFERENCE; do not reuse its composition or perspective. Render ONE independent hardware part on genuine transparent alpha background. Neutral white studio light from upper left, gentle fill, matte realistic physical materials, sharp functional details, no outlines, no cartoon exaggeration, no bloom, no environment, no ground shadow, no typography, logos, numbers, watermark, collage or other components. Absolutely orthographic, no perspective or oblique angle, no camera tilt. Preserve complete silhouette, with transparent padding. Subject: ONE empty 2015-2016 ATX B150-style motherboard, 218mm wide by 305mm tall, portrait rectangle, lying in its board plane and viewed from directly above, so it fits a straight-on open-case side view. Back I/O metal ports along LEFT edge. Empty LGA1151 CPU socket upper middle-left, retention frame closed but socket hole visibly empty. Four full-length empty DDR4 DIMM slots vertical near RIGHT edge, alternating dark grey and light grey. ATX 24-pin socket beside DIMMs at far right upper-middle, EPS 8-pin connector at top-left. Matte dark brown/black PCB, compact gold-beige passive heatsinks near upper-left VRM and lower-right chipset. One long PCIe x16 slot horizontal slightly below center, a second long slot lower down, short PCIe slots and legacy light-grey PCI slots in lower-left as plausible 2016 budget ATX layout, six grouped SATA ports lower right. No installed CPU, cooler, memory, GPU, SSD or cables. No rear I/O shield loose. No lights. Detailed but clean electronic components, tiny printed marks blank/unreadable. PCB vertical edges parallel; no tilting to show board thickness. Center on portrait canvas with generous transparent margin.",
+  "sourcePath": "art/source/parts/mb_b150_side_v01.png",
+  "tool": "built_in_image_gen",
+  "intent": "generate",
+  "useCase": "product-mockup",
+  "status": "production_candidate",
+  "referencePaths": [
+    "art/source/style_review_v02.png"
+  ]
+}

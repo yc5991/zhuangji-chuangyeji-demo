@@ -1,0 +1,392 @@
+{
+  "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+  "pageId": "1:2",
+  "method": "Authenticated native UI raster-container import and PNG export, preserving older revision frames",
+  "status": "actual_png_exports_collected",
+  "entries": [
+    {
+      "partId": "case_small",
+      "view": "side",
+      "name": "case_small_side_v03",
+      "sourcePath": "art/source/parts/case_small_side_v03.png",
+      "promptPath": "art/prompts/parts/case_small_side_v03.json",
+      "sourceSizePx": [
+        1274,
+        1234
+      ],
+      "sourceBodyRectLtrbPx": [
+        111,
+        88,
+        1170,
+        1085
+      ],
+      "bodyRectLtrbPx": [
+        4.794,
+        5.753,
+        1020.165,
+        961.678
+      ],
+      "sourceCropLtrbPx": [
+        106,
+        82,
+        1174,
+        1110
+      ],
+      "scale": 0.9588014981273408,
+      "proposedExportPx": [
+        1024,
+        985.6479400749064
+      ],
+      "wrapperPath": ".local/figma-import/batch-case-revision/case_small_side_v03.svg",
+      "state": "exported_for_review",
+      "figmaExportNodeId": "35:12",
+      "uiPosition": [
+        26000,
+        200
+      ],
+      "stagingPath": "art/exports/parts/case_small_side_v03.png",
+      "exportPx": [
+        1024,
+        986
+      ],
+      "outlinePx": [
+        2,
+        3,
+        1019,
+        980
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board",
+        "date": "2026-10-09",
+        "boardEnvelope": "checked_in_art_preview",
+        "upperRail": "no_visible_board_overlap_at_current_preview_scale",
+        "lowerSeparator": "no_visible_board_overlap_at_current_preview_scale",
+        "fullGameInstallation": "pending_program_joint_review"
+      }
+    },
+    {
+      "partId": "case_standard",
+      "view": "side",
+      "name": "case_standard_side_v04",
+      "sourcePath": "art/source/parts/case_standard_side_v04.png",
+      "promptPath": "art/prompts/parts/case_standard_side_v04.json",
+      "sourceSizePx": [
+        1254,
+        1254
+      ],
+      "sourceBodyRectLtrbPx": [
+        78,
+        65,
+        1176,
+        1152
+      ],
+      "bodyRectLtrbPx": [
+        4.58,
+        3.664,
+        1010.261,
+        999.27
+      ],
+      "sourceCropLtrbPx": [
+        73,
+        61,
+        1181,
+        1179
+      ],
+      "scale": 0.9159212880143113,
+      "proposedExportPx": [
+        1014.8407871198569,
+        1024
+      ],
+      "wrapperPath": ".local/figma-import/batch-case-revision/case_standard_side_v04.svg",
+      "state": "exported_for_review",
+      "figmaExportNodeId": "35:8",
+      "uiPosition": [
+        27200,
+        200
+      ],
+      "stagingPath": "art/exports/parts/case_standard_side_v04.png",
+      "exportPx": [
+        1015,
+        1024
+      ],
+      "outlinePx": [
+        4,
+        2,
+        1007,
+        1018
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board",
+        "date": "2026-10-09",
+        "boardEnvelope": "checked_in_art_preview",
+        "upperRail": "no_visible_board_overlap_at_current_preview_scale",
+        "lowerSeparator": "no_visible_board_overlap_at_current_preview_scale",
+        "fullGameInstallation": "pending_program_joint_review"
+      }
+    },
+    {
+      "partId": "case_quiet",
+      "view": "side",
+      "name": "case_quiet_side_v03",
+      "sourcePath": "art/source/parts/case_quiet_side_v03.png",
+      "promptPath": "art/prompts/parts/case_quiet_side_v03.json",
+      "sourceSizePx": [
+        1240,
+        1268
+      ],
+      "sourceBodyRectLtrbPx": [
+        67,
+        66,
+        1176,
+        1160
+      ],
+      "bodyRectLtrbPx": [
+        3.634,
+        2.726,
+        1011.28,
+        996.742
+      ],
+      "sourceCropLtrbPx": [
+        63,
+        63,
+        1180,
+        1190
+      ],
+      "scale": 0.9086069210292813,
+      "proposedExportPx": [
+        1014.9139307897073,
+        1024
+      ],
+      "wrapperPath": ".local/figma-import/batch-case-revision/case_quiet_side_v03.svg",
+      "state": "exported_for_review",
+      "figmaExportNodeId": "35:10",
+      "uiPosition": [
+        28400,
+        200
+      ],
+      "stagingPath": "art/exports/parts/case_quiet_side_v03.png",
+      "exportPx": [
+        1015,
+        1024
+      ],
+      "outlinePx": [
+        2,
+        2,
+        1011,
+        1020
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board",
+        "date": "2026-10-09",
+        "boardEnvelope": "checked_in_art_preview",
+        "upperRail": "no_visible_board_overlap_at_current_preview_scale",
+        "lowerSeparator": "no_visible_board_overlap_at_current_preview_scale",
+        "fullGameInstallation": "pending_program_joint_review"
+      }
+    },
+    {
+      "partId": "case_small",
+      "view": "rear",
+      "name": "case_small_rear_v03",
+      "sourcePath": "art/source/parts/case_small_rear_v03.png",
+      "promptPath": "art/prompts/parts/case_small_rear_v03.json",
+      "sourceSizePx": [
+        1254,
+        1254
+      ],
+      "sourceBodyRectLtrbPx": [
+        95,
+        77,
+        1165,
+        1097
+      ],
+      "bodyRectLtrbPx": [
+        6.594,
+        5.652,
+        1014.58,
+        966.535
+      ],
+      "sourceCropLtrbPx": [
+        88,
+        71,
+        1175,
+        1120
+      ],
+      "scale": 0.9420423183072677,
+      "proposedExportPx": [
+        1024,
+        988.2023919043238
+      ],
+      "wrapperPath": ".local/figma-import/batch-case-revision/case_small_rear_v03.svg",
+      "state": "exported_for_review",
+      "figmaExportNodeId": "35:2",
+      "uiPosition": [
+        26000,
+        1400
+      ],
+      "stagingPath": "art/exports/parts/case_small_rear_v03.png",
+      "exportPx": [
+        1024,
+        989
+      ],
+      "outlinePx": [
+        3,
+        2,
+        1019,
+        984
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board",
+        "projection": "orthographic_candidate_checked",
+        "direction": "front_left_rear_right",
+        "tray": "opaque_solid_matches_selected_side",
+        "lowerBay": "PSU_right_HDD_cage_left_matches_mirrored_side",
+        "SSDAlignment": "requires_art_adapter_or_plate_revision",
+        "expansionEdges": "small_four_checked; standard_quiet_edge_count_requires_final_detail_review",
+        "approval": "pending_joint_runtime_installation_review"
+      }
+    },
+    {
+      "partId": "case_standard",
+      "view": "rear",
+      "name": "case_standard_rear_v02",
+      "sourcePath": "art/source/parts/case_standard_rear_v02.png",
+      "promptPath": "art/prompts/parts/case_standard_rear_v02.json",
+      "sourceSizePx": [
+        1254,
+        1254
+      ],
+      "sourceBodyRectLtrbPx": [
+        99,
+        91,
+        1155,
+        1124
+      ],
+      "bodyRectLtrbPx": [
+        4.803,
+        2.882,
+        1019.197,
+        995.182
+      ],
+      "sourceCropLtrbPx": [
+        94,
+        88,
+        1160,
+        1149
+      ],
+      "scale": 0.9606003752345216,
+      "proposedExportPx": [
+        1024,
+        1019.1969981238274
+      ],
+      "wrapperPath": ".local/figma-import/batch-case-revision/case_standard_rear_v02.svg",
+      "state": "exported_for_review",
+      "figmaExportNodeId": "35:4",
+      "uiPosition": [
+        27200,
+        1400
+      ],
+      "stagingPath": "art/exports/parts/case_standard_rear_v02.png",
+      "exportPx": [
+        1024,
+        1020
+      ],
+      "outlinePx": [
+        3,
+        2,
+        1019,
+        1015
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board",
+        "projection": "orthographic_candidate_checked",
+        "direction": "front_left_rear_right",
+        "tray": "opaque_solid_matches_selected_side",
+        "lowerBay": "PSU_right_HDD_cage_left_matches_mirrored_side",
+        "SSDAlignment": "requires_art_adapter_or_plate_revision",
+        "expansionEdges": "small_four_checked; standard_quiet_edge_count_requires_final_detail_review",
+        "approval": "pending_joint_runtime_installation_review"
+      }
+    },
+    {
+      "partId": "case_quiet",
+      "view": "rear",
+      "name": "case_quiet_rear_v02",
+      "sourcePath": "art/source/parts/case_quiet_rear_v02.png",
+      "promptPath": "art/prompts/parts/case_quiet_rear_v02.json",
+      "sourceSizePx": [
+        1233,
+        1276
+      ],
+      "sourceBodyRectLtrbPx": [
+        77,
+        87,
+        1146,
+        1161
+      ],
+      "bodyRectLtrbPx": [
+        3.707,
+        1.853,
+        994.346,
+        997.126
+      ],
+      "sourceCropLtrbPx": [
+        73,
+        85,
+        1171,
+        1190
+      ],
+      "scale": 0.9266968325791856,
+      "proposedExportPx": [
+        1017.5131221719457,
+        1024
+      ],
+      "wrapperPath": ".local/figma-import/batch-case-revision/case_quiet_rear_v02.svg",
+      "state": "exported_for_review",
+      "figmaExportNodeId": "35:6",
+      "uiPosition": [
+        28400,
+        1400
+      ],
+      "stagingPath": "art/exports/parts/case_quiet_rear_v02.png",
+      "exportPx": [
+        1018,
+        1024
+      ],
+      "outlinePx": [
+        3,
+        2,
+        1012,
+        1020
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board",
+        "projection": "orthographic_candidate_checked",
+        "direction": "front_left_rear_right",
+        "tray": "opaque_solid_matches_selected_side",
+        "lowerBay": "PSU_right_HDD_cage_left_matches_mirrored_side",
+        "SSDAlignment": "requires_art_adapter_or_plate_revision",
+        "expansionEdges": "small_four_checked; standard_quiet_edge_count_requires_final_detail_review",
+        "approval": "pending_joint_runtime_installation_review"
+      }
+    }
+  ]
+}

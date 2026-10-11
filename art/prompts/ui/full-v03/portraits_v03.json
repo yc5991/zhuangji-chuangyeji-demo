@@ -1,0 +1,14 @@
+{
+  "tool": "built-in image_gen",
+  "requestedAtClientDate": "2026-10-11",
+  "prompt": "Use case: stylized-concept. Asset type: production customer-avatar sprite sheet for Orangegame portrait computer-company management game, used only inside commission and customer feedback cards. Create ONE landscape transparent 1536x1024 sprite sheet in an exact 3-column by 2-row grid, six separate bust portraits, each centered in its own 512x512 cell with generous transparent padding. Warm hand-painted game illustration with fine sepia contours, soft paper-like brush texture, restrained orange, cream, olive and charcoal clothing, friendly expressive faces, natural adult body proportions. Match the cozy illustrated customer cards of a computer workshop game, without chibi heads, without caricature. Left to right row 1: a young adult student wearing round glasses and a charcoal zip hoodie; a woman designer in her late twenties with medium brown shoulder-length hair and a cream blouse, holding a small plain sketchbook below chest; an office manager man in his forties wearing a slate shirt, short dark hair. Left to right row 2: a woman programmer in her twenties with dark ponytail and olive cardigan; a male creative professional in his thirties with dark hair and warm tan overshirt; a woman small-business owner in her forties with short brown hair and charcoal jacket. Distinct facial silhouettes, ordinary plausible clothing, every head and shoulder completely visible, clean alpha outside the silhouettes. No text, no names, no logos, no accessories that cross a neighboring cell, no numerical labels, no border, no background scenery. Faces should remain readable when cropped to a 72px avatar. These are fictional generic in-game clients. Hardware art and workshop environments remain realistic.",
+  "source": "art/source/ui/full-v03/portraits_v03.png",
+  "inputMethod": "text-only generation; earlier file-reference attempts failed before any image was generated",
+  "styleReferenceFiles": [
+    "art/source/ui/reference_workshop_v01.png",
+    "art/source/ui/reference_products_v01.png",
+    "art/source/ui/reference_orders_v01.png",
+    "art/source/ui/reference_company_v01.png"
+  ],
+  "transparentBackgroundRequested": true
+}

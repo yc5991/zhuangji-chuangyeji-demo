@@ -1,0 +1,13 @@
+{
+  "id": "case_standard_side_v02",
+  "componentId": "case_standard",
+  "tool": "built_in_image_gen",
+  "intent": "edit",
+  "referencePaths": [
+    "art/source/parts/case_standard_side_v01.png"
+  ],
+  "sourcePath": "art/source/parts/case_standard_side_v02.png",
+  "status": "generated_candidate",
+  "provenance": "Original game chassis geometry from design/workbench-geometry.json, measured artwork issue found in installation review. No manufacturer internal dimensions claimed.",
+  "prompt": "Use case: precise-object-edit. Revise this original empty graphite ATX chassis for physically coherent installed side-view assembly. Retain realistic powder-coated dark steel, fine screws, 2016 industrial design, thin solid front at RIGHT, rear at LEFT, no branding. STRICT ORTHOGRAPHIC open left-side view, looking perpendicular to the motherboard plane, no oblique rear/top faces and no perspective. The outer metal body is square: 430mm depth by 430mm height, small feet BELOW the body not included in dimensions. Critical change: make the usable motherboard tray much taller and start just below the THIN top rail. In normalized coordinates of the square metal body, origin top-left: ATX motherboard region is x=4.65% to57.90%, y=3.49% to74.42%. This is a 229 by305mm board; do NOT draw the board, only empty flat steel tray and small standoffs. The PSU section occupies the bottom 100mm, 23.26% of body height. The separator rail is at y=76.74%, below the ATX board's bottom, never across the board. Empty lower-left PSU bay can fit 180mm depth by86mm height, from x1.86% to43.72%, y79.07% to99.07%. Keep the lower-right small empty two-drive cage below that separator. Correct the original oversized top chamber lip and short tray that prevent a full ATX board fitting. Use very thin realistic perimeter folded steel; no bulky slanted inner top wall or broad foreshortened ceiling. Rear seven expansion slot edges occupy lower half of motherboard chamber; empty rear fan mount upper-left visible only as a thin edge. Cable-routing openings to the right of tray stay outside the marked board region. No installed board/CPU/RAM/GPU/PSU/cooler/drives/fans, no shroud, cables, sideglass, measurements, labels, dimension guides or typography in finished art. Neutral white upper-left studio light, soft fill, no glow. True transparent alpha around all edges and through empty PSU bay if appropriate, generous padding. Do not bake a floor or outside shadow. This game mechanical layout is original artwork, not a manufacturer mechanical drawing."
+}

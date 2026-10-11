@@ -1,0 +1,13 @@
+{
+  "id": "gpu_r9380_side_v01",
+  "componentId": "gpu_r9380",
+  "prompt": "Use case: product-mockup. One independent GPU INSTALLED SIDE-EDGE sprite for Orangegame relatively realistic PC simulator art. Image 1 gives material/lighting style only. Strict orthographic left-case side view, rear metal expansion bracket LEFT, card tip RIGHT, PCB horizontal at TOP, cooler below. Fans face DOWN into lower case, so NEVER show full circular fan faces toward camera. Narrow long rail side, real silver heatsink slits, matte black plastic, realistic metal screw ear left. Neutral upper-left light and soft fill. Transparent alpha outside full silhouette, no environment, floor, glow, cables, motherboard, labels, logos, numbers, golden connector broad face or watermark. Original game shell illustration, no exact manufacturer cooler claim. 268mm long by40mm thick 2015 dual-fan card, noticeably thicker cooler than narrow budget card. Matte black side shroud with restrained deep RED end accent, silver fin stacks and small exposed heatpipe bend at nose right, two underside fan rim contours only. Two separate unconnected 6-pin power sockets at top-right, each2x3 contacts, no 8-pin block. Blank graphite side nameplate. No modern RGB or huge triple-fan cooler.",
+  "sourcePath": "art/source/parts/gpu_r9380_side_v01.png",
+  "referencePaths": [
+    "art/source/style_review_v02.png"
+  ],
+  "tool": "built_in_image_gen",
+  "intent": "generate",
+  "status": "production_candidate",
+  "structuralBasis": "Dimensions and power inputs from design/components.json; artwork shell and exact pixel connector positions are original art decisions."
+}

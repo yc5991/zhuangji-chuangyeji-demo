@@ -1,0 +1,14 @@
+{
+  "id": "mb_b150_side_v02",
+  "componentId": "mb_b150",
+  "tool": "built_in_image_gen",
+  "intent": "edit",
+  "status": "superseded_structural_revision",
+  "sourcePath": "art/source/parts/mb_b150_side_v02.png",
+  "referencePaths": [
+    "art/source/parts/mb_b150_side_v01.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Edit only the connector/slot banks. Exactly four DDR4 memory sockets, seven expansion sockets: PCIe x1, PCIe x16, PCIe x1, PCI, PCIe x16, PCI, PCI. Preserve other board details and alpha.",
+  "promptRecovery": "Original exec record was interrupted. This is a faithful summary of the submitted structural edit; the subsequent exact v03 prompt is retained.",
+  "review": "Four DIMMs corrected. Extra bottom short expansion slot still present; v03 removes it."
+}

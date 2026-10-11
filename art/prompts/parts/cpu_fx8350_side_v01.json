@@ -1,0 +1,12 @@
+{
+  "id": "cpu_fx8350_side_v01",
+  "componentId": "cpu_fx8350",
+  "prompt": "Use case: product-mockup. One independent AM3+ desktop CPU installation sprite. Relatively realistic industrial PC game render, neutral upper-left studio light, crisp materials. STRICT orthographic top view directly facing nickel-silver heat spreader. Square 40mm package: broad square brushed metal heat spreader with slightly round corners on a slim dark green substrate edge. Tiny corner alignment triangle, no readable engravings. PGA pins are underneath and invisible in this top view; NO LGA side keying notches. No socket, fan, paste, other components, ground or shadow. Transparent alpha outside silhouette, no haze, text, logos, watermark or stylized outline. Square canvas.",
+  "sourcePath": "art/source/parts/cpu_fx8350_side_v01.png",
+  "referencePaths": [
+    "art/source/style_review_v02.png"
+  ],
+  "tool": "built_in_image_gen",
+  "intent": "generate",
+  "status": "production_candidate"
+}

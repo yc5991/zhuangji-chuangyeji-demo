@@ -1,0 +1,17 @@
+{
+  "id": "ram_ddr3_8_product_v01",
+  "componentId": "ram_ddr3_8",
+  "tool": "built_in_image_gen",
+  "intent": "generate",
+  "status": "generated_candidate",
+  "sourcePath": "art/source/parts/ram_ddr3_8_product_v01.png",
+  "referencePaths": [
+    "art/source/style_review_v02.png"
+  ],
+  "transparent_background": true,
+  "referenceSources": [
+    "https://www.kingston.com/datasheets/KVR16N11_8.pdf"
+  ],
+  "structuralBasis": "Manufacturer datasheets checked2026-10-08 document8/16 chips and DDR generation. Exact chip arrangement/PCB traces and selected30mm DDR3 height are original art; current DDR3 datasheet does not establish exact2016 revision.",
+  "prompt": "Use case: product-mockup. ONE isolated realistic bareDDR3-1600 8GBdesktop DIMM memory module, procurement FLAT BROAD-FACE image. StrictORTHOGRAPHIC camera square to entire green PCB face. Long133.35mm axis is HORIZONTAL, PCB height30mm vertical, broad face aspect4.445:1. Eight front black chips; eight more on hidden back consistent with16-chip reference, two-sided original module. EXACTLY EIGHT distinctmatteblack rectangular DRAMpackages in ONE evenlyspaced horizontalrow on the visiblefront, not4or10, tiny realistic SMDcapacitors and SPDchip. Plain darkmutedgreen glassfiber PCB, no decorative RGBheatspreader. Verythin blank silverwhite sticker alonguppercentral emptyPCB band without hiding DRAM row, no printedletters. Goldcontact fingers alongBOTTOMedge with DDR3 offset key notch about44percent along lower golden edge. Natural side latch recesses atbothleft/rightends. Subtle real solderjoints and matte chips, neutralupperleftlight with fill, extremelyslight edgebevel only, zero perspective. Reference1 only material style. Complete slimwide memory stick centeredwith large transparentmargin topbottomandends, truealpha. No socket,motherboard,hands,cable,box,ground,outershadow,glow,text,logo,watermark. Straightmanufactured outline, nocomicdrawing."
+}

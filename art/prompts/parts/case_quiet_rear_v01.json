@@ -1,0 +1,15 @@
+{
+  "id": "case_quiet_rear_v01",
+  "componentId": "case_quiet",
+  "tool": "built_in_image_gen",
+  "intent": "generate",
+  "transparent_background": true,
+  "status": "generated_candidate",
+  "sourcePath": "art/source/parts/case_quiet_rear_v01.png",
+  "referencePaths": [
+    "art/source/style_review_v02.png",
+    "art/source/parts/case_quiet_side_v01.png"
+  ],
+  "structuralBasis": "Original game case, dimensions from catalog. Rear tray holes/tie tabs/mount plates are proposed visual geometry and await joint review with workbench-geometry.json.",
+  "prompt": "Use case: product-mockup. Generate ONE independent transparent sprite of the OPPOSITE RIGHT SIDE of the EMPTY quiet mid tower with acoustic solid front computer chassis in reference image2. Match its graphite powdercoated frame, exact outer proportions, manufacturing language, front panel and bottom feet. Reference image1 supplies realistic industrial material/neutral lighting only. Camera strict ORTHOGRAPHIC straight into removed cable-side sidepanel, ZERO perspective: rectangular silhouette is 450mm horizontal DEPTH by460mm vertical HEIGHT, camera perpendicular to motherboard tray. This is cable-management SIDE of the chassis, NOT back exterior port panel. FRONT is now LEFT, REAR now RIGHT (opposite of reference2). Show broad flat backside of motherboard tray across upper RIGHT and center, CPU access cutout upper right-middle opening into empty interior, four rubber-lined rectangular cable pass-through apertures mostly down left edge of tray, stamped cable tie tabs as small slots across tray, TWO empty flat SSD mounting plates on left-center lower-mid region, small punched screw holes. Bottom PSU bay on RIGHT, empty open fixed HDD cage on bottom LEFT. Tray above PSU compartment. Entire case completely EMPTY: no motherboard, CPU, PSU, hard disk, SSD, memory, fans, installed wires, plugs, decorative glowing lines, detached floating parts. Structural rails and mounting plates are permanent bare empty case metal. 7 rear expansion positions implied only at far right edge, not rendered broad face. Center entire chassis, transparent margin on every edge, real transparent alpha within open holes and outside silhouette, no floor or cast shadow outside chassis. Neutral upper-left light, gentle fill, clear metal flanges, ordinary Philips screws, no text, logo, watermark, black comic outlines or fairy-tale colors. Original case rear construction illustration; preserve proportions of reference2 while drawing truly opposite side."
+}

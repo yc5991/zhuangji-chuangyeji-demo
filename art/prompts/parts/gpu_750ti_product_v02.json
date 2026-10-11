@@ -1,0 +1,28 @@
+{
+  "id": "gpu_750ti_product_v02",
+  "componentId": "gpu_750ti",
+  "tool": "built_in_image_gen",
+  "intent": "edit",
+  "status": "generated_candidate",
+  "sourcePath": "art/source/parts/gpu_750ti_product_v02.png",
+  "referencePaths": [
+    "art/source/parts/gpu_750ti_product_v01.png"
+  ],
+  "transparent_background": true,
+  "verifiedManufacturerReference": {
+    "referenceUrl": "https://www.msi.com/Graphics-Card/N750-Ti-2GD5OCV1/Specification",
+    "portCounts": {
+      "dvi": 1,
+      "vga": 1,
+      "hdmi": 1,
+      "displayPort": 0
+    },
+    "checkedDate": "2026-10-08"
+  },
+  "originalArt": {
+    "connectorPositions": "Proposed layout on original game shield, not verified exact reference placement"
+  },
+  "prompt": "Precise local object edit: correctONLY silverI/OEXPANSIONBRACKETatLEFTedge ofgraphicscard. Preserve entirefanface,shroud,color,materials,camera,PCB,powerinputs,goldfingeredge,silhouetteandtransparency. The currentimage incorrectly showsrepeatedidenticalsmallHDMIports. Onleftmetalbracket, reconstructrealistic manufacturer-reference portTYPES andCOUNTS: EXACTLY THREE connectors, visiblydifferent: ONE large whiteDVI-Dmulti-pinportwithlongbankofsmallholes, ONE mediumblueVGA(D-Sub)15-holeportwithtwo small jackscrewstandoffs, andONEsmallHDMItrapezoidalport. NODisplayPort. DVIandVGAportsshouldbelargerthanHDMI. Orientallconnectorswith bracket'sprojectedvertical face, nothorizontalfloatingports. Smallmetalventslits use remainingblankbracketarea, keeping entirebracketshapes andorientation. No brandtext/labels, nocables. Allothercardpixels shouldretainoriginalart unchanged. Keepactualtransparentalpha outsidefullobject and noouterglow/hazyshadow.",
+  "generatedOutputFile": "exec-c7f9387a-bf41-4201-b69b-269e5c0db9c4.png",
+  "resultRecovery": "Recovered completed tool output after session interruption; matched by visual identity and recorded prompt"
+}

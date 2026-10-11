@@ -1,0 +1,267 @@
+{
+  "recordedDate": "2026-10-09",
+  "provenance": "Runtime execution results supplied by program owner; art owner independently viewed nine case screenshots and compared all mapped Figma/runtime PNG hashes",
+  "runtimeReviewPath": "art/figma/workbench-runtime-review.json",
+  "runtimeCheckedAt": "2026-10-09T06:59:49.196Z",
+  "buildHash": "acfcdf590aa0490d0bbc9ad71303ffee7e788ef3dc9208c4c71f3a69c84b6f66",
+  "screenshotViewportPx": [
+    720,
+    1280
+  ],
+  "mappedViewRecords": 39,
+  "uniqueDemoPartIds": 32,
+  "exactExportPixelCopies": true,
+  "caseScreenshotReview": {
+    "side": "visually_checked",
+    "rear": "visually_checked",
+    "exterior": "visually_checked_procurement_art_reuse"
+  },
+  "foregroundRailTreatment": "visible_in_supplied_screenshots; fixed_view_only",
+  "full3dCollision": "not_approved",
+  "pending": [
+    "replaceable_panels",
+    "exterior_color_textures",
+    "independent_case_fan_art_and_animation",
+    "cable_plug_art",
+    "low_cooler_rotor_blade_consistency"
+  ],
+  "pixelChecks": [
+    {
+      "partId": "cpu_6100",
+      "view": "side",
+      "sha256": "a0205c0c752d47cd3a3a8de1f8ec08081a3db9eb342e318977b00678a334143a"
+    },
+    {
+      "partId": "cpu_6500",
+      "view": "side",
+      "sha256": "a0205c0c752d47cd3a3a8de1f8ec08081a3db9eb342e318977b00678a334143a"
+    },
+    {
+      "partId": "cpu_6700",
+      "view": "side",
+      "sha256": "a0205c0c752d47cd3a3a8de1f8ec08081a3db9eb342e318977b00678a334143a"
+    },
+    {
+      "partId": "cpu_fx8350",
+      "view": "side",
+      "sha256": "4f8c4ccd028d3134128c12e08dcf53e962cc7ae0eb571defe9f1c6af47412c41"
+    },
+    {
+      "partId": "mb_h110",
+      "view": "side",
+      "sha256": "9d8d884eb2d323fcf768d6eb0c078c2ce90cfc2467a5ca8e62808771e0136863"
+    },
+    {
+      "partId": "mb_b150",
+      "view": "side",
+      "sha256": "3d93b9df1b094e2f3af1bc4e7417ffefb66961221bedda99a3d435e674951cdb"
+    },
+    {
+      "partId": "mb_am3",
+      "view": "side",
+      "sha256": "0dcbf6d11c6b5bdfefed6dd5f26117edbdbaa8e2212076bae672c1b52f1b8d9a"
+    },
+    {
+      "partId": "gpu_750ti",
+      "view": "side",
+      "sha256": "c7f70352d9a3fe56cc291366236176b37f320504eb0f67fd02f27d3969dd8c74"
+    },
+    {
+      "partId": "gpu_960",
+      "view": "side",
+      "sha256": "3da41f80fac7d8afce87e972433b5de2022880c97c77a3b33f96b3b72f9e4267"
+    },
+    {
+      "partId": "gpu_970",
+      "view": "side",
+      "sha256": "1bdd9860e283f07efd628c06cb3dd0976f0a1cf06b783e5550826304bc786f74"
+    },
+    {
+      "partId": "gpu_r9380",
+      "view": "side",
+      "sha256": "461d13242e92dbf273b8d88ac2a502e7dd8f8049020972468f559a75d1074180"
+    },
+    {
+      "partId": "gpu_1080",
+      "view": "side",
+      "sha256": "fd8786043f857e7753d8862afc48254de07e1ef4698b62bd784b921590065cd4"
+    },
+    {
+      "partId": "gpu_1070",
+      "view": "side",
+      "sha256": "944c447db40e92349d5925659a311797961babc955f57685db15d7d420918c39"
+    },
+    {
+      "partId": "gpu_rx480_4",
+      "view": "side",
+      "sha256": "667ffcc3b2e4b4e3d593644090b252e3cd009e610e1b5c7399487f808416e901"
+    },
+    {
+      "partId": "gpu_rx480_8",
+      "view": "side",
+      "sha256": "b9b9a11dbf5ca79c54c2b086cb1a9f615e93dfc0826cb8aeb3d459a2de98d8f9"
+    },
+    {
+      "partId": "ram_ddr3_4",
+      "view": "side",
+      "sha256": "00f954a7ceb79d7e6a94d400194745d973e04b2f9a5bc7a4caa67044280b2bf8"
+    },
+    {
+      "partId": "ram_ddr3_8",
+      "view": "side",
+      "sha256": "6e9a550590c47904a1c55b00328fefc2d61b2628eddb6c2a51cd1cf9b48d6c5b"
+    },
+    {
+      "partId": "ram_ddr4_4",
+      "view": "side",
+      "sha256": "d0bc73904ad9b7ed1617dbfa3adabf771cb125a335fc23bbc41d12c7510fb236"
+    },
+    {
+      "partId": "ram_ddr4_8",
+      "view": "side",
+      "sha256": "f9afe8fec58a678f5d99a8897aac6962e6823eda4346942482b5ed1d5118f1dc"
+    },
+    {
+      "partId": "ssd_120",
+      "view": "rear",
+      "sha256": "9df294159cd29071000a0191f26942389729740531274b6ea243ae6cd22ac106"
+    },
+    {
+      "partId": "ssd_250",
+      "view": "rear",
+      "sha256": "9df294159cd29071000a0191f26942389729740531274b6ea243ae6cd22ac106"
+    },
+    {
+      "partId": "ssd_500",
+      "view": "rear",
+      "sha256": "9df294159cd29071000a0191f26942389729740531274b6ea243ae6cd22ac106"
+    },
+    {
+      "partId": "hdd_1000",
+      "view": "side",
+      "sha256": "59194882c30a2ef02737a5f1eea2ef3108703ad2736de647e8ce7a4fe2e510ed"
+    },
+    {
+      "partId": "hdd_1000",
+      "view": "rear",
+      "sha256": "909d51d87c8938348230ec7b6bd719a4a3228dbfb785f5d94643d6eb4752016f"
+    },
+    {
+      "partId": "psu_350",
+      "view": "side",
+      "sha256": "053034c01d9b7c2ef05703095ee83a1e11a4887694522345b01db4220fa835e3"
+    },
+    {
+      "partId": "psu_350",
+      "view": "rear",
+      "sha256": "56be177af23786fbcb8b537f1f292552e9d0b91991c02db8a5a1fb24ce7c3cdc"
+    },
+    {
+      "partId": "psu_450",
+      "view": "side",
+      "sha256": "053034c01d9b7c2ef05703095ee83a1e11a4887694522345b01db4220fa835e3"
+    },
+    {
+      "partId": "psu_450",
+      "view": "rear",
+      "sha256": "56be177af23786fbcb8b537f1f292552e9d0b91991c02db8a5a1fb24ce7c3cdc"
+    },
+    {
+      "partId": "psu_650m",
+      "view": "side",
+      "sha256": "097022a6539b33a348ebd4320a900c6ee03a0ec3e720dbe13c93317a1a10717d"
+    },
+    {
+      "partId": "psu_650m",
+      "view": "rear",
+      "sha256": "c6b5aad5db73d5eb76df9ca05873dc50cb9fdb39a4a945700ee5d20955939d7e"
+    },
+    {
+      "partId": "cooler_low",
+      "view": "side",
+      "sha256": "e2f45da81c39aa4da7d1917131895f4b0f663f5208f9e28120007c07b8c6baae"
+    },
+    {
+      "partId": "cooler_tower",
+      "view": "side",
+      "sha256": "4c51741b6dd9ca61fae1567e262632aeeb45544d00fc610e1e9b1c48731f2879"
+    },
+    {
+      "partId": "cooler_quiet",
+      "view": "side",
+      "sha256": "3560deb4e019328e2298049b8b9c2b8177c5bebaab9bae4033c1197c3b378646"
+    },
+    {
+      "partId": "case_small",
+      "view": "side",
+      "sha256": "b34978b6d9c83ca8ec42eaea9024e733ddac71cc60af6feace6311c0c2430932"
+    },
+    {
+      "partId": "case_small",
+      "view": "rear",
+      "sha256": "490aa56632c52860335b79d1078f769267d4cd11260a173abbd9cce68e2a8481"
+    },
+    {
+      "partId": "case_standard",
+      "view": "side",
+      "sha256": "9388556d24a0e65eb8bc98897c46841d2c13a0ad0a9ff6e5d9316ad1610f4686"
+    },
+    {
+      "partId": "case_standard",
+      "view": "rear",
+      "sha256": "0afd1457ff86156ff8ddf30f6fe6c6595b065c92ebeb9caf36aeb7935abdac93"
+    },
+    {
+      "partId": "case_quiet",
+      "view": "side",
+      "sha256": "fd57f28dfb43d886522984136e43012c46dc8ccd143f0a01089e1c3c127bc4a3"
+    },
+    {
+      "partId": "case_quiet",
+      "view": "rear",
+      "sha256": "a2bbd8705487f49306b0f0b19dc9d9a03e909d4df6154c1cb4d46e247737e6db"
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "art/preview/runtime_case_small-side.png",
+      "sha256": "1ac8df54634b2a3ae8fdac2803dc2b6830a2bce9c1bb1d5aba0ad8076e1b07d8"
+    },
+    {
+      "path": "art/preview/runtime_case_small-rear.png",
+      "sha256": "47df297080aada60df5bc86fd250a3830d050a56de23b5af3f4b5c7e105b6500"
+    },
+    {
+      "path": "art/preview/runtime_case_small-exterior.png",
+      "sha256": "080df685df2a63780c8f5dcae5f7987ffc89cf67ecafefa7eb8a4498d6b4d17b"
+    },
+    {
+      "path": "art/preview/runtime_case_standard-side.png",
+      "sha256": "a4d77c2fa7e4fb3731545aa1ee9c16eedc6bccf884b36079b956f155a8070eca"
+    },
+    {
+      "path": "art/preview/runtime_case_standard-rear.png",
+      "sha256": "408321e67468693063787d145f138c0bce4018c77814d2a1125db25afa405e12"
+    },
+    {
+      "path": "art/preview/runtime_case_standard-exterior.png",
+      "sha256": "c480b633221a3a3f839de3f370b875cf4a007667667abcc2fd89643f4efd485e"
+    },
+    {
+      "path": "art/preview/runtime_case_quiet-side.png",
+      "sha256": "c61a44693c592eacf87bfc4fdea39a2f61dbe2825cb91ca6fff3caf6eda6bf71"
+    },
+    {
+      "path": "art/preview/runtime_case_quiet-rear.png",
+      "sha256": "b3bcb83158b96fae7eb814d3499ebb911895ee9f92d09b2c46c3194cfc5abe4f"
+    },
+    {
+      "path": "art/preview/runtime_case_quiet-exterior.png",
+      "sha256": "f7098ef87f1aad94198fb7940aab5e24bb3177f16aa3525f959ca41848584589"
+    },
+    {
+      "path": "art/preview/runtime_gaming-side.png",
+      "sha256": "228e59dbc2a35178e6ce7bd184fb7022d539438b0294168e21c9415ec7fb6094"
+    }
+  ]
+}

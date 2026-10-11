@@ -506,9 +506,9 @@
         "coreModel": "GTX 750 Ti"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
-        "vramGB",
-        "memoryType",
+        "specs.graphicsPlatformBrandId",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreSeries",
@@ -589,9 +589,9 @@
         "coreModel": "GTX 750 Ti"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
-        "vramGB",
-        "memoryType",
+        "specs.graphicsPlatformBrandId",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreSeries",
@@ -672,9 +672,9 @@
         "coreModel": "GTX 970"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
-        "vramGB",
-        "memoryType",
+        "specs.graphicsPlatformBrandId",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreSeries",
@@ -752,9 +752,9 @@
         "coreModel": "GTX 970"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
-        "vramGB",
-        "memoryType",
+        "specs.graphicsPlatformBrandId",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreSeries",
@@ -828,9 +828,9 @@
         "coreModel": "GTX 970"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
-        "vramGB",
-        "memoryType",
+        "specs.graphicsPlatformBrandId",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreSeries",
@@ -910,9 +910,9 @@
         "coreModel": "R9 380"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
-        "vramGB",
-        "memoryType",
+        "specs.graphicsPlatformBrandId",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreSeries",
@@ -988,9 +988,9 @@
         "coreModel": "R9 380"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
-        "vramGB",
-        "memoryType",
+        "specs.graphicsPlatformBrandId",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreSeries",
@@ -1062,10 +1062,10 @@
         "coreModel": "GTX 1080"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -1147,10 +1147,10 @@
         "coreModel": "GTX 1080"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel",
@@ -1235,14 +1235,12 @@
         "coreModel": "GTX 1080"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
-        "realModel",
-        "realSeries",
         "specs.vramGB",
         "specs.memoryType",
+        "realModel",
+        "realSeries",
         "specs.powerConnectors",
         "specs.dimensionsMm",
         "specs.coreModel"
@@ -1313,10 +1311,10 @@
         "coreModel": "GTX 1070"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -1394,10 +1392,10 @@
         "coreModel": "GTX 1070"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel",
@@ -1475,10 +1473,10 @@
         "coreModel": "GTX 1070"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -1559,10 +1557,10 @@
         "coreModel": "GTX 1060"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -1638,10 +1636,10 @@
         "coreModel": "GTX 1060"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -1716,10 +1714,10 @@
         "coreModel": "GTX 1060"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -1794,10 +1792,10 @@
         "coreModel": "GTX 1060"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -1872,10 +1870,10 @@
         "coreModel": "GTX 1060"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -1950,10 +1948,10 @@
         "coreModel": "GTX 1050 Ti"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -2028,10 +2026,10 @@
         "coreModel": "GTX 1050 Ti"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -2106,10 +2104,10 @@
         "coreModel": "GTX 1050"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -2184,10 +2182,10 @@
         "coreModel": "GTX 1050"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -2266,10 +2264,10 @@
         "coreModel": "GT 1030"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -2351,10 +2349,10 @@
         "coreModel": "GT 1030"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "realModel",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "specs.boardPowerW",
         "specs.dimensionsMm",
         "specs.coreModel"
@@ -2432,10 +2430,10 @@
         "coreModel": "GTX 1080 Ti"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -2517,10 +2515,10 @@
         "coreModel": "GTX 1080 Ti"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel",
@@ -2599,10 +2597,10 @@
         "coreModel": "GTX 1080 Ti"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -2683,10 +2681,10 @@
         "coreModel": "RX 480"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel",
@@ -2767,10 +2765,10 @@
         "coreModel": "RX 480"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel",
@@ -2844,10 +2842,10 @@
         "coreModel": "RX 470"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -2927,7 +2925,7 @@
         "coreModel": "RX 5700 XT"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
         "specs.vramGB",
         "specs.memoryType",
@@ -3002,10 +3000,10 @@
         "coreModel": "RX 460"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -3076,10 +3074,10 @@
         "coreModel": "RX 460"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -3156,10 +3154,10 @@
         "coreModel": "RX 580"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -3231,10 +3229,10 @@
         "coreModel": "RX 580"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -3305,10 +3303,10 @@
         "coreModel": "RX 570"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "specs.coreModel"
       ],
       "inferredFields": [
@@ -3379,10 +3377,10 @@
         "coreModel": "RX 570"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -3453,10 +3451,10 @@
         "coreModel": "RX 560"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -3527,10 +3525,10 @@
         "coreModel": "RX Vega 56"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -3601,10 +3599,10 @@
         "coreModel": "RX Vega 56"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -3675,10 +3673,10 @@
         "coreModel": "RX Vega 64"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -3749,10 +3747,10 @@
         "coreModel": "RX Vega 64"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -3823,10 +3821,10 @@
         "coreModel": "Radeon VII"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -3897,10 +3895,10 @@
         "coreModel": "RX 5700 XT"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -3971,10 +3969,10 @@
         "coreModel": "RX 5700 XT"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -4045,10 +4043,10 @@
         "coreModel": "RX 5700"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -4119,10 +4117,10 @@
         "coreModel": "RX 5600 XT"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -4192,10 +4190,10 @@
         "coreModel": "RX 5600 XT"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -4265,10 +4263,10 @@
         "coreModel": "RX 5500 XT"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "specs.coreModel"
       ],
       "inferredFields": [
@@ -4339,10 +4337,10 @@
         "coreModel": "RTX 2080"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -4414,10 +4412,10 @@
         "coreModel": "RTX 2080"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -4489,10 +4487,10 @@
         "coreModel": "RTX 2060"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -4563,10 +4561,10 @@
         "coreModel": "RTX 2060"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -4637,10 +4635,10 @@
         "coreModel": "RTX 2070 SUPER"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -4711,10 +4709,10 @@
         "coreModel": "RTX 2070 SUPER"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -4785,10 +4783,10 @@
         "coreModel": "RTX 2060 SUPER"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -4859,10 +4857,10 @@
         "coreModel": "RTX 2060 SUPER"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -4933,10 +4931,10 @@
         "coreModel": "GTX 1660 Ti"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -5007,10 +5005,10 @@
         "coreModel": "GTX 1660 Ti"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -5081,10 +5079,10 @@
         "coreModel": "GTX 1660 SUPER"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -5155,10 +5153,10 @@
         "coreModel": "GTX 1660 SUPER"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -5229,10 +5227,10 @@
         "coreModel": "GTX 1650 SUPER"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "specs.coreModel"
       ],
       "inferredFields": [
@@ -5303,10 +5301,10 @@
         "coreModel": "RTX 3080"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "specs.coreModel"
       ],
       "inferredFields": [
@@ -5378,10 +5376,10 @@
         "coreModel": "RTX 3080"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "specs.coreModel"
       ],
       "inferredFields": [
@@ -5453,10 +5451,10 @@
         "coreModel": "RTX 3090"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "specs.coreModel"
       ],
       "inferredFields": [
@@ -5527,10 +5525,10 @@
         "coreModel": "RX 6800 XT"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -5601,10 +5599,10 @@
         "coreModel": "RX 6800 XT"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -5675,10 +5673,10 @@
         "coreModel": "GTX 1070 Ti"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "specs.coreModel"
       ],
       "inferredFields": [
@@ -5753,10 +5751,10 @@
         "coreModel": "GTX 1070 Ti"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.dimensionsMm",
@@ -5836,7 +5834,7 @@
         "coreModel": "GTX 1660 Ti"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
         "specs.vramGB",
         "specs.memoryType",
@@ -5917,9 +5915,9 @@
         "coreModel": "GTX 1050 Ti"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
-        "vramGB",
-        "memoryType",
+        "specs.graphicsPlatformBrandId",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.powerConnectors",
@@ -5995,10 +5993,10 @@
         "coreModel": "RTX 2080"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "realModel",
         "realSeries",
         "specs.coreModel"
@@ -6076,10 +6074,10 @@
         "coreModel": "RTX 3070"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "specs.coreModel"
       ],
       "inferredFields": [
@@ -6149,10 +6147,10 @@
         "coreModel": "RTX 3060 Ti"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "specs.coreModel"
       ],
       "inferredFields": [
@@ -6227,10 +6225,10 @@
         "coreModel": "RX 6800"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "specs.coreModel"
       ],
       "inferredFields": [
@@ -6300,10 +6298,10 @@
         "coreModel": "RX 6800 XT"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "specs.coreModel"
       ],
       "inferredFields": [
@@ -6380,10 +6378,10 @@
         "coreModel": "RX 6900 XT"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
-        "vramGB",
-        "memoryType",
+        "specs.vramGB",
+        "specs.memoryType",
         "specs.coreModel",
         "specs.powerConnectors",
         "specs.boardPowerW",
@@ -6456,7 +6454,7 @@
         "coreModel": "GTX 1080"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "specs.coreSeries",
         "specs.coreRelease",
         "specs.vramGB",
@@ -6538,7 +6536,7 @@
         "coreModel": "GTX 980 Ti"
       },
       "verifiedFields": [
-        "graphicsPlatformBrandId",
+        "specs.graphicsPlatformBrandId",
         "realModel",
         "specs.coreSeries",
         "specs.vramGB",

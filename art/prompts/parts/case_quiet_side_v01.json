@@ -1,0 +1,12 @@
+{
+  "id": "case_quiet_side_v01",
+  "componentId": "case_quiet",
+  "prompt": "Use case: product-mockup. One independent empty chassis installation sprite for Orangegame industrial PC assembly game. Image 1 is a MATERIAL AND NEUTRAL LIGHTING reference only. Strict orthographic left-side open-case view: rear at LEFT, front at RIGHT, top up, all edges horizontal or vertical, no tilt or perspective. Genuine transparent alpha background, sharp metal/plastic materials lit softly upper-left. Entire left side panel removed. EMPTY case: no motherboard, CPU, RAM, GPU, PSU, cooler, drives, fans, cables or loose parts. No printed text, logos, lights or ground shadow. Complete silhouette with padding, no comic outlines or toy shapes. An original premium quiet ATX mid tower, body450mm horizontal depth by460mm vertical height, near-square side shape. Matte graphite painted steel, slightly thicker frame than budget case, slim SOLID acoustic front column right, subtle dark sound-damping lining on fixed upper steel surfaces, no flashy mesh front. Bare ATX motherboard tray upper-left, seven rear expansion openings left, unobstructed lower-left PSU area and small empty fixed two-drive cage lower-right. Cable routing rubber grommets on right of tray. Neat industrial product, no built-in wiring or visible side glass, no opaque PSU shroud.",
+  "sourcePath": "art/source/parts/case_quiet_side_v01.png",
+  "referencePaths": [
+    "art/source/style_review_v02.png"
+  ],
+  "tool": "built_in_image_gen",
+  "intent": "generate",
+  "status": "production_candidate"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "hdd_1000_product_v01",
+  "componentId": "hdd_1000",
+  "tool": "built_in_image_gen",
+  "intent": "generate",
+  "status": "generated_candidate",
+  "sourcePath": "art/source/parts/hdd_1000_product_v01.png",
+  "referencePaths": [
+    "art/source/style_review_v02.png",
+    "art/source/parts/hdd_1000_side_v01.png"
+  ],
+  "transparent_background": true,
+  "structuralBasis": "Original game component product view, catalog dimensions. Fan sizes and mounting appearance are illustration choices pending projection review.",
+  "prompt": "Use case: product-mockup. ONE isolated procurement catalog illustration ofsameoriginalgamecomponentasreference2, in modestthreequarterhardware productphotocamera. Reference1 providesrelative realistic PCsimulatormaterialstyle. Conventional3.5inch147mmlong101.6mmwide26.1mmtall harddrive. Broadbrushedsilver rectangular stampedsteeltop with circular spindlepress shapeundercover, originalblankwhite central label occupyingupperhalfoftop, roundsmallTorxscrewsaroundperimeter, dull castaluminumlowerframeandthindarkgreenPCBbelow. SATAconnectorshintatlowerend, no wires. Longaxisvertical in image. Preserve materialpaletteandformlanguageofreference2while showingbroadfunctionalface andmodestdepth, manufactured crispgeometry, believable metal/fins/plastic, neutralupperleftstudioillumination andfill, no comicoutline orfantasycolors. Entireobjectcenteredwithgeneroustransparentmargin onalledges, truealphaoutside fullsilhouette, no floor/reflection/castshadowoutsideobject, no boxes,desk,motherboard,otherobjects,logos,printedletters,numbers,glow,RGBorwatermark. Blanklabelandhub reserved for project brand textlayer. Oneobjectonly.",
+  "generatedOutputFile": "exec-15ba233c-1099-4437-8d65-b68c3464b2cb.png",
+  "resultRecovery": "Recovered completed tool output after session interruption; matched by visual identity and recorded prompt"
+}

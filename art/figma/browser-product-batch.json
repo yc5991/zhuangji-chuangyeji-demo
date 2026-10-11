@@ -1,0 +1,1040 @@
+{
+  "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+  "pageId": "1:2",
+  "method": "UI import of clipped raster SVG container then Figma native PNG export",
+  "entries": [
+    {
+      "partId": "cpu_6500",
+      "view": "product",
+      "name": "cpu_6500_product",
+      "sourcePath": "art/source/parts/cpu_6500_side_v01.png",
+      "promptPath": "art/prompts/parts/cpu_6500_side_v01.json",
+      "sourceCropLtrbPx": [
+        131,
+        150,
+        1123,
+        1101
+      ],
+      "scale": 0.5161290322580645,
+      "proposedExportPx": [
+        512,
+        490.83870967741933
+      ],
+      "wrapperPath": ".local/figma-import/batch-product/cpu_6500_product.svg",
+      "state": "exported_for_review",
+      "camera": "procurement view; flat-lay for CPU and SSD, three-quarter for other parts",
+      "stagingPath": "art/exports/parts/cpu_6500_product.png",
+      "exportPx": [
+        512,
+        491
+      ],
+      "outlinePx": [
+        3,
+        2,
+        506,
+        487
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "19:24",
+      "uiPosition": [
+        "13000",
+        "200"
+      ]
+    },
+    {
+      "partId": "cpu_fx8350",
+      "view": "product",
+      "name": "cpu_fx8350_product",
+      "sourcePath": "art/source/parts/cpu_fx8350_side_v01.png",
+      "promptPath": "art/prompts/parts/cpu_fx8350_side_v01.json",
+      "sourceCropLtrbPx": [
+        85,
+        91,
+        1170,
+        1164
+      ],
+      "scale": 0.471889400921659,
+      "proposedExportPx": [
+        512,
+        506.3373271889401
+      ],
+      "wrapperPath": ".local/figma-import/batch-product/cpu_fx8350_product.svg",
+      "state": "exported_for_review",
+      "camera": "procurement view; flat-lay for CPU and SSD, three-quarter for other parts",
+      "stagingPath": "art/exports/parts/cpu_fx8350_product.png",
+      "exportPx": [
+        512,
+        507
+      ],
+      "outlinePx": [
+        2,
+        2,
+        508,
+        502
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "19:14",
+      "uiPosition": [
+        "13900",
+        "200"
+      ]
+    },
+    {
+      "partId": "gpu_750ti",
+      "view": "product",
+      "name": "gpu_750ti_product",
+      "sourcePath": "art/source/parts/gpu_750ti_product_v02.png",
+      "promptPath": "art/prompts/parts/gpu_750ti_product_v02.json",
+      "sourceCropLtrbPx": [
+        96,
+        154,
+        1457,
+        929
+      ],
+      "scale": 0.5642909625275533,
+      "proposedExportPx": [
+        768,
+        437.3254959588538
+      ],
+      "wrapperPath": ".local/figma-import/batch-product/gpu_750ti_product.svg",
+      "state": "exported_for_review",
+      "camera": "procurement view; flat-lay for CPU and SSD, three-quarter for other parts",
+      "stagingPath": "art/exports/parts/gpu_750ti_product.png",
+      "exportPx": [
+        768,
+        438
+      ],
+      "outlinePx": [
+        3,
+        2,
+        763,
+        434
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "19:28",
+      "uiPosition": [
+        "14800",
+        "200"
+      ]
+    },
+    {
+      "partId": "gpu_960",
+      "view": "product",
+      "name": "gpu_960_product",
+      "sourcePath": "art/source/parts/gpu_960_product_v02.png",
+      "promptPath": "art/prompts/parts/gpu_960_product_v02.json",
+      "sourceCropLtrbPx": [
+        66,
+        108,
+        1554,
+        878
+      ],
+      "scale": 0.5161290322580645,
+      "proposedExportPx": [
+        768,
+        397.4193548387097
+      ],
+      "wrapperPath": ".local/figma-import/batch-product/gpu_960_product.svg",
+      "state": "exported_for_review",
+      "camera": "procurement view; flat-lay for CPU and SSD, three-quarter for other parts",
+      "stagingPath": "art/exports/parts/gpu_960_product.png",
+      "exportPx": [
+        768,
+        398
+      ],
+      "outlinePx": [
+        2,
+        2,
+        764,
+        394
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "19:8",
+      "uiPosition": [
+        "15700",
+        "200"
+      ]
+    },
+    {
+      "partId": "gpu_970",
+      "view": "product",
+      "name": "gpu_970_product",
+      "sourcePath": "art/source/parts/gpu_970_product_v02.png",
+      "promptPath": "art/prompts/parts/gpu_970_product_v02.json",
+      "sourceCropLtrbPx": [
+        68,
+        57,
+        1725,
+        860
+      ],
+      "scale": 0.46348823174411585,
+      "proposedExportPx": [
+        768,
+        372.18105009052505
+      ],
+      "wrapperPath": ".local/figma-import/batch-product/gpu_970_product.svg",
+      "state": "exported_for_review",
+      "camera": "procurement view; flat-lay for CPU and SSD, three-quarter for other parts",
+      "stagingPath": "art/exports/parts/gpu_970_product.png",
+      "exportPx": [
+        768,
+        373
+      ],
+      "outlinePx": [
+        2,
+        2,
+        764,
+        368
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "19:18",
+      "uiPosition": [
+        "16600",
+        "200"
+      ]
+    },
+    {
+      "partId": "gpu_r9380",
+      "view": "product",
+      "name": "gpu_r9380_product",
+      "sourcePath": "art/source/parts/gpu_r9380_product_v02.png",
+      "promptPath": "art/prompts/parts/gpu_r9380_product_v02.json",
+      "sourceCropLtrbPx": [
+        24,
+        15,
+        1723,
+        884
+      ],
+      "scale": 0.45203060623896407,
+      "proposedExportPx": [
+        768,
+        392.8145968216598
+      ],
+      "wrapperPath": ".local/figma-import/batch-product/gpu_r9380_product.svg",
+      "state": "exported_for_review",
+      "camera": "procurement view; flat-lay for CPU and SSD, three-quarter for other parts",
+      "stagingPath": "art/exports/parts/gpu_r9380_product.png",
+      "exportPx": [
+        768,
+        393
+      ],
+      "outlinePx": [
+        2,
+        2,
+        764,
+        389
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "19:22",
+      "uiPosition": [
+        "13000",
+        "1200"
+      ]
+    },
+    {
+      "partId": "gpu_1080",
+      "view": "product",
+      "name": "gpu_1080_product",
+      "sourcePath": "art/source/parts/gpu_1080_product_v01.png",
+      "promptPath": "art/prompts/parts/gpu_1080_product_v01.json",
+      "sourceCropLtrbPx": [
+        10,
+        200,
+        1765,
+        730
+      ],
+      "scale": 0.4376068376068376,
+      "proposedExportPx": [
+        768,
+        231.93162393162393
+      ],
+      "wrapperPath": ".local/figma-import/batch-product/gpu_1080_product.svg",
+      "state": "exported_for_review",
+      "camera": "procurement view; flat-lay for CPU and SSD, three-quarter for other parts",
+      "stagingPath": "art/exports/parts/gpu_1080_product.png",
+      "exportPx": [
+        768,
+        232
+      ],
+      "outlinePx": [
+        2,
+        2,
+        764,
+        228
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "19:2",
+      "uiPosition": [
+        "13900",
+        "1200"
+      ]
+    },
+    {
+      "partId": "gpu_1070",
+      "view": "product",
+      "name": "gpu_1070_product",
+      "sourcePath": "art/source/parts/gpu_1070_product_v01.png",
+      "promptPath": "art/prompts/parts/gpu_1070_product_v01.json",
+      "sourceCropLtrbPx": [
+        11,
+        83,
+        1763,
+        824
+      ],
+      "scale": 0.4383561643835616,
+      "proposedExportPx": [
+        768,
+        324.82191780821915
+      ],
+      "wrapperPath": ".local/figma-import/batch-product/gpu_1070_product.svg",
+      "state": "exported_for_review",
+      "camera": "procurement view; flat-lay for CPU and SSD, three-quarter for other parts",
+      "stagingPath": "art/exports/parts/gpu_1070_product.png",
+      "exportPx": [
+        768,
+        325
+      ],
+      "outlinePx": [
+        2,
+        2,
+        764,
+        321
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "19:12",
+      "uiPosition": [
+        "14800",
+        "1200"
+      ]
+    },
+    {
+      "partId": "gpu_rx480_4",
+      "view": "product",
+      "name": "gpu_rx480_4_product",
+      "sourcePath": "art/source/parts/gpu_rx480_4_product_v01.png",
+      "promptPath": "art/prompts/parts/gpu_rx480_4_product_v01.json",
+      "sourceCropLtrbPx": [
+        46,
+        131,
+        1794,
+        757
+      ],
+      "scale": 0.43935926773455375,
+      "proposedExportPx": [
+        768,
+        275.0389016018307
+      ],
+      "wrapperPath": ".local/figma-import/batch-product/gpu_rx480_4_product.svg",
+      "state": "exported_for_review",
+      "camera": "procurement view; flat-lay for CPU and SSD, three-quarter for other parts",
+      "stagingPath": "art/exports/parts/gpu_rx480_4_product.png",
+      "exportPx": [
+        768,
+        276
+      ],
+      "outlinePx": [
+        2,
+        2,
+        764,
+        271
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "19:6",
+      "uiPosition": [
+        "15700",
+        "1200"
+      ]
+    },
+    {
+      "partId": "gpu_rx480_8",
+      "view": "product",
+      "name": "gpu_rx480_8_product",
+      "sourcePath": "art/source/parts/gpu_rx480_8_product_v01.png",
+      "promptPath": "art/prompts/parts/gpu_rx480_8_product_v01.json",
+      "sourceCropLtrbPx": [
+        20,
+        87,
+        1806,
+        774
+      ],
+      "scale": 0.43001119820828665,
+      "proposedExportPx": [
+        768,
+        295.4176931690929
+      ],
+      "wrapperPath": ".local/figma-import/batch-product/gpu_rx480_8_product.svg",
+      "state": "exported_for_review",
+      "camera": "procurement view; flat-lay for CPU and SSD, three-quarter for other parts",
+      "stagingPath": "art/exports/parts/gpu_rx480_8_product.png",
+      "exportPx": [
+        768,
+        296
+      ],
+      "outlinePx": [
+        2,
+        2,
+        763,
+        291
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "19:10",
+      "uiPosition": [
+        "16600",
+        "1200"
+      ]
+    },
+    {
+      "partId": "ram_ddr3_4",
+      "view": "product",
+      "name": "ram_ddr3_4_product",
+      "sourcePath": "art/source/parts/ram_ddr3_4_product_v01.png",
+      "promptPath": "art/prompts/parts/ram_ddr3_4_product_v01.json",
+      "sourceCropLtrbPx": [
+        38,
+        184,
+        2009,
+        581
+      ],
+      "scale": 0.2597666159309995,
+      "proposedExportPx": [
+        512,
+        103.12734652460679
+      ],
+      "wrapperPath": ".local/figma-import/batch-product/ram_ddr3_4_product.svg",
+      "state": "exported_for_review",
+      "camera": "procurement view; flat-lay for CPU and SSD, three-quarter for other parts",
+      "stagingPath": "art/exports/parts/ram_ddr3_4_product.png",
+      "exportPx": [
+        512,
+        104
+      ],
+      "outlinePx": [
+        2,
+        2,
+        508,
+        99
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "19:32",
+      "uiPosition": [
+        "13000",
+        "2200"
+      ]
+    },
+    {
+      "partId": "ram_ddr3_8",
+      "view": "product",
+      "name": "ram_ddr3_8_product",
+      "sourcePath": "art/source/parts/ram_ddr3_8_product_v02.png",
+      "promptPath": "art/prompts/parts/ram_ddr3_8_product_v02.json",
+      "sourceCropLtrbPx": [
+        28,
+        187,
+        1994,
+        588
+      ],
+      "scale": 0.26042726347914547,
+      "proposedExportPx": [
+        512,
+        104.43133265513733
+      ],
+      "wrapperPath": ".local/figma-import/batch-product/ram_ddr3_8_product.svg",
+      "state": "exported_for_review",
+      "camera": "procurement view; flat-lay for CPU and SSD, three-quarter for other parts",
+      "stagingPath": "art/exports/parts/ram_ddr3_8_product.png",
+      "exportPx": [
+        512,
+        105
+      ],
+      "outlinePx": [
+        2,
+        2,
+        508,
+        100
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "19:4",
+      "uiPosition": [
+        "13900",
+        "2200"
+      ]
+    },
+    {
+      "partId": "ram_ddr4_4",
+      "view": "product",
+      "name": "ram_ddr4_4_product",
+      "sourcePath": "art/source/parts/ram_ddr4_4_product_v01.png",
+      "promptPath": "art/prompts/parts/ram_ddr4_4_product_v01.json",
+      "sourceCropLtrbPx": [
+        41,
+        168,
+        2007,
+        595
+      ],
+      "scale": 0.26042726347914547,
+      "proposedExportPx": [
+        512,
+        111.20244150559512
+      ],
+      "wrapperPath": ".local/figma-import/batch-product/ram_ddr4_4_product.svg",
+      "state": "exported_for_review",
+      "camera": "procurement view; flat-lay for CPU and SSD, three-quarter for other parts",
+      "stagingPath": "art/exports/parts/ram_ddr4_4_product.png",
+      "exportPx": [
+        512,
+        112
+      ],
+      "outlinePx": [
+        2,
+        2,
+        508,
+        107
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "19:26",
+      "uiPosition": [
+        "14800",
+        "2200"
+      ]
+    },
+    {
+      "partId": "ram_ddr4_8",
+      "view": "product",
+      "name": "ram_ddr4_8_product",
+      "sourcePath": "art/source/parts/ram_ddr4_8_product_v01.png",
+      "promptPath": "art/prompts/parts/ram_ddr4_8_product_v01.json",
+      "sourceCropLtrbPx": [
+        57,
+        126,
+        2113,
+        590
+      ],
+      "scale": 0.2490272373540856,
+      "proposedExportPx": [
+        512,
+        115.54863813229572
+      ],
+      "wrapperPath": ".local/figma-import/batch-product/ram_ddr4_8_product.svg",
+      "state": "exported_for_review",
+      "camera": "procurement view; flat-lay for CPU and SSD, three-quarter for other parts",
+      "stagingPath": "art/exports/parts/ram_ddr4_8_product.png",
+      "exportPx": [
+        512,
+        116
+      ],
+      "outlinePx": [
+        2,
+        2,
+        508,
+        112
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "19:30",
+      "uiPosition": [
+        "15700",
+        "2200"
+      ]
+    },
+    {
+      "partId": "ssd_250",
+      "view": "product",
+      "name": "ssd_250_product",
+      "sourcePath": "art/source/parts/ssd_250_side_v01.png",
+      "promptPath": "art/prompts/parts/ssd_250_side_v01.json",
+      "sourceCropLtrbPx": [
+        112,
+        133,
+        938,
+        1342
+      ],
+      "scale": 0.42349048800661704,
+      "proposedExportPx": [
+        349.8031430934657,
+        512
+      ],
+      "wrapperPath": ".local/figma-import/batch-product/ssd_250_product.svg",
+      "state": "exported_for_review",
+      "camera": "procurement view; flat-lay for CPU and SSD, three-quarter for other parts",
+      "stagingPath": "art/exports/parts/ssd_250_product.png",
+      "exportPx": [
+        350,
+        512
+      ],
+      "outlinePx": [
+        2,
+        2,
+        346,
+        508
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "19:34",
+      "uiPosition": [
+        "16600",
+        "2200"
+      ]
+    },
+    {
+      "partId": "hdd_1000",
+      "view": "product",
+      "name": "hdd_1000_product",
+      "sourcePath": "art/source/parts/hdd_1000_product_v01.png",
+      "promptPath": "art/prompts/parts/hdd_1000_product_v01.json",
+      "sourceCropLtrbPx": [
+        26,
+        159,
+        1004,
+        1336
+      ],
+      "scale": 0.43500424808836025,
+      "proposedExportPx": [
+        425.43415463041634,
+        512
+      ],
+      "wrapperPath": ".local/figma-import/batch-product/hdd_1000_product.svg",
+      "state": "exported_for_review",
+      "camera": "procurement view; flat-lay for CPU and SSD, three-quarter for other parts",
+      "stagingPath": "art/exports/parts/hdd_1000_product.png",
+      "exportPx": [
+        426,
+        512
+      ],
+      "outlinePx": [
+        2,
+        2,
+        422,
+        508
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "19:16",
+      "uiPosition": [
+        "13000",
+        "3200"
+      ]
+    },
+    {
+      "partId": "psu_450",
+      "view": "product",
+      "name": "psu_450_product",
+      "sourcePath": "art/source/parts/psu_450_product_v01.png",
+      "promptPath": "art/prompts/parts/psu_450_product_v01.json",
+      "sourceCropLtrbPx": [
+        206,
+        35,
+        1339,
+        998
+      ],
+      "scale": 0.45189761694616065,
+      "proposedExportPx": [
+        512,
+        435.1774051191527
+      ],
+      "wrapperPath": ".local/figma-import/batch-product/psu_450_product.svg",
+      "state": "exported_for_review",
+      "camera": "procurement view; flat-lay for CPU and SSD, three-quarter for other parts",
+      "stagingPath": "art/exports/parts/psu_450_product.png",
+      "exportPx": [
+        512,
+        436
+      ],
+      "outlinePx": [
+        2,
+        2,
+        508,
+        431
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "19:20",
+      "uiPosition": [
+        "13900",
+        "3200"
+      ]
+    },
+    {
+      "partId": "psu_650m",
+      "view": "product",
+      "name": "psu_650m_product",
+      "sourcePath": "art/source/parts/psu_650m_product_v01.png",
+      "promptPath": "art/prompts/parts/psu_650m_product_v01.json",
+      "sourceCropLtrbPx": [
+        121,
+        79,
+        1427,
+        996
+      ],
+      "scale": 0.39203675344563554,
+      "proposedExportPx": [
+        512,
+        359.4977029096478
+      ],
+      "wrapperPath": ".local/figma-import/batch-product/psu_650m_product.svg",
+      "state": "exported_for_review",
+      "camera": "procurement view; flat-lay for CPU and SSD, three-quarter for other parts",
+      "stagingPath": "art/exports/parts/psu_650m_product.png",
+      "exportPx": [
+        512,
+        360
+      ],
+      "outlinePx": [
+        2,
+        2,
+        507,
+        356
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "19:38",
+      "uiPosition": [
+        "14800",
+        "3200"
+      ]
+    },
+    {
+      "partId": "cooler_low",
+      "view": "product",
+      "name": "cooler_low_product",
+      "sourcePath": "art/source/parts/cooler_low_product_v01.png",
+      "promptPath": "art/prompts/parts/cooler_low_product_v01.json",
+      "sourceCropLtrbPx": [
+        158,
+        25,
+        1414,
+        994
+      ],
+      "scale": 0.40764331210191085,
+      "proposedExportPx": [
+        512,
+        395.00636942675163
+      ],
+      "wrapperPath": ".local/figma-import/batch-product/cooler_low_product.svg",
+      "state": "exported_for_review",
+      "camera": "procurement view; flat-lay for CPU and SSD, three-quarter for other parts",
+      "stagingPath": "art/exports/parts/cooler_low_product.png",
+      "exportPx": [
+        512,
+        395
+      ],
+      "outlinePx": [
+        2,
+        2,
+        508,
+        391
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "19:40",
+      "uiPosition": [
+        "15700",
+        "3200"
+      ]
+    },
+    {
+      "partId": "cooler_tower",
+      "view": "product",
+      "name": "cooler_tower_product",
+      "sourcePath": "art/source/parts/cooler_tower_product_v01.png",
+      "promptPath": "art/prompts/parts/cooler_tower_product_v01.json",
+      "sourceCropLtrbPx": [
+        341,
+        21,
+        1228,
+        988
+      ],
+      "scale": 0.5294725956566702,
+      "proposedExportPx": [
+        469.64219234746645,
+        512
+      ],
+      "wrapperPath": ".local/figma-import/batch-product/cooler_tower_product.svg",
+      "state": "exported_for_review",
+      "camera": "procurement view; flat-lay for CPU and SSD, three-quarter for other parts",
+      "stagingPath": "art/exports/parts/cooler_tower_product.png",
+      "exportPx": [
+        470,
+        512
+      ],
+      "outlinePx": [
+        2,
+        2,
+        466,
+        508
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "19:36",
+      "uiPosition": [
+        "16600",
+        "3200"
+      ]
+    },
+    {
+      "partId": "cooler_quiet",
+      "view": "product",
+      "name": "cooler_quiet_product",
+      "sourcePath": "art/source/parts/cooler_quiet_product_v01.png",
+      "promptPath": "art/prompts/parts/cooler_quiet_product_v01.json",
+      "sourceCropLtrbPx": [
+        222,
+        85,
+        1149,
+        1080
+      ],
+      "scale": 0.5145728643216081,
+      "proposedExportPx": [
+        477.0090452261307,
+        512
+      ],
+      "wrapperPath": ".local/figma-import/batch-product/cooler_quiet_product.svg",
+      "state": "exported_for_review",
+      "camera": "procurement view; flat-lay for CPU and SSD, three-quarter for other parts",
+      "stagingPath": "art/exports/parts/cooler_quiet_product.png",
+      "exportPx": [
+        477,
+        512
+      ],
+      "outlinePx": [
+        2,
+        2,
+        473,
+        508
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "19:42",
+      "uiPosition": [
+        "13000",
+        "4200"
+      ]
+    },
+    {
+      "partId": "case_small",
+      "view": "product",
+      "name": "case_small_product",
+      "sourcePath": "art/source/parts/case_small_product_v01.png",
+      "promptPath": "art/prompts/parts/case_small_product_v01.json",
+      "sourceCropLtrbPx": [
+        157,
+        26,
+        1198,
+        1131
+      ],
+      "scale": 0.6950226244343891,
+      "proposedExportPx": [
+        723.518552036199,
+        768
+      ],
+      "wrapperPath": ".local/figma-import/batch-product/case_small_product.svg",
+      "state": "exported_for_review",
+      "camera": "procurement view; flat-lay for CPU and SSD, three-quarter for other parts",
+      "stagingPath": "art/exports/parts/case_small_product.png",
+      "exportPx": [
+        724,
+        768
+      ],
+      "outlinePx": [
+        2,
+        2,
+        719,
+        764
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "19:44",
+      "uiPosition": [
+        "13900",
+        "4200"
+      ]
+    },
+    {
+      "partId": "case_standard",
+      "view": "product",
+      "name": "case_standard_product",
+      "sourcePath": "art/source/parts/case_standard_product_v01.png",
+      "promptPath": "art/prompts/parts/case_standard_product_v01.json",
+      "sourceCropLtrbPx": [
+        71,
+        40,
+        1190,
+        1205
+      ],
+      "scale": 0.6592274678111588,
+      "proposedExportPx": [
+        737.6755364806867,
+        768
+      ],
+      "wrapperPath": ".local/figma-import/batch-product/case_standard_product.svg",
+      "state": "exported_for_review",
+      "camera": "procurement view; flat-lay for CPU and SSD, three-quarter for other parts",
+      "stagingPath": "art/exports/parts/case_standard_product.png",
+      "exportPx": [
+        738,
+        768
+      ],
+      "outlinePx": [
+        3,
+        2,
+        732,
+        764
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "19:48",
+      "uiPosition": [
+        "14800",
+        "4200"
+      ]
+    },
+    {
+      "partId": "case_quiet",
+      "view": "product",
+      "name": "case_quiet_product",
+      "sourcePath": "art/source/parts/case_quiet_product_v01.png",
+      "promptPath": "art/prompts/parts/case_quiet_product_v01.json",
+      "sourceCropLtrbPx": [
+        63,
+        53,
+        1205,
+        1168
+      ],
+      "scale": 0.6725043782837128,
+      "proposedExportPx": [
+        768,
+        749.8423817863397
+      ],
+      "wrapperPath": ".local/figma-import/batch-product/case_quiet_product.svg",
+      "state": "exported_for_review",
+      "camera": "procurement view; flat-lay for CPU and SSD, three-quarter for other parts",
+      "stagingPath": "art/exports/parts/case_quiet_product.png",
+      "exportPx": [
+        768,
+        750
+      ],
+      "outlinePx": [
+        2,
+        2,
+        764,
+        746
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "19:46",
+      "uiPosition": [
+        "15700",
+        "4200"
+      ]
+    }
+  ],
+  "status": "actual_png_exports_collected"
+}

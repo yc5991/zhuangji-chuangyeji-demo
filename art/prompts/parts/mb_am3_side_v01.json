@@ -1,0 +1,12 @@
+{
+  "id": "mb_am3_side_v01",
+  "componentId": "mb_am3",
+  "prompt": "Use case: product-mockup. One independent installation sprite for Orangegame relatively realistic industrial PC assembly game. Image 1 is ONLY material and neutral upper-left lighting reference. Genuine transparent alpha, no backdrop, glow or cast ground shadow. Direct orthographic top view of motherboard in its PCB plane, rear I/O at LEFT, top up, crisp natural metal/plastic/PCB materials, clean functional original game illustration. No perspective tilt, no RGB lights, logos, text, installed CPU/RAM/GPU/cooler/drives, wires or other objects. Portrait canvas, complete board silhouette with padding. Budget performance ATX AM3+ board, 229mm horizontal by 305mm vertical. Dark-brown PCB with muted BLUE passive aluminium chipset/VRM heatsinks. Empty white AM3+ pin-hole CPU socket near upper center-left with a metal locking lever and two black plastic cooler mounting rails above and below CPU socket. EXACTLY FOUR long vertical DDR3 DIMM slots on RIGHT, alternating muted blue and black; 24-pin connector right edge and one 8-pin EPS 2x4 connector upper-left. EXACTLY SIX horizontal expansion slots in lower board: two short PCIe x1 slots, two long PCIe x16 slots in muted blue and black, two long pale grey legacy PCI slots, each distinct and no extra seventh. Six SATA sockets lower right. Rear I/O has USB/Ethernet/audio, no integrated GPU video connectors. Original structural illustration, no printed brands.",
+  "sourcePath": "art/source/parts/mb_am3_side_v01.png",
+  "referencePaths": [
+    "art/source/style_review_v02.png"
+  ],
+  "tool": "built_in_image_gen",
+  "intent": "generate",
+  "status": "production_candidate"
+}

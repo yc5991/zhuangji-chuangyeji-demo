@@ -1,0 +1,17 @@
+{
+  "id": "cooler_quiet_product_v01",
+  "componentId": "cooler_quiet",
+  "tool": "built_in_image_gen",
+  "intent": "generate",
+  "status": "generated_candidate",
+  "sourcePath": "art/source/parts/cooler_quiet_product_v01.png",
+  "referencePaths": [
+    "art/source/style_review_v02.png",
+    "art/source/parts/cooler_quiet_side_v01.png"
+  ],
+  "transparent_background": true,
+  "structuralBasis": "Original game component product view, catalog dimensions. Fan sizes and mounting appearance are illustration choices pending projection review.",
+  "prompt": "Use case: product-mockup. ONE isolated procurement catalog illustration ofsameoriginalgamecomponentasreference2, in modestthreequarterhardware productphotocamera. Reference1 providesrelative realistic PCsimulatormaterialstyle. Original quiet single-tower CPUaircooler125mmwide75mmdeep158mmtall. Vertical silver dense finstack and sixsmall coppercappedtips ontop, quiet mutedbeige square120mmfrontfanframe withdarkbrownseven curvedblades, softdarkrubbercornerpads, tiny steelretentionclips and modestcopperbase/mountbar. Broadfaceofan seenatfront. Restrained naturalbeige/brown matchingreference2, no cables. Preserve materialpaletteandformlanguageofreference2while showingbroadfunctionalface andmodestdepth, manufactured crispgeometry, believable metal/fins/plastic, neutralupperleftstudioillumination andfill, no comicoutline orfantasycolors. Entireobjectcenteredwithgeneroustransparentmargin onalledges, truealphaoutside fullsilhouette, no floor/reflection/castshadowoutsideobject, no boxes,desk,motherboard,otherobjects,logos,printedletters,numbers,glow,RGBorwatermark. Blanklabelandhub reserved for project brand textlayer. Oneobjectonly.",
+  "generatedOutputFile": "exec-99668f62-f865-4698-96e7-688e944c795e.png",
+  "resultRecovery": "Recovered completed tool output after session interruption; matched by visual identity and recorded prompt"
+}

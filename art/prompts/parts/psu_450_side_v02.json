@@ -1,0 +1,12 @@
+{
+  "id": "psu_450_side_v02",
+  "componentId": "psu_450",
+  "prompt": "Use case: precise-object-edit. Preserve the plain graphite nonmodular PSU side panel design of the supplied image, but CORRECT ITS RECTANGULAR PROPORTIONS. The physical side face is 140mm wide by 86mm high, width:height exactly 1.628:1. Increase the panel's vertical height to make it visibly taller relative to width; do not retain the too-wide 2:1 existing silhouette. Re-render rather than stretching screw heads: the four corner screw heads must stay circular, the grommet near lower right stays circular, the centered blank sticker stays a modest horizontal rectangle. Strict orthographic square-on SIDE face, rear at left, cable exit right; no visible fan, no modular connector bank, no cables. Preserve realistic matte steel/plastic and neutral lighting. Keep complete object on true transparent alpha, all space outside the physical panel alpha 0, no glow or ground shadow, no text/logos/numbers.",
+  "sourcePath": "art/source/parts/psu_450_side_v02.png",
+  "referencePaths": [
+    "art/source/parts/psu_450_side_v01.png"
+  ],
+  "tool": "built_in_image_gen",
+  "intent": "edit",
+  "status": "production_candidate"
+}

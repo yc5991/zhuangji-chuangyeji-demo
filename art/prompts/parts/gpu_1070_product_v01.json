@@ -1,0 +1,15 @@
+{
+  "id": "gpu_1070_product_v01",
+  "componentId": "gpu_1070",
+  "intent": "generate",
+  "referencePaths": [
+    "art/source/parts/gpu_1070_side_v02.png",
+    "art/source/parts/gpu_1080_product_v01.png"
+  ],
+  "prompt": "Use case: product-mockup. Create one isolated procurement product view of the SAME original silver graphite blower graphics card in image 1. Image 1 is the installed long edge; rotate to the modest three-quarter fan face camera of image 2. Keep original manufactured silver angular shroud rail, graphite lower rim, a simple dark rectangular fin window toward left-center, ONE black radial blower intake on right, thin dark PCB, gold PCIe contact edge visible below. Card length 268mm, cooler thickness 38mm, practical 2016 founding reference family. Exactly ONE black 8-pin power socket (2 rows x 4) on upper right rail, no second socket. Rear silver I/O bracket at LEFT shows exactly one large white DVI-D port, one smaller HDMI trapezoid and three DisplayPort sockets, visibly distinct outlines and sizes. Do not expose the fan broadside in installed view, but this is free product pose. Graphite matte plastic, realistic brushed aluminium, small ordinary round Philips fasteners, neutral upper-left lighting, no text or logos. Complete isolated card with transparent margin all edges and actual alpha, no outside glow, ambient halo, backdrop, floor, cables, motherboard or packaging.",
+  "tool": "built_in_image_gen",
+  "transparent_background": true,
+  "status": "generated_candidate",
+  "sourcePath": "art/source/parts/gpu_1070_product_v01.png",
+  "structuralBasis": "Original game art correction; not a manufacturer mechanical drawing"
+}

@@ -1,0 +1,4609 @@
+{
+  "schemaVersion": 1,
+  "recordedDate": "2026-10-09",
+  "status": "authenticated_figma_exports_runtime_fixed_views_checked_geometry_pending",
+  "exportRecordCountIncludingRevisions": 68,
+  "activeViewRecordCount": 59,
+  "supersededExports": [
+    {
+      "partId": "case_standard",
+      "view": "side",
+      "sourceId": "5:2",
+      "frameId": "7:2",
+      "imageId": "7:3",
+      "sliceId": "7:4",
+      "sourceCropPx": [
+        91,
+        63,
+        1160,
+        1194
+      ],
+      "scale": 0.905393457117595,
+      "exportPx": [
+        968,
+        1024
+      ],
+      "exportNodeId": "7:2",
+      "stagingPath": "art/exports/parts/case_standard_side.png",
+      "runtimePath": "assets/art/workbench/side/case_standard.png",
+      "state": "exported_for_review",
+      "sourceVersion": "v01",
+      "sourcePath": "art/source/parts/case_standard_side_v01.png",
+      "promptPath": "art/prompts/parts/case_standard_side_v01.json",
+      "sourceCropLtrbPx": [
+        91,
+        63,
+        1160,
+        1194
+      ],
+      "figmaExportNodeId": "7:2",
+      "ledgerPath": "art/figma/first-parts-batch.json"
+    },
+    {
+      "partId": "case_small",
+      "view": "side",
+      "name": "case_small_side",
+      "sourcePath": "art/source/parts/case_small_side_v01.png",
+      "promptPath": "art/prompts/parts/case_small_side_v01.json",
+      "sourceCropLtrbPx": [
+        77,
+        58,
+        1201,
+        1179
+      ],
+      "scale": 0.9110320284697508,
+      "proposedExportPx": [
+        1024,
+        1021.2669039145907
+      ],
+      "wrapperPath": ".local/figma-import/batch-side/case_small_side.svg",
+      "state": "exported_for_review",
+      "figmaExportNodeId": "12:32",
+      "uiPosition": [
+        {
+          "label": "X-position",
+          "value": "6000"
+        },
+        {
+          "label": "Y-position",
+          "value": "200"
+        }
+      ],
+      "stagingPath": "art/exports/parts/case_small_side.png",
+      "exportPx": [
+        1024,
+        1022
+      ],
+      "outlinePx": [
+        1,
+        2,
+        1021,
+        1018
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaLink": "https://www.figma.com/design/1Pd44NBRzvtRWywj1V4bz5/Orangegame-%E7%B4%A0%E6%9D%90%E5%B7%A5%E4%BD%9C%E5%8C%BA?node-id=12-32&t=27GGwRcq08IVozMW-4",
+      "ledgerPath": "art/figma/browser-side-batch.json"
+    },
+    {
+      "partId": "case_quiet",
+      "view": "side",
+      "name": "case_quiet_side",
+      "sourcePath": "art/source/parts/case_quiet_side_v01.png",
+      "promptPath": "art/prompts/parts/case_quiet_side_v01.json",
+      "sourceCropLtrbPx": [
+        54,
+        41,
+        1243,
+        1176
+      ],
+      "scale": 0.8612279226240538,
+      "proposedExportPx": [
+        1024,
+        977.4936921783011
+      ],
+      "wrapperPath": ".local/figma-import/batch-side/case_quiet_side.svg",
+      "state": "exported_for_review",
+      "figmaExportNodeId": "12:34",
+      "uiPosition": [
+        {
+          "label": "X-position",
+          "value": "7200"
+        },
+        {
+          "label": "Y-position",
+          "value": "1339"
+        }
+      ],
+      "stagingPath": "art/exports/parts/case_quiet_side.png",
+      "exportPx": [
+        1024,
+        978
+      ],
+      "outlinePx": [
+        2,
+        1,
+        1021,
+        975
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaLink": "https://www.figma.com/design/1Pd44NBRzvtRWywj1V4bz5/Orangegame-%E7%B4%A0%E6%9D%90%E5%B7%A5%E4%BD%9C%E5%8C%BA?node-id=12-34&t=27GGwRcq08IVozMW-4",
+      "ledgerPath": "art/figma/browser-side-batch.json"
+    },
+    {
+      "partId": "case_standard",
+      "view": "rear",
+      "name": "case_standard_rear",
+      "sourcePath": "art/source/parts/case_standard_rear_v01.png",
+      "promptPath": "art/prompts/parts/case_standard_rear_v01.json",
+      "sourceCropLtrbPx": [
+        88,
+        60,
+        1172,
+        1196
+      ],
+      "scale": 0.9014084507042254,
+      "proposedExportPx": [
+        977.1267605633803,
+        1024
+      ],
+      "wrapperPath": ".local/figma-import/batch-side/case_standard_rear.svg",
+      "state": "exported_for_review",
+      "figmaExportNodeId": "12:30",
+      "uiPosition": [
+        {
+          "label": "X-position",
+          "value": "8400"
+        },
+        {
+          "label": "Y-position",
+          "value": "200"
+        }
+      ],
+      "stagingPath": "art/exports/parts/case_standard_rear.png",
+      "exportPx": [
+        978,
+        1024
+      ],
+      "outlinePx": [
+        3,
+        1,
+        971,
+        1020
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaLink": "https://www.figma.com/design/1Pd44NBRzvtRWywj1V4bz5/Orangegame-%E7%B4%A0%E6%9D%90%E5%B7%A5%E4%BD%9C%E5%8C%BA?node-id=12-30&t=27GGwRcq08IVozMW-4",
+      "ledgerPath": "art/figma/browser-side-batch.json"
+    },
+    {
+      "partId": "case_quiet",
+      "view": "rear",
+      "name": "case_quiet_rear",
+      "sourcePath": "art/source/parts/case_quiet_rear_v01.png",
+      "promptPath": "art/prompts/parts/case_quiet_rear_v01.json",
+      "sourceCropLtrbPx": [
+        60,
+        33,
+        1258,
+        1170
+      ],
+      "scale": 0.8547579298831386,
+      "proposedExportPx": [
+        1024,
+        971.8597662771285
+      ],
+      "wrapperPath": ".local/figma-import/batch-side/case_quiet_rear.svg",
+      "state": "exported_for_review",
+      "figmaExportNodeId": "12:28",
+      "uiPosition": [
+        9600,
+        200
+      ],
+      "stagingPath": "art/exports/parts/case_quiet_rear.png",
+      "exportPx": [
+        1024,
+        972
+      ],
+      "outlinePx": [
+        1,
+        2,
+        1021,
+        967
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "ledgerPath": "art/figma/browser-side-batch.json"
+    },
+    {
+      "partId": "case_small",
+      "view": "rear",
+      "name": "case_small_rear",
+      "sourcePath": "art/source/parts/case_small_rear_v02.png",
+      "promptPath": "art/prompts/parts/case_small_rear_v02.json",
+      "sourceCropLtrbPx": [
+        88,
+        47,
+        1205,
+        1190
+      ],
+      "scale": 0.8958880139982502,
+      "proposedExportPx": [
+        1000.7069116360456,
+        1024
+      ],
+      "wrapperPath": ".local/figma-import/batch-correction/case_small_rear.svg",
+      "state": "exported_for_review",
+      "figmaExportNodeId": "19:50",
+      "uiPosition": [
+        "6000",
+        "6200"
+      ],
+      "stagingPath": "art/exports/parts/case_small_rear.png",
+      "exportPx": [
+        1001,
+        1024
+      ],
+      "outlinePx": [
+        2,
+        3,
+        996,
+        1018
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "ledgerPath": "art/figma/browser-correction-batch.json"
+    },
+    {
+      "partId": "case_small",
+      "view": "rear",
+      "name": "case_small_rear_v03",
+      "sourcePath": "art/source/parts/case_small_rear_v03.png",
+      "promptPath": "art/prompts/parts/case_small_rear_v03.json",
+      "sourceSizePx": [
+        1254,
+        1254
+      ],
+      "sourceBodyRectLtrbPx": [
+        95,
+        77,
+        1165,
+        1097
+      ],
+      "bodyRectLtrbPx": [
+        6.594,
+        5.652,
+        1014.58,
+        966.535
+      ],
+      "sourceCropLtrbPx": [
+        88,
+        71,
+        1175,
+        1120
+      ],
+      "scale": 0.9420423183072677,
+      "proposedExportPx": [
+        1024,
+        988.2023919043238
+      ],
+      "wrapperPath": ".local/figma-import/batch-case-revision/case_small_rear_v03.svg",
+      "state": "exported_for_review",
+      "figmaExportNodeId": "35:2",
+      "uiPosition": [
+        26000,
+        1400
+      ],
+      "stagingPath": "art/exports/parts/case_small_rear_v03.png",
+      "exportPx": [
+        1024,
+        989
+      ],
+      "outlinePx": [
+        3,
+        2,
+        1019,
+        984
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board",
+        "projection": "orthographic_candidate_checked",
+        "direction": "front_left_rear_right",
+        "tray": "opaque_solid_matches_selected_side",
+        "lowerBay": "PSU_right_HDD_cage_left_matches_mirrored_side",
+        "SSDAlignment": "requires_art_adapter_or_plate_revision",
+        "expansionEdges": "small_four_checked; standard_quiet_edge_count_requires_final_detail_review",
+        "approval": "pending_joint_runtime_installation_review"
+      },
+      "ledgerPath": "art/figma/browser-case-revision-batch.json"
+    },
+    {
+      "partId": "case_standard",
+      "view": "rear",
+      "name": "case_standard_rear_v02",
+      "sourcePath": "art/source/parts/case_standard_rear_v02.png",
+      "promptPath": "art/prompts/parts/case_standard_rear_v02.json",
+      "sourceSizePx": [
+        1254,
+        1254
+      ],
+      "sourceBodyRectLtrbPx": [
+        99,
+        91,
+        1155,
+        1124
+      ],
+      "bodyRectLtrbPx": [
+        4.803,
+        2.882,
+        1019.197,
+        995.182
+      ],
+      "sourceCropLtrbPx": [
+        94,
+        88,
+        1160,
+        1149
+      ],
+      "scale": 0.9606003752345216,
+      "proposedExportPx": [
+        1024,
+        1019.1969981238274
+      ],
+      "wrapperPath": ".local/figma-import/batch-case-revision/case_standard_rear_v02.svg",
+      "state": "exported_for_review",
+      "figmaExportNodeId": "35:4",
+      "uiPosition": [
+        27200,
+        1400
+      ],
+      "stagingPath": "art/exports/parts/case_standard_rear_v02.png",
+      "exportPx": [
+        1024,
+        1020
+      ],
+      "outlinePx": [
+        3,
+        2,
+        1019,
+        1015
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board",
+        "projection": "orthographic_candidate_checked",
+        "direction": "front_left_rear_right",
+        "tray": "opaque_solid_matches_selected_side",
+        "lowerBay": "PSU_right_HDD_cage_left_matches_mirrored_side",
+        "SSDAlignment": "requires_art_adapter_or_plate_revision",
+        "expansionEdges": "small_four_checked; standard_quiet_edge_count_requires_final_detail_review",
+        "approval": "pending_joint_runtime_installation_review"
+      },
+      "ledgerPath": "art/figma/browser-case-revision-batch.json"
+    },
+    {
+      "partId": "case_quiet",
+      "view": "rear",
+      "name": "case_quiet_rear_v02",
+      "sourcePath": "art/source/parts/case_quiet_rear_v02.png",
+      "promptPath": "art/prompts/parts/case_quiet_rear_v02.json",
+      "sourceSizePx": [
+        1233,
+        1276
+      ],
+      "sourceBodyRectLtrbPx": [
+        77,
+        87,
+        1146,
+        1161
+      ],
+      "bodyRectLtrbPx": [
+        3.707,
+        1.853,
+        994.346,
+        997.126
+      ],
+      "sourceCropLtrbPx": [
+        73,
+        85,
+        1171,
+        1190
+      ],
+      "scale": 0.9266968325791856,
+      "proposedExportPx": [
+        1017.5131221719457,
+        1024
+      ],
+      "wrapperPath": ".local/figma-import/batch-case-revision/case_quiet_rear_v02.svg",
+      "state": "exported_for_review",
+      "figmaExportNodeId": "35:6",
+      "uiPosition": [
+        28400,
+        1400
+      ],
+      "stagingPath": "art/exports/parts/case_quiet_rear_v02.png",
+      "exportPx": [
+        1018,
+        1024
+      ],
+      "outlinePx": [
+        3,
+        2,
+        1012,
+        1020
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board",
+        "projection": "orthographic_candidate_checked",
+        "direction": "front_left_rear_right",
+        "tray": "opaque_solid_matches_selected_side",
+        "lowerBay": "PSU_right_HDD_cage_left_matches_mirrored_side",
+        "SSDAlignment": "requires_art_adapter_or_plate_revision",
+        "expansionEdges": "small_four_checked; standard_quiet_edge_count_requires_final_detail_review",
+        "approval": "pending_joint_runtime_installation_review"
+      },
+      "ledgerPath": "art/figma/browser-case-revision-batch.json"
+    }
+  ],
+  "coordinateConventions": {
+    "outlinePx": "x,y,width,height from top-left, alpha >=8/255",
+    "bodyRectLtrbPx": "left,top,right,bottom from top-left; read bodyRectStatus before physical sizing",
+    "pivot": "normalized x from left, y from bottom, body center",
+    "landmarks": "measured game artwork candidates, not manufacturer or collision geometry"
+  },
+  "exportAccess": {
+    "connector": "Figma MCP quota exhausted",
+    "browser": "authenticated editable session; native PNG export succeeded"
+  },
+  "entries": [
+    {
+      "partId": "case_standard",
+      "view": "side",
+      "runtimePath": null,
+      "bundle": "workbench",
+      "path": "side/case_standard",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "orthographic_candidate_visually_checked",
+        "alpha": "checked",
+        "installationAlignment": "pending_per_case_and_board",
+        "approval": "pending_runtime_joint_review",
+        "date": "2026-10-09",
+        "boardEnvelope": "checked_in_art_preview",
+        "upperRail": "no_visible_board_overlap_at_current_preview_scale",
+        "lowerSeparator": "no_visible_board_overlap_at_current_preview_scale",
+        "fullGameInstallation": "pending_program_joint_review"
+      },
+      "sourcePath": "art/source/parts/case_standard_side_v04.png",
+      "promptPath": "art/prompts/parts/case_standard_side_v04.json",
+      "stagingPath": "art/exports/parts/case_standard_side_v04.png",
+      "exportPx": [
+        1015,
+        1024
+      ],
+      "outlinePx": [
+        4,
+        2,
+        1007,
+        1018
+      ],
+      "bodyRectLtrbPx": [
+        4.58,
+        3.664,
+        1010.261,
+        999.27
+      ],
+      "bodyRectStatus": "manually_measured_case_body_excludes_feet",
+      "pivot": [
+        0.499922,
+        0.510286
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "35:8",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          73,
+          61,
+          1181,
+          1179
+        ],
+        "scale": 0.9159212880143113,
+        "ledgerPath": "art/figma/browser-case-revision-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions",
+      "runtimeImportEvidence": {
+        "reviewPath": "art/figma/workbench-runtime-review.json",
+        "exactPixelCopyVerified": true,
+        "mappedPartIds": [
+          "case_standard"
+        ],
+        "runtimePaths": [
+          "assets/art/workbench/side/case_standard.png"
+        ],
+        "scope": "Exact pixel import; program owner fixed-view review, not a per-configuration collision approval"
+      }
+    },
+    {
+      "partId": "mb_b150",
+      "view": "side",
+      "runtimePath": "assets/art/workbench/side/mb_b150.png",
+      "bundle": "workbench",
+      "path": "side/mb_b150",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked",
+        "alpha": "checked",
+        "installationAlignment": "pending_per_board_and_case",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/mb_b150_side_v03.png",
+      "promptPath": "art/prompts/parts/mb_b150_side_v03.json",
+      "stagingPath": "art/exports/parts/mb_b150_side.png",
+      "exportPx": [
+        589,
+        768
+      ],
+      "outlinePx": [
+        1,
+        1,
+        586,
+        766
+      ],
+      "bodyRectLtrbPx": [
+        20,
+        1,
+        587,
+        766
+      ],
+      "bodyRectStatus": "measured_game_layout_candidate_from_installation_owner",
+      "pivot": [
+        0.51528,
+        0.500651
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "7:5",
+        "imageNodeId": "7:6",
+        "sourceNodeId": "5:3",
+        "sourceCropLtrbPx": [
+          33,
+          95,
+          1025,
+          1390
+        ],
+        "scale": 0.593050193050193,
+        "ledgerPath": "art/figma/first-parts-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions",
+      "imageUuid": "ebbd83c5-6d6f-466a-a5df-891cc301173c",
+      "spriteFrameUuid": "ebbd83c5-6d6f-466a-a5df-891cc301173c@f9941",
+      "landmarkStatus": "measured_game_layout_candidate",
+      "landmarkProvenance": "Artwork coordinates proposed by installation owner, not verified manufacturer geometry",
+      "exportLandmarksPx": {
+        "cpu_center": [
+          305.421,
+          227.731
+        ],
+        "dimm_centers": [
+          [
+            437.078,
+            218.242
+          ],
+          [
+            460.8,
+            218.242
+          ],
+          [
+            484.522,
+            218.242
+          ],
+          [
+            507.651,
+            218.242
+          ]
+        ],
+        "primary_pcie_center": [
+          276.954,
+          454.869
+        ],
+        "connectors": {
+          "mainPower": [
+            549,
+            245
+          ],
+          "cpuPower": [
+            142,
+            26
+          ],
+          "cpuFan": [
+            378,
+            36
+          ],
+          "caseFan": [
+            178,
+            734
+          ],
+          "frontPanel": [
+            514,
+            742
+          ],
+          "sata": [
+            535,
+            633
+          ]
+        }
+      },
+      "sourceLandmarksPx": {
+        "cpu_center": [
+          548.0,
+          479.0
+        ],
+        "dimm_centers": [
+          [
+            770.0,
+            462.999
+          ],
+          [
+            810.0,
+            462.999
+          ],
+          [
+            850.0,
+            462.999
+          ],
+          [
+            889.0,
+            462.999
+          ]
+        ],
+        "primary_pcie_center": [
+          499.999,
+          861.999
+        ],
+        "connectors": {
+          "mainPower": [
+            958.723,
+            508.118
+          ],
+          "cpuPower": [
+            272.44,
+            138.841
+          ],
+          "cpuFan": [
+            670.383,
+            155.703
+          ],
+          "caseFan": [
+            333.143,
+            1332.669
+          ],
+          "frontPanel": [
+            899.706,
+            1346.159
+          ],
+          "sata": [
+            935.116,
+            1162.363
+          ]
+        }
+      },
+      "runtimeImportEvidence": {
+        "reviewPath": "art/figma/workbench-runtime-review.json",
+        "exactPixelCopyVerified": true,
+        "mappedPartIds": [
+          "mb_b150"
+        ],
+        "runtimePaths": [
+          "assets/art/workbench/side/mb_b150.png"
+        ],
+        "scope": "Exact pixel import; program owner fixed-view review, not a per-configuration collision approval"
+      }
+    },
+    {
+      "partId": "cpu_6500",
+      "view": "side",
+      "runtimePath": "assets/art/workbench/side/cpu_6500.png",
+      "bundle": "workbench",
+      "path": "side/cpu_6500",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked",
+        "alpha": "checked",
+        "installationAlignment": "pending_per_board_and_case",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/cpu_6500_side_v01.png",
+      "promptPath": "art/prompts/parts/cpu_6500_side_v01.json",
+      "stagingPath": "art/exports/parts/cpu_6500_side.png",
+      "exportPx": [
+        128,
+        123
+      ],
+      "outlinePx": [
+        0,
+        0,
+        128,
+        123
+      ],
+      "bodyRectLtrbPx": [
+        1,
+        0,
+        127,
+        122
+      ],
+      "bodyRectStatus": "measured_game_artwork",
+      "pivot": [
+        0.5,
+        0.504065
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "7:8",
+        "imageNodeId": "7:9",
+        "sourceNodeId": "5:4",
+        "sourceCropLtrbPx": [
+          133,
+          152,
+          1121,
+          1099
+        ],
+        "scale": 0.12955465587044535,
+        "ledgerPath": "art/figma/first-parts-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions",
+      "imageUuid": "bf6a5299-36cd-42f6-bf96-9dc1afce458a",
+      "spriteFrameUuid": "bf6a5299-36cd-42f6-bf96-9dc1afce458a@f9941",
+      "runtimeImportEvidence": {
+        "reviewPath": "art/figma/workbench-runtime-review.json",
+        "exactPixelCopyVerified": true,
+        "mappedPartIds": [
+          "cpu_6100",
+          "cpu_6500",
+          "cpu_6700"
+        ],
+        "runtimePaths": [
+          "assets/art/workbench/side/cpu_6500.png"
+        ],
+        "scope": "Exact pixel import; program owner fixed-view review, not a per-configuration collision approval"
+      }
+    },
+    {
+      "partId": "gpu_960",
+      "view": "side",
+      "runtimePath": "assets/art/workbench/side/gpu_960.png",
+      "bundle": "workbench",
+      "path": "side/gpu_960",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked",
+        "alpha": "checked",
+        "installationAlignment": "pending_per_board_and_case",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/gpu_960_side_v01.png",
+      "promptPath": "art/prompts/parts/gpu_960_side_v01.json",
+      "stagingPath": "art/exports/parts/gpu_960_side.png",
+      "exportPx": [
+        768,
+        159
+      ],
+      "outlinePx": [
+        1,
+        0,
+        766,
+        158
+      ],
+      "bodyRectLtrbPx": [
+        35,
+        14,
+        767,
+        136
+      ],
+      "bodyRectStatus": "measured_game_artwork",
+      "pivot": [
+        0.522135,
+        0.528302
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "7:11",
+        "imageNodeId": "7:12",
+        "sourceNodeId": "5:5",
+        "sourceCropLtrbPx": [
+          48,
+          281,
+          1742,
+          631
+        ],
+        "scale": 0.45336481700118064,
+        "ledgerPath": "art/figma/first-parts-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions",
+      "imageUuid": "12da9248-1328-403b-8117-2eda5c853297",
+      "spriteFrameUuid": "12da9248-1328-403b-8117-2eda5c853297@f9941",
+      "runtimeImportEvidence": {
+        "reviewPath": "art/figma/workbench-runtime-review.json",
+        "exactPixelCopyVerified": true,
+        "mappedPartIds": [
+          "gpu_960"
+        ],
+        "runtimePaths": [
+          "assets/art/workbench/side/gpu_960.png"
+        ],
+        "scope": "Exact pixel import; program owner fixed-view review, not a per-configuration collision approval"
+      }
+    },
+    {
+      "partId": "ram_ddr4_8",
+      "view": "side",
+      "runtimePath": "assets/art/workbench/side/ram_ddr4_8.png",
+      "bundle": "workbench",
+      "path": "side/ram_ddr4_8",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked",
+        "alpha": "checked",
+        "installationAlignment": "pending_per_board_and_case",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/ram_ddr4_8_side_v02.png",
+      "promptPath": "art/prompts/parts/ram_ddr4_8_side_v02.json",
+      "stagingPath": "art/exports/parts/ram_ddr4_8_side.png",
+      "exportPx": [
+        24,
+        512
+      ],
+      "outlinePx": [
+        1,
+        1,
+        21,
+        511
+      ],
+      "bodyRectLtrbPx": [
+        1,
+        1,
+        23,
+        511
+      ],
+      "bodyRectStatus": "measured_game_artwork",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "7:14",
+        "imageNodeId": "7:15",
+        "sourceNodeId": "5:6",
+        "sourceCropLtrbPx": [
+          480,
+          47,
+          545,
+          1489
+        ],
+        "scale": 0.3550624133148405,
+        "ledgerPath": "art/figma/first-parts-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions",
+      "imageUuid": "024ddf3e-4e75-4424-9f4e-c55b6451930b",
+      "spriteFrameUuid": "024ddf3e-4e75-4424-9f4e-c55b6451930b@f9941",
+      "runtimeImportEvidence": {
+        "reviewPath": "art/figma/workbench-runtime-review.json",
+        "exactPixelCopyVerified": true,
+        "mappedPartIds": [
+          "ram_ddr4_8"
+        ],
+        "runtimePaths": [
+          "assets/art/workbench/side/ram_ddr4_8.png"
+        ],
+        "scope": "Exact pixel import; program owner fixed-view review, not a per-configuration collision approval"
+      }
+    },
+    {
+      "partId": "ssd_250",
+      "view": "rear",
+      "runtimePath": "assets/art/workbench/rear/ssd_250.png",
+      "bundle": "workbench",
+      "path": "rear/ssd_250",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked",
+        "alpha": "checked",
+        "installationAlignment": "pending_per_board_and_case",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/ssd_250_side_v01.png",
+      "promptPath": "art/prompts/parts/ssd_250_side_v01.json",
+      "stagingPath": "art/exports/parts/ssd_250_rear.png",
+      "exportPx": [
+        175,
+        256
+      ],
+      "outlinePx": [
+        0,
+        0,
+        174,
+        256
+      ],
+      "bodyRectLtrbPx": [
+        1,
+        1,
+        173,
+        255
+      ],
+      "bodyRectStatus": "measured_game_artwork",
+      "pivot": [
+        0.497143,
+        0.5
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "7:17",
+        "imageNodeId": "7:18",
+        "sourceNodeId": "5:7",
+        "sourceCropLtrbPx": [
+          115,
+          136,
+          935,
+          1339
+        ],
+        "scale": 0.21280133000831256,
+        "ledgerPath": "art/figma/first-parts-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions",
+      "imageUuid": "9c5f7244-fb5f-40e0-b517-57c1fef1bec2",
+      "spriteFrameUuid": "9c5f7244-fb5f-40e0-b517-57c1fef1bec2@f9941",
+      "runtimeImportEvidence": {
+        "reviewPath": "art/figma/workbench-runtime-review.json",
+        "exactPixelCopyVerified": true,
+        "mappedPartIds": [
+          "ssd_120",
+          "ssd_250",
+          "ssd_500"
+        ],
+        "runtimePaths": [
+          "assets/art/workbench/rear/ssd_250.png"
+        ],
+        "scope": "Exact pixel import; program owner fixed-view review, not a per-configuration collision approval"
+      }
+    },
+    {
+      "partId": "psu_450",
+      "view": "side",
+      "runtimePath": null,
+      "bundle": "workbench",
+      "path": "side/psu_450",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked",
+        "alpha": "checked",
+        "installationAlignment": "pending_per_board_and_case",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/psu_450_side_v02.png",
+      "promptPath": "art/prompts/parts/psu_450_side_v02.json",
+      "stagingPath": "art/exports/parts/psu_450_side.png",
+      "exportPx": [
+        512,
+        323
+      ],
+      "outlinePx": [
+        0,
+        1,
+        511,
+        321
+      ],
+      "bodyRectLtrbPx": [
+        0,
+        1,
+        511,
+        322
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.499023,
+        0.5
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "7:20",
+        "imageNodeId": "7:21",
+        "sourceNodeId": "5:8",
+        "sourceCropLtrbPx": [
+          127,
+          57,
+          1451,
+          892
+        ],
+        "scale": 0.3867069486404834,
+        "ledgerPath": "art/figma/first-parts-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions",
+      "runtimeImportEvidence": {
+        "reviewPath": "art/figma/workbench-runtime-review.json",
+        "exactPixelCopyVerified": true,
+        "mappedPartIds": [
+          "psu_350",
+          "psu_450"
+        ],
+        "runtimePaths": [
+          "assets/art/workbench/side/psu_450.png"
+        ],
+        "scope": "Exact pixel import; program owner fixed-view review, not a per-configuration collision approval"
+      }
+    },
+    {
+      "partId": "cooler_tower",
+      "view": "side",
+      "runtimePath": null,
+      "bundle": "workbench",
+      "path": "side/cooler_tower",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked",
+        "alpha": "checked",
+        "installationAlignment": "pending_per_board_and_case",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/cooler_tower_side_v03.png",
+      "promptPath": "art/prompts/parts/cooler_tower_side_v03.json",
+      "stagingPath": "art/exports/parts/cooler_tower_side.png",
+      "exportPx": [
+        512,
+        315
+      ],
+      "outlinePx": [
+        0,
+        1,
+        512,
+        313
+      ],
+      "bodyRectLtrbPx": [
+        0,
+        1,
+        512,
+        314
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "7:23",
+        "imageNodeId": "7:24",
+        "sourceNodeId": "5:9",
+        "sourceCropLtrbPx": [
+          97,
+          80,
+          1446,
+          908
+        ],
+        "scale": 0.3795404002965159,
+        "ledgerPath": "art/figma/first-parts-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions",
+      "runtimeImportEvidence": {
+        "reviewPath": "art/figma/workbench-runtime-review.json",
+        "exactPixelCopyVerified": true,
+        "mappedPartIds": [
+          "cooler_tower"
+        ],
+        "runtimePaths": [
+          "assets/art/workbench/side/cooler_tower.png"
+        ],
+        "scope": "Exact pixel import; program owner fixed-view review, not a per-configuration collision approval"
+      }
+    },
+    {
+      "partId": "case_small",
+      "view": "side",
+      "runtimePath": null,
+      "bundle": "workbench",
+      "path": "side/case_small",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "orthographic_candidate_visually_checked",
+        "alpha": "checked",
+        "installationAlignment": "pending_per_case_and_board",
+        "approval": "pending_runtime_joint_review",
+        "date": "2026-10-09",
+        "boardEnvelope": "checked_in_art_preview",
+        "upperRail": "no_visible_board_overlap_at_current_preview_scale",
+        "lowerSeparator": "no_visible_board_overlap_at_current_preview_scale",
+        "fullGameInstallation": "pending_program_joint_review"
+      },
+      "sourcePath": "art/source/parts/case_small_side_v03.png",
+      "promptPath": "art/prompts/parts/case_small_side_v03.json",
+      "stagingPath": "art/exports/parts/case_small_side_v03.png",
+      "exportPx": [
+        1024,
+        986
+      ],
+      "outlinePx": [
+        2,
+        3,
+        1019,
+        980
+      ],
+      "bodyRectLtrbPx": [
+        4.794,
+        5.753,
+        1020.165,
+        961.678
+      ],
+      "bodyRectStatus": "manually_measured_case_body_excludes_feet",
+      "pivot": [
+        0.500468,
+        0.509416
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "35:12",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          106,
+          82,
+          1174,
+          1110
+        ],
+        "scale": 0.9588014981273408,
+        "ledgerPath": "art/figma/browser-case-revision-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions",
+      "runtimeImportEvidence": {
+        "reviewPath": "art/figma/workbench-runtime-review.json",
+        "exactPixelCopyVerified": true,
+        "mappedPartIds": [
+          "case_small"
+        ],
+        "runtimePaths": [
+          "assets/art/workbench/side/case_small.png"
+        ],
+        "scope": "Exact pixel import; program owner fixed-view review, not a per-configuration collision approval"
+      }
+    },
+    {
+      "partId": "case_quiet",
+      "view": "side",
+      "runtimePath": null,
+      "bundle": "workbench",
+      "path": "side/case_quiet",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "orthographic_candidate_visually_checked",
+        "alpha": "checked",
+        "installationAlignment": "pending_per_case_and_board",
+        "approval": "pending_runtime_joint_review",
+        "date": "2026-10-09",
+        "boardEnvelope": "checked_in_art_preview",
+        "upperRail": "no_visible_board_overlap_at_current_preview_scale",
+        "lowerSeparator": "no_visible_board_overlap_at_current_preview_scale",
+        "fullGameInstallation": "pending_program_joint_review"
+      },
+      "sourcePath": "art/source/parts/case_quiet_side_v03.png",
+      "promptPath": "art/prompts/parts/case_quiet_side_v03.json",
+      "stagingPath": "art/exports/parts/case_quiet_side_v03.png",
+      "exportPx": [
+        1015,
+        1024
+      ],
+      "outlinePx": [
+        2,
+        2,
+        1011,
+        1020
+      ],
+      "bodyRectLtrbPx": [
+        3.634,
+        2.726,
+        1011.28,
+        996.742
+      ],
+      "bodyRectStatus": "manually_measured_case_body_excludes_feet",
+      "pivot": [
+        0.499958,
+        0.511979
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "35:10",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          63,
+          63,
+          1180,
+          1190
+        ],
+        "scale": 0.9086069210292813,
+        "ledgerPath": "art/figma/browser-case-revision-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions",
+      "runtimeImportEvidence": {
+        "reviewPath": "art/figma/workbench-runtime-review.json",
+        "exactPixelCopyVerified": true,
+        "mappedPartIds": [
+          "case_quiet"
+        ],
+        "runtimePaths": [
+          "assets/art/workbench/side/case_quiet.png"
+        ],
+        "scope": "Exact pixel import; program owner fixed-view review, not a per-configuration collision approval"
+      }
+    },
+    {
+      "partId": "case_standard",
+      "view": "rear",
+      "runtimePath": null,
+      "bundle": "workbench",
+      "path": "rear/case_standard",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "orthographic_candidate_visually_checked",
+        "alpha": "checked",
+        "installationAlignment": "pending_per_case_and_board",
+        "approval": "pending_joint_runtime_installation_review",
+        "projection": "orthographic_candidate_checked",
+        "direction": "front_left_rear_right",
+        "tray": "opaque_solid_matches_selected_side",
+        "lowerBay": "PSU_right_HDD_cage_left_matches_mirrored_side",
+        "SSDAlignment": "fixed_geometry_layer_positions_exported_pending_runtime_clearance",
+        "expansionEdges": "small_four_checked; standard_quiet_edge_count_requires_final_detail_review",
+        "lowerBayClearance": "needs_PSU_separator_and_lower_SSD_rail_joint_check"
+      },
+      "sourcePath": "art/source/parts/case_standard_rear_base_v01.png",
+      "promptPath": "art/prompts/parts/case_standard_rear_base_v01.json",
+      "stagingPath": "art/exports/parts/case_standard_rear_aligned_v01.png",
+      "exportPx": [
+        1024,
+        1024
+      ],
+      "outlinePx": [
+        4,
+        5,
+        1016,
+        1014
+      ],
+      "bodyRectLtrbPx": [
+        6.687,
+        8.597,
+        1015.403,
+        995.343
+      ],
+      "bodyRectStatus": "manually_measured_case_body_excludes_feet",
+      "pivot": [
+        0.499067,
+        0.509795
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "35:14",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          92,
+          82,
+          1164,
+          1153
+        ],
+        "scale": 0.9552238805970149,
+        "ledgerPath": "art/figma/browser-case-layer-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions",
+      "composition": {
+        "background": "art/source/parts/case_standard_rear_base_v01.png",
+        "plates": [
+          {
+            "slotId": "ssd0",
+            "rectMm": [
+              350,
+              101,
+              69.85,
+              100
+            ],
+            "sourceCropPath": "art/source/parts/case_small_rear_v03.png",
+            "sourceCropLtrbPx": [
+              151,
+              138,
+              361,
+              434
+            ],
+            "targetSourceRectLtrbPx": [
+              123.92651162790699,
+              641.1325581395349,
+              295.4651162790698,
+              881.3651162790698
+            ],
+            "figmaLocalRectPx": [
+              30.496966331135035,
+              534.0967719541826,
+              163.85777160708088,
+              229.47587643179452
+            ],
+            "provenance": "Raster crop from built-in original drawing; exact Figma layer placement from original game SSD envelopes"
+          },
+          {
+            "slotId": "ssd1",
+            "rectMm": [
+              350,
+              208,
+              69.85,
+              100
+            ],
+            "sourceCropPath": "art/source/parts/case_small_rear_v03.png",
+            "sourceCropLtrbPx": [
+              151,
+              138,
+              361,
+              434
+            ],
+            "targetSourceRectLtrbPx": [
+              123.92651162790699,
+              384.0837209302325,
+              295.4651162790698,
+              624.3162790697675
+            ],
+            "figmaLocalRectPx": [
+              30.496966331135035,
+              288.5575841721624,
+              163.85777160708088,
+              229.47587643179452
+            ],
+            "provenance": "Raster crop from built-in original drawing; exact Figma layer placement from original game SSD envelopes"
+          }
+        ],
+        "method": "Figma native imported clipped raster layers, not software-repainted source PNG"
+      },
+      "runtimeImportEvidence": {
+        "reviewPath": "art/figma/workbench-runtime-review.json",
+        "exactPixelCopyVerified": true,
+        "mappedPartIds": [
+          "case_standard"
+        ],
+        "runtimePaths": [
+          "assets/art/workbench/rear/case_standard.png"
+        ],
+        "scope": "Exact pixel import; program owner fixed-view review, not a per-configuration collision approval"
+      }
+    },
+    {
+      "partId": "case_quiet",
+      "view": "rear",
+      "runtimePath": null,
+      "bundle": "workbench",
+      "path": "rear/case_quiet",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "orthographic_candidate_visually_checked",
+        "alpha": "checked",
+        "installationAlignment": "pending_per_case_and_board",
+        "approval": "pending_joint_runtime_installation_review",
+        "projection": "orthographic_candidate_checked",
+        "direction": "front_left_rear_right",
+        "tray": "opaque_solid_matches_selected_side",
+        "lowerBay": "PSU_right_HDD_cage_left_matches_mirrored_side",
+        "SSDAlignment": "fixed_geometry_layer_positions_exported_pending_runtime_clearance",
+        "expansionEdges": "small_four_checked; standard_quiet_edge_count_requires_final_detail_review",
+        "lowerBayClearance": "needs_PSU_separator_and_lower_SSD_rail_joint_check"
+      },
+      "sourcePath": "art/source/parts/case_quiet_rear_base_v01.png",
+      "promptPath": "art/prompts/parts/case_quiet_rear_base_v01.json",
+      "stagingPath": "art/exports/parts/case_quiet_rear_aligned_v01.png",
+      "exportPx": [
+        1013,
+        1024
+      ],
+      "outlinePx": [
+        3,
+        3,
+        1007,
+        1017
+      ],
+      "bodyRectLtrbPx": [
+        4.604,
+        4.604,
+        989.007,
+        993.612
+      ],
+      "bodyRectStatus": "manually_measured_case_body_excludes_feet",
+      "pivot": [
+        0.49043,
+        0.51259
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "35:26",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          72,
+          82,
+          1172,
+          1194
+        ],
+        "scale": 0.920863309352518,
+        "ledgerPath": "art/figma/browser-case-layer-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions",
+      "composition": {
+        "background": "art/source/parts/case_quiet_rear_base_v01.png",
+        "plates": [
+          {
+            "slotId": "ssd0",
+            "rectMm": [
+              370,
+              101,
+              69.85,
+              100
+            ],
+            "sourceCropPath": "art/source/parts/case_small_rear_v03.png",
+            "sourceCropLtrbPx": [
+              151,
+              138,
+              361,
+              434
+            ],
+            "targetSourceRectLtrbPx": [
+              101.1118888888889,
+              691.7086956521739,
+              267.0444444444444,
+              925.1869565217391
+            ],
+            "figmaLocalRectPx": [
+              26.80807034372503,
+              561.4583672192681,
+              152.8012022382094,
+              215.00156396621836
+            ],
+            "provenance": "Raster crop from built-in original drawing; exact Figma layer placement from original game SSD envelopes"
+          },
+          {
+            "slotId": "ssd1",
+            "rectMm": [
+              370,
+              208,
+              69.85,
+              100
+            ],
+            "sourceCropPath": "art/source/parts/case_small_rear_v03.png",
+            "sourceCropLtrbPx": [
+              151,
+              138,
+              361,
+              434
+            ],
+            "targetSourceRectLtrbPx": [
+              101.1118888888889,
+              441.88695652173914,
+              267.0444444444444,
+              675.3652173913043
+            ],
+            "figmaLocalRectPx": [
+              26.80807034372503,
+              331.40669377541445,
+              152.8012022382094,
+              215.00156396621836
+            ],
+            "provenance": "Raster crop from built-in original drawing; exact Figma layer placement from original game SSD envelopes"
+          }
+        ],
+        "method": "Figma native imported clipped raster layers, not software-repainted source PNG"
+      },
+      "runtimeImportEvidence": {
+        "reviewPath": "art/figma/workbench-runtime-review.json",
+        "exactPixelCopyVerified": true,
+        "mappedPartIds": [
+          "case_quiet"
+        ],
+        "runtimePaths": [
+          "assets/art/workbench/rear/case_quiet.png"
+        ],
+        "scope": "Exact pixel import; program owner fixed-view review, not a per-configuration collision approval"
+      }
+    },
+    {
+      "partId": "mb_am3",
+      "view": "side",
+      "runtimePath": null,
+      "bundle": "workbench",
+      "path": "side/mb_am3",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked",
+        "alpha": "checked",
+        "installationAlignment": "pending_per_board_and_case",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/mb_am3_side_v01.png",
+      "promptPath": "art/prompts/parts/mb_am3_side_v01.json",
+      "stagingPath": "art/exports/parts/mb_am3_side.png",
+      "exportPx": [
+        590,
+        768
+      ],
+      "outlinePx": [
+        1,
+        1,
+        588,
+        766
+      ],
+      "bodyRectLtrbPx": [
+        22,
+        1,
+        588,
+        766
+      ],
+      "bodyRectStatus": "measured_game_layout_candidate_from_installation_owner",
+      "pivot": [
+        0.516949,
+        0.500651
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "12:48",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          38,
+          73,
+          1041,
+          1380
+        ],
+        "scale": 0.5876052027543994,
+        "ledgerPath": "art/figma/browser-side-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions",
+      "landmarkStatus": "measured_game_layout_candidate",
+      "landmarkProvenance": "Artwork coordinates proposed by installation owner, not verified manufacturer geometry",
+      "exportLandmarksPx": {
+        "cpu_center": [
+          294,
+          243
+        ],
+        "dimm_centers": [
+          [
+            439,
+            236
+          ],
+          [
+            462,
+            236
+          ],
+          [
+            505,
+            236
+          ],
+          [
+            527,
+            236
+          ]
+        ],
+        "primary_pcie_center": [
+          243,
+          539
+        ],
+        "connectors": {
+          "mainPower": [
+            567,
+            300
+          ],
+          "cpuPower": [
+            137,
+            25
+          ],
+          "cpuFan": [
+            378,
+            32
+          ],
+          "caseFan": [
+            190,
+            728
+          ],
+          "frontPanel": [
+            541,
+            738
+          ],
+          "sata": [
+            532,
+            658
+          ]
+        }
+      },
+      "sourceLandmarksPx": {
+        "cpu_center": [
+          538.336,
+          486.543
+        ],
+        "dimm_centers": [
+          [
+            785.1,
+            474.63
+          ],
+          [
+            824.242,
+            474.63
+          ],
+          [
+            897.421,
+            474.63
+          ],
+          [
+            934.861,
+            474.63
+          ]
+        ],
+        "primary_pcie_center": [
+          451.543,
+          990.283
+        ],
+        "connectors": {
+          "mainPower": [
+            1002.934,
+            583.547
+          ],
+          "cpuPower": [
+            271.15,
+            115.546
+          ],
+          "cpuFan": [
+            681.289,
+            127.458
+          ],
+          "caseFan": [
+            361.346,
+            1311.927
+          ],
+          "frontPanel": [
+            958.686,
+            1328.945
+          ],
+          "sata": [
+            943.37,
+            1192.799
+          ]
+        }
+      },
+      "runtimeImportEvidence": {
+        "reviewPath": "art/figma/workbench-runtime-review.json",
+        "exactPixelCopyVerified": true,
+        "mappedPartIds": [
+          "mb_am3"
+        ],
+        "runtimePaths": [
+          "assets/art/workbench/side/mb_am3.png"
+        ],
+        "scope": "Exact pixel import; program owner fixed-view review, not a per-configuration collision approval"
+      }
+    },
+    {
+      "partId": "cpu_fx8350",
+      "view": "side",
+      "runtimePath": null,
+      "bundle": "workbench",
+      "path": "side/cpu_fx8350",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked",
+        "alpha": "checked",
+        "installationAlignment": "pending_per_board_and_case",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/cpu_fx8350_side_v01.png",
+      "promptPath": "art/prompts/parts/cpu_fx8350_side_v01.json",
+      "stagingPath": "art/exports/parts/cpu_fx8350_side.png",
+      "exportPx": [
+        128,
+        127
+      ],
+      "outlinePx": [
+        0,
+        0,
+        128,
+        127
+      ],
+      "bodyRectLtrbPx": [
+        0,
+        0,
+        128,
+        127
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "12:40",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          88,
+          94,
+          1167,
+          1161
+        ],
+        "scale": 0.11862835959221502,
+        "ledgerPath": "art/figma/browser-side-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions",
+      "runtimeImportEvidence": {
+        "reviewPath": "art/figma/workbench-runtime-review.json",
+        "exactPixelCopyVerified": true,
+        "mappedPartIds": [
+          "cpu_fx8350"
+        ],
+        "runtimePaths": [
+          "assets/art/workbench/side/cpu_fx8350.png"
+        ],
+        "scope": "Exact pixel import; program owner fixed-view review, not a per-configuration collision approval"
+      }
+    },
+    {
+      "partId": "gpu_750ti",
+      "view": "side",
+      "runtimePath": null,
+      "bundle": "workbench",
+      "path": "side/gpu_750ti",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked",
+        "alpha": "checked",
+        "installationAlignment": "pending_per_board_and_case",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/gpu_750ti_side_v01.png",
+      "promptPath": "art/prompts/parts/gpu_750ti_side_v01.json",
+      "stagingPath": "art/exports/parts/gpu_750ti_side.png",
+      "exportPx": [
+        768,
+        291
+      ],
+      "outlinePx": [
+        1,
+        1,
+        766,
+        289
+      ],
+      "bodyRectLtrbPx": [
+        72.48,
+        76.8,
+        766.56,
+        218.88
+      ],
+      "bodyRectStatus": "measured_game_artwork_excludes_rear_bracket",
+      "pivot": [
+        0.54625,
+        0.491959
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "12:4",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          86,
+          189,
+          1686,
+          795
+        ],
+        "scale": 0.48,
+        "ledgerPath": "art/figma/browser-side-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions",
+      "sourceBodyRectLtrbPx": [
+        237,
+        349,
+        1683,
+        645
+      ],
+      "proportionReview": {
+        "sourceBodyRatio": 4.8851,
+        "gameLengthThicknessRatio": 5,
+        "differencePercent": 2.3,
+        "basis": "165x33mm reference envelope; bracket excluded, no source flattening"
+      },
+      "runtimeImportEvidence": {
+        "reviewPath": "art/figma/workbench-runtime-review.json",
+        "exactPixelCopyVerified": true,
+        "mappedPartIds": [
+          "gpu_750ti"
+        ],
+        "runtimePaths": [
+          "assets/art/workbench/side/gpu_750ti.png"
+        ],
+        "scope": "Exact pixel import; program owner fixed-view review, not a per-configuration collision approval"
+      }
+    },
+    {
+      "partId": "gpu_970",
+      "view": "side",
+      "runtimePath": null,
+      "bundle": "workbench",
+      "path": "side/gpu_970",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked",
+        "alpha": "checked",
+        "installationAlignment": "pending_per_board_and_case",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/gpu_970_side_v01.png",
+      "promptPath": "art/prompts/parts/gpu_970_side_v01.json",
+      "stagingPath": "art/exports/parts/gpu_970_side.png",
+      "exportPx": [
+        768,
+        173
+      ],
+      "outlinePx": [
+        1,
+        1,
+        766,
+        171
+      ],
+      "bodyRectLtrbPx": [
+        1,
+        1,
+        767,
+        172
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "12:6",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          10,
+          266,
+          1764,
+          660
+        ],
+        "scale": 0.4378563283922463,
+        "ledgerPath": "art/figma/browser-side-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions",
+      "runtimeImportEvidence": {
+        "reviewPath": "art/figma/workbench-runtime-review.json",
+        "exactPixelCopyVerified": true,
+        "mappedPartIds": [
+          "gpu_970"
+        ],
+        "runtimePaths": [
+          "assets/art/workbench/side/gpu_970.png"
+        ],
+        "scope": "Exact pixel import; program owner fixed-view review, not a per-configuration collision approval"
+      }
+    },
+    {
+      "partId": "gpu_r9380",
+      "view": "side",
+      "runtimePath": null,
+      "bundle": "workbench",
+      "path": "side/gpu_r9380",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked",
+        "alpha": "checked",
+        "installationAlignment": "pending_per_board_and_case",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/gpu_r9380_side_v01.png",
+      "promptPath": "art/prompts/parts/gpu_r9380_side_v01.json",
+      "stagingPath": "art/exports/parts/gpu_r9380_side.png",
+      "exportPx": [
+        768,
+        214
+      ],
+      "outlinePx": [
+        0,
+        1,
+        767,
+        212
+      ],
+      "bodyRectLtrbPx": [
+        0,
+        1,
+        767,
+        213
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.499349,
+        0.5
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "12:24",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          40,
+          123,
+          1967,
+          659
+        ],
+        "scale": 0.3985469641930462,
+        "ledgerPath": "art/figma/browser-side-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions",
+      "runtimeImportEvidence": {
+        "reviewPath": "art/figma/workbench-runtime-review.json",
+        "exactPixelCopyVerified": true,
+        "mappedPartIds": [
+          "gpu_r9380"
+        ],
+        "runtimePaths": [
+          "assets/art/workbench/side/gpu_r9380.png"
+        ],
+        "scope": "Exact pixel import; program owner fixed-view review, not a per-configuration collision approval"
+      }
+    },
+    {
+      "partId": "gpu_1080",
+      "view": "side",
+      "runtimePath": null,
+      "bundle": "workbench",
+      "path": "side/gpu_1080",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked",
+        "alpha": "checked",
+        "installationAlignment": "pending_per_board_and_case",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/gpu_1080_side_v01.png",
+      "promptPath": "art/prompts/parts/gpu_1080_side_v01.json",
+      "stagingPath": "art/exports/parts/gpu_1080_side.png",
+      "exportPx": [
+        768,
+        198
+      ],
+      "outlinePx": [
+        1,
+        1,
+        767,
+        196
+      ],
+      "bodyRectLtrbPx": [
+        1,
+        1,
+        768,
+        197
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.500651,
+        0.5
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "12:8",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          15,
+          257,
+          1752,
+          703
+        ],
+        "scale": 0.4421416234887737,
+        "ledgerPath": "art/figma/browser-side-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions",
+      "runtimeImportEvidence": {
+        "reviewPath": "art/figma/workbench-runtime-review.json",
+        "exactPixelCopyVerified": true,
+        "mappedPartIds": [
+          "gpu_1080"
+        ],
+        "runtimePaths": [
+          "assets/art/workbench/side/gpu_1080.png"
+        ],
+        "scope": "Exact pixel import; program owner fixed-view review, not a per-configuration collision approval"
+      }
+    },
+    {
+      "partId": "gpu_1070",
+      "view": "side",
+      "runtimePath": null,
+      "bundle": "workbench",
+      "path": "side/gpu_1070",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked",
+        "alpha": "checked",
+        "installationAlignment": "pending_per_board_and_case",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/gpu_1070_side_v02.png",
+      "promptPath": "art/prompts/parts/gpu_1070_side_v02.json",
+      "stagingPath": "art/exports/parts/gpu_1070_side.png",
+      "exportPx": [
+        768,
+        203
+      ],
+      "outlinePx": [
+        0,
+        1,
+        767,
+        201
+      ],
+      "bodyRectLtrbPx": [
+        0,
+        1,
+        767,
+        202
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.499349,
+        0.5
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "12:10",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          26,
+          227,
+          1750,
+          681
+        ],
+        "scale": 0.44547563805104406,
+        "ledgerPath": "art/figma/browser-side-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions",
+      "runtimeImportEvidence": {
+        "reviewPath": "art/figma/workbench-runtime-review.json",
+        "exactPixelCopyVerified": true,
+        "mappedPartIds": [
+          "gpu_1070"
+        ],
+        "runtimePaths": [
+          "assets/art/workbench/side/gpu_1070.png"
+        ],
+        "scope": "Exact pixel import; program owner fixed-view review, not a per-configuration collision approval"
+      }
+    },
+    {
+      "partId": "gpu_rx480_4",
+      "view": "side",
+      "runtimePath": null,
+      "bundle": "workbench",
+      "path": "side/gpu_rx480_4",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked",
+        "alpha": "checked",
+        "installationAlignment": "pending_per_board_and_case",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/gpu_rx480_4_side_v01.png",
+      "promptPath": "art/prompts/parts/gpu_rx480_4_side_v01.json",
+      "stagingPath": "art/exports/parts/gpu_rx480_4_side.png",
+      "exportPx": [
+        768,
+        174
+      ],
+      "outlinePx": [
+        1,
+        0,
+        767,
+        173
+      ],
+      "bodyRectLtrbPx": [
+        1,
+        0,
+        768,
+        173
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.500651,
+        0.502874
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "12:12",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          30,
+          279,
+          1739,
+          664
+        ],
+        "scale": 0.44938560561732005,
+        "ledgerPath": "art/figma/browser-side-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions",
+      "runtimeImportEvidence": {
+        "reviewPath": "art/figma/workbench-runtime-review.json",
+        "exactPixelCopyVerified": true,
+        "mappedPartIds": [
+          "gpu_rx480_4"
+        ],
+        "runtimePaths": [
+          "assets/art/workbench/side/gpu_rx480_4.png"
+        ],
+        "scope": "Exact pixel import; program owner fixed-view review, not a per-configuration collision approval"
+      }
+    },
+    {
+      "partId": "gpu_rx480_8",
+      "view": "side",
+      "runtimePath": null,
+      "bundle": "workbench",
+      "path": "side/gpu_rx480_8",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked",
+        "alpha": "checked",
+        "installationAlignment": "pending_per_board_and_case",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/gpu_rx480_8_side_v01.png",
+      "promptPath": "art/prompts/parts/gpu_rx480_8_side_v01.json",
+      "stagingPath": "art/exports/parts/gpu_rx480_8_side.png",
+      "exportPx": [
+        768,
+        198
+      ],
+      "outlinePx": [
+        0,
+        1,
+        767,
+        196
+      ],
+      "bodyRectLtrbPx": [
+        0,
+        1,
+        767,
+        197
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.499349,
+        0.5
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "12:14",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          27,
+          259,
+          1744,
+          700
+        ],
+        "scale": 0.44729178800232966,
+        "ledgerPath": "art/figma/browser-side-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions",
+      "runtimeImportEvidence": {
+        "reviewPath": "art/figma/workbench-runtime-review.json",
+        "exactPixelCopyVerified": true,
+        "mappedPartIds": [
+          "gpu_rx480_8"
+        ],
+        "runtimePaths": [
+          "assets/art/workbench/side/gpu_rx480_8.png"
+        ],
+        "scope": "Exact pixel import; program owner fixed-view review, not a per-configuration collision approval"
+      }
+    },
+    {
+      "partId": "ram_ddr3_4",
+      "view": "side",
+      "runtimePath": null,
+      "bundle": "workbench",
+      "path": "side/ram_ddr3_4",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked",
+        "alpha": "checked",
+        "installationAlignment": "pending_per_board_and_case",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/ram_ddr3_4_side_v01.png",
+      "promptPath": "art/prompts/parts/ram_ddr3_4_side_v01.json",
+      "stagingPath": "art/exports/parts/ram_ddr3_4_side.png",
+      "exportPx": [
+        23,
+        512
+      ],
+      "outlinePx": [
+        0,
+        0,
+        22,
+        512
+      ],
+      "bodyRectLtrbPx": [
+        0,
+        0,
+        22,
+        512
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.478261,
+        0.5
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "12:16",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          510,
+          44,
+          571,
+          1428
+        ],
+        "scale": 0.3699421965317919,
+        "ledgerPath": "art/figma/browser-side-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions",
+      "runtimeImportEvidence": {
+        "reviewPath": "art/figma/workbench-runtime-review.json",
+        "exactPixelCopyVerified": true,
+        "mappedPartIds": [
+          "ram_ddr3_4"
+        ],
+        "runtimePaths": [
+          "assets/art/workbench/side/ram_ddr3_4.png"
+        ],
+        "scope": "Exact pixel import; program owner fixed-view review, not a per-configuration collision approval"
+      }
+    },
+    {
+      "partId": "ram_ddr3_8",
+      "view": "side",
+      "runtimePath": null,
+      "bundle": "workbench",
+      "path": "side/ram_ddr3_8",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked",
+        "alpha": "checked",
+        "installationAlignment": "pending_per_board_and_case",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/ram_ddr3_8_side_v01.png",
+      "promptPath": "art/prompts/parts/ram_ddr3_8_side_v01.json",
+      "stagingPath": "art/exports/parts/ram_ddr3_8_side.png",
+      "exportPx": [
+        25,
+        512
+      ],
+      "outlinePx": [
+        1,
+        0,
+        23,
+        512
+      ],
+      "bodyRectLtrbPx": [
+        1,
+        0,
+        24,
+        512
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "12:18",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          503,
+          38,
+          570,
+          1436
+        ],
+        "scale": 0.36623748211731044,
+        "ledgerPath": "art/figma/browser-side-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions",
+      "runtimeImportEvidence": {
+        "reviewPath": "art/figma/workbench-runtime-review.json",
+        "exactPixelCopyVerified": true,
+        "mappedPartIds": [
+          "ram_ddr3_8"
+        ],
+        "runtimePaths": [
+          "assets/art/workbench/side/ram_ddr3_8.png"
+        ],
+        "scope": "Exact pixel import; program owner fixed-view review, not a per-configuration collision approval"
+      }
+    },
+    {
+      "partId": "ram_ddr4_4",
+      "view": "side",
+      "runtimePath": null,
+      "bundle": "workbench",
+      "path": "side/ram_ddr4_4",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked",
+        "alpha": "checked",
+        "installationAlignment": "pending_per_board_and_case",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/ram_ddr4_4_side_v01.png",
+      "promptPath": "art/prompts/parts/ram_ddr4_4_side_v01.json",
+      "stagingPath": "art/exports/parts/ram_ddr4_4_side.png",
+      "exportPx": [
+        20,
+        512
+      ],
+      "outlinePx": [
+        1,
+        1,
+        19,
+        511
+      ],
+      "bodyRectLtrbPx": [
+        1,
+        1,
+        20,
+        512
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.525,
+        0.499023
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "12:20",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          514,
+          25,
+          569,
+          1441
+        ],
+        "scale": 0.3615819209039548,
+        "ledgerPath": "art/figma/browser-side-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions",
+      "runtimeImportEvidence": {
+        "reviewPath": "art/figma/workbench-runtime-review.json",
+        "exactPixelCopyVerified": true,
+        "mappedPartIds": [
+          "ram_ddr4_4"
+        ],
+        "runtimePaths": [
+          "assets/art/workbench/side/ram_ddr4_4.png"
+        ],
+        "scope": "Exact pixel import; program owner fixed-view review, not a per-configuration collision approval"
+      }
+    },
+    {
+      "partId": "psu_450",
+      "view": "rear",
+      "runtimePath": null,
+      "bundle": "workbench",
+      "path": "rear/psu_450",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked",
+        "alpha": "checked",
+        "installationAlignment": "pending_per_board_and_case",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/psu_450_rear_v01.png",
+      "promptPath": "art/prompts/parts/psu_450_rear_v01.json",
+      "stagingPath": "art/exports/parts/psu_450_rear.png",
+      "exportPx": [
+        512,
+        313
+      ],
+      "outlinePx": [
+        1,
+        1,
+        510,
+        311
+      ],
+      "bodyRectLtrbPx": [
+        1,
+        1,
+        511,
+        312
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "12:38",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          129,
+          57,
+          1495,
+          891
+        ],
+        "scale": 0.37481698389458273,
+        "ledgerPath": "art/figma/browser-side-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions",
+      "runtimeImportEvidence": {
+        "reviewPath": "art/figma/workbench-runtime-review.json",
+        "exactPixelCopyVerified": true,
+        "mappedPartIds": [
+          "psu_350",
+          "psu_450"
+        ],
+        "runtimePaths": [
+          "assets/art/workbench/rear/psu_450.png"
+        ],
+        "scope": "Exact pixel import; program owner fixed-view review, not a per-configuration collision approval"
+      }
+    },
+    {
+      "partId": "psu_650m",
+      "view": "side",
+      "runtimePath": null,
+      "bundle": "workbench",
+      "path": "side/psu_650m",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked",
+        "alpha": "checked",
+        "installationAlignment": "pending_per_board_and_case",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/psu_650m_side_v03.png",
+      "promptPath": "art/prompts/parts/psu_650m_side_v03.json",
+      "stagingPath": "art/exports/parts/psu_650m_side.png",
+      "exportPx": [
+        512,
+        261
+      ],
+      "outlinePx": [
+        0,
+        0,
+        512,
+        261
+      ],
+      "bodyRectLtrbPx": [
+        0,
+        0,
+        512,
+        261
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "12:42",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          43,
+          47,
+          1654,
+          868
+        ],
+        "scale": 0.31781502172563625,
+        "ledgerPath": "art/figma/browser-side-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions",
+      "runtimeImportEvidence": {
+        "reviewPath": "art/figma/workbench-runtime-review.json",
+        "exactPixelCopyVerified": true,
+        "mappedPartIds": [
+          "psu_650m"
+        ],
+        "runtimePaths": [
+          "assets/art/workbench/side/psu_650m.png"
+        ],
+        "scope": "Exact pixel import; program owner fixed-view review, not a per-configuration collision approval"
+      }
+    },
+    {
+      "partId": "psu_650m",
+      "view": "rear",
+      "runtimePath": null,
+      "bundle": "workbench",
+      "path": "rear/psu_650m",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked",
+        "alpha": "checked",
+        "installationAlignment": "pending_per_board_and_case",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/psu_650m_rear_v01.png",
+      "promptPath": "art/prompts/parts/psu_650m_rear_v01.json",
+      "stagingPath": "art/exports/parts/psu_650m_rear.png",
+      "exportPx": [
+        512,
+        252
+      ],
+      "outlinePx": [
+        1,
+        0,
+        511,
+        251
+      ],
+      "bodyRectLtrbPx": [
+        1,
+        0,
+        512,
+        251
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.500977,
+        0.501984
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "12:46",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          105,
+          91,
+          1606,
+          827
+        ],
+        "scale": 0.34110592938041306,
+        "ledgerPath": "art/figma/browser-side-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions",
+      "runtimeImportEvidence": {
+        "reviewPath": "art/figma/workbench-runtime-review.json",
+        "exactPixelCopyVerified": true,
+        "mappedPartIds": [
+          "psu_650m"
+        ],
+        "runtimePaths": [
+          "assets/art/workbench/rear/psu_650m.png"
+        ],
+        "scope": "Exact pixel import; program owner fixed-view review, not a per-configuration collision approval"
+      }
+    },
+    {
+      "partId": "cooler_quiet",
+      "view": "side",
+      "runtimePath": null,
+      "bundle": "workbench",
+      "path": "side/cooler_quiet",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked",
+        "alpha": "checked",
+        "installationAlignment": "pending_per_board_and_case",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/cooler_quiet_side_v01.png",
+      "promptPath": "art/prompts/parts/cooler_quiet_side_v01.json",
+      "stagingPath": "art/exports/parts/cooler_quiet_side.png",
+      "exportPx": [
+        512,
+        288
+      ],
+      "outlinePx": [
+        0,
+        1,
+        511,
+        286
+      ],
+      "bodyRectLtrbPx": [
+        0,
+        1,
+        511,
+        287
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.499023,
+        0.5
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "12:22",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          256,
+          159,
+          1406,
+          805
+        ],
+        "scale": 0.44521739130434784,
+        "ledgerPath": "art/figma/browser-side-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions",
+      "runtimeImportEvidence": {
+        "reviewPath": "art/figma/workbench-runtime-review.json",
+        "exactPixelCopyVerified": true,
+        "mappedPartIds": [
+          "cooler_quiet"
+        ],
+        "runtimePaths": [
+          "assets/art/workbench/side/cooler_quiet.png"
+        ],
+        "scope": "Exact pixel import; program owner fixed-view review, not a per-configuration collision approval"
+      }
+    },
+    {
+      "partId": "hdd_1000",
+      "view": "side",
+      "runtimePath": null,
+      "bundle": "workbench",
+      "path": "side/hdd_1000",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked",
+        "alpha": "checked",
+        "installationAlignment": "pending_per_board_and_case",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/hdd_1000_side_v01.png",
+      "promptPath": "art/prompts/parts/hdd_1000_side_v01.json",
+      "stagingPath": "art/exports/parts/hdd_1000_side.png",
+      "exportPx": [
+        512,
+        90
+      ],
+      "outlinePx": [
+        0,
+        0,
+        511,
+        89
+      ],
+      "bodyRectLtrbPx": [
+        0,
+        0,
+        511,
+        89
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.499023,
+        0.505556
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "12:26",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          101,
+          239,
+          1908,
+          555
+        ],
+        "scale": 0.28334255672385167,
+        "ledgerPath": "art/figma/browser-side-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions",
+      "runtimeImportEvidence": {
+        "reviewPath": "art/figma/workbench-runtime-review.json",
+        "exactPixelCopyVerified": true,
+        "mappedPartIds": [
+          "hdd_1000"
+        ],
+        "runtimePaths": [
+          "assets/art/workbench/side/hdd_1000.png"
+        ],
+        "scope": "Exact pixel import; program owner fixed-view review, not a per-configuration collision approval"
+      }
+    },
+    {
+      "partId": "hdd_1000",
+      "view": "rear",
+      "runtimePath": null,
+      "bundle": "workbench",
+      "path": "rear/hdd_1000",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked",
+        "alpha": "checked",
+        "installationAlignment": "pending_per_board_and_case",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/hdd_1000_rear_v01.png",
+      "promptPath": "art/prompts/parts/hdd_1000_rear_v01.json",
+      "stagingPath": "art/exports/parts/hdd_1000_rear.png",
+      "exportPx": [
+        512,
+        116
+      ],
+      "outlinePx": [
+        0,
+        0,
+        512,
+        115
+      ],
+      "bodyRectLtrbPx": [
+        0,
+        0,
+        512,
+        115
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.5,
+        0.50431
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "12:44",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          51,
+          187,
+          1971,
+          621
+        ],
+        "scale": 0.26666666666666666,
+        "ledgerPath": "art/figma/browser-side-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions",
+      "runtimeImportEvidence": {
+        "reviewPath": "art/figma/workbench-runtime-review.json",
+        "exactPixelCopyVerified": true,
+        "mappedPartIds": [
+          "hdd_1000"
+        ],
+        "runtimePaths": [
+          "assets/art/workbench/rear/hdd_1000.png"
+        ],
+        "scope": "Exact pixel import; program owner fixed-view review, not a per-configuration collision approval"
+      }
+    },
+    {
+      "partId": "cooler_low",
+      "view": "frame",
+      "runtimePath": null,
+      "bundle": "workbench",
+      "path": "frame/cooler_low",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked",
+        "alpha": "checked",
+        "installationAlignment": "pending_per_board_and_case",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/cooler_low_frame_v01.png",
+      "promptPath": "art/prompts/parts/cooler_low_frame_v01.json",
+      "stagingPath": "art/exports/parts/cooler_low_frame.png",
+      "exportPx": [
+        512,
+        491
+      ],
+      "outlinePx": [
+        1,
+        1,
+        510,
+        489
+      ],
+      "bodyRectLtrbPx": [
+        1,
+        1,
+        511,
+        490
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "12:36",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          114,
+          116,
+          1138,
+          1098
+        ],
+        "scale": 0.5,
+        "ledgerPath": "art/figma/browser-side-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions"
+    },
+    {
+      "partId": "cooler_low",
+      "view": "rotor",
+      "runtimePath": null,
+      "bundle": "workbench",
+      "path": "rotor/cooler_low",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked",
+        "alpha": "checked",
+        "installationAlignment": "pending_per_board_and_case",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/cooler_low_rotor_v01.png",
+      "promptPath": "art/prompts/parts/cooler_low_rotor_v01.json",
+      "stagingPath": "art/exports/parts/cooler_low_rotor.png",
+      "exportPx": [
+        512,
+        500
+      ],
+      "outlinePx": [
+        0,
+        0,
+        511,
+        498
+      ],
+      "bodyRectLtrbPx": [
+        0,
+        0,
+        511,
+        498
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.499023,
+        0.502
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "12:50",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          59,
+          54,
+          1221,
+          1188
+        ],
+        "scale": 0.4406196213425129,
+        "ledgerPath": "art/figma/browser-side-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions"
+    },
+    {
+      "partId": "cpu_6500",
+      "view": "product",
+      "runtimePath": null,
+      "bundle": "procurement",
+      "path": "product/cpu_6500",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked_procurement_view",
+        "alpha": "checked",
+        "installationAlignment": "not_applicable_procurement_view",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/cpu_6500_side_v01.png",
+      "promptPath": "art/prompts/parts/cpu_6500_side_v01.json",
+      "stagingPath": "art/exports/parts/cpu_6500_product.png",
+      "exportPx": [
+        512,
+        491
+      ],
+      "outlinePx": [
+        3,
+        2,
+        506,
+        487
+      ],
+      "bodyRectLtrbPx": [
+        3,
+        2,
+        509,
+        489
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "19:24",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          131,
+          150,
+          1123,
+          1101
+        ],
+        "scale": 0.5161290322580645,
+        "ledgerPath": "art/figma/browser-product-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions"
+    },
+    {
+      "partId": "cpu_fx8350",
+      "view": "product",
+      "runtimePath": null,
+      "bundle": "procurement",
+      "path": "product/cpu_fx8350",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked_procurement_view",
+        "alpha": "checked",
+        "installationAlignment": "not_applicable_procurement_view",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/cpu_fx8350_side_v01.png",
+      "promptPath": "art/prompts/parts/cpu_fx8350_side_v01.json",
+      "stagingPath": "art/exports/parts/cpu_fx8350_product.png",
+      "exportPx": [
+        512,
+        507
+      ],
+      "outlinePx": [
+        2,
+        2,
+        508,
+        502
+      ],
+      "bodyRectLtrbPx": [
+        2,
+        2,
+        510,
+        504
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.5,
+        0.500986
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "19:14",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          85,
+          91,
+          1170,
+          1164
+        ],
+        "scale": 0.471889400921659,
+        "ledgerPath": "art/figma/browser-product-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions"
+    },
+    {
+      "partId": "gpu_750ti",
+      "view": "product",
+      "runtimePath": null,
+      "bundle": "procurement",
+      "path": "product/gpu_750ti",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked_procurement_view",
+        "alpha": "checked",
+        "installationAlignment": "not_applicable_procurement_view",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/gpu_750ti_product_v02.png",
+      "promptPath": "art/prompts/parts/gpu_750ti_product_v02.json",
+      "stagingPath": "art/exports/parts/gpu_750ti_product.png",
+      "exportPx": [
+        768,
+        438
+      ],
+      "outlinePx": [
+        3,
+        2,
+        763,
+        434
+      ],
+      "bodyRectLtrbPx": [
+        3,
+        2,
+        766,
+        436
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.500651,
+        0.5
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "19:28",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          96,
+          154,
+          1457,
+          929
+        ],
+        "scale": 0.5642909625275533,
+        "ledgerPath": "art/figma/browser-product-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions"
+    },
+    {
+      "partId": "gpu_960",
+      "view": "product",
+      "runtimePath": null,
+      "bundle": "procurement",
+      "path": "product/gpu_960",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked_procurement_view",
+        "alpha": "checked",
+        "installationAlignment": "not_applicable_procurement_view",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/gpu_960_product_v02.png",
+      "promptPath": "art/prompts/parts/gpu_960_product_v02.json",
+      "stagingPath": "art/exports/parts/gpu_960_product.png",
+      "exportPx": [
+        768,
+        398
+      ],
+      "outlinePx": [
+        2,
+        2,
+        764,
+        394
+      ],
+      "bodyRectLtrbPx": [
+        2,
+        2,
+        766,
+        396
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "19:8",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          66,
+          108,
+          1554,
+          878
+        ],
+        "scale": 0.5161290322580645,
+        "ledgerPath": "art/figma/browser-product-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions"
+    },
+    {
+      "partId": "gpu_970",
+      "view": "product",
+      "runtimePath": null,
+      "bundle": "procurement",
+      "path": "product/gpu_970",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked_procurement_view",
+        "alpha": "checked",
+        "installationAlignment": "not_applicable_procurement_view",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/gpu_970_product_v02.png",
+      "promptPath": "art/prompts/parts/gpu_970_product_v02.json",
+      "stagingPath": "art/exports/parts/gpu_970_product.png",
+      "exportPx": [
+        768,
+        373
+      ],
+      "outlinePx": [
+        2,
+        2,
+        764,
+        368
+      ],
+      "bodyRectLtrbPx": [
+        2,
+        2,
+        766,
+        370
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.5,
+        0.50134
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "19:18",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          68,
+          57,
+          1725,
+          860
+        ],
+        "scale": 0.46348823174411585,
+        "ledgerPath": "art/figma/browser-product-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions"
+    },
+    {
+      "partId": "gpu_r9380",
+      "view": "product",
+      "runtimePath": null,
+      "bundle": "procurement",
+      "path": "product/gpu_r9380",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked_procurement_view",
+        "alpha": "checked",
+        "installationAlignment": "not_applicable_procurement_view",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/gpu_r9380_product_v02.png",
+      "promptPath": "art/prompts/parts/gpu_r9380_product_v02.json",
+      "stagingPath": "art/exports/parts/gpu_r9380_product.png",
+      "exportPx": [
+        768,
+        393
+      ],
+      "outlinePx": [
+        2,
+        2,
+        764,
+        389
+      ],
+      "bodyRectLtrbPx": [
+        2,
+        2,
+        766,
+        391
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "19:22",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          24,
+          15,
+          1723,
+          884
+        ],
+        "scale": 0.45203060623896407,
+        "ledgerPath": "art/figma/browser-product-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions"
+    },
+    {
+      "partId": "gpu_1080",
+      "view": "product",
+      "runtimePath": null,
+      "bundle": "procurement",
+      "path": "product/gpu_1080",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked_procurement_view",
+        "alpha": "checked",
+        "installationAlignment": "not_applicable_procurement_view",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/gpu_1080_product_v01.png",
+      "promptPath": "art/prompts/parts/gpu_1080_product_v01.json",
+      "stagingPath": "art/exports/parts/gpu_1080_product.png",
+      "exportPx": [
+        768,
+        232
+      ],
+      "outlinePx": [
+        2,
+        2,
+        764,
+        228
+      ],
+      "bodyRectLtrbPx": [
+        2,
+        2,
+        766,
+        230
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "19:2",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          10,
+          200,
+          1765,
+          730
+        ],
+        "scale": 0.4376068376068376,
+        "ledgerPath": "art/figma/browser-product-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions"
+    },
+    {
+      "partId": "gpu_1070",
+      "view": "product",
+      "runtimePath": null,
+      "bundle": "procurement",
+      "path": "product/gpu_1070",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked_procurement_view",
+        "alpha": "checked",
+        "installationAlignment": "not_applicable_procurement_view",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/gpu_1070_product_v01.png",
+      "promptPath": "art/prompts/parts/gpu_1070_product_v01.json",
+      "stagingPath": "art/exports/parts/gpu_1070_product.png",
+      "exportPx": [
+        768,
+        325
+      ],
+      "outlinePx": [
+        2,
+        2,
+        764,
+        321
+      ],
+      "bodyRectLtrbPx": [
+        2,
+        2,
+        766,
+        323
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "19:12",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          11,
+          83,
+          1763,
+          824
+        ],
+        "scale": 0.4383561643835616,
+        "ledgerPath": "art/figma/browser-product-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions"
+    },
+    {
+      "partId": "gpu_rx480_4",
+      "view": "product",
+      "runtimePath": null,
+      "bundle": "procurement",
+      "path": "product/gpu_rx480_4",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked_procurement_view",
+        "alpha": "checked",
+        "installationAlignment": "not_applicable_procurement_view",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/gpu_rx480_4_product_v01.png",
+      "promptPath": "art/prompts/parts/gpu_rx480_4_product_v01.json",
+      "stagingPath": "art/exports/parts/gpu_rx480_4_product.png",
+      "exportPx": [
+        768,
+        276
+      ],
+      "outlinePx": [
+        2,
+        2,
+        764,
+        271
+      ],
+      "bodyRectLtrbPx": [
+        2,
+        2,
+        766,
+        273
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.5,
+        0.501812
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "19:6",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          46,
+          131,
+          1794,
+          757
+        ],
+        "scale": 0.43935926773455375,
+        "ledgerPath": "art/figma/browser-product-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions"
+    },
+    {
+      "partId": "gpu_rx480_8",
+      "view": "product",
+      "runtimePath": null,
+      "bundle": "procurement",
+      "path": "product/gpu_rx480_8",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked_procurement_view",
+        "alpha": "checked",
+        "installationAlignment": "not_applicable_procurement_view",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/gpu_rx480_8_product_v01.png",
+      "promptPath": "art/prompts/parts/gpu_rx480_8_product_v01.json",
+      "stagingPath": "art/exports/parts/gpu_rx480_8_product.png",
+      "exportPx": [
+        768,
+        296
+      ],
+      "outlinePx": [
+        2,
+        2,
+        763,
+        291
+      ],
+      "bodyRectLtrbPx": [
+        2,
+        2,
+        765,
+        293
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.499349,
+        0.501689
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "19:10",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          20,
+          87,
+          1806,
+          774
+        ],
+        "scale": 0.43001119820828665,
+        "ledgerPath": "art/figma/browser-product-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions"
+    },
+    {
+      "partId": "ram_ddr3_4",
+      "view": "product",
+      "runtimePath": null,
+      "bundle": "procurement",
+      "path": "product/ram_ddr3_4",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked_procurement_view",
+        "alpha": "checked",
+        "installationAlignment": "not_applicable_procurement_view",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/ram_ddr3_4_product_v01.png",
+      "promptPath": "art/prompts/parts/ram_ddr3_4_product_v01.json",
+      "stagingPath": "art/exports/parts/ram_ddr3_4_product.png",
+      "exportPx": [
+        512,
+        104
+      ],
+      "outlinePx": [
+        2,
+        2,
+        508,
+        99
+      ],
+      "bodyRectLtrbPx": [
+        2,
+        2,
+        510,
+        101
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.5,
+        0.504808
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "19:32",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          38,
+          184,
+          2009,
+          581
+        ],
+        "scale": 0.2597666159309995,
+        "ledgerPath": "art/figma/browser-product-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions"
+    },
+    {
+      "partId": "ram_ddr3_8",
+      "view": "product",
+      "runtimePath": null,
+      "bundle": "procurement",
+      "path": "product/ram_ddr3_8",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked_procurement_view",
+        "alpha": "checked",
+        "installationAlignment": "not_applicable_procurement_view",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/ram_ddr3_8_product_v02.png",
+      "promptPath": "art/prompts/parts/ram_ddr3_8_product_v02.json",
+      "stagingPath": "art/exports/parts/ram_ddr3_8_product.png",
+      "exportPx": [
+        512,
+        105
+      ],
+      "outlinePx": [
+        2,
+        2,
+        508,
+        100
+      ],
+      "bodyRectLtrbPx": [
+        2,
+        2,
+        510,
+        102
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.5,
+        0.504762
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "19:4",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          28,
+          187,
+          1994,
+          588
+        ],
+        "scale": 0.26042726347914547,
+        "ledgerPath": "art/figma/browser-product-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions"
+    },
+    {
+      "partId": "ram_ddr4_4",
+      "view": "product",
+      "runtimePath": null,
+      "bundle": "procurement",
+      "path": "product/ram_ddr4_4",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked_procurement_view",
+        "alpha": "checked",
+        "installationAlignment": "not_applicable_procurement_view",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/ram_ddr4_4_product_v01.png",
+      "promptPath": "art/prompts/parts/ram_ddr4_4_product_v01.json",
+      "stagingPath": "art/exports/parts/ram_ddr4_4_product.png",
+      "exportPx": [
+        512,
+        112
+      ],
+      "outlinePx": [
+        2,
+        2,
+        508,
+        107
+      ],
+      "bodyRectLtrbPx": [
+        2,
+        2,
+        510,
+        109
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.5,
+        0.504464
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "19:26",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          41,
+          168,
+          2007,
+          595
+        ],
+        "scale": 0.26042726347914547,
+        "ledgerPath": "art/figma/browser-product-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions"
+    },
+    {
+      "partId": "ram_ddr4_8",
+      "view": "product",
+      "runtimePath": null,
+      "bundle": "procurement",
+      "path": "product/ram_ddr4_8",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked_procurement_view",
+        "alpha": "checked",
+        "installationAlignment": "not_applicable_procurement_view",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/ram_ddr4_8_product_v01.png",
+      "promptPath": "art/prompts/parts/ram_ddr4_8_product_v01.json",
+      "stagingPath": "art/exports/parts/ram_ddr4_8_product.png",
+      "exportPx": [
+        512,
+        116
+      ],
+      "outlinePx": [
+        2,
+        2,
+        508,
+        112
+      ],
+      "bodyRectLtrbPx": [
+        2,
+        2,
+        510,
+        114
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "19:30",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          57,
+          126,
+          2113,
+          590
+        ],
+        "scale": 0.2490272373540856,
+        "ledgerPath": "art/figma/browser-product-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions"
+    },
+    {
+      "partId": "ssd_250",
+      "view": "product",
+      "runtimePath": null,
+      "bundle": "procurement",
+      "path": "product/ssd_250",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked_procurement_view",
+        "alpha": "checked",
+        "installationAlignment": "not_applicable_procurement_view",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/ssd_250_side_v01.png",
+      "promptPath": "art/prompts/parts/ssd_250_side_v01.json",
+      "stagingPath": "art/exports/parts/ssd_250_product.png",
+      "exportPx": [
+        350,
+        512
+      ],
+      "outlinePx": [
+        2,
+        2,
+        346,
+        508
+      ],
+      "bodyRectLtrbPx": [
+        2,
+        2,
+        348,
+        510
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "19:34",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          112,
+          133,
+          938,
+          1342
+        ],
+        "scale": 0.42349048800661704,
+        "ledgerPath": "art/figma/browser-product-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions"
+    },
+    {
+      "partId": "hdd_1000",
+      "view": "product",
+      "runtimePath": null,
+      "bundle": "procurement",
+      "path": "product/hdd_1000",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked_procurement_view",
+        "alpha": "checked",
+        "installationAlignment": "not_applicable_procurement_view",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/hdd_1000_product_v01.png",
+      "promptPath": "art/prompts/parts/hdd_1000_product_v01.json",
+      "stagingPath": "art/exports/parts/hdd_1000_product.png",
+      "exportPx": [
+        426,
+        512
+      ],
+      "outlinePx": [
+        2,
+        2,
+        422,
+        508
+      ],
+      "bodyRectLtrbPx": [
+        2,
+        2,
+        424,
+        510
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "19:16",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          26,
+          159,
+          1004,
+          1336
+        ],
+        "scale": 0.43500424808836025,
+        "ledgerPath": "art/figma/browser-product-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions"
+    },
+    {
+      "partId": "psu_450",
+      "view": "product",
+      "runtimePath": null,
+      "bundle": "procurement",
+      "path": "product/psu_450",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked_procurement_view",
+        "alpha": "checked",
+        "installationAlignment": "not_applicable_procurement_view",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/psu_450_product_v01.png",
+      "promptPath": "art/prompts/parts/psu_450_product_v01.json",
+      "stagingPath": "art/exports/parts/psu_450_product.png",
+      "exportPx": [
+        512,
+        436
+      ],
+      "outlinePx": [
+        2,
+        2,
+        508,
+        431
+      ],
+      "bodyRectLtrbPx": [
+        2,
+        2,
+        510,
+        433
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.5,
+        0.501147
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "19:20",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          206,
+          35,
+          1339,
+          998
+        ],
+        "scale": 0.45189761694616065,
+        "ledgerPath": "art/figma/browser-product-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions"
+    },
+    {
+      "partId": "psu_650m",
+      "view": "product",
+      "runtimePath": null,
+      "bundle": "procurement",
+      "path": "product/psu_650m",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked_procurement_view",
+        "alpha": "checked",
+        "installationAlignment": "not_applicable_procurement_view",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/psu_650m_product_v01.png",
+      "promptPath": "art/prompts/parts/psu_650m_product_v01.json",
+      "stagingPath": "art/exports/parts/psu_650m_product.png",
+      "exportPx": [
+        512,
+        360
+      ],
+      "outlinePx": [
+        2,
+        2,
+        507,
+        356
+      ],
+      "bodyRectLtrbPx": [
+        2,
+        2,
+        509,
+        358
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.499023,
+        0.5
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "19:38",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          121,
+          79,
+          1427,
+          996
+        ],
+        "scale": 0.39203675344563554,
+        "ledgerPath": "art/figma/browser-product-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions"
+    },
+    {
+      "partId": "cooler_low",
+      "view": "product",
+      "runtimePath": null,
+      "bundle": "procurement",
+      "path": "product/cooler_low",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked_procurement_view",
+        "alpha": "checked",
+        "installationAlignment": "not_applicable_procurement_view",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/cooler_low_product_v01.png",
+      "promptPath": "art/prompts/parts/cooler_low_product_v01.json",
+      "stagingPath": "art/exports/parts/cooler_low_product.png",
+      "exportPx": [
+        512,
+        395
+      ],
+      "outlinePx": [
+        2,
+        2,
+        508,
+        391
+      ],
+      "bodyRectLtrbPx": [
+        2,
+        2,
+        510,
+        393
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "19:40",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          158,
+          25,
+          1414,
+          994
+        ],
+        "scale": 0.40764331210191085,
+        "ledgerPath": "art/figma/browser-product-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions"
+    },
+    {
+      "partId": "cooler_tower",
+      "view": "product",
+      "runtimePath": null,
+      "bundle": "procurement",
+      "path": "product/cooler_tower",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked_procurement_view",
+        "alpha": "checked",
+        "installationAlignment": "not_applicable_procurement_view",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/cooler_tower_product_v01.png",
+      "promptPath": "art/prompts/parts/cooler_tower_product_v01.json",
+      "stagingPath": "art/exports/parts/cooler_tower_product.png",
+      "exportPx": [
+        470,
+        512
+      ],
+      "outlinePx": [
+        2,
+        2,
+        466,
+        508
+      ],
+      "bodyRectLtrbPx": [
+        2,
+        2,
+        468,
+        510
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "19:36",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          341,
+          21,
+          1228,
+          988
+        ],
+        "scale": 0.5294725956566702,
+        "ledgerPath": "art/figma/browser-product-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions"
+    },
+    {
+      "partId": "cooler_quiet",
+      "view": "product",
+      "runtimePath": null,
+      "bundle": "procurement",
+      "path": "product/cooler_quiet",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked_procurement_view",
+        "alpha": "checked",
+        "installationAlignment": "not_applicable_procurement_view",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/cooler_quiet_product_v01.png",
+      "promptPath": "art/prompts/parts/cooler_quiet_product_v01.json",
+      "stagingPath": "art/exports/parts/cooler_quiet_product.png",
+      "exportPx": [
+        477,
+        512
+      ],
+      "outlinePx": [
+        2,
+        2,
+        473,
+        508
+      ],
+      "bodyRectLtrbPx": [
+        2,
+        2,
+        475,
+        510
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "19:42",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          222,
+          85,
+          1149,
+          1080
+        ],
+        "scale": 0.5145728643216081,
+        "ledgerPath": "art/figma/browser-product-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions"
+    },
+    {
+      "partId": "case_small",
+      "view": "product",
+      "runtimePath": null,
+      "bundle": "procurement",
+      "path": "product/case_small",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked_procurement_view",
+        "alpha": "checked",
+        "installationAlignment": "not_applicable_procurement_view",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/case_small_product_v01.png",
+      "promptPath": "art/prompts/parts/case_small_product_v01.json",
+      "stagingPath": "art/exports/parts/case_small_product.png",
+      "exportPx": [
+        724,
+        768
+      ],
+      "outlinePx": [
+        2,
+        2,
+        719,
+        764
+      ],
+      "bodyRectLtrbPx": [
+        2,
+        2,
+        721,
+        766
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.499309,
+        0.5
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "19:44",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          157,
+          26,
+          1198,
+          1131
+        ],
+        "scale": 0.6950226244343891,
+        "ledgerPath": "art/figma/browser-product-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions"
+    },
+    {
+      "partId": "case_standard",
+      "view": "product",
+      "runtimePath": null,
+      "bundle": "procurement",
+      "path": "product/case_standard",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked_procurement_view",
+        "alpha": "checked",
+        "installationAlignment": "not_applicable_procurement_view",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/case_standard_product_v01.png",
+      "promptPath": "art/prompts/parts/case_standard_product_v01.json",
+      "stagingPath": "art/exports/parts/case_standard_product.png",
+      "exportPx": [
+        738,
+        768
+      ],
+      "outlinePx": [
+        3,
+        2,
+        732,
+        764
+      ],
+      "bodyRectLtrbPx": [
+        3,
+        2,
+        735,
+        766
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "19:48",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          71,
+          40,
+          1190,
+          1205
+        ],
+        "scale": 0.6592274678111588,
+        "ledgerPath": "art/figma/browser-product-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions"
+    },
+    {
+      "partId": "case_quiet",
+      "view": "product",
+      "runtimePath": null,
+      "bundle": "procurement",
+      "path": "product/case_quiet",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked_procurement_view",
+        "alpha": "checked",
+        "installationAlignment": "not_applicable_procurement_view",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/case_quiet_product_v01.png",
+      "promptPath": "art/prompts/parts/case_quiet_product_v01.json",
+      "stagingPath": "art/exports/parts/case_quiet_product.png",
+      "exportPx": [
+        768,
+        750
+      ],
+      "outlinePx": [
+        2,
+        2,
+        764,
+        746
+      ],
+      "bodyRectLtrbPx": [
+        2,
+        2,
+        766,
+        748
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "19:46",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          63,
+          53,
+          1205,
+          1168
+        ],
+        "scale": 0.6725043782837128,
+        "ledgerPath": "art/figma/browser-product-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions"
+    },
+    {
+      "partId": "case_small",
+      "view": "rear",
+      "runtimePath": null,
+      "bundle": "workbench",
+      "path": "rear/case_small",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "orthographic_candidate_visually_checked",
+        "alpha": "checked",
+        "installationAlignment": "pending_per_case_and_board",
+        "approval": "pending_joint_runtime_installation_review",
+        "projection": "orthographic_candidate_checked",
+        "direction": "front_left_rear_right",
+        "tray": "opaque_solid_matches_selected_side",
+        "lowerBay": "PSU_right_HDD_cage_left_matches_mirrored_side",
+        "SSDAlignment": "fixed_geometry_layer_positions_exported_pending_runtime_clearance",
+        "expansionEdges": "small_four_checked; standard_quiet_edge_count_requires_final_detail_review",
+        "lowerBayClearance": "needs_PSU_separator_and_lower_SSD_rail_joint_check"
+      },
+      "sourcePath": "art/source/parts/case_small_rear_base_v01.png",
+      "promptPath": "art/prompts/parts/case_small_rear_base_v01.json",
+      "stagingPath": "art/exports/parts/case_small_rear_aligned_v01.png",
+      "exportPx": [
+        1024,
+        991
+      ],
+      "outlinePx": [
+        4,
+        3,
+        1017,
+        984
+      ],
+      "bodyRectLtrbPx": [
+        9.36,
+        7.488,
+        1010.896,
+        962.223
+      ],
+      "bodyRectStatus": "manually_measured_case_body_excludes_feet",
+      "pivot": [
+        0.498172,
+        0.510741
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "35:20",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          85,
+          69,
+          1179,
+          1127
+        ],
+        "scale": 0.9360146252285192,
+        "ledgerPath": "art/figma/browser-case-layer-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions",
+      "composition": {
+        "background": "art/source/parts/case_small_rear_base_v01.png",
+        "plates": [
+          {
+            "slotId": "ssd0",
+            "rectMm": [
+              250,
+              101,
+              69.85,
+              100
+            ],
+            "sourceCropPath": "art/source/parts/case_small_rear_v03.png",
+            "sourceCropLtrbPx": [
+              151,
+              138,
+              361,
+              434
+            ],
+            "targetSourceRectLtrbPx": [
+              127.91060606060609,
+              456.3125,
+              354.3939393939394,
+              775.0625
+            ],
+            "figmaLocalRectPx": [
+              40.16495485014683,
+              362.5301645338208,
+              211.99171237050578,
+              298.3546617915905
+            ],
+            "provenance": "Raster crop from built-in original drawing; exact Figma layer placement from original game SSD envelopes"
+          },
+          {
+            "slotId": "ssd1",
+            "rectMm": [
+              250,
+              208,
+              69.85,
+              100
+            ],
+            "sourceCropPath": "art/source/parts/case_small_rear_v03.png",
+            "sourceCropLtrbPx": [
+              151,
+              138,
+              361,
+              434
+            ],
+            "targetSourceRectLtrbPx": [
+              127.91060606060609,
+              115.25,
+              354.3939393939394,
+              434
+            ],
+            "figmaLocalRectPx": [
+              40.16495485014683,
+              43.29067641681901,
+              211.99171237050578,
+              298.3546617915905
+            ],
+            "provenance": "Raster crop from built-in original drawing; exact Figma layer placement from original game SSD envelopes"
+          }
+        ],
+        "method": "Figma native imported clipped raster layers, not software-repainted source PNG"
+      },
+      "runtimeImportEvidence": {
+        "reviewPath": "art/figma/workbench-runtime-review.json",
+        "exactPixelCopyVerified": true,
+        "mappedPartIds": [
+          "case_small"
+        ],
+        "runtimePaths": [
+          "assets/art/workbench/rear/case_small.png"
+        ],
+        "scope": "Exact pixel import; program owner fixed-view review, not a per-configuration collision approval"
+      }
+    },
+    {
+      "partId": "cooler_low",
+      "view": "side",
+      "runtimePath": null,
+      "bundle": "workbench",
+      "path": "side/cooler_low",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked",
+        "alpha": "checked",
+        "installationAlignment": "pending_per_board_and_case",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/cooler_low_side_v02.png",
+      "promptPath": "art/prompts/parts/cooler_low_side_v02.json",
+      "stagingPath": "art/exports/parts/cooler_low_side.png",
+      "exportPx": [
+        512,
+        492
+      ],
+      "outlinePx": [
+        2,
+        2,
+        508,
+        488
+      ],
+      "bodyRectLtrbPx": [
+        2,
+        2,
+        510,
+        490
+      ],
+      "bodyRectStatus": "alpha_bounds_only_requires_body_review",
+      "pivot": [
+        0.5,
+        0.5
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "19:52",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          112,
+          114,
+          1139,
+          1100
+        ],
+        "scale": 0.498539435248296,
+        "ledgerPath": "art/figma/browser-correction-batch.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions",
+      "runtimeImportEvidence": {
+        "reviewPath": "art/figma/workbench-runtime-review.json",
+        "exactPixelCopyVerified": true,
+        "mappedPartIds": [
+          "cooler_low"
+        ],
+        "runtimePaths": [
+          "assets/art/workbench/side/cooler_low.png"
+        ],
+        "scope": "Exact pixel import; program owner fixed-view review, not a per-configuration collision approval"
+      }
+    },
+    {
+      "partId": "mb_h110",
+      "view": "side",
+      "runtimePath": null,
+      "bundle": "workbench",
+      "path": "side/mb_h110",
+      "state": "exported_for_review",
+      "review": {
+        "materials": "checked",
+        "camera": "checked",
+        "alpha": "checked",
+        "installationAlignment": "pending_per_board_and_case",
+        "approval": "pending"
+      },
+      "sourcePath": "art/source/parts/mb_h110_side_v01.png",
+      "promptPath": "art/prompts/parts/mb_h110_side_v01.json",
+      "stagingPath": "art/exports/parts/mb_h110_side.png",
+      "exportPx": [
+        660,
+        768
+      ],
+      "outlinePx": [
+        1,
+        1,
+        657,
+        765
+      ],
+      "bodyRectLtrbPx": [
+        26,
+        2,
+        653,
+        766
+      ],
+      "bodyRectStatus": "measured_game_layout_candidate_from_installation_owner",
+      "pivot": [
+        0.514394,
+        0.5
+      ],
+      "figma": {
+        "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+        "exportNodeId": "12:2",
+        "imageNodeId": null,
+        "sourceNodeId": null,
+        "sourceCropLtrbPx": [
+          52,
+          96,
+          1076,
+          1289
+        ],
+        "scale": 0.6437552388935457,
+        "ledgerPath": "art/figma/h110-browser-export.json"
+      },
+      "displayRequirement": "Use complete untrimmed export dimensions and measured physical body; metal brackets and feet are separate visual protrusions",
+      "landmarkStatus": "measured_game_layout_candidate",
+      "landmarkProvenance": "Artwork coordinates proposed by installation owner, not verified manufacturer geometry",
+      "exportLandmarksPx": {
+        "cpu_center": [
+          321,
+          260
+        ],
+        "dimm_centers": [
+          [
+            534,
+            257
+          ],
+          [
+            569,
+            257
+          ]
+        ],
+        "primary_pcie_center": [
+          320,
+          526
+        ],
+        "connectors": {
+          "mainPower": [
+            636,
+            283
+          ],
+          "cpuPower": [
+            143,
+            35
+          ],
+          "cpuFan": [
+            461,
+            59
+          ],
+          "caseFan": [
+            181,
+            738
+          ],
+          "frontPanel": [
+            584,
+            740
+          ],
+          "sata": [
+            591,
+            677
+          ]
+        }
+      },
+      "sourceLandmarksPx": {
+        "cpu_center": [
+          550.637,
+          499.88
+        ],
+        "dimm_centers": [
+          [
+            881.508,
+            495.22
+          ],
+          [
+            935.876,
+            495.22
+          ]
+        ],
+        "primary_pcie_center": [
+          549.083,
+          913.081
+        ],
+        "connectors": {
+          "mainPower": [
+            1039.953,
+            535.608
+          ],
+          "cpuPower": [
+            274.134,
+            150.368
+          ],
+          "cpuFan": [
+            768.111,
+            187.65
+          ],
+          "caseFan": [
+            333.163,
+            1242.398
+          ],
+          "frontPanel": [
+            959.177,
+            1245.505
+          ],
+          "sata": [
+            970.051,
+            1147.642
+          ]
+        }
+      },
+      "runtimeImportEvidence": {
+        "reviewPath": "art/figma/workbench-runtime-review.json",
+        "exactPixelCopyVerified": true,
+        "mappedPartIds": [
+          "mb_h110"
+        ],
+        "runtimePaths": [
+          "assets/art/workbench/side/mb_h110.png"
+        ],
+        "scope": "Exact pixel import; program owner fixed-view review, not a per-configuration collision approval"
+      }
+    }
+  ],
+  "runtimeReviewEvidencePath": "art/figma/runtime-art-acceptance.json"
+}

@@ -1,0 +1,84 @@
+{
+  "performedAt": "2026-10-11T13:44:53.5402855Z",
+  "status": "completed",
+  "deleted": [
+    {
+      "path": "library",
+      "files": 841,
+      "bytes": 62449130.0,
+      "archiveVerified": false
+    },
+    {
+      "path": "temp",
+      "files": 856,
+      "bytes": 13818784.0,
+      "archiveVerified": false
+    },
+    {
+      "path": ".local/tests",
+      "files": 12,
+      "bytes": 229885.0,
+      "archiveVerified": false
+    },
+    {
+      "path": "tools/__pycache__",
+      "files": 1,
+      "bytes": 7507.0,
+      "archiveVerified": false
+    },
+    {
+      "path": ".local/figma-import",
+      "files": 61,
+      "bytes": 158317024.0,
+      "archiveVerified": true
+    },
+    {
+      "path": "ui-demos",
+      "files": 10,
+      "bytes": 20361518.0,
+      "archiveVerified": true
+    },
+    {
+      "path": "tools/preview-ui-demos.cjs",
+      "files": 1,
+      "bytes": 1051.0,
+      "archiveVerified": true
+    },
+    {
+      "path": "build/art-import-check",
+      "files": 19,
+      "bytes": 4464344.0,
+      "archiveVerified": true
+    },
+    {
+      "path": ".local/package/previous-builds/web-desktop",
+      "files": 334,
+      "bytes": 17753157.0,
+      "archiveVerified": true
+    },
+    {
+      "path": ".local/package/previous-builds/wechatgame",
+      "files": 338,
+      "bytes": 17683332.0,
+      "archiveVerified": true
+    }
+  ],
+  "totalBytes": 295085732.0,
+  "retained": [
+    "assets",
+    "art/source",
+    "art/prompts",
+    "art/exports",
+    "art/figma",
+    "art/preview",
+    "art/reference",
+    "node_modules",
+    "build/web-desktop",
+    "build/wechatgame",
+    ".local/playtests",
+    ".local/environment.json",
+    ".git",
+    "deliverables"
+  ],
+  "fullReferenceOriginalsRetained": 7
+}

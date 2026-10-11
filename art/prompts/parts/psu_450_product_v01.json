@@ -1,0 +1,17 @@
+{
+  "id": "psu_450_product_v01",
+  "componentId": "psu_450",
+  "referencePaths": [
+    "art/source/style_review_v02.png",
+    "art/source/parts/psu_450_side_v02.png"
+  ],
+  "intent": "generate",
+  "structuralBasis": "Original shared non-modular350/450gamebody150x140x86mm; product pose rotated to show intake fan.",
+  "prompt": "Use case: product-mockup. ONE original compact nonmodular ATXpower supply150mmwide140mmdeep86mmtall, relatively realistic PCsimulator procurementimage. Reference1 materials/neutral lighting, reference2 samegamebroadside body/material. Modestthreequartercamera fromabovefront soTOPshowsone120mmroundblackintakefan behindblackwiregrille, sidefacehasblankgray specificationssticker, smallfrontendshowsroundrubbergrommetwith NO wires. Actualinstalled PSU willrotate fanfacedown; thisfreeproductposecan exposefanup. Squaredgraphite powdercoatsteelshellwithordinaryPhilipsroundscrewsandfinefolds, realblackplasticfanblades. Compactalmostsquaretop140by150mm, notlongelongatedbox. No modularports onfront, nobrand/text/logos, no loosecables orIECpowercord. Completeobjectcentered withampletransparentmargins,truealpha,nooutsidecastshadow,floor,reflection,environment,packaging,watermark,glow.",
+  "tool": "built_in_image_gen",
+  "transparent_background": true,
+  "status": "generated_candidate",
+  "sourcePath": "art/source/parts/psu_450_product_v01.png",
+  "generatedOutputFile": "exec-6760c576-279d-43bd-864b-dddc11f46fcf.png",
+  "resultRecovery": "Recovered completed tool output after session interruption; matched by visual identity and recorded prompt"
+}

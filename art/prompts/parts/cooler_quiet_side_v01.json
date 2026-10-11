@@ -1,0 +1,14 @@
+{
+  "id": "cooler_quiet_side_v01",
+  "componentId": "cooler_quiet",
+  "prompt": "Use case: product-mockup. Draw ONE isolated independent raster hardware sprite for Orangegame, a relatively realistic PC Building Simulator inspired game, no illustration outlines. Neutral studio upper-left illumination, subdued industrial materials, realistic small fasteners and manufactured geometry. Reference image 1 gives only material and lighting style. True transparent alpha outside full object, no opaque backdrop, shadows beyond object, glow, ground, environment, text, logos or watermark. Preserve a generous transparent margin around all sides. Strict ORTHOGRAPHIC installed side-case camera perpendicular to motherboard plane, looking at the TOP CAP of a single tower heatsink, NOT its upright front face. Projected footprint125mm horizontal by75mm vertical, exact width/height ratio1.667. A shallow rectangular brushed-silver top cap with six small round capped copper heatpipe tips in two rows of three, manufactured squared corners, subtle tidy top fin lines. The slim side EDGE of a muted beige/dark-brown fan is attached to the RIGHT edge of the cap, seen edge on only, with two small steel retention clips. No full circular fan face, no upright tall tower elevation, no perspective. Entire top outline including right fan edge must still be a flat125x75 footprint; 158mm tower height goes towards camera and is not drawn as vertical image height. Blank tiny inset rectangular nameplate, no text. Quiet premium original tower cooler using restrained natural beige/brown and silver. Strict nearly rectangular silhouette, not elongated to 2:1.",
+  "referencePaths": [
+    "art/source/style_review_v02.png"
+  ],
+  "transparent_background": true,
+  "sourcePath": "art/source/parts/cooler_quiet_side_v01.png",
+  "tool": "built_in_image_gen",
+  "intent": "generate",
+  "status": "generated_candidate",
+  "structuralBasis": "Original art using dimensions from design/components.json; projected orientation is an art implementation decision, not manufacturer verified internal geometry."
+}

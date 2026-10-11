@@ -1,0 +1,13 @@
+{
+  "id": "cpu_6500_side_v01",
+  "componentId": "cpu_6500",
+  "prompt": "Use case: product-mockup. One independent production sprite for Orangegame PC assembly game. Image 1 is a material/lighting style reference only; do not copy its composition. Relatively realistic restrained 3D game render, neutral light from upper left, gentle fill, sharp edges, no ink outlines, no exaggeration. Strictly orthographic straight-on camera, no tilt or perspective. Genuine transparent alpha background, complete silhouette with generous padding. No text, numbers, logos, watermark, ground, cast floor shadow, environment, additional objects or collage. Render one single LGA1151 desktop CPU from directly above the metal heat spreader. Square 35mm package, dull nickel-silver flat beveled heat spreader inside a thin matte green substrate border, tiny realistic keying notches on left and right edges. Empty clean heat spreader for separate engine label, no cooler, socket or paste, no pins visible from above. Square object aligned vertically, on square canvas.",
+  "sourcePath": "art/source/parts/cpu_6500_side_v01.png",
+  "tool": "built_in_image_gen",
+  "intent": "generate",
+  "useCase": "product-mockup",
+  "status": "production_candidate",
+  "referencePaths": [
+    "art/source/style_review_v02.png"
+  ]
+}

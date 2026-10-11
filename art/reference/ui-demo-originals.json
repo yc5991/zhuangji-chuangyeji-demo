@@ -1,0 +1,40 @@
+{
+  "scope": "Full original UI reference images retained before removing the obsolete proposal webpage",
+  "images": [
+    {
+      "original": "ui-demos/ChatGPT Image 2026年10月9日 00_29_25.png",
+      "retained": "art/source/ui/reference_workshop_v01.png",
+      "sha256": "a8a7be49ce93234c56b7e9481a58d3625274e94fb809886edcf5cbd996b91dfb"
+    },
+    {
+      "original": "ui-demos/ChatGPT Image 2026年10月9日 00_29_32.png",
+      "retained": "art/source/ui/reference_products_v01.png",
+      "sha256": "db414c6c2bb1e56d536d97f73d57d3327ad6eb9b5393983dcdc18ba7e96549c7"
+    },
+    {
+      "original": "ui-demos/ChatGPT Image 2026年10月9日 00_29_37.png",
+      "retained": "art/source/ui/reference_icons_v01.png",
+      "sha256": "15e88eefd8bfc140e83f7bcc901041ca70126d7209b26282c7571ef1b59151a1"
+    },
+    {
+      "original": "ui-demos/ChatGPT Image 2026年10月9日 00_29_40.png",
+      "retained": "art/source/ui/reference_orders_v01.png",
+      "sha256": "f7bb5cd3eeacfdc001c3d2742ed7d4f5e3cb9222179c3f48829403137dbd42a1"
+    },
+    {
+      "original": "ui-demos/ChatGPT Image 2026年10月9日 00_29_45.png",
+      "retained": "art/source/ui/reference_company_v01.png",
+      "sha256": "718b73e2fe0fe4a3f1f62bb7da341735315a978e2e1b1a4e4bc95a0a82f1a5c3"
+    },
+    {
+      "original": "ui-demos/ChatGPT Image 2026年10月9日 00_29_48.png",
+      "retained": "art/source/ui/reference_objects_v01.png",
+      "sha256": "e8a96dfd0bdb12203a43d2ff9685024b82c03630b7382b19a3868d129e737bf6"
+    },
+    {
+      "original": "ui-demos/ChatGPT Image 2026年10月9日 00_29_57.png",
+      "retained": "art/reference/ui_overview_v01.png",
+      "sha256": "831e7bd43924b9595d4d465e4b2803928a1b676fd974e81e92a52f1226570cd6"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "cooler_tower_side_v01",
+  "componentId": "cooler_tower",
+  "prompt": "Use case: product-mockup. One independent production sprite for Orangegame industrial PC assembly game. Image 1 is only material and lighting reference; do not copy composition/perspective. Realistic restrained 3D game render, neutral light from upper left and soft fill, crisp functional contours, no outlines, no cartoon shapes. True transparent alpha, complete silhouette with padding, no ground or cast ground shadow. STRICT ORTHOGRAPHIC straight-on camera without perspective or tilt. No text, logos, numbers, watermark, other objects, collage or environment. One tower CPU cooler in installed motherboard-side camera. The tower rises 155mm straight OUT TOWARD camera from CPU, so this strictly normal-to-motherboard view sees the TOP OF THE FIN TOWER, not the fan broad face. Rectangular brushed aluminium top cap / fin-stack end face with footprint 120mm horizontal (case rear at LEFT, front at RIGHT) by 80mm vertical. Six small copper heatpipe tips symmetrically spaced on silver face, tightly parallel fine fin edges and subtle believable screw/clip construction. A black 120mm fan's narrow EDGE and retention clip is visible at RIGHT of fin stack only, fan airflow goes RIGHT to LEFT toward rear of case, fan plane perpendicular to this image. NEVER a circular fan looking at viewer. No visible pedestal/base under top view, no mounting motherboard, no wires. Silhouette horizontal rectangle including thin fan edge, neutral silver and black, landscape canvas.",
+  "sourcePath": "art/source/parts/cooler_tower_side_v01.png",
+  "tool": "built_in_image_gen",
+  "intent": "generate",
+  "useCase": "product-mockup",
+  "status": "production_candidate",
+  "referencePaths": [
+    "art/source/style_review_v02.png"
+  ]
+}

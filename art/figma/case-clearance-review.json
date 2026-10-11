@@ -1,0 +1,178 @@
+{
+  "recordedDate": "2026-10-09",
+  "status": "projected_clearance_measured_no_collision_approval",
+  "provenance": "Original game envelope dimensions and manually estimated raster rail bands; measurement uncertainty about 3 source pixels, not manufacturer geometry",
+  "entries": [
+    {
+      "partId": "case_small",
+      "caseMm": [
+        330,
+        320
+      ],
+      "findings": [
+        {
+          "view": "side",
+          "sourcePath": "art/source/parts/case_small_side_v03.png",
+          "bodyRectLtrbPx": [
+            111,
+            88,
+            1170,
+            1085
+          ],
+          "separatorEstimatedSourceYRangePx": [
+            797,
+            819
+          ],
+          "psuEnvelopeRectMm": [
+            8,
+            4,
+            140,
+            86
+          ],
+          "psuTargetTopSourceY": 804.594,
+          "psuTopClearanceFromRailBottomMm": -4.624,
+          "meaning": "Negative projected gap means envelopes overlap in this view; it does not establish 3D collision because depth planes are not verified"
+        },
+        {
+          "view": "rear",
+          "sourcePath": "art/source/parts/case_small_rear_base_v01.png",
+          "bodyRectLtrbPx": [
+            95,
+            77,
+            1165,
+            1097
+          ],
+          "separatorEstimatedSourceYRangePx": [
+            790,
+            811
+          ],
+          "psuEnvelopeRectMm": [
+            8,
+            4,
+            140,
+            86
+          ],
+          "psuTargetTopSourceY": 810.125,
+          "psuTopClearanceFromRailBottomMm": -0.275,
+          "meaning": "Negative projected gap means envelopes overlap in this view; it does not establish 3D collision because depth planes are not verified",
+          "lowerSSDBottomToRailTopMm": 4.686
+        }
+      ],
+      "status": "pending_joint_depth_and_occlusion_review"
+    },
+    {
+      "partId": "case_standard",
+      "caseMm": [
+        430,
+        430
+      ],
+      "findings": [
+        {
+          "view": "side",
+          "sourcePath": "art/source/parts/case_standard_side_v04.png",
+          "bodyRectLtrbPx": [
+            78,
+            65,
+            1176,
+            1152
+          ],
+          "separatorEstimatedSourceYRangePx": [
+            879,
+            899
+          ],
+          "psuEnvelopeRectMm": [
+            8,
+            4,
+            180,
+            86
+          ],
+          "psuTargetTopSourceY": 924.488,
+          "psuTopClearanceFromRailBottomMm": 10.083,
+          "meaning": "Negative projected gap means envelopes overlap in this view; it does not establish 3D collision because depth planes are not verified"
+        },
+        {
+          "view": "rear",
+          "sourcePath": "art/source/parts/case_standard_rear_base_v01.png",
+          "bodyRectLtrbPx": [
+            99,
+            91,
+            1155,
+            1124
+          ],
+          "separatorEstimatedSourceYRangePx": [
+            866,
+            894
+          ],
+          "psuEnvelopeRectMm": [
+            8,
+            4,
+            180,
+            86
+          ],
+          "psuTargetTopSourceY": 907.791,
+          "psuTopClearanceFromRailBottomMm": 5.741,
+          "meaning": "Negative projected gap means envelopes overlap in this view; it does not establish 3D collision because depth planes are not verified",
+          "lowerSSDBottomToRailTopMm": -6.396
+        }
+      ],
+      "status": "pending_joint_depth_and_occlusion_review"
+    },
+    {
+      "partId": "case_quiet",
+      "caseMm": [
+        450,
+        460
+      ],
+      "findings": [
+        {
+          "view": "side",
+          "sourcePath": "art/source/parts/case_quiet_side_v03.png",
+          "bodyRectLtrbPx": [
+            67,
+            66,
+            1176,
+            1160
+          ],
+          "separatorEstimatedSourceYRangePx": [
+            888,
+            908
+          ],
+          "psuEnvelopeRectMm": [
+            8,
+            4,
+            180,
+            86
+          ],
+          "psuTargetTopSourceY": 945.957,
+          "psuTopClearanceFromRailBottomMm": 15.96,
+          "meaning": "Negative projected gap means envelopes overlap in this view; it does not establish 3D collision because depth planes are not verified"
+        },
+        {
+          "view": "rear",
+          "sourcePath": "art/source/parts/case_quiet_rear_base_v01.png",
+          "bodyRectLtrbPx": [
+            77,
+            87,
+            1146,
+            1161
+          ],
+          "separatorEstimatedSourceYRangePx": [
+            907,
+            930
+          ],
+          "psuEnvelopeRectMm": [
+            8,
+            4,
+            180,
+            86
+          ],
+          "psuTargetTopSourceY": 950.87,
+          "psuTopClearanceFromRailBottomMm": 8.939,
+          "meaning": "Negative projected gap means envelopes overlap in this view; it does not establish 3D collision because depth planes are not verified",
+          "lowerSSDBottomToRailTopMm": -7.79
+        }
+      ],
+      "status": "pending_joint_depth_and_occlusion_review"
+    }
+  ]
+}

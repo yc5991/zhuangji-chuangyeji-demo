@@ -14,6 +14,8 @@ Do not silently assign a family launch date to a later physical variant. Null fi
 
 Do not invent specifications or cite an unopened URL. Unknown technical fields are null and appear in gaps. Inferred physical attributes are recorded in inferredFields with a nearby reason. Gameplay scores, prices and failure rates are excluded from this reference catalog. Game series names, supply lag and workshop positioning are creative design candidates.
 
+Provenance field lists use full dotted paths from the product root. A specification is `specs.socket`, never `socket`; actual root fields such as `realModel` retain their root path. Each path must resolve, each list must be unique, and the verified/inferred lists must not overlap. Null may be an explicitly inferred unknown but cannot be verified. Capacity tiers of a family remain inferred unless the cited source itself documents those tiers. `node tools/normalize-catalog.cjs --write` performs an idempotent migration of paths only and asserts that every other product value is unchanged. `npm run check:suppliers` rejects aliases and unresolved paths.
+
 brandCoverage: {brandId, roles: [], status: researched | partial | upstream_only | group_only | outside_phase | unresolved, productIds: [], note, sourceIds: []}. Cover every assigned registry brand even if no eligible product exists. Unverified old availability is partial/unresolved, never an established fact. First-phase exclusion does not remove full-game placeholders.
 
 Event: {id, month: YYYY-MM, type, title, productIds: [], sourceIds: [], status: verified | inferred, procurementEffect}. Exclusion: {brandId, category, notBefore: YYYY-MM | null, reason, sourceIds: []}. Gaps are explicit {subject, missingEvidence, gameResolution} records.

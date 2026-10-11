@@ -694,11 +694,11 @@
         ]
       },
       "verifiedFields": [
-        "memoryType",
-        "frequencyMTs",
-        "capacityGB",
-        "moduleType",
-        "profile"
+        "specs.memoryType",
+        "specs.frequencyMTs",
+        "specs.capacityGB",
+        "specs.moduleType",
+        "specs.profile"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -929,8 +929,8 @@
         "profile": "UDIMM / XMP profile and platform support determine achieved speed"
       },
       "verifiedFields": [
-        "memoryType",
-        "frequencyMTs"
+        "specs.memoryType",
+        "specs.frequencyMTs"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -1074,8 +1074,8 @@
         "profile": "UDIMM / RGB heat spreader; exact variant SPD not verified"
       },
       "verifiedFields": [
-        "memoryType",
-        "frequencyMTs"
+        "specs.memoryType",
+        "specs.frequencyMTs"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -1149,13 +1149,13 @@
         ]
       },
       "verifiedFields": [
-        "memoryType",
-        "moduleType"
+        "specs.memoryType",
+        "specs.moduleType"
       ],
       "inferredFields": [
         "gameAvailability.from",
         "gameAvailability.basis",
-        "capacityGB",
+        "specs.capacityGB",
         "release.date"
       ],
       "sourceIds": [
@@ -1224,13 +1224,13 @@
         ]
       },
       "verifiedFields": [
-        "memoryType",
-        "moduleType"
+        "specs.memoryType",
+        "specs.moduleType"
       ],
       "inferredFields": [
         "gameAvailability.from",
         "gameAvailability.basis",
-        "capacityGB",
+        "specs.capacityGB",
         "release.date"
       ],
       "sourceIds": [
@@ -1298,7 +1298,7 @@
         "profile": "UDIMM / RGB line announced with 2017-01 distribution window"
       },
       "verifiedFields": [
-        "memoryType",
+        "specs.memoryType",
         "release.date"
       ],
       "inferredFields": [
@@ -1370,8 +1370,8 @@
         "profile": "UDIMM / XMP configuration; exact kit timing varies"
       },
       "verifiedFields": [
-        "memoryType",
-        "frequencyMTs"
+        "specs.memoryType",
+        "specs.frequencyMTs"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -1452,8 +1452,8 @@
         "profile": "UDIMM / 2017 datasheet: RGB, SPD 2666 on named platform; XMP 2.0"
       },
       "verifiedFields": [
-        "memoryType",
-        "frequencyMTs"
+        "specs.memoryType",
+        "specs.frequencyMTs"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -1529,8 +1529,8 @@
         "profile": "UDIMM / indexed flyer lists 2666; PDF fetch timed out"
       },
       "verifiedFields": [
-        "memoryType",
-        "frequencyMTs"
+        "specs.memoryType",
+        "specs.frequencyMTs"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -1605,8 +1605,8 @@
         "profile": "UDIMM / indexed flyer lists 3200; XMP/platform specifics need SKU sheet"
       },
       "verifiedFields": [
-        "memoryType",
-        "frequencyMTs"
+        "specs.memoryType",
+        "specs.frequencyMTs"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -1683,12 +1683,12 @@
         ]
       },
       "verifiedFields": [
-        "memoryType"
+        "specs.memoryType"
       ],
       "inferredFields": [
         "gameAvailability.from",
         "gameAvailability.basis",
-        "capacityGB"
+        "specs.capacityGB"
       ],
       "sourceIds": [
         "crucial_ballistix"
@@ -1969,10 +1969,10 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -2055,10 +2055,10 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -2130,10 +2130,10 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -2210,10 +2210,10 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor"
       ],
       "inferredFields": [],
       "sourceIds": [
@@ -2289,11 +2289,11 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor",
-        "capacityGB"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor",
+        "specs.capacityGB"
       ],
       "inferredFields": [],
       "sourceIds": [
@@ -2364,11 +2364,11 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor",
-        "capacityGB"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor",
+        "specs.capacityGB"
       ],
       "inferredFields": [],
       "sourceIds": [
@@ -2437,10 +2437,10 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor"
       ],
       "inferredFields": [],
       "sourceIds": [
@@ -2515,11 +2515,11 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor",
-        "capacityGB"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor",
+        "specs.capacityGB"
       ],
       "inferredFields": [],
       "sourceIds": [
@@ -2586,11 +2586,11 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor",
-        "capacityGB"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor",
+        "specs.capacityGB"
       ],
       "inferredFields": [],
       "sourceIds": [
@@ -2658,10 +2658,10 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor"
       ],
       "inferredFields": [],
       "sourceIds": [
@@ -2731,10 +2731,10 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor"
       ],
       "inferredFields": [],
       "sourceIds": [
@@ -2799,11 +2799,11 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor",
-        "capacityGB"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor",
+        "specs.capacityGB"
       ],
       "inferredFields": [],
       "sourceIds": [
@@ -2875,10 +2875,10 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor"
       ],
       "inferredFields": [],
       "sourceIds": [
@@ -2946,10 +2946,10 @@
         ]
       },
       "verifiedFields": [
-        "interface",
-        "protocol",
-        "formFactor",
-        "capacityGB"
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor",
+        "specs.capacityGB"
       ],
       "inferredFields": [
         "release.date",
@@ -3026,10 +3026,10 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -3106,11 +3106,11 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor",
-        "capacityGB"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor",
+        "specs.capacityGB"
       ],
       "inferredFields": [
         "release.date",
@@ -3189,11 +3189,11 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor",
-        "capacityGB"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor",
+        "specs.capacityGB"
       ],
       "inferredFields": [
         "release.date",
@@ -3265,11 +3265,11 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor",
-        "capacityGB"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor",
+        "specs.capacityGB"
       ],
       "inferredFields": [
         "release.date",
@@ -3345,10 +3345,10 @@
         ]
       },
       "verifiedFields": [
-        "interface",
-        "protocol",
-        "formFactor",
-        "capacityGB"
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor",
+        "specs.capacityGB"
       ],
       "inferredFields": [
         "release.date",
@@ -3422,10 +3422,10 @@
         ]
       },
       "verifiedFields": [
-        "interface",
-        "protocol",
-        "formFactor",
-        "capacityGB"
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor",
+        "specs.capacityGB"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -3891,10 +3891,10 @@
         ]
       },
       "verifiedFields": [
-        "interface",
-        "protocol",
-        "formFactor",
-        "capacityGB"
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor",
+        "specs.capacityGB"
       ],
       "inferredFields": [
         "release.date",
@@ -3975,8 +3975,8 @@
         ]
       },
       "verifiedFields": [
-        "interface",
-        "formFactor"
+        "specs.interface",
+        "specs.formFactor"
       ],
       "inferredFields": [
         "specs.mediaType",
@@ -4133,10 +4133,10 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -4212,11 +4212,11 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor",
-        "capacityGB"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor",
+        "specs.capacityGB"
       ],
       "inferredFields": [
         "release.date",
@@ -4295,10 +4295,10 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -4367,10 +4367,10 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -4437,11 +4437,11 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor",
-        "capacityGB"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor",
+        "specs.capacityGB"
       ],
       "inferredFields": [],
       "sourceIds": [
@@ -4509,11 +4509,11 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor",
-        "capacityGB"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor",
+        "specs.capacityGB"
       ],
       "inferredFields": [
         "release.date",
@@ -4588,10 +4588,10 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -4663,10 +4663,10 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -4740,11 +4740,11 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor",
-        "capacityGB"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor",
+        "specs.capacityGB"
       ],
       "inferredFields": [],
       "sourceIds": [
@@ -4819,11 +4819,11 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor",
-        "capacityGB"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor",
+        "specs.capacityGB"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -4894,11 +4894,11 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor",
-        "capacityGB"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor",
+        "specs.capacityGB"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -4979,10 +4979,10 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "formFactor",
-        "capacityGB"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.formFactor",
+        "specs.capacityGB"
       ],
       "inferredFields": [
         "specs.protocol",
@@ -5202,10 +5202,10 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -5299,10 +5299,10 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -5389,10 +5389,10 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -5463,10 +5463,10 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -5554,10 +5554,10 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -5628,10 +5628,10 @@
         ]
       },
       "verifiedFields": [
-        "interface",
-        "protocol",
-        "formFactor",
-        "capacityGB"
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor",
+        "specs.capacityGB"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -5777,8 +5777,8 @@
         "profile": "UDIMM; release month unverified"
       },
       "verifiedFields": [
-        "memoryType",
-        "frequencyMTs"
+        "specs.memoryType",
+        "specs.frequencyMTs"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -5849,10 +5849,10 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -5912,9 +5912,9 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "formFactor"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.formFactor"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -5974,10 +5974,10 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -6050,10 +6050,10 @@
         ]
       },
       "verifiedFields": [
-        "memoryType",
-        "frequencyMTs",
-        "capacityGB",
-        "moduleType"
+        "specs.memoryType",
+        "specs.frequencyMTs",
+        "specs.capacityGB",
+        "specs.moduleType"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -6124,11 +6124,11 @@
         ]
       },
       "verifiedFields": [
-        "memoryType",
-        "frequencyMTs",
-        "capacityGB",
-        "moduleType",
-        "profile"
+        "specs.memoryType",
+        "specs.frequencyMTs",
+        "specs.capacityGB",
+        "specs.moduleType",
+        "specs.profile"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -6192,10 +6192,10 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -6255,10 +6255,10 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -6318,10 +6318,10 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -6381,10 +6381,10 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -6444,10 +6444,10 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -6507,10 +6507,10 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor"
       ],
       "inferredFields": [
         "release.date",
@@ -6571,10 +6571,10 @@
         ]
       },
       "verifiedFields": [
-        "mediaType",
-        "interface",
-        "protocol",
-        "formFactor"
+        "specs.mediaType",
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor"
       ],
       "inferredFields": [
         "gameAvailability.from",
@@ -6638,10 +6638,10 @@
         ]
       },
       "verifiedFields": [
-        "interface",
-        "protocol",
-        "formFactor",
-        "capacityGB"
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor",
+        "specs.capacityGB"
       ],
       "inferredFields": [
         "release.date",
@@ -6719,10 +6719,10 @@
         ]
       },
       "verifiedFields": [
-        "interface",
-        "protocol",
-        "formFactor",
-        "capacityGB"
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor",
+        "specs.capacityGB"
       ],
       "inferredFields": [
         "release.date",
@@ -6798,10 +6798,10 @@
         ]
       },
       "verifiedFields": [
-        "interface",
-        "protocol",
-        "formFactor",
-        "capacityGB"
+        "specs.interface",
+        "specs.protocol",
+        "specs.formFactor",
+        "specs.capacityGB"
       ],
       "inferredFields": [
         "release.date",

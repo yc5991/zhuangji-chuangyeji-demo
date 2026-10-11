@@ -1,0 +1,14 @@
+{
+  "id": "cooler_low_frame_v01",
+  "componentId": "cooler_low",
+  "referencePaths": [
+    "art/source/parts/cooler_low_side_v01.png"
+  ],
+  "prompt": "Edit provided installed low-profile CPU cooler to prepare a STATIC FRAME sprite. REMOVE ALL seven central rotating fan blades and the round central hub, replacing their occluded region with believable uniformly parallel aluminum heatsink fins underneath. Preserve exact outer square frame, mounting ears and four screws, material, neutral lighting, camera, body position and dimensions. REMOVE short cable and incorrect3-contact connector entirely from lower right; wired connector will be supplied as independent correct4pin game asset. Keep circular inside-frame opening with heatsink fins visible throughout, not transparency or empty backdrop inside this circle. Output just fixed frame plus heatsink, no rotor, no loose wires, no text, no background. Maintain real alpha everywhere outside entire fixed body silhouette. No other changes.",
+  "tool": "built_in_image_gen",
+  "intent": "edit",
+  "transparent_background": true,
+  "status": "generated_candidate",
+  "sourcePath": "art/source/parts/cooler_low_frame_v01.png",
+  "structuralBasis": "Original game component projection or animation layers; edits retain references and prior source versions."
+}

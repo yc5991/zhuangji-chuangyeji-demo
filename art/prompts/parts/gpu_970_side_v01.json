@@ -1,0 +1,13 @@
+{
+  "id": "gpu_970_side_v01",
+  "componentId": "gpu_970",
+  "prompt": "Use case: product-mockup. One independent GPU INSTALLED SIDE-EDGE sprite for Orangegame relatively realistic PC simulator art. Image 1 gives material/lighting style only. Strict orthographic left-case side view, rear metal expansion bracket LEFT, card tip RIGHT, PCB horizontal at TOP, cooler below. Fans face DOWN into lower case, so NEVER show full circular fan faces toward camera. Narrow long rail side, real silver heatsink slits, matte black plastic, realistic metal screw ear left. Neutral upper-left light and soft fill. Transparent alpha outside full silhouette, no environment, floor, glow, cables, motherboard, labels, logos, numbers, golden connector broad face or watermark. Original game shell illustration, no exact manufacturer cooler claim. Long 277mm length by35mm thick dual-fan 2015 gaming card. Wide slender SIDE edge of original twin-fan matte black shroud with a restrained deep RED rail accent, broad exposed silver fin slits, two underside fan rim bumps only. Two unconnected PCIe power sockets toward right end: one 6-pin (2x3 contacts) and one 8-pin (2x4 contacts), distinct adjacent blocks. Blank small silver side nameplate, no decorative eyes or dragon motif. Thin PCB strip along top; do not show broad backplate facing camera.",
+  "sourcePath": "art/source/parts/gpu_970_side_v01.png",
+  "referencePaths": [
+    "art/source/style_review_v02.png"
+  ],
+  "tool": "built_in_image_gen",
+  "intent": "generate",
+  "status": "production_candidate",
+  "structuralBasis": "Dimensions and power inputs from design/components.json; artwork shell and exact pixel connector positions are original art decisions."
+}

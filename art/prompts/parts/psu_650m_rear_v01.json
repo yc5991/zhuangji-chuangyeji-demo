@@ -1,0 +1,17 @@
+{
+  "id": "psu_650m_rear_v01",
+  "componentId": "psu_650m",
+  "referencePaths": [
+    "art/source/style_review_v02.png",
+    "art/source/parts/psu_450_side_v02.png"
+  ],
+  "intent": "generate",
+  "structuralBasis": "Original semi-modular game opposite-side rectangle,160x86projection.",
+  "prompt": "Use case: product-mockup. OneisolatedgraphitepowdercoatSTEELPLATEofsemimodularPSU, strictORTHOGRAPHICbroadoppositesideprojection, no topplane, no endplane. Cameraexactperpendiculartoface. RECTANGLEwidth160mm height86mm, ratio1.86 (slightlywiderthanreference2ratio1.63), fourparallelstraightouteredges. FourtinysmallPhilipsroundscrewsnearcorner, smallblankgraystampplateupperleft, simple foldedlowerflange, matteindustrialgrain andneutralupperleftlight asreference1. No fancarving/grille, no cablegrommetonthisside, no connectorholes, no wire, no text/logos. Transparentmargin around allfour edges,truealpha,nooutershadow,environment,glow,watermark. Thinksimplealmostsquaresteelrectangle,widthless thantwiceheight, doNOTmakewide2.4ratio.",
+  "tool": "built_in_image_gen",
+  "transparent_background": true,
+  "status": "generated_candidate",
+  "sourcePath": "art/source/parts/psu_650m_rear_v01.png",
+  "generatedOutputFile": "exec-b9505e4b-ab61-4378-9dc3-3fbed65dc981.png",
+  "resultRecovery": "Recovered completed tool output after session interruption; matched by visual identity and recorded prompt"
+}

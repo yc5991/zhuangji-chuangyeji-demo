@@ -1,0 +1,398 @@
+{
+  "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+  "pageId": "1:2",
+  "status": "actual_png_exports_collected",
+  "method": "Figma raster layer composition with explicit fixed physical SSD placements and actual native PNG export",
+  "entries": [
+    {
+      "partId": "case_small",
+      "view": "rear",
+      "name": "case_small_rear_aligned_v01",
+      "sourcePath": "art/source/parts/case_small_rear_base_v01.png",
+      "promptPath": "art/prompts/parts/case_small_rear_base_v01.json",
+      "sourceSizePx": [
+        1254,
+        1254
+      ],
+      "sourceBodyRectLtrbPx": [
+        95,
+        77,
+        1165,
+        1097
+      ],
+      "bodyRectLtrbPx": [
+        9.36,
+        7.488,
+        1010.896,
+        962.223
+      ],
+      "sourceCropLtrbPx": [
+        85,
+        69,
+        1179,
+        1127
+      ],
+      "scale": 0.9360146252285192,
+      "proposedExportPx": [
+        1024,
+        990.3034734917733
+      ],
+      "wrapperPath": ".local/figma-import/batch-case-layer/case_small_rear_aligned_v01.svg",
+      "state": "exported_for_review",
+      "composition": {
+        "background": "art/source/parts/case_small_rear_base_v01.png",
+        "plates": [
+          {
+            "slotId": "ssd0",
+            "rectMm": [
+              250,
+              101,
+              69.85,
+              100
+            ],
+            "sourceCropPath": "art/source/parts/case_small_rear_v03.png",
+            "sourceCropLtrbPx": [
+              151,
+              138,
+              361,
+              434
+            ],
+            "targetSourceRectLtrbPx": [
+              127.91060606060609,
+              456.3125,
+              354.3939393939394,
+              775.0625
+            ],
+            "figmaLocalRectPx": [
+              40.16495485014683,
+              362.5301645338208,
+              211.99171237050578,
+              298.3546617915905
+            ],
+            "provenance": "Raster crop from built-in original drawing; exact Figma layer placement from original game SSD envelopes"
+          },
+          {
+            "slotId": "ssd1",
+            "rectMm": [
+              250,
+              208,
+              69.85,
+              100
+            ],
+            "sourceCropPath": "art/source/parts/case_small_rear_v03.png",
+            "sourceCropLtrbPx": [
+              151,
+              138,
+              361,
+              434
+            ],
+            "targetSourceRectLtrbPx": [
+              127.91060606060609,
+              115.25,
+              354.3939393939394,
+              434
+            ],
+            "figmaLocalRectPx": [
+              40.16495485014683,
+              43.29067641681901,
+              211.99171237050578,
+              298.3546617915905
+            ],
+            "provenance": "Raster crop from built-in original drawing; exact Figma layer placement from original game SSD envelopes"
+          }
+        ],
+        "method": "Figma native imported clipped raster layers, not software-repainted source PNG"
+      },
+      "figmaExportNodeId": "35:20",
+      "uiPosition": [
+        26000,
+        2600
+      ],
+      "stagingPath": "art/exports/parts/case_small_rear_aligned_v01.png",
+      "exportPx": [
+        1024,
+        991
+      ],
+      "outlinePx": [
+        4,
+        3,
+        1017,
+        984
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board",
+        "projection": "orthographic_candidate_checked",
+        "direction": "front_left_rear_right",
+        "tray": "opaque_solid_matches_selected_side",
+        "lowerBay": "PSU_right_HDD_cage_left_matches_mirrored_side",
+        "SSDAlignment": "fixed_geometry_layer_positions_exported_pending_runtime_clearance",
+        "expansionEdges": "small_four_checked; standard_quiet_edge_count_requires_final_detail_review",
+        "approval": "pending_joint_runtime_installation_review",
+        "lowerBayClearance": "needs_PSU_separator_and_lower_SSD_rail_joint_check"
+      }
+    },
+    {
+      "partId": "case_standard",
+      "view": "rear",
+      "name": "case_standard_rear_aligned_v01",
+      "sourcePath": "art/source/parts/case_standard_rear_base_v01.png",
+      "promptPath": "art/prompts/parts/case_standard_rear_base_v01.json",
+      "sourceSizePx": [
+        1254,
+        1254
+      ],
+      "sourceBodyRectLtrbPx": [
+        99,
+        91,
+        1155,
+        1124
+      ],
+      "bodyRectLtrbPx": [
+        6.687,
+        8.597,
+        1015.403,
+        995.343
+      ],
+      "sourceCropLtrbPx": [
+        92,
+        82,
+        1164,
+        1153
+      ],
+      "scale": 0.9552238805970149,
+      "proposedExportPx": [
+        1024,
+        1023.044776119403
+      ],
+      "wrapperPath": ".local/figma-import/batch-case-layer/case_standard_rear_aligned_v01.svg",
+      "state": "exported_for_review",
+      "composition": {
+        "background": "art/source/parts/case_standard_rear_base_v01.png",
+        "plates": [
+          {
+            "slotId": "ssd0",
+            "rectMm": [
+              350,
+              101,
+              69.85,
+              100
+            ],
+            "sourceCropPath": "art/source/parts/case_small_rear_v03.png",
+            "sourceCropLtrbPx": [
+              151,
+              138,
+              361,
+              434
+            ],
+            "targetSourceRectLtrbPx": [
+              123.92651162790699,
+              641.1325581395349,
+              295.4651162790698,
+              881.3651162790698
+            ],
+            "figmaLocalRectPx": [
+              30.496966331135035,
+              534.0967719541826,
+              163.85777160708088,
+              229.47587643179452
+            ],
+            "provenance": "Raster crop from built-in original drawing; exact Figma layer placement from original game SSD envelopes"
+          },
+          {
+            "slotId": "ssd1",
+            "rectMm": [
+              350,
+              208,
+              69.85,
+              100
+            ],
+            "sourceCropPath": "art/source/parts/case_small_rear_v03.png",
+            "sourceCropLtrbPx": [
+              151,
+              138,
+              361,
+              434
+            ],
+            "targetSourceRectLtrbPx": [
+              123.92651162790699,
+              384.0837209302325,
+              295.4651162790698,
+              624.3162790697675
+            ],
+            "figmaLocalRectPx": [
+              30.496966331135035,
+              288.5575841721624,
+              163.85777160708088,
+              229.47587643179452
+            ],
+            "provenance": "Raster crop from built-in original drawing; exact Figma layer placement from original game SSD envelopes"
+          }
+        ],
+        "method": "Figma native imported clipped raster layers, not software-repainted source PNG"
+      },
+      "figmaExportNodeId": "35:14",
+      "uiPosition": [
+        27200,
+        2600
+      ],
+      "stagingPath": "art/exports/parts/case_standard_rear_aligned_v01.png",
+      "exportPx": [
+        1024,
+        1024
+      ],
+      "outlinePx": [
+        4,
+        5,
+        1016,
+        1014
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board",
+        "projection": "orthographic_candidate_checked",
+        "direction": "front_left_rear_right",
+        "tray": "opaque_solid_matches_selected_side",
+        "lowerBay": "PSU_right_HDD_cage_left_matches_mirrored_side",
+        "SSDAlignment": "fixed_geometry_layer_positions_exported_pending_runtime_clearance",
+        "expansionEdges": "small_four_checked; standard_quiet_edge_count_requires_final_detail_review",
+        "approval": "pending_joint_runtime_installation_review",
+        "lowerBayClearance": "needs_PSU_separator_and_lower_SSD_rail_joint_check"
+      }
+    },
+    {
+      "partId": "case_quiet",
+      "view": "rear",
+      "name": "case_quiet_rear_aligned_v01",
+      "sourcePath": "art/source/parts/case_quiet_rear_base_v01.png",
+      "promptPath": "art/prompts/parts/case_quiet_rear_base_v01.json",
+      "sourceSizePx": [
+        1232,
+        1277
+      ],
+      "sourceBodyRectLtrbPx": [
+        77,
+        87,
+        1146,
+        1161
+      ],
+      "bodyRectLtrbPx": [
+        4.604,
+        4.604,
+        989.007,
+        993.612
+      ],
+      "sourceCropLtrbPx": [
+        72,
+        82,
+        1172,
+        1194
+      ],
+      "scale": 0.920863309352518,
+      "proposedExportPx": [
+        1012.9496402877699,
+        1024
+      ],
+      "wrapperPath": ".local/figma-import/batch-case-layer/case_quiet_rear_aligned_v01.svg",
+      "state": "exported_for_review",
+      "composition": {
+        "background": "art/source/parts/case_quiet_rear_base_v01.png",
+        "plates": [
+          {
+            "slotId": "ssd0",
+            "rectMm": [
+              370,
+              101,
+              69.85,
+              100
+            ],
+            "sourceCropPath": "art/source/parts/case_small_rear_v03.png",
+            "sourceCropLtrbPx": [
+              151,
+              138,
+              361,
+              434
+            ],
+            "targetSourceRectLtrbPx": [
+              101.1118888888889,
+              691.7086956521739,
+              267.0444444444444,
+              925.1869565217391
+            ],
+            "figmaLocalRectPx": [
+              26.80807034372503,
+              561.4583672192681,
+              152.8012022382094,
+              215.00156396621836
+            ],
+            "provenance": "Raster crop from built-in original drawing; exact Figma layer placement from original game SSD envelopes"
+          },
+          {
+            "slotId": "ssd1",
+            "rectMm": [
+              370,
+              208,
+              69.85,
+              100
+            ],
+            "sourceCropPath": "art/source/parts/case_small_rear_v03.png",
+            "sourceCropLtrbPx": [
+              151,
+              138,
+              361,
+              434
+            ],
+            "targetSourceRectLtrbPx": [
+              101.1118888888889,
+              441.88695652173914,
+              267.0444444444444,
+              675.3652173913043
+            ],
+            "figmaLocalRectPx": [
+              26.80807034372503,
+              331.40669377541445,
+              152.8012022382094,
+              215.00156396621836
+            ],
+            "provenance": "Raster crop from built-in original drawing; exact Figma layer placement from original game SSD envelopes"
+          }
+        ],
+        "method": "Figma native imported clipped raster layers, not software-repainted source PNG"
+      },
+      "figmaExportNodeId": "35:26",
+      "uiPosition": [
+        28400,
+        2600
+      ],
+      "stagingPath": "art/exports/parts/case_quiet_rear_aligned_v01.png",
+      "exportPx": [
+        1013,
+        1024
+      ],
+      "outlinePx": [
+        3,
+        3,
+        1007,
+        1017
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board",
+        "projection": "orthographic_candidate_checked",
+        "direction": "front_left_rear_right",
+        "tray": "opaque_solid_matches_selected_side",
+        "lowerBay": "PSU_right_HDD_cage_left_matches_mirrored_side",
+        "SSDAlignment": "fixed_geometry_layer_positions_exported_pending_runtime_clearance",
+        "expansionEdges": "small_four_checked; standard_quiet_edge_count_requires_final_detail_review",
+        "approval": "pending_joint_runtime_installation_review",
+        "lowerBayClearance": "needs_PSU_separator_and_lower_SSD_rail_joint_check"
+      }
+    }
+  ]
+}

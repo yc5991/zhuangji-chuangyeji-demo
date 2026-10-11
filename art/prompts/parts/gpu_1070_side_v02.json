@@ -1,0 +1,16 @@
+{
+  "id": "gpu_1070_side_v02",
+  "componentId": "gpu_1070",
+  "tool": "built_in_image_gen",
+  "intent": "edit",
+  "status": "generated_candidate",
+  "sourcePath": "art/source/parts/gpu_1070_side_v02.png",
+  "referencePaths": [
+    "art/source/parts/gpu_1070_side_v01.png"
+  ],
+  "transparent_background": true,
+  "structuralBasis": "Power8pin from catalog; removal of incorrect broad contact edge for installed camera.",
+  "prompt": "Precise local edit of supplied GPU installed side-edge sprite. Fix TWO visible errors, preserve shroud/margins/camera/materials/alpha otherwise.1) AtupperRIGHT change the single visible blackpower socket from sixcontacts to EXACTLY EIGHT contacts, TWO horizontal rows of FOUR distinctsquare sockets (2x4), enlarge socket width a little to fit fourth column. Keep thissingle socket.2) REMOVE entire broadgoldenconnectorfingerrow alongTOP of card; replace with matching thin darkPCBedge and tinycomponents. PCIe goldcontactface is inserted beneath motherboard plane and mustnotbevisible to thisinstalled sidecamera. Retaincard side-horizontalrails, metalbracketLEFT, fanonly as loweredgebumps,no fullfanface. Transparentalpha outside fullsilhouette,no newlogos/text, nofloor/shadows.",
+  "generatedOutputFile": "exec-dd523055-1fc8-40c5-a9ef-9e012f82d5de.png",
+  "resultRecovery": "Recovered completed tool output after session interruption; matched by visual identity and recorded prompt"
+}

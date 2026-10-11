@@ -1,0 +1,14 @@
+{
+  "id": "psu_650m_side_v01",
+  "componentId": "psu_650m",
+  "prompt": "Use case: product-mockup. Draw ONE isolated independent raster hardware sprite for Orangegame, a relatively realistic PC Building Simulator inspired game, no illustration outlines. Neutral studio upper-left illumination, subdued industrial materials, realistic small fasteners and manufactured geometry. Reference image 1 gives only material and lighting style. True transparent alpha outside full object, no opaque backdrop, shadows beyond object, glow, ground, environment, text, logos or watermark. Preserve a generous transparent margin around all sides. Strict ORTHOGRAPHIC installed side view of a single ATX semi-modular power supply metal box. The rectangular SIDE PANEL facing camera is160mm depth horizontal by86mm height vertical, ratio1.86. Squared graphite powdercoat steel with tiny folded flanges, FOUR actual small round Philips screws near corners, one clean blank light gray rectangular specification plate on central side occupying50 percent panel, a very narrow slightly warmer metal fold on lower edge. Case rear atLEFT, front facingRIGHT. Modular port panel is on right end and therefore not visible straight-on; do not add power sockets on broad side. No fan grille on this side, no cables, no IEC AC input facing camera, no installed case. Proportion ratio1.86 not2.5, keep perimeter parallel; box side complete isolated transparent image.",
+  "referencePaths": [
+    "art/source/style_review_v02.png"
+  ],
+  "transparent_background": true,
+  "sourcePath": "art/source/parts/psu_650m_side_v01.png",
+  "tool": "built_in_image_gen",
+  "intent": "generate",
+  "status": "generated_candidate",
+  "structuralBasis": "Original art using dimensions from design/components.json; projected orientation is an art implementation decision, not manufacturer verified internal geometry."
+}

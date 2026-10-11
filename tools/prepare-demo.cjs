@@ -82,6 +82,14 @@ for(const entry of artwork.entries) {
   if(!entry.outlinePx||entry.outlinePx.length!==4||!entry.pivot||entry.pivot.length!==2) throw new Error(`Artwork outline or pivot missing: ${entry.partId}`);
   const file=path.join(root,'assets/art',entry.bundle,entry.path+'.png');
   if(!fs.existsSync(file)) throw new Error(`Artwork export missing: ${entry.path}`);
+  // The UI loads /spriteFrame subassets. Preserve UUIDs while selecting the correct importer mode.
+  if(fs.existsSync(file+'.meta')) {
+    const metadata=JSON.parse(fs.readFileSync(file+'.meta','utf8'));
+    if(metadata.userData?.type!=='sprite-frame') {
+      metadata.userData={...metadata.userData,type:'sprite-frame'};
+      fs.writeFileSync(file+'.meta',JSON.stringify(metadata,null,2)+'\n');
+    }
+  }
   const png=fs.readFileSync(file),width=png.readUInt32BE(16),height=png.readUInt32BE(20),[x,y,w,h]=entry.outlinePx;
   if(![x,y,w,h,...entry.pivot].every(Number.isFinite)||x<0||y<0||w<=0||h<=0||x+w>width||y+h>height||entry.pivot.some(p=>p<0||p>1))throw new Error(`Artwork bounds outside export: ${entry.partId}`);
   if(entry.exportPx&&(entry.exportPx[0]!==width||entry.exportPx[1]!==height))throw new Error(`Artwork export dimensions changed: ${entry.partId}`);
@@ -97,7 +105,7 @@ function metaTree(dir) {
     const meta=full+'.meta';
     if(!fs.existsSync(meta)) {
       const importer=entry.isDirectory()?'directory':entry.name.endsWith('.ts')?'typescript':entry.name.endsWith('.json')?'json':'image';
-      fs.writeFileSync(meta,JSON.stringify({ver:importer==='directory'?'1.2.0':importer==='typescript'?'4.0.24':importer==='json'?'1.0.0':'1.0.27',importer,imported:true,uuid:crypto.randomUUID(),files:[],subMetas:{},userData:{}},null,2)+'\n');
+      fs.writeFileSync(meta,JSON.stringify({ver:importer==='directory'?'1.2.0':importer==='typescript'?'4.0.24':importer==='json'?'1.0.0':'1.0.27',importer,imported:true,uuid:crypto.randomUUID(),files:[],subMetas:{},userData:importer==='image'?{type:'sprite-frame'}:{}},null,2)+'\n');
     }
     if(entry.isDirectory()) metaTree(full);
   }

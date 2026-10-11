@@ -1,0 +1,27 @@
+{
+  "id": "gpu_960_product_v02",
+  "componentId": "gpu_960",
+  "tool": "built_in_image_gen",
+  "intent": "edit",
+  "status": "generated_candidate",
+  "sourcePath": "art/source/parts/gpu_960_product_v02.png",
+  "referencePaths": [
+    "art/source/parts/gpu_960_product_v01.png"
+  ],
+  "transparent_background": true,
+  "verifiedManufacturerReference": {
+    "referenceUrl": "https://www.msi.com/Graphics-Card/GTX-960-2GD5/Specification",
+    "portCounts": {
+      "dvi": 1,
+      "hdmi": 1,
+      "displayPort": 3
+    },
+    "checkedDate": "2026-10-08"
+  },
+  "originalArt": {
+    "connectorPositions": "Proposed layout on original game shield, not verified exact reference placement"
+  },
+  "prompt": "Precise local object edit: correctONLY silverI/OEXPANSIONBRACKETatLEFTedge ofgraphicscard. Preserve entirefanface,shroud,color,materials,camera,PCB,powerinputs,goldfingeredge,silhouetteandtransparency. The currentimage incorrectly showsrepeatedidenticalsmallHDMIports. Onleftmetalbracket, reconstructrealistic manufacturer-reference portTYPES andCOUNTS: EXACTLY FIVE connectorports: ONElargewhitishDVI-Imultipinport, ONEsmallHDMItrapezoidalport, THREEsmallDisplayPortportswithonebeveledcorner each. DVIportmuchlargerthanothers, withrealisticpinholes andtwojackscrewstandoffs. Do NOTmakefouridenticalHDMIports. Orientallconnectorswith bracket'sprojectedvertical face, nothorizontalfloatingports. Smallmetalventslits use remainingblankbracketarea, keeping entirebracketshapes andorientation. No brandtext/labels, nocables. Allothercardpixels shouldretainoriginalart unchanged. Keepactualtransparentalpha outsidefullobject and noouterglow/hazyshadow.",
+  "generatedOutputFile": "exec-9d421125-e4c0-46e8-a0bc-e8560b98a906.png",
+  "resultRecovery": "Recovered completed tool output after session interruption; matched by visual identity and recorded prompt"
+}

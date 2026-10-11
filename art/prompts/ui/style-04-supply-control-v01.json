@@ -1,0 +1,14 @@
+{
+  "id": "style-04-supply-control-v01",
+  "useCase": "ui-mockup",
+  "assetType": "single full-screen mobile management game UI concept, portrait 9:16",
+  "primaryRequest": "Create one polished mobile game UI concept screenshot for Orangegame in a supply-chain control direction. It is a grounded 2016 computer company workshop, not science fiction. Use cool blue-steel and graphite surfaces, real PC/workshop photos, crisp logistics labels, compact stock and delivery indicators, supplier/credit visibility, and clear production progress. Use orange only for the main action, teal for in-transit, green for ready and red for risk. Adapt classic simulation-game resource and status readability to portrait touch controls.",
+  "inputImages": [{ "path": "art/source/style_review_v02.png", "role": "reference for real workshop and PC component material; do not copy exact framing" }],
+  "subject": "company overview focused on production, parts availability and delivery status in January 2016",
+  "composition": "single portrait screen; date/cash/payables header; authentic workshop strip; concise KPIs; a two-row work queue that shows one assembling product and one waiting for components; a small clear in-transit/stock signal; fixed month settlement action and five-item navigation",
+  "contentExact": ["橙序电脑", "2016年1月", "现金 ¥18,420", "待付 ¥2,400", "在途 3 批", "当前排产", "橙序 G-01 游戏机", "手工装配 · 剩余 6.4 工时", "静音办公样机", "待显卡到货 · 预计 2.0 工时", "查看月结", "工坊", "产品", "采购", "订单", "公司"],
+  "styleMedium": "grounded operations game HUD with realistic photo imagery, legible logistics data and layered blue-steel controls",
+  "palette": ["blue steel", "graphite", "cool white", "safety orange", "teal", "green", "muted red"],
+  "constraints": "not futuristic; preserve strong contrast; differentiate status with words and shapes as well as color; avoid dense unreadable tables; no logos; no watermark",
+  "avoid": ["sci-fi HUD", "neon glow", "holograms", "charts without labels", "tiny low-contrast text", "flat vector-only panels", "watermark"]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "hdd_1000_side_v01",
+  "componentId": "hdd_1000",
+  "prompt": "Use case: product-mockup. Draw ONE isolated independent raster hardware sprite for Orangegame, a relatively realistic PC Building Simulator inspired game, no illustration outlines. Neutral studio upper-left illumination, subdued industrial materials, realistic small fasteners and manufactured geometry. Reference image 1 gives only material and lighting style. True transparent alpha outside full object, no opaque backdrop, shadows beyond object, glow, ground, environment, text, logos or watermark. Preserve a generous transparent margin around all sides. Strict ORTHOGRAPHIC installed drive-cage END view of one conventional 3.5 inch HDD. View the CONNECTOR END straight on,101.6mm wide horizontal by26.1mm tall vertical, ratio3.89. No full top disk cover view, no perspective broad face. Narrow dull silver cast aluminum rectangular base with machined screw lugs at left and right, thin black rim along upper edge, green PCB strip and black plastic sockets on LOWER edge. Two distinctly separate uncovered L-keyed SATA sockets: 15pin power socket wider atLEFT and7pin data socket narrower atRIGHT. Leave clear access below sockets, no plugged wires. Top steel lid shows only its narrow horizontal folded edge. This original game installed orientation runs147mm drive length perpendicular into image so physical long dimension is invisible here. Complete crisp slim connector-end silhouette. White blank tiny label strip on central silver lip.",
+  "referencePaths": [
+    "art/source/style_review_v02.png"
+  ],
+  "transparent_background": true,
+  "sourcePath": "art/source/parts/hdd_1000_side_v01.png",
+  "tool": "built_in_image_gen",
+  "intent": "generate",
+  "status": "generated_candidate",
+  "structuralBasis": "Original art using dimensions from design/components.json; projected orientation is an art implementation decision, not manufacturer verified internal geometry."
+}

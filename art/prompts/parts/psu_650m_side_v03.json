@@ -1,0 +1,16 @@
+{
+  "id": "psu_650m_side_v03",
+  "componentId": "psu_650m",
+  "referencePaths": [
+    "art/source/parts/psu_450_side_v02.png"
+  ],
+  "intent": "edit",
+  "structuralBasis": "Projection corrected from non-modular original game family withsame86mm height and160mm depth.",
+  "prompt": "EditreferencePSUsideplateintoits160mmdeepsemimodularfamilyvariant. KEEP OBJECT HEIGHT and entirestrictorthographicorientation/materials/roundscrews, make OBJECT WIDTH exactly14.285percentgreater thanthisreference140mmversion sofinalbodywidth/heightnear1.86. Keepperimeterstraightparallel, do not exposeanytop/endplaneorfan. Remove smallrubbercablegrommetfromlowerRIGHTedge andreplacewithflatblackmetal. Givecentralrectangleblanklightgray insetlabelplatewithnoletters. Graphitepowdercoatsteel, four tinyroundPhillipscornerscrews, preserve originalstyle. Transparentmargins andtruealphaoutsidefullsilhouette,nofloor/outershadow, nocablesorportsfacingcamera. Canvasaspectshouldnotchangethe bodyheight. Onlybroadenoriginalreferencebodyby14percent, noextraoverlongbody.",
+  "tool": "built_in_image_gen",
+  "transparent_background": true,
+  "status": "generated_candidate",
+  "sourcePath": "art/source/parts/psu_650m_side_v03.png",
+  "generatedOutputFile": "exec-3839b55e-37f4-4ebe-8553-a1d2c2c6a8b5.png",
+  "resultRecovery": "Recovered completed tool output after session interruption; matched by visual identity and recorded prompt"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "psu_650m_product_v01",
+  "componentId": "psu_650m",
+  "referencePaths": [
+    "art/source/style_review_v02.png",
+    "art/source/parts/psu_650m_side_v02.png"
+  ],
+  "intent": "generate",
+  "structuralBasis": "Original semi-modular game PSU150x160x86mm. Port arrangement is originalartpending connectorreview.",
+  "prompt": "Use case: product-mockup. ONE original semimodular ATXpower supply150mmwide160mmdeep86mmtall in modestthreequarterhardwareprocurementcamera. Relatively realistic PCsimulator neutralindustrialmaterials fromreference1; samegraphitepowdercoatsteel asreference2. Cameraabovefront showsone120mmroundblackintakefan behindblackwiregrille onTOP (freeproductpose, fanfacesdownwheninstalled), broadsidehasblankgray specificationsplate, FRONT panel onRIGHThasfour distinctlyseparate blackmodularsocketblocks in2x2 layout, each6pinor8pinoriginalrectangularhousing, plusone smallfixedcablegrommetbutNO wires. RearACendatLEFT mostlyhidden. Slightlydeeperenclosurethan140mmfamilynonmodularPSU, exactcompactmanufacturedshape, smallactualPhilipsroundscrews, flatplateplanes, nocartoonroundbox. Allportsunplugged. No text/logos/glowingcolors,cables,boxes,desk,otherobjects. Entirebodycenteredwithgenerous transparentmargin,truealpha,nooutsidecastshadow,ground,reflection,watermark.",
+  "tool": "built_in_image_gen",
+  "transparent_background": true,
+  "status": "generated_candidate",
+  "sourcePath": "art/source/parts/psu_650m_product_v01.png",
+  "generatedOutputFile": "exec-2dde6a4d-5d87-4f51-ba75-140e4e1b3bb6.png",
+  "resultRecovery": "Recovered completed tool output after session interruption; matched by visual identity and recorded prompt"
+}

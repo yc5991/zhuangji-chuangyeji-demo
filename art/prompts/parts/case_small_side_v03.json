@@ -1,0 +1,21 @@
+{
+  "id": "case_small_side_v03",
+  "componentId": "case_small",
+  "tool": "built_in_image_gen",
+  "intent": "generate_from_original_layout",
+  "referencePaths": [
+    "art/reference/layout/case_small_side_guide.png"
+  ],
+  "sourcePath": "art/source/parts/case_small_side_v03.png",
+  "status": "figma_exported_for_joint_review",
+  "provenance": "Original game installation geometry; guide only, photographic composition removed",
+  "prompt": "Use case: product-mockup. Render this ONE original engineering diagram as a realistic graphite sheet-steel empty PC case SIDE SPRITE. STRICTLY RETAIN reference geometric composition. Camera EXACTLY ORTHOGRAPHIC SIDE, no top surface visible, no broad rear face, no perspective. Body is330mm depth by320mm height, feet below body. Very thin 3mm top rail; lower-left empty140x86mm PSU bay with no thick top rail intruding above its boundary. Large green rectangle denotes EMPTY bare motherboard tray, not installed board. Replace green by matte dark gray steel while keeping its tall regionfrom1.25% below body top to71.875% below body top, x6.06% to61.52% of body width; fits183x226mm board. Do not shorten it or add bulky ceiling. Keep horizontal lower separator at72.19% of body height. Add small brass standoffs around tray edges; no green remains. Realistic subtle steel bevels and fasteners, fine neutral white upper-left light, readable industrial materials similar to a realistic PC assembly simulator. Front RIGHT, rear LEFT. Exactly FOUR expansion-slot cover edges at lower-left tray edge, no fake extra slots. Cable-routing cutouts only right of tray. Empty two-drive cage at lower-right below separator, never protruding into board area. No installed parts, motherboard, PSU, cables, fans, CPU, GPU, RAM, drive or glass. No decorative shroud, colored diagram marks, dimensions, labels, text, branding, floor, outside shadow or glow. Diagram's exterior light background becomes genuine transparent alpha with padding. This is original game geometry and artwork.",
+  "figmaExportNodeId": "35:12",
+  "stagingPath": "art/exports/parts/case_small_side_v03.png",
+  "sourceBodyRectLtrbPx": [
+    111,
+    88,
+    1170,
+    1085
+  ]
+}

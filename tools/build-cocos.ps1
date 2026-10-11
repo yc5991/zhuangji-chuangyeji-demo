@@ -17,8 +17,15 @@ $taskEnvironment = Get-Content -LiteralPath $taskEnvironmentPath -Raw -Encoding 
 if (-not (Test-Path -LiteralPath $taskEnvironment.creatorExecutable)) { throw 'Cocos Creator executable was not found.' }
 if (-not (Test-Path -LiteralPath (Join-Path $taskProjectRoot 'package.json'))) { throw 'The Cocos project has not been initialized.' }
 
+# Re-export the latest saved design inputs before Creator imports scripts.
+& node (Join-Path $taskProjectRoot 'tools\prepare-demo.cjs')
+if ($LASTEXITCODE -ne 0) { throw 'Demo input export failed.' }
+
 # WeChat builds use a supplied project AppID rather than silently adopting a demo account.
 $taskBuildOptions = [ordered]@{ platform = $Platform; debug = -not $Release.IsPresent; outputName = $Platform }
+$taskBuildOptions.includeModules = @('base', 'gfx-webgl', 'gfx-webgl2', '2d', 'mask', 'graphics', 'ui', 'legacy-pipeline')
+# Creator 3.8 resolves normal-build bundle settings from the project bundle preset.
+# settings/v2/packages/builder.json keeps Web local and WeChat artwork in subpackages.
 
 # Select a real imported scene explicitly so an empty editor history cannot leave startScene undefined.
 $taskSceneFile = Join-Path $taskProjectRoot $ScenePath
@@ -43,7 +50,10 @@ $taskConfigJson = $taskBuildOptions | ConvertTo-Json -Depth 8
 $taskStdoutPath = Join-Path $taskBuildDirectory ($Platform + '.stdout.log')
 $taskStderrPath = Join-Path $taskBuildDirectory ($Platform + '.stderr.log')
 $taskArguments = @('--project', ('"' + $taskProjectRoot + '"'), '--build', ('"configPath=' + $taskConfigPath + '"'))
-$taskProcess = Start-Process -FilePath $taskEnvironment.creatorExecutable -ArgumentList $taskArguments -WindowStyle Hidden -Wait -PassThru -RedirectStandardOutput $taskStdoutPath -RedirectStandardError $taskStderrPath
+$taskProcess = Start-Process -FilePath $taskEnvironment.creatorExecutable -ArgumentList $taskArguments -WindowStyle Hidden -PassThru -RedirectStandardOutput $taskStdoutPath -RedirectStandardError $taskStderrPath
+# Wait for the actual CLI process. Start-Process -Wait can also wait on orphaned Electron helpers after a successful build.
+$null = $taskProcess.Handle
+$taskProcess.WaitForExit()
 
 # Cocos documents exit code 36 as build success; keep the logs available on failure.
 if ($taskProcess.ExitCode -ne 36) {

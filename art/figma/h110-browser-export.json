@@ -1,0 +1,29 @@
+{
+  "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+  "pageId": "1:2",
+  "method": "Authenticated UI import of clipped raster container, native Figma PNG export",
+  "entries": [
+    {
+      "partId": "mb_h110",
+      "view": "side",
+      "state": "exported_for_review",
+      "sourcePath": "art/source/parts/mb_h110_side_v01.png",
+      "promptPath": "art/prompts/parts/mb_h110_side_v01.json",
+      "sourceCropLtrbPx": [
+        52,
+        96,
+        1076,
+        1289
+      ],
+      "scale": 0.6437552388935457,
+      "figmaExportNodeId": "12:2",
+      "stagingPath": "art/exports/parts/mb_h110_side.png",
+      "runtimePath": null,
+      "ledgerPath": "art/figma/h110-browser-export.json",
+      "exportPx": [
+        660,
+        768
+      ]
+    }
+  ]
+}

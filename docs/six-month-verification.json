@@ -1,0 +1,1128 @@
+{
+  "recordedAt": "2026-10-11T11:23:34.322Z",
+  "creatorVersion": "3.8.8",
+  "environment": {
+    "os": "Windows",
+    "browser": "Codex in-app Chromium",
+    "preview": "http://127.0.0.1:7456/",
+    "viewport": "390x844",
+    "interaction": "canvas clicks / native browser form input",
+    "humanPlaytime": "not-verified"
+  },
+  "builds": {
+    "web": {
+      "status": "passed-release-build",
+      "sha256": "390aa67cfea11554e9b9b9262695638091537b5da43e9401ee5d5589fa339578",
+      "files": 334,
+      "bytes": 17753157,
+      "excludes": "project.config.json and project.private.config.json (local account configuration)"
+    },
+    "wechat": {
+      "status": "passed-release-build",
+      "sha256": "42060fb75bd66403564f5f2f043a29748eae3b8c56083e26a667379e6ef7d617",
+      "files": 337,
+      "bytes": 17682875,
+      "excludes": "project.config.json and project.private.config.json (local account configuration)"
+    }
+  },
+  "runtimeSources": {
+    "sha256": "f0ae17cf4e3003a49ff7c28af005108efad1909e5519d8b16bb80cf22c063fcb",
+    "files": 32,
+    "bytes": 317201,
+    "excludes": "project.config.json and project.private.config.json (local account configuration)"
+  },
+  "runtimeArtwork": {
+    "sha256": "ef3758db7ddbcf331160feccef62d8b46eebf6cd75798b589f29b7ee398f712a",
+    "files": 221,
+    "bytes": 26452933,
+    "excludes": "project.config.json and project.private.config.json (local account configuration)"
+  },
+  "dataBaseline": {
+    "recordedDate": "2026-10-08",
+    "creatorVersion": "3.8.8",
+    "sourceHashes": {
+      "components.json": "5f491656d52a8739d505e9e0a205efcf83bbf4155b4589dcedc43f64be0cd033",
+      "balance.json": "5d63b4aa2ffcc512c57a9116d61ec96788575f080bfe2b8a9e963fe67a71360a",
+      "economy-candidate.json": "ac8ce0120743a62e542f98a25ea198312ba7bd08c56171ddc19b0c19c6ee9a32",
+      "supplier-system.json": "c10b7edb3ac69d1f829e35245a63d30d23e058bfd7ce635acd1d4bf531138170",
+      "customer-model.json": "2498427f4ca2bcf781b29db8a15408ba28adb8ef18465eef2623e936d509f5e4",
+      "workbench.json": "037082244a64a98e1cb0efe5ff799f9312b823bc4984224f93df202d45b7050c",
+      "market-events.json": "6f0d3a2ba55c983eba8eaa3b79bf33e281815e04e5088b4a316067ccd5bce5b5",
+      "demo-schedule.json": "c29b97ac7eaa877e12cc95fe2e53dfe1d501b4469e0d7c20fb1fb0027871706c",
+      "design-flow.json": "06120a5d038c5aed79a9e7b5a73d7d53e8346873fcc8e466a343c654b0e417cb",
+      "evaluation.json": "aa0d52d86984148920328549475213c0bcc79c082a4b26b5c221d1f88d33fcdc",
+      "finish-options.json": "2fbd119468d8f0286cc4bc31bf920087a1363fd0388294bf62b4b23a4b8829da",
+      "case-options.json": "6db9917aabca55b9a6fc8b4cdc7c836acb106a0e06ad3bc44d1a5d140960de7c",
+      "cable-routing.json": "eb3915e7aa4a7fc5c8be84b89196342541b5f93e5760996d0dfb3a493fcc8851",
+      "reliability-model.json": "5955da878458060e144f41479e329ff5464f857dfe4e98265052944f37fb7e90",
+      "staff.json": "61d60c99f0554b9484bc4593af741a5f2966aa675064f9a5aad04d4acafb0674",
+      "era-trends.json": "7dc97d077923a985f6d4533b58d73207e49a1171153dbde67a663ab479c775bd",
+      "company-progression.json": "defc2cdaa9a64e737f599920afbbc3757362a6ff981aefc67c640b31ee74494b",
+      "workbench-layouts.json": "a15e470e712eac96375a8810fc6979f4da5dae650d132955650221da69a44a90"
+    },
+    "scope": {
+      "firstMonth": "2016-01",
+      "lastMonth": "2016-06",
+      "purchaseEntries": 32,
+      "cloudSaves": false,
+      "views": [
+        "side",
+        "rear",
+        "exterior"
+      ]
+    },
+    "budgetBytes": {
+      "main": 3500000,
+      "total": 20000000
+    }
+  },
+  "frozenEconomyBaseline": {
+    "sha256": "7fa2f0cc3167ada460f7911ee26ae1823557dc488b840cf38f16764e666b4a86",
+    "diff": "unchanged"
+  },
+  "integration": {
+    "partsThread": "01a114d3-66c4-76b1-8bd0-b9e636bfc42e",
+    "uiThread": "01a11e53-f111-77c2-a683-8f6a8bfb561e",
+    "uiRecord": "art/figma/ui-demo-verification-v03.json",
+    "coreCatalogEntries": 32,
+    "installationMappings": 39,
+    "uiExports": 22
+  },
+  "rules": [
+    {
+      "route": "boutique",
+      "seed": 20261011,
+      "months": 6,
+      "sales": 6,
+      "cash": 24794.4,
+      "profit": -3895.6,
+      "saveVersion": 2,
+      "evidence": ".local/playtests/rules/boutique/run.json"
+    },
+    {
+      "route": "scale",
+      "seed": 20261011,
+      "months": 6,
+      "sales": 36,
+      "cash": 15531.2,
+      "profit": -8358.8,
+      "saveVersion": 2,
+      "evidence": ".local/playtests/rules/scale/run.json"
+    },
+    {
+      "route": "mixed",
+      "seed": 20261011,
+      "months": 6,
+      "sales": 20,
+      "cash": 26711.2,
+      "profit": 1021.2,
+      "saveVersion": 2,
+      "evidence": ".local/playtests/rules/mixed/run.json"
+    }
+  ],
+  "browser": [
+    {
+      "route": "boutique",
+      "months": 6,
+      "successfulSales": 6,
+      "failedDeliveries": 0,
+      "cash": 25299.4,
+      "profit": -3390.6,
+      "reputation": 3.3333333333333335,
+      "investments": [
+        "craft_tools"
+      ],
+      "automatedWallMs": 172825,
+      "actionCount": 253,
+      "nextWorkClicks": 81,
+      "manualConnections": 10,
+      "mode": "UI clicks only; read-only state capture; no funds/month/inventory injection",
+      "ending": ".local/playtests/v3/boutique/ending.json",
+      "endingSha256": "761302902490efacbca8af9615df216f49885a4fc51dbb96918c98d7bdfac818",
+      "checkpoints": [
+        {
+          "month": 1,
+          "path": ".local/playtests/v3/boutique/month-1.json",
+          "sha256": "442d9219be31000203c801124b54bd3e62e79ba6211e9c6174650a61d1c014e5",
+          "report": {
+            "month": 1,
+            "revenue": 5391,
+            "cogs": 2912.8,
+            "fixed": 2700,
+            "development": 0,
+            "profit": -221.80000000000018,
+            "cash": 29778.2,
+            "sold": 1,
+            "unsold": 0,
+            "reputation": 2,
+            "used": {
+              "labor": 36.12,
+              "owner": 14,
+              "bench": 20,
+              "test": 4.06
+            },
+            "feedback": [
+              "静音办公高定 1：本月售出 1 台，高于参考价的定价降低了成交意愿。"
+            ],
+            "stockCost": 0,
+            "payables": 0,
+            "standardSold": 0,
+            "commissionSold": 1,
+            "salesRefunds": 0,
+            "logisticsCosts": 0,
+            "depositRefunds": 0,
+            "legacyAccounting": false
+          }
+        },
+        {
+          "month": 2,
+          "path": ".local/playtests/v3/boutique/month-2.json",
+          "sha256": "e9c2e1e35ca3284803be934374106b9f7ec7647bbd09421f2d7cd49537afbc6d",
+          "report": {
+            "month": 2,
+            "revenue": 4741,
+            "cogs": 2945.6000000000004,
+            "fixed": 2700,
+            "development": 0,
+            "profit": -904.6000000000004,
+            "cash": 28873.600000000002,
+            "sold": 1,
+            "unsold": 0,
+            "reputation": 2.4,
+            "used": {
+              "labor": 58.239999999999995,
+              "owner": 14,
+              "bench": 40,
+              "test": 8.12
+            },
+            "feedback": [
+              "静音办公高定 2：本月售出 1 台。"
+            ],
+            "stockCost": 0,
+            "payables": 0,
+            "standardSold": 0,
+            "commissionSold": 1,
+            "salesRefunds": 0,
+            "logisticsCosts": 0,
+            "depositRefunds": 0,
+            "legacyAccounting": false
+          }
+        },
+        {
+          "month": 3,
+          "path": ".local/playtests/v3/boutique/month-3.json",
+          "sha256": "736eea5790adbe4fd66919bc594fbc5c61cbe225c5dc332c219a3245822bd227",
+          "report": {
+            "month": 3,
+            "revenue": 5067,
+            "cogs": 2792.8,
+            "fixed": 2700,
+            "development": 0,
+            "profit": -425.8000000000002,
+            "cash": 27137.800000000003,
+            "sold": 1,
+            "unsold": 0,
+            "reputation": 2.5,
+            "used": {
+              "labor": 32.12,
+              "owner": 14,
+              "bench": 16,
+              "test": 4.06
+            },
+            "feedback": [
+              "静音办公高定 3：本月售出 1 台。"
+            ],
+            "stockCost": 0,
+            "payables": 0,
+            "standardSold": 0,
+            "commissionSold": 1,
+            "salesRefunds": 0,
+            "logisticsCosts": 0,
+            "depositRefunds": 0,
+            "legacyAccounting": false
+          }
+        },
+        {
+          "month": 4,
+          "path": ".local/playtests/v3/boutique/month-4.json",
+          "sha256": "26d86d71c244c87f28d6116f025b425efb35f8a9a6f0e74e1fb9ae780945583a",
+          "report": {
+            "month": 4,
+            "revenue": 5391,
+            "cogs": 3186.8,
+            "fixed": 2700,
+            "development": 0,
+            "profit": -495.8000000000002,
+            "cash": 26642.000000000004,
+            "sold": 1,
+            "unsold": 0,
+            "reputation": 2.857142857142857,
+            "used": {
+              "labor": 32.12,
+              "owner": 14,
+              "bench": 16,
+              "test": 4.06
+            },
+            "feedback": [
+              "静音办公高定 4：本月售出 1 台，高于参考价的定价降低了成交意愿。"
+            ],
+            "stockCost": 0,
+            "payables": 0,
+            "standardSold": 0,
+            "commissionSold": 1,
+            "salesRefunds": 0,
+            "logisticsCosts": 0,
+            "depositRefunds": 0,
+            "legacyAccounting": false
+          }
+        },
+        {
+          "month": 5,
+          "path": ".local/playtests/v3/boutique/month-5.json",
+          "sha256": "e38439d046abb08533eb0f0a8961604d5b4dbd45823cc326e7c40c1ea7ae04fc",
+          "report": {
+            "month": 5,
+            "revenue": 4826,
+            "cogs": 3216.8,
+            "fixed": 2700,
+            "development": 0,
+            "profit": -1090.8000000000002,
+            "cash": 25551.200000000004,
+            "sold": 1,
+            "unsold": 0,
+            "reputation": 3.125,
+            "used": {
+              "labor": 33.32,
+              "owner": 14,
+              "bench": 16,
+              "test": 4.06
+            },
+            "feedback": [
+              "静音办公高定 5：本月售出 1 台。"
+            ],
+            "stockCost": 0,
+            "payables": 0,
+            "standardSold": 0,
+            "commissionSold": 1,
+            "salesRefunds": 0,
+            "logisticsCosts": 0,
+            "depositRefunds": 0,
+            "legacyAccounting": false
+          }
+        },
+        {
+          "month": 6,
+          "path": ".local/playtests/v3/boutique/month-6.json",
+          "sha256": "137f789c79bd1a54065aa81f84f41fa8cac6d0c8b9f6347007241db037f8f14d",
+          "report": {
+            "month": 6,
+            "revenue": 5391,
+            "cogs": 2942.8,
+            "fixed": 2700,
+            "development": 0,
+            "profit": -251.80000000000018,
+            "cash": 25299.400000000005,
+            "sold": 1,
+            "unsold": 0,
+            "reputation": 3.3333333333333335,
+            "used": {
+              "labor": 34.519999999999996,
+              "owner": 14,
+              "bench": 16,
+              "test": 4.06
+            },
+            "feedback": [
+              "静音办公高定 6：本月售出 1 台。"
+            ],
+            "stockCost": 0,
+            "payables": 0,
+            "standardSold": 0,
+            "commissionSold": 1,
+            "salesRefunds": 0,
+            "logisticsCosts": 0,
+            "depositRefunds": 0,
+            "legacyAccounting": false
+          }
+        }
+      ]
+    },
+    {
+      "route": "scale",
+      "months": 6,
+      "successfulSales": 31,
+      "failedDeliveries": 0,
+      "cash": 15252.4,
+      "profit": -8197.6,
+      "reputation": 4.176470588235294,
+      "investments": [
+        "bench",
+        "semi_auto"
+      ],
+      "automatedWallMs": 136598,
+      "actionCount": 387,
+      "nextWorkClicks": 212,
+      "manualConnections": 10,
+      "mode": "UI clicks only; read-only state capture; no funds/month/inventory injection",
+      "ending": ".local/playtests/v3/scale/ending.json",
+      "endingSha256": "1befd2c5252453acc6c56822fea36dd4d993fef24a59fd81fc86f6bc4871b41c",
+      "checkpoints": [
+        {
+          "month": 1,
+          "path": ".local/playtests/v3/scale/month-1.json",
+          "sha256": "abeaca0c1514b6b5155c8a7dc4da032668fc0a464e062078bbc6a60f2887bb6b",
+          "report": {
+            "month": 1,
+            "revenue": 11010,
+            "cogs": 9364,
+            "fixed": 2700,
+            "development": 120,
+            "profit": -1174,
+            "cash": 26953.2,
+            "sold": 5,
+            "unsold": 1,
+            "reputation": 2.875,
+            "used": {
+              "labor": 54.71999999999999,
+              "owner": 12,
+              "bench": 38,
+              "test": 14.360000000000001
+            },
+            "feedback": [
+              "1 台成品留在库存，占用 ¥1873；月结不会替你卖掉库存。",
+              "预算办公 1：本月售出 5 台，当前产品表现与售价对应的本月需求已满足；高于参考价的定价降低了成交意愿。"
+            ],
+            "stockCost": 1872.8,
+            "payables": 0,
+            "standardSold": 5,
+            "commissionSold": 0,
+            "salesRefunds": 0,
+            "logisticsCosts": 0,
+            "depositRefunds": 0,
+            "legacyAccounting": false
+          }
+        },
+        {
+          "month": 2,
+          "path": ".local/playtests/v3/scale/month-2.json",
+          "sha256": "df72b2d5a7d1621573b2a58b4ad7a1dde5c7af5f00535ae787231e3393cab584",
+          "report": {
+            "month": 2,
+            "revenue": 13212,
+            "cogs": 11419.599999999999,
+            "fixed": 2700,
+            "development": 0,
+            "profit": -907.5999999999985,
+            "cash": 27918.4,
+            "sold": 6,
+            "unsold": 0,
+            "reputation": 3.642857142857143,
+            "used": {
+              "labor": 42.72,
+              "owner": 0,
+              "bench": 36,
+              "test": 12.360000000000001
+            },
+            "feedback": [
+              "预算办公 1：本月售出 6 台，高于参考价的定价降低了成交意愿。"
+            ],
+            "stockCost": 0,
+            "payables": 0,
+            "standardSold": 6,
+            "commissionSold": 0,
+            "salesRefunds": 0,
+            "logisticsCosts": 0,
+            "depositRefunds": 0,
+            "legacyAccounting": false
+          }
+        },
+        {
+          "month": 3,
+          "path": ".local/playtests/v3/scale/month-3.json",
+          "sha256": "6259ce68011a571a1f9dc7104bf4a34ecf5bc548a70245d48dde7575d49c4357",
+          "report": {
+            "month": 3,
+            "revenue": 10750,
+            "cogs": 9514,
+            "fixed": 2700,
+            "development": 0,
+            "profit": -1464,
+            "cash": 25904.4,
+            "sold": 5,
+            "unsold": 0,
+            "reputation": 3.9473684210526314,
+            "used": {
+              "labor": 35.6,
+              "owner": 0,
+              "bench": 30,
+              "test": 10.3
+            },
+            "feedback": [
+              "预算办公 1：本月售出 5 台。"
+            ],
+            "stockCost": 0,
+            "payables": 0,
+            "standardSold": 5,
+            "commissionSold": 0,
+            "salesRefunds": 0,
+            "logisticsCosts": 0,
+            "depositRefunds": 0,
+            "legacyAccounting": false
+          }
+        },
+        {
+          "month": 4,
+          "path": ".local/playtests/v3/scale/month-4.json",
+          "sha256": "c4899e28ac4efbc4fe5b364a0d1ee9f57ecfc1ecaea7d9d80520639c71636bd0",
+          "report": {
+            "month": 4,
+            "revenue": 11000,
+            "cogs": 10219,
+            "fixed": 2700,
+            "development": 0,
+            "profit": -1919,
+            "cash": 23985.4,
+            "sold": 5,
+            "unsold": 0,
+            "reputation": 4.083333333333333,
+            "used": {
+              "labor": 35.6,
+              "owner": 0,
+              "bench": 30,
+              "test": 10.3
+            },
+            "feedback": [
+              "预算办公 1：本月售出 5 台，高于参考价的定价降低了成交意愿。"
+            ],
+            "stockCost": 0,
+            "payables": 0,
+            "standardSold": 5,
+            "commissionSold": 0,
+            "salesRefunds": 0,
+            "logisticsCosts": 0,
+            "depositRefunds": 0,
+            "legacyAccounting": false
+          }
+        },
+        {
+          "month": 5,
+          "path": ".local/playtests/v3/scale/month-5.json",
+          "sha256": "fe90aa0eabea2892347192101d3a8b44fd52f25be766487487825efb8d43fedd",
+          "report": {
+            "month": 5,
+            "revenue": 11000,
+            "cogs": 9919,
+            "fixed": 2800,
+            "development": 0,
+            "profit": -1719,
+            "cash": 16266.400000000001,
+            "sold": 5,
+            "unsold": 0,
+            "reputation": 4.137931034482759,
+            "used": {
+              "labor": 25.099999999999998,
+              "owner": 0,
+              "bench": 19.5,
+              "test": 10.3
+            },
+            "feedback": [
+              "预算办公 1：本月售出 5 台，高于参考价的定价降低了成交意愿。"
+            ],
+            "stockCost": 0,
+            "payables": 0,
+            "standardSold": 5,
+            "commissionSold": 0,
+            "salesRefunds": 0,
+            "logisticsCosts": 0,
+            "depositRefunds": 0,
+            "legacyAccounting": false
+          }
+        },
+        {
+          "month": 6,
+          "path": ".local/playtests/v3/scale/month-6.json",
+          "sha256": "c36d8d423dd32d6385db5138997ed19bc8dd2f62a9917cc0417672c0534ab289",
+          "report": {
+            "month": 6,
+            "revenue": 11000,
+            "cogs": 9214,
+            "fixed": 2800,
+            "development": 0,
+            "profit": -1014,
+            "cash": 15252.400000000001,
+            "sold": 5,
+            "unsold": 0,
+            "reputation": 4.176470588235294,
+            "used": {
+              "labor": 25.099999999999998,
+              "owner": 0,
+              "bench": 19.5,
+              "test": 10.3
+            },
+            "feedback": [
+              "预算办公 1：本月售出 5 台，高于参考价的定价降低了成交意愿。"
+            ],
+            "stockCost": 0,
+            "payables": 0,
+            "standardSold": 5,
+            "commissionSold": 0,
+            "salesRefunds": 0,
+            "logisticsCosts": 0,
+            "depositRefunds": 0,
+            "legacyAccounting": false
+          }
+        }
+      ]
+    },
+    {
+      "route": "mixed",
+      "months": 6,
+      "successfulSales": 19,
+      "failedDeliveries": 0,
+      "cash": 25951,
+      "profit": 371,
+      "reputation": 3.1818181818181817,
+      "investments": [
+        "craft_tools",
+        "bench"
+      ],
+      "automatedWallMs": 157536,
+      "actionCount": 407,
+      "nextWorkClicks": 168,
+      "manualConnections": 10,
+      "mode": "UI clicks only; read-only state capture; no funds/month/inventory injection",
+      "ending": ".local/playtests/v3/mixed/ending.json",
+      "endingSha256": "0a6783300c9a6bdee8b7362f0e633956094c8332cf173f46ddb832d2e83453b6",
+      "checkpoints": [
+        {
+          "month": 1,
+          "path": ".local/playtests/v3/mixed/month-1.json",
+          "sha256": "8e116ac314e7926548e246338375ee17f8aa6010e4f87dae110be52118486287",
+          "report": {
+            "month": 1,
+            "revenue": 11997,
+            "cogs": 8531.2,
+            "fixed": 2700,
+            "development": 120,
+            "profit": 645.7999999999993,
+            "cash": 30645.800000000003,
+            "sold": 4,
+            "unsold": 0,
+            "reputation": 2.5714285714285716,
+            "used": {
+              "labor": 69.47999999999999,
+              "owner": 26,
+              "bench": 40,
+              "test": 12.24
+            },
+            "feedback": [
+              "静音办公高定 1：本月售出 1 台，高于参考价的定价降低了成交意愿。",
+              "预算办公 2：本月售出 3 台，高于参考价的定价降低了成交意愿。"
+            ],
+            "stockCost": 0,
+            "payables": 0,
+            "standardSold": 3,
+            "commissionSold": 1,
+            "salesRefunds": 0,
+            "logisticsCosts": 0,
+            "depositRefunds": 0,
+            "legacyAccounting": false
+          }
+        },
+        {
+          "month": 2,
+          "path": ".local/playtests/v3/mixed/month-2.json",
+          "sha256": "755136fdc54f4f227edda568230fd579de34beb985346381dffee9212d782d7e",
+          "report": {
+            "month": 2,
+            "revenue": 9583,
+            "cogs": 6661.200000000001,
+            "fixed": 2700,
+            "development": 0,
+            "profit": 221.79999999999927,
+            "cash": 30867.600000000006,
+            "sold": 3,
+            "unsold": 0,
+            "reputation": 2.8,
+            "used": {
+              "labor": 72.48,
+              "owner": 14,
+              "bench": 52,
+              "test": 12.24
+            },
+            "feedback": [
+              "静音办公高定 3：本月售出 1 台，高于参考价的定价降低了成交意愿。",
+              "预算办公 2：本月售出 2 台，高于参考价的定价降低了成交意愿。"
+            ],
+            "stockCost": 0,
+            "payables": 0,
+            "standardSold": 2,
+            "commissionSold": 1,
+            "salesRefunds": 0,
+            "logisticsCosts": 0,
+            "depositRefunds": 0,
+            "legacyAccounting": false
+          }
+        },
+        {
+          "month": 3,
+          "path": ".local/playtests/v3/mixed/month-3.json",
+          "sha256": "11bbbbfb942ffa1e441fac6a31f2f80a89dd587ed561cd39b457ca56d2494e10",
+          "report": {
+            "month": 3,
+            "revenue": 9469,
+            "cogs": 6538.400000000001,
+            "fixed": 2700,
+            "development": 0,
+            "profit": 230.59999999999945,
+            "cash": 29678.200000000008,
+            "sold": 3,
+            "unsold": 0,
+            "reputation": 2.8461538461538463,
+            "used": {
+              "labor": 46.35999999999999,
+              "owner": 14,
+              "bench": 28,
+              "test": 8.18
+            },
+            "feedback": [
+              "静音办公高定 4：本月售出 1 台。",
+              "预算办公 2：本月售出 2 台，高于参考价的定价降低了成交意愿。"
+            ],
+            "stockCost": 0,
+            "payables": 0,
+            "standardSold": 2,
+            "commissionSold": 1,
+            "salesRefunds": 0,
+            "logisticsCosts": 0,
+            "depositRefunds": 0,
+            "legacyAccounting": false
+          }
+        },
+        {
+          "month": 4,
+          "path": ".local/playtests/v3/mixed/month-4.json",
+          "sha256": "53d9a5ecaf244cdfe67c352f32132360010e0a85000863233829d5c47a4fab50",
+          "report": {
+            "month": 4,
+            "revenue": 9112,
+            "cogs": 7032.400000000001,
+            "fixed": 2700,
+            "development": 0,
+            "profit": -620.4000000000005,
+            "cash": 29057.80000000001,
+            "sold": 3,
+            "unsold": 0,
+            "reputation": 3.125,
+            "used": {
+              "labor": 46.35999999999999,
+              "owner": 14,
+              "bench": 28,
+              "test": 8.18
+            },
+            "feedback": [
+              "静音办公高定 5：本月售出 1 台。",
+              "预算办公 2：本月售出 2 台，高于参考价的定价降低了成交意愿。"
+            ],
+            "stockCost": 0,
+            "payables": 0,
+            "standardSold": 2,
+            "commissionSold": 1,
+            "salesRefunds": 0,
+            "logisticsCosts": 0,
+            "depositRefunds": 0,
+            "legacyAccounting": false
+          }
+        },
+        {
+          "month": 5,
+          "path": ".local/playtests/v3/mixed/month-5.json",
+          "sha256": "ac5cb30351ad72bf4f2a5081e825b55af52c8e5ab96527152b348d7974c02498",
+          "report": {
+            "month": 5,
+            "revenue": 9348,
+            "cogs": 7002.4,
+            "fixed": 2700,
+            "development": 0,
+            "profit": -354.39999999999964,
+            "cash": 25703.400000000012,
+            "sold": 3,
+            "unsold": 0,
+            "reputation": 3.1052631578947367,
+            "used": {
+              "labor": 46.36,
+              "owner": 14,
+              "bench": 28,
+              "test": 8.180000000000001
+            },
+            "feedback": [
+              "预算办公 2：本月售出 2 台，高于参考价的定价降低了成交意愿。",
+              "静音办公高定 6：本月售出 1 台。"
+            ],
+            "stockCost": 0,
+            "payables": 0,
+            "standardSold": 2,
+            "commissionSold": 1,
+            "salesRefunds": 0,
+            "logisticsCosts": 0,
+            "depositRefunds": 0,
+            "legacyAccounting": false
+          }
+        },
+        {
+          "month": 6,
+          "path": ".local/playtests/v3/mixed/month-6.json",
+          "sha256": "339ef2066b05f2cee34d571e2345a1a791b1166cf9d3f06beac6b46dfb3c6fa4",
+          "report": {
+            "month": 6,
+            "revenue": 9576,
+            "cogs": 6628.400000000001,
+            "fixed": 2700,
+            "development": 0,
+            "profit": 247.59999999999945,
+            "cash": 25951.000000000015,
+            "sold": 3,
+            "unsold": 0,
+            "reputation": 3.1818181818181817,
+            "used": {
+              "labor": 47.559999999999995,
+              "owner": 14,
+              "bench": 28,
+              "test": 8.18
+            },
+            "feedback": [
+              "静音办公高定 7：本月售出 1 台。",
+              "预算办公 2：本月售出 2 台，高于参考价的定价降低了成交意愿。"
+            ],
+            "stockCost": 0,
+            "payables": 0,
+            "standardSold": 2,
+            "commissionSold": 1,
+            "salesRefunds": 0,
+            "logisticsCosts": 0,
+            "depositRefunds": 0,
+            "legacyAccounting": false
+          }
+        }
+      ]
+    }
+  ],
+  "workbench": {
+    "views": [
+      {
+        "case": "case_standard",
+        "view": "side",
+        "slots": {
+          "motherboard": "motherboard",
+          "cpu": "cpu",
+          "gpu": "gpu",
+          "psu": "psu",
+          "cooler": "cooler",
+          "ram0": "ram0",
+          "ram1": "ram1",
+          "disk0": "ssd0"
+        },
+        "visibleSprites": [
+          "Artcase_standard",
+          "Artmb_b150",
+          "Artcpu_6500",
+          "Artram_ddr4_8",
+          "Artram_ddr4_8",
+          "Artpsu_450",
+          "Artgpu_960",
+          "Artcooler_tower",
+          "CaseRailMask0",
+          "CaseRailArt0"
+        ],
+        "loading": 0
+      },
+      {
+        "case": "case_standard",
+        "view": "rear",
+        "slots": {
+          "motherboard": "motherboard",
+          "cpu": "cpu",
+          "gpu": "gpu",
+          "psu": "psu",
+          "cooler": "cooler",
+          "ram0": "ram0",
+          "ram1": "ram1",
+          "disk0": "ssd0"
+        },
+        "visibleSprites": [
+          "Artcase_standard",
+          "Artssd_250",
+          "Artpsu_450",
+          "CaseRailMask0",
+          "CaseRailArt0"
+        ],
+        "loading": 0
+      },
+      {
+        "case": "case_standard",
+        "view": "exterior",
+        "slots": {
+          "motherboard": "motherboard",
+          "cpu": "cpu",
+          "gpu": "gpu",
+          "psu": "psu",
+          "cooler": "cooler",
+          "ram0": "ram0",
+          "ram1": "ram1",
+          "disk0": "ssd0"
+        },
+        "visibleSprites": [
+          "Artcase_standard"
+        ],
+        "loading": 0
+      },
+      {
+        "case": "case_small",
+        "view": "side",
+        "slots": {
+          "motherboard": "motherboard",
+          "cpu": "cpu",
+          "psu": "psu",
+          "cooler": "cooler",
+          "ram0": "ram0",
+          "disk0": "ssd0"
+        },
+        "visibleSprites": [
+          "Artcase_small",
+          "Artmb_h110",
+          "Artcpu_6100",
+          "Artram_ddr4_8",
+          "Artpsu_350",
+          "Artcooler_low",
+          "CaseRailMask0",
+          "CaseRailArt0"
+        ],
+        "loading": 0
+      },
+      {
+        "case": "case_small",
+        "view": "rear",
+        "slots": {
+          "motherboard": "motherboard",
+          "cpu": "cpu",
+          "psu": "psu",
+          "cooler": "cooler",
+          "ram0": "ram0",
+          "disk0": "ssd0"
+        },
+        "visibleSprites": [
+          "Artcase_small",
+          "Artssd_120",
+          "Artpsu_350",
+          "CaseRailMask0",
+          "CaseRailArt0"
+        ],
+        "loading": 0
+      },
+      {
+        "case": "case_small",
+        "view": "exterior",
+        "slots": {
+          "motherboard": "motherboard",
+          "cpu": "cpu",
+          "psu": "psu",
+          "cooler": "cooler",
+          "ram0": "ram0",
+          "disk0": "ssd0"
+        },
+        "visibleSprites": [
+          "Artcase_small"
+        ],
+        "loading": 0
+      },
+      {
+        "case": "case_quiet",
+        "view": "side",
+        "slots": {
+          "motherboard": "motherboard",
+          "cpu": "cpu",
+          "psu": "psu",
+          "cooler": "cooler",
+          "ram0": "ram0",
+          "disk0": "ssd0"
+        },
+        "visibleSprites": [
+          "Artcase_quiet",
+          "Artmb_h110",
+          "Artcpu_6100",
+          "Artram_ddr4_8",
+          "Artpsu_450",
+          "Artcooler_quiet",
+          "CaseRailMask0",
+          "CaseRailArt0"
+        ],
+        "loading": 0
+      },
+      {
+        "case": "case_quiet",
+        "view": "rear",
+        "slots": {
+          "motherboard": "motherboard",
+          "cpu": "cpu",
+          "psu": "psu",
+          "cooler": "cooler",
+          "ram0": "ram0",
+          "disk0": "ssd0"
+        },
+        "visibleSprites": [
+          "Artcase_quiet",
+          "Artssd_250",
+          "Artpsu_450",
+          "CaseRailMask0",
+          "CaseRailArt0"
+        ],
+        "loading": 0
+      },
+      {
+        "case": "case_quiet",
+        "view": "exterior",
+        "slots": {
+          "motherboard": "motherboard",
+          "cpu": "cpu",
+          "psu": "psu",
+          "cooler": "cooler",
+          "ram0": "ram0",
+          "disk0": "ssd0"
+        },
+        "visibleSprites": [
+          "Artcase_quiet"
+        ],
+        "loading": 0
+      }
+    ],
+    "drag": {
+      "before": {
+        "motherboard": "motherboard",
+        "cpu": "cpu",
+        "psu": "psu",
+        "cooler": "cooler",
+        "ram0": "ram0",
+        "disk0": "ssd0"
+      },
+      "after": {
+        "motherboard": "motherboard",
+        "cpu": "cpu",
+        "psu": "psu",
+        "cooler": "cooler",
+        "ram0": "ram0",
+        "disk0": "ssd0"
+      },
+      "sideCpuSameSlot": true,
+      "rearSsdSameCanonicalSlot": true,
+      "revisionBefore": 2,
+      "revisionAfter": 4,
+      "rearDragMovedSlot": "ssd1",
+      "rearDragRevision": 3,
+      "rearClickRestoredSlot": "ssd0"
+    },
+    "ui": {
+      "modalShieldPassed": true,
+      "unwiredPrototypeRejected": true,
+      "missingPartsNoJob": true,
+      "missingPartsMessage": [
+        [
+          "膏3-6100 尚未到货或库存已被其他工作预留"
+        ]
+      ],
+      "monthEndEdgeClicks": "v3 routes at month 2,4,5",
+      "inputOffsetFixed": "v3 scale input-fixed.json and all price changes"
+    },
+    "evidence": ".local/playtests/v3/case-views",
+    "viewport": "1280x720, portrait letterboxed",
+    "collision": "fixed-view only; no full 3D claim"
+  },
+  "package": {
+    "measuredAt": "2026-10-11T11:06:28.691Z",
+    "kind": "local-build-file-bytes-not-upload-size",
+    "fileCount": 338,
+    "mainBytes": 1762946,
+    "totalBytes": 17683332,
+    "budget": {
+      "main": 3500000,
+      "total": 20000000
+    },
+    "pass": true,
+    "subpackages": [
+      {
+        "name": "workbench",
+        "root": "subpackages/workbench/",
+        "bytes": 15920386
+      }
+    ],
+    "largestFiles": [
+      {
+        "path": "cocos-js/cc.js",
+        "bytes": 1260004
+      },
+      {
+        "path": "subpackages/workbench/native/7d/7d7375e0-146c-44af-98a9-28f3db82934b.jpg",
+        "bytes": 789793
+      },
+      {
+        "path": "subpackages/workbench/native/96/961b9115-fcbc-4a36-bb60-9aedceb19586.png",
+        "bytes": 689766
+      },
+      {
+        "path": "subpackages/workbench/native/2e/2ec1b07f-521a-4715-8dd8-f2d4dc358a49.png",
+        "bytes": 674127
+      },
+      {
+        "path": "subpackages/workbench/native/9f/9f9b1b27-ee71-4b70-b304-8e5411bca0ff.png",
+        "bytes": 670202
+      },
+      {
+        "path": "subpackages/workbench/native/40/408a08d9-8b51-4ec8-9a20-1d413d68423e.png",
+        "bytes": 451674
+      },
+      {
+        "path": "subpackages/workbench/native/7d/7d0963db-f269-4ae3-bfe5-af9debf386d9.png",
+        "bytes": 420736
+      },
+      {
+        "path": "subpackages/workbench/native/d2/d2def0f1-eb68-40ef-84b9-eaa0c790b907.png",
+        "bytes": 419698
+      }
+    ],
+    "wechatUploadBytes": null,
+    "simulator": "not-verified",
+    "realDevice": "not-verified"
+  },
+  "checks": {
+    "tests": 52,
+    "typecheck": "passed",
+    "design": "passed",
+    "suppliers": "passed",
+    "designToGame": "passed",
+    "flow": "passed",
+    "uiArt": "passed"
+  },
+  "wechatSimulator": {
+    "status": "computer-use-stopped-in-current-turn",
+    "login": "user-confirmed-complete; UI not re-inspected",
+    "requestedHumanAction": "Start a new turn to resume simulator validation after Escape stopped Computer Use",
+    "routesCompleted": 0,
+    "previousBlockerScreenshot": ".local/playtests/wechat-login-required.jpg",
+    "olderEvidence": "docs/wechat-simulator-test.md"
+  },
+  "realDevice": "not-verified",
+  "humanTwoToThreeHours": "not-verified",
+  "historicalEvidence": {
+    "priorBuild": "docs/demo-verification.json (original fields preserved)",
+    "beforeInputFix": ".local/playtests/v2",
+    "naturalDefect": ".local/playtests/v2/boutique/run.json",
+    "failedScaleStrategy": ".local/playtests/browser-scale-exploration.json",
+    "excluded": "v1 flat per-month filenames reused across routes; do not use as route checkpoints"
+  },
+  "remaining": [
+    "WeChat simulator three routes over six months",
+    "human full playtest duration",
+    "account association and cloud saves",
+    "physical device verification",
+    "full 3D collision",
+    "all appearance textures and fan animation"
+  ]
+}

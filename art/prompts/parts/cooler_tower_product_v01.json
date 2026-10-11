@@ -1,0 +1,17 @@
+{
+  "id": "cooler_tower_product_v01",
+  "componentId": "cooler_tower",
+  "tool": "built_in_image_gen",
+  "intent": "generate",
+  "status": "generated_candidate",
+  "sourcePath": "art/source/parts/cooler_tower_product_v01.png",
+  "referencePaths": [
+    "art/source/style_review_v02.png",
+    "art/source/parts/cooler_tower_side_v02.png"
+  ],
+  "transparent_background": true,
+  "structuralBasis": "Original game component product view, catalog dimensions. Fan sizes and mounting appearance are illustration choices pending projection review.",
+  "prompt": "Use case: product-mockup. ONE isolated procurement catalog illustration ofsameoriginalgamecomponentasreference2, in modestthreequarterhardware productphotocamera. Reference1 providesrelative realistic PCsimulatormaterialstyle. Original practical single-tower CPUaircooler120mmwide80mmdeep155mmtall. Vertical dense stackofsilverfins, three copperU heatpipes making SIX smallround cappedtips ontop(two rowsofthree), black square120mm frontal axialfan withsevenmatte blades, small blankroundhub, tiny steelretentionclips. Basecopperandsmallmountbar atbottom. Fan on FRONT visible broadface in productview, not topcap installedview. No cables. Preserve materialpaletteandformlanguageofreference2while showingbroadfunctionalface andmodestdepth, manufactured crispgeometry, believable metal/fins/plastic, neutralupperleftstudioillumination andfill, no comicoutline orfantasycolors. Entireobjectcenteredwithgeneroustransparentmargin onalledges, truealphaoutside fullsilhouette, no floor/reflection/castshadowoutsideobject, no boxes,desk,motherboard,otherobjects,logos,printedletters,numbers,glow,RGBorwatermark. Blanklabelandhub reserved for project brand textlayer. Oneobjectonly.",
+  "generatedOutputFile": "exec-b1727d33-967e-4beb-bcc5-da2e57e77f32.png",
+  "resultRecovery": "Recovered completed tool output after session interruption; matched by visual identity and recorded prompt"
+}

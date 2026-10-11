@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-10-09T02:20:02.558Z",
+  "creatorVersion": "3.8.8",
+  "scope": "Figma UI slicing and realistic workshop integration; preserves existing hardware art and gameplay",
+  "figma": {
+    "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+    "atlasNode": "33:185",
+    "assemblyCorrectionNode": "36:2",
+    "workshopNode": "32:2",
+    "exportMethod": "Figma SVG import of original bitmap fills with editable silhouette masks; Figma PNG atlas export; fixed-rectangle lossless unpack; assembly pale metal correction separately exported from node 36:2",
+    "exportRecord": "art/figma/reference-ui-slicing.json",
+    "atlasImport": "art/figma/ui-slices-v02-final.svg",
+    "assemblyImport": "art/figma/assembly-v03.svg"
+  },
+  "assets": {
+    "unchangedSourceImages": 6,
+    "transparentIcons": 20,
+    "materialSlices": 4,
+    "runtimeMatchesFigmaExports": true,
+    "spriteMetadataPresent": true,
+    "obsoleteFullPageRemovedFromRuntime": true,
+    "hardwareAssets": "existing realistic runtime art retained",
+    "workshopSource": "art/source/workshop/workshop_isometric_v01.png",
+    "workshopPrompt": "art/prompts/workshop/workshop_isometric_v01.json",
+    "workshopRuntime": "assets/art/workbench/workshop/isometric.jpg",
+    "workshopSha256": "d92b08e92b7407fce3d308af6b5551b4971d88c95e70502e742b7d28cccb4ced",
+    "workshopPresentation": "static equipment layout with independent live resource counts and touch hotspots"
+  },
+  "checks": {
+    "unitTests": {
+      "status": "passed",
+      "count": 34
+    },
+    "typescript": "passed",
+    "design": "passed",
+    "suppliers": "passed",
+    "chineseIntegrationDocument": "passed",
+    "webBuild": {
+      "status": "passed",
+      "platform": "web-desktop",
+      "debug": true
+    },
+    "wechatBuild": {
+      "status": "passed",
+      "platform": "wechatgame",
+      "debug": false
+    },
+    "wechatPackage": {
+      "status": "passed",
+      "kind": "local-build-file-bytes-not-upload-size",
+      "measuredAt": "2026-10-09T02:15:44.774Z",
+      "mainBytes": 1735855,
+      "totalBytes": 16254135,
+      "budget": {
+        "main": 3500000,
+        "total": 20000000
+      }
+    },
+    "browser": {
+      "status": "passed",
+      "url": "http://127.0.0.1:7456/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "pages": [
+        "workshop",
+        "products",
+        "market",
+        "orders",
+        "company"
+      ],
+      "workbench": "opened existing design and inspected realistic assembly/procurement art",
+      "monthlySettlement": "opened review dialog and cancelled using Continue; calendar not advanced",
+      "finalBuildReload": "workshop visible with all artwork loaded",
+      "consoleErrors": 0,
+      "consoleWarnings": 0,
+      "viewportRestored": true,
+      "screenshots": [
+        {
+          "page": "workshop",
+          "path": "art/preview/demo-ui-v02-workshop.jpg",
+          "sha256": "d42ef27805e4aa97f7be499e942cc910c8389b8b32477a924224169ffc99713e"
+        },
+        {
+          "page": "products",
+          "path": "art/preview/demo-ui-v02-products.jpg",
+          "sha256": "908eee424d9b15fca67f6ed07261699db554bd9f3b2728bdc8cf489b0e7d84f5"
+        },
+        {
+          "page": "workbench",
+          "path": "art/preview/demo-ui-v02-workbench.jpg",
+          "sha256": "709d210dc81fd34f3fcf39e25ea0d22430974dfe59fc47a592b61ecb977ca147"
+        },
+        {
+          "page": "market",
+          "path": "art/preview/demo-ui-v02-market.jpg",
+          "sha256": "2db5961845a32324c13f1f4d0819205eff83d487f7420b81ad884cdf490fb157"
+        },
+        {
+          "page": "orders",
+          "path": "art/preview/demo-ui-v02-orders.jpg",
+          "sha256": "7982acf106c928454c2a6294083c14ccfd253266433e37f13c4d15833ee99115"
+        },
+        {
+          "page": "company",
+          "path": "art/preview/demo-ui-v02-company.jpg",
+          "sha256": "a82c279863c2f1f9c7a80afe07e09245fc37bb9a341550599ea5deb5191af35e"
+        },
+        {
+          "page": "settlement",
+          "path": "art/preview/demo-ui-v02-settlement.jpg",
+          "sha256": "4b55d0d050ad7484a06b037562b27882f6201d9edf352c0d32cbbafa9a1bb2a2"
+        }
+      ]
+    },
+    "wechatSimulator": "not-verified",
+    "wechatRealDevice": "not-verified",
+    "wechatUploadBytes": null
+  },
+  "limitations": [
+    "Workshop equipment count does not alter the static background image.",
+    "This visual integration check does not re-certify workbench collision geometry or six-month business balance.",
+    "WeChat package values are local build file sizes, not platform upload measurements."
+  ]
+}

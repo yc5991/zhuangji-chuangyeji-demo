@@ -1,0 +1,638 @@
+{
+  "schemaVersion": 1,
+  "clientDate": "2026-10-11",
+  "creator": "3.8.8",
+  "scope": "All current Demo UI screens and workbench panes; future full-game systems are not implemented by this UI change",
+  "figma": {
+    "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+    "atlasNode": "39:2",
+    "exports": 22,
+    "sourceSheets": 2,
+    "retainedIcons": 20,
+    "ledger": "art/figma/full-ui-slicing-v03.json",
+    "editorScreenshot": "art/preview/figma-full-ui-atlas-v03.png"
+  },
+  "checks": {
+    "types": "passed",
+    "tests": {
+      "passed": 36,
+      "failed": 0
+    },
+    "design": "passed",
+    "suppliers": "passed",
+    "uiArt": "passed",
+    "webBuild": "passed",
+    "wechatReleaseBuild": "passed",
+    "packageBudget": "passed",
+    "documentationStyle": "passed"
+  },
+  "browser": {
+    "status": "verified",
+    "url": "http://127.0.0.1:7456",
+    "viewports": [
+      {
+        "width": 390,
+        "height": 844
+      },
+      {
+        "width": 414,
+        "height": 896
+      }
+    ],
+    "screenStates": 39,
+    "fixtures": "Domain Game runs in a temporary in-memory store; no fixture state written to player storage; reload restores normal SaveStore",
+    "interactions": [
+      "five main navigation tabs",
+      "product pagination",
+      "company name input",
+      "new company confirmation and cancellation",
+      "monthly settlement and resulting report",
+      "news next page and acknowledgement",
+      "batch production dialog"
+    ],
+    "consoleWarnings": [],
+    "consoleErrors": [],
+    "records": [
+      {
+        "name": "workshop",
+        "page": "workshop",
+        "pane": "测试",
+        "picker": false,
+        "modal": false,
+        "skinCount": 47,
+        "smallLabels": [
+          {
+            "name": "ResourceLabel0",
+            "text": "装配工位",
+            "font": 17
+          },
+          {
+            "name": "ResourceLabel1",
+            "text": "测试位",
+            "font": 17
+          },
+          {
+            "name": "ResourceLabel2",
+            "text": "本月工时",
+            "font": 17
+          }
+        ],
+        "labelCount": 31,
+        "screenshot": "art/preview/ui-v03-workshop.png",
+        "screenshotSha256": "a970048437e8cd933f3d1f8c008ee70479fb0507ec7b491dc04a739449e377b5"
+      },
+      {
+        "name": "products",
+        "page": "designs",
+        "pane": "测试",
+        "picker": false,
+        "modal": false,
+        "skinCount": 47,
+        "smallLabels": [],
+        "labelCount": 41,
+        "screenshot": "art/preview/ui-v03-products.png",
+        "screenshotSha256": "70cb5f2c8879a333eac09585bbc7df1fea307419f0e19f1df385a07d4c963f1d"
+      },
+      {
+        "name": "orders",
+        "page": "orders",
+        "pane": "测试",
+        "picker": false,
+        "modal": false,
+        "skinCount": 47,
+        "smallLabels": [],
+        "labelCount": 34,
+        "screenshot": "art/preview/ui-v03-orders.png",
+        "screenshotSha256": "d0e9448a453f310abe29f019703d4d422f4f9373bfbb7578688238a9fdd82590"
+      },
+      {
+        "name": "market",
+        "page": "market",
+        "pane": "测试",
+        "picker": false,
+        "modal": false,
+        "skinCount": 47,
+        "smallLabels": [],
+        "labelCount": 39,
+        "screenshot": "art/preview/ui-v03-market.png",
+        "screenshotSha256": "a4b626133caa71afa6aa1e7b69186fda58e1ea75f0fb3678af2393154519ace3"
+      },
+      {
+        "name": "start",
+        "page": "start",
+        "pane": "测试",
+        "picker": false,
+        "modal": false,
+        "skinCount": 47,
+        "smallLabels": [],
+        "labelCount": 12,
+        "screenshot": "art/preview/ui-v03-start.png",
+        "screenshotSha256": "9ce382cd692760b23c0f3513c654c85048ff612d08e6f2f57b1249002aa60028"
+      },
+      {
+        "name": "templates",
+        "page": "templates",
+        "pane": "测试",
+        "picker": false,
+        "modal": false,
+        "skinCount": 47,
+        "smallLabels": [],
+        "labelCount": 29,
+        "screenshot": "art/preview/ui-v03-templates.png",
+        "screenshotSha256": "ff534ad107a72b5b3cfcbd6d4b5ea83c27a08da0593fddd19720fa23a2745022"
+      },
+      {
+        "name": "feedback",
+        "page": "feedback",
+        "pane": "测试",
+        "picker": false,
+        "modal": false,
+        "skinCount": 47,
+        "smallLabels": [],
+        "labelCount": 29,
+        "screenshot": "art/preview/ui-v03-feedback.png",
+        "screenshotSha256": "a11f98d4e102b875c9c71cdab183dd5e586c665023ce4be56060522604e13b09"
+      },
+      {
+        "name": "reports-empty",
+        "page": "reports",
+        "pane": "测试",
+        "picker": false,
+        "modal": false,
+        "skinCount": 47,
+        "smallLabels": [],
+        "labelCount": 18,
+        "screenshot": "art/preview/ui-v03-reports-empty.png",
+        "screenshotSha256": "77efb3d55a06d52dbf6721fac983322e660324fc16e43fc092c5cb5cfc3cfc69"
+      },
+      {
+        "name": "market-motherboard",
+        "page": "market",
+        "pane": "测试",
+        "picker": false,
+        "modal": false,
+        "skinCount": 47,
+        "smallLabels": [],
+        "labelCount": 39,
+        "screenshot": "art/preview/ui-v03-market-motherboard.png",
+        "screenshotSha256": "9d2ff0bdb33c26e2646f800af629e2d48241bc1a210d8c26ca5bdec772998f23"
+      },
+      {
+        "name": "market-gpu",
+        "page": "market",
+        "pane": "测试",
+        "picker": false,
+        "modal": false,
+        "skinCount": 47,
+        "smallLabels": [],
+        "labelCount": 39,
+        "screenshot": "art/preview/ui-v03-market-gpu.png",
+        "screenshotSha256": "9c012312c7d0e0ad1e16ab716ba28e164430b2076752613a1376bf684713c27c"
+      },
+      {
+        "name": "market-ram",
+        "page": "market",
+        "pane": "测试",
+        "picker": false,
+        "modal": false,
+        "skinCount": 47,
+        "smallLabels": [],
+        "labelCount": 39,
+        "screenshot": "art/preview/ui-v03-market-ram.png",
+        "screenshotSha256": "1d7c5ab2f8e24a1e2be4de288f6348c2a379037ce00709229dbf4a22fa3393b4"
+      },
+      {
+        "name": "market-storage",
+        "page": "market",
+        "pane": "测试",
+        "picker": false,
+        "modal": false,
+        "skinCount": 47,
+        "smallLabels": [],
+        "labelCount": 39,
+        "screenshot": "art/preview/ui-v03-market-storage.png",
+        "screenshotSha256": "a9d9f46dcf3c7cc9fa7f2130d05d5dadc81ffd3926354e1869aee4dd3c756cff"
+      },
+      {
+        "name": "market-psu",
+        "page": "market",
+        "pane": "测试",
+        "picker": false,
+        "modal": false,
+        "skinCount": 47,
+        "smallLabels": [],
+        "labelCount": 39,
+        "screenshot": "art/preview/ui-v03-market-psu.png",
+        "screenshotSha256": "fb277bd64191fd95a69e21e4c537bf3d0d961085ac56c6571cba43581986b8f3"
+      },
+      {
+        "name": "market-cooler",
+        "page": "market",
+        "pane": "测试",
+        "picker": false,
+        "modal": false,
+        "skinCount": 47,
+        "smallLabels": [],
+        "labelCount": 39,
+        "screenshot": "art/preview/ui-v03-market-cooler.png",
+        "screenshotSha256": "b0cce9ffd721b4bb1572ac06e92b00b2119237cbfea19b199d6b24cfe8c63bd0"
+      },
+      {
+        "name": "market-case",
+        "page": "market",
+        "pane": "测试",
+        "picker": false,
+        "modal": false,
+        "skinCount": 47,
+        "smallLabels": [],
+        "labelCount": 39,
+        "screenshot": "art/preview/ui-v03-market-case.png",
+        "screenshotSha256": "bb9d87c046d316778d1baed9b297798e9b39ae409bcb2d059e671bf480c27e1e"
+      },
+      {
+        "name": "inventory-parts",
+        "page": "inventory",
+        "pane": "测试",
+        "picker": false,
+        "modal": false,
+        "skinCount": 47,
+        "smallLabels": [],
+        "labelCount": 25,
+        "screenshot": "art/preview/ui-v03-inventory-parts.png",
+        "screenshotSha256": "6fe84e90747fabe9be3ba2e70a8afd86240329dae205b760b2a6fdc8bbae4ddb"
+      },
+      {
+        "name": "inventory-incoming",
+        "page": "inventory",
+        "pane": "测试",
+        "picker": false,
+        "modal": false,
+        "skinCount": 47,
+        "smallLabels": [],
+        "labelCount": 25,
+        "screenshot": "art/preview/ui-v03-inventory-incoming.png",
+        "screenshotSha256": "20a3d6337ec46e83dde5c1ba732fee6b95c05d31ab41638dfb91bbea55c6599c"
+      },
+      {
+        "name": "inventory-finished",
+        "page": "inventory",
+        "pane": "测试",
+        "picker": false,
+        "modal": false,
+        "skinCount": 47,
+        "smallLabels": [],
+        "labelCount": 24,
+        "screenshot": "art/preview/ui-v03-inventory-finished.png",
+        "screenshotSha256": "e417c9d87dc787137ca1a3f58005026e25b4376be1d812e4a2e99477d1f43559"
+      },
+      {
+        "name": "config",
+        "page": "workbench",
+        "pane": "配置",
+        "picker": false,
+        "modal": false,
+        "skinCount": 47,
+        "smallLabels": [],
+        "labelCount": 47,
+        "screenshot": "art/preview/ui-v03-config.png",
+        "screenshotSha256": "88ccec4ccbaa0645a3b5494a1ae756175ffb391f84c5024982f82d5b411b2c1d"
+      },
+      {
+        "name": "picker",
+        "page": "workbench",
+        "pane": "配置",
+        "picker": true,
+        "modal": false,
+        "skinCount": 47,
+        "smallLabels": [],
+        "labelCount": 36,
+        "screenshot": "art/preview/ui-v03-picker.png",
+        "screenshotSha256": "cc734df9421ca79ec03e14b87005e49ade0d8679c46e630effb5431657a5a3fd"
+      },
+      {
+        "name": "assembly",
+        "page": "workbench",
+        "pane": "装配",
+        "picker": false,
+        "modal": false,
+        "skinCount": 47,
+        "smallLabels": [],
+        "labelCount": 33,
+        "screenshot": "art/preview/ui-v03-assembly.png",
+        "screenshotSha256": "8362d36b51aeaef3c328e66730589e6f111769f187f2881549517caa6d2220bf"
+      },
+      {
+        "name": "layout",
+        "page": "workbench",
+        "pane": "布局",
+        "picker": false,
+        "modal": false,
+        "skinCount": 47,
+        "smallLabels": [],
+        "labelCount": 38,
+        "screenshot": "art/preview/ui-v03-layout.png",
+        "screenshotSha256": "e3b05c101eab7154cec30665d89e4348afdb6529a8081c47ad005dbb9c770a75"
+      },
+      {
+        "name": "routing",
+        "page": "workbench",
+        "pane": "理线",
+        "picker": false,
+        "modal": false,
+        "skinCount": 47,
+        "smallLabels": [],
+        "labelCount": 39,
+        "screenshot": "art/preview/ui-v03-routing.png",
+        "screenshotSha256": "6556c933844a36fc3bfa4194c00bfa93252c92e9aaa09e50c192fc7d5900bd25"
+      },
+      {
+        "name": "appearance",
+        "page": "workbench",
+        "pane": "外观",
+        "picker": false,
+        "modal": false,
+        "skinCount": 47,
+        "smallLabels": [],
+        "labelCount": 32,
+        "screenshot": "art/preview/ui-v03-appearance.png",
+        "screenshotSha256": "06758b753a21d93cd7ec71ce446a67c2d2e060dbf65486b46314674d65c6e070"
+      },
+      {
+        "name": "testing",
+        "page": "workbench",
+        "pane": "测试",
+        "picker": false,
+        "modal": false,
+        "skinCount": 47,
+        "smallLabels": [],
+        "labelCount": 44,
+        "screenshot": "art/preview/ui-v03-testing.png",
+        "screenshotSha256": "6c5f9dd39adb810cfc81afd7b2b34411b27aa52acd12b3c19f76f78132d58ae9"
+      },
+      {
+        "name": "batch-dialog",
+        "page": "workbench",
+        "pane": "测试",
+        "picker": false,
+        "modal": true,
+        "skinCount": 47,
+        "smallLabels": [],
+        "labelCount": 49,
+        "screenshot": "art/preview/ui-v03-batch-dialog.png",
+        "screenshotSha256": "3a262ed050bbb0ad83b5de283b90956e8fb9f799544e34512c596e88646e29f2"
+      },
+      {
+        "name": "inventory-finished",
+        "page": "inventory",
+        "pane": "测试",
+        "picker": false,
+        "modal": false,
+        "skinCount": 47,
+        "smallLabels": [],
+        "labelCount": 28,
+        "screenshot": "art/preview/ui-v03-inventory-finished.png",
+        "screenshotSha256": "e417c9d87dc787137ca1a3f58005026e25b4376be1d812e4a2e99477d1f43559"
+      },
+      {
+        "name": "month-dialog",
+        "page": "workshop",
+        "pane": "测试",
+        "picker": false,
+        "modal": true,
+        "skinCount": 47,
+        "smallLabels": [
+          {
+            "name": "ResourceLabel0",
+            "text": "装配工位",
+            "font": 17
+          },
+          {
+            "name": "ResourceLabel1",
+            "text": "测试位",
+            "font": 17
+          },
+          {
+            "name": "ResourceLabel2",
+            "text": "本月工时",
+            "font": 17
+          }
+        ],
+        "labelCount": 35,
+        "screenshot": "art/preview/ui-v03-month-dialog.png",
+        "screenshotSha256": "51aef7fc5e13194f591968303a3f59e359e4f8a79264cf03f454293908c10ea9"
+      },
+      {
+        "name": "reports",
+        "page": "reports",
+        "pane": "测试",
+        "picker": false,
+        "modal": false,
+        "skinCount": 47,
+        "smallLabels": [],
+        "labelCount": 31,
+        "screenshot": "art/preview/ui-v03-reports.png",
+        "screenshotSha256": "560af4c14597932ce31b466090f1d4c28d41e7e4902388eaf7a4ffdd5217aa4e"
+      },
+      {
+        "name": "report-notes",
+        "page": "reportNotes",
+        "pane": "测试",
+        "picker": false,
+        "modal": false,
+        "skinCount": 47,
+        "smallLabels": [],
+        "labelCount": 22,
+        "screenshot": "art/preview/ui-v03-report-notes.png",
+        "screenshotSha256": "ec0d1ed8d5586b657afb23ed4fda7b96ba9920e2e6add635c6cd212fc6b529c0"
+      },
+      {
+        "name": "company",
+        "page": "company",
+        "pane": "测试",
+        "picker": false,
+        "modal": false,
+        "skinCount": 47,
+        "smallLabels": [
+          {
+            "name": "ChartMonth0",
+            "text": "1月",
+            "font": 16
+          }
+        ],
+        "labelCount": 40,
+        "screenshot": "art/preview/ui-v03-company.png",
+        "screenshotSha256": "ab0144c2bcd066df14b960a9c6e792f55d4103bf3e268b41ccef9db9c1b66693"
+      },
+      {
+        "name": "news-dialog",
+        "page": "company",
+        "pane": "测试",
+        "picker": false,
+        "modal": true,
+        "skinCount": 47,
+        "smallLabels": [
+          {
+            "name": "ChartMonth0",
+            "text": "1月",
+            "font": 16
+          }
+        ],
+        "labelCount": 44,
+        "screenshot": "art/preview/ui-v03-news-dialog.png",
+        "screenshotSha256": "7d4a0a9a012464b6e9a341c59336128b509c87fcb95efe2657470e97d560fd88"
+      },
+      {
+        "name": "news-dialog-last",
+        "page": "company",
+        "pane": "测试",
+        "picker": false,
+        "modal": true,
+        "skinCount": 47,
+        "smallLabels": [
+          {
+            "name": "ChartMonth0",
+            "text": "1月",
+            "font": 16
+          }
+        ],
+        "labelCount": 43,
+        "screenshot": "art/preview/ui-v03-news-dialog-last.png",
+        "screenshotSha256": "ecf832cab88928f40951f06086475d6d81c2f8fbb5b82c4edb479e6d75447c7c"
+      },
+      {
+        "name": "ending",
+        "page": "ending",
+        "pane": "测试",
+        "picker": false,
+        "modal": false,
+        "skinCount": 47,
+        "smallLabels": [],
+        "labelCount": 33,
+        "screenshot": "art/preview/ui-v03-ending.png",
+        "screenshotSha256": "6aea845015e17d8d9b995a9fc3c2f09dc48d2a0d459d13084101c455d27f49f3"
+      },
+      {
+        "name": "new-company-dialog",
+        "page": "start",
+        "pane": "测试",
+        "picker": false,
+        "modal": true,
+        "skinCount": 47,
+        "smallLabels": [],
+        "labelCount": 16,
+        "screenshot": "art/preview/ui-v03-new-company-dialog.png",
+        "screenshotSha256": "29ac4371ec3c51a4e183a93eedf208fdb15fcbba4d044317594f54a190bcafb4"
+      },
+      {
+        "name": "ending-bankrupt",
+        "page": "ending",
+        "pane": "测试",
+        "picker": false,
+        "modal": false,
+        "skinCount": 47,
+        "smallLabels": [],
+        "labelCount": 30,
+        "screenshot": "art/preview/ui-v03-ending-bankrupt.png",
+        "screenshotSha256": "223b447cafabcb54445475851f0b3f2a0f740084fd63ade778e0c38bfe5690de"
+      },
+      {
+        "name": "products-empty",
+        "page": "designs",
+        "pane": "测试",
+        "picker": false,
+        "modal": false,
+        "skinCount": 47,
+        "smallLabels": [],
+        "labelCount": 25,
+        "screenshot": "art/preview/ui-v03-products-empty.png",
+        "screenshotSha256": "523dd901971119ac2201cb7e8366d92dc20ed70603cb7dea0d6dbe21235deadd"
+      },
+      {
+        "name": "portrait-414",
+        "page": "workshop",
+        "pane": "测试",
+        "picker": false,
+        "modal": false,
+        "skinCount": 47,
+        "smallLabels": [
+          {
+            "name": "ResourceLabel0",
+            "text": "装配工位",
+            "font": 17
+          },
+          {
+            "name": "ResourceLabel1",
+            "text": "测试位",
+            "font": 17
+          },
+          {
+            "name": "ResourceLabel2",
+            "text": "本月工时",
+            "font": 17
+          }
+        ],
+        "labelCount": 31,
+        "screenshot": "art/preview/ui-v03-portrait-414.png",
+        "screenshotSha256": "9d803831f50f50d14eaf490aab1849b84dd6a4b2d74dc5ef796e7974384c6c31"
+      },
+      {
+        "name": "workshop-active",
+        "page": "workshop",
+        "pane": "配置",
+        "picker": false,
+        "modal": false,
+        "skinCount": 47,
+        "smallLabels": [
+          {
+            "name": "ResourceLabel0",
+            "text": "装配工位",
+            "font": 17
+          },
+          {
+            "name": "ResourceLabel1",
+            "text": "测试位",
+            "font": 17
+          },
+          {
+            "name": "ResourceLabel2",
+            "text": "本月工时",
+            "font": 17
+          }
+        ],
+        "labelCount": 32,
+        "screenshot": "art/preview/ui-v03-workshop-active.png",
+        "screenshotSha256": "77e4c1310655504fe8d8d61559f2f177715166efb846e933430a97907df57938"
+      }
+    ],
+    "playerStateRestored": {
+      "verified": true,
+      "page": "workshop",
+      "month": 1,
+      "cash": 30000,
+      "designs": 2,
+      "normalSaveStore": true
+    },
+    "temporaryViewportReset": true,
+    "desktopPreview": {
+      "path": "art/preview/ui-v03-desktop.png",
+      "sha256": "0dae6002cb129678631eb86bc808ee1e427ea3c9a5f28ec8a338cf5f5b286cde"
+    }
+  },
+  "wechat": {
+    "build": "passed",
+    "mainBytes": 1758843,
+    "totalBytes": 17679229,
+    "budget": {
+      "main": 3500000,
+      "total": 20000000
+    },
+    "uploadBytes": null,
+    "simulator": "not-verified",
+    "realDevice": "not-verified"
+  },
+  "sourceHashes": {
+    "controller": "41801d713222164a9ec08a21f369a9a7c6e556a0d92755d07f62127e45bafddb",
+    "skinMap": "2b334c573e0056aa9d2a734d0896466dcb60c6e33c89e7173420c4e96275dc27",
+    "uiSpecification": "c4433f4914463c0095b8eb00eaf27b64a276e6044af6a0933b5b6d177df62494"
+  }
+}

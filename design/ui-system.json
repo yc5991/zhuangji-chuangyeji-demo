@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 2,
+  "status": "generated-and-figma-sliced-full-ui-v03-integrated",
+  "canvas": {
+    "width": 720,
+    "height": 1280,
+    "orientation": "portrait"
+  },
+  "safeZones": {
+    "header": 198,
+    "footer": 92,
+    "contentTop": 206,
+    "contentBottom": 1188
+  },
+  "tokens": {
+    "bg": "#E9DDC7",
+    "panel": "#FFF7E8",
+    "panelAlt": "#F6EAD4",
+    "raised": "#F5E7CC",
+    "line": "#CDB48D",
+    "text": "#352C22",
+    "muted": "#73614C",
+    "orange": "#C75616",
+    "green": "#30694C",
+    "red": "#B93C2F",
+    "blue": "#285F80",
+    "radius": 14,
+    "buttonHeight": 64,
+    "navButtonHeight": 84,
+    "orangeSoft": "#F4D5AC",
+    "wood": "#58402C",
+    "woodLight": "#856343",
+    "woodLine": "#A58257",
+    "onOrange": "#FFF9EC",
+    "hardware": "#182228",
+    "hardwareText": "#EDF2F3"
+  },
+  "states": [
+    "default",
+    "pressed",
+    "selected",
+    "disabled",
+    "error",
+    "complete"
+  ],
+  "icons": "Figma original bitmap silhouette slices for navigation and resource cards; Cocos Graphics fallback for action semantics",
+  "screens": [
+    "start",
+    "workshop",
+    "designs",
+    "workbench",
+    "market",
+    "orders",
+    "company",
+    "inventory",
+    "feedback",
+    "templates",
+    "reports",
+    "reportNotes",
+    "ending"
+  ],
+  "referenceRepos": [
+    {
+      "repo": "Anuken/Mindustry",
+      "license": "GPL-3.0",
+      "pattern": "semantic button styles"
+    },
+    {
+      "repo": "OpenTTD/OpenTTD",
+      "license": "GPL-2.0",
+      "pattern": "frame state flags"
+    },
+    {
+      "repo": "OpenRCT2/OpenRCT2",
+      "license": "GPL-3.0",
+      "pattern": "window content + footer actions"
+    },
+    {
+      "repo": "OpenLoco/OpenLoco",
+      "license": "MIT",
+      "pattern": "dense management lists"
+    }
+  ],
+  "generatedAssets": [
+    {
+      "id": "reference-ui-v02",
+      "ledger": "art/figma/reference-ui-slicing.json",
+      "state": "reviewed-in-figma-and-browser"
+    },
+    {
+      "id": "workshop-isometric-v01",
+      "prompt": "art/prompts/workshop/workshop_isometric_v01.json",
+      "state": "reviewed-static-isometric-overview"
+    },
+    {
+      "id": "full-ui-v03",
+      "ledger": "art/figma/full-ui-slicing-v03.json",
+      "prompts": [
+        "art/prompts/ui/full-v03/materials_v03.json",
+        "art/prompts/ui/full-v03/portraits_v03.json"
+      ],
+      "state": "reviewed-in-figma-and-browser"
+    }
+  ],
+  "workbenchPanes": [
+    "配置",
+    "装配",
+    "布局",
+    "理线",
+    "外观",
+    "测试"
+  ],
+  "sharedControls": [
+    "paper cards",
+    "title ribbons",
+    "wood header",
+    "primary and secondary buttons",
+    "pressed and disabled buttons",
+    "selected tabs",
+    "recessed inputs",
+    "colored status badges",
+    "progress tracks",
+    "customer portraits",
+    "five-tab navigation",
+    "paged dialogs",
+    "toast"
+  ],
+  "liveData": [
+    "prices",
+    "stock and reservations",
+    "order requirements and status",
+    "all test scores",
+    "company finance",
+    "actual monthly revenue and costs",
+    "report feedback",
+    "six-month summary"
+  ],
+  "dialogs": [
+    "monthly settlement",
+    "paged news",
+    "new company confirmation",
+    "batch production",
+    "assembly and removal"
+  ],
+  "slicing": {
+    "surfaceScaling": "nine-slice at source height, then uniform scale for smaller controls",
+    "runtimeKeys": "assets/scripts/ui-art.ts",
+    "newExports": 22,
+    "retainedIcons": 20
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "case_small_side_v01",
+  "componentId": "case_small",
+  "prompt": "Use case: product-mockup. One independent empty chassis installation sprite for Orangegame industrial PC assembly game. Image 1 is a MATERIAL AND NEUTRAL LIGHTING reference only. Strict orthographic left-side open-case view: rear at LEFT, front at RIGHT, top up, all edges horizontal or vertical, no tilt or perspective. Genuine transparent alpha background, sharp metal/plastic materials lit softly upper-left. Entire left side panel removed. EMPTY case: no motherboard, CPU, RAM, GPU, PSU, cooler, drives, fans, cables or loose parts. No printed text, logos, lights or ground shadow. Complete silhouette with padding, no comic outlines or toy shapes. An original compact mATX graphite case, body depth330mm horizontal by height320mm vertical, almost square side shape. Thin folded painted-steel rails and modest feet, slim solid front column at right. Bare motherboard tray in upper-left, four rear expansion slots left middle/lower, empty PSU bay bottom-left, very small one-drive cage at bottom-right. Shallow motherboard chamber, cable routing cutouts along right of tray, practical small footprint. No tall ATX layout; motherboard tray needs mATX 183x226 profile. Keep clear rear exhaust and front intake mount rails, no PSU shroud.",
+  "sourcePath": "art/source/parts/case_small_side_v01.png",
+  "referencePaths": [
+    "art/source/style_review_v02.png"
+  ],
+  "tool": "built_in_image_gen",
+  "intent": "generate",
+  "status": "production_candidate"
+}

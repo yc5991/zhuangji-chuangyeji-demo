@@ -1,0 +1,13 @@
+{
+  "id": "mb_b150_side_v03",
+  "componentId": "mb_b150",
+  "tool": "built_in_image_gen",
+  "intent": "edit",
+  "useCase": "precise-object-edit",
+  "status": "production_candidate",
+  "sourcePath": "art/source/parts/mb_b150_side_v03.png",
+  "referencePaths": [
+    "art/source/parts/mb_b150_side_v02.png"
+  ],
+  "prompt": "Edit only ONE small erroneous connector in the supplied motherboard sprite: REMOVE the very bottom short horizontal expansion slot directly below the lowest white PCI slot (bottom-left, beside the bottom header row). Fill its footprint with matching matte PCB traces and tiny neutral electronics. Preserve the other seven expansion slots exactly, preserve EXACTLY FOUR DDR4 sockets, CPU socket, six SATA ports, heatsinks, all other connectors, camera, materials, colors, outline and full transparency. Do not add any new expansion slot. Final expansion order from top to bottom stays short PCIe x1, long dark PCIe x16, short PCIe x1, long white PCI, long dark PCIe x16, long white PCI, long white PCI. No other changes, no new labels, no environment."
+}

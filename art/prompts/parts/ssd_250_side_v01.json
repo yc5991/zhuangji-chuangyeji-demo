@@ -1,0 +1,13 @@
+{
+  "id": "ssd_250_side_v01",
+  "componentId": "ssd_250",
+  "prompt": "Use case: product-mockup. One independent production sprite for Orangegame PC assembly game. Image 1 is a material/lighting style reference only; do not copy its composition. Relatively realistic restrained 3D game render, neutral light from upper left, gentle fill, sharp edges, no ink outlines, no exaggeration. Strictly orthographic straight-on camera, no tilt or perspective. Genuine transparent alpha background, complete silhouette with generous padding. No text, numbers, logos, watermark, ground, cast floor shadow, environment, additional objects or collage. Render one 2.5-inch SATA SSD, viewed exactly square-on to its flat broad FRONT face. Vertical matte black anodized metal housing, 69.85mm wide by 100mm tall, slim neat chamfered edges, realistic screw recesses, small blank rectangular graphite manufacturer label near center. SATA DATA and SATA POWER connector plastic tongues exposed along bottom edge, correctly distinct 7-pin narrow and 15-pin wide tongue shapes. No attached cables, no adapter, no metal mounting bracket or tray. Housing perfectly rectangular vertical, no perspective side face. Portrait canvas.",
+  "sourcePath": "art/source/parts/ssd_250_side_v01.png",
+  "tool": "built_in_image_gen",
+  "intent": "generate",
+  "useCase": "product-mockup",
+  "status": "production_candidate",
+  "referencePaths": [
+    "art/source/style_review_v02.png"
+  ]
+}

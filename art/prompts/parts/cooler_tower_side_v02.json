@@ -1,0 +1,12 @@
+{
+  "id": "cooler_tower_side_v02",
+  "componentId": "cooler_tower",
+  "prompt": "Use case: precise-object-edit. Preserve the supplied original tower cooler TOP-END view and material style, but correct the visible footprint to 120mm horizontal by80mm vertical including fan frame. The COMPLETE cooler silhouette including its thin right-side fan edge should have width:height 1.5:1. Make the footprint visibly taller relative to width, re-render the circular six copper heatpipe tips and screw heads round rather than stretching them. Use a compact matching fan frame whose height fits this original game's80mm footprint. Camera strictly normal to motherboard plane, cooler rises155mm toward viewer, so show flat silver fin-stack top cap and only the narrow black fan EDGE on right; no round fan face or pedestal. Front of case right, rear left, airflow right to left. Exact same neutral light, complete independent object on fully transparent alpha, no outer glow, no backdrop, no cable, text or logos.",
+  "sourcePath": "art/source/parts/cooler_tower_side_v02.png",
+  "referencePaths": [
+    "art/source/parts/cooler_tower_side_v01.png"
+  ],
+  "tool": "built_in_image_gen",
+  "intent": "edit",
+  "status": "production_candidate"
+}

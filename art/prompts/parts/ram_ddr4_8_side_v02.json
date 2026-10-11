@@ -1,0 +1,14 @@
+{
+  "id": "ram_ddr4_8_side_v02",
+  "componentId": "ram_ddr4_8",
+  "tool": "built_in_image_gen",
+  "intent": "edit",
+  "useCase": "background-extraction",
+  "status": "source_requires_figma_clipping",
+  "sourcePath": "art/source/parts/ram_ddr4_8_side_v02.png",
+  "referencePaths": [
+    "art/source/parts/ram_ddr4_8_side_v01.png"
+  ],
+  "prompt": "Use case: background-extraction. Produce a clean transparent cutout of the supplied hardware sprite. Preserve the exact hardware, orthographic camera, orientation, proportions, metal/PCB/plastic details, lighting and complete silhouette. Remove ALL surrounding grey/green glow, hazy backdrop, soft oval vignette, cast ground shadow and colored halo outside the physical object. Outside the part must be genuinely fully transparent alpha 0; keep the part fully opaque except edge antialiasing. No fake black/white/checkerboard background. No new details, text, border, glow or other object. This is an independent installation sprite; it must composite cleanly on arbitrary backgrounds.",
+  "review": "Residual broad halo remains. Figma tight contour clipping required; do not import raw source."
+}

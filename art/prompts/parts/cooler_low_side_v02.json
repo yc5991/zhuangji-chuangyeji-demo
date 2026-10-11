@@ -1,0 +1,14 @@
+{
+  "id": "cooler_low_side_v02",
+  "componentId": "cooler_low",
+  "intent": "edit",
+  "referencePaths": [
+    "art/source/parts/cooler_low_side_v01.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Edit ONLY the short dangling wire and its incorrectly drawn 3-pin connector at lower right: remove this entire wire and plug, leaving actual transparent alpha in its place. Preserve the square low-profile cooler, four mounting feet, central seven-blade fan, silver fins, hub, top-down strictly orthographic camera, all object dimensions, material and lighting. Do not add a new wire or connector: wiring is a separate game layer. Keep true transparency outside object and no outer shadow, glow or halo. Do not change fan blades, rotate camera, alter frame, add text/logos or crop any mounting foot.",
+  "tool": "built_in_image_gen",
+  "transparent_background": true,
+  "status": "generated_candidate",
+  "sourcePath": "art/source/parts/cooler_low_side_v02.png",
+  "structuralBasis": "Original game art correction; not a manufacturer mechanical drawing"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "case_quiet_rear_v03",
+  "componentId": "case_quiet",
+  "tool": "built_in_image_gen",
+  "intent": "precise-object-edit",
+  "referencePaths": [
+    "art/source/parts/case_quiet_rear_v02.png"
+  ],
+  "sourcePath": "art/source/parts/case_quiet_rear_v03.png",
+  "status": "requires_geometry_revision",
+  "prompt": "Use case: precise-object-edit. Edit target is the supplied original graphite PC case cable-side raster. ONLY reposition the TWO existing SSD mounting plates, correcting their alignment to the original game geometry. Keep the outer silhouette, physical body, feet, top rail, separator, solid tray, front acoustic strip, all cable cutouts, tie tabs, lower PSU bay, lower HDD cage, screws, lighting, camera, transparent alpha and image size unchanged. The image body spans pixels x77..1146, y87..1161. The UPPER plate currently occupies x155..332,y396..637: move its center to x184,y559, about59px LEFT and42px DOWN. The LOWER plate currently x155..333,y654..896: move its center to x184,y808, about60px LEFT and33px DOWN. Keep each plate its existing width177px and height241px; do not add drives. Seamlessly restore the vacated plate areas with matching graphite tray metal. The two plates must end at the new exact centers, vertical alignment with each other, with no old plate outline remaining. Do not change anything else. Realistic industrial hardware, no text, no labels, no diagrams. True transparent background, preserve original transparency.",
+  "review": {
+    "result": "rejected_for_installation",
+    "reason": "Plate translation requested but left displacement not applied; do not promote as a newer ready asset"
+  }
+}

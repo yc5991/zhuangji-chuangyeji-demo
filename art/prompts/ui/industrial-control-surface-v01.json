@@ -1,0 +1,18 @@
+{
+  "id": "industrial-control-surface-v01",
+  "useCase": "ui-mockup",
+  "assetType": "portrait mobile game UI texture and decorative control surface",
+  "primaryRequest": "Create a reusable raster texture sheet for a portrait computer brand management game UI. The game is a realistic 2016 PC workshop: dark powder-coated metal, brushed aluminium, small orange safety markings, compact screws and service labels. Include empty panel plates, a slim status rail, a raised button plate, a recessed toggle plate, a segmented control strip and a progress meter track. These are decorative surfaces only and must not contain readable words, brand logos or invented product names.",
+  "inputImages": [{ "path": "art/source/style_review_v02.png", "role": "reference image for workshop materials, lighting and orange accent" }],
+  "sceneBackdrop": "clean orthographic asset sheet on a neutral transparent or near-black background",
+  "styleMedium": "realistic industrial product photography translated into a game-ready UI texture sheet",
+  "compositionFraming": "front-facing, orthographic, each control isolated with generous padding, no perspective distortion",
+  "lightingMood": "soft workshop light with restrained highlights, readable edges, no neon glow",
+  "colorPalette": ["charcoal", "graphite", "brushed aluminium", "safety orange", "muted teal indicator"],
+  "materialsTextures": "powder-coated steel, brushed aluminium, shallow bevels, tiny screws, subtle wear",
+  "textVerbatim": "",
+  "constraints": "keep every control empty and suitable for nine-slice or slicing in Figma; preserve clear silhouettes; no text; no icons; no logos; no watermark",
+  "avoid": ["fantasy ornament", "rounded toy UI", "gradient glass", "glossy sci-fi hologram", "brand logos", "readable text", "watermark"],
+  "generationStatus": "prompt-prepared; built-in image generation tool was unavailable in this session; native Cocos Graphics controls remain the runtime fallback",
+  "outputPlan": { "source": "art/source/ui/industrial-control-surface-v01.png", "approvedExport": "assets/art/ui/industrial-control-surface-v01.png", "sliceTool": "Figma" }
+}

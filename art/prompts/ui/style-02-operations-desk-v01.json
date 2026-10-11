@@ -1,0 +1,14 @@
+{
+  "id": "style-02-operations-desk-v01",
+  "useCase": "ui-mockup",
+  "assetType": "single full-screen mobile management game UI concept, portrait 9:16",
+  "primaryRequest": "Create one polished UI concept screenshot for Orangegame, a Chinese computer company management game, in a clean operations desk direction. Use a light warm-grey engineering workspace, crisp dark typography, finely ruled production rows, small product photos, restrained orange primary action, green completion and red warning states. The result should feel like a serious tycoon management game adapted for touch, not a generic SaaS dashboard. Keep a narrow photographic workshop banner so the game world remains present.",
+  "inputImages": [{ "path": "art/source/style_review_v02.png", "role": "reference for realistic workshop and actual computer hardware imagery; do not copy layout" }],
+  "subject": "January 2016 company operations overview",
+  "composition": "one 9:16 phone screen; compact company/date/cash header; short workshop image strip; three clear KPI figures; a dense but readable production queue with two rows, component thumbnails and status/progress; fixed month-end primary action; five-item bottom navigation",
+  "contentExact": ["橙序电脑", "2016年1月", "现金 ¥18,420", "排产 02 项", "本月工时 18.5 / 48h", "口碑 1.00", "当前排产", "橙序 G-01 游戏机", "手工装配 · 剩余 6.4 工时", "静音办公样机", "采购等待 · 预计 2.0 工时", "查看月结", "工坊", "产品", "采购", "订单", "公司"],
+  "styleMedium": "refined light industrial management game interface, editorial information hierarchy, realistic small hardware thumbnails",
+  "palette": ["warm light grey", "paper white", "charcoal text", "burnt orange", "green", "muted red"],
+  "constraints": "mobile readable text; compact table-like rows; meaningful labels; clear primary and secondary actions; no generic SaaS charts; no fake brand logos; no watermark",
+  "avoid": ["pure white empty app", "large marketing hero", "card nested in card", "oversized rounded cards", "flat vector-only art", "unreadably small type", "watermark"]
+}

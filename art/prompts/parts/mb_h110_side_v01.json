@@ -1,0 +1,12 @@
+{
+  "id": "mb_h110_side_v01",
+  "componentId": "mb_h110",
+  "prompt": "Use case: product-mockup. One independent installation sprite for Orangegame relatively realistic industrial PC assembly game. Image 1 is ONLY material and neutral upper-left lighting reference. Genuine transparent alpha, no backdrop, glow or cast ground shadow. Direct orthographic top view of motherboard in its PCB plane, rear I/O at LEFT, top up, crisp natural metal/plastic/PCB materials, clean functional original game illustration. No perspective tilt, no RGB lights, logos, text, installed CPU/RAM/GPU/cooler/drives, wires or other objects. Portrait canvas, complete board silhouette with padding. Compact budget mATX board 183mm horizontal by 226mm vertical. Matte dark-brown PCB. Empty LGA1151 CPU retention socket near upper center-left. EXACTLY TWO long vertical DDR4 slots near RIGHT edge, one dark and one pale grey; 24-pin power socket at far right. Four-pin 2x2 EPS power connector at upper-left. Only THREE expansion slots: one long dark PCIe x16 slot horizontal near middle, followed by two SHORT PCIe x1 slots below. Four SATA sockets grouped lower right, one small gold-beige chipset heatsink at bottom right, no huge gaming heatsink. Plausible connector layout of a 2016 low-cost board. Do not add extra memory or expansion slots.",
+  "sourcePath": "art/source/parts/mb_h110_side_v01.png",
+  "referencePaths": [
+    "art/source/style_review_v02.png"
+  ],
+  "tool": "built_in_image_gen",
+  "intent": "generate",
+  "status": "production_candidate"
+}

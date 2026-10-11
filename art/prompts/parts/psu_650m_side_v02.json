@@ -1,0 +1,14 @@
+{
+  "id": "psu_650m_side_v02",
+  "componentId": "psu_650m",
+  "referencePaths": [
+    "art/source/parts/psu_650m_side_v01.png"
+  ],
+  "prompt": "Precise object edit of provided PSU. Redraw this as a TRUE STRAIGHT-ON ORTHOGRAPHIC SIDE-PANEL sprite. REMOVE the entire sloping top fan grille face, leave zero visible top plane, zero perspective convergence. Correct broad side rectangle to160mm depth horizontal by86mm height vertical, exact width/height=1.86. The current box is much too wide; reduce visible WIDTH by around23 percent relative to HEIGHT. Broad facing graphite matte rectangular side with four round Philips corner screws and blank pale gray central specifications sticker. Preserve realistic industrial material/light and no logos/text. Entire perimeter should be four parallel squared edges, no ports or cables on broad face. Generous transparent margin on every side, true alpha background, no floor or outer shadow. Only side facing camera; no top or end faces.",
+  "tool": "built_in_image_gen",
+  "intent": "edit",
+  "transparent_background": true,
+  "status": "generated_candidate",
+  "sourcePath": "art/source/parts/psu_650m_side_v02.png",
+  "structuralBasis": "Original game component projection or animation layers; edits retain references and prior source versions."
+}

@@ -1,6 +1,22 @@
-# Orangegame 微信小游戏
+# 装机创业记
 
-项目使用 Cocos Creator 开发，主要素材由 Codex 绘制，Figma 用于切图
+《装机创业记》是竖屏电脑品牌经营小游戏，正式名称依据用户于 2026 年 10 月 11 日的确认
+
+[试玩下载](https://github.com/yc5991/zhuangji-chuangyeji-demo/releases/tag/demo-2026-10-11)包含浏览器版和微信版，浏览器版解压后双击启动入口，微信版导入开发者工具后填写自己的项目标识
+
+浏览器三路线六个月试玩已完成，依据[验收报告](docs/six-month-demo.md)；微信模拟器完整验收、真机验收和真人体验时长仍待完成
+
+<div align="center">
+
+![游戏首页](art/preview/release-2026-10-11/title.png)
+
+图 1 游戏正式标题页
+
+</div>
+
+[交付说明](docs/release-packaging.md)记录试玩包、项目素材包和验收资料包的用途，[清理清单](docs/cleanup-list.md)列出可以重新生成或归档后清理的文件
+
+项目使用 Cocos Creator 3.8.8 开发，版本依据工程配置，主要素材由 Codex 绘制，Figma 用于切图
 
 根据已确认的游戏规格，游戏定位为竖屏电脑品牌经营，Demo 试玩版本覆盖 2016 年 1—6 月，保留产品设计、高定委托和生产销售循环
 

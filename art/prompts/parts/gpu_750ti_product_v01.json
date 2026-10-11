@@ -1,0 +1,15 @@
+{
+  "id": "gpu_750ti_product_v01",
+  "componentId": "gpu_750ti",
+  "tool": "built_in_image_gen",
+  "intent": "generate",
+  "status": "generated_candidate",
+  "sourcePath": "art/source/parts/gpu_750ti_product_v01.png",
+  "referencePaths": [
+    "art/source/style_review_v02.png",
+    "art/source/parts/gpu_750ti_side_v01.png"
+  ],
+  "transparent_background": true,
+  "structuralBasis": "Original cooler/shroud turnaround, catalog dimensions and power counts. Product camera intentionally differs from installed side view.",
+  "prompt": "Use case: product-mockup. ONE isolated procurement product image of the SAME original game graphics card asreference2. Reference1 gives relatively realistic PC simulator materials/neutral lighting. Reference2 shows installed edge, now rotate same object to a modest three-quarter camera revealing the broad FAN FACE; rear silver expansion bracket atLEFT, endtipRIGHT, long axis horizontal. Camera sees fanface and slightTOP rail, not an installed case. Compact single-fan165x111x33mm entry-level board, plain graphite rounded angular compact shroud; one central90mm black axial fan, no external power socket (game art inference), simple small aluminum heatsink. It fits the shorter body inreference2. The fans are correctly on cooler face which will pointDOWN when installed; product is angled only for catalog view. Fine manufactured brushedaluminum fins visible through shroud slits, matteblack molded polymer, green/dark PCB thin edge, gold PCIecontact edge onlowerleft/middle visible only where fitting. Blank small fan hub plates and small plain metal side nameplate, no writtenbrands/modelletters. Clean realistic crisp silhouette, believable hardware thickness, no cartoonoutline or fantasy sculpture. Entire object centered with generous transparentmargin every edge, truealpha, no floor/reflection/shadow outside silhouette, no boxes, motherboard, cables, environment, glowingRGB, text/logo/watermark. No irrelevant third fan. Preserve the original family railcolor fromreference2."
+}

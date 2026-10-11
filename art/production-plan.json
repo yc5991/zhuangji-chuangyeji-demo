@@ -1,0 +1,1899 @@
+[
+  {
+    "partId": "cpu_6100",
+    "category": "cpu",
+    "displayName": "英特克 INTEK · 膏3-6100",
+    "referenceSources": [
+      "https://www.intel.com/content/www/us/en/products/sku/90729/intel-core-i36100-processor-3m-cache-3-70-ghz/specifications.html"
+    ],
+    "dimensionsMm": null,
+    "requiredPowerPins": null,
+    "side": "exported_for_review",
+    "product": "exported_for_review",
+    "rear": "not_visible_in_rear_view",
+    "views": {
+      "side": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/cpu_6500_side_v01.png",
+        "promptPath": "art/prompts/parts/cpu_6500_side_v01.json",
+        "runtimePath": "assets/art/workbench/side/cpu_6500.png",
+        "stagingPath": "art/exports/parts/cpu_6500_side.png",
+        "sourceAlphaBoundsLtrbPx": [
+          135,
+          154,
+          1119,
+          1097
+        ],
+        "sourceSizePx": [
+          1254,
+          1254
+        ],
+        "sharedBodyFromPartId": "cpu_6500",
+        "sharingBasis": "Original unprinted LGA1151 package; separate model label"
+      },
+      "rear": {
+        "state": "not_visible_in_rear_view"
+      },
+      "product": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/cpu_6500_side_v01.png",
+        "promptPath": "art/prompts/parts/cpu_6500_side_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/cpu_6500_product.png",
+        "sourceAlphaBoundsLtrbPx": [
+          135,
+          154,
+          1119,
+          1097
+        ],
+        "sourceSizePx": [
+          1254,
+          1254
+        ],
+        "sharedBodyFromPartId": "cpu_6500",
+        "sharingBasis": "Original unprinted LGA1151 package; separate model label"
+      }
+    }
+  },
+  {
+    "partId": "cpu_6500",
+    "category": "cpu",
+    "displayName": "英特克 INTEK · 膏5-6500",
+    "referenceSources": [
+      "https://www.intel.com/content/www/us/en/products/sku/88184/intel-core-i56500-processor-6m-cache-up-to-3-60-ghz/specifications.html"
+    ],
+    "dimensionsMm": null,
+    "requiredPowerPins": null,
+    "side": "exported_for_review",
+    "product": "exported_for_review",
+    "rear": "not_visible_in_rear_view",
+    "views": {
+      "side": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/cpu_6500_side_v01.png",
+        "promptPath": "art/prompts/parts/cpu_6500_side_v01.json",
+        "runtimePath": "assets/art/workbench/side/cpu_6500.png",
+        "stagingPath": "art/exports/parts/cpu_6500_side.png",
+        "sourceAlphaBoundsLtrbPx": [
+          135,
+          154,
+          1119,
+          1097
+        ],
+        "sourceSizePx": [
+          1254,
+          1254
+        ]
+      },
+      "rear": {
+        "state": "not_visible_in_rear_view"
+      },
+      "product": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/cpu_6500_side_v01.png",
+        "promptPath": "art/prompts/parts/cpu_6500_side_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/cpu_6500_product.png",
+        "sourceAlphaBoundsLtrbPx": [
+          135,
+          154,
+          1119,
+          1097
+        ],
+        "sourceSizePx": [
+          1254,
+          1254
+        ]
+      }
+    }
+  },
+  {
+    "partId": "cpu_6700",
+    "category": "cpu",
+    "displayName": "英特克 INTEK · 膏7-6700",
+    "referenceSources": [
+      "https://www.intel.com/content/www/us/en/products/sku/88196/intel-core-i76700-processor-8m-cache-up-to-4-00-ghz/specifications.html"
+    ],
+    "dimensionsMm": null,
+    "requiredPowerPins": null,
+    "side": "exported_for_review",
+    "product": "exported_for_review",
+    "rear": "not_visible_in_rear_view",
+    "views": {
+      "side": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/cpu_6500_side_v01.png",
+        "promptPath": "art/prompts/parts/cpu_6500_side_v01.json",
+        "runtimePath": "assets/art/workbench/side/cpu_6500.png",
+        "stagingPath": "art/exports/parts/cpu_6500_side.png",
+        "sourceAlphaBoundsLtrbPx": [
+          135,
+          154,
+          1119,
+          1097
+        ],
+        "sourceSizePx": [
+          1254,
+          1254
+        ],
+        "sharedBodyFromPartId": "cpu_6500",
+        "sharingBasis": "Original unprinted LGA1151 package; separate model label"
+      },
+      "rear": {
+        "state": "not_visible_in_rear_view"
+      },
+      "product": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/cpu_6500_side_v01.png",
+        "promptPath": "art/prompts/parts/cpu_6500_side_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/cpu_6500_product.png",
+        "sourceAlphaBoundsLtrbPx": [
+          135,
+          154,
+          1119,
+          1097
+        ],
+        "sourceSizePx": [
+          1254,
+          1254
+        ],
+        "sharedBodyFromPartId": "cpu_6500",
+        "sharingBasis": "Original unprinted LGA1151 package; separate model label"
+      }
+    }
+  },
+  {
+    "partId": "cpu_fx8350",
+    "category": "cpu",
+    "displayName": "艾迈德 AMDEX · FX-8350",
+    "referenceSources": [
+      "https://www.asus.com/pl/supportonly/m5a97_r20/helpdesk_cpu/",
+      "https://ir.amd.com/news-events/press-releases/detail/75/amd-reports-2012-fourth-quarter-and-annual-results"
+    ],
+    "dimensionsMm": null,
+    "requiredPowerPins": null,
+    "side": "exported_for_review",
+    "product": "exported_for_review",
+    "rear": "not_visible_in_rear_view",
+    "views": {
+      "side": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/cpu_fx8350_side_v01.png",
+        "promptPath": "art/prompts/parts/cpu_fx8350_side_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/cpu_fx8350_side.png",
+        "sourceAlphaBoundsLtrbPx": [
+          90,
+          96,
+          1165,
+          1159
+        ],
+        "sourceSizePx": [
+          1254,
+          1254
+        ]
+      },
+      "rear": {
+        "state": "not_visible_in_rear_view"
+      },
+      "product": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/cpu_fx8350_side_v01.png",
+        "promptPath": "art/prompts/parts/cpu_fx8350_side_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/cpu_fx8350_product.png",
+        "sourceAlphaBoundsLtrbPx": [
+          90,
+          96,
+          1165,
+          1159
+        ],
+        "sourceSizePx": [
+          1254,
+          1254
+        ]
+      }
+    }
+  },
+  {
+    "partId": "mb_h110",
+    "category": "motherboard",
+    "displayName": "华烁 ASUX · 磐基 H110M-KS",
+    "referenceSources": [
+      "https://www.asus.com/ua-ua/motherboards-components/motherboards/prime/h110m-k/techspec/"
+    ],
+    "dimensionsMm": {
+      "height": 226,
+      "width": 183
+    },
+    "requiredPowerPins": null,
+    "side": "exported_for_review",
+    "product": "exported_for_review",
+    "rear": "not_visible_in_rear_view",
+    "views": {
+      "side": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/mb_h110_side_v01.png",
+        "promptPath": "art/prompts/parts/mb_h110_side_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/mb_h110_side.png",
+        "sourceAlphaBoundsLtrbPx": [
+          54,
+          98,
+          1074,
+          1287
+        ],
+        "sourceSizePx": [
+          1129,
+          1393
+        ]
+      },
+      "rear": {
+        "state": "not_visible_in_rear_view"
+      },
+      "product": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/mb_h110_side_v01.png",
+        "promptPath": "art/prompts/parts/mb_h110_side_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/mb_h110_side.png",
+        "sourceAlphaBoundsLtrbPx": [
+          54,
+          98,
+          1074,
+          1287
+        ],
+        "sourceSizePx": [
+          1129,
+          1393
+        ],
+        "sharingBasis": "Actual Figma orthographic board export reused as procurement flat-lay image"
+      }
+    }
+  },
+  {
+    "partId": "mb_b150",
+    "category": "motherboard",
+    "displayName": "华烁 ASUX · 拓域 B150-P",
+    "referenceSources": [
+      "https://dlcdnets.asus.com/pub/ASUS/mb/LGA1151/B150-PLUS/C10961_B150-PLUS_Guide_WEB.pdf"
+    ],
+    "dimensionsMm": {
+      "height": 305,
+      "width": 218
+    },
+    "requiredPowerPins": null,
+    "side": "exported_for_review",
+    "product": "exported_for_review",
+    "rear": "not_visible_in_rear_view",
+    "views": {
+      "side": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/mb_b150_side_v03.png",
+        "promptPath": "art/prompts/parts/mb_b150_side_v03.json",
+        "runtimePath": "assets/art/workbench/side/mb_b150.png",
+        "stagingPath": "art/exports/parts/mb_b150_side.png",
+        "sourceAlphaBoundsLtrbPx": [
+          35,
+          97,
+          1023,
+          1388
+        ],
+        "sourceSizePx": [
+          1059,
+          1486
+        ]
+      },
+      "rear": {
+        "state": "not_visible_in_rear_view"
+      },
+      "product": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/mb_b150_side_v03.png",
+        "promptPath": "art/prompts/parts/mb_b150_side_v03.json",
+        "runtimePath": "assets/art/workbench/side/mb_b150.png",
+        "stagingPath": "art/exports/parts/mb_b150_side.png",
+        "sourceAlphaBoundsLtrbPx": [
+          35,
+          97,
+          1023,
+          1388
+        ],
+        "sourceSizePx": [
+          1059,
+          1486
+        ],
+        "sharingBasis": "Actual Figma orthographic board export reused as procurement flat-lay image"
+      }
+    }
+  },
+  {
+    "partId": "mb_am3",
+    "category": "motherboard",
+    "displayName": "华烁 ASUX · 磐基 M5A97-R2",
+    "referenceSources": [
+      "https://dlcdnets.asus.com/pub/ASUS/mb/SocketAM3%2B/M5A97_R2.0/E7438_M5A97_R20_Manual_web_hi-res.pdf"
+    ],
+    "dimensionsMm": {
+      "height": 305,
+      "width": 229
+    },
+    "requiredPowerPins": null,
+    "side": "exported_for_review",
+    "product": "exported_for_review",
+    "rear": "not_visible_in_rear_view",
+    "views": {
+      "side": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/mb_am3_side_v01.png",
+        "promptPath": "art/prompts/parts/mb_am3_side_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/mb_am3_side.png",
+        "sourceAlphaBoundsLtrbPx": [
+          40,
+          75,
+          1039,
+          1378
+        ],
+        "sourceSizePx": [
+          1087,
+          1447
+        ]
+      },
+      "rear": {
+        "state": "not_visible_in_rear_view"
+      },
+      "product": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/mb_am3_side_v01.png",
+        "promptPath": "art/prompts/parts/mb_am3_side_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/mb_am3_side.png",
+        "sourceAlphaBoundsLtrbPx": [
+          40,
+          75,
+          1039,
+          1378
+        ],
+        "sourceSizePx": [
+          1087,
+          1447
+        ],
+        "sharingBasis": "Actual Figma orthographic board export reused as procurement flat-lay image"
+      }
+    }
+  },
+  {
+    "partId": "gpu_750ti",
+    "category": "gpu",
+    "displayName": "微狮 MISI · NVDIA GTX 750 Ti 2GB · 狮风 标准版",
+    "referenceSources": [
+      "https://www.msi.com/Graphics-Card/N750-Ti-2GD5OCV1/Specification"
+    ],
+    "dimensionsMm": {
+      "length": 165,
+      "height": 111,
+      "thickness": 33
+    },
+    "requiredPowerPins": [],
+    "side": "exported_for_review",
+    "product": "exported_for_review",
+    "rear": "not_visible_in_rear_view",
+    "views": {
+      "side": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/gpu_750ti_side_v01.png",
+        "promptPath": "art/prompts/parts/gpu_750ti_side_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/gpu_750ti_side.png",
+        "sourceAlphaBoundsLtrbPx": [
+          88,
+          191,
+          1684,
+          793
+        ],
+        "sourceSizePx": [
+          1774,
+          887
+        ]
+      },
+      "rear": {
+        "state": "not_visible_in_rear_view"
+      },
+      "product": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/gpu_750ti_product_v02.png",
+        "promptPath": "art/prompts/parts/gpu_750ti_product_v02.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/gpu_750ti_product.png",
+        "sourceAlphaBoundsLtrbPx": [
+          100,
+          158,
+          1453,
+          925
+        ],
+        "sourceSizePx": [
+          1536,
+          1024
+        ]
+      }
+    }
+  },
+  {
+    "partId": "gpu_960",
+    "category": "gpu",
+    "displayName": "微狮 MISI · NVDIA GTX 960 2GB · 狮风 标准版",
+    "referenceSources": [
+      "https://www.msi.com/Graphics-Card/GTX-960-2GD5/Specification"
+    ],
+    "dimensionsMm": {
+      "length": 242,
+      "height": 111,
+      "thickness": 35
+    },
+    "requiredPowerPins": [
+      6
+    ],
+    "side": "exported_for_review",
+    "product": "exported_for_review",
+    "rear": "not_visible_in_rear_view",
+    "views": {
+      "side": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/gpu_960_side_v01.png",
+        "promptPath": "art/prompts/parts/gpu_960_side_v01.json",
+        "runtimePath": "assets/art/workbench/side/gpu_960.png",
+        "stagingPath": "art/exports/parts/gpu_960_side.png",
+        "sourceAlphaBoundsLtrbPx": [
+          50,
+          283,
+          1740,
+          629
+        ],
+        "sourceSizePx": [
+          1774,
+          887
+        ]
+      },
+      "rear": {
+        "state": "not_visible_in_rear_view"
+      },
+      "product": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/gpu_960_product_v02.png",
+        "promptPath": "art/prompts/parts/gpu_960_product_v02.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/gpu_960_product.png",
+        "sourceAlphaBoundsLtrbPx": [
+          70,
+          112,
+          1550,
+          874
+        ],
+        "sourceSizePx": [
+          1619,
+          972
+        ]
+      }
+    }
+  },
+  {
+    "partId": "gpu_970",
+    "category": "gpu",
+    "displayName": "微狮 MISI · NVDIA GTX 970 4GB · 狮影 双风扇版",
+    "referenceSources": [
+      "https://www.msi.com/Graphics-Card/GTX-970-GAMING-4G/Specification"
+    ],
+    "dimensionsMm": {
+      "length": 277,
+      "height": 140,
+      "thickness": 35
+    },
+    "requiredPowerPins": [
+      6,
+      8
+    ],
+    "side": "exported_for_review",
+    "product": "exported_for_review",
+    "rear": "not_visible_in_rear_view",
+    "views": {
+      "side": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/gpu_970_side_v01.png",
+        "promptPath": "art/prompts/parts/gpu_970_side_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/gpu_970_side.png",
+        "sourceAlphaBoundsLtrbPx": [
+          12,
+          268,
+          1762,
+          658
+        ],
+        "sourceSizePx": [
+          1774,
+          887
+        ]
+      },
+      "rear": {
+        "state": "not_visible_in_rear_view"
+      },
+      "product": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/gpu_970_product_v02.png",
+        "promptPath": "art/prompts/parts/gpu_970_product_v02.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/gpu_970_product.png",
+        "sourceAlphaBoundsLtrbPx": [
+          73,
+          62,
+          1720,
+          855
+        ],
+        "sourceSizePx": [
+          1774,
+          887
+        ]
+      }
+    }
+  },
+  {
+    "partId": "gpu_r9380",
+    "category": "gpu",
+    "displayName": "微狮 MISI · AMDEX R9 380 4GB · 狮影 双风扇版",
+    "referenceSources": [
+      "https://www.msi.com/Graphics-Card/R9-380-GAMING-4G/Specification"
+    ],
+    "dimensionsMm": {
+      "length": 268,
+      "height": 138,
+      "thickness": 40
+    },
+    "requiredPowerPins": [
+      6,
+      6
+    ],
+    "side": "exported_for_review",
+    "product": "exported_for_review",
+    "rear": "not_visible_in_rear_view",
+    "views": {
+      "side": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/gpu_r9380_side_v01.png",
+        "promptPath": "art/prompts/parts/gpu_r9380_side_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/gpu_r9380_side.png",
+        "sourceAlphaBoundsLtrbPx": [
+          42,
+          125,
+          1965,
+          657
+        ],
+        "sourceSizePx": [
+          2025,
+          776
+        ]
+      },
+      "rear": {
+        "state": "not_visible_in_rear_view"
+      },
+      "product": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/gpu_r9380_product_v02.png",
+        "promptPath": "art/prompts/parts/gpu_r9380_product_v02.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/gpu_r9380_product.png",
+        "sourceAlphaBoundsLtrbPx": [
+          29,
+          20,
+          1718,
+          879
+        ],
+        "sourceSizePx": [
+          1748,
+          900
+        ]
+      }
+    }
+  },
+  {
+    "partId": "gpu_1080",
+    "category": "gpu",
+    "displayName": "微狮 MISI · NVDIA GTX 1080 8GB · 源铸 首发参考版",
+    "referenceSources": [
+      "https://www.msi.com/Graphics-Card/GeForce-GTX-1080-Founders-Edition/Specification"
+    ],
+    "dimensionsMm": {
+      "length": 269,
+      "height": 111,
+      "thickness": 40
+    },
+    "requiredPowerPins": [
+      8
+    ],
+    "side": "exported_for_review",
+    "product": "exported_for_review",
+    "rear": "not_visible_in_rear_view",
+    "views": {
+      "side": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/gpu_1080_side_v01.png",
+        "promptPath": "art/prompts/parts/gpu_1080_side_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/gpu_1080_side.png",
+        "sourceAlphaBoundsLtrbPx": [
+          17,
+          259,
+          1750,
+          701
+        ],
+        "sourceSizePx": [
+          1774,
+          887
+        ]
+      },
+      "rear": {
+        "state": "not_visible_in_rear_view"
+      },
+      "product": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/gpu_1080_product_v01.png",
+        "promptPath": "art/prompts/parts/gpu_1080_product_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/gpu_1080_product.png",
+        "sourceAlphaBoundsLtrbPx": [
+          15,
+          205,
+          1760,
+          725
+        ],
+        "sourceSizePx": [
+          1774,
+          887
+        ]
+      }
+    }
+  },
+  {
+    "partId": "gpu_1070",
+    "category": "gpu",
+    "displayName": "微狮 MISI · NVDIA GTX 1070 8GB · 源铸 首发参考版",
+    "referenceSources": [
+      "https://www.msi.com/Graphics-Card/GeForce-GTX-1070-Founders-Edition/Specification"
+    ],
+    "dimensionsMm": {
+      "length": 268,
+      "height": 111,
+      "thickness": 38
+    },
+    "requiredPowerPins": [
+      8
+    ],
+    "side": "exported_for_review",
+    "product": "exported_for_review",
+    "rear": "not_visible_in_rear_view",
+    "views": {
+      "side": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/gpu_1070_side_v02.png",
+        "promptPath": "art/prompts/parts/gpu_1070_side_v02.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/gpu_1070_side.png",
+        "sourceAlphaBoundsLtrbPx": [
+          28,
+          229,
+          1748,
+          679
+        ],
+        "sourceSizePx": [
+          1774,
+          887
+        ]
+      },
+      "rear": {
+        "state": "not_visible_in_rear_view"
+      },
+      "product": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/gpu_1070_product_v01.png",
+        "promptPath": "art/prompts/parts/gpu_1070_product_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/gpu_1070_product.png",
+        "sourceAlphaBoundsLtrbPx": [
+          16,
+          88,
+          1758,
+          819
+        ],
+        "sourceSizePx": [
+          1774,
+          887
+        ]
+      }
+    }
+  },
+  {
+    "partId": "gpu_rx480_4",
+    "category": "gpu",
+    "displayName": "微狮 MISI · AMDEX RX 480 4GB · 狮风 标准版",
+    "referenceSources": [
+      "https://www.msi.com/Graphics-Card/Radeon-RX-480-4G/Specification"
+    ],
+    "dimensionsMm": {
+      "length": 242,
+      "height": 112,
+      "thickness": 37
+    },
+    "requiredPowerPins": [
+      6
+    ],
+    "side": "exported_for_review",
+    "product": "exported_for_review",
+    "rear": "not_visible_in_rear_view",
+    "views": {
+      "side": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/gpu_rx480_4_side_v01.png",
+        "promptPath": "art/prompts/parts/gpu_rx480_4_side_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/gpu_rx480_4_side.png",
+        "sourceAlphaBoundsLtrbPx": [
+          32,
+          281,
+          1737,
+          662
+        ],
+        "sourceSizePx": [
+          1774,
+          887
+        ]
+      },
+      "rear": {
+        "state": "not_visible_in_rear_view"
+      },
+      "product": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/gpu_rx480_4_product_v01.png",
+        "promptPath": "art/prompts/parts/gpu_rx480_4_product_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/gpu_rx480_4_product.png",
+        "sourceAlphaBoundsLtrbPx": [
+          51,
+          136,
+          1789,
+          752
+        ],
+        "sourceSizePx": [
+          1842,
+          854
+        ]
+      }
+    }
+  },
+  {
+    "partId": "gpu_rx480_8",
+    "category": "gpu",
+    "displayName": "微狮 MISI · AMDEX RX 480 8GB · 狮风 标准版",
+    "referenceSources": [
+      "https://www.msi.com/Graphics-Card/AMD-Radeon-RX-480-8G/Specification"
+    ],
+    "dimensionsMm": {
+      "length": 240,
+      "height": 112,
+      "thickness": 37
+    },
+    "requiredPowerPins": [
+      6
+    ],
+    "side": "exported_for_review",
+    "product": "exported_for_review",
+    "rear": "not_visible_in_rear_view",
+    "views": {
+      "side": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/gpu_rx480_8_side_v01.png",
+        "promptPath": "art/prompts/parts/gpu_rx480_8_side_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/gpu_rx480_8_side.png",
+        "sourceAlphaBoundsLtrbPx": [
+          29,
+          261,
+          1742,
+          698
+        ],
+        "sourceSizePx": [
+          1774,
+          887
+        ]
+      },
+      "rear": {
+        "state": "not_visible_in_rear_view"
+      },
+      "product": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/gpu_rx480_8_product_v01.png",
+        "promptPath": "art/prompts/parts/gpu_rx480_8_product_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/gpu_rx480_8_product.png",
+        "sourceAlphaBoundsLtrbPx": [
+          25,
+          92,
+          1801,
+          769
+        ],
+        "sourceSizePx": [
+          1836,
+          857
+        ]
+      }
+    }
+  },
+  {
+    "partId": "ram_ddr3_4",
+    "category": "ram",
+    "displayName": "金士盾 KINGSTONE · 守望 DDR3-1600 4GB",
+    "referenceSources": [
+      "https://www.kingston.com/datasheets/KVR16N11S8_4.pdf"
+    ],
+    "dimensionsMm": null,
+    "requiredPowerPins": null,
+    "side": "exported_for_review",
+    "product": "exported_for_review",
+    "rear": "not_visible_in_rear_view",
+    "views": {
+      "side": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/ram_ddr3_4_side_v01.png",
+        "promptPath": "art/prompts/parts/ram_ddr3_4_side_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/ram_ddr3_4_side.png",
+        "sourceAlphaBoundsLtrbPx": [
+          512,
+          46,
+          569,
+          1426
+        ],
+        "sourceSizePx": [
+          1073,
+          1466
+        ]
+      },
+      "rear": {
+        "state": "not_visible_in_rear_view"
+      },
+      "product": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/ram_ddr3_4_product_v01.png",
+        "promptPath": "art/prompts/parts/ram_ddr3_4_product_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/ram_ddr3_4_product.png",
+        "sourceAlphaBoundsLtrbPx": [
+          46,
+          192,
+          2001,
+          573
+        ],
+        "sourceSizePx": [
+          2048,
+          768
+        ]
+      }
+    }
+  },
+  {
+    "partId": "ram_ddr3_8",
+    "category": "ram",
+    "displayName": "金士盾 KINGSTONE · 守望 DDR3-1600 8GB",
+    "referenceSources": [
+      "https://www.kingston.com/datasheets/KVR16N11_8.pdf"
+    ],
+    "dimensionsMm": null,
+    "requiredPowerPins": null,
+    "side": "exported_for_review",
+    "product": "exported_for_review",
+    "rear": "not_visible_in_rear_view",
+    "views": {
+      "side": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/ram_ddr3_8_side_v01.png",
+        "promptPath": "art/prompts/parts/ram_ddr3_8_side_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/ram_ddr3_8_side.png",
+        "sourceAlphaBoundsLtrbPx": [
+          505,
+          40,
+          568,
+          1434
+        ],
+        "sourceSizePx": [
+          1073,
+          1466
+        ]
+      },
+      "rear": {
+        "state": "not_visible_in_rear_view"
+      },
+      "product": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/ram_ddr3_8_product_v02.png",
+        "promptPath": "art/prompts/parts/ram_ddr3_8_product_v02.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/ram_ddr3_8_product.png",
+        "sourceAlphaBoundsLtrbPx": [
+          36,
+          195,
+          1986,
+          580
+        ],
+        "sourceSizePx": [
+          2023,
+          777
+        ]
+      }
+    }
+  },
+  {
+    "partId": "ram_ddr4_4",
+    "category": "ram",
+    "displayName": "金士盾 KINGSTONE · 守望 DDR4-2133 4GB",
+    "referenceSources": [
+      "https://www.kingston.com/datasheets/KVR21N15S8_4.pdf"
+    ],
+    "dimensionsMm": null,
+    "requiredPowerPins": null,
+    "side": "exported_for_review",
+    "product": "exported_for_review",
+    "rear": "not_visible_in_rear_view",
+    "views": {
+      "side": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/ram_ddr4_4_side_v01.png",
+        "promptPath": "art/prompts/parts/ram_ddr4_4_side_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/ram_ddr4_4_side.png",
+        "sourceAlphaBoundsLtrbPx": [
+          516,
+          27,
+          567,
+          1439
+        ],
+        "sourceSizePx": [
+          1073,
+          1466
+        ]
+      },
+      "rear": {
+        "state": "not_visible_in_rear_view"
+      },
+      "product": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/ram_ddr4_4_product_v01.png",
+        "promptPath": "art/prompts/parts/ram_ddr4_4_product_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/ram_ddr4_4_product.png",
+        "sourceAlphaBoundsLtrbPx": [
+          49,
+          176,
+          1999,
+          587
+        ],
+        "sourceSizePx": [
+          2048,
+          768
+        ]
+      }
+    }
+  },
+  {
+    "partId": "ram_ddr4_8",
+    "category": "ram",
+    "displayName": "金士盾 KINGSTONE · 守望 DDR4-2133 8GB",
+    "referenceSources": [
+      "https://www.kingston.com/datasheets/KVR21N15D8_8.pdf"
+    ],
+    "dimensionsMm": null,
+    "requiredPowerPins": null,
+    "side": "exported_for_review",
+    "product": "exported_for_review",
+    "rear": "not_visible_in_rear_view",
+    "views": {
+      "side": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/ram_ddr4_8_side_v02.png",
+        "promptPath": "art/prompts/parts/ram_ddr4_8_side_v02.json",
+        "runtimePath": "assets/art/workbench/side/ram_ddr4_8.png",
+        "stagingPath": "art/exports/parts/ram_ddr4_8_side.png",
+        "sourceAlphaBoundsLtrbPx": [
+          482,
+          49,
+          543,
+          1487
+        ],
+        "sourceSizePx": [
+          1024,
+          1536
+        ]
+      },
+      "rear": {
+        "state": "not_visible_in_rear_view"
+      },
+      "product": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/ram_ddr4_8_product_v01.png",
+        "promptPath": "art/prompts/parts/ram_ddr4_8_product_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/ram_ddr4_8_product.png",
+        "sourceAlphaBoundsLtrbPx": [
+          65,
+          134,
+          2105,
+          582
+        ],
+        "sourceSizePx": [
+          2172,
+          724
+        ]
+      }
+    }
+  },
+  {
+    "partId": "ssd_120",
+    "category": "storage",
+    "displayName": "三颗星 SAMSONG · 迅影 850 EVA 120GB",
+    "referenceSources": [
+      "https://download.semiconductor.samsung.com/resources/data-sheet/Samsung_SSD_850_EVO_Data_Sheet_Rev_3_1.pdf"
+    ],
+    "dimensionsMm": {
+      "length": 100,
+      "width": 69.85,
+      "height": 6.8
+    },
+    "requiredPowerPins": null,
+    "side": "not_visible_in_side_view",
+    "product": "exported_for_review",
+    "rear": "exported_for_review",
+    "views": {
+      "side": {
+        "state": "not_visible_in_side_view"
+      },
+      "rear": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/ssd_250_side_v01.png",
+        "promptPath": "art/prompts/parts/ssd_250_side_v01.json",
+        "runtimePath": "assets/art/workbench/rear/ssd_250.png",
+        "stagingPath": "art/exports/parts/ssd_250_rear.png",
+        "sourceAlphaBoundsLtrbPx": [
+          117,
+          138,
+          933,
+          1337
+        ],
+        "sourceSizePx": [
+          1049,
+          1500
+        ],
+        "sharedBodyFromPartId": "ssd_250",
+        "sharingBasis": "Original 850 EVA family enclosure; separate capacity label"
+      },
+      "product": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/ssd_250_side_v01.png",
+        "promptPath": "art/prompts/parts/ssd_250_side_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/ssd_250_product.png",
+        "sourceAlphaBoundsLtrbPx": [
+          117,
+          138,
+          933,
+          1337
+        ],
+        "sourceSizePx": [
+          1049,
+          1500
+        ],
+        "sharedBodyFromPartId": "ssd_250",
+        "sharingBasis": "Original 850 EVA family enclosure; separate capacity label"
+      }
+    }
+  },
+  {
+    "partId": "ssd_250",
+    "category": "storage",
+    "displayName": "三颗星 SAMSONG · 迅影 850 EVA 250GB",
+    "referenceSources": [
+      "https://download.semiconductor.samsung.com/resources/data-sheet/Samsung_SSD_850_EVO_Data_Sheet_Rev_3_1.pdf"
+    ],
+    "dimensionsMm": {
+      "length": 100,
+      "width": 69.85,
+      "height": 6.8
+    },
+    "requiredPowerPins": null,
+    "side": "not_visible_in_side_view",
+    "product": "exported_for_review",
+    "rear": "exported_for_review",
+    "views": {
+      "side": {
+        "state": "not_visible_in_side_view"
+      },
+      "rear": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/ssd_250_side_v01.png",
+        "promptPath": "art/prompts/parts/ssd_250_side_v01.json",
+        "runtimePath": "assets/art/workbench/rear/ssd_250.png",
+        "stagingPath": "art/exports/parts/ssd_250_rear.png",
+        "sourceAlphaBoundsLtrbPx": [
+          117,
+          138,
+          933,
+          1337
+        ],
+        "sourceSizePx": [
+          1049,
+          1500
+        ]
+      },
+      "product": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/ssd_250_side_v01.png",
+        "promptPath": "art/prompts/parts/ssd_250_side_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/ssd_250_product.png",
+        "sourceAlphaBoundsLtrbPx": [
+          117,
+          138,
+          933,
+          1337
+        ],
+        "sourceSizePx": [
+          1049,
+          1500
+        ]
+      }
+    }
+  },
+  {
+    "partId": "ssd_500",
+    "category": "storage",
+    "displayName": "三颗星 SAMSONG · 迅影 850 EVA 500GB",
+    "referenceSources": [
+      "https://download.semiconductor.samsung.com/resources/data-sheet/Samsung_SSD_850_EVO_Data_Sheet_Rev_3_1.pdf"
+    ],
+    "dimensionsMm": {
+      "length": 100,
+      "width": 69.85,
+      "height": 6.8
+    },
+    "requiredPowerPins": null,
+    "side": "not_visible_in_side_view",
+    "product": "exported_for_review",
+    "rear": "exported_for_review",
+    "views": {
+      "side": {
+        "state": "not_visible_in_side_view"
+      },
+      "rear": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/ssd_250_side_v01.png",
+        "promptPath": "art/prompts/parts/ssd_250_side_v01.json",
+        "runtimePath": "assets/art/workbench/rear/ssd_250.png",
+        "stagingPath": "art/exports/parts/ssd_250_rear.png",
+        "sourceAlphaBoundsLtrbPx": [
+          117,
+          138,
+          933,
+          1337
+        ],
+        "sourceSizePx": [
+          1049,
+          1500
+        ],
+        "sharedBodyFromPartId": "ssd_250",
+        "sharingBasis": "Original 850 EVA family enclosure; separate capacity label"
+      },
+      "product": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/ssd_250_side_v01.png",
+        "promptPath": "art/prompts/parts/ssd_250_side_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/ssd_250_product.png",
+        "sourceAlphaBoundsLtrbPx": [
+          117,
+          138,
+          933,
+          1337
+        ],
+        "sourceSizePx": [
+          1049,
+          1500
+        ],
+        "sharedBodyFromPartId": "ssd_250",
+        "sharingBasis": "Original 850 EVA family enclosure; separate capacity label"
+      }
+    }
+  },
+  {
+    "partId": "hdd_1000",
+    "category": "storage",
+    "displayName": "西部字节 WESTBYTE · 蓝湾 1TB",
+    "referenceSources": [
+      "https://documents.westerndigital.com/content/dam/doc-library/en_us/assets/public/western-digital/product/internal-drives/wd-blue-hdd/data-sheet-western-digital-wd-blue-pc-hdd.pdf"
+    ],
+    "dimensionsMm": {
+      "length": 147,
+      "width": 101.6,
+      "height": 26.1
+    },
+    "requiredPowerPins": null,
+    "side": "exported_for_review",
+    "product": "exported_for_review",
+    "rear": "exported_for_review",
+    "views": {
+      "side": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/hdd_1000_side_v01.png",
+        "promptPath": "art/prompts/parts/hdd_1000_side_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/hdd_1000_side.png",
+        "sourceAlphaBoundsLtrbPx": [
+          103,
+          241,
+          1906,
+          553
+        ],
+        "sourceSizePx": [
+          2007,
+          783
+        ]
+      },
+      "rear": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/hdd_1000_rear_v01.png",
+        "promptPath": "art/prompts/parts/hdd_1000_rear_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/hdd_1000_rear.png",
+        "sourceAlphaBoundsLtrbPx": [
+          53,
+          189,
+          1969,
+          619
+        ],
+        "sourceSizePx": [
+          2020,
+          779
+        ]
+      },
+      "product": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/hdd_1000_product_v01.png",
+        "promptPath": "art/prompts/parts/hdd_1000_product_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/hdd_1000_product.png",
+        "sourceAlphaBoundsLtrbPx": [
+          31,
+          164,
+          999,
+          1331
+        ],
+        "sourceSizePx": [
+          1024,
+          1536
+        ]
+      }
+    }
+  },
+  {
+    "partId": "psu_350",
+    "category": "psu",
+    "displayName": "海盗旗 CORSAIL · 航海 350",
+    "referenceSources": [],
+    "dimensionsMm": {
+      "width": 150,
+      "height": 86,
+      "depth": 140
+    },
+    "requiredPowerPins": null,
+    "side": "exported_for_review",
+    "product": "exported_for_review",
+    "rear": "exported_for_review",
+    "views": {
+      "side": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/psu_450_side_v02.png",
+        "promptPath": "art/prompts/parts/psu_450_side_v02.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/psu_450_side.png",
+        "sourceAlphaBoundsLtrbPx": [
+          129,
+          59,
+          1449,
+          890
+        ],
+        "sourceSizePx": [
+          1599,
+          984
+        ],
+        "sharedBodyFromPartId": "psu_450",
+        "sharingBasis": "Original non-modular 140mm game enclosure; separate wattage label"
+      },
+      "rear": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/psu_450_rear_v01.png",
+        "promptPath": "art/prompts/parts/psu_450_rear_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/psu_450_rear.png",
+        "sourceAlphaBoundsLtrbPx": [
+          131,
+          59,
+          1493,
+          889
+        ],
+        "sourceSizePx": [
+          1599,
+          984
+        ],
+        "sharedBodyFromPartId": "psu_450",
+        "sharingBasis": "Original non-modular 140mm game enclosure; separate wattage label"
+      },
+      "product": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/psu_450_product_v01.png",
+        "promptPath": "art/prompts/parts/psu_450_product_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/psu_450_product.png",
+        "sourceAlphaBoundsLtrbPx": [
+          211,
+          40,
+          1334,
+          993
+        ],
+        "sourceSizePx": [
+          1536,
+          1024
+        ],
+        "sharedBodyFromPartId": "psu_450",
+        "sharingBasis": "Original non-modular 140mm game enclosure; separate wattage label"
+      }
+    }
+  },
+  {
+    "partId": "psu_450",
+    "category": "psu",
+    "displayName": "海盗旗 CORSAIL · 航海 450",
+    "referenceSources": [],
+    "dimensionsMm": {
+      "width": 150,
+      "height": 86,
+      "depth": 140
+    },
+    "requiredPowerPins": null,
+    "side": "exported_for_review",
+    "product": "exported_for_review",
+    "rear": "exported_for_review",
+    "views": {
+      "side": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/psu_450_side_v02.png",
+        "promptPath": "art/prompts/parts/psu_450_side_v02.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/psu_450_side.png",
+        "sourceAlphaBoundsLtrbPx": [
+          129,
+          59,
+          1449,
+          890
+        ],
+        "sourceSizePx": [
+          1599,
+          984
+        ]
+      },
+      "rear": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/psu_450_rear_v01.png",
+        "promptPath": "art/prompts/parts/psu_450_rear_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/psu_450_rear.png",
+        "sourceAlphaBoundsLtrbPx": [
+          131,
+          59,
+          1493,
+          889
+        ],
+        "sourceSizePx": [
+          1599,
+          984
+        ]
+      },
+      "product": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/psu_450_product_v01.png",
+        "promptPath": "art/prompts/parts/psu_450_product_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/psu_450_product.png",
+        "sourceAlphaBoundsLtrbPx": [
+          211,
+          40,
+          1334,
+          993
+        ],
+        "sourceSizePx": [
+          1536,
+          1024
+        ]
+      }
+    }
+  },
+  {
+    "partId": "psu_650m",
+    "category": "psu",
+    "displayName": "海盗旗 CORSAIL · 航海 650M",
+    "referenceSources": [],
+    "dimensionsMm": {
+      "width": 150,
+      "height": 86,
+      "depth": 160
+    },
+    "requiredPowerPins": null,
+    "side": "exported_for_review",
+    "product": "exported_for_review",
+    "rear": "exported_for_review",
+    "views": {
+      "side": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/psu_650m_side_v03.png",
+        "promptPath": "art/prompts/parts/psu_650m_side_v03.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/psu_650m_side.png",
+        "sourceAlphaBoundsLtrbPx": [
+          45,
+          49,
+          1652,
+          866
+        ],
+        "sourceSizePx": [
+          1692,
+          930
+        ]
+      },
+      "rear": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/psu_650m_rear_v01.png",
+        "promptPath": "art/prompts/parts/psu_650m_rear_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/psu_650m_rear.png",
+        "sourceAlphaBoundsLtrbPx": [
+          107,
+          93,
+          1604,
+          825
+        ],
+        "sourceSizePx": [
+          1711,
+          919
+        ]
+      },
+      "product": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/psu_650m_product_v01.png",
+        "promptPath": "art/prompts/parts/psu_650m_product_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/psu_650m_product.png",
+        "sourceAlphaBoundsLtrbPx": [
+          127,
+          85,
+          1421,
+          990
+        ],
+        "sourceSizePx": [
+          1536,
+          1024
+        ]
+      }
+    }
+  },
+  {
+    "partId": "cooler_low",
+    "category": "cooler",
+    "displayName": "酷冷宗师 COOLMASTER · 风息 LP60",
+    "referenceSources": [],
+    "dimensionsMm": {
+      "length": 100,
+      "width": 100,
+      "height": 60
+    },
+    "requiredPowerPins": null,
+    "side": "exported_for_review",
+    "product": "exported_for_review",
+    "rear": "not_visible_in_rear_view",
+    "views": {
+      "side": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/cooler_low_side_v02.png",
+        "promptPath": "art/prompts/parts/cooler_low_side_v02.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/cooler_low_side.png",
+        "sourceAlphaBoundsLtrbPx": [
+          116,
+          118,
+          1135,
+          1096
+        ],
+        "sourceSizePx": [
+          1254,
+          1254
+        ]
+      },
+      "rear": {
+        "state": "not_visible_in_rear_view"
+      },
+      "product": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/cooler_low_product_v01.png",
+        "promptPath": "art/prompts/parts/cooler_low_product_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/cooler_low_product.png",
+        "sourceAlphaBoundsLtrbPx": [
+          163,
+          30,
+          1409,
+          989
+        ],
+        "sourceSizePx": [
+          1536,
+          1024
+        ]
+      }
+    }
+  },
+  {
+    "partId": "cooler_tower",
+    "category": "cooler",
+    "displayName": "酷冷宗师 COOLMASTER · 镇风 T155",
+    "referenceSources": [],
+    "dimensionsMm": {
+      "length": 120,
+      "width": 80,
+      "height": 155
+    },
+    "requiredPowerPins": null,
+    "side": "exported_for_review",
+    "product": "exported_for_review",
+    "rear": "not_visible_in_rear_view",
+    "views": {
+      "side": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/cooler_tower_side_v03.png",
+        "promptPath": "art/prompts/parts/cooler_tower_side_v03.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/cooler_tower_side.png",
+        "sourceAlphaBoundsLtrbPx": [
+          99,
+          82,
+          1444,
+          906
+        ],
+        "sourceSizePx": [
+          1536,
+          1024
+        ]
+      },
+      "rear": {
+        "state": "not_visible_in_rear_view"
+      },
+      "product": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/cooler_tower_product_v01.png",
+        "promptPath": "art/prompts/parts/cooler_tower_product_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/cooler_tower_product.png",
+        "sourceAlphaBoundsLtrbPx": [
+          345,
+          25,
+          1224,
+          984
+        ],
+        "sourceSizePx": [
+          1536,
+          1024
+        ]
+      }
+    }
+  },
+  {
+    "partId": "cooler_quiet",
+    "category": "cooler",
+    "displayName": "夜枭 NOCTURA · 暮羽 Q158",
+    "referenceSources": [],
+    "dimensionsMm": {
+      "length": 125,
+      "width": 75,
+      "height": 158
+    },
+    "requiredPowerPins": null,
+    "side": "exported_for_review",
+    "product": "exported_for_review",
+    "rear": "not_visible_in_rear_view",
+    "views": {
+      "side": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/cooler_quiet_side_v01.png",
+        "promptPath": "art/prompts/parts/cooler_quiet_side_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/cooler_quiet_side.png",
+        "sourceAlphaBoundsLtrbPx": [
+          258,
+          161,
+          1404,
+          803
+        ],
+        "sourceSizePx": [
+          1619,
+          971
+        ]
+      },
+      "rear": {
+        "state": "not_visible_in_rear_view"
+      },
+      "product": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/cooler_quiet_product_v01.png",
+        "promptPath": "art/prompts/parts/cooler_quiet_product_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/cooler_quiet_product.png",
+        "sourceAlphaBoundsLtrbPx": [
+          226,
+          89,
+          1145,
+          1076
+        ],
+        "sourceSizePx": [
+          1356,
+          1160
+        ]
+      }
+    }
+  },
+  {
+    "partId": "case_small",
+    "category": "case",
+    "displayName": "分形工坊 FRACTIK · 小匣 M",
+    "referenceSources": [],
+    "dimensionsMm": {
+      "width": 180,
+      "height": 320,
+      "depth": 330
+    },
+    "requiredPowerPins": null,
+    "side": "exported_for_review",
+    "product": "exported_for_review",
+    "rear": "exported_for_review",
+    "views": {
+      "side": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/case_small_side_v03.png",
+        "promptPath": "art/prompts/parts/case_small_side_v03.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/case_small_side_v03.png",
+        "sourceAlphaBoundsLtrbPx": [
+          109,
+          85,
+          1171,
+          1107
+        ],
+        "sourceSizePx": [
+          1274,
+          1234
+        ],
+        "installationReview": "requires_coherent_side_rear_geometry",
+        "latestRevisionSourcePath": "art/source/parts/case_small_side_v03.png",
+        "latestRevisionIsUnreviewed": true
+      },
+      "rear": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/case_small_rear_base_v01.png",
+        "promptPath": "art/prompts/parts/case_small_rear_base_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/case_small_rear_aligned_v01.png",
+        "sourceAlphaBoundsLtrbPx": [
+          89,
+          73,
+          1175,
+          1123
+        ],
+        "sourceSizePx": [
+          1254,
+          1254
+        ],
+        "installationReview": "requires_coherent_side_rear_geometry",
+        "latestRevisionSourcePath": "art/source/parts/case_small_rear_v03.png",
+        "latestRevisionIsUnreviewed": true
+      },
+      "product": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/case_small_product_v01.png",
+        "promptPath": "art/prompts/parts/case_small_product_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/case_small_product.png",
+        "sourceAlphaBoundsLtrbPx": [
+          160,
+          29,
+          1195,
+          1128
+        ],
+        "sourceSizePx": [
+          1361,
+          1156
+        ]
+      }
+    }
+  },
+  {
+    "partId": "case_standard",
+    "category": "case",
+    "displayName": "分形工坊 FRACTIK · 构序 A",
+    "referenceSources": [],
+    "dimensionsMm": {
+      "width": 210,
+      "height": 430,
+      "depth": 430
+    },
+    "requiredPowerPins": null,
+    "side": "exported_for_review",
+    "product": "exported_for_review",
+    "rear": "exported_for_review",
+    "views": {
+      "side": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/case_standard_side_v04.png",
+        "promptPath": "art/prompts/parts/case_standard_side_v04.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/case_standard_side_v04.png",
+        "sourceAlphaBoundsLtrbPx": [
+          76,
+          64,
+          1178,
+          1176
+        ],
+        "sourceSizePx": [
+          1254,
+          1254
+        ],
+        "installationReview": "requires_coherent_side_rear_geometry",
+        "latestRevisionSourcePath": "art/source/parts/case_standard_side_v04.png",
+        "latestRevisionIsUnreviewed": true
+      },
+      "rear": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/case_standard_rear_base_v01.png",
+        "promptPath": "art/prompts/parts/case_standard_rear_base_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/case_standard_rear_aligned_v01.png",
+        "sourceAlphaBoundsLtrbPx": [
+          96,
+          86,
+          1160,
+          1149
+        ],
+        "sourceSizePx": [
+          1254,
+          1254
+        ],
+        "installationReview": "requires_coherent_side_rear_geometry",
+        "latestRevisionSourcePath": "art/source/parts/case_standard_rear_v02.png",
+        "latestRevisionIsUnreviewed": true
+      },
+      "product": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/case_standard_product_v01.png",
+        "promptPath": "art/prompts/parts/case_standard_product_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/case_standard_product.png",
+        "sourceAlphaBoundsLtrbPx": [
+          75,
+          44,
+          1186,
+          1201
+        ],
+        "sourceSizePx": [
+          1263,
+          1245
+        ]
+      }
+    }
+  },
+  {
+    "partId": "case_quiet",
+    "category": "case",
+    "displayName": "分形工坊 FRACTIK · 静室 S",
+    "referenceSources": [],
+    "dimensionsMm": {
+      "width": 230,
+      "height": 460,
+      "depth": 450
+    },
+    "requiredPowerPins": null,
+    "side": "exported_for_review",
+    "product": "exported_for_review",
+    "rear": "exported_for_review",
+    "views": {
+      "side": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/case_quiet_side_v03.png",
+        "promptPath": "art/prompts/parts/case_quiet_side_v03.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/case_quiet_side_v03.png",
+        "sourceAlphaBoundsLtrbPx": [
+          66,
+          66,
+          1177,
+          1187
+        ],
+        "sourceSizePx": [
+          1240,
+          1268
+        ],
+        "installationReview": "requires_coherent_side_rear_geometry",
+        "latestRevisionSourcePath": "art/source/parts/case_quiet_side_v03.png",
+        "latestRevisionIsUnreviewed": true
+      },
+      "rear": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/case_quiet_rear_base_v01.png",
+        "promptPath": "art/prompts/parts/case_quiet_rear_base_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/case_quiet_rear_aligned_v01.png",
+        "sourceAlphaBoundsLtrbPx": [
+          76,
+          86,
+          1168,
+          1190
+        ],
+        "sourceSizePx": [
+          1232,
+          1277
+        ],
+        "installationReview": "requires_coherent_side_rear_geometry",
+        "latestRevisionSourcePath": "art/source/parts/case_quiet_rear_v03.png",
+        "latestRevisionIsUnreviewed": true
+      },
+      "product": {
+        "state": "exported_for_review",
+        "sourcePath": "art/source/parts/case_quiet_product_v01.png",
+        "promptPath": "art/prompts/parts/case_quiet_product_v01.json",
+        "runtimePath": null,
+        "stagingPath": "art/exports/parts/case_quiet_product.png",
+        "sourceAlphaBoundsLtrbPx": [
+          66,
+          56,
+          1202,
+          1165
+        ],
+        "sourceSizePx": [
+          1295,
+          1215
+        ]
+      }
+    }
+  }
+]

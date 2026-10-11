@@ -1,0 +1,586 @@
+{
+  "schemaVersion": 1,
+  "importedAt": "2026-10-09T07:01:40.222Z",
+  "method": "Import exact Figma PNG pixels and map measured bodies into existing physical slots; reviewScope is limited to fixed-view rendering.",
+  "runtimeVerification": {
+    "checkedAt": "2026-10-09T06:59:49.196Z",
+    "buildHash": "acfcdf590aa0490d0bbc9ad71303ffee7e788ef3dc9208c4c71f3a69c84b6f66",
+    "viewport": "720x1280",
+    "installationMappings": 39,
+    "threeCaseViews": "passed",
+    "foregroundRailMasks": "passed",
+    "untrimmedSpriteFrames": "passed",
+    "fullDesignReload": "passed",
+    "screenshots": [
+      "art/preview/runtime_case_small-side.png",
+      "art/preview/runtime_case_small-rear.png",
+      "art/preview/runtime_case_small-exterior.png",
+      "art/preview/runtime_case_standard-side.png",
+      "art/preview/runtime_case_standard-rear.png",
+      "art/preview/runtime_case_standard-exterior.png",
+      "art/preview/runtime_case_quiet-side.png",
+      "art/preview/runtime_case_quiet-rear.png",
+      "art/preview/runtime_case_quiet-exterior.png",
+      "art/preview/runtime_gaming-side.png"
+    ],
+    "errors": [],
+    "importRepeat": {
+      "checkedAt": "2026-10-09T07:01:40.275Z",
+      "runtimeImageFiles": 57,
+      "pixelHashesUnchanged": true,
+      "assetUuidsUnchanged": true
+    },
+    "physical3dCollision": "not-approved",
+    "exteriorVariantTextures": "pending",
+    "caseFanAnimation": "pending"
+  },
+  "boundary": "Runtime display review does not approve full 3D collision, fan animation or exterior customization textures.",
+  "entries": [
+    {
+      "partId": "cpu_6100",
+      "view": "side",
+      "sharedArtworkFrom": "cpu_6500",
+      "figmaExportPath": "art/exports/parts/cpu_6500_side.png",
+      "runtimePath": "assets/art/workbench/side/cpu_6500.png",
+      "sha256": "a0205c0c752d47cd3a3a8de1f8ec08081a3db9eb342e318977b00678a334143a",
+      "bodyRectLtrbPx": [
+        1,
+        0,
+        127,
+        122
+      ]
+    },
+    {
+      "partId": "cpu_6500",
+      "view": "side",
+      "sharedArtworkFrom": "cpu_6500",
+      "figmaExportPath": "art/exports/parts/cpu_6500_side.png",
+      "runtimePath": "assets/art/workbench/side/cpu_6500.png",
+      "sha256": "a0205c0c752d47cd3a3a8de1f8ec08081a3db9eb342e318977b00678a334143a",
+      "bodyRectLtrbPx": [
+        1,
+        0,
+        127,
+        122
+      ]
+    },
+    {
+      "partId": "cpu_6700",
+      "view": "side",
+      "sharedArtworkFrom": "cpu_6500",
+      "figmaExportPath": "art/exports/parts/cpu_6500_side.png",
+      "runtimePath": "assets/art/workbench/side/cpu_6500.png",
+      "sha256": "a0205c0c752d47cd3a3a8de1f8ec08081a3db9eb342e318977b00678a334143a",
+      "bodyRectLtrbPx": [
+        1,
+        0,
+        127,
+        122
+      ]
+    },
+    {
+      "partId": "cpu_fx8350",
+      "view": "side",
+      "sharedArtworkFrom": "cpu_fx8350",
+      "figmaExportPath": "art/exports/parts/cpu_fx8350_side.png",
+      "runtimePath": "assets/art/workbench/side/cpu_fx8350.png",
+      "sha256": "4f8c4ccd028d3134128c12e08dcf53e962cc7ae0eb571defe9f1c6af47412c41",
+      "bodyRectLtrbPx": [
+        0,
+        0,
+        128,
+        127
+      ]
+    },
+    {
+      "partId": "mb_h110",
+      "view": "side",
+      "sharedArtworkFrom": "mb_h110",
+      "figmaExportPath": "art/exports/parts/mb_h110_side.png",
+      "runtimePath": "assets/art/workbench/side/mb_h110.png",
+      "sha256": "9d8d884eb2d323fcf768d6eb0c078c2ce90cfc2467a5ca8e62808771e0136863",
+      "bodyRectLtrbPx": [
+        26,
+        2,
+        653,
+        766
+      ]
+    },
+    {
+      "partId": "mb_b150",
+      "view": "side",
+      "sharedArtworkFrom": "mb_b150",
+      "figmaExportPath": "art/exports/parts/mb_b150_side.png",
+      "runtimePath": "assets/art/workbench/side/mb_b150.png",
+      "sha256": "3d93b9df1b094e2f3af1bc4e7417ffefb66961221bedda99a3d435e674951cdb",
+      "bodyRectLtrbPx": [
+        20,
+        1,
+        587,
+        766
+      ]
+    },
+    {
+      "partId": "mb_am3",
+      "view": "side",
+      "sharedArtworkFrom": "mb_am3",
+      "figmaExportPath": "art/exports/parts/mb_am3_side.png",
+      "runtimePath": "assets/art/workbench/side/mb_am3.png",
+      "sha256": "0dcbf6d11c6b5bdfefed6dd5f26117edbdbaa8e2212076bae672c1b52f1b8d9a",
+      "bodyRectLtrbPx": [
+        22,
+        1,
+        588,
+        766
+      ]
+    },
+    {
+      "partId": "gpu_750ti",
+      "view": "side",
+      "sharedArtworkFrom": "gpu_750ti",
+      "figmaExportPath": "art/exports/parts/gpu_750ti_side.png",
+      "runtimePath": "assets/art/workbench/side/gpu_750ti.png",
+      "sha256": "c7f70352d9a3fe56cc291366236176b37f320504eb0f67fd02f27d3969dd8c74",
+      "bodyRectLtrbPx": [
+        72.48,
+        76.8,
+        766.56,
+        218.88
+      ]
+    },
+    {
+      "partId": "gpu_960",
+      "view": "side",
+      "sharedArtworkFrom": "gpu_960",
+      "figmaExportPath": "art/exports/parts/gpu_960_side.png",
+      "runtimePath": "assets/art/workbench/side/gpu_960.png",
+      "sha256": "3da41f80fac7d8afce87e972433b5de2022880c97c77a3b33f96b3b72f9e4267",
+      "bodyRectLtrbPx": [
+        35,
+        14,
+        767,
+        136
+      ]
+    },
+    {
+      "partId": "gpu_970",
+      "view": "side",
+      "sharedArtworkFrom": "gpu_970",
+      "figmaExportPath": "art/exports/parts/gpu_970_side.png",
+      "runtimePath": "assets/art/workbench/side/gpu_970.png",
+      "sha256": "1bdd9860e283f07efd628c06cb3dd0976f0a1cf06b783e5550826304bc786f74",
+      "bodyRectLtrbPx": [
+        1,
+        1,
+        767,
+        172
+      ]
+    },
+    {
+      "partId": "gpu_r9380",
+      "view": "side",
+      "sharedArtworkFrom": "gpu_r9380",
+      "figmaExportPath": "art/exports/parts/gpu_r9380_side.png",
+      "runtimePath": "assets/art/workbench/side/gpu_r9380.png",
+      "sha256": "461d13242e92dbf273b8d88ac2a502e7dd8f8049020972468f559a75d1074180",
+      "bodyRectLtrbPx": [
+        0,
+        1,
+        767,
+        213
+      ]
+    },
+    {
+      "partId": "gpu_1080",
+      "view": "side",
+      "sharedArtworkFrom": "gpu_1080",
+      "figmaExportPath": "art/exports/parts/gpu_1080_side.png",
+      "runtimePath": "assets/art/workbench/side/gpu_1080.png",
+      "sha256": "fd8786043f857e7753d8862afc48254de07e1ef4698b62bd784b921590065cd4",
+      "bodyRectLtrbPx": [
+        1,
+        1,
+        768,
+        197
+      ]
+    },
+    {
+      "partId": "gpu_1070",
+      "view": "side",
+      "sharedArtworkFrom": "gpu_1070",
+      "figmaExportPath": "art/exports/parts/gpu_1070_side.png",
+      "runtimePath": "assets/art/workbench/side/gpu_1070.png",
+      "sha256": "944c447db40e92349d5925659a311797961babc955f57685db15d7d420918c39",
+      "bodyRectLtrbPx": [
+        0,
+        1,
+        767,
+        202
+      ]
+    },
+    {
+      "partId": "gpu_rx480_4",
+      "view": "side",
+      "sharedArtworkFrom": "gpu_rx480_4",
+      "figmaExportPath": "art/exports/parts/gpu_rx480_4_side.png",
+      "runtimePath": "assets/art/workbench/side/gpu_rx480_4.png",
+      "sha256": "667ffcc3b2e4b4e3d593644090b252e3cd009e610e1b5c7399487f808416e901",
+      "bodyRectLtrbPx": [
+        1,
+        0,
+        768,
+        173
+      ]
+    },
+    {
+      "partId": "gpu_rx480_8",
+      "view": "side",
+      "sharedArtworkFrom": "gpu_rx480_8",
+      "figmaExportPath": "art/exports/parts/gpu_rx480_8_side.png",
+      "runtimePath": "assets/art/workbench/side/gpu_rx480_8.png",
+      "sha256": "b9b9a11dbf5ca79c54c2b086cb1a9f615e93dfc0826cb8aeb3d459a2de98d8f9",
+      "bodyRectLtrbPx": [
+        0,
+        1,
+        767,
+        197
+      ]
+    },
+    {
+      "partId": "ram_ddr3_4",
+      "view": "side",
+      "sharedArtworkFrom": "ram_ddr3_4",
+      "figmaExportPath": "art/exports/parts/ram_ddr3_4_side.png",
+      "runtimePath": "assets/art/workbench/side/ram_ddr3_4.png",
+      "sha256": "00f954a7ceb79d7e6a94d400194745d973e04b2f9a5bc7a4caa67044280b2bf8",
+      "bodyRectLtrbPx": [
+        0,
+        0,
+        22,
+        512
+      ]
+    },
+    {
+      "partId": "ram_ddr3_8",
+      "view": "side",
+      "sharedArtworkFrom": "ram_ddr3_8",
+      "figmaExportPath": "art/exports/parts/ram_ddr3_8_side.png",
+      "runtimePath": "assets/art/workbench/side/ram_ddr3_8.png",
+      "sha256": "6e9a550590c47904a1c55b00328fefc2d61b2628eddb6c2a51cd1cf9b48d6c5b",
+      "bodyRectLtrbPx": [
+        1,
+        0,
+        24,
+        512
+      ]
+    },
+    {
+      "partId": "ram_ddr4_4",
+      "view": "side",
+      "sharedArtworkFrom": "ram_ddr4_4",
+      "figmaExportPath": "art/exports/parts/ram_ddr4_4_side.png",
+      "runtimePath": "assets/art/workbench/side/ram_ddr4_4.png",
+      "sha256": "d0bc73904ad9b7ed1617dbfa3adabf771cb125a335fc23bbc41d12c7510fb236",
+      "bodyRectLtrbPx": [
+        1,
+        1,
+        20,
+        512
+      ]
+    },
+    {
+      "partId": "ram_ddr4_8",
+      "view": "side",
+      "sharedArtworkFrom": "ram_ddr4_8",
+      "figmaExportPath": "art/exports/parts/ram_ddr4_8_side.png",
+      "runtimePath": "assets/art/workbench/side/ram_ddr4_8.png",
+      "sha256": "f9afe8fec58a678f5d99a8897aac6962e6823eda4346942482b5ed1d5118f1dc",
+      "bodyRectLtrbPx": [
+        1,
+        1,
+        23,
+        511
+      ]
+    },
+    {
+      "partId": "ssd_120",
+      "view": "rear",
+      "sharedArtworkFrom": "ssd_250",
+      "figmaExportPath": "art/exports/parts/ssd_250_rear.png",
+      "runtimePath": "assets/art/workbench/rear/ssd_250.png",
+      "sha256": "9df294159cd29071000a0191f26942389729740531274b6ea243ae6cd22ac106",
+      "bodyRectLtrbPx": [
+        1,
+        1,
+        173,
+        255
+      ]
+    },
+    {
+      "partId": "ssd_250",
+      "view": "rear",
+      "sharedArtworkFrom": "ssd_250",
+      "figmaExportPath": "art/exports/parts/ssd_250_rear.png",
+      "runtimePath": "assets/art/workbench/rear/ssd_250.png",
+      "sha256": "9df294159cd29071000a0191f26942389729740531274b6ea243ae6cd22ac106",
+      "bodyRectLtrbPx": [
+        1,
+        1,
+        173,
+        255
+      ]
+    },
+    {
+      "partId": "ssd_500",
+      "view": "rear",
+      "sharedArtworkFrom": "ssd_250",
+      "figmaExportPath": "art/exports/parts/ssd_250_rear.png",
+      "runtimePath": "assets/art/workbench/rear/ssd_250.png",
+      "sha256": "9df294159cd29071000a0191f26942389729740531274b6ea243ae6cd22ac106",
+      "bodyRectLtrbPx": [
+        1,
+        1,
+        173,
+        255
+      ]
+    },
+    {
+      "partId": "hdd_1000",
+      "view": "side",
+      "sharedArtworkFrom": "hdd_1000",
+      "figmaExportPath": "art/exports/parts/hdd_1000_side.png",
+      "runtimePath": "assets/art/workbench/side/hdd_1000.png",
+      "sha256": "59194882c30a2ef02737a5f1eea2ef3108703ad2736de647e8ce7a4fe2e510ed",
+      "bodyRectLtrbPx": [
+        0,
+        0,
+        511,
+        89
+      ]
+    },
+    {
+      "partId": "hdd_1000",
+      "view": "rear",
+      "sharedArtworkFrom": "hdd_1000",
+      "figmaExportPath": "art/exports/parts/hdd_1000_rear.png",
+      "runtimePath": "assets/art/workbench/rear/hdd_1000.png",
+      "sha256": "909d51d87c8938348230ec7b6bd719a4a3228dbfb785f5d94643d6eb4752016f",
+      "bodyRectLtrbPx": [
+        0,
+        0,
+        512,
+        115
+      ]
+    },
+    {
+      "partId": "psu_350",
+      "view": "side",
+      "sharedArtworkFrom": "psu_450",
+      "figmaExportPath": "art/exports/parts/psu_450_side.png",
+      "runtimePath": "assets/art/workbench/side/psu_450.png",
+      "sha256": "053034c01d9b7c2ef05703095ee83a1e11a4887694522345b01db4220fa835e3",
+      "bodyRectLtrbPx": [
+        0,
+        1,
+        511,
+        322
+      ]
+    },
+    {
+      "partId": "psu_350",
+      "view": "rear",
+      "sharedArtworkFrom": "psu_450",
+      "figmaExportPath": "art/exports/parts/psu_450_rear.png",
+      "runtimePath": "assets/art/workbench/rear/psu_450.png",
+      "sha256": "56be177af23786fbcb8b537f1f292552e9d0b91991c02db8a5a1fb24ce7c3cdc",
+      "bodyRectLtrbPx": [
+        1,
+        1,
+        511,
+        312
+      ]
+    },
+    {
+      "partId": "psu_450",
+      "view": "side",
+      "sharedArtworkFrom": "psu_450",
+      "figmaExportPath": "art/exports/parts/psu_450_side.png",
+      "runtimePath": "assets/art/workbench/side/psu_450.png",
+      "sha256": "053034c01d9b7c2ef05703095ee83a1e11a4887694522345b01db4220fa835e3",
+      "bodyRectLtrbPx": [
+        0,
+        1,
+        511,
+        322
+      ]
+    },
+    {
+      "partId": "psu_450",
+      "view": "rear",
+      "sharedArtworkFrom": "psu_450",
+      "figmaExportPath": "art/exports/parts/psu_450_rear.png",
+      "runtimePath": "assets/art/workbench/rear/psu_450.png",
+      "sha256": "56be177af23786fbcb8b537f1f292552e9d0b91991c02db8a5a1fb24ce7c3cdc",
+      "bodyRectLtrbPx": [
+        1,
+        1,
+        511,
+        312
+      ]
+    },
+    {
+      "partId": "psu_650m",
+      "view": "side",
+      "sharedArtworkFrom": "psu_650m",
+      "figmaExportPath": "art/exports/parts/psu_650m_side.png",
+      "runtimePath": "assets/art/workbench/side/psu_650m.png",
+      "sha256": "097022a6539b33a348ebd4320a900c6ee03a0ec3e720dbe13c93317a1a10717d",
+      "bodyRectLtrbPx": [
+        0,
+        0,
+        512,
+        261
+      ]
+    },
+    {
+      "partId": "psu_650m",
+      "view": "rear",
+      "sharedArtworkFrom": "psu_650m",
+      "figmaExportPath": "art/exports/parts/psu_650m_rear.png",
+      "runtimePath": "assets/art/workbench/rear/psu_650m.png",
+      "sha256": "c6b5aad5db73d5eb76df9ca05873dc50cb9fdb39a4a945700ee5d20955939d7e",
+      "bodyRectLtrbPx": [
+        1,
+        0,
+        512,
+        251
+      ]
+    },
+    {
+      "partId": "cooler_low",
+      "view": "side",
+      "sharedArtworkFrom": "cooler_low",
+      "figmaExportPath": "art/exports/parts/cooler_low_side.png",
+      "runtimePath": "assets/art/workbench/side/cooler_low.png",
+      "sha256": "e2f45da81c39aa4da7d1917131895f4b0f663f5208f9e28120007c07b8c6baae",
+      "bodyRectLtrbPx": [
+        2,
+        2,
+        510,
+        490
+      ]
+    },
+    {
+      "partId": "cooler_tower",
+      "view": "side",
+      "sharedArtworkFrom": "cooler_tower",
+      "figmaExportPath": "art/exports/parts/cooler_tower_side.png",
+      "runtimePath": "assets/art/workbench/side/cooler_tower.png",
+      "sha256": "4c51741b6dd9ca61fae1567e262632aeeb45544d00fc610e1e9b1c48731f2879",
+      "bodyRectLtrbPx": [
+        0,
+        1,
+        512,
+        314
+      ]
+    },
+    {
+      "partId": "cooler_quiet",
+      "view": "side",
+      "sharedArtworkFrom": "cooler_quiet",
+      "figmaExportPath": "art/exports/parts/cooler_quiet_side.png",
+      "runtimePath": "assets/art/workbench/side/cooler_quiet.png",
+      "sha256": "3560deb4e019328e2298049b8b9c2b8177c5bebaab9bae4033c1197c3b378646",
+      "bodyRectLtrbPx": [
+        0,
+        1,
+        511,
+        287
+      ]
+    },
+    {
+      "partId": "case_small",
+      "view": "side",
+      "sharedArtworkFrom": "case_small",
+      "figmaExportPath": "art/exports/parts/case_small_side_v03.png",
+      "runtimePath": "assets/art/workbench/side/case_small.png",
+      "sha256": "b34978b6d9c83ca8ec42eaea9024e733ddac71cc60af6feace6311c0c2430932",
+      "bodyRectLtrbPx": [
+        4.794,
+        5.753,
+        1020.165,
+        961.678
+      ]
+    },
+    {
+      "partId": "case_small",
+      "view": "rear",
+      "sharedArtworkFrom": "case_small",
+      "figmaExportPath": "art/exports/parts/case_small_rear_aligned_v01.png",
+      "runtimePath": "assets/art/workbench/rear/case_small.png",
+      "sha256": "490aa56632c52860335b79d1078f769267d4cd11260a173abbd9cce68e2a8481",
+      "bodyRectLtrbPx": [
+        9.36,
+        7.488,
+        1010.896,
+        962.223
+      ]
+    },
+    {
+      "partId": "case_standard",
+      "view": "side",
+      "sharedArtworkFrom": "case_standard",
+      "figmaExportPath": "art/exports/parts/case_standard_side_v04.png",
+      "runtimePath": "assets/art/workbench/side/case_standard.png",
+      "sha256": "9388556d24a0e65eb8bc98897c46841d2c13a0ad0a9ff6e5d9316ad1610f4686",
+      "bodyRectLtrbPx": [
+        4.58,
+        3.664,
+        1010.261,
+        999.27
+      ]
+    },
+    {
+      "partId": "case_standard",
+      "view": "rear",
+      "sharedArtworkFrom": "case_standard",
+      "figmaExportPath": "art/exports/parts/case_standard_rear_aligned_v01.png",
+      "runtimePath": "assets/art/workbench/rear/case_standard.png",
+      "sha256": "0afd1457ff86156ff8ddf30f6fe6c6595b065c92ebeb9caf36aeb7935abdac93",
+      "bodyRectLtrbPx": [
+        6.687,
+        8.597,
+        1015.403,
+        995.343
+      ]
+    },
+    {
+      "partId": "case_quiet",
+      "view": "side",
+      "sharedArtworkFrom": "case_quiet",
+      "figmaExportPath": "art/exports/parts/case_quiet_side_v03.png",
+      "runtimePath": "assets/art/workbench/side/case_quiet.png",
+      "sha256": "fd57f28dfb43d886522984136e43012c46dc8ccd143f0a01089e1c3c127bc4a3",
+      "bodyRectLtrbPx": [
+        3.634,
+        2.726,
+        1011.28,
+        996.742
+      ]
+    },
+    {
+      "partId": "case_quiet",
+      "view": "rear",
+      "sharedArtworkFrom": "case_quiet",
+      "figmaExportPath": "art/exports/parts/case_quiet_rear_aligned_v01.png",
+      "runtimePath": "assets/art/workbench/rear/case_quiet.png",
+      "sha256": "a2bbd8705487f49306b0f0b19dc9d9a03e909d4df6154c1cb4d46e247737e6db",
+      "bodyRectLtrbPx": [
+        4.604,
+        4.604,
+        989.007,
+        993.612
+      ]
+    }
+  ]
+}

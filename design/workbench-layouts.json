@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "status": "measured_game_layout_pending_art_alignment",
+  "provenance": "Original game layout measured from Figma exports. Points are artwork coordinates, not verified manufacturer connector or collision claims. Physical board dimensions remain in components.json reference.specs.",
+  "coordinates": "Pixels from top-left of the complete untrimmed export; bodyRectLtrbPx excludes I/O protrusions. Conversion to case millimetres uses the board body's physical width and height.",
+  "boards": [
+    {
+      "partId": "mb_h110",
+      "artPath": "art/exports/parts/mb_h110_side.png",
+      "bodyRectLtrbPx": [26, 2, 653, 766],
+      "cpuCenterPx": [321, 260],
+      "dimmCentersPx": [[534, 257], [569, 257]],
+      "pcieLinePx": [320, 526],
+      "connectorsPx": {
+        "mainPower": [636, 283], "cpuPower": [143, 35],
+        "cpuFan": [461, 59], "caseFan": [181, 738],
+        "frontPanel": [584, 740], "sata": [591, 677]
+      }
+    },
+    {
+      "partId": "mb_b150",
+      "artPath": "assets/art/workbench/side/mb_b150.png",
+      "bodyRectLtrbPx": [20, 1, 587, 766],
+      "cpuCenterPx": [305.421, 227.731],
+      "dimmCentersPx": [[437.078, 218.242], [460.8, 218.242], [484.522, 218.242], [507.651, 218.242]],
+      "pcieLinePx": [276.954, 454.869],
+      "connectorsPx": {
+        "mainPower": [549, 245], "cpuPower": [142, 26],
+        "cpuFan": [378, 36], "caseFan": [178, 734],
+        "frontPanel": [514, 742], "sata": [535, 633]
+      }
+    },
+    {
+      "partId": "mb_am3",
+      "artPath": "art/exports/parts/mb_am3_side.png",
+      "bodyRectLtrbPx": [22, 1, 588, 766],
+      "cpuCenterPx": [294, 243],
+      "dimmCentersPx": [[439, 236], [462, 236], [505, 236], [527, 236]],
+      "pcieLinePx": [243, 539],
+      "connectorsPx": {
+        "mainPower": [567, 300], "cpuPower": [137, 25],
+        "cpuFan": [378, 32], "caseFan": [190, 728],
+        "frontPanel": [541, 738], "sata": [532, 658]
+      }
+    }
+  ]
+}

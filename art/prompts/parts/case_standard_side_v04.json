@@ -1,0 +1,33 @@
+{
+  "id": "case_standard_side_v04",
+  "componentId": "case_standard",
+  "tool": "built_in_image_gen",
+  "intent": "generate_from_original_layout",
+  "referencePaths": [
+    "art/reference/layout/case_standard_side_guide.png"
+  ],
+  "sourcePath": "art/source/parts/case_standard_side_v04.png",
+  "status": "figma_exported_for_joint_review",
+  "provenance": "Original game geometry only; removed photographic composition reference after repeated short-tray results",
+  "prompt": "Use case: product-mockup. Render this ONE reference diagram as a realistic dark graphite sheet-steel empty ATX computer case sprite. STRICTLY RETAIN the reference diagram geometric composition and straight-on rectangular boundary. This is a precise structural rendering, do not redesign or invent an attractive case silhouette. Camera EXACTLY ORTHOGRAPHIC SIDE: no top surface visible, no rear surface visible, no perspective. The body square is430mm by430mm. Keep top border THIN. The large tall green rectangle is EMPTY bare motherboard tray, not an installed motherboard: replace green with matte dark gray steel, keep its bounding position and height absolutely unchanged. It extends from3.49% below body top to74.42% below body top, and from4.65% to57.90% across body width. Add subtle thin edges and brass screw standoffs around that rectangle, not inside a short replacement region. The LOWER gray horizontal bar lies at76.74% of body height; keep it there. Empty PSU bay rectangle underneath stays empty, do not install PSU. Front narrow solid column at RIGHT, rear very thin mounting rail at LEFT. Seven narrow horizontal expansion-slot cover edges near left lower tray, no broad vented rear face. Realistic small screws, fine molded cable cutouts only to RIGHT of green tray rectangle, subtle neutral studio metallic highlights. Small drive cage low-right BELOW bar if enough space. Small feet below square body. Remove ALL labels and diagram marks/colors, outer light-gray reference background becomes TRUE transparent alpha. No green area, no typography, no measurement lines, installed components, cables, fans, glass, shroud, shadows outside object, environment, bloom or outlines. Preserve practical empty industrial structure, no fairy-tale forms. Full silhouette and small feet have alpha padding. Rendering should obey original game layout, not imitate a stock chassis photograph.",
+  "generatedOutputFile": "exec-f9299e69-4e63-48b9-b8cc-a19122a77c91.png",
+  "review": {
+    "camera": "orthographic_candidate_checked",
+    "tray": "full board envelope fits between thin top rail and lowered separator; requires actual installation overlay",
+    "sourceBodyRectLtrbPx": [
+      77,
+      65,
+      1175,
+      1152
+    ],
+    "installationAlignment": "pending"
+  },
+  "figmaExportNodeId": "35:8",
+  "stagingPath": "art/exports/parts/case_standard_side_v04.png",
+  "sourceBodyRectLtrbPx": [
+    78,
+    65,
+    1176,
+    1152
+  ]
+}

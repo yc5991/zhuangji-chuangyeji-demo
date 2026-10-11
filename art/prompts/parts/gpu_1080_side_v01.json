@@ -1,0 +1,13 @@
+{
+  "id": "gpu_1080_side_v01",
+  "componentId": "gpu_1080",
+  "prompt": "Use case: product-mockup. One independent GPU INSTALLED SIDE-EDGE sprite for Orangegame relatively realistic PC simulator art. Image 1 gives material/lighting style only. Strict orthographic left-case side view, rear metal expansion bracket LEFT, card tip RIGHT, PCB horizontal at TOP, cooler below. Fans face DOWN into lower case, so NEVER show full circular fan faces toward camera. Narrow long rail side, real silver heatsink slits, matte black plastic, realistic metal screw ear left. Neutral upper-left light and soft fill. Transparent alpha outside full silhouette, no environment, floor, glow, cables, motherboard, labels, logos, numbers, golden connector broad face or watermark. Original game shell illustration, no exact manufacturer cooler claim. 269mm length by40mm thick 2016 launch reference-class card with enclosed radial BLOWER cooling. Original faceted silver-grey metal long SIDE rail, black vent section and a narrow smoked window revealing silver fins toward rear half. Radial fan faces DOWN near RIGHT end, cannot be seen broadface in this side view. One unconnected8-pin2x4 power socket near upper-right end, no second power connector. Plain thin black PCB on top, no text or logos, no copied ornamental brand pattern. Maintain straight broad-silver side and enclosed blower shroud.",
+  "sourcePath": "art/source/parts/gpu_1080_side_v01.png",
+  "referencePaths": [
+    "art/source/style_review_v02.png"
+  ],
+  "tool": "built_in_image_gen",
+  "intent": "generate",
+  "status": "production_candidate",
+  "structuralBasis": "Dimensions and power inputs from design/components.json; artwork shell and exact pixel connector positions are original art decisions."
+}

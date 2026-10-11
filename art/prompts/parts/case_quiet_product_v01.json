@@ -1,0 +1,15 @@
+{
+  "id": "case_quiet_product_v01",
+  "componentId": "case_quiet",
+  "tool": "built_in_image_gen",
+  "intent": "generate",
+  "status": "generated_candidate",
+  "sourcePath": "art/source/parts/case_quiet_product_v01.png",
+  "referencePaths": [
+    "art/source/style_review_v02.png",
+    "art/source/parts/case_quiet_side_v01.png"
+  ],
+  "transparent_background": true,
+  "structuralBasis": "Original case turnaround; outer catalog dimensions and source silhouette, product camera is illustration choice.",
+  "prompt": "Use case: product-mockup. Draw ONE complete isolated original quiet ATX mid tower with solid acoustically lined front door and subtle narrow side intakes computer case as a procurement and external-design sprite. Reference1 gives realistic industrial PC simulator material style/neutral lighting. Reference2 is this SAME EMPTY chassis with sidepanel off: preserve its front panel, outer proportions and feet, but fit a full opaque graphite steel sidepanel, upper cover and entire front into a believable closed case. Outer physical dimensions FRONT WIDTH230mm, HEIGHT460mm, DEPTH450mm. Three-quarter front/left product camera at modest30degree horizontal and15degree elevation, weak perspective matching hardware catalog photography. Main side panel occupies LEFT side ofimage, narrow FRONT face on RIGHT, front-right corner facing camera. Simple sidepanel folded seam and two rear thumb screws, no tempered glass default, no visible components through panel, no grille with fans visible. Small blank recessed square plaque on front, original no logos/text. Front top has two clean USB-A ports, headphone/microphone3.5mm jacks and small powerbutton, restrained realistic hardware scale. Graphite matte powdercoat, subtle molded plastic front distinct from steel, natural screws, four short dark feet, no decorative horns or fantasy shapes. No cables, monitor, desk, packaging, loose panels or other objects. Complete object centered with ample transparent margin, true alpha, NO floor or cast shadow outside silhouette, no glow, no watermark. Neutral upper-left light and fill. Important preserve realistic front-width to case-height/depth proportions, no cute squat toy body."
+}

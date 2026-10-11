@@ -1,0 +1,15 @@
+{
+  "id": "style-01-workshop-realistic-v01",
+  "useCase": "ui-mockup",
+  "assetType": "single full-screen mobile management game UI concept, portrait 9:16",
+  "primaryRequest": "Create one polished, realistic UI concept screenshot for Orangegame, a Chinese PC brand workshop management game. Show a compact but premium mobile game screen, not a marketing poster. The design direction is realistic industrial workshop: authentic PC repair/workshop photo as the central scene, graphite metal framing, brushed steel details, restrained safety orange accents, clear high-contrast typography, and small tactile controls. Keep the real workshop image visible and recognizable rather than dark or heavily blurred. Use an original composition inspired by the readable management hierarchy of classic open-source tycoon games, without copying any game's exact skin.",
+  "inputImages": [{ "path": "art/source/style_review_v02.png", "role": "visual reference for realistic PC workshop, lighting, hardware materials and restrained orange accent; do not copy the exact composition" }],
+  "subject": "January 2016 workshop home screen for a computer brand company",
+  "composition": "single 9:16 phone screen, top status strip, large workshop photo area, compact operations summary, two production queue rows with component thumbnails and progress, bottom primary month settlement action and five-item navigation",
+  "contentExact": ["橙序电脑", "2016年1月", "现金 ¥18,420", "装配工位 2", "测试位 1", "当前排产", "橙序 G-01 游戏机", "手工装配 · 剩余 6.4 工时", "静音办公样机", "采购等待 · 预计 2.0 工时", "查看月结", "工坊", "产品", "采购", "订单", "公司"],
+  "styleMedium": "high-end realistic game UI mockup with photographic workshop scene and subtle material depth",
+  "lightingMood": "natural workshop daylight with readable dark panels and restrained highlights",
+  "palette": ["graphite", "cool steel", "off-white", "safety orange", "muted green status"],
+  "constraints": "preserve portrait mobile ergonomics; readable Chinese labels; no oversized decorative illustration; no fantasy style; no company or component brand logos; no watermark; controls must remain clearly separated from photo",
+  "avoid": ["flat vector-only panels", "cartoon workshop", "neon cyberpunk", "blurred dark hero photo", "tiny unreadable text", "copied game screenshot", "watermark"]
+}

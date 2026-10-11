@@ -1,0 +1,92 @@
+{
+  "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+  "pageId": "1:2",
+  "method": "UI raster-container import and actual native PNG export",
+  "entries": [
+    {
+      "partId": "case_small",
+      "view": "rear",
+      "name": "case_small_rear",
+      "sourcePath": "art/source/parts/case_small_rear_v02.png",
+      "promptPath": "art/prompts/parts/case_small_rear_v02.json",
+      "sourceCropLtrbPx": [
+        88,
+        47,
+        1205,
+        1190
+      ],
+      "scale": 0.8958880139982502,
+      "proposedExportPx": [
+        1000.7069116360456,
+        1024
+      ],
+      "wrapperPath": ".local/figma-import/batch-correction/case_small_rear.svg",
+      "state": "exported_for_review",
+      "figmaExportNodeId": "19:50",
+      "uiPosition": [
+        "6000",
+        "6200"
+      ],
+      "stagingPath": "art/exports/parts/case_small_rear.png",
+      "exportPx": [
+        1001,
+        1024
+      ],
+      "outlinePx": [
+        2,
+        3,
+        996,
+        1018
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      }
+    },
+    {
+      "partId": "cooler_low",
+      "view": "side",
+      "name": "cooler_low_side",
+      "sourcePath": "art/source/parts/cooler_low_side_v02.png",
+      "promptPath": "art/prompts/parts/cooler_low_side_v02.json",
+      "sourceCropLtrbPx": [
+        112,
+        114,
+        1139,
+        1100
+      ],
+      "scale": 0.498539435248296,
+      "proposedExportPx": [
+        512,
+        491.5598831548199
+      ],
+      "wrapperPath": ".local/figma-import/batch-correction/cooler_low_side.svg",
+      "state": "exported_for_review",
+      "figmaExportNodeId": "19:52",
+      "uiPosition": [
+        "7200",
+        "6200"
+      ],
+      "stagingPath": "art/exports/parts/cooler_low_side.png",
+      "exportPx": [
+        512,
+        492
+      ],
+      "outlinePx": [
+        2,
+        2,
+        508,
+        488
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      }
+    }
+  ],
+  "status": "actual_png_exports_collected"
+}

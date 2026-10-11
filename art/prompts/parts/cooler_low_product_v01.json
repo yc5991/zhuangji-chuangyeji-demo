@@ -1,0 +1,17 @@
+{
+  "id": "cooler_low_product_v01",
+  "componentId": "cooler_low",
+  "tool": "built_in_image_gen",
+  "intent": "generate",
+  "status": "generated_candidate",
+  "sourcePath": "art/source/parts/cooler_low_product_v01.png",
+  "referencePaths": [
+    "art/source/style_review_v02.png",
+    "art/source/parts/cooler_low_side_v01.png"
+  ],
+  "transparent_background": true,
+  "structuralBasis": "Original game component product view, catalog dimensions. Fan sizes and mounting appearance are illustration choices pending projection review.",
+  "prompt": "Use case: product-mockup. ONE isolated procurement catalog illustration ofsameoriginalgamecomponentasreference2, in modestthreequarterhardware productphotocamera. Reference1 providesrelative realistic PCsimulatormaterialstyle. Original compact low-profile CPU down-blowing cooler100mmwide100mmdeep60mmtall, square graphite frame, exactlyseven black blades in central90mm fan, plain roundblackhub, aluminum horizontalfin stackbelow with compact copperbase, simplefourcorner mountingears. Fanface upward in this freeproductpose. No wires or plugs so cable path staysindependent. Preserve materialpaletteandformlanguageofreference2while showingbroadfunctionalface andmodestdepth, manufactured crispgeometry, believable metal/fins/plastic, neutralupperleftstudioillumination andfill, no comicoutline orfantasycolors. Entireobjectcenteredwithgeneroustransparentmargin onalledges, truealphaoutside fullsilhouette, no floor/reflection/castshadowoutsideobject, no boxes,desk,motherboard,otherobjects,logos,printedletters,numbers,glow,RGBorwatermark. Blanklabelandhub reserved for project brand textlayer. Oneobjectonly.",
+  "generatedOutputFile": "exec-7a386828-20ee-46eb-b5fc-a834da2625d6.png",
+  "resultRecovery": "Recovered completed tool output after session interruption; matched by visual identity and recorded prompt"
+}

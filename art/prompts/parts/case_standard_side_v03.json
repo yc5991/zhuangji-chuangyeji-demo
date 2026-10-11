@@ -1,0 +1,19 @@
+{
+  "id": "case_standard_side_v03",
+  "componentId": "case_standard",
+  "tool": "built_in_image_gen",
+  "intent": "generate_from_original_layout",
+  "referencePaths": [
+    "art/reference/layout/case_standard_side_guide.png",
+    "art/source/parts/case_standard_side_v01.png"
+  ],
+  "sourcePath": "art/source/parts/case_standard_side_v03.png",
+  "status": "requires_geometry_revision",
+  "provenance": "Original fixed-view game geometry; guide marks installation envelope rather than verified manufacturer standoff layout.",
+  "prompt": "Use case: product-mockup. Produce an independent realistic industrial PC game EMPTY CASE SIDE SPRITE. Image 1 is an ORIGINAL GAME ENGINEERING LAYOUT diagram. Its outer body shape, exact tall motherboard region position and low PSU separation height are mandatory geometry; it is NOT a photograph to decorate. Image 2 is solely the graphite powder-coated steel material and small screw realism reference. DO NOT copy its too-short motherboard tray or perspective. Preserve image 1 orthographic framing of the metal body. Replace diagram shapes with detailed realistic empty folded sheet-steel hardware. Metal body depth430mm, height430mm. Board region width229mm,height305mm, lower-left20,110mm above bottom, top15mm below top. Exact same relative bounding region as diagram's GREEN TALL rectangle: render ONLY empty tray material and small brass standoffs, NO motherboard. Do not compress this region for aesthetics, do not leave a huge top ceiling. Only a thin perimeter rail at top. PSU bay at bottom below board, no partition intruding into board region. The diagram's marked PSU rectangle is empty bay, not an installed PSU. Tiny feet extend BELOW body, not included in body height. Front RIGHT, rear LEFT, camera perfectly perpendicular to side, STRICT ORTHOGRAPHIC: all depth direction rails horizontal, verticals parallel, do not show broad rear wall or broad ceiling, fan mounts empty and edge-on. plain folded steel, modest solid front column. Routing holes only to right of green motherboard region, remove green color in finished art. Small two-drive cage LOWER RIGHT wholly below motherboard region. No installed components or cables, no fans, motherboard, CPU, GPU, RAM, PSU, drive, sideglass, shroud. NO diagram labels, guides, colored highlights, measurement text, logos, numbers. Neutral studio white light upper-left with soft fill. Matte manufactured dark gray steel and convincing sharp small fasteners. Genuine transparent alpha around complete square/rectangular silhouette and small feet, generous 6% padding; empty flat tray should remain opaque dark steel. No environment, floor, outside shadow, glow or cartoon outlines. Original game mechanical layout and original artwork, not a manufacturer photograph.",
+  "generatedOutputFile": "exec-365164ba-1b27-4df0-9064-14bad865c763.png",
+  "review": {
+    "result": "not_accepted_for_installation",
+    "reason": "Photo material reference still dominates original geometry guide; motherboard tray remains short and side camera shows broad oblique rear/top faces"
+  }
+}

@@ -34,7 +34,7 @@ const CUSTOMER_FIELD_SOURCES = {
   minimumScores: 'minimumScores',
 };
 const CUSTOMER_FIELDS_NOT_RULES = new Set(['id', 'archetype', 'kind', 'name', 'dueMonth', 'status',
-  'designId', 'satisfaction', 'agreedPrice', 'deposit',
+  'designId', 'satisfaction', 'agreedPrice', 'deposit', 'deliveryOutcome',
   // The colour the customer prefers. It is not a requirement any more: the game uses it to pre-fill a
   // new design's body colour, and a mismatch no longer blocks the order.
   'color']);

@@ -1,0 +1,13 @@
+{
+  "id": "gpu_960_side_v01",
+  "componentId": "gpu_960",
+  "prompt": "Use case: product-mockup. One independent production sprite for Orangegame industrial PC assembly game. Image 1 is only material and lighting reference; do not copy composition/perspective. Realistic restrained 3D game render, neutral light from upper left and soft fill, crisp functional contours, no outlines, no cartoon shapes. True transparent alpha, complete silhouette with padding, no ground or cast ground shadow. STRICT ORTHOGRAPHIC straight-on camera without perspective or tilt. No text, logos, numbers, watermark, other objects, collage or environment. A single horizontal 2016 budget dual-slot GTX960-class GRAPHICS CARD shown in its INSTALLED case side view. Back bracket at LEFT, nose at RIGHT, PCB along TOP and cooler below. Physical length 242mm; apparent vertical thickness 35mm (wide thin aspect ratio about 7:1). The card's 111mm board height points AWAY from this camera into the case, so do NOT show its broad face. View only the narrow long OUTER SIDE EDGE: matte black plastic cooler rail, visible silver heatsink slits, a slim dark PCB strip atop, restrained blank silver nameplate. Two axial cooling fans face DOWN; only very subtle bottom fan housing rims may appear, NEVER two full circular fan faces toward camera. Metal rear bracket edge at left with screw ear, one unconnected 6-pin power socket near right end with six tiny contacts. No power cable, no motherboard, no golden PCIe connector broad face, no tilted card. Horizontal landscape canvas, no large invented protrusions.",
+  "sourcePath": "art/source/parts/gpu_960_side_v01.png",
+  "tool": "built_in_image_gen",
+  "intent": "generate",
+  "useCase": "product-mockup",
+  "status": "production_candidate",
+  "referencePaths": [
+    "art/source/style_review_v02.png"
+  ]
+}

@@ -1,0 +1,1037 @@
+{
+  "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+  "pageId": "1:2",
+  "method": "UI import of clipped SVG raster container, then native Figma PNG export; raster source preserved",
+  "entries": [
+    {
+      "partId": "case_small",
+      "view": "side",
+      "name": "case_small_side",
+      "sourcePath": "art/source/parts/case_small_side_v01.png",
+      "promptPath": "art/prompts/parts/case_small_side_v01.json",
+      "sourceCropLtrbPx": [
+        77,
+        58,
+        1201,
+        1179
+      ],
+      "scale": 0.9110320284697508,
+      "proposedExportPx": [
+        1024,
+        1021.2669039145907
+      ],
+      "wrapperPath": ".local/figma-import/batch-side/case_small_side.svg",
+      "state": "exported_for_review",
+      "figmaExportNodeId": "12:32",
+      "uiPosition": [
+        {
+          "label": "X-position",
+          "value": "6000"
+        },
+        {
+          "label": "Y-position",
+          "value": "200"
+        }
+      ],
+      "stagingPath": "art/exports/parts/case_small_side.png",
+      "exportPx": [
+        1024,
+        1022
+      ],
+      "outlinePx": [
+        1,
+        2,
+        1021,
+        1018
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaLink": "https://www.figma.com/design/1Pd44NBRzvtRWywj1V4bz5/Orangegame-%E7%B4%A0%E6%9D%90%E5%B7%A5%E4%BD%9C%E5%8C%BA?node-id=12-32&t=27GGwRcq08IVozMW-4"
+    },
+    {
+      "partId": "case_quiet",
+      "view": "side",
+      "name": "case_quiet_side",
+      "sourcePath": "art/source/parts/case_quiet_side_v01.png",
+      "promptPath": "art/prompts/parts/case_quiet_side_v01.json",
+      "sourceCropLtrbPx": [
+        54,
+        41,
+        1243,
+        1176
+      ],
+      "scale": 0.8612279226240538,
+      "proposedExportPx": [
+        1024,
+        977.4936921783011
+      ],
+      "wrapperPath": ".local/figma-import/batch-side/case_quiet_side.svg",
+      "state": "exported_for_review",
+      "figmaExportNodeId": "12:34",
+      "uiPosition": [
+        {
+          "label": "X-position",
+          "value": "7200"
+        },
+        {
+          "label": "Y-position",
+          "value": "1339"
+        }
+      ],
+      "stagingPath": "art/exports/parts/case_quiet_side.png",
+      "exportPx": [
+        1024,
+        978
+      ],
+      "outlinePx": [
+        2,
+        1,
+        1021,
+        975
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaLink": "https://www.figma.com/design/1Pd44NBRzvtRWywj1V4bz5/Orangegame-%E7%B4%A0%E6%9D%90%E5%B7%A5%E4%BD%9C%E5%8C%BA?node-id=12-34&t=27GGwRcq08IVozMW-4"
+    },
+    {
+      "partId": "case_standard",
+      "view": "rear",
+      "name": "case_standard_rear",
+      "sourcePath": "art/source/parts/case_standard_rear_v01.png",
+      "promptPath": "art/prompts/parts/case_standard_rear_v01.json",
+      "sourceCropLtrbPx": [
+        88,
+        60,
+        1172,
+        1196
+      ],
+      "scale": 0.9014084507042254,
+      "proposedExportPx": [
+        977.1267605633803,
+        1024
+      ],
+      "wrapperPath": ".local/figma-import/batch-side/case_standard_rear.svg",
+      "state": "exported_for_review",
+      "figmaExportNodeId": "12:30",
+      "uiPosition": [
+        {
+          "label": "X-position",
+          "value": "8400"
+        },
+        {
+          "label": "Y-position",
+          "value": "200"
+        }
+      ],
+      "stagingPath": "art/exports/parts/case_standard_rear.png",
+      "exportPx": [
+        978,
+        1024
+      ],
+      "outlinePx": [
+        3,
+        1,
+        971,
+        1020
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaLink": "https://www.figma.com/design/1Pd44NBRzvtRWywj1V4bz5/Orangegame-%E7%B4%A0%E6%9D%90%E5%B7%A5%E4%BD%9C%E5%8C%BA?node-id=12-30&t=27GGwRcq08IVozMW-4"
+    },
+    {
+      "partId": "case_quiet",
+      "view": "rear",
+      "name": "case_quiet_rear",
+      "sourcePath": "art/source/parts/case_quiet_rear_v01.png",
+      "promptPath": "art/prompts/parts/case_quiet_rear_v01.json",
+      "sourceCropLtrbPx": [
+        60,
+        33,
+        1258,
+        1170
+      ],
+      "scale": 0.8547579298831386,
+      "proposedExportPx": [
+        1024,
+        971.8597662771285
+      ],
+      "wrapperPath": ".local/figma-import/batch-side/case_quiet_rear.svg",
+      "state": "exported_for_review",
+      "figmaExportNodeId": "12:28",
+      "uiPosition": [
+        9600,
+        200
+      ],
+      "stagingPath": "art/exports/parts/case_quiet_rear.png",
+      "exportPx": [
+        1024,
+        972
+      ],
+      "outlinePx": [
+        1,
+        2,
+        1021,
+        967
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      }
+    },
+    {
+      "partId": "mb_am3",
+      "view": "side",
+      "name": "mb_am3_side",
+      "sourcePath": "art/source/parts/mb_am3_side_v01.png",
+      "promptPath": "art/prompts/parts/mb_am3_side_v01.json",
+      "sourceCropLtrbPx": [
+        38,
+        73,
+        1041,
+        1380
+      ],
+      "scale": 0.5876052027543994,
+      "proposedExportPx": [
+        589.3680183626626,
+        768
+      ],
+      "wrapperPath": ".local/figma-import/batch-side/mb_am3_side.svg",
+      "state": "exported_for_review",
+      "stagingPath": "art/exports/parts/mb_am3_side.png",
+      "exportPx": [
+        590,
+        768
+      ],
+      "outlinePx": [
+        1,
+        1,
+        588,
+        766
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "12:48",
+      "uiPosition": [
+        "10800",
+        "200"
+      ]
+    },
+    {
+      "partId": "cpu_fx8350",
+      "view": "side",
+      "name": "cpu_fx8350_side",
+      "sourcePath": "art/source/parts/cpu_fx8350_side_v01.png",
+      "promptPath": "art/prompts/parts/cpu_fx8350_side_v01.json",
+      "sourceCropLtrbPx": [
+        88,
+        94,
+        1167,
+        1161
+      ],
+      "scale": 0.11862835959221502,
+      "proposedExportPx": [
+        128,
+        126.57645968489342
+      ],
+      "wrapperPath": ".local/figma-import/batch-side/cpu_fx8350_side.svg",
+      "state": "exported_for_review",
+      "stagingPath": "art/exports/parts/cpu_fx8350_side.png",
+      "exportPx": [
+        128,
+        127
+      ],
+      "outlinePx": [
+        0,
+        0,
+        128,
+        127
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "12:40",
+      "uiPosition": [
+        "6000",
+        "1400"
+      ]
+    },
+    {
+      "partId": "gpu_750ti",
+      "view": "side",
+      "name": "gpu_750ti_side",
+      "sourcePath": "art/source/parts/gpu_750ti_side_v01.png",
+      "promptPath": "art/prompts/parts/gpu_750ti_side_v01.json",
+      "sourceCropLtrbPx": [
+        86,
+        189,
+        1686,
+        795
+      ],
+      "scale": 0.48,
+      "proposedExportPx": [
+        768,
+        290.88
+      ],
+      "wrapperPath": ".local/figma-import/batch-side/gpu_750ti_side.svg",
+      "state": "exported_for_review",
+      "stagingPath": "art/exports/parts/gpu_750ti_side.png",
+      "exportPx": [
+        768,
+        291
+      ],
+      "outlinePx": [
+        1,
+        1,
+        766,
+        289
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "12:4",
+      "uiPosition": [
+        "7200",
+        "1400"
+      ]
+    },
+    {
+      "partId": "gpu_970",
+      "view": "side",
+      "name": "gpu_970_side",
+      "sourcePath": "art/source/parts/gpu_970_side_v01.png",
+      "promptPath": "art/prompts/parts/gpu_970_side_v01.json",
+      "sourceCropLtrbPx": [
+        10,
+        266,
+        1764,
+        660
+      ],
+      "scale": 0.4378563283922463,
+      "proposedExportPx": [
+        768,
+        172.51539338654504
+      ],
+      "wrapperPath": ".local/figma-import/batch-side/gpu_970_side.svg",
+      "state": "exported_for_review",
+      "stagingPath": "art/exports/parts/gpu_970_side.png",
+      "exportPx": [
+        768,
+        173
+      ],
+      "outlinePx": [
+        1,
+        1,
+        766,
+        171
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "12:6",
+      "uiPosition": [
+        "8400",
+        "1400"
+      ]
+    },
+    {
+      "partId": "gpu_r9380",
+      "view": "side",
+      "name": "gpu_r9380_side",
+      "sourcePath": "art/source/parts/gpu_r9380_side_v01.png",
+      "promptPath": "art/prompts/parts/gpu_r9380_side_v01.json",
+      "sourceCropLtrbPx": [
+        40,
+        123,
+        1967,
+        659
+      ],
+      "scale": 0.3985469641930462,
+      "proposedExportPx": [
+        768,
+        213.62117280747276
+      ],
+      "wrapperPath": ".local/figma-import/batch-side/gpu_r9380_side.svg",
+      "state": "exported_for_review",
+      "stagingPath": "art/exports/parts/gpu_r9380_side.png",
+      "exportPx": [
+        768,
+        214
+      ],
+      "outlinePx": [
+        0,
+        1,
+        767,
+        212
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "12:24",
+      "uiPosition": [
+        "9600",
+        "1400"
+      ]
+    },
+    {
+      "partId": "gpu_1080",
+      "view": "side",
+      "name": "gpu_1080_side",
+      "sourcePath": "art/source/parts/gpu_1080_side_v01.png",
+      "promptPath": "art/prompts/parts/gpu_1080_side_v01.json",
+      "sourceCropLtrbPx": [
+        15,
+        257,
+        1752,
+        703
+      ],
+      "scale": 0.4421416234887737,
+      "proposedExportPx": [
+        768,
+        197.1951640759931
+      ],
+      "wrapperPath": ".local/figma-import/batch-side/gpu_1080_side.svg",
+      "state": "exported_for_review",
+      "stagingPath": "art/exports/parts/gpu_1080_side.png",
+      "exportPx": [
+        768,
+        198
+      ],
+      "outlinePx": [
+        1,
+        1,
+        767,
+        196
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "12:8",
+      "uiPosition": [
+        "10800",
+        "1400"
+      ]
+    },
+    {
+      "partId": "gpu_1070",
+      "view": "side",
+      "name": "gpu_1070_side",
+      "sourcePath": "art/source/parts/gpu_1070_side_v02.png",
+      "promptPath": "art/prompts/parts/gpu_1070_side_v02.json",
+      "sourceCropLtrbPx": [
+        26,
+        227,
+        1750,
+        681
+      ],
+      "scale": 0.44547563805104406,
+      "proposedExportPx": [
+        768,
+        202.24593967517401
+      ],
+      "wrapperPath": ".local/figma-import/batch-side/gpu_1070_side.svg",
+      "state": "exported_for_review",
+      "stagingPath": "art/exports/parts/gpu_1070_side.png",
+      "exportPx": [
+        768,
+        203
+      ],
+      "outlinePx": [
+        0,
+        1,
+        767,
+        201
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "12:10",
+      "uiPosition": [
+        "6000",
+        "2600"
+      ]
+    },
+    {
+      "partId": "gpu_rx480_4",
+      "view": "side",
+      "name": "gpu_rx480_4_side",
+      "sourcePath": "art/source/parts/gpu_rx480_4_side_v01.png",
+      "promptPath": "art/prompts/parts/gpu_rx480_4_side_v01.json",
+      "sourceCropLtrbPx": [
+        30,
+        279,
+        1739,
+        664
+      ],
+      "scale": 0.44938560561732005,
+      "proposedExportPx": [
+        768,
+        173.01345816266823
+      ],
+      "wrapperPath": ".local/figma-import/batch-side/gpu_rx480_4_side.svg",
+      "state": "exported_for_review",
+      "stagingPath": "art/exports/parts/gpu_rx480_4_side.png",
+      "exportPx": [
+        768,
+        174
+      ],
+      "outlinePx": [
+        1,
+        0,
+        767,
+        173
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "12:12",
+      "uiPosition": [
+        "7200",
+        "2600"
+      ]
+    },
+    {
+      "partId": "gpu_rx480_8",
+      "view": "side",
+      "name": "gpu_rx480_8_side",
+      "sourcePath": "art/source/parts/gpu_rx480_8_side_v01.png",
+      "promptPath": "art/prompts/parts/gpu_rx480_8_side_v01.json",
+      "sourceCropLtrbPx": [
+        27,
+        259,
+        1744,
+        700
+      ],
+      "scale": 0.44729178800232966,
+      "proposedExportPx": [
+        768,
+        197.25567850902738
+      ],
+      "wrapperPath": ".local/figma-import/batch-side/gpu_rx480_8_side.svg",
+      "state": "exported_for_review",
+      "stagingPath": "art/exports/parts/gpu_rx480_8_side.png",
+      "exportPx": [
+        768,
+        198
+      ],
+      "outlinePx": [
+        0,
+        1,
+        767,
+        196
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "12:14",
+      "uiPosition": [
+        "8400",
+        "2600"
+      ]
+    },
+    {
+      "partId": "ram_ddr3_4",
+      "view": "side",
+      "name": "ram_ddr3_4_side",
+      "sourcePath": "art/source/parts/ram_ddr3_4_side_v01.png",
+      "promptPath": "art/prompts/parts/ram_ddr3_4_side_v01.json",
+      "sourceCropLtrbPx": [
+        510,
+        44,
+        571,
+        1428
+      ],
+      "scale": 0.3699421965317919,
+      "proposedExportPx": [
+        22.566473988439306,
+        512
+      ],
+      "wrapperPath": ".local/figma-import/batch-side/ram_ddr3_4_side.svg",
+      "state": "exported_for_review",
+      "stagingPath": "art/exports/parts/ram_ddr3_4_side.png",
+      "exportPx": [
+        23,
+        512
+      ],
+      "outlinePx": [
+        0,
+        0,
+        22,
+        512
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "12:16",
+      "uiPosition": [
+        "9600",
+        "2600"
+      ]
+    },
+    {
+      "partId": "ram_ddr3_8",
+      "view": "side",
+      "name": "ram_ddr3_8_side",
+      "sourcePath": "art/source/parts/ram_ddr3_8_side_v01.png",
+      "promptPath": "art/prompts/parts/ram_ddr3_8_side_v01.json",
+      "sourceCropLtrbPx": [
+        503,
+        38,
+        570,
+        1436
+      ],
+      "scale": 0.36623748211731044,
+      "proposedExportPx": [
+        24.5379113018598,
+        512
+      ],
+      "wrapperPath": ".local/figma-import/batch-side/ram_ddr3_8_side.svg",
+      "state": "exported_for_review",
+      "stagingPath": "art/exports/parts/ram_ddr3_8_side.png",
+      "exportPx": [
+        25,
+        512
+      ],
+      "outlinePx": [
+        1,
+        0,
+        23,
+        512
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "12:18",
+      "uiPosition": [
+        "10800",
+        "2600"
+      ]
+    },
+    {
+      "partId": "ram_ddr4_4",
+      "view": "side",
+      "name": "ram_ddr4_4_side",
+      "sourcePath": "art/source/parts/ram_ddr4_4_side_v01.png",
+      "promptPath": "art/prompts/parts/ram_ddr4_4_side_v01.json",
+      "sourceCropLtrbPx": [
+        514,
+        25,
+        569,
+        1441
+      ],
+      "scale": 0.3615819209039548,
+      "proposedExportPx": [
+        19.887005649717516,
+        512
+      ],
+      "wrapperPath": ".local/figma-import/batch-side/ram_ddr4_4_side.svg",
+      "state": "exported_for_review",
+      "stagingPath": "art/exports/parts/ram_ddr4_4_side.png",
+      "exportPx": [
+        20,
+        512
+      ],
+      "outlinePx": [
+        1,
+        1,
+        19,
+        511
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "12:20",
+      "uiPosition": [
+        "6000",
+        "3800"
+      ]
+    },
+    {
+      "partId": "psu_450",
+      "view": "rear",
+      "name": "psu_450_rear",
+      "sourcePath": "art/source/parts/psu_450_rear_v01.png",
+      "promptPath": "art/prompts/parts/psu_450_rear_v01.json",
+      "sourceCropLtrbPx": [
+        129,
+        57,
+        1495,
+        891
+      ],
+      "scale": 0.37481698389458273,
+      "proposedExportPx": [
+        512,
+        312.597364568082
+      ],
+      "wrapperPath": ".local/figma-import/batch-side/psu_450_rear.svg",
+      "state": "exported_for_review",
+      "stagingPath": "art/exports/parts/psu_450_rear.png",
+      "exportPx": [
+        512,
+        313
+      ],
+      "outlinePx": [
+        1,
+        1,
+        510,
+        311
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "12:38",
+      "uiPosition": [
+        "7200",
+        "3800"
+      ]
+    },
+    {
+      "partId": "psu_650m",
+      "view": "side",
+      "name": "psu_650m_side",
+      "sourcePath": "art/source/parts/psu_650m_side_v03.png",
+      "promptPath": "art/prompts/parts/psu_650m_side_v03.json",
+      "sourceCropLtrbPx": [
+        43,
+        47,
+        1654,
+        868
+      ],
+      "scale": 0.31781502172563625,
+      "proposedExportPx": [
+        512,
+        260.92613283674734
+      ],
+      "wrapperPath": ".local/figma-import/batch-side/psu_650m_side.svg",
+      "state": "exported_for_review",
+      "stagingPath": "art/exports/parts/psu_650m_side.png",
+      "exportPx": [
+        512,
+        261
+      ],
+      "outlinePx": [
+        0,
+        0,
+        512,
+        261
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "12:42",
+      "uiPosition": [
+        "8400",
+        "3800"
+      ]
+    },
+    {
+      "partId": "psu_650m",
+      "view": "rear",
+      "name": "psu_650m_rear",
+      "sourcePath": "art/source/parts/psu_650m_rear_v01.png",
+      "promptPath": "art/prompts/parts/psu_650m_rear_v01.json",
+      "sourceCropLtrbPx": [
+        105,
+        91,
+        1606,
+        827
+      ],
+      "scale": 0.34110592938041306,
+      "proposedExportPx": [
+        512,
+        251.053964023984
+      ],
+      "wrapperPath": ".local/figma-import/batch-side/psu_650m_rear.svg",
+      "state": "exported_for_review",
+      "stagingPath": "art/exports/parts/psu_650m_rear.png",
+      "exportPx": [
+        512,
+        252
+      ],
+      "outlinePx": [
+        1,
+        0,
+        511,
+        251
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "12:46",
+      "uiPosition": [
+        "9600",
+        "3800"
+      ]
+    },
+    {
+      "partId": "cooler_quiet",
+      "view": "side",
+      "name": "cooler_quiet_side",
+      "sourcePath": "art/source/parts/cooler_quiet_side_v01.png",
+      "promptPath": "art/prompts/parts/cooler_quiet_side_v01.json",
+      "sourceCropLtrbPx": [
+        256,
+        159,
+        1406,
+        805
+      ],
+      "scale": 0.44521739130434784,
+      "proposedExportPx": [
+        512,
+        287.6104347826087
+      ],
+      "wrapperPath": ".local/figma-import/batch-side/cooler_quiet_side.svg",
+      "state": "exported_for_review",
+      "stagingPath": "art/exports/parts/cooler_quiet_side.png",
+      "exportPx": [
+        512,
+        288
+      ],
+      "outlinePx": [
+        0,
+        1,
+        511,
+        286
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "12:22",
+      "uiPosition": [
+        "10800",
+        "3800"
+      ]
+    },
+    {
+      "partId": "hdd_1000",
+      "view": "side",
+      "name": "hdd_1000_side",
+      "sourcePath": "art/source/parts/hdd_1000_side_v01.png",
+      "promptPath": "art/prompts/parts/hdd_1000_side_v01.json",
+      "sourceCropLtrbPx": [
+        101,
+        239,
+        1908,
+        555
+      ],
+      "scale": 0.28334255672385167,
+      "proposedExportPx": [
+        511.99999999999994,
+        89.53624792473713
+      ],
+      "wrapperPath": ".local/figma-import/batch-side/hdd_1000_side.svg",
+      "state": "exported_for_review",
+      "stagingPath": "art/exports/parts/hdd_1000_side.png",
+      "exportPx": [
+        512,
+        90
+      ],
+      "outlinePx": [
+        0,
+        0,
+        511,
+        89
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "12:26",
+      "uiPosition": [
+        "6000",
+        "5000"
+      ]
+    },
+    {
+      "partId": "hdd_1000",
+      "view": "rear",
+      "name": "hdd_1000_rear",
+      "sourcePath": "art/source/parts/hdd_1000_rear_v01.png",
+      "promptPath": "art/prompts/parts/hdd_1000_rear_v01.json",
+      "sourceCropLtrbPx": [
+        51,
+        187,
+        1971,
+        621
+      ],
+      "scale": 0.26666666666666666,
+      "proposedExportPx": [
+        512,
+        115.73333333333333
+      ],
+      "wrapperPath": ".local/figma-import/batch-side/hdd_1000_rear.svg",
+      "state": "exported_for_review",
+      "stagingPath": "art/exports/parts/hdd_1000_rear.png",
+      "exportPx": [
+        512,
+        116
+      ],
+      "outlinePx": [
+        0,
+        0,
+        512,
+        115
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "12:44",
+      "uiPosition": [
+        "7200",
+        "5000"
+      ]
+    },
+    {
+      "partId": "cooler_low",
+      "view": "frame",
+      "name": "cooler_low_frame",
+      "sourcePath": "art/source/parts/cooler_low_frame_v01.png",
+      "promptPath": "art/prompts/parts/cooler_low_frame_v01.json",
+      "sourceCropLtrbPx": [
+        114,
+        116,
+        1138,
+        1098
+      ],
+      "scale": 0.5,
+      "proposedExportPx": [
+        512,
+        491
+      ],
+      "wrapperPath": ".local/figma-import/batch-side/cooler_low_frame.svg",
+      "state": "exported_for_review",
+      "stagingPath": "art/exports/parts/cooler_low_frame.png",
+      "exportPx": [
+        512,
+        491
+      ],
+      "outlinePx": [
+        1,
+        1,
+        510,
+        489
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "12:36",
+      "uiPosition": [
+        "8400",
+        "5000"
+      ]
+    },
+    {
+      "partId": "cooler_low",
+      "view": "rotor",
+      "name": "cooler_low_rotor",
+      "sourcePath": "art/source/parts/cooler_low_rotor_v01.png",
+      "promptPath": "art/prompts/parts/cooler_low_rotor_v01.json",
+      "sourceCropLtrbPx": [
+        59,
+        54,
+        1221,
+        1188
+      ],
+      "scale": 0.4406196213425129,
+      "proposedExportPx": [
+        512,
+        499.66265060240966
+      ],
+      "wrapperPath": ".local/figma-import/batch-side/cooler_low_rotor.svg",
+      "state": "exported_for_review",
+      "stagingPath": "art/exports/parts/cooler_low_rotor.png",
+      "exportPx": [
+        512,
+        500
+      ],
+      "outlinePx": [
+        0,
+        0,
+        511,
+        498
+      ],
+      "runtimePath": null,
+      "review": {
+        "alpha": "checked",
+        "materials": "checked",
+        "installationAlignment": "pending_per_case_and_board"
+      },
+      "figmaExportNodeId": "12:50",
+      "uiPosition": [
+        "9600",
+        "5000"
+      ]
+    }
+  ],
+  "status": "actual_png_exports_collected"
+}

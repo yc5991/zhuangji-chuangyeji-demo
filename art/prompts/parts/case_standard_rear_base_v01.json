@@ -1,0 +1,79 @@
+{
+  "id": "case_standard_rear_base_v01",
+  "componentId": "case_standard",
+  "tool": "built_in_image_gen",
+  "intent": "precise-object-edit",
+  "referencePaths": [
+    "art/source/parts/case_standard_rear_v02.png"
+  ],
+  "sourcePath": "art/source/parts/case_standard_rear_base_v01.png",
+  "status": "figma_layer_composed_exported_for_joint_review",
+  "prompt": "Use case: precise-object-edit. Edit target: supplied original empty PC case cable-side image. REMOVE ONLY the two protruding rectangular SSD mounting plates on the far LEFT interior strip, including their corner screws and mounting tabs. Replace both footprints and outlines with continuous plain matte graphite sheet steel matching the surrounding tray. Keep ALL OTHER pixels and structural composition: outer body, feet, solid motherboard tray, plain front left column, cable slots and tie tabs, lower separator, lower PSU bay, two-tier HDD cage, expansion edges, screws, lighting, exact orthographic camera. Do not move, resize or redesign the case. No new parts, no installed devices, no additional holes. The left interior sheet is now an unobstructed blank mounting surface for separately drawn brackets. Preserve true transparent alpha outside chassis and in original open holes, no background, floor or shadow.",
+  "provenance": "Original case raster background only. SSD mount plates are independent raster crops placed in Figma against fixed game geometry.",
+  "figmaExportNodeId": "35:14",
+  "stagingPath": "art/exports/parts/case_standard_rear_aligned_v01.png",
+  "composition": {
+    "background": "art/source/parts/case_standard_rear_base_v01.png",
+    "plates": [
+      {
+        "slotId": "ssd0",
+        "rectMm": [
+          350,
+          101,
+          69.85,
+          100
+        ],
+        "sourceCropPath": "art/source/parts/case_small_rear_v03.png",
+        "sourceCropLtrbPx": [
+          151,
+          138,
+          361,
+          434
+        ],
+        "targetSourceRectLtrbPx": [
+          123.92651162790699,
+          641.1325581395349,
+          295.4651162790698,
+          881.3651162790698
+        ],
+        "figmaLocalRectPx": [
+          30.496966331135035,
+          534.0967719541826,
+          163.85777160708088,
+          229.47587643179452
+        ],
+        "provenance": "Raster crop from built-in original drawing; exact Figma layer placement from original game SSD envelopes"
+      },
+      {
+        "slotId": "ssd1",
+        "rectMm": [
+          350,
+          208,
+          69.85,
+          100
+        ],
+        "sourceCropPath": "art/source/parts/case_small_rear_v03.png",
+        "sourceCropLtrbPx": [
+          151,
+          138,
+          361,
+          434
+        ],
+        "targetSourceRectLtrbPx": [
+          123.92651162790699,
+          384.0837209302325,
+          295.4651162790698,
+          624.3162790697675
+        ],
+        "figmaLocalRectPx": [
+          30.496966331135035,
+          288.5575841721624,
+          163.85777160708088,
+          229.47587643179452
+        ],
+        "provenance": "Raster crop from built-in original drawing; exact Figma layer placement from original game SSD envelopes"
+      }
+    ],
+    "method": "Figma native imported clipped raster layers, not software-repainted source PNG"
+  }
+}

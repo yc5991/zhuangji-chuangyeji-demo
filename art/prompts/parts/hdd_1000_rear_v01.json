@@ -1,0 +1,14 @@
+{
+  "id": "hdd_1000_rear_v01",
+  "componentId": "hdd_1000",
+  "prompt": "Use case: product-mockup. ONE isolated independent original 3.5inch HDD opposite END sprite for relatively realistic industrial PC simulator Orangegame. Strict ORTHOGRAPHIC short-end camera of101.6mm horizontal width by26.1mm vertical height, ratio3.89,147mm drive length points perpendicularly into image invisible here. Silver cast-aluminum short end, a thin folded silver steel cover lip along top, rounded slight casting grooves, two small side screw lugs, shallow machined ridge and lower dark green PCB lip. This is the opposite end from SATA connectors; NO sockets, no power plugs, no wires, no broad top disk cover. Neutral upper-left light, matte practical metal, generous transparent margin outside complete rectangular outline. No text/logos/watermark, no background, no shadow outside silhouette. No perspective, all outer edges parallel. Original drive-cage orientation proposed for game rear view.",
+  "referencePaths": [
+    "art/source/style_review_v02.png"
+  ],
+  "sourcePath": "art/source/parts/hdd_1000_rear_v01.png",
+  "tool": "built_in_image_gen",
+  "intent": "generate",
+  "transparent_background": true,
+  "status": "generated_candidate",
+  "structuralBasis": "Catalog physical dimensions; transverse drive mounting/projection is an original game art decision."
+}

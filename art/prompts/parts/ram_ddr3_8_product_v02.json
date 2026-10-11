@@ -1,0 +1,21 @@
+{
+  "id": "ram_ddr3_8_product_v02",
+  "componentId": "ram_ddr3_8",
+  "referencePaths": [
+    "art/source/parts/ram_ddr3_8_product_v01.png"
+  ],
+  "intent": "edit",
+  "tool": "built_in_image_gen",
+  "transparent_background": true,
+  "status": "generated_candidate",
+  "sourcePath": "art/source/parts/ram_ddr3_8_product_v02.png",
+  "verifiedManufacturerReference": {
+    "referenceUrl": "https://www.kingston.com/datasheets/KVR16N11_8.pdf",
+    "page": 2,
+    "notchCenterMmFromLeft": 54.7,
+    "moduleWidthMm": 133.35,
+    "notchPercentFromLeft": 41.02,
+    "revisionCaveat": "Current mechanical drawing used as connector reference; does not prove a particular 2016 revision"
+  },
+  "prompt": "Use case: precise-object-edit. Correct ONLY the bottom gold-contact edge and its DDR3 key notch in this otherwise unchanged straight-on broad-face memory module. Current notch is wrongly right of midpoint, near 55%. Fill that old notch with the same green PCB edge and continuous ordinary gold contacts. Cut ONE small rounded rectangular DDR3 key notch at 41.0% of board width measured from LEFT edge, corresponding to 54.7mm on a133.35mm module. This notch removes the full contact edge down to actual transparent alpha inside it. Keep all eight large black chips on the visible front, original blank white sticker, PCB height, green material, subtle circuit traces, side retention notches, upper corners, exact orthographic camera and neutral lighting unchanged. Fine gold vertical contact lines look manufactured. No second bottom notch, no labels/logos, no glow, background, floor or outside shadow. Original project art, not an exact manufacturer photograph. Preserve generous actual transparent alpha margins and all edges."
+}

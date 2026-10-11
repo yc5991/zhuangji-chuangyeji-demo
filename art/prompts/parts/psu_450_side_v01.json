@@ -1,0 +1,13 @@
+{
+  "id": "psu_450_side_v01",
+  "componentId": "psu_450",
+  "prompt": "Use case: product-mockup. One independent production sprite for Orangegame industrial PC assembly game. Image 1 is only material and lighting reference; do not copy composition/perspective. Realistic restrained 3D game render, neutral light from upper left and soft fill, crisp functional contours, no outlines, no cartoon shapes. True transparent alpha, complete silhouette with padding, no ground or cast ground shadow. STRICT ORTHOGRAPHIC straight-on camera without perspective or tilt. No text, logos, numbers, watermark, other objects, collage or environment. One plain nonmodular ATX power supply viewed square-on from its side in installed orientation. Rear AC exhaust side faces LEFT and cable exit faces RIGHT. Flat rectangular matte graphite side panel 140mm horizontal depth by 86mm vertical height, four real small case screws, restrained shallow stamped seams, one small blank horizontal manufacturer sticker area centered. Fan sits on BOTTOM and cannot be seen on side view. A small round black nonmodular rubber cable exit grommet at lower RIGHT corner, EMPTY for later separately drawn cable nodes. No modular socket bank, no fan facing camera, no perspective visible broad top, no attached cables, no switch or mains socket on side. Landscape canvas.",
+  "sourcePath": "art/source/parts/psu_450_side_v01.png",
+  "tool": "built_in_image_gen",
+  "intent": "generate",
+  "useCase": "product-mockup",
+  "status": "production_candidate",
+  "referencePaths": [
+    "art/source/style_review_v02.png"
+  ]
+}

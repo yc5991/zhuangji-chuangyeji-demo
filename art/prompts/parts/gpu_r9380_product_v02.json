@@ -1,0 +1,27 @@
+{
+  "id": "gpu_r9380_product_v02",
+  "componentId": "gpu_r9380",
+  "tool": "built_in_image_gen",
+  "intent": "edit",
+  "status": "generated_candidate",
+  "sourcePath": "art/source/parts/gpu_r9380_product_v02.png",
+  "referencePaths": [
+    "art/source/parts/gpu_r9380_product_v01.png"
+  ],
+  "transparent_background": true,
+  "verifiedManufacturerReference": {
+    "referenceUrl": "https://www.msi.com/Graphics-Card/R9-380-GAMING-4G/Specification",
+    "portCounts": {
+      "dvi": 2,
+      "hdmi": 1,
+      "displayPort": 1
+    },
+    "checkedDate": "2026-10-08"
+  },
+  "originalArt": {
+    "connectorPositions": "Proposed layout on original game shield, not verified exact reference placement"
+  },
+  "prompt": "Precise local object edit: correctONLY silverI/OEXPANSIONBRACKETatLEFTedge ofgraphicscard. Preserve entirefanface,shroud,color,materials,camera,PCB,powerinputs,goldfingeredge,silhouetteandtransparency. The currentimage incorrectly showsrepeatedidenticalsmallHDMIports. Onleftmetalbracket, reconstructrealistic manufacturer-reference portTYPES andCOUNTS: EXACTLY FOUR connectorports: TWOlargewhitishDVIports(oneDVI-I,oneDVI-D)eachwithrealisticmultipinholes andtwojackscrewstandoffs,ONEsmallHDMItrapezoidport,ONEsmallDisplayPortonecornerbeveledrectangle. TWOlargeDVIports dominateconnectorarea, notfoursmallHDMIports. Orientallconnectorswith bracket'sprojectedvertical face, nothorizontalfloatingports. Smallmetalventslits use remainingblankbracketarea, keeping entirebracketshapes andorientation. No brandtext/labels, nocables. Allothercardpixels shouldretainoriginalart unchanged. Keepactualtransparentalpha outsidefullobject and noouterglow/hazyshadow.",
+  "generatedOutputFile": "exec-5634835c-e1df-4757-b8a6-99e71b9653aa.png",
+  "resultRecovery": "Recovered completed tool output after session interruption; matched by visual identity and recorded prompt"
+}

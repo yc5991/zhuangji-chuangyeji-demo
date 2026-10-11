@@ -1,0 +1,13 @@
+{
+  "id": "gpu_rx480_8_side_v01",
+  "componentId": "gpu_rx480_8",
+  "prompt": "Use case: product-mockup. ONE independent installed graphics card SIDE-EDGE sprite, relatively realistic industrial PC game art, neutral upper-left light, strict orthographic side camera, rear bracket LEFT, nose RIGHT, horizontal PCB at TOP, cooler below. No perspective tilt. Blower fan points DOWN, never show a circular fan face toward camera. Matte plastic, painted metal, silver vents and realistic seams. Entire complete silhouette on fully transparent alpha with padding, no ground, glow, cables, other parts, text, logos, numbers or watermark. Original game shell based on reference class; exact shell details are art assumptions. 240mm long by37mm thick 2016 enclosed single radial BLOWER card, sibling of original RX480-class shell. Plain straight charcoal-black rectangular side rail with a small muted red end tab, tiny vent strip and narrow black PCB visible at top. One6-pin2x3 unconnected power socket near right end. The radial blower faces down in a fully enclosed square nose at right, only housing side seen; no silver angular rail or visible full fan disc. Blank small graphite side plate. Correct physical proportions for240mm body, not a modern long triple-fan card.",
+  "sourcePath": "art/source/parts/gpu_rx480_8_side_v01.png",
+  "referencePaths": [
+    "art/source/style_review_v02.png"
+  ],
+  "tool": "built_in_image_gen",
+  "intent": "generate",
+  "status": "production_candidate",
+  "structuralBasis": "Catalog dimensions and connector counts; original illustrative cooling shell."
+}

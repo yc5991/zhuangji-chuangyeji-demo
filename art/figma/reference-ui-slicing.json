@@ -1,0 +1,553 @@
+{
+  "schemaVersion": 2,
+  "fileKey": "1Pd44NBRzvtRWywj1V4bz5",
+  "figmaNodeId": "33:185",
+  "figmaUrl": "https://www.figma.com/design/1Pd44NBRzvtRWywj1V4bz5?node-id=33-185",
+  "method": "Figma SVG import of original bitmap fills with editable silhouette masks; Figma PNG atlas export; fixed-rectangle lossless unpack; assembly pale metal correction separately exported from node 36:2",
+  "originalsPreserved": true,
+  "runtimeLabels": "Cocos Label from saved game data",
+  "workshop": {
+    "source": "art/source/workshop/workshop_isometric_v01.png",
+    "prompt": "art/prompts/workshop/workshop_isometric_v01.json",
+    "figmaNodeId": "32:2",
+    "exportPath": "art/exports/workshop/workshop_isometric.jpg",
+    "runtimePath": "assets/art/workbench/workshop/isometric.jpg",
+    "exportPx": [
+      960,
+      640
+    ],
+    "state": "reviewed-for-static-workshop-overview"
+  },
+  "entries": [
+    {
+      "name": "workshop",
+      "rect": [
+        0,
+        0,
+        192,
+        192
+      ],
+      "exportPath": "art/exports/ui/icons/workshop.png",
+      "runtimePath": "assets/art/workbench/ui/icons/workshop.png",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "1092474be4cdd91b84b134a6f2b185bc75482e65027f872c0b9534b046440a37",
+      "exportPx": [
+        192,
+        192
+      ]
+    },
+    {
+      "name": "product",
+      "rect": [
+        192,
+        0,
+        192,
+        192
+      ],
+      "exportPath": "art/exports/ui/icons/product.png",
+      "runtimePath": "assets/art/workbench/ui/icons/product.png",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "bf7f67acdb12c8054b72ce0fb5a6346a8791ef9f5687c32d3d78928b39e02e34",
+      "exportPx": [
+        192,
+        192
+      ]
+    },
+    {
+      "name": "procurement",
+      "rect": [
+        384,
+        0,
+        192,
+        192
+      ],
+      "exportPath": "art/exports/ui/icons/procurement.png",
+      "runtimePath": "assets/art/workbench/ui/icons/procurement.png",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "a1b243346d89370ec2bd8086e82df4074f2ed10d3660d213713b14ababcb87b2",
+      "exportPx": [
+        192,
+        192
+      ]
+    },
+    {
+      "name": "orders",
+      "rect": [
+        576,
+        0,
+        192,
+        192
+      ],
+      "exportPath": "art/exports/ui/icons/orders.png",
+      "runtimePath": "assets/art/workbench/ui/icons/orders.png",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "3ec40765b8669067107eecc5fa204f3838794e6f51396a20ef30a7e7c16e494d",
+      "exportPx": [
+        192,
+        192
+      ]
+    },
+    {
+      "name": "company",
+      "rect": [
+        768,
+        0,
+        192,
+        192
+      ],
+      "exportPath": "art/exports/ui/icons/company.png",
+      "runtimePath": "assets/art/workbench/ui/icons/company.png",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "2154a286f361c6c0cb70fc159fbe868304b5b5381ac3b5450fa93a53c1c5b911",
+      "exportPx": [
+        192,
+        192
+      ]
+    },
+    {
+      "name": "calendar",
+      "rect": [
+        0,
+        192,
+        192,
+        192
+      ],
+      "exportPath": "art/exports/ui/icons/calendar.png",
+      "runtimePath": "assets/art/workbench/ui/icons/calendar.png",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "b58c11326042405b885b7ae3289cd9f7554ddd35839c51ab2bd48cb8b2078913",
+      "exportPx": [
+        192,
+        192
+      ]
+    },
+    {
+      "name": "cash",
+      "rect": [
+        192,
+        192,
+        192,
+        192
+      ],
+      "exportPath": "art/exports/ui/icons/cash.png",
+      "runtimePath": "assets/art/workbench/ui/icons/cash.png",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "7cccbf4d1d5be423486261143c9822961152a8cf0712dcbca98f1b1c99bd380c",
+      "exportPx": [
+        192,
+        192
+      ]
+    },
+    {
+      "name": "settings",
+      "rect": [
+        384,
+        192,
+        192,
+        192
+      ],
+      "exportPath": "art/exports/ui/icons/settings.png",
+      "runtimePath": "assets/art/workbench/ui/icons/settings.png",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "61c01bbc57ebd88da2935dd95a72a2761085daaa1538673ee227187aef036d41",
+      "exportPx": [
+        192,
+        192
+      ]
+    },
+    {
+      "name": "assembly",
+      "rect": [
+        576,
+        192,
+        192,
+        192
+      ],
+      "exportPath": "art/exports/ui/icons/assembly.png",
+      "runtimePath": "assets/art/workbench/ui/icons/assembly.png",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "figmaNodeId": "36:2",
+      "standaloneExport": "art/exports/ui/assembly-v03.png",
+      "sha256": "dd081c1942f4a6c93cd76a8e479c614a44c97971cc0b68d13a23ace93f27252e",
+      "exportPx": [
+        192,
+        192
+      ]
+    },
+    {
+      "name": "testing",
+      "rect": [
+        768,
+        192,
+        192,
+        192
+      ],
+      "exportPath": "art/exports/ui/icons/testing.png",
+      "runtimePath": "assets/art/workbench/ui/icons/testing.png",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "26960ac88d72bd90a29ba0b167e7f40ff00fa813b62dfbf379820b4a49ae35e3",
+      "exportPx": [
+        192,
+        192
+      ]
+    },
+    {
+      "name": "labor",
+      "rect": [
+        0,
+        384,
+        192,
+        192
+      ],
+      "exportPath": "art/exports/ui/icons/labor.png",
+      "runtimePath": "assets/art/workbench/ui/icons/labor.png",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "5afef2b7cf169bf92fc33608529a5baf4659e5e3fff02172bd8b799838740874",
+      "exportPx": [
+        192,
+        192
+      ]
+    },
+    {
+      "name": "monthly_report",
+      "rect": [
+        192,
+        384,
+        192,
+        192
+      ],
+      "exportPath": "art/exports/ui/icons/monthly_report.png",
+      "runtimePath": "assets/art/workbench/ui/icons/monthly_report.png",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "c28720e8750b829ceddcb0756b14de81dd1099b753c47a9474479b466d44885d",
+      "exportPx": [
+        192,
+        192
+      ]
+    },
+    {
+      "name": "progress",
+      "rect": [
+        384,
+        384,
+        192,
+        192
+      ],
+      "exportPath": "art/exports/ui/icons/progress.png",
+      "runtimePath": "assets/art/workbench/ui/icons/progress.png",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "59e7103af4718c8539f45e0b9e6177d4dffcf612abd1e1133c3a39a5b313bbe2",
+      "exportPx": [
+        192,
+        192
+      ]
+    },
+    {
+      "name": "reputation",
+      "rect": [
+        576,
+        384,
+        192,
+        192
+      ],
+      "exportPath": "art/exports/ui/icons/reputation.png",
+      "runtimePath": "assets/art/workbench/ui/icons/reputation.png",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "dced478b334968f190be3205e5e12983710ec809931aa5a82dd02ebff62408a8",
+      "exportPx": [
+        192,
+        192
+      ]
+    },
+    {
+      "name": "supplier",
+      "rect": [
+        768,
+        384,
+        192,
+        192
+      ],
+      "exportPath": "art/exports/ui/icons/supplier.png",
+      "runtimePath": "assets/art/workbench/ui/icons/supplier.png",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "81c7231eec87b024e1c3c4f893ed9a8779e56b66b964b430f6b291f90eaeefc3",
+      "exportPx": [
+        192,
+        192
+      ]
+    },
+    {
+      "name": "shipping",
+      "rect": [
+        0,
+        576,
+        192,
+        192
+      ],
+      "exportPath": "art/exports/ui/icons/shipping.png",
+      "runtimePath": "assets/art/workbench/ui/icons/shipping.png",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "7be446424f551e148e1eb597c6dffdc1a898a6473f753b6a85d6992fb73f5fab",
+      "exportPx": [
+        192,
+        192
+      ]
+    },
+    {
+      "name": "warning",
+      "rect": [
+        192,
+        576,
+        192,
+        192
+      ],
+      "exportPath": "art/exports/ui/icons/warning.png",
+      "runtimePath": "assets/art/workbench/ui/icons/warning.png",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "eebfe6ac1543f23a6ff9f3733f9d3481d47a30c800044f870fb51b3bfd37bfc7",
+      "exportPx": [
+        192,
+        192
+      ]
+    },
+    {
+      "name": "featured",
+      "rect": [
+        384,
+        576,
+        192,
+        192
+      ],
+      "exportPath": "art/exports/ui/icons/featured.png",
+      "runtimePath": "assets/art/workbench/ui/icons/featured.png",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "d6e35eaaeb45f9c2ed1a634bae190c1f47dd06ba700f9e908beece1106d1c330",
+      "exportPx": [
+        192,
+        192
+      ]
+    },
+    {
+      "name": "back",
+      "rect": [
+        576,
+        576,
+        192,
+        192
+      ],
+      "exportPath": "art/exports/ui/icons/back.png",
+      "runtimePath": "assets/art/workbench/ui/icons/back.png",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "4cd8651cbdf56f210521790e745b943da7482f111b0dd169c1a2c305e706ebc3",
+      "exportPx": [
+        192,
+        192
+      ]
+    },
+    {
+      "name": "forward",
+      "rect": [
+        768,
+        576,
+        192,
+        192
+      ],
+      "exportPath": "art/exports/ui/icons/forward.png",
+      "runtimePath": "assets/art/workbench/ui/icons/forward.png",
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "sha256": "9a2737484c958b58c04532bcbd4d3911b73e54706240d20162fb29dd363b3d0a",
+      "exportPx": [
+        192,
+        192
+      ]
+    },
+    {
+      "name": "paper_tile",
+      "rect": [
+        0,
+        800,
+        128,
+        128
+      ],
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "exportPath": "art/exports/ui/surfaces/paper_tile.png",
+      "runtimePath": "assets/art/workbench/ui/surfaces/paper_tile.png",
+      "sha256": "2e61129d9bd2e4a3a2b07279f08b4d0dc36129f92f1dad1c394f6ba1c828ed27",
+      "exportPx": [
+        128,
+        128
+      ]
+    },
+    {
+      "name": "wood_tile",
+      "rect": [
+        144,
+        800,
+        128,
+        128
+      ],
+      "border": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "exportPath": "art/exports/ui/surfaces/wood_tile.png",
+      "runtimePath": "assets/art/workbench/ui/surfaces/wood_tile.png",
+      "sha256": "e893d2fbaad1bae40a9c0890a2416172f39d3f38e59d10fac974b7ab9b223c12",
+      "exportPx": [
+        128,
+        128
+      ]
+    },
+    {
+      "name": "button_primary",
+      "rect": [
+        288,
+        800,
+        384,
+        112
+      ],
+      "border": [
+        42,
+        28,
+        42,
+        28
+      ],
+      "exportPath": "art/exports/ui/surfaces/button_primary.png",
+      "runtimePath": "assets/art/workbench/ui/surfaces/button_primary.png",
+      "sha256": "2de72d057e0e13a9b61576824a86b3773afb9f0e9afff99cfacb1b61aa4f9d37",
+      "exportPx": [
+        384,
+        112
+      ]
+    },
+    {
+      "name": "paper_panel",
+      "rect": [
+        0,
+        960,
+        384,
+        128
+      ],
+      "border": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "exportPath": "art/exports/ui/surfaces/paper_panel.png",
+      "runtimePath": "assets/art/workbench/ui/surfaces/paper_panel.png",
+      "sha256": "16854568e258295966c455dc1f7d36a8aba08bec443f774cef84073bc92ba684",
+      "exportPx": [
+        384,
+        128
+      ]
+    }
+  ]
+}

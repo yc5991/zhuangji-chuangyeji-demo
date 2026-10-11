@@ -1,0 +1,13 @@
+{
+  "id": "ram_ddr4_8_side_v01",
+  "componentId": "ram_ddr4_8",
+  "prompt": "Use case: product-mockup. One independent production sprite for Orangegame PC assembly game. Image 1 is a material/lighting style reference only; do not copy its composition. Relatively realistic restrained 3D game render, neutral light from upper left, gentle fill, sharp edges, no ink outlines, no exaggeration. Strictly orthographic straight-on camera, no tilt or perspective. Genuine transparent alpha background, complete silhouette with generous padding. No text, numbers, logos, watermark, ground, cast floor shadow, environment, additional objects or collage. Render a bare green DDR4 desktop DIMM in its INSTALLED top-edge view: looking exactly down onto the narrow upper edge of a 133.35mm long RAM PCB standing perpendicular to the motherboard. The long PCB edge runs vertically in this image. Show only a narrow green vertical edge, subtle dark chip shoulders on either side and small light reflections. Aspect ratio of visible silhouette approximately 133.35 long to 4 thick, like a very thin vertical strip. No broad face, no gold contacts exposed, no gaming heat spreader, no exaggerated height, no socket or motherboard attached. One single DIMM only, no doubled pair. Tall portrait canvas.",
+  "sourcePath": "art/source/parts/ram_ddr4_8_side_v01.png",
+  "tool": "built_in_image_gen",
+  "intent": "generate",
+  "useCase": "product-mockup",
+  "status": "production_candidate",
+  "referencePaths": [
+    "art/source/style_review_v02.png"
+  ]
+}

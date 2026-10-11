@@ -1,0 +1,14 @@
+{
+  "id": "cooler_tower_side_v03",
+  "componentId": "cooler_tower",
+  "referencePaths": [
+    "art/source/parts/cooler_tower_side_v02.png"
+  ],
+  "prompt": "Precise projection correction. Preserve original materials of this installed tower cooler cap but make the entire projected silhouette INCLUDING RIGHT FAN EDGE fit a120mm horizontal by80mm vertical rectangular footprint, WIDTH/HEIGHT EXACTLY1.5. Current image is too wide. Reduce WIDTH approximately15 percent while keeping height. True ORTHOGRAPHIC camera straight perpendicular to motherboard, viewing TOP CAP of a tall tower cooler. Silver squared topcap, six small round copper capped tips two rows of three, fine parallel fin edges above/below cap. Black fan only as a narrow vertical edge along RIGHT, with tiny steel retaining clips, no full circular fan face. Blank small center plate. No tall upright tower front, no perspective. 155mm height is along camera depth invisible here. True transparent alpha around complete object, no outer shadows/glow/ground, no text. Make metal rectangular width-to-height ratio1.5, do not output elongated1.8:1 silhouette.",
+  "tool": "built_in_image_gen",
+  "intent": "edit",
+  "transparent_background": true,
+  "status": "generated_candidate",
+  "sourcePath": "art/source/parts/cooler_tower_side_v03.png",
+  "structuralBasis": "Original game component projection or animation layers; edits retain references and prior source versions."
+}

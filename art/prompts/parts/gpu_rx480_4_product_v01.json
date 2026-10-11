@@ -1,0 +1,17 @@
+{
+  "id": "gpu_rx480_4_product_v01",
+  "componentId": "gpu_rx480_4",
+  "tool": "built_in_image_gen",
+  "intent": "generate",
+  "status": "generated_candidate",
+  "sourcePath": "art/source/parts/gpu_rx480_4_product_v01.png",
+  "referencePaths": [
+    "art/source/style_review_v02.png",
+    "art/source/parts/gpu_rx480_4_side_v01.png"
+  ],
+  "transparent_background": true,
+  "structuralBasis": "Original game shroud/cooler turnaround based on catalog dimensions/power count; not exact manufacturer photography.",
+  "prompt": "Use case: product-mockup. ONE isolated procurement product image of same original game GPU asreference2. Reference1gives realisticindustrial PCsimulatorneutral materials. Modestthreequarter product camera reveals broadFANFACE and smallTOPrail, rear metalexpansion bracketatLEFT,longcardtipRIGHT,longaxishorizontal. 242x112x37mm standard reference style blower card. Mattegraphite straight practical box-shaped shroud, tiny restrained deepredlong rail matchingreference2, exactlyONE radial blower intake atRIGHT,6pin2x3 blacksupply socket alongupper-right rail. Entire card crisp realisticmillimeter manufactured forms, softupperleftlight andfill, believablemetal/plasticroughness, fine silverfinlamellae, thinPCBedge,goldPCIecontacts onLOWERedge (onlyproductview). Blankcentralfan hub and tiny sideplaque,no logos/text. Fanface shownonlyforcatalog, willfaceDOWNininstalledview. No secondradialfan, noaxialtwins, no decorativehorns or cartoonproportions. Full silhouettecentered withampletransparentmargins onall edges, truealpha, noenvironment, floor, outsideshadow,reflection, cables, motherboard,box,glow,RGB,watermark.",
+  "generatedOutputFile": "exec-212b3c4b-e359-4fb1-a738-fca00d1f9af8.png",
+  "resultRecovery": "Recovered completed tool output after session interruption; matched by visual identity and recorded prompt"
+}

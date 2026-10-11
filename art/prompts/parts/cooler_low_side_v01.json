@@ -1,0 +1,14 @@
+{
+  "id": "cooler_low_side_v01",
+  "componentId": "cooler_low",
+  "prompt": "Use case: product-mockup. Draw ONE isolated independent raster hardware sprite for Orangegame, a relatively realistic PC Building Simulator inspired game, no illustration outlines. Neutral studio upper-left illumination, subdued industrial materials, realistic small fasteners and manufactured geometry. Reference image 1 gives only material and lighting style. True transparent alpha outside full object, no opaque backdrop, shadows beyond object, glow, ground, environment, text, logos or watermark. Preserve a generous transparent margin around all sides. Strict ORTHOGRAPHIC top view of a 100mm by100mm low-profile down-blowing CPU cooler, installed on a motherboard that lies parallel to the image plane, camera facing the fan broad side. Fully square gray-black plastic frame with FOUR CORNER mounting feet, round seven-blade black fan at center, bare silver radial/parallel heatsink fins subtly visible under fan edge, small central round hub reserved blank, one tiny four-pin header plug on a very short 15mm pigtail at lower RIGHT edge. Entire assembly only, no CPU, no motherboard, no socket. 2016 practical compact 60mm tall original cooler. Fan blade circular face fits within square100mm footprint. Perfectly parallel edges, centered straight on, zero perspective convergence. No visible cylindrical side wall exaggeration. Complete single product sprite.",
+  "referencePaths": [
+    "art/source/style_review_v02.png"
+  ],
+  "transparent_background": true,
+  "sourcePath": "art/source/parts/cooler_low_side_v01.png",
+  "tool": "built_in_image_gen",
+  "intent": "generate",
+  "status": "generated_candidate",
+  "structuralBasis": "Original art using dimensions from design/components.json; projected orientation is an art implementation decision, not manufacturer verified internal geometry."
+}

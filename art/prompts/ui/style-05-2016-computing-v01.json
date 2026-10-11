@@ -1,0 +1,14 @@
+{
+  "id": "style-05-2016-computing-v01",
+  "useCase": "ui-mockup",
+  "assetType": "single full-screen mobile management game UI concept, portrait 9:16",
+  "primaryRequest": "Create one polished UI concept screenshot for Orangegame, a PC company management game beginning in January 2016. The direction is period-aware personal computing: a real small PC workshop, 2016-era tower cases and component silhouettes, early LCD and service-label influence, compact utilitarian controls, slightly warm grey plastic and dark charcoal with restrained amber/green status lights. It should feel nostalgic but believable, not pixel art and not sci-fi. Make the management information easy to read on a modern phone.",
+  "inputImages": [{ "path": "art/source/style_review_v02.png", "role": "reference for realistic workshop lighting and hardware materials; the depicted hardware can guide finish but not imply later catalog unlocks" }],
+  "subject": "January 2016 startup computer workshop home screen with the first PC prototype in progress",
+  "composition": "one portrait phone screen; era-tagged date and cash header; workshop photo; compact machine status; two queue rows with period-appropriate product photos and progress; month settlement main action; fixed five-item navigation",
+  "contentExact": ["橙序电脑", "2016年1月", "现金 ¥18,420", "工坊启动", "当前排产", "橙序 G-01 游戏机", "手工装配 · 剩余 6.4 工时", "静音办公样机", "采购等待 · 预计 2.0 工时", "查看月结", "工坊", "产品", "采购", "订单", "公司"],
+  "styleMedium": "realistic nostalgic PC workshop game interface, 2016 period-aware hardware and service labels, modern mobile readability",
+  "palette": ["warm grey", "charcoal", "LCD black", "amber", "muted green", "brushed aluminium"],
+  "constraints": "do not show hardware released after January 2016; no pixel art; no CRT distortion that harms readability; modern touch targets; no real vendor logos; no watermark",
+  "avoid": ["futuristic RGB gaming room", "neon cyberpunk", "1980s terminal parody", "pixelated interface", "anachronistic GPU product labels", "flat vector-only panels", "watermark"]
+}
